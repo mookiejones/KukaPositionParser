@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSIObjects xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/RSIContext.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RSIObject ObjType="AXISCORRMON" ObjTypeID="82" ObjID="AXISCORRMON1">
+    <Parameters>
+      <Parameter Name="MaxA1" ParamID="1" ParamValue="360.0" IsPublic="true" />
+      <Parameter Name="MaxA2" ParamID="2" ParamValue="360.0" IsPublic="true" />
+      <Parameter Name="MaxA3" ParamID="3" ParamValue="360.0" IsPublic="true" />
+      <Parameter Name="MaxA4" ParamID="4" ParamValue="360.0" IsPublic="true" />
+      <Parameter Name="MaxA5" ParamID="5" ParamValue="360.0" IsPublic="true" />
+      <Parameter Name="MaxA6" ParamID="6" ParamValue="360.0" IsPublic="true" />
+      <Parameter Name="MaxE1" ParamID="7" ParamValue="6.0" />
+      <Parameter Name="MaxE2" ParamID="8" ParamValue="6.0" />
+      <Parameter Name="MaxE3" ParamID="9" ParamValue="6.0" />
+      <Parameter Name="MaxE4" ParamID="10" ParamValue="6.0" />
+      <Parameter Name="MaxE5" ParamID="11" ParamValue="6.0" />
+      <Parameter Name="MaxE6" ParamID="12" ParamValue="6.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="POSCORRMON" ObjTypeID="81" ObjID="POSCORRMON1">
+    <Parameters>
+      <Parameter Name="MaxTrans" ParamID="1" ParamValue="5000" IsPublic="true" />
+      <Parameter Name="MaxRotAngle" ParamID="2" ParamValue="360" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_Pos">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_Height">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_C_ANGLE">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="VIS_Pos_Target_NEG">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Pos" OutIdx="1" />
+      <Input InIdx="2" OutObjID="P4" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="VIS_Height_Target_NEG">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Height" OutIdx="1" />
+      <Input InIdx="2" OutObjID="P5" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="VIS_C_ANGLE_Target_NEG">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_C_ANGLE" OutIdx="1" />
+      <Input InIdx="2" OutObjID="P6" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="VIS_Pos_Inversion">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Pos_Target_NEG" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="VIS_Height_Inversion">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Height_Target_NEG" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="VIS_C_ANGLE_Inversion">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_C_ANGLE_Target_NEG" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Pos_Inversion" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.0000001" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Height_Inversion" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.0000001" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_C_ANGLE_Inversion" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.0000001" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Height" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SCANNER_OUT_OF_RANGE" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.0" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SCANNER_OUT_OF_RANGE">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="32232" IsPublic="true" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="1" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PID" ObjTypeID="36" ObjID="VIS_Pos_PID">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" IsPublic="true" />
+      <Parameter Name="KR" ParamID="2" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TN" ParamID="3" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TV" ParamID="4" ParamValue="1" IsPublic="true" />
+      <Parameter Name="LimLow" ParamID="5" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LimUpp" ParamID="6" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PID" ObjTypeID="36" ObjID="VIS_Height_PID">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P2" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" IsPublic="true" />
+      <Parameter Name="KR" ParamID="2" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TN" ParamID="3" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TV" ParamID="4" ParamValue="1" IsPublic="true" />
+      <Parameter Name="LimLow" ParamID="5" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LimUpp" ParamID="6" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PID" ObjTypeID="36" ObjID="VIS_C_ANGLE_PID">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P3" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" IsPublic="true" />
+      <Parameter Name="KR" ParamID="2" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TN" ParamID="3" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TV" ParamID="4" ParamValue="1" IsPublic="true" />
+      <Parameter Name="LimLow" ParamID="5" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LimUpp" ParamID="6" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="LIMIT" ObjTypeID="39" ObjID="VIS_POS_Limit">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Pos_PID" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimit" ParamID="1" ParamValue="-0.0005" IsPublic="true" />
+      <Parameter Name="UpperLimit" ParamID="2" ParamValue="0.0005" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="LIMIT" ObjTypeID="39" ObjID="VIS_HEIGHT_Limit">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Height_PID" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimit" ParamID="1" ParamValue="-0.0005" IsPublic="true" />
+      <Parameter Name="UpperLimit" ParamID="2" ParamValue="0.0005" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="LIMIT" ObjTypeID="39" ObjID="VIS_C_ANGLE_Limit">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_C_ANGLE_PID" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimit" ParamID="1" ParamValue="-0.0005" IsPublic="true" />
+      <Parameter Name="UpperLimit" ParamID="2" ParamValue="0.0005" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SOURCE1">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="0" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="1" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="VIS_POS_Limit" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH11" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="VIS_C_ANGLE_Limit" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="SystemDisable">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH2" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH3" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SystemDisable" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="YDisable">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="ZDisable">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="CDisable">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="YDisable" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ZDisable" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="CDisable" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH4" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH8">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR3" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH5" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH9">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR4" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH6" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="POSCORR" ObjTypeID="27" ObjID="POSCORR1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM3" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH7" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH8" OutIdx="1" />
+      <Input InIdx="4" OutObjID="SIGNALSWITCH16" OutIdx="1" />
+      <Input InIdx="5" OutObjID="SIGNALSWITCH14" OutIdx="1" />
+      <Input InIdx="6" OutObjID="SIGNALSWITCH9" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimX" ParamID="1" ParamValue="-5000" IsPublic="true" />
+      <Parameter Name="LowerLimY" ParamID="2" ParamValue="-5000" IsPublic="true" />
+      <Parameter Name="LowerLimZ" ParamID="3" ParamValue="-5000" IsPublic="true" />
+      <Parameter Name="UpperLimX" ParamID="4" ParamValue="5000" IsPublic="true" />
+      <Parameter Name="UpperLimY" ParamID="5" ParamValue="5000" IsPublic="true" />
+      <Parameter Name="UpperLimZ" ParamID="6" ParamValue="5000" IsPublic="true" />
+      <Parameter Name="MaxRotAngle" ParamID="7" ParamValue="360" IsPublic="true" />
+      <Parameter Name="LastCorrStat" ParamID="8" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LastCorrX" ParamID="9" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LastCorrY" ParamID="10" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LastCorrZ" ParamID="11" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LastCorrA" ParamID="12" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LastCorrB" ParamID="13" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LastCorrC" ParamID="14" ParamValue="0" IsPublic="true" />
+      <Parameter Name="RefCorrSys" ParamID="1" ParamValue="3" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="RSI_MoveCorr_Stop">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="RSI_MoveCorr_Stop_Countdown">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="RSI_MoveCorr_Stop" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="RSI_MoveCorr_Stop_Countdown" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.0" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="AND" ObjTypeID="8" ObjID="AND1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL6" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL7" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="STOP" ObjTypeID="18" ObjID="STOP1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Mode" ParamID="1" ParamValue="4" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="RSI_MoveCorr_Stop_Countdown" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH10">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GREATER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SUM1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="RSI_MoveCorr_Stop_Countdown" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="GREATER" ObjTypeID="6" ObjID="GREATER1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="RSI_MoveCorr_Stop_Countdown" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.0" />
+      <Parameter Name="Hysteresis" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MAP2SEN_PINT" ObjTypeID="16" ObjID="RSI_MoveCorr_Stop_Countdown_OUT">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH10" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="STOP_MOVE_CORR_PLC_SIGNAL">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="AND" ObjTypeID="8" ObjID="AND2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="STOP_MOVE_CORR_PLC_SIGNAL" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL6" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="AND2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="AND1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_Pos_Target">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_Height_Target">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_C_ANGLE_Target">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Pos_Target" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Height_Target" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_C_ANGLE_Target" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="XDisable_PLC">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="YDisable_PLC">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="ZDisable_PLC">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="ADisable_PLC">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="BDisable_PLC">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="CDisable_PLC">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="YDisable_PLC" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL3" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ZDisable_PLC" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL4" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR4">
+    <Inputs>
+      <Input InIdx="1" OutObjID="CDisable_PLC" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL5" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_Dist_Height">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_Dist_Height_Target">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P8">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Dist_Height_Target" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Dist_Height" OutIdx="1" />
+      <Input InIdx="2" OutObjID="P8" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="VIS_Dist_Height_Inversion">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM2" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P9">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Dist_Height_Inversion" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.0000001" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PID" ObjTypeID="36" ObjID="VIS_Dist_Height_PID">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P9" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" IsPublic="true" />
+      <Parameter Name="KR" ParamID="2" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TN" ParamID="3" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TV" ParamID="4" ParamValue="1" IsPublic="true" />
+      <Parameter Name="LimLow" ParamID="5" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LimUpp" ParamID="6" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="LIMIT" ObjTypeID="39" ObjID="VIS_Dist_Height_Limit">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Dist_Height_PID" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimit" ParamID="1" ParamValue="-0.0005" IsPublic="true" />
+      <Parameter Name="UpperLimit" ParamID="2" ParamValue="0.0005" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH11">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_Dist_Height_Signal_Select" OutIdx="1" />
+      <Input InIdx="2" OutObjID="VIS_HEIGHT_Limit" OutIdx="1" />
+      <Input InIdx="3" OutObjID="VIS_Dist_Height_Limit" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_Dist_Height_Signal_Select">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_B_ANGLE">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_B_ANGLE_Target">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_B_ANGLE_Target" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="VIS_B_ANGLE_Inversion">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_B_ANGLE_Target_NEG" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P11">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_B_ANGLE_Inversion" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.0000001" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PID" ObjTypeID="36" ObjID="VIS_B_ANGLE_PID">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P11" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" IsPublic="true" />
+      <Parameter Name="KR" ParamID="2" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TN" ParamID="3" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TV" ParamID="4" ParamValue="1" IsPublic="true" />
+      <Parameter Name="LimLow" ParamID="5" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LimUpp" ParamID="6" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="LIMIT" ObjTypeID="39" ObjID="VIS_B_ANGLE_Limit">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_B_ANGLE_PID" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimit" ParamID="1" ParamValue="-0.0005" IsPublic="true" />
+      <Parameter Name="UpperLimit" ParamID="2" ParamValue="0.0005" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH12">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="VIS_B_ANGLE_Limit" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="VIS_B_ANGLE_Target_NEG">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_B_ANGLE" OutIdx="1" />
+      <Input InIdx="2" OutObjID="P7" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH13">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH12" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH14">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR5" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH13" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="BDisable">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL8">
+    <Inputs>
+      <Input InIdx="1" OutObjID="BDisable" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR5">
+    <Inputs>
+      <Input InIdx="1" OutObjID="BDisable_PLC" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL8" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="ADisable">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL9">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ADisable" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR6">
+    <Inputs>
+      <Input InIdx="1" OutObjID="ADisable_PLC" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL9" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SEN_PINT" ObjTypeID="57" ObjID="XDisable">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL10">
+    <Inputs>
+      <Input InIdx="1" OutObjID="XDisable" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="1" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="0.0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR7">
+    <Inputs>
+      <Input InIdx="1" OutObjID="XDisable_PLC" OutIdx="1" />
+      <Input InIdx="2" OutObjID="EQUAL10" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH15">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR7" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH18" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH16">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR6" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH20" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_X_Target">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P12">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_X_Target" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="VIS_X_Target_NEG">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_X" OutIdx="1" />
+      <Input InIdx="2" OutObjID="P12" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="VIS_X_Inversion">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_X_Target_NEG" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P14">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_X_Inversion" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.0000001" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PID" ObjTypeID="36" ObjID="VIS_X_PID">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P14" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" IsPublic="true" />
+      <Parameter Name="KR" ParamID="2" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TN" ParamID="3" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TV" ParamID="4" ParamValue="1" IsPublic="true" />
+      <Parameter Name="LimLow" ParamID="5" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LimUpp" ParamID="6" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="LIMIT" ObjTypeID="39" ObjID="VIS_X_Limit">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_X_PID" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimit" ParamID="1" ParamValue="-0.0005" IsPublic="true" />
+      <Parameter Name="UpperLimit" ParamID="2" ParamValue="0.0005" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH17">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="VIS_X_Limit" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH18">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH17" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH19">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="VIS_A_ANGLE_Limit" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH20">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL2" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH19" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="VIS_A_ANGLE_Target_NEG">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_A_ANGLE" OutIdx="1" />
+      <Input InIdx="2" OutObjID="P10" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_X">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_A_ANGLE_Target">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P10">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_A_ANGLE_Target" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="VIS_A_ANGLE_Inversion">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_A_ANGLE_Target_NEG" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="P" ObjTypeID="28" ObjID="P15">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_A_ANGLE_Inversion" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="0.0000001" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PID" ObjTypeID="36" ObjID="VIS_A_ANGLE_PID">
+    <Inputs>
+      <Input InIdx="1" OutObjID="P15" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" IsPublic="true" />
+      <Parameter Name="KR" ParamID="2" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TN" ParamID="3" ParamValue="1" IsPublic="true" />
+      <Parameter Name="TV" ParamID="4" ParamValue="1" IsPublic="true" />
+      <Parameter Name="LimLow" ParamID="5" ParamValue="0" IsPublic="true" />
+      <Parameter Name="LimUpp" ParamID="6" ParamValue="0" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="LIMIT" ObjTypeID="39" ObjID="VIS_A_ANGLE_Limit">
+    <Inputs>
+      <Input InIdx="1" OutObjID="VIS_A_ANGLE_PID" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimit" ParamID="1" ParamValue="-0.0005" IsPublic="true" />
+      <Parameter Name="UpperLimit" ParamID="2" ParamValue="0.0005" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="VIS_A_ANGLE">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MONITOR" ObjTypeID="55" ObjID="MONITOR1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="POSCORR1" OutIdx="2" />
+      <Input InIdx="2" OutObjID="POSCORR1" OutIdx="3" />
+      <Input InIdx="3" OutObjID="POSCORR1" OutIdx="4" />
+      <Input InIdx="4" OutObjID="POSCORR1" OutIdx="5" />
+      <Input InIdx="5" OutObjID="POSCORR1" OutIdx="6" />
+      <Input InIdx="6" OutObjID="POSCORR1" OutIdx="7" />
+      <Input InIdx="7" OutObjID="VIS_X_Limit" OutIdx="1" />
+      <Input InIdx="8" OutObjID="VIS_POS_Limit" OutIdx="1" />
+      <Input InIdx="9" OutObjID="VIS_HEIGHT_Limit" OutIdx="1" />
+      <Input InIdx="10" OutObjID="VIS_A_ANGLE_Limit" OutIdx="1" />
+      <Input InIdx="11" OutObjID="VIS_B_ANGLE_Limit" OutIdx="1" />
+      <Input InIdx="12" OutObjID="VIS_C_ANGLE_Limit" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Refresh" ParamID="1" ParamValue="1" />
+      <Parameter Name="Timeout" ParamID="2" ParamValue="50" />
+      <Parameter Name="ReqTimeZero" ParamID="3" ParamValue="1" />
+      <Parameter Name="IP" ParamID="1" ParamValue="192.168.0.1" IsRuntime="false" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="1" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="STOP" ObjTypeID="18" ObjID="STOP2">
+    <Inputs>
+      <Input InIdx="1" OutObjID="GO_MANUAL" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Mode" ParamID="1" ParamValue="4" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="1" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="GO_MANUAL">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="1" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="JOG_X_POS">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="175" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM3">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SIGNALSWITCH21" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SIGNALSWITCH22" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SIGNALSWITCH15" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH21">
+    <Inputs>
+      <Input InIdx="1" OutObjID="JOG_X_POS" OutIdx="1" />
+      <Input InIdx="2" OutObjID="JOG_POS_AMOUNT" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="JOG_POS_AMOUNT">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="0.01" IsPublic="true" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="1" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="JOG_NEG_AMOUNT">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="-0.01" IsPublic="true" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="1" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="JOG_X_NEG">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="176" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SIGNALSWITCH" ObjTypeID="59" ObjID="SIGNALSWITCH22">
+    <Inputs>
+      <Input InIdx="1" OutObjID="JOG_X_NEG" OutIdx="1" />
+      <Input InIdx="2" OutObjID="JOG_NEG_AMOUNT" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+</RSIObjects>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="Variables.GlobalPosn">
+      <uiText key="GlobalPosnMenu">
+         <text xml:lang="en-DEV">Global Position</text>
+      </uiText>
+      <uiText key="Configuration">
+         <text xml:lang="en-DEV">Global Position Configuration</text>
+      </uiText>
+      <uiText key="PositionCommentTitle1">
+         <text xml:lang="en-DEV">Global Position 1</text>
+      </uiText>
+      <uiText key="PositionCommentTitle2">
+         <text xml:lang="en-DEV">Global Position 2</text>
+      </uiText>
+      <uiText key="PositionCommentTitle3">
+         <text xml:lang="en-DEV">Global Position 3</text>
+      </uiText>
+      <uiText key="PositionCommentTitle4">
+         <text xml:lang="en-DEV">Global Position 4</text>
+      </uiText>
+      <uiText key="PositionCommentTitle5">
+         <text xml:lang="en-DEV">Global Position 5</text>
+      </uiText>
+      <uiText key="PositionCommentTitle6">
+         <text xml:lang="en-DEV">Global Position 6</text>
+      </uiText>
+      <uiText key="PositionCommentTitle7">
+         <text xml:lang="en-DEV">Global Position 7</text>
+      </uiText>
+      <uiText key="PositionCommentTitle8">
+         <text xml:lang="en-DEV">Global Position 8</text>
+      </uiText>
+      <uiText key="PositionCommentTitle9">
+         <text xml:lang="en-DEV">Global Position 9</text>
+      </uiText>
+      <uiText key="PositionCommentTitle10">
+         <text xml:lang="en-DEV">Global Position 10</text>
+      </uiText>
+      <uiText key="PositionCommentTitle">
+         <text xml:lang="en-DEV">Comment</text>
+      </uiText>
+      <uiText key="PositionCommentHelp">
+         <text xml:lang="en-DEV">Global Point Comment or Name</text>
+      </uiText>
+      <uiText key="PositionEnableTitle">
+         <text xml:lang="en-DEV">Position State</text>
+      </uiText>
+      <uiText key="PositionEnableHelp">
+         <text xml:lang="en-DEV">Enable or disable position monitoring</text>
+      </uiText>
+      <uiText key="SignalDefinitionTitle">
+         <text xml:lang="en-DEV">Signal Definition</text>
+      </uiText>
+      <uiText key="SignalDefinitionHelp">
+         <text xml:lang="en-DEV">Output for indication of in position</text>
+      </uiText>
+      <uiText key="AtPositionValueTitle">
+         <text xml:lang="en-DEV">@ Posn</text>
+      </uiText>
+      <uiText key="AtPositionValueTitleHelp">
+         <text xml:lang="en-DEV">Output value when robot is at position.</text>
+      </uiText>
+      <uiText key="A1PositionTitle">
+         <text xml:lang="en-DEV">Axis 1</text>
+      </uiText>
+      <uiText key="A1PositionHelp">
+         <text xml:lang="en-DEV">Axis 1 position value in degrees.</text>
+      </uiText>
+      <uiText key="A1ToleranceTitle">
+         <text xml:lang="en-DEV">Axis 1 +/-</text>
+      </uiText>
+      <uiText key="A1ToleranceHelp">
+         <text xml:lang="en-DEV">Axis 1 position tolerance in degrees.</text>
+      </uiText>
+      <uiText key="A2PositionTitle">
+         <text xml:lang="en-DEV">Axis 2</text>
+      </uiText>
+      <uiText key="A2PositionHelp">
+         <text xml:lang="en-DEV">Axis 2 position value in degrees.</text>
+      </uiText>
+      <uiText key="A2ToleranceTitle">
+         <text xml:lang="en-DEV">Axis 2 +/-</text>
+      </uiText>
+      <uiText key="A2ToleranceHelp">
+         <text xml:lang="en-DEV">Axis 2 position tolerance in degrees.</text>
+      </uiText>
+      <uiText key="A3PositionTitle">
+         <text xml:lang="en-DEV">Axis 3</text>
+      </uiText>
+      <uiText key="A3PositionHelp">
+         <text xml:lang="en-DEV">Axis 3 position value in degrees.</text>
+      </uiText>
+      <uiText key="A3ToleranceTitle">
+         <text xml:lang="en-DEV">Axis 3 +/-</text>
+      </uiText>
+      <uiText key="A3ToleranceHelp">
+         <text xml:lang="en-DEV">Axis 3 position tolerance in degrees.</text>
+      </uiText>
+      <uiText key="A4PositionTitle">
+         <text xml:lang="en-DEV">Axis 4</text>
+      </uiText>
+      <uiText key="A4PositionHelp">
+         <text xml:lang="en-DEV">Axis 4 position value in degrees.</text>
+      </uiText>
+      <uiText key="A4ToleranceTitle">
+         <text xml:lang="en-DEV">Axis 4 +/-</text>
+      </uiText>
+      <uiText key="A4ToleranceHelp">
+         <text xml:lang="en-DEV">Axis 4 position tolerance in degrees.</text>
+      </uiText>
+      <uiText key="A5PositionTitle">
+         <text xml:lang="en-DEV">Axis 5</text>
+      </uiText>
+      <uiText key="A5PositionHelp">
+         <text xml:lang="en-DEV">Axis 5 position value in degrees.</text>
+      </uiText>
+      <uiText key="A5ToleranceTitle">
+         <text xml:lang="en-DEV">Axis 5 +/-</text>
+      </uiText>
+      <uiText key="A5ToleranceHelp">
+         <text xml:lang="en-DEV">Axis 5 position tolerance in degrees.</text>
+      </uiText>
+      <uiText key="A6PositionTitle">
+         <text xml:lang="en-DEV">Axis 6</text>
+      </uiText>
+      <uiText key="A6PositionHelp">
+         <text xml:lang="en-DEV">Axis 6 position value in degrees.</text>
+      </uiText>
+      <uiText key="A6ToleranceTitle">
+         <text xml:lang="en-DEV">Axis 6 +/-</text>
+      </uiText>
+      <uiText key="A6ToleranceHelp">
+         <text xml:lang="en-DEV">Axis 6 position tolerance in degrees.</text>
+      </uiText>
+   </module>
+</resources>

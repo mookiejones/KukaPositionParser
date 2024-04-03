@@ -1,0 +1,11 @@
+&ACCESS RV1
+DEF TurnOffRSI (contID:IN)
+   INT contID
+   INT ret
+   RSI_ACTIVE=FALSE
+   ret = RSI_OFF()
+   IF varstate("contID")==#initialized THEN
+      ret = RSI_DELETE(contID)
+   ENDIF
+   
+END

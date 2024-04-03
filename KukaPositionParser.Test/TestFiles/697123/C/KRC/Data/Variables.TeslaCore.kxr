@@ -1,0 +1,1286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="Variables.TeslaCore">
+      <uiText key="TeslaCoreMenu">
+         <text xml:lang="en-DEV">TeslaCore</text>
+      </uiText>
+      <uiText key="Configuration">
+         <text xml:lang="en-DEV">TeslaCore Configuration</text>
+      </uiText>
+      <uiText key="SystemResources">
+         <text xml:lang="en-DEV">TeslaCore System Resources</text>
+      </uiText>
+      <uiText key="SubmitMonInterrupt">
+         <text xml:lang="en-DEV">Submit Monitor Interrupt</text>
+      </uiText>
+      <uiText key="SubmitMonInterruptHelp">
+         <text xml:lang="en-DEV">Interrupt # used for monitoring submit operation (Default:  5)</text>
+      </uiText>
+      <uiText key="SubmitMonCycFlag">
+         <text xml:lang="en-DEV">Submit Monitor CycFlag</text>
+      </uiText>
+      <uiText key="SubmitMonCycFlagHelp">
+         <text xml:lang="en-DEV">CycFlag # used for monitoring submit operation (Default:  5)</text>
+      </uiText>
+      <uiText key="HandshakeComment1_12">
+         <text xml:lang="en-DEV">Handshake Comments 1 - 12</text>
+      </uiText>
+      <uiText key="HandshakeComment13_24">
+         <text xml:lang="en-DEV">Handshake Comments 13 - 24</text>
+      </uiText>
+      <uiText key="HandshakeComment25_36">
+         <text xml:lang="en-DEV">Handshake Comments 25 - 36</text>
+      </uiText>
+      <uiText key="HandshakeComment37_48">
+         <text xml:lang="en-DEV">Handshake Comments 37 - 48</text>
+      </uiText>
+      <uiText key="HandshakeComment49_60">
+         <text xml:lang="en-DEV">Handshake Comments 49 - 60</text>
+      </uiText>
+      <uiText key="HandshakeComment61_72">
+         <text xml:lang="en-DEV">Handshake Comments 61 - 72</text>
+      </uiText>
+      <uiText key="HandshakeComment73_84">
+         <text xml:lang="en-DEV">Handshake Comments 73 - 84</text>
+      </uiText>
+      <uiText key="HandshakeComment85_96">
+         <text xml:lang="en-DEV">Handshake Comments 85 - 96</text>
+      </uiText>
+      <uiText key="HandshakeComment97_108">
+         <text xml:lang="en-DEV">Handshake Comments 97 - 108</text>
+      </uiText>
+      <uiText key="HandshakeComment109_120">
+         <text xml:lang="en-DEV">Handshake Comments 109 - 120</text>
+      </uiText>
+      <uiText key="HandshakeComment121_132">
+         <text xml:lang="en-DEV">Handshake Comments 121 - 132</text>
+      </uiText>
+      <uiText key="HandshakeComment133_144">
+         <text xml:lang="en-DEV">Handshake Comments 133 - 144</text>
+      </uiText>
+      <uiText key="HandshakeComment145_156">
+         <text xml:lang="en-DEV">Handshake Comments 145 - 156</text>
+      </uiText>
+      <uiText key="HandshakeComment157_168">
+         <text xml:lang="en-DEV">Handshake Comments 157 - 168</text>
+      </uiText>
+      <uiText key="HandshakeComment169_180">
+         <text xml:lang="en-DEV">Handshake Comments 169 - 180</text>
+      </uiText>
+      <uiText key="HandshakeComment181_192">
+         <text xml:lang="en-DEV">Handshake Comments 181 - 192</text>
+      </uiText>
+      <uiText key="HandshakeComment193_204">
+         <text xml:lang="en-DEV">Handshake Comments 193 - 204</text>
+      </uiText>
+      <uiText key="HandshakeComment205_216">
+         <text xml:lang="en-DEV">Handshake Comments 205 - 216</text>
+      </uiText>
+      <uiText key="HandshakeComment217_228">
+         <text xml:lang="en-DEV">Handshake Comments 217 - 228</text>
+      </uiText>
+      <uiText key="HandshakeComment229_240">
+         <text xml:lang="en-DEV">Handshake Comments 229 - 240</text>
+      </uiText>
+      <uiText key="HandshakeComment241_252">
+         <text xml:lang="en-DEV">Handshake Comments 241 - 252</text>
+      </uiText>
+      <uiText key="HandshakeComment253_255">
+         <text xml:lang="en-DEV">Handshake Comments 253 - 255</text>
+      </uiText>
+      <uiText key="HandshakeCommentHelp">
+         <text xml:lang="en-DEV">Comment designation for the specified handshake nr.</text>
+      </uiText>
+      <uiText key="HandshakeComment1">
+         <text xml:lang="en-DEV">Handshake 1</text>
+      </uiText>
+      <uiText key="HandshakeComment2">
+         <text xml:lang="en-DEV">Handshake 2</text>
+      </uiText>
+      <uiText key="HandshakeComment3">
+         <text xml:lang="en-DEV">Handshake 3</text>
+      </uiText>
+      <uiText key="HandshakeComment4">
+         <text xml:lang="en-DEV">Handshake 4</text>
+      </uiText>
+      <uiText key="HandshakeComment5">
+         <text xml:lang="en-DEV">Handshake 5</text>
+      </uiText>
+      <uiText key="HandshakeComment6">
+         <text xml:lang="en-DEV">Handshake 6</text>
+      </uiText>
+      <uiText key="HandshakeComment7">
+         <text xml:lang="en-DEV">Handshake 7</text>
+      </uiText>
+      <uiText key="HandshakeComment8">
+         <text xml:lang="en-DEV">Handshake 8</text>
+      </uiText>
+      <uiText key="HandshakeComment9">
+         <text xml:lang="en-DEV">Handshake 9</text>
+      </uiText>
+      <uiText key="HandshakeComment10">
+         <text xml:lang="en-DEV">Handshake 10</text>
+      </uiText>
+      <uiText key="HandshakeComment11">
+         <text xml:lang="en-DEV">Handshake 11</text>
+      </uiText>
+      <uiText key="HandshakeComment12">
+         <text xml:lang="en-DEV">Handshake 12</text>
+      </uiText>
+      <uiText key="HandshakeComment13">
+         <text xml:lang="en-DEV">Handshake 13</text>
+      </uiText>
+      <uiText key="HandshakeComment14">
+         <text xml:lang="en-DEV">Handshake 14</text>
+      </uiText>
+      <uiText key="HandshakeComment15">
+         <text xml:lang="en-DEV">Handshake 15</text>
+      </uiText>
+      <uiText key="HandshakeComment16">
+         <text xml:lang="en-DEV">Handshake 16</text>
+      </uiText>
+      <uiText key="HandshakeComment17">
+         <text xml:lang="en-DEV">Handshake 17</text>
+      </uiText>
+      <uiText key="HandshakeComment18">
+         <text xml:lang="en-DEV">Handshake 18</text>
+      </uiText>
+      <uiText key="HandshakeComment19">
+         <text xml:lang="en-DEV">Handshake 19</text>
+      </uiText>
+      <uiText key="HandshakeComment20">
+         <text xml:lang="en-DEV">Handshake 20</text>
+      </uiText>
+      <uiText key="HandshakeComment21">
+         <text xml:lang="en-DEV">Handshake 21</text>
+      </uiText>
+      <uiText key="HandshakeComment22">
+         <text xml:lang="en-DEV">Handshake 22</text>
+      </uiText>
+      <uiText key="HandshakeComment23">
+         <text xml:lang="en-DEV">Handshake 23</text>
+      </uiText>
+      <uiText key="HandshakeComment24">
+         <text xml:lang="en-DEV">Handshake 24</text>
+      </uiText>
+      <uiText key="HandshakeComment25">
+         <text xml:lang="en-DEV">Handshake 25</text>
+      </uiText>
+      <uiText key="HandshakeComment26">
+         <text xml:lang="en-DEV">Handshake 26</text>
+      </uiText>
+      <uiText key="HandshakeComment27">
+         <text xml:lang="en-DEV">Handshake 27</text>
+      </uiText>
+      <uiText key="HandshakeComment28">
+         <text xml:lang="en-DEV">Handshake 28</text>
+      </uiText>
+      <uiText key="HandshakeComment29">
+         <text xml:lang="en-DEV">Handshake 29</text>
+      </uiText>
+      <uiText key="HandshakeComment30">
+         <text xml:lang="en-DEV">Handshake 30</text>
+      </uiText>
+      <uiText key="HandshakeComment31">
+         <text xml:lang="en-DEV">Handshake 31</text>
+      </uiText>
+      <uiText key="HandshakeComment32">
+         <text xml:lang="en-DEV">Handshake 32</text>
+      </uiText>
+      <uiText key="HandshakeComment33">
+         <text xml:lang="en-DEV">Handshake 33</text>
+      </uiText>
+      <uiText key="HandshakeComment34">
+         <text xml:lang="en-DEV">Handshake 34</text>
+      </uiText>
+      <uiText key="HandshakeComment35">
+         <text xml:lang="en-DEV">Handshake 35</text>
+      </uiText>
+      <uiText key="HandshakeComment36">
+         <text xml:lang="en-DEV">Handshake 36</text>
+      </uiText>
+      <uiText key="HandshakeComment37">
+         <text xml:lang="en-DEV">Handshake 37</text>
+      </uiText>
+      <uiText key="HandshakeComment38">
+         <text xml:lang="en-DEV">Handshake 38</text>
+      </uiText>
+      <uiText key="HandshakeComment39">
+         <text xml:lang="en-DEV">Handshake 39</text>
+      </uiText>
+      <uiText key="HandshakeComment40">
+         <text xml:lang="en-DEV">Handshake 40</text>
+      </uiText>
+      <uiText key="HandshakeComment41">
+         <text xml:lang="en-DEV">Handshake 41</text>
+      </uiText>
+      <uiText key="HandshakeComment42">
+         <text xml:lang="en-DEV">Handshake 42</text>
+      </uiText>
+      <uiText key="HandshakeComment43">
+         <text xml:lang="en-DEV">Handshake 43</text>
+      </uiText>
+      <uiText key="HandshakeComment44">
+         <text xml:lang="en-DEV">Handshake 44</text>
+      </uiText>
+      <uiText key="HandshakeComment45">
+         <text xml:lang="en-DEV">Handshake 45</text>
+      </uiText>
+      <uiText key="HandshakeComment46">
+         <text xml:lang="en-DEV">Handshake 46</text>
+      </uiText>
+      <uiText key="HandshakeComment47">
+         <text xml:lang="en-DEV">Handshake 47</text>
+      </uiText>
+      <uiText key="HandshakeComment48">
+         <text xml:lang="en-DEV">Handshake 48</text>
+      </uiText>
+      <uiText key="HandshakeComment49">
+         <text xml:lang="en-DEV">Handshake 49</text>
+      </uiText>
+      <uiText key="HandshakeComment50">
+         <text xml:lang="en-DEV">Handshake 50</text>
+      </uiText>
+      <uiText key="HandshakeComment51">
+         <text xml:lang="en-DEV">Handshake 51</text>
+      </uiText>
+      <uiText key="HandshakeComment52">
+         <text xml:lang="en-DEV">Handshake 52</text>
+      </uiText>
+      <uiText key="HandshakeComment53">
+         <text xml:lang="en-DEV">Handshake 53</text>
+      </uiText>
+      <uiText key="HandshakeComment54">
+         <text xml:lang="en-DEV">Handshake 54</text>
+      </uiText>
+      <uiText key="HandshakeComment55">
+         <text xml:lang="en-DEV">Handshake 55</text>
+      </uiText>
+      <uiText key="HandshakeComment56">
+         <text xml:lang="en-DEV">Handshake 56</text>
+      </uiText>
+      <uiText key="HandshakeComment57">
+         <text xml:lang="en-DEV">Handshake 57</text>
+      </uiText>
+      <uiText key="HandshakeComment58">
+         <text xml:lang="en-DEV">Handshake 58</text>
+      </uiText>
+      <uiText key="HandshakeComment59">
+         <text xml:lang="en-DEV">Handshake 59</text>
+      </uiText>
+      <uiText key="HandshakeComment60">
+         <text xml:lang="en-DEV">Handshake 60</text>
+      </uiText>
+      <uiText key="HandshakeComment61">
+         <text xml:lang="en-DEV">Handshake 61</text>
+      </uiText>
+      <uiText key="HandshakeComment62">
+         <text xml:lang="en-DEV">Handshake 62</text>
+      </uiText>
+      <uiText key="HandshakeComment63">
+         <text xml:lang="en-DEV">Handshake 63</text>
+      </uiText>
+      <uiText key="HandshakeComment64">
+         <text xml:lang="en-DEV">Handshake 64</text>
+      </uiText>
+      <uiText key="HandshakeComment65">
+         <text xml:lang="en-DEV">Handshake 65</text>
+      </uiText>
+      <uiText key="HandshakeComment66">
+         <text xml:lang="en-DEV">Handshake 66</text>
+      </uiText>
+      <uiText key="HandshakeComment67">
+         <text xml:lang="en-DEV">Handshake 67</text>
+      </uiText>
+      <uiText key="HandshakeComment68">
+         <text xml:lang="en-DEV">Handshake 68</text>
+      </uiText>
+      <uiText key="HandshakeComment69">
+         <text xml:lang="en-DEV">Handshake 69</text>
+      </uiText>
+      <uiText key="HandshakeComment70">
+         <text xml:lang="en-DEV">Handshake 70</text>
+      </uiText>
+      <uiText key="HandshakeComment71">
+         <text xml:lang="en-DEV">Handshake 71</text>
+      </uiText>
+      <uiText key="HandshakeComment72">
+         <text xml:lang="en-DEV">Handshake 72</text>
+      </uiText>
+      <uiText key="HandshakeComment73">
+         <text xml:lang="en-DEV">Handshake 73</text>
+      </uiText>
+      <uiText key="HandshakeComment74">
+         <text xml:lang="en-DEV">Handshake 74</text>
+      </uiText>
+      <uiText key="HandshakeComment75">
+         <text xml:lang="en-DEV">Handshake 75</text>
+      </uiText>
+      <uiText key="HandshakeComment76">
+         <text xml:lang="en-DEV">Handshake 76</text>
+      </uiText>
+      <uiText key="HandshakeComment77">
+         <text xml:lang="en-DEV">Handshake 77</text>
+      </uiText>
+      <uiText key="HandshakeComment78">
+         <text xml:lang="en-DEV">Handshake 78</text>
+      </uiText>
+      <uiText key="HandshakeComment79">
+         <text xml:lang="en-DEV">Handshake 79</text>
+      </uiText>
+      <uiText key="HandshakeComment80">
+         <text xml:lang="en-DEV">Handshake 80</text>
+      </uiText>
+      <uiText key="HandshakeComment81">
+         <text xml:lang="en-DEV">Handshake 81</text>
+      </uiText>
+      <uiText key="HandshakeComment82">
+         <text xml:lang="en-DEV">Handshake 82</text>
+      </uiText>
+      <uiText key="HandshakeComment83">
+         <text xml:lang="en-DEV">Handshake 83</text>
+      </uiText>
+      <uiText key="HandshakeComment84">
+         <text xml:lang="en-DEV">Handshake 84</text>
+      </uiText>
+      <uiText key="HandshakeComment85">
+         <text xml:lang="en-DEV">Handshake 85</text>
+      </uiText>
+      <uiText key="HandshakeComment86">
+         <text xml:lang="en-DEV">Handshake 86</text>
+      </uiText>
+      <uiText key="HandshakeComment87">
+         <text xml:lang="en-DEV">Handshake 87</text>
+      </uiText>
+      <uiText key="HandshakeComment88">
+         <text xml:lang="en-DEV">Handshake 88</text>
+      </uiText>
+      <uiText key="HandshakeComment89">
+         <text xml:lang="en-DEV">Handshake 89</text>
+      </uiText>
+      <uiText key="HandshakeComment90">
+         <text xml:lang="en-DEV">Handshake 90</text>
+      </uiText>
+      <uiText key="HandshakeComment91">
+         <text xml:lang="en-DEV">Handshake 91</text>
+      </uiText>
+      <uiText key="HandshakeComment92">
+         <text xml:lang="en-DEV">Handshake 92</text>
+      </uiText>
+      <uiText key="HandshakeComment93">
+         <text xml:lang="en-DEV">Handshake 93</text>
+      </uiText>
+      <uiText key="HandshakeComment94">
+         <text xml:lang="en-DEV">Handshake 94</text>
+      </uiText>
+      <uiText key="HandshakeComment95">
+         <text xml:lang="en-DEV">Handshake 95</text>
+      </uiText>
+      <uiText key="HandshakeComment96">
+         <text xml:lang="en-DEV">Handshake 96</text>
+      </uiText>
+      <uiText key="HandshakeComment97">
+         <text xml:lang="en-DEV">Handshake 97</text>
+      </uiText>
+      <uiText key="HandshakeComment98">
+         <text xml:lang="en-DEV">Handshake 98</text>
+      </uiText>
+      <uiText key="HandshakeComment99">
+         <text xml:lang="en-DEV">Handshake 99</text>
+      </uiText>
+      <uiText key="HandshakeComment100">
+         <text xml:lang="en-DEV">Handshake 100</text>
+      </uiText>
+      <uiText key="HandshakeComment101">
+         <text xml:lang="en-DEV">Handshake 101</text>
+      </uiText>
+      <uiText key="HandshakeComment102">
+         <text xml:lang="en-DEV">Handshake 102</text>
+      </uiText>
+      <uiText key="HandshakeComment103">
+         <text xml:lang="en-DEV">Handshake 103</text>
+      </uiText>
+      <uiText key="HandshakeComment104">
+         <text xml:lang="en-DEV">Handshake 104</text>
+      </uiText>
+      <uiText key="HandshakeComment105">
+         <text xml:lang="en-DEV">Handshake 105</text>
+      </uiText>
+      <uiText key="HandshakeComment106">
+         <text xml:lang="en-DEV">Handshake 106</text>
+      </uiText>
+      <uiText key="HandshakeComment107">
+         <text xml:lang="en-DEV">Handshake 107</text>
+      </uiText>
+      <uiText key="HandshakeComment108">
+         <text xml:lang="en-DEV">Handshake 108</text>
+      </uiText>
+      <uiText key="HandshakeComment109">
+         <text xml:lang="en-DEV">Handshake 109</text>
+      </uiText>
+      <uiText key="HandshakeComment110">
+         <text xml:lang="en-DEV">Handshake 110</text>
+      </uiText>
+      <uiText key="HandshakeComment111">
+         <text xml:lang="en-DEV">Handshake 111</text>
+      </uiText>
+      <uiText key="HandshakeComment112">
+         <text xml:lang="en-DEV">Handshake 112</text>
+      </uiText>
+      <uiText key="HandshakeComment113">
+         <text xml:lang="en-DEV">Handshake 113</text>
+      </uiText>
+      <uiText key="HandshakeComment114">
+         <text xml:lang="en-DEV">Handshake 114</text>
+      </uiText>
+      <uiText key="HandshakeComment115">
+         <text xml:lang="en-DEV">Handshake 115</text>
+      </uiText>
+      <uiText key="HandshakeComment116">
+         <text xml:lang="en-DEV">Handshake 116</text>
+      </uiText>
+      <uiText key="HandshakeComment117">
+         <text xml:lang="en-DEV">Handshake 117</text>
+      </uiText>
+      <uiText key="HandshakeComment118">
+         <text xml:lang="en-DEV">Handshake 118</text>
+      </uiText>
+      <uiText key="HandshakeComment119">
+         <text xml:lang="en-DEV">Handshake 119</text>
+      </uiText>
+      <uiText key="HandshakeComment120">
+         <text xml:lang="en-DEV">Handshake 120</text>
+      </uiText>
+      <uiText key="HandshakeComment121">
+         <text xml:lang="en-DEV">Handshake 121</text>
+      </uiText>
+      <uiText key="HandshakeComment122">
+         <text xml:lang="en-DEV">Handshake 122</text>
+      </uiText>
+      <uiText key="HandshakeComment123">
+         <text xml:lang="en-DEV">Handshake 123</text>
+      </uiText>
+      <uiText key="HandshakeComment124">
+         <text xml:lang="en-DEV">Handshake 124</text>
+      </uiText>
+      <uiText key="HandshakeComment125">
+         <text xml:lang="en-DEV">Handshake 125</text>
+      </uiText>
+      <uiText key="HandshakeComment126">
+         <text xml:lang="en-DEV">Handshake 126</text>
+      </uiText>
+      <uiText key="HandshakeComment127">
+         <text xml:lang="en-DEV">Handshake 127</text>
+      </uiText>
+      <uiText key="HandshakeComment128">
+         <text xml:lang="en-DEV">Handshake 128</text>
+      </uiText>
+      <uiText key="HandshakeComment129">
+         <text xml:lang="en-DEV">Handshake 129</text>
+      </uiText>
+      <uiText key="HandshakeComment130">
+         <text xml:lang="en-DEV">Handshake 130</text>
+      </uiText>
+      <uiText key="HandshakeComment131">
+         <text xml:lang="en-DEV">Handshake 131</text>
+      </uiText>
+      <uiText key="HandshakeComment132">
+         <text xml:lang="en-DEV">Handshake 132</text>
+      </uiText>
+      <uiText key="HandshakeComment133">
+         <text xml:lang="en-DEV">Handshake 133</text>
+      </uiText>
+      <uiText key="HandshakeComment134">
+         <text xml:lang="en-DEV">Handshake 134</text>
+      </uiText>
+      <uiText key="HandshakeComment135">
+         <text xml:lang="en-DEV">Handshake 135</text>
+      </uiText>
+      <uiText key="HandshakeComment136">
+         <text xml:lang="en-DEV">Handshake 136</text>
+      </uiText>
+      <uiText key="HandshakeComment137">
+         <text xml:lang="en-DEV">Handshake 137</text>
+      </uiText>
+      <uiText key="HandshakeComment138">
+         <text xml:lang="en-DEV">Handshake 138</text>
+      </uiText>
+      <uiText key="HandshakeComment139">
+         <text xml:lang="en-DEV">Handshake 139</text>
+      </uiText>
+      <uiText key="HandshakeComment140">
+         <text xml:lang="en-DEV">Handshake 140</text>
+      </uiText>
+      <uiText key="HandshakeComment141">
+         <text xml:lang="en-DEV">Handshake 141</text>
+      </uiText>
+      <uiText key="HandshakeComment142">
+         <text xml:lang="en-DEV">Handshake 142</text>
+      </uiText>
+      <uiText key="HandshakeComment143">
+         <text xml:lang="en-DEV">Handshake 143</text>
+      </uiText>
+      <uiText key="HandshakeComment144">
+         <text xml:lang="en-DEV">Handshake 144</text>
+      </uiText>
+      <uiText key="HandshakeComment145">
+         <text xml:lang="en-DEV">Handshake 145</text>
+      </uiText>
+      <uiText key="HandshakeComment146">
+         <text xml:lang="en-DEV">Handshake 146</text>
+      </uiText>
+      <uiText key="HandshakeComment147">
+         <text xml:lang="en-DEV">Handshake 147</text>
+      </uiText>
+      <uiText key="HandshakeComment148">
+         <text xml:lang="en-DEV">Handshake 148</text>
+      </uiText>
+      <uiText key="HandshakeComment149">
+         <text xml:lang="en-DEV">Handshake 149</text>
+      </uiText>
+      <uiText key="HandshakeComment150">
+         <text xml:lang="en-DEV">Handshake 150</text>
+      </uiText>
+      <uiText key="HandshakeComment151">
+         <text xml:lang="en-DEV">Handshake 151</text>
+      </uiText>
+      <uiText key="HandshakeComment152">
+         <text xml:lang="en-DEV">Handshake 152</text>
+      </uiText>
+      <uiText key="HandshakeComment153">
+         <text xml:lang="en-DEV">Handshake 153</text>
+      </uiText>
+      <uiText key="HandshakeComment154">
+         <text xml:lang="en-DEV">Handshake 154</text>
+      </uiText>
+      <uiText key="HandshakeComment155">
+         <text xml:lang="en-DEV">Handshake 155</text>
+      </uiText>
+      <uiText key="HandshakeComment156">
+         <text xml:lang="en-DEV">Handshake 156</text>
+      </uiText>
+      <uiText key="HandshakeComment157">
+         <text xml:lang="en-DEV">Handshake 157</text>
+      </uiText>
+      <uiText key="HandshakeComment158">
+         <text xml:lang="en-DEV">Handshake 158</text>
+      </uiText>
+      <uiText key="HandshakeComment159">
+         <text xml:lang="en-DEV">Handshake 159</text>
+      </uiText>
+      <uiText key="HandshakeComment160">
+         <text xml:lang="en-DEV">Handshake 160</text>
+      </uiText>
+      <uiText key="HandshakeComment161">
+         <text xml:lang="en-DEV">Handshake 161</text>
+      </uiText>
+      <uiText key="HandshakeComment162">
+         <text xml:lang="en-DEV">Handshake 162</text>
+      </uiText>
+      <uiText key="HandshakeComment163">
+         <text xml:lang="en-DEV">Handshake 163</text>
+      </uiText>
+      <uiText key="HandshakeComment164">
+         <text xml:lang="en-DEV">Handshake 164</text>
+      </uiText>
+      <uiText key="HandshakeComment165">
+         <text xml:lang="en-DEV">Handshake 165</text>
+      </uiText>
+      <uiText key="HandshakeComment166">
+         <text xml:lang="en-DEV">Handshake 166</text>
+      </uiText>
+      <uiText key="HandshakeComment167">
+         <text xml:lang="en-DEV">Handshake 167</text>
+      </uiText>
+      <uiText key="HandshakeComment168">
+         <text xml:lang="en-DEV">Handshake 168</text>
+      </uiText>
+      <uiText key="HandshakeComment169">
+         <text xml:lang="en-DEV">Handshake 169</text>
+      </uiText>
+      <uiText key="HandshakeComment170">
+         <text xml:lang="en-DEV">Handshake 170</text>
+      </uiText>
+      <uiText key="HandshakeComment171">
+         <text xml:lang="en-DEV">Handshake 171</text>
+      </uiText>
+      <uiText key="HandshakeComment172">
+         <text xml:lang="en-DEV">Handshake 172</text>
+      </uiText>
+      <uiText key="HandshakeComment173">
+         <text xml:lang="en-DEV">Handshake 173</text>
+      </uiText>
+      <uiText key="HandshakeComment174">
+         <text xml:lang="en-DEV">Handshake 174</text>
+      </uiText>
+      <uiText key="HandshakeComment175">
+         <text xml:lang="en-DEV">Handshake 175</text>
+      </uiText>
+      <uiText key="HandshakeComment176">
+         <text xml:lang="en-DEV">Handshake 176</text>
+      </uiText>
+      <uiText key="HandshakeComment177">
+         <text xml:lang="en-DEV">Handshake 177</text>
+      </uiText>
+      <uiText key="HandshakeComment178">
+         <text xml:lang="en-DEV">Handshake 178</text>
+      </uiText>
+      <uiText key="HandshakeComment179">
+         <text xml:lang="en-DEV">Handshake 179</text>
+      </uiText>
+      <uiText key="HandshakeComment180">
+         <text xml:lang="en-DEV">Handshake 180</text>
+      </uiText>
+      <uiText key="HandshakeComment181">
+         <text xml:lang="en-DEV">Handshake 181</text>
+      </uiText>
+      <uiText key="HandshakeComment182">
+         <text xml:lang="en-DEV">Handshake 182</text>
+      </uiText>
+      <uiText key="HandshakeComment183">
+         <text xml:lang="en-DEV">Handshake 183</text>
+      </uiText>
+      <uiText key="HandshakeComment184">
+         <text xml:lang="en-DEV">Handshake 184</text>
+      </uiText>
+      <uiText key="HandshakeComment185">
+         <text xml:lang="en-DEV">Handshake 185</text>
+      </uiText>
+      <uiText key="HandshakeComment186">
+         <text xml:lang="en-DEV">Handshake 186</text>
+      </uiText>
+      <uiText key="HandshakeComment187">
+         <text xml:lang="en-DEV">Handshake 187</text>
+      </uiText>
+      <uiText key="HandshakeComment188">
+         <text xml:lang="en-DEV">Handshake 188</text>
+      </uiText>
+      <uiText key="HandshakeComment189">
+         <text xml:lang="en-DEV">Handshake 189</text>
+      </uiText>
+      <uiText key="HandshakeComment190">
+         <text xml:lang="en-DEV">Handshake 190</text>
+      </uiText>
+      <uiText key="HandshakeComment191">
+         <text xml:lang="en-DEV">Handshake 191</text>
+      </uiText>
+      <uiText key="HandshakeComment192">
+         <text xml:lang="en-DEV">Handshake 192</text>
+      </uiText>
+      <uiText key="HandshakeComment193">
+         <text xml:lang="en-DEV">Handshake 193</text>
+      </uiText>
+      <uiText key="HandshakeComment194">
+         <text xml:lang="en-DEV">Handshake 194</text>
+      </uiText>
+      <uiText key="HandshakeComment195">
+         <text xml:lang="en-DEV">Handshake 195</text>
+      </uiText>
+      <uiText key="HandshakeComment196">
+         <text xml:lang="en-DEV">Handshake 196</text>
+      </uiText>
+      <uiText key="HandshakeComment197">
+         <text xml:lang="en-DEV">Handshake 197</text>
+      </uiText>
+      <uiText key="HandshakeComment198">
+         <text xml:lang="en-DEV">Handshake 198</text>
+      </uiText>
+      <uiText key="HandshakeComment199">
+         <text xml:lang="en-DEV">Handshake 199</text>
+      </uiText>
+      <uiText key="HandshakeComment200">
+         <text xml:lang="en-DEV">Handshake 200</text>
+      </uiText>
+      <uiText key="HandshakeComment201">
+         <text xml:lang="en-DEV">Handshake 201</text>
+      </uiText>
+      <uiText key="HandshakeComment202">
+         <text xml:lang="en-DEV">Handshake 202</text>
+      </uiText>
+      <uiText key="HandshakeComment203">
+         <text xml:lang="en-DEV">Handshake 203</text>
+      </uiText>
+      <uiText key="HandshakeComment204">
+         <text xml:lang="en-DEV">Handshake 204</text>
+      </uiText>
+      <uiText key="HandshakeComment205">
+         <text xml:lang="en-DEV">Handshake 205</text>
+      </uiText>
+      <uiText key="HandshakeComment206">
+         <text xml:lang="en-DEV">Handshake 206</text>
+      </uiText>
+      <uiText key="HandshakeComment207">
+         <text xml:lang="en-DEV">Handshake 207</text>
+      </uiText>
+      <uiText key="HandshakeComment208">
+         <text xml:lang="en-DEV">Handshake 208</text>
+      </uiText>
+      <uiText key="HandshakeComment209">
+         <text xml:lang="en-DEV">Handshake 209</text>
+      </uiText>
+      <uiText key="HandshakeComment210">
+         <text xml:lang="en-DEV">Handshake 210</text>
+      </uiText>
+      <uiText key="HandshakeComment211">
+         <text xml:lang="en-DEV">Handshake 211</text>
+      </uiText>
+      <uiText key="HandshakeComment212">
+         <text xml:lang="en-DEV">Handshake 212</text>
+      </uiText>
+      <uiText key="HandshakeComment213">
+         <text xml:lang="en-DEV">Handshake 213</text>
+      </uiText>
+      <uiText key="HandshakeComment214">
+         <text xml:lang="en-DEV">Handshake 214</text>
+      </uiText>
+      <uiText key="HandshakeComment215">
+         <text xml:lang="en-DEV">Handshake 215</text>
+      </uiText>
+      <uiText key="HandshakeComment216">
+         <text xml:lang="en-DEV">Handshake 216</text>
+      </uiText>
+      <uiText key="HandshakeComment217">
+         <text xml:lang="en-DEV">Handshake 217</text>
+      </uiText>
+      <uiText key="HandshakeComment218">
+         <text xml:lang="en-DEV">Handshake 218</text>
+      </uiText>
+      <uiText key="HandshakeComment219">
+         <text xml:lang="en-DEV">Handshake 219</text>
+      </uiText>
+      <uiText key="HandshakeComment220">
+         <text xml:lang="en-DEV">Handshake 220</text>
+      </uiText>
+      <uiText key="HandshakeComment221">
+         <text xml:lang="en-DEV">Handshake 221</text>
+      </uiText>
+      <uiText key="HandshakeComment222">
+         <text xml:lang="en-DEV">Handshake 222</text>
+      </uiText>
+      <uiText key="HandshakeComment223">
+         <text xml:lang="en-DEV">Handshake 223</text>
+      </uiText>
+      <uiText key="HandshakeComment224">
+         <text xml:lang="en-DEV">Handshake 224</text>
+      </uiText>
+      <uiText key="HandshakeComment225">
+         <text xml:lang="en-DEV">Handshake 225</text>
+      </uiText>
+      <uiText key="HandshakeComment226">
+         <text xml:lang="en-DEV">Handshake 226</text>
+      </uiText>
+      <uiText key="HandshakeComment227">
+         <text xml:lang="en-DEV">Handshake 227</text>
+      </uiText>
+      <uiText key="HandshakeComment228">
+         <text xml:lang="en-DEV">Handshake 228</text>
+      </uiText>
+      <uiText key="HandshakeComment229">
+         <text xml:lang="en-DEV">Handshake 229</text>
+      </uiText>
+      <uiText key="HandshakeComment230">
+         <text xml:lang="en-DEV">Handshake 230</text>
+      </uiText>
+      <uiText key="HandshakeComment231">
+         <text xml:lang="en-DEV">Handshake 231</text>
+      </uiText>
+      <uiText key="HandshakeComment232">
+         <text xml:lang="en-DEV">Handshake 232</text>
+      </uiText>
+      <uiText key="HandshakeComment233">
+         <text xml:lang="en-DEV">Handshake 233</text>
+      </uiText>
+      <uiText key="HandshakeComment234">
+         <text xml:lang="en-DEV">Handshake 234</text>
+      </uiText>
+      <uiText key="HandshakeComment235">
+         <text xml:lang="en-DEV">Handshake 235</text>
+      </uiText>
+      <uiText key="HandshakeComment236">
+         <text xml:lang="en-DEV">Handshake 236</text>
+      </uiText>
+      <uiText key="HandshakeComment237">
+         <text xml:lang="en-DEV">Handshake 237</text>
+      </uiText>
+      <uiText key="HandshakeComment238">
+         <text xml:lang="en-DEV">Handshake 238</text>
+      </uiText>
+      <uiText key="HandshakeComment239">
+         <text xml:lang="en-DEV">Handshake 239</text>
+      </uiText>
+      <uiText key="HandshakeComment240">
+         <text xml:lang="en-DEV">Handshake 240</text>
+      </uiText>
+      <uiText key="HandshakeComment241">
+         <text xml:lang="en-DEV">Handshake 241</text>
+      </uiText>
+      <uiText key="HandshakeComment242">
+         <text xml:lang="en-DEV">Handshake 242</text>
+      </uiText>
+      <uiText key="HandshakeComment243">
+         <text xml:lang="en-DEV">Handshake 243</text>
+      </uiText>
+      <uiText key="HandshakeComment244">
+         <text xml:lang="en-DEV">Handshake 244</text>
+      </uiText>
+      <uiText key="HandshakeComment245">
+         <text xml:lang="en-DEV">Handshake 245</text>
+      </uiText>
+      <uiText key="HandshakeComment246">
+         <text xml:lang="en-DEV">Handshake 246</text>
+      </uiText>
+      <uiText key="HandshakeComment247">
+         <text xml:lang="en-DEV">Handshake 247</text>
+      </uiText>
+      <uiText key="HandshakeComment248">
+         <text xml:lang="en-DEV">Handshake 248</text>
+      </uiText>
+      <uiText key="HandshakeComment249">
+         <text xml:lang="en-DEV">Handshake 249</text>
+      </uiText>
+      <uiText key="HandshakeComment250">
+         <text xml:lang="en-DEV">Handshake 250</text>
+      </uiText>
+      <uiText key="HandshakeComment251">
+         <text xml:lang="en-DEV">Handshake 251</text>
+      </uiText>
+      <uiText key="HandshakeComment252">
+         <text xml:lang="en-DEV">Handshake 252</text>
+      </uiText>
+      <uiText key="HandshakeComment253">
+         <text xml:lang="en-DEV">Handshake 253</text>
+      </uiText>
+      <uiText key="HandshakeComment254">
+         <text xml:lang="en-DEV">Handshake 254</text>
+      </uiText>
+      <uiText key="HandshakeComment255">
+         <text xml:lang="en-DEV">Handshake 255</text>
+      </uiText>
+      <uiText key="BinaryInComment1_12">
+         <text xml:lang="en-DEV">Group Input Comments 1 - 12</text>
+      </uiText>
+      <uiText key="BinaryInComment13_24">
+         <text xml:lang="en-DEV">Group Input Comments 13 - 24</text>
+      </uiText>
+      <uiText key="BinaryInComment25_36">
+         <text xml:lang="en-DEV">Group Input Comments 25 - 36</text>
+      </uiText>
+      <uiText key="BinaryInComment37_48">
+         <text xml:lang="en-DEV">Group Input Comments 37 - 48</text>
+      </uiText>
+      <uiText key="BinaryInComment49_60">
+         <text xml:lang="en-DEV">Group Input Comments 49 - 60</text>
+      </uiText>
+      <uiText key="BinaryInComment61_64">
+         <text xml:lang="en-DEV">Group Input Comments 61 - 64</text>
+      </uiText>
+      <uiText key="BinaryInCommentHelp">
+         <text xml:lang="en-DEV">Comment designation for the specified group input nr.</text>
+      </uiText>
+      <uiText key="BinaryInComment1">
+         <text xml:lang="en-DEV">Group Input 1</text>
+      </uiText>
+      <uiText key="BinaryInComment2">
+         <text xml:lang="en-DEV">Group Input 2</text>
+      </uiText>
+      <uiText key="BinaryInComment3">
+         <text xml:lang="en-DEV">Group Input 3</text>
+      </uiText>
+      <uiText key="BinaryInComment4">
+         <text xml:lang="en-DEV">Group Input 4</text>
+      </uiText>
+      <uiText key="BinaryInComment5">
+         <text xml:lang="en-DEV">Group Input 5</text>
+      </uiText>
+      <uiText key="BinaryInComment6">
+         <text xml:lang="en-DEV">Group Input 6</text>
+      </uiText>
+      <uiText key="BinaryInComment7">
+         <text xml:lang="en-DEV">Group Input 7</text>
+      </uiText>
+      <uiText key="BinaryInComment8">
+         <text xml:lang="en-DEV">Group Input 8</text>
+      </uiText>
+      <uiText key="BinaryInComment9">
+         <text xml:lang="en-DEV">Group Input 9</text>
+      </uiText>
+      <uiText key="BinaryInComment10">
+         <text xml:lang="en-DEV">Group Input 10</text>
+      </uiText>
+      <uiText key="BinaryInComment11">
+         <text xml:lang="en-DEV">Group Input 11</text>
+      </uiText>
+      <uiText key="BinaryInComment12">
+         <text xml:lang="en-DEV">Group Input 12</text>
+      </uiText>
+      <uiText key="BinaryInComment13">
+         <text xml:lang="en-DEV">Group Input 13</text>
+      </uiText>
+      <uiText key="BinaryInComment14">
+         <text xml:lang="en-DEV">Group Input 14</text>
+      </uiText>
+      <uiText key="BinaryInComment15">
+         <text xml:lang="en-DEV">Group Input 15</text>
+      </uiText>
+      <uiText key="BinaryInComment16">
+         <text xml:lang="en-DEV">Group Input 16</text>
+      </uiText>
+      <uiText key="BinaryInComment17">
+         <text xml:lang="en-DEV">Group Input 17</text>
+      </uiText>
+      <uiText key="BinaryInComment18">
+         <text xml:lang="en-DEV">Group Input 18</text>
+      </uiText>
+      <uiText key="BinaryInComment19">
+         <text xml:lang="en-DEV">Group Input 19</text>
+      </uiText>
+      <uiText key="BinaryInComment20">
+         <text xml:lang="en-DEV">Group Input 20</text>
+      </uiText>
+      <uiText key="BinaryInComment21">
+         <text xml:lang="en-DEV">Group Input 21</text>
+      </uiText>
+      <uiText key="BinaryInComment22">
+         <text xml:lang="en-DEV">Group Input 22</text>
+      </uiText>
+      <uiText key="BinaryInComment23">
+         <text xml:lang="en-DEV">Group Input 23</text>
+      </uiText>
+      <uiText key="BinaryInComment24">
+         <text xml:lang="en-DEV">Group Input 24</text>
+      </uiText>
+      <uiText key="BinaryInComment25">
+         <text xml:lang="en-DEV">Group Input 25</text>
+      </uiText>
+      <uiText key="BinaryInComment26">
+         <text xml:lang="en-DEV">Group Input 26</text>
+      </uiText>
+      <uiText key="BinaryInComment27">
+         <text xml:lang="en-DEV">Group Input 27</text>
+      </uiText>
+      <uiText key="BinaryInComment28">
+         <text xml:lang="en-DEV">Group Input 28</text>
+      </uiText>
+      <uiText key="BinaryInComment29">
+         <text xml:lang="en-DEV">Group Input 29</text>
+      </uiText>
+      <uiText key="BinaryInComment30">
+         <text xml:lang="en-DEV">Group Input 30</text>
+      </uiText>
+      <uiText key="BinaryInComment31">
+         <text xml:lang="en-DEV">Group Input 31</text>
+      </uiText>
+      <uiText key="BinaryInComment32">
+         <text xml:lang="en-DEV">Group Input 32</text>
+      </uiText>
+      <uiText key="BinaryInComment33">
+         <text xml:lang="en-DEV">Group Input 33</text>
+      </uiText>
+      <uiText key="BinaryInComment34">
+         <text xml:lang="en-DEV">Group Input 34</text>
+      </uiText>
+      <uiText key="BinaryInComment35">
+         <text xml:lang="en-DEV">Group Input 35</text>
+      </uiText>
+      <uiText key="BinaryInComment36">
+         <text xml:lang="en-DEV">Group Input 36</text>
+      </uiText>
+      <uiText key="BinaryInComment37">
+         <text xml:lang="en-DEV">Group Input 37</text>
+      </uiText>
+      <uiText key="BinaryInComment38">
+         <text xml:lang="en-DEV">Group Input 38</text>
+      </uiText>
+      <uiText key="BinaryInComment39">
+         <text xml:lang="en-DEV">Group Input 39</text>
+      </uiText>
+      <uiText key="BinaryInComment40">
+         <text xml:lang="en-DEV">Group Input 40</text>
+      </uiText>
+      <uiText key="BinaryInComment41">
+         <text xml:lang="en-DEV">Group Input 41</text>
+      </uiText>
+      <uiText key="BinaryInComment42">
+         <text xml:lang="en-DEV">Group Input 42</text>
+      </uiText>
+      <uiText key="BinaryInComment43">
+         <text xml:lang="en-DEV">Group Input 43</text>
+      </uiText>
+      <uiText key="BinaryInComment44">
+         <text xml:lang="en-DEV">Group Input 44</text>
+      </uiText>
+      <uiText key="BinaryInComment45">
+         <text xml:lang="en-DEV">Group Input 45</text>
+      </uiText>
+      <uiText key="BinaryInComment46">
+         <text xml:lang="en-DEV">Group Input 46</text>
+      </uiText>
+      <uiText key="BinaryInComment47">
+         <text xml:lang="en-DEV">Group Input 47</text>
+      </uiText>
+      <uiText key="BinaryInComment48">
+         <text xml:lang="en-DEV">Group Input 48</text>
+      </uiText>
+      <uiText key="BinaryInComment49">
+         <text xml:lang="en-DEV">Group Input 49</text>
+      </uiText>
+      <uiText key="BinaryInComment50">
+         <text xml:lang="en-DEV">Group Input 50</text>
+      </uiText>
+      <uiText key="BinaryInComment51">
+         <text xml:lang="en-DEV">Group Input 51</text>
+      </uiText>
+      <uiText key="BinaryInComment52">
+         <text xml:lang="en-DEV">Group Input 52</text>
+      </uiText>
+      <uiText key="BinaryInComment53">
+         <text xml:lang="en-DEV">Group Input 53</text>
+      </uiText>
+      <uiText key="BinaryInComment54">
+         <text xml:lang="en-DEV">Group Input 54</text>
+      </uiText>
+      <uiText key="BinaryInComment55">
+         <text xml:lang="en-DEV">Group Input 55</text>
+      </uiText>
+      <uiText key="BinaryInComment56">
+         <text xml:lang="en-DEV">Group Input 56</text>
+      </uiText>
+      <uiText key="BinaryInComment57">
+         <text xml:lang="en-DEV">Group Input 57</text>
+      </uiText>
+      <uiText key="BinaryInComment58">
+         <text xml:lang="en-DEV">Group Input 58</text>
+      </uiText>
+      <uiText key="BinaryInComment59">
+         <text xml:lang="en-DEV">Group Input 59</text>
+      </uiText>
+      <uiText key="BinaryInComment60">
+         <text xml:lang="en-DEV">Group Input 60</text>
+      </uiText>
+      <uiText key="BinaryInComment61">
+         <text xml:lang="en-DEV">Group Input 61</text>
+      </uiText>
+      <uiText key="BinaryInComment62">
+         <text xml:lang="en-DEV">Group Input 62</text>
+      </uiText>
+      <uiText key="BinaryInComment63">
+         <text xml:lang="en-DEV">Group Input 63</text>
+      </uiText>
+      <uiText key="BinaryInComment64">
+         <text xml:lang="en-DEV">Group Input 64</text>
+      </uiText>
+      <uiText key="BinaryOutComment1_12">
+         <text xml:lang="en-DEV">Group Output Comments 1 - 12</text>
+      </uiText>
+      <uiText key="BinaryOutComment13_24">
+         <text xml:lang="en-DEV">Group Output Comments 13 - 24</text>
+      </uiText>
+      <uiText key="BinaryOutComment25_36">
+         <text xml:lang="en-DEV">Group Output Comments 25 - 36</text>
+      </uiText>
+      <uiText key="BinaryOutComment37_48">
+         <text xml:lang="en-DEV">Group Output Comments 37 - 48</text>
+      </uiText>
+      <uiText key="BinaryOutComment49_60">
+         <text xml:lang="en-DEV">Group Output Comments 49 - 60</text>
+      </uiText>
+      <uiText key="BinaryOutComment61_64">
+         <text xml:lang="en-DEV">Group Output Comments 61 - 64</text>
+      </uiText>
+      <uiText key="BinaryOutCommentHelp">
+         <text xml:lang="en-DEV">Comment designation for the specified group output nr.</text>
+      </uiText>
+      <uiText key="BinaryOutComment1">
+         <text xml:lang="en-DEV">Group Output 1</text>
+      </uiText>
+      <uiText key="BinaryOutComment2">
+         <text xml:lang="en-DEV">Group Output 2</text>
+      </uiText>
+      <uiText key="BinaryOutComment3">
+         <text xml:lang="en-DEV">Group Output 3</text>
+      </uiText>
+      <uiText key="BinaryOutComment4">
+         <text xml:lang="en-DEV">Group Output 4</text>
+      </uiText>
+      <uiText key="BinaryOutComment5">
+         <text xml:lang="en-DEV">Group Output 5</text>
+      </uiText>
+      <uiText key="BinaryOutComment6">
+         <text xml:lang="en-DEV">Group Output 6</text>
+      </uiText>
+      <uiText key="BinaryOutComment7">
+         <text xml:lang="en-DEV">Group Output 7</text>
+      </uiText>
+      <uiText key="BinaryOutComment8">
+         <text xml:lang="en-DEV">Group Output 8</text>
+      </uiText>
+      <uiText key="BinaryOutComment9">
+         <text xml:lang="en-DEV">Group Output 9</text>
+      </uiText>
+      <uiText key="BinaryOutComment10">
+         <text xml:lang="en-DEV">Group Output 10</text>
+      </uiText>
+      <uiText key="BinaryOutComment11">
+         <text xml:lang="en-DEV">Group Output 11</text>
+      </uiText>
+      <uiText key="BinaryOutComment12">
+         <text xml:lang="en-DEV">Group Output 12</text>
+      </uiText>
+      <uiText key="BinaryOutComment13">
+         <text xml:lang="en-DEV">Group Output 13</text>
+      </uiText>
+      <uiText key="BinaryOutComment14">
+         <text xml:lang="en-DEV">Group Output 14</text>
+      </uiText>
+      <uiText key="BinaryOutComment15">
+         <text xml:lang="en-DEV">Group Output 15</text>
+      </uiText>
+      <uiText key="BinaryOutComment16">
+         <text xml:lang="en-DEV">Group Output 16</text>
+      </uiText>
+      <uiText key="BinaryOutComment17">
+         <text xml:lang="en-DEV">Group Output 17</text>
+      </uiText>
+      <uiText key="BinaryOutComment18">
+         <text xml:lang="en-DEV">Group Output 18</text>
+      </uiText>
+      <uiText key="BinaryOutComment19">
+         <text xml:lang="en-DEV">Group Output 19</text>
+      </uiText>
+      <uiText key="BinaryOutComment20">
+         <text xml:lang="en-DEV">Group Output 20</text>
+      </uiText>
+      <uiText key="BinaryOutComment21">
+         <text xml:lang="en-DEV">Group Output 21</text>
+      </uiText>
+      <uiText key="BinaryOutComment22">
+         <text xml:lang="en-DEV">Group Output 22</text>
+      </uiText>
+      <uiText key="BinaryOutComment23">
+         <text xml:lang="en-DEV">Group Output 23</text>
+      </uiText>
+      <uiText key="BinaryOutComment24">
+         <text xml:lang="en-DEV">Group Output 24</text>
+      </uiText>
+      <uiText key="BinaryOutComment25">
+         <text xml:lang="en-DEV">Group Output 25</text>
+      </uiText>
+      <uiText key="BinaryOutComment26">
+         <text xml:lang="en-DEV">Group Output 26</text>
+      </uiText>
+      <uiText key="BinaryOutComment27">
+         <text xml:lang="en-DEV">Group Output 27</text>
+      </uiText>
+      <uiText key="BinaryOutComment28">
+         <text xml:lang="en-DEV">Group Output 28</text>
+      </uiText>
+      <uiText key="BinaryOutComment29">
+         <text xml:lang="en-DEV">Group Output 29</text>
+      </uiText>
+      <uiText key="BinaryOutComment30">
+         <text xml:lang="en-DEV">Group Output 30</text>
+      </uiText>
+      <uiText key="BinaryOutComment31">
+         <text xml:lang="en-DEV">Group Output 31</text>
+      </uiText>
+      <uiText key="BinaryOutComment32">
+         <text xml:lang="en-DEV">Group Output 32</text>
+      </uiText>
+      <uiText key="BinaryOutComment33">
+         <text xml:lang="en-DEV">Group Output 33</text>
+      </uiText>
+      <uiText key="BinaryOutComment34">
+         <text xml:lang="en-DEV">Group Output 34</text>
+      </uiText>
+      <uiText key="BinaryOutComment35">
+         <text xml:lang="en-DEV">Group Output 35</text>
+      </uiText>
+      <uiText key="BinaryOutComment36">
+         <text xml:lang="en-DEV">Group Output 36</text>
+      </uiText>
+      <uiText key="BinaryOutComment37">
+         <text xml:lang="en-DEV">Group Output 37</text>
+      </uiText>
+      <uiText key="BinaryOutComment38">
+         <text xml:lang="en-DEV">Group Output 38</text>
+      </uiText>
+      <uiText key="BinaryOutComment39">
+         <text xml:lang="en-DEV">Group Output 39</text>
+      </uiText>
+      <uiText key="BinaryOutComment40">
+         <text xml:lang="en-DEV">Group Output 40</text>
+      </uiText>
+      <uiText key="BinaryOutComment41">
+         <text xml:lang="en-DEV">Group Output 41</text>
+      </uiText>
+      <uiText key="BinaryOutComment42">
+         <text xml:lang="en-DEV">Group Output 42</text>
+      </uiText>
+      <uiText key="BinaryOutComment43">
+         <text xml:lang="en-DEV">Group Output 43</text>
+      </uiText>
+      <uiText key="BinaryOutComment44">
+         <text xml:lang="en-DEV">Group Output 44</text>
+      </uiText>
+      <uiText key="BinaryOutComment45">
+         <text xml:lang="en-DEV">Group Output 45</text>
+      </uiText>
+      <uiText key="BinaryOutComment46">
+         <text xml:lang="en-DEV">Group Output 46</text>
+      </uiText>
+      <uiText key="BinaryOutComment47">
+         <text xml:lang="en-DEV">Group Output 47</text>
+      </uiText>
+      <uiText key="BinaryOutComment48">
+         <text xml:lang="en-DEV">Group Output 48</text>
+      </uiText>
+      <uiText key="BinaryOutComment49">
+         <text xml:lang="en-DEV">Group Output 49</text>
+      </uiText>
+      <uiText key="BinaryOutComment50">
+         <text xml:lang="en-DEV">Group Output 50</text>
+      </uiText>
+      <uiText key="BinaryOutComment51">
+         <text xml:lang="en-DEV">Group Output 51</text>
+      </uiText>
+      <uiText key="BinaryOutComment52">
+         <text xml:lang="en-DEV">Group Output 52</text>
+      </uiText>
+      <uiText key="BinaryOutComment53">
+         <text xml:lang="en-DEV">Group Output 53</text>
+      </uiText>
+      <uiText key="BinaryOutComment54">
+         <text xml:lang="en-DEV">Group Output 54</text>
+      </uiText>
+      <uiText key="BinaryOutComment55">
+         <text xml:lang="en-DEV">Group Output 55</text>
+      </uiText>
+      <uiText key="BinaryOutComment56">
+         <text xml:lang="en-DEV">Group Output 56</text>
+      </uiText>
+      <uiText key="BinaryOutComment57">
+         <text xml:lang="en-DEV">Group Output 57</text>
+      </uiText>
+      <uiText key="BinaryOutComment58">
+         <text xml:lang="en-DEV">Group Output 58</text>
+      </uiText>
+      <uiText key="BinaryOutComment59">
+         <text xml:lang="en-DEV">Group Output 59</text>
+      </uiText>
+      <uiText key="BinaryOutComment60">
+         <text xml:lang="en-DEV">Group Output 60</text>
+      </uiText>
+      <uiText key="BinaryOutComment61">
+         <text xml:lang="en-DEV">Group Output 61</text>
+      </uiText>
+      <uiText key="BinaryOutComment62">
+         <text xml:lang="en-DEV">Group Output 62</text>
+      </uiText>
+      <uiText key="BinaryOutComment63">
+         <text xml:lang="en-DEV">Group Output 63</text>
+      </uiText>
+      <uiText key="BinaryOutComment64">
+         <text xml:lang="en-DEV">Group Output 64</text>
+      </uiText>
+   </module>
+</resources>

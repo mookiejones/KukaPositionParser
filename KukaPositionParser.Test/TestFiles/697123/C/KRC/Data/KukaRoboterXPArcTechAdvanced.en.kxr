@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="en" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="KukaRoboterXPArcTechAdvanced">
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnTheFly">
+      <text>On-the-fly activation or deactivation</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisablesSlope">
+      <text>Behavior for online optimization</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoWeldingMasterFound">
+      <text>No welding master found!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeActive">
+      <text>Slope active</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeDisabled">
+      <text>Slope disabled</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptionIdentifier">
+      <text>ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAoXUSeamNumber">
+      <text>Seam number output to PLC</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorStart">
+      <text>Generating code for ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayRight">
+      <text>Weave delay, right</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransferDisabledForArcLinkXXT">
+      <text>Robot velocity transfer is disabled for ArcLinkXT power sources.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisabled">
+      <text>OnlineOpt. disabled</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessTrans">
+      <text>Transfer process velocity</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldClearance">
+      <text>Weld enable by PLC</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessFactor">
+      <text>Factor for the process velocity</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingTest">
+      <text>Test</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityUnit">
+      <text>Velocity unit for power source</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlope">
+      <text>Slope</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptions">
+      <text>ArcTech Advanced options</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSignalAreaForPowerSource">
+      <text>Signal range for the robot</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAiXUSeamNumber">
+      <text>Seam number input from PLC</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingMaster">
+      <text>Welding master</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMUnitAreaForPowerSource">
+      <text>Value range for power source</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorFinished">
+      <text>Code generation completed for ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMMissingWeldMaster">
+      <text>No welding master found</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedSlopeOptions">
+      <text>ArcTechAdvanced slope settings</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoErrorUntilSeamEndActive">
+      <text>Do not execute error strategy until end of seam</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayLeft">
+      <text>Weave delay, left</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelay">
+      <text>Weave delay</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransfer">
+      <text>Robot velocity transfer</text>
+    </uiText>
+  </module>
+</resources>

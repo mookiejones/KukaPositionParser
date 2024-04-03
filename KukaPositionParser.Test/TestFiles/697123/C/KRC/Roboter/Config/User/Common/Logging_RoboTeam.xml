@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogManager xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/LoggingSpecial.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Version Label="">
+		<Info Version="KUKA V8.2"/>
+		<Schema Version="100"/>
+	</Version>
+   <LoggingOptions isActive="false"/>
+   <LogFile Name="RoboTeam" Path="Log/RoboTeam" NbrFiles="3" FileSize="1000000" FileFormat="putty" BufferLogs="false"></LogFile>
+   <LogRegistry>
+      <LoggingStrategy Strategy="PureClass"/>
+      <ContextConfig>
+         <DefaultContextConfig ContextLogging="enabled"/>
+         <Context Name="tSystem" ContextLogging="disabled"/>
+         <Context Name="tSysBoot" ContextLogging="disabled"/>
+      </ContextConfig>
+      <ClassConfig>
+         <DefaultClassConfig LogLevel="disabled"/>
+         <Class Name="KRC.TEAM.REPORT"       LogLevel="debug"/>
+         <Class Name="KRC.TEAM.MC"           LogLevel="debug"/>
+         <Class Name="KRC.TEAM.MC.RX"        LogLevel="debug"/>
+         <Class Name="KRC.TEAM.MC.TX"        LogLevel="debug"/>
+         <Class Name="KRC.TEAM.SOCKET"       LogLevel="debug"/>
+         <Class Name="KRC.TEAM.SYNCCMD"      LogLevel="info"/>
+         <Class Name="KRC.TEAM.REMOTECMD"    LogLevel="info"/>
+         <Class Name="KRC.TEAM.PMS"          LogLevel="info"/>
+         <Class Name="KRC.TEAM.PING"         LogLevel="info"/>
+         <Class Name="KRC.TEAM.SPREADACTION" LogLevel="info"/>
+         <Class Name="KRC.TEAM.MUTEX"        LogLevel="info"/>
+         <Class Name="KRC.TEAM.MUTEX.KRL"    LogLevel="info"/>
+         <Class Name="KRC.TEAM.MUTEX.RX"     LogLevel="info"/>
+         <Class Name="KRC.TEAM.MUTEX.TX"     LogLevel="info"/>
+         <Class Name="KRC.TEAM.MUTEX.IF"     LogLevel="info"/>
+         <Class Name="KRC.MDR.EB"            LogLevel="debug"/>
+         <Class Name="KRC_DATA_SERVICE"      LogLevel="debug"/>
+         <Class Name="TEAM_DATA_CLIENT"      LogLevel="debug"/>
+      </ClassConfig>
+   </LogRegistry>
+</LogManager>

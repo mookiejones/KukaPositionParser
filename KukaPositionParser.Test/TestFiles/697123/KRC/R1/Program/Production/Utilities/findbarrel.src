@@ -1,0 +1,41 @@
+&ACCESS RVP
+&REL 1
+&PARAM DISKPATH = KRC:\R1\Program\Production\Utilities
+DEFFCT BOOL FINDBARREL( )
+   ;TRIES TO FIND THE BARREL FOR A MINIMUM OF 3 TRIES AND A MAX OF 10.
+   
+   COUNTER = 0
+   
+   WHILE ((ABS(ACTUALHEIGHTOFFSET) > 0.2) OR (NOT BARRELDISTANCEOK) OR (COUNTER < MINCOUNT))
+      COUNTER = COUNTER + 1
+      IF COUNTER >= MAXCOUNT THEN
+         RETURN FALSE
+      ENDIF
+      WAIT SEC 4.0;
+      IF (BARRELDISTANCEOK == FALSE) AND (HEIGHTINDISTANCE == FALSE)  THEN
+         
+         Bas(#TOOL,1) 
+         Bas(#BASE,1)
+         Bas(#VEL_CP,.01)
+         BAS(#Acc_CP, 25)
+         
+         SLIN_REL {Z 3} #TOOL
+
+         
+      ELSE
+         
+         Bas(#TOOL,1) 
+         Bas(#BASE,1)
+         Bas(#VEL_CP,.01)
+         BAS(#Acc_CP, 25)
+
+         BARRELPOSAUX.z = SC_DISTANCE_OFFSET
+         
+         SLIN_REL BARRELPOSAUX #Tool
+         
+      ENDIF
+      
+   ENDWHILE
+   
+   RETURN TRUE
+ENDFCT

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="HardwareService">
+    <message key="HWOk" type="LogOnly" number="1">
+      <text xml:lang="de-DEV">KUKA Hardware ok</text>
+      <text xml:lang="en-DEV">KUKA Hardware ok</text>
+    </message>
+    <message key="HWChanged" type="Info" number="2">
+      <text xml:lang="de-DEV">KUKA Hardware wurde geändert, Neustart erforderlich</text>
+      <text xml:lang="en-DEV">KUKA Hardware has changed, reboot needed</text>
+    </message>
+    <message key="HWNotokCorrectionPossible" type="Info" number="3">
+      <text xml:lang="de-DEV">KUKA Hardware fehlerhaft, Korrektur möglich, Neustart erforderlich</text>
+      <text xml:lang="en-DEV">KUKA Hardware not ok, correction possible, reboot needed</text>
+    </message>
+    <message key="HWNotokCorrectionImpossible" type="LogOnly" number="4">
+      <text xml:lang="de-DEV">KUKA Hardware fehlerhaft, keine Korrektur möglich</text>
+      <text xml:lang="en-DEV">KUKA Hardware not ok, correction impossible</text>
+    </message>
+  </module>
+</resources>

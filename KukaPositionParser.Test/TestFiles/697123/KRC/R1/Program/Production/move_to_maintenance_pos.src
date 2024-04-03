@@ -1,0 +1,40 @@
+&ACCESS RVO1
+&REL 19
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF move_to_maintenance_pos( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   IF NOT $IN_HOME3 THEN
+      move_to_perch_pos()
+   ENDIF
+   
+;FOLD PTP home3 Vel=15 % PDAT2;%{PE}%R 8.3.38,%MKUKATPBASIS,%CMOVE,%VPTP,%P 1:PTP, 2:home3, 3:, 5:15, 7:PDAT2
+$BWDSTART=FALSE
+PDAT_ACT=PPDAT2
+FDAT_ACT=Fhome3
+BAS(#PTP_PARAMS,15)
+PTP Xhome3 
+;ENDFOLD
+   
+   ;FOLD HandShake[5 : At Maintenance Position], WAIT on Response
+;FOLD ;%{h}
+;Params IlfProvider=model3_handshakectrl; Core_CmdTechHandShake=HandShake; Core_CmdHandShake=5; Core_Wait=True
+;ENDFOLD
+HandShake_Set (5,false)
+HandShake_Check (5,false)
+;ENDFOLD
+
+   move_to_perch_pos()
+   
+END

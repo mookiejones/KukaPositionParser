@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EncoderMastering xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/EncoderMastering.xsd">
+   <Version Label="">
+      <Info Version="KUKA V8.3"/>
+      <Schema Version="2"/>
+   </Version>
+   <EncoderMasteringEntries>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="0" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="1" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="2" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="3" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="4" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="5" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="6" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="7" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="8" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="9" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="10" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="11" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="12" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="13" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="14" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="15" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="16" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="17" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="18" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="19" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="20" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="21" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="22" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="23" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="24" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="25" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="26" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="27" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="28" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="29" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="30" Mastered="1" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="31" Mastered="1" Pos="0"/>
+   </EncoderMasteringEntries>
+</EncoderMastering>

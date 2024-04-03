@@ -1,0 +1,8 @@
+&ACCESS RVO
+DEFDAT BrakeTestSelfTest PUBLIC
+
+INT simulateBrakeVel    = 100
+INT simulateBrakeTorque = 50
+INT simulateBrakeIndex  = 2
+
+ENDDAT

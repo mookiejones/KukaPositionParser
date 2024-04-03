@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="en" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="SafetyDiagnostics">
+    <uiText key="ChannelA">
+      <text>A</text>
+    </uiText>
+    <uiText key="ChannelB">
+      <text>B</text>
+    </uiText>
+    <uiText key="CIB">
+      <text>CIB</text>
+    </uiText>
+    <uiText key="Common">
+      <text>General</text>
+    </uiText>
+    <uiText key="CrossComparisonFailed">
+      <text>Cross comparison error</text>
+    </uiText>
+    <uiText key="DebounceError">
+      <text>Debounce error</text>
+    </uiText>
+    <uiText key="DeviceInfo">
+      <text>Device information</text>
+    </uiText>
+    <uiText key="DualChannelError">
+      <text>Dual-channel error</text>
+    </uiText>
+    <uiText key="Error">
+      <text>Error</text>
+    </uiText>
+    <uiText key="InputInitError">
+      <text>Error during initialization of inputs.</text>
+    </uiText>
+    <uiText key="Inputs">
+      <text>Inputs</text>
+    </uiText>
+    <uiText key="InterfaceA">
+      <text>Conn. A</text>
+    </uiText>
+    <uiText key="InterfaceB">
+      <text>Conn. B</text>
+    </uiText>
+    <uiText key="InternalError">
+      <text>Internal error</text>
+    </uiText>
+    <uiText key="InternalInitializeError">
+      <text>Initialization error.</text>
+    </uiText>
+    <uiText key="LblAddress">
+      <text>Safety address:</text>
+    </uiText>
+    <uiText key="LblDevice">
+      <text>Device:</text>
+    </uiText>
+    <uiText key="LblError">
+      <text>Error:</text>
+    </uiText>
+    <uiText key="LblHardware">
+      <text>Hardware version:</text>
+    </uiText>
+    <uiText key="LblSerialNumber">
+      <text>Serial number:</text>
+    </uiText>
+    <uiText key="LblSoftware">
+      <text>Software version:</text>
+    </uiText>
+    <uiText key="LblTemperature">
+      <text>Temperature:</text>
+    </uiText>
+    <uiText key="Name">
+      <text>Name</text>
+    </uiText>
+    <uiText key="NoConfiguration">
+      <text>Configuration missing or incomplete.</text>
+    </uiText>
+    <uiText key="NoDeviceAccessible">
+      <text>Error when reading data from devices.</text>
+    </uiText>
+    <uiText key="NoDeviceAvailable">
+      <text>No device could be determined.</text>
+    </uiText>
+    <uiText key="NoInputsDefined">
+      <text>No inputs defined in the configuration.</text>
+    </uiText>
+    <uiText key="NoName">
+      <text>Error: no name</text>
+    </uiText>
+    <uiText key="NoOutputsDefined">
+      <text>No outputs defined in the configuration.</text>
+    </uiText>
+    <uiText key="NoSignalsDefined">
+      <text>No signals defined in the configuration.</text>
+    </uiText>
+    <uiText key="Number">
+      <text>No.</text>
+    </uiText>
+    <uiText key="OutputInitError">
+      <text>Error during initialization of outputs.</text>
+    </uiText>
+    <uiText key="Outputs">
+      <text>Outputs</text>
+    </uiText>
+    <uiText key="ParameterReadError">
+      <text>Error when reading the device parameters.</text>
+    </uiText>
+    <uiText key="Profisafe">
+      <text>PROFIsafe</text>
+    </uiText>
+    <uiText key="ReadError">
+      <text>Read error.</text>
+    </uiText>
+    <uiText key="RestartRefresh">
+      <text>Restart refresh</text>
+    </uiText>
+    <uiText key="RefreshStopped">
+      <text>Refreshing of device I/Os was terminated</text>
+    </uiText>
+    <uiText key="SafetyDiagnosticsMenu">
+      <text>Safety interfaces</text>
+    </uiText>
+    <uiText key="SafetyDiagnosticsViewTitle">
+      <text>DiagnoseSafety: safety interfaces</text>
+    </uiText>
+    <uiText key="ShutdownError">
+      <text>Shutdown error</text>
+    </uiText>
+    <uiText key="SIB">
+      <text>SIB</text>
+    </uiText>
+    <uiText key="SignalAUTO">
+      <text>Operating mode Automatic or External (AUT)</text>
+    </uiText>
+    <uiText key="SignalNHS">
+      <text>Reserved</text>
+    </uiText>
+    <uiText key="SignalTEST">
+      <text>Operating mode T1 (T1)</text>
+    </uiText>
+    <uiText key="SionError_000">
+      <text>Local reset or confirmation of a RESET command</text>
+    </uiText>
+    <uiText key="SionError_001">
+      <text>Unexpected command</text>
+    </uiText>
+    <uiText key="SionError_002">
+      <text>Unknown command</text>
+    </uiText>
+    <uiText key="SionError_003">
+      <text>Invalid connection ID</text>
+    </uiText>
+    <uiText key="SionError_004">
+      <text>CRC error</text>
+    </uiText>
+    <uiText key="SionError_005">
+      <text>Watchdog has expired</text>
+    </uiText>
+    <uiText key="SionError_006">
+      <text>Invalid FSoE slave address</text>
+    </uiText>
+    <uiText key="SionError_007">
+      <text>Invalid safety data</text>
+    </uiText>
+    <uiText key="SionError_008">
+      <text>Invalid communication parameter length</text>
+    </uiText>
+    <uiText key="SionError_009">
+      <text>Invalid communication parameter data</text>
+    </uiText>
+    <uiText key="SionError_010">
+      <text>Invalid application parameter length</text>
+    </uiText>
+    <uiText key="SionError_011">
+      <text>Invalid application parameter data</text>
+    </uiText>
+    <uiText key="StateColName">
+      <text>State</text>
+    </uiText>
+    <uiText key="StaticError">
+      <text>Static error</text>
+    </uiText>
+    <uiText key="TruncationError">
+      <text>Truncation error</text>
+    </uiText>
+    <uiText key="Unknown">
+      <text>Unknown</text>
+    </uiText>
+    <uiText key="Value">
+      <text>Value</text>
+    </uiText>
+    <uiText key="RefreshStopPleaseClose">
+      <text>Refreshing of the data was terminated. Please close the display.</text>
+    </uiText>
+    <uiText key="NoKcpPleaseClose">
+      <text>In order for a KCP to connect with this controller, the user interface must be closed.</text>
+    </uiText>
+  </module>
+</resources>

@@ -1,0 +1,1605 @@
+&ACCESS RE
+&REL 1
+&COMMENT Collision Detection Library
+&PARAM DISKPATH = KRC:\R1\System
+DEF TM_BIB()
+;***************************
+;* Date 24.02.2015         *
+;* Only >=KSS V8.3         *
+;* Changes also at SPS.SUB *
+;***************************
+END 
+
+GLOBAL DEF TQM_INI()
+;FOLD TQM_INI
+  CHECK_SUBMIT_RUNS()       ;Submit #P_ACTIVE
+  CHECK_VARSTATES()         ;Variables: bTQM_FIRST_AFTER_BCO,bTQM_RINGMEM_INIT_C,bTQM_OV_ONL,bTQM_UP_INIT
+                            
+  IF bTQM_UP_INIT THEN
+  
+    GLOBAL INTERRUPT DECL iTQM_INTERRUPT WHEN $CYCFLAG[iTQM_CYCFLAG] == TRUE DO TQM_INTER_STOP ()       ;ISR 18 (Default)
+    GLOBAL INTERRUPT DECL iTQM_INTERRUPT_OVPRO WHEN $OV_PRO <> iTQM_LAST_OVPRO DO TQM_CHANGE_OFFSETS () ;ISR 19 (Default)
+
+    FHOME.TQ_STATE = FALSE
+    iCD_Step=0
+    iTQM_ZEIGER = 1
+    iTQM_ZEIGER_C = 1
+    iTQM_DELAY = $FILTER/2 + 36 ;[ms]
+    iTQM_Multiplier = 60 ;[ms]
+    iTQM_LAST_OVPRO = $OV_PRO
+    bTQM_RINGMEM_INIT = TRUE
+    bTQM_UP_INIT = FALSE
+    bTQM_CYC = FALSE
+    bTQM_Restart = FALSE 
+    bTQM_STOP = FALSE
+    SET_TQM_ACT(200)
+
+    INTERRUPT ON iTQM_INTERRUPT_OVPRO
+    $CYCFLAG[iTQM_CYCFLAG] = FALSE
+    $CYCFLAG[iTQM_CYCFLAG]=((($TORQ_DIFF[1]>TQM_ACT.T11)OR($TORQ_DIFF[2]>TQM_ACT.T12)OR($TORQ_DIFF[3]>TQM_ACT.T13)OR($TORQ_DIFF[4]>TQM_ACT.T14)OR($TORQ_DIFF[5]>TQM_ACT.T15)OR($TORQ_DIFF[6]>TQM_ACT.T16)OR($TORQ_DIFF2[1]>TQM_ACT.T21)OR($TORQ_DIFF2[2]>TQM_ACT.T22)OR($torq_diff2[3]>TQM_ACT.T23)OR($TORQ_DIFF2[4]>TQM_ACT.T24)OR($TORQ_DIFF2[5]>TQM_ACT.T25)OR($TORQ_DIFF2[6]>TQM_ACT.T26)) AND bTQM_CYC AND bTQM_ACTIVE AND($MODE_OP<>#T1))
+  ENDIF
+  TQM_OverDriveFlag=FALSE
+;ENDFOLD ;(TQM_INI)
+END ;(TQM_INI)
+;******************************
+;* Interrupt service routine  *
+;* Change of override >|5| %  *
+;******************************
+GLOBAL DEF TQM_CHANGE_OFFSETS()
+DECL REAL OV_FACTOR
+
+  IF GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+    IF (iSTOP_TYPE <> 0) THEN
+      RETURN
+    ENDIF
+  ENDIF
+
+  INTERRUPT OFF iTQM_INTERRUPT_OVPRO
+  
+  IF CHECK_IVAR(TQM_TEMP.OVM) <> #INITIALIZED THEN
+    TQM_DEACT_TORQUE1(1.25)
+    TQM_DEACT_TORQUE2(1.5)
+    iTQM_LAST_OVPRO = $OV_PRO
+    INTERRUPT ON iTQM_INTERRUPT_OVPRO
+    RETURN
+  ELSE
+    OV_FACTOR = ABS($OV_PRO-TQM_TEMP.OVM) * rTQM_OVM ;rTQM_OVM=0.15
+    IF OV_FACTOR < 1.5 THEN
+      OV_FACTOR = 1.5
+    ENDIF
+  ENDIF
+  
+  ;Change of override recognized at change > |5|
+  IF (TQM_TEMP.OVM > 0) AND (TQM_TEMP.ID <> 0) then
+    IF $OV_PRO > (TQM_TEMP.OVM + 5) THEN
+      
+      TQM_DEACT_TORQUE1(1.25)
+      TQM_DEACT_TORQUE2(OV_FACTOR)
+      bTQM_OV_ONL = TRUE
+    ELSE
+      IF $OV_PRO < (TQM_TEMP.OVM - 5) THEN
+        
+        bTQM_OV_ONL = TRUE
+        TQM_DEACT_TORQUE1(1.25)           
+        TQM_DEACT_TORQUE2(0.51*OV_FACTOR) 
+      ENDIF
+    ENDIF
+  ENDIF
+
+  iTQM_LAST_OVPRO = $OV_PRO
+  INTERRUPT ON iTQM_INTERRUPT_OVPRO
+
+END ;(TQM_CHANGE_OFFSETS)
+;***********************
+;* Call by Submit loop *
+;***********************
+;FOLD TQM Submit actions
+;****************************
+GLOBAL DEF TorqueDefinitions()
+DECL INT i
+
+  FOR i = 1 TO 8          
+    TQM_DATA_C[i]=TM0
+  ENDFOR
+  ;Definitions in SPS_SUB_INIT
+  iTQM_ZEIGER=1 
+  iTQM_ZEIGER_C=1
+  
+END ; (TorqueDefinitions)
+;*****************************
+;* Submit Task               *
+;*****************************
+GLOBAL DEF TORQUE_MONITORING()
+DECL STATE_T STAT
+DECL MODUS_T MODE
+
+  IF $ADAP_ACC == #NONE THEN
+    
+    bTQM_KCPSTATUS = FALSE
+    bTQM_ACTIVE = FALSE
+    RETURN
+  ENDIF
+
+  IF bTQM_CANCEL_PROG == TRUE THEN
+    CWRITE($CMD, STAT, MODE, "CANCEL 1")
+  ENDIF
+
+  IF $PRO_STATE1 == #P_FREE THEN
+    bTQM_CANCEL_PROG = FALSE
+  ENDIF
+
+  IF ($PRO_STATE1 == #P_FREE) OR ($PRO_STATE1 == #P_RESET) THEN
+    bTQM_UP_INIT=TRUE 
+    bTQM_CYC = FALSE  ;clear additional   
+    TQM_TEMP.ID = 0
+  ENDIF
+
+  IF bTQM_START_PROG == TRUE THEN
+    IF $PRO_STATE1 == #P_FREE THEN
+      bTQM_START_PROG = FALSE
+    ENDIF
+  ENDIF
+
+  IF GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+    IF (iSTOP_TYPE <> 0) THEN
+      bTQM_STOP = TRUE ;Checked by Submit
+    ENDIF
+  ENDIF
+
+  IF NOT ($PRO_MODE == #GO) OR ($MODE_OP == #T1) THEN
+    
+    bTQM_CYC = FALSE 
+    bTQM_PMODE = FALSE
+  ENDIF
+
+  IF bTQM_ACTIVE THEN
+    IF GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+      IF (iSTOP_TYPE <> 0) THEN
+      
+        bTQM_CYC = FALSE
+        iCD_Step = 1
+          
+        IF (($PRO_STATE1==#P_ACTIVE)AND($MOVE_BCO==FALSE)) THEN
+          bTQM_Restart = TRUE
+          TQM_IPO_TIMER(iTQM_TI_RESTART, iTQM_TMR_FACTOR) ;iTQM_TMR_FACTOR * 60 * 13 ms ==> 780 ms
+          TQM_IPO_TIMER(iTQM_TI_UPDATE, iTQM_TMR_FACTOR)        
+          iCD_Step = 2
+        ENDIF
+        
+      ELSE
+        IF (($PRO_STATE1==#P_ACTIVE)AND($MOVE_BCO==FALSE)) THEN
+          SWITCH iCD_Step ;Collision detect step
+            CASE 1
+              bTQM_Restart = TRUE
+              TQM_IPO_TIMER(iTQM_TI_RESTART, iTQM_TMR_FACTOR)
+              TQM_IPO_TIMER(iTQM_TI_UPDATE, iTQM_TMR_FACTOR) ;Timer[8] as default
+              iCD_Step = 2
+            CASE 2
+              IF ($TIMER[iTQM_TI_RESTART]>0) THEN
+                iCD_Step = 0
+                TORQ_DIFF_RESET()
+                $TIMER_STOP[iTQM_TI_RESTART] = TRUE ;Timer[7] as default
+                IF CHECK_IVAR(TQM_TEMP.ID) == #INITIALIZED THEN
+                  IF (TQM_TEMP.ID <> 0) THEN        
+                    bTQM_CYC = TRUE ;ID <> 0 && CHECK_IVAR(TQM_TEMP.ID) == #INITIALIZED && $TIMER[iTQM_TI_RESTART]>0
+                  ELSE
+                    bTQM_CYC = FALSE ;Together with identifier of none CD motion disables $CYCFLAG control
+                  ENDIF
+                ELSE
+                  bTQM_CYC = FALSE 
+                ENDIF
+              ENDIF
+            DEFAULT
+          ENDSWITCH
+        ENDIF
+      ENDIF
+    ENDIF
+  ENDIF
+
+  IF ($MODE_OP == #EX) THEN
+    IF (sTQM_SPSACTIVE) THEN
+      sTQM_SPSSTATUS = TRUE
+      IF (bTQM_KCPSTATUS) THEN
+        bTQM_ACTIVE = TRUE
+      ELSE
+        bTQM_ACTIVE = FALSE
+      ENDIF
+    ELSE
+      sTQM_SPSSTATUS = FALSE
+      bTQM_ACTIVE = FALSE
+    ENDIF 
+  ELSE 
+    IF (NOT bTQM_KCPSTATUS) THEN
+      bTQM_ACTIVE = FALSE
+    ELSE
+      bTQM_ACTIVE = TRUE
+    ENDIF
+  ENDIF
+END ;(TORQUE_MONITORING)
+;ENDFOLD ;(TQM Submit actions)
+;*************************************************
+;* Advance part of anti collision 
+;* at CP and PTP motions
+;* or executed with TM0 at none collission detect
+;* subroutine in advance or at Init_Mov()
+;**************************************************
+GLOBAL DEF TQM_FIFO_READ (TQM_DATAS :IN) 
+
+DECL TQM_TQDAT_T TQM_DATAS
+DECL INT iTQM_REAR_ZEIGER
+    
+  
+  
+  
+  TQM_DATA_C[iTQM_ZEIGER] = TQM_DATAS ;in advance
+
+  CONTINUE
+  IF ($MOVE_BCO==FALSE) THEN
+    ;Case for InitMov() or motions without TQM: If not values kept to old one
+    IF TQM_DATAS.ID == 0 THEN
+      
+      
+      IF NOT bTQM_RINGMEM_INIT THEN
+        iTQM_REAR_ZEIGER = iTQM_ZEIGER - 1
+        
+        IF iTQM_REAR_ZEIGER == 0 THEN
+          iTQM_REAR_ZEIGER = 8
+        ENDIF 
+
+        IF CHECK_IVAR(TQM_DATA_C[iTQM_REAR_ZEIGER].ID) == #DECLARED THEN
+          TQM_DATA_C[iTQM_REAR_ZEIGER] = TQM_DATAS
+        ENDIF
+
+        IF TQM_DATA_C[iTQM_REAR_ZEIGER].ID == 0 THEN
+          
+          iTQM_ZEIGER = iTQM_ZEIGER - 1
+
+          IF iTQM_ZEIGER == 0 THEN       
+            iTQM_ZEIGER = 8             
+          ENDIF
+          
+        ENDIF
+      ENDIF
+    ENDIF
+  ENDIF
+
+  CONTINUE
+  IF ($MOVE_BCO==FALSE) THEN
+    iTQM_ZEIGER = iTQM_ZEIGER + 1
+    
+    IF iTQM_ZEIGER == 9 THEN
+      iTQM_ZEIGER = 1
+    ENDIF
+    
+    IF $PRO_MODE == #MSTEP THEN
+      iTQM_ZEIGER_C=iTQM_ZEIGER
+      IF TQM_DATAS.ID == 0 THEN
+         TQM_TEMP.ID=0
+      ENDIF
+    ENDIF
+    
+    bTQM_RINGMEM_INIT = FALSE
+  ELSE
+    bTQM_FIRST_AFTER_BCO = TRUE
+    bTQM_TRIGGER_ON = TRUE
+    bTQM_RINGMEM_INIT = TRUE
+    bTQM_RINGMEM_INIT_C = TRUE
+    iTQM_ZEIGER = 1
+    iTQM_ZEIGER_C = 1
+    TQM_TEMP.ID = 0
+  ENDIF
+  
+END ;TQM_FIFO_READ
+;***************************************************
+;* CP TQM Call only at CP motions but only with CD property
+;* ==> No read when motion without CD
+;***************************************************
+GLOBAL DEF TQM_SWAP_VALUES(TQM_VALUES :OUT)
+DECL TQM_TQDAT_T TQM_VALUES
+;FOLD CP Implementation 
+
+
+
+
+
+
+;ENDFOLD
+  INTERRUPT OFF iTQM_INTERRUPT
+  bTQM_CYC = FALSE
+
+
+  IF (($VW_PSPS_STOP B_AND 2) > 0) THEN
+    
+    RETURN
+  ENDIF
+
+  IF bTQM_FIRST_AFTER_BCO THEN
+    bTQM_FIRST_AFTER_BCO = FALSE
+    
+    
+  ENDIF
+
+  IF bTQM_RESTART AND ($TIMER[iTQM_INTERRUPT] >= 0) THEN  
+    IF $PRO_STATE1 == #P_ACTIVE THEN
+      IF ($TIMER[iTQM_TI_UPDATE]>=0) THEN
+        $TIMER_STOP[iTQM_TI_UPDATE]=TRUE
+        
+        bTQM_RESTART=FALSE
+      ENDIF
+    ENDIF
+  ENDIF
+
+  
+  IF ((bTQM_STOP==FALSE) AND ($STOPMESS==FALSE)) THEN
+    UPDATE_DATAS(TQM_VALUES) 
+  ENDIF
+  bTQM_COLLISION = FALSE                      
+  
+  
+  
+  IF bTQM_RINGMEM_INIT_C THEN  ;TRUE WHEN $MOVE_BCO==TRUE
+      IF TQM_DATA_C[iTQM_ZEIGER_C].ID == 0 THEN      
+        
+        iTQM_ZEIGER_C = iTQM_ZEIGER_C + 1            
+        IF iTQM_ZEIGER_C == 9 THEN
+          iTQM_ZEIGER_C = 1
+        ENDIF
+    ENDIF
+    bTQM_RINGMEM_INIT_C = FALSE
+  ENDIF
+  
+  iTQM_ZEIGER_C = iTQM_ZEIGER_C + 1                  
+  
+  IF iTQM_ZEIGER_C == 9 THEN
+    iTQM_ZEIGER_C = 1
+  ENDIF
+
+  IF iTQM_ZEIGER == iTQM_ZEIGER_C THEN
+    bTQM_ACTIVE = FALSE
+    bTQM_TRIGGER_ENABLE = TRUE
+    bTQM_TRIGGER_ON = TRUE
+    TQM_TEMP.ID = 0
+  ELSE
+    
+    IF TQM_DATA_C[iTQM_ZEIGER_C].ID == 0 THEN
+      
+      bTQM_TRIGGER_ENABLE = TRUE
+      
+      bTQM_TRIGGER_ON = TRUE
+      iTQM_ZEIGER_C = iTQM_ZEIGER_C + 1               
+      
+      IF iTQM_ZEIGER_C == 9 THEN
+        iTQM_ZEIGER_C = 1
+      ENDIF
+      TQM_TEMP.ID = 0
+    ENDIF
+  ENDIF
+  
+  
+  IF IS_MSTEP_MOVE() THEN
+    bTQM_TRIGGER_ON = TRUE
+  ENDIF
+  
+  bTQM_CYC = FALSE
+  
+  
+  
+  IF (TQM_OverDriveFlag==TRUE) THEN
+
+    TQM_TEMP = TQM_TempSet2 
+    TORQ_DIFF_RESET() ;TorqDiff(s) auf 0 
+
+    IF bTQM_TRIGGER_ENABLE THEN
+      bTQM_TRIGGER_ENABLE=FALSE
+      IF bTQM_TRIGGER_ON THEN
+          
+        IF IS_MSTEP_MOVE() THEN
+          
+          bTQM_TRIGGER_ON = TRUE
+        ELSE
+          bTQM_TRIGGER_ON = FALSE
+        ENDIF
+      ENDIF
+    ELSE 
+      bTQM_TRIGGER_ENABLE = TRUE
+    ENDIF
+    
+    
+    IF (bTQM_ACTIVE) AND (NOT IS_MSTEP_MOVE() AND (bTQM_STOP==FALSE) AND ($STOPMESS==FALSE)) THEN
+      MOT_FACTOR(TQM_VALUES)   
+      FILL_TQM_ACT(TQM_VALUES) 
+    ENDIF
+
+    IF (NOT bTQM_ACTIVE OR (TQM_TEMP.ID == 0)) THEN
+      SET_TQM_ACT(200)
+    ENDIF
+
+    
+    IF ((TQM_TEMP.ID <> 0) AND (NOT IS_MSTEP_MOVE())AND (TQM_TEMP.OVM<>0)) THEN
+      CALL_INTERRUPT_ON(iTQM_INTERRUPT)
+    ELSE
+      
+      INTERRUPT OFF iTQM_INTERRUPT
+    ENDIF
+
+  ELSE
+
+    IF NOT bTQM_TRIGGER_ON AND ($PRO_MODE==#GO) THEN
+      ELSE
+        IF (($VW_PSPS_STOP B_AND 2) > 0) THEN
+          TQM_TEMP.ID = 0
+        ENDIF
+    ENDIF
+    
+    TQM_TEMP.ID = 0 
+    
+  ENDIF ;(TQM_OverDriveFlag==TRUE)
+
+END ;(TQM_SWAP_VALUES)
+;**************************************
+;Call via TQM_MON_OFF at spline Trigger
+;***************************************
+DEF TQM_SWAP_VALUES_S(TQM_VALUES :OUT)
+;FOLD Spline implementation
+;TRIGGER WHEN PATH=0 ONSTART DELAY=0 DO TQM_MON_ON(TM4) PRIO=-1
+;TRIGGER WHEN PATH=0 DELAY=-12 DO TQM_MON_OFF(TM4) PRIO=-1
+;SPL XP#
+;ENDFOLD
+DECL TQM_TQDAT_T TQM_VALUES
+
+  IF (NOT bTQM_COLLISION AND NOT bTQM_FIRST_AFTER_BCO AND NOT bTQM_RESTART AND bTQM_PMODE) THEN
+    
+
+
+    IF bTQM_OV_ONL THEN
+      bTQM_OV_ONL = FALSE
+    ELSE
+      TQM_VALUES.OVM = $OV_PRO
+    ENDIF
+
+    SCALE_TO_STANDARD(TQM_VALUES.TMF,rTQM_REDTMF)
+  
+  ENDIF
+
+  STORE_MOT_TEMP(TQM_VALUES)
+
+  bTQM_FIRST_AFTER_BCO = FALSE
+
+  IF bTQM_RESTART AND ($TIMER[iTQM_INTERRUPT] >= 0) THEN 
+    IF $PRO_STATE1 == #P_ACTIVE THEN
+      IF ($TIMER[iTQM_TI_UPDATE]>=0) THEN
+        $TIMER_STOP[iTQM_TI_UPDATE]=TRUE
+        
+        bTQM_RESTART = FALSE
+      ENDIF
+    ENDIF
+  ENDIF
+
+  
+  UPDATE_TMVALUE(TQM_VALUES);spline  
+  bTQM_COLLISION = FALSE                       
+  TQM_TEMP.ID = 0
+  bTQM_CYC = FALSE
+
+END ;(TQM_SWAP_VALUES_S)
+;**************************************
+;First Subroutine call at spline motion
+;Trigger call
+;**************************************
+GLOBAL DEF TQM_MON_ON( TQM_VALUES :OUT)
+DECL TQM_TQDAT_T TQM_VALUES
+
+  
+  TQM_TEMP =TQM_VALUES
+
+  
+  IF (($MOVE_BCO==FALSE) AND ($TIMER[iTQM_TI_RESTART] >= 0)) THEN
+    
+    IF $PRO_STATE1 == #P_ACTIVE THEN
+      bTQM_CYC = TRUE
+    ENDIF
+  ENDIF
+
+  IF ($PRO_MODE == #GO) AND ($MODE_OP <> #T1) THEN
+    
+    bTQM_PMODE = TRUE
+  ENDIF
+  
+  IF NOT bTQM_ACTIVE OR $MOVE_BCO THEN
+    RETURN
+  ENDIF
+
+  TORQ_DIFF_RESET() ;TorqDiff(s) to 0
+  IF ((bTQM_ACTIVE==TRUE) AND (NOT IS_MSTEP_MOVE()) AND (bTQM_STOP==FALSE) AND ($STOPMESS==FALSE)) THEN
+    MOT_FACTOR(TQM_VALUES)
+    FILL_TQM_ACT(TQM_VALUES);spline
+  ENDIF
+   
+
+  
+  IF ((TQM_TEMP.ID <> 0) AND (NOT IS_MSTEP_MOVE())AND (TQM_TEMP.OVM<>0))  THEN
+  
+    CALL_INTERRUPT_ON(iTQM_INTERRUPT)
+  ELSE
+    
+    INTERRUPT OFF iTQM_INTERRUPT
+  ENDIF
+
+END ;(TQM_MON_ON => Spline)
+;*********************************************
+;* Spline subroutine call at end of spline pos
+;* Includes call of TQM_SWAP_VALUES_S
+;*********************************************
+GLOBAL DEF TQM_MON_OFF(TQM_VALUES :OUT)
+DECL TQM_TQDAT_T TQM_VALUES
+
+  bTQM_CYC = FALSE
+
+  IF GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+    IF (iSTOP_TYPE == 0) THEN
+      TQM_SWAP_VALUES_S(TQM_VALUES)
+    ENDIF
+  ENDIF
+
+  INTERRUPT OFF iTQM_INTERRUPT
+  SET_TQM_ACT(200)
+  
+END ;(TQM_MON_OFF => Spline)
+;***************************************
+;* Start Trigger standard motion       *
+;***************************************
+GLOBAL DEF TQM_START_MON(TQM_VALUES:OUT)
+DECL TQM_TQDAT_T TQM_VALUES
+DECL REAL rTQ2 
+ 
+  ;Save actual one
+  TQM_History=TQM_VALUES
+  
+  IF (NOT IS_MSTEP_MOVE()) AND ($TIMER[iTQM_TI_RESTART] >= 0) THEN
+    
+    bTQM_CYC = TRUE 
+  ENDIF
+
+  IF bTQM_STOP THEN
+    bTQM_STOP = FALSE
+  ENDIF
+
+  IF ($PRO_MODE == #GO) AND ($MODE_OP <> #T1) THEN
+    
+    bTQM_PMODE = TRUE
+  ELSE
+    bTQM_PMODE = FALSE
+  ENDIF
+
+  ;Actual TM# zu Beginn der Bewegung
+  IF iTQM_TRIGGERID <> TQM_VALUES.ID THEN
+    
+    TQM_OverDriveFlag=TRUE
+    
+    IF ((bTQM_ACTIVE==TRUE) AND (NOT IS_MSTEP_MOVE())AND (bTQM_STOP==FALSE) AND ($STOPMESS==FALSE)) THEN
+       MOT_FACTOR(TQM_VALUES)   ;IN
+       FILL_TQM_ACT(TQM_VALUES) ;(standard) :OUT
+    ENDIF
+    
+    
+    TQM_TempSet2=TQM_VALUES
+    RETURN 
+  ELSE
+    ;correct CD set recognized => under CD control and clear workaround
+    TQM_OverDriveFlag=FALSE
+    TQM_TEMP = TQM_VALUES   
+  ENDIF
+
+  TORQ_DIFF_RESET() ;TorqDiff(s) auf 0
+
+  IF bTQM_TRIGGER_ENABLE THEN
+
+    bTQM_TRIGGER_ENABLE=FALSE
+
+    IF bTQM_TRIGGER_ON THEN
+      
+      IF IS_MSTEP_MOVE() THEN
+        
+        bTQM_TRIGGER_ON = TRUE
+      ELSE
+        bTQM_TRIGGER_ON = FALSE
+      ENDIF
+    ENDIF
+
+  ELSE 
+    bTQM_TRIGGER_ENABLE = TRUE
+  ENDIF
+
+  IF ((bTQM_ACTIVE==TRUE) AND (NOT IS_MSTEP_MOVE()) AND (bTQM_STOP==FALSE) AND ($STOPMESS==FALSE)) THEN
+    MOT_FACTOR(TQM_VALUES)   ;IN
+    FILL_TQM_ACT(TQM_VALUES) ;OUT
+  ENDIF
+
+  IF (NOT bTQM_ACTIVE OR (TQM_TEMP.ID == 0)) THEN
+    SET_TQM_ACT(200)
+  ENDIF
+
+  IF ((TQM_TEMP.ID <> 0) AND (NOT IS_MSTEP_MOVE())AND (TQM_TEMP.OVM<>0)) THEN
+    CALL_INTERRUPT_ON(iTQM_INTERRUPT)
+  ELSE
+    
+    INTERRUPT OFF iTQM_INTERRUPT
+  ENDIF
+  
+END ;(TQM_START_MON)
+;*******************************
+DEF FILL_TQM_ACT(TQM_VALUES:OUT) 
+DECL REAL rTQ2 
+DECL TQM_TQDAT_T TQM_VALUES
+DECL INT Max_INT
+DECL INT iTemp
+
+  IF TQM_VALUES.OVM < $OV_PRO THEN
+    TQM_VALUES.TMF = TQM_VALUES.TMF + (ABS($OV_PRO-TQM_VALUES.OVM) * rTQM_TMF)
+    IF TQM_VALUES.TMF <= 1.0 THEN
+      TQM_VALUES.TMF = 1.0
+    ELSE
+      
+      IF (TQM_VALUES.TMF > 1) THEN
+        TQM_VALUES.TMF = 1.25
+      ENDIF
+    ENDIF
+  ELSE 
+    IF TQM_VALUES.OVM > $OV_PRO THEN
+      IF TQM_VALUES.TMF < 1.5 THEN
+        TQM_VALUES.TMF = 1.5
+      ENDIF
+    ELSE 
+      ;OVM == $OV_PRO
+      IF ((bTQM_Stop==TRUE) OR ($STOPMESS==TRUE)) THEN
+ 
+        IF GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+          IF (iSTOP_TYPE <> 0) THEN 
+            IF ((iSTOP_TYPE B_AND 8)==8) THEN
+              TQM_VALUES.TMF = 1.25
+            ELSE
+              TQM_VALUES.TMF = 1.125              
+            ENDIF
+          ENDIF
+        ENDIF          
+      ELSE
+      
+        TQM_VALUES.TMF = 1.0
+
+        IF GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+          IF (iSTOP_TYPE <> 0) THEN 
+            IF ((iSTOP_TYPE B_AND 8)==8) THEN
+              TQM_VALUES.TMF = 1.25
+            ELSE
+              TQM_VALUES.TMF = 1.125             
+            ENDIF
+          ELSE
+            TQM_VALUES.TMF = 1.0          
+          ENDIF
+        ENDIF
+      ENDIF
+
+    ENDIF
+  ENDIF
+  
+  
+
+  IF (TQM_VALUES.TMF <> 1.0) THEN
+    
+    rTQ2 = 1.25
+  ELSE
+    rTQ2 = 1.0
+  ENDIF
+  
+  ;Limitations
+  Max_INT=2147483646 ;INT: 2'31 -1 => 2147483646
+  ;A1
+  IF ((TQM_VALUES.T11 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[1])) < Max_INT) THEN
+    TQM_ACT.T11 = TQM_VALUES.T11 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[1])
+  ELSE
+    
+  ENDIF
+
+  IF (((TQM_VALUES.T21 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[1]) < Max_INT) THEN
+    TQM_ACT.T21 = (TQM_VALUES.T21 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[1]
+  ELSE
+    
+  ENDIF
+  
+  ;A2
+  IF ((TQM_VALUES.T12 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[2])) < Max_INT) THEN  
+    TQM_ACT.T12 = TQM_VALUES.T12 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[2])
+  ELSE
+    
+  ENDIF 
+  IF (((TQM_VALUES.T22 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[2]) < Max_INT) THEN  
+    TQM_ACT.T22 = (TQM_VALUES.T22 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[2]
+  ELSE
+    
+  ENDIF
+  
+  ;A3
+  IF ((TQM_VALUES.T13 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[3])) < Max_INT) THEN  
+    TQM_ACT.T13 = TQM_VALUES.T13 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[3])
+  ELSE
+    
+  ENDIF
+  IF (((TQM_VALUES.T23 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[3]) < Max_INT) THEN  
+    TQM_ACT.T23 = (TQM_VALUES.T23 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[3]
+  ELSE
+    
+  ENDIF
+  
+  ;A4
+  IF ((TQM_VALUES.T14 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[4])) < Max_INT) THEN
+    TQM_ACT.T14 = TQM_VALUES.T14 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[4])
+  ELSE
+    
+  ENDIF
+  IF (((TQM_VALUES.T24 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[4]) < Max_INT) THEN  
+    TQM_ACT.T24 = (TQM_VALUES.T24 + TQM_VALUES.O2*rTQM_T2H*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[4]
+  ELSE
+    
+  ENDIF
+  
+  ;A5
+  IF ((TQM_VALUES.T15 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[5])) < Max_INT) THEN
+    TQM_ACT.T15 = TQM_VALUES.T15 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[5])
+  ELSE
+    
+  ENDIF    
+  IF (((TQM_VALUES.T25 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[5]) < Max_INT) THEN  
+    TQM_ACT.T25 = (TQM_VALUES.T25 + TQM_VALUES.O2*rTQM_T2H*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[5]
+  ELSE
+    
+  ENDIF
+  
+  ;A6
+  IF ((TQM_VALUES.T16 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[6])) < Max_INT) THEN  
+    TQM_ACT.T16 = TQM_VALUES.T16 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[6])
+  ELSE
+    
+  ENDIF
+  IF (((TQM_VALUES.T26 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[6]) < Max_INT) THEN  
+    TQM_ACT.T26 = (TQM_VALUES.T26 + TQM_VALUES.O2*rTQM_T2H*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[6]
+  ELSE
+    
+  ENDIF
+  
+  TQM_ACT.O1 = TQM_VALUES.O1
+  TQM_ACT.O2 = TQM_VALUES.O2
+  TQM_ACT.ID = TQM_VALUES.ID
+  
+  ;Update des OVM for diagnosis
+  TQM_ACT.OVM=TQM_VALUES.OVM
+  
+END ;(FILL_TQM_ACT)
+;----------------------
+DEF FILL_TQM_ACT2(TQM_Values:IN,rTQ2:IN) 
+DECL REAL rTQ2 ;==> r_TQ2
+DECL TQM_TQDAT_T TQM_Values
+DECL INT Max_INT
+
+  
+  Max_INT=2147483646 ;INT: 2'31 -1 => 2147483646               
+  ;A1
+  IF ((TQM_VALUES.T11 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[1])) < Max_INT) THEN
+    TQM_ACT.T11 = TQM_VALUES.T11 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[1])
+  ELSE
+    
+  ENDIF
+  ;INT: 2'31 -1 => 2147483646                  * 1.0 (8.2)
+  IF (((TQM_VALUES.T21 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[1]) < Max_INT) THEN
+    TQM_ACT.T21 = (TQM_VALUES.T21 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[1]
+  ELSE
+    
+  ENDIF
+  
+  ;A2
+  IF ((TQM_VALUES.T12 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[2])) < Max_INT) THEN  
+    TQM_ACT.T12 = TQM_VALUES.T12 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[2])
+  ELSE
+    
+  ENDIF 
+  IF (((TQM_VALUES.T22 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[2]) < Max_INT) THEN  
+    TQM_ACT.T22 = (TQM_VALUES.T22 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[2]
+  ELSE
+    
+  ENDIF
+  
+  ;A3
+  IF ((TQM_VALUES.T13 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[3])) < Max_INT) THEN  
+    TQM_ACT.T13 = TQM_VALUES.T13 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[3])
+  ELSE
+    
+  ENDIF
+  IF (((TQM_VALUES.T23 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[3]) < Max_INT) THEN  
+    TQM_ACT.T23 = (TQM_VALUES.T23 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[3]
+  ELSE
+    
+  ENDIF
+  
+  ;A4
+  IF ((TQM_VALUES.T14 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[4])) < Max_INT) THEN
+    TQM_ACT.T14 = TQM_VALUES.T14 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[4])
+  ELSE
+    
+  ENDIF
+  IF (((TQM_VALUES.T24 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[4]) < Max_INT) THEN  
+    TQM_ACT.T24 = (TQM_VALUES.T24 + TQM_VALUES.O2*rTQM_T2H*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[4]
+  ELSE
+    
+  ENDIF
+  
+  ;A5
+  IF ((TQM_VALUES.T15 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[5])) < Max_INT) THEN
+    TQM_ACT.T15 = TQM_VALUES.T15 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[5])
+  ELSE
+    
+  ENDIF    
+  IF (((TQM_VALUES.T25 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[5]) < Max_INT) THEN  
+    TQM_ACT.T25 = (TQM_VALUES.T25 + TQM_VALUES.O2*rTQM_T2H*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[5]
+  ELSE
+    
+  ENDIF
+  
+  ;A6
+  IF ((TQM_VALUES.T16 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[6])) < Max_INT) THEN  
+    TQM_ACT.T16 = TQM_VALUES.T16 + (TQM_VALUES.O1*TQM_VALUES.TMF*rTQM_MOT[6])
+  ELSE
+    
+  ENDIF
+  IF (((TQM_VALUES.T26 + TQM_VALUES.O2*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[6]) < Max_INT) THEN  
+    TQM_ACT.T26 = (TQM_VALUES.T26 + TQM_VALUES.O2*rTQM_T2H*ScalingImpact)*TQM_VALUES.TMF*rTQ2*rTQM_MOT[6]
+  ELSE
+    
+  ENDIF
+  
+  TQM_ACT.O1 = TQM_Values.O1
+  TQM_ACT.O2 = TQM_Values.O2
+  TQM_ACT.ID = TQM_Values.ID
+  
+  ;Update des OVM for diagnosis
+  TQM_ACT.OVM=TQM_VALUES.OVM
+  
+END ; (FILL_TQM_ACT2)
+;-----------------------------------------
+  
+;-----------------------------------------
+GLOBAL DEF TQM_INTER_STOP()
+  
+DECL INT iTORQUES
+DECL INT iIMPACTS
+DECL BOOL bRESULT
+DECL STATE_T STATE
+DECL CHAR cTQM_TORQPARAM[20]
+DECL CHAR cTQM_IMPPARAM[20]
+
+DECL INT Delta_TORQ_DIFF    ;prepared for debug
+DECL INT Delta_IMPACTS_DIFF ;prepared for debug
+DECL INT i
+
+  iTORQUES = 0
+  iIMPACTS = 0
+  bRESULT = STRCLEAR(cTQM_TORQPARAM[])
+  bRESULT = STRCLEAR(cTQM_IMPPARAM[])
+  
+  ;For diagnostic
+  ;Detected TQ_Set
+  TQM_Compare=TQM_ACT
+  
+  ;Cause of event
+  TQM_ISR_Event.ID=TQM_ACT.ID
+  TQM_ISR_Event.OVM=TQM_ACT.OVM
+  TQM_ISR_Event.TMF=TQM_ACT.TMF
+  TQM_ISR_Event.T11=$TORQ_DIFF[1]
+  TQM_ISR_Event.T12=$TORQ_DIFF[2]
+  TQM_ISR_Event.T13=$TORQ_DIFF[3]
+  TQM_ISR_Event.T14=$TORQ_DIFF[4]
+  TQM_ISR_Event.T15=$TORQ_DIFF[5]
+  TQM_ISR_Event.T16=$TORQ_DIFF[6]
+  TQM_ISR_Event.T21=$TORQ_DIFF2[1]
+  TQM_ISR_Event.T22=$TORQ_DIFF2[2]
+  TQM_ISR_Event.T23=$TORQ_DIFF2[3]
+  TQM_ISR_Event.T24=$TORQ_DIFF2[4]
+  TQM_ISR_Event.T25=$TORQ_DIFF2[5]
+  TQM_ISR_Event.T26=$TORQ_DIFF2[6] 
+
+  IF ($STOPMESS==FALSE) THEN
+    ServiceStopFlag=bTQM_STOP 
+  ELSE
+    ServiceStopFlag=FALSE 
+  ENDIF
+  
+  FOR i = 1 TO 6
+   DeltaTorque[i]=0
+   DeltaImpact[i]=0
+  ENDFOR  
+  
+  IF bTQM_CYC THEN
+
+    INTERRUPT OFF iTQM_INTERRUPT
+    bTQM_COLLISION = TRUE
+
+    IF ($TORQ_DIFF[1] > TQM_ACT.T11) THEN
+      iTORQUES = STRING_BUILDER(cTQM_TORQPARAM[], "A1")
+      iTORQUES = 1
+      Delta_TORQ_DIFF=$TORQ_DIFF[1]-TQM_ACT.T11 
+      DeltaTorque[1]=Delta_TORQ_DIFF
+    ENDIF
+
+    IF ($TORQ_DIFF2[1] > TQM_ACT.T21) THEN
+      iIMPACTS = STRING_BUILDER(cTQM_IMPPARAM[], "A1")
+      iIMPACTS = 1
+      Delta_IMPACTS_DIFF = $TORQ_DIFF2[1] - TQM_ACT.T21  
+      DeltaImpact[1]=Delta_IMPACTS_DIFF
+    ENDIF
+
+    IF ($TORQ_DIFF[2] > TQM_ACT.T12) THEN
+      iTORQUES = STRING_BUILDER(cTQM_TORQPARAM[], "A2")
+      iTORQUES = 2
+      Delta_TORQ_DIFF=$TORQ_DIFF[2]-TQM_ACT.T12 
+      DeltaTorque[2]=Delta_TORQ_DIFF
+    ENDIF   
+    
+    IF ($TORQ_DIFF2[2] > TQM_ACT.T22) THEN
+      iIMPACTS = STRING_BUILDER(cTQM_IMPPARAM[], "A2")
+      iIMPACTS = 2
+      Delta_IMPACTS_DIFF = $TORQ_DIFF2[2] - TQM_ACT.T22  
+      DeltaImpact[2]=Delta_IMPACTS_DIFF 
+    ENDIF
+
+    IF ($TORQ_DIFF[3] > TQM_ACT.T13) THEN
+      iTORQUES = STRING_BUILDER(cTQM_TORQPARAM[], "A3")
+      iTORQUES = 3
+      Delta_TORQ_DIFF=$TORQ_DIFF[3]-TQM_ACT.T13  
+      DeltaTorque[3]=Delta_TORQ_DIFF     
+    ENDIF
+    IF ($TORQ_DIFF2[3] > TQM_ACT.T23) THEN
+      iIMPACTS = STRING_BUILDER(cTQM_IMPPARAM[], "A3")
+      iIMPACTS = 3
+      Delta_IMPACTS_DIFF = $TORQ_DIFF2[3] - TQM_ACT.T23  
+      DeltaImpact[3]=Delta_IMPACTS_DIFF
+    ENDIF
+
+    IF ($TORQ_DIFF[4] > TQM_ACT.T14) THEN
+      iTORQUES = STRING_BUILDER(cTQM_TORQPARAM[], "A4")
+      iTORQUES = 4
+      Delta_TORQ_DIFF=$TORQ_DIFF[4]-TQM_ACT.T14 
+      DeltaTorque[4]=Delta_TORQ_DIFF
+    ENDIF
+    IF ($TORQ_DIFF2[4] > TQM_ACT.T24) THEN
+      iIMPACTS = STRING_BUILDER(cTQM_IMPPARAM[], "A4")
+      iIMPACTS = 4
+      Delta_IMPACTS_DIFF = $TORQ_DIFF2[4] - TQM_ACT.T24
+      DeltaImpact[4]=Delta_IMPACTS_DIFF
+    ENDIF
+
+    IF ($TORQ_DIFF[5] > TQM_ACT.T15) THEN
+      iTORQUES = STRING_BUILDER(cTQM_TORQPARAM[], "A5")
+      iTORQUES = 5
+      Delta_TORQ_DIFF=$TORQ_DIFF[5]-TQM_ACT.T15 
+      DeltaTorque[5]=Delta_TORQ_DIFF
+    ENDIF
+    IF ($TORQ_DIFF2[5] > TQM_ACT.T25) THEN
+      iIMPACTS = STRING_BUILDER(cTQM_IMPPARAM[], "A5")
+      iIMPACTS = 5
+      Delta_IMPACTS_DIFF = $TORQ_DIFF2[5] - TQM_ACT.T25
+      DeltaImpact[5]=Delta_IMPACTS_DIFF
+    ENDIF
+
+    IF ($TORQ_DIFF[6] > TQM_ACT.T16) THEN
+      iTORQUES = STRING_BUILDER(cTQM_TORQPARAM[], "A6")
+      iTORQUES = 6
+      Delta_TORQ_DIFF=$TORQ_DIFF[6]-TQM_ACT.T16
+      DeltaTorque[6]=Delta_TORQ_DIFF
+    ENDIF
+    IF ($TORQ_DIFF2[6] > TQM_ACT.T26) THEN
+      iIMPACTS = STRING_BUILDER(cTQM_IMPPARAM[], "A6")
+      iIMPACTS = 6
+      Delta_IMPACTS_DIFF = $TORQ_DIFF2[6] - TQM_ACT.T26
+      DeltaImpact[6]=Delta_IMPACTS_DIFF  
+    ENDIF
+
+    IF bTQM_CYC THEN
+    
+      IF (iTORQUES > 0) THEN
+        
+        IF ($OV_PRO == TQM_TEMP.OVM) THEN
+          MSG_TQM({MODUL[] "TQM", NR 10, MSG_TXT[] "TorqueDetected"}, cTQM_TORQPARAM[])
+        ENDIF
+      ENDIF
+      
+      IF (iIMPACTS > 0) THEN
+        IF ($OV_PRO == TQM_TEMP.OVM) THEN
+          MSG_TQM({MODUL[] "TQM", NR 11, MSG_TXT[] "ImpactDetected"}, cTQM_IMPPARAM[])
+        ENDIF
+      ENDIF
+      
+      IF ($OV_PRO == TQM_TEMP.OVM) THEN
+        IF ($PRO_MODE==#GO) THEN
+          BRAKE F
+          ;TM_USERACTION() ;==> HALT
+        ELSE
+          ;No action at other modes 
+        ENDIF
+      ELSE
+        ;At reference run no action
+      ENDIF
+    ELSE
+      bTQM_COLLISION=FALSE
+    ENDIF
+
+  ENDIF ;(bTQM_CYC)
+  INTERRUPT ON iTQM_INTERRUPT
+  bTQM_COLLISION=FALSE
+END ;(TQM_INTER_STOP)
+;********************
+DEF TORQ_DIFF_RESET()
+DECL INT I
+
+  FOR I = 1 TO 6          
+    $TORQ_DIFF[I]=0
+    $TORQ_DIFF2[I]=0
+  ENDFOR
+END
+;******************************
+DEF STORE_MOT_TEMP(TQM_VALUES:OUT)
+DECL TQM_TQDAT_T TQM_VALUES
+
+  TQM_VALUES.K1 = $MOT_TEMP[1] 
+  TQM_VALUES.K2 = $MOT_TEMP[2] 
+  TQM_VALUES.K3 = $MOT_TEMP[3] 
+  TQM_VALUES.K4 = $MOT_TEMP[4] 
+  TQM_VALUES.K5 = $MOT_TEMP[5] 
+  TQM_VALUES.K6 = $MOT_TEMP[6] 
+END
+;*******************************************
+;* Sets values to motor temperatures datas *
+;*******************************************
+DEF MOT_FACTOR(TQM_VALUES:IN)
+DECL TQM_TQDAT_T TQM_VALUES
+  
+  IF $MOT_TEMP[1] < TQM_VALUES.K1 - 5 THEN
+    rTQM_MOT[1] = rTQM_F_MOT
+  ELSE
+    SCALE_TO_STANDARD(rTQM_MOT[1],0.8)
+  ENDIF
+
+  IF $MOT_TEMP[2] < TQM_VALUES.K2 - 5 THEN
+    rTQM_MOT[2] = rTQM_F_MOT
+  ELSE
+    SCALE_TO_STANDARD(rTQM_MOT[2],0.8)
+  ENDIF
+
+  IF $MOT_TEMP[3] < TQM_VALUES.K3 - 5 THEN
+    rTQM_MOT[3] = rTQM_F_MOT
+  ELSE
+    SCALE_TO_STANDARD(rTQM_MOT[3],0.8)
+  ENDIF
+
+  IF $MOT_TEMP[4] < TQM_VALUES.K4 - 5 THEN
+    rTQM_MOT[4] = rTQM_F_MOT
+  ELSE
+    SCALE_TO_STANDARD(rTQM_MOT[4],0.8)
+  ENDIF
+
+  IF $MOT_TEMP[5] < TQM_VALUES.K5 - 5 THEN
+    rTQM_MOT[5] = rTQM_F_MOT
+  ELSE
+    SCALE_TO_STANDARD(rTQM_MOT[5],0.8)
+  ENDIF
+
+  IF $MOT_TEMP[6] < TQM_VALUES.K6 - 5 THEN
+    rTQM_MOT[6] = rTQM_F_MOT
+  ELSE
+    SCALE_TO_STANDARD(rTQM_MOT[6],0.8)
+  ENDIF
+END ;(MOT_FACTOR)
+;****************************************
+DEF SCALE_TO_STANDARD(VALUE:OUT,FACTOR:IN)
+DECL REAL VALUE
+DECL REAL FACTOR
+
+  IF VALUE > 1.0 THEN  
+    IF NOT IS_WARMUP() THEN
+      VALUE = VALUE * FACTOR
+      IF VALUE < 1.0 THEN
+        VALUE = 1.0
+      ENDIF
+    ENDIF
+  ENDIF
+
+END ;(SCALE_TO_STANDARD)
+;****************************************
+DEF SWRITER(STR_A[]:OUT, NUM:IN)
+DECL INT nRET, OFFSET, NUM
+DECL CHAR STR_A[]
+DECL CHAR STR_B[8]
+DECL STATE_T STATE
+
+  OFFSET = 0;STRLEN(STRING[])+1
+  SWRITE(STR_B[], STATE, OFFSET, ":%s%d", "TM",NUM)
+  nRET = STRADD(STR_A[],STR_B[])
+END ;(SWRITER)
+;***************************************************
+;* Return value always 1
+;***************************************************
+DEFFCT INT STRING_BUILDER(STRING[]:OUT, AX_NAME[]:IN)
+DECL INT nRET
+DECL CHAR STRING[]
+DECL CHAR AX_NAME[]
+
+  nRET = STRADD(STRING[],AX_NAME[])
+  RETURN (1)
+ENDFCT ;(STRING_BUILDER)
+;*********************
+;* Deactivates TQM 1 *
+;*********************
+DEF TQM_DEACT_TORQUE1(FACT: IN)
+DECL REAL FACT
+
+  IF TQM_ACT.T11 < 200 THEN
+    TQM_ACT.T11 = FACT*TQM_ACT.T11
+  ELSE
+    TQM_ACT.T11 = 200
+  ENDIF
+  IF TQM_ACT.T12 < 200 THEN
+    TQM_ACT.T12 = FACT*TQM_ACT.T12
+  ELSE
+    TQM_ACT.T12 = 200
+  ENDIF
+  IF TQM_ACT.T13 < 200 THEN
+    TQM_ACT.T13 = FACT*TQM_ACT.T13
+  ELSE
+    TQM_ACT.T13 = 200
+  ENDIF
+  IF TQM_ACT.T14 < 200 THEN
+    TQM_ACT.T14 = FACT*TQM_ACT.T14
+  ELSE
+    TQM_ACT.T14 = 200
+  ENDIF
+  IF TQM_ACT.T15 < 200 THEN
+    TQM_ACT.T15 = FACT*TQM_ACT.T15
+  ELSE
+    TQM_ACT.T15 = 200
+  ENDIF
+  IF TQM_ACT.T16 < 200 THEN
+    TQM_ACT.T16 = FACT*TQM_ACT.T16
+  ELSE
+    TQM_ACT.T16 = 200
+  ENDIF
+
+END ;(TQM_DEACT_TORQUE1)
+;*********************
+;* Deactivates TQM 2 *
+;*********************
+DEF TQM_DEACT_TORQUE2(FACT: IN)
+DECL REAL FACT
+
+  IF (FACT*TQM_ACT.T21 < 1000) THEN
+    TQM_ACT.T21 = FACT*TQM_ACT.T21
+  ELSE
+    TQM_ACT.T21 = TooLarge ;100000
+  ENDIF
+  IF (FACT*TQM_ACT.T22 < 1000) THEN
+    TQM_ACT.T22 = FACT*TQM_ACT.T22
+  ELSE
+    TQM_ACT.T22 = TooLarge
+  ENDIF
+  IF (FACT*TQM_ACT.T23 < 1000) THEN
+    TQM_ACT.T23 = FACT*TQM_ACT.T23
+  ELSE
+    TQM_ACT.T23 = TooLarge
+  ENDIF
+  IF (FACT*TQM_ACT.T24 < 1000) THEN
+    TQM_ACT.T24 = FACT*TQM_ACT.T24
+  ELSE
+    TQM_ACT.T24 = TooLarge
+  ENDIF
+  IF (FACT*TQM_ACT.T25 < 1000) THEN
+    TQM_ACT.T25 = FACT*TQM_ACT.T25
+  ELSE
+    TQM_ACT.T25 = TooLarge
+  ENDIF
+  IF (FACT*TQM_ACT.T26 < 1000) THEN
+    TQM_ACT.T26 = FACT*TQM_ACT.T26
+  ELSE
+    TQM_ACT.T26 = TooLarge
+  ENDIF
+
+END ;(TQM_DEACT_TORQUE2)
+;*************************
+;* Set Actual TQM values *
+;*************************
+DEF SET_TQM_ACT(IVAL: IN)
+DECL INT IVAL
+
+  TQM_ACT.T11 = IVAL ;Default 200
+  TQM_ACT.T12 = IVAL
+  TQM_ACT.T13 = IVAL
+  TQM_ACT.T14 = IVAL
+  TQM_ACT.T15 = IVAL
+  TQM_ACT.T16 = IVAL
+
+  TQM_ACT.T21 = IVAL*5 ;Default 200*5
+  TQM_ACT.T22 = IVAL*5
+  TQM_ACT.T23 = IVAL*5
+  TQM_ACT.T24 = IVAL*5
+  TQM_ACT.T25 = IVAL*5
+  TQM_ACT.T26 = IVAL*5
+
+END ;(SET_TQM_ACT)
+;****************************************
+DEF UPDATE_DATAS(TQM_VALUES:OUT)
+DECL TQM_TQDAT_T TQM_VALUES
+DECL CHAR xTQM_TORQPARAM[20]
+DECL BOOL bResult
+
+  ;no collission no block coincidence no restart no stop no #GO && no #T1
+  bRESULT = STRCLEAR(xTQM_TORQPARAM[])
+  xTQM_TORQPARAM[1]="F"
+  IF (NOT bTQM_COLLISION AND NOT bTQM_FIRST_AFTER_BCO AND NOT bTQM_RESTART AND NOT bTQM_STOP AND bTQM_PMODE) THEN
+  
+    IF NOT GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+    ENDIF
+    
+    IF (iSTOP_TYPE == 0) THEN
+      
+      
+      UPDATE_TMVALUE(TQM_VALUES)
+      IF bTQM_OV_ONL THEN
+        bTQM_OV_ONL = FALSE
+      ELSE
+        TQM_VALUES.OVM = $OV_PRO
+      ENDIF
+
+      IF CHECK_RVAR(TQM_VALUES.TMF) <> #INITIALIZED THEN
+        TQM_VALUES.TMF = 1.0
+      ENDIF
+
+      SCALE_TO_STANDARD(TQM_VALUES.TMF,rTQM_REDTMF)
+    ENDIF
+  ELSE
+  
+    IF NOT GetSysState("STOPBITS", iSTOP_TYPE, rPAR) THEN
+    ENDIF
+
+    IF (iSTOP_TYPE <> 0)THEN
+    ENDIF    
+    IF ((bTQM_RESTART==TRUE)AND(iSTOP_TYPE == 0)) THEN
+      UPDATE_TMVALUE(TQM_VALUES) ;after delay
+      
+      IF bTQM_OV_ONL THEN
+        bTQM_OV_ONL = FALSE
+      ELSE
+        TQM_VALUES.OVM = $OV_PRO
+      ENDIF
+
+      IF CHECK_RVAR(TQM_VALUES.TMF) <> #INITIALIZED THEN
+        TQM_VALUES.TMF = 1.0
+      ENDIF
+
+      SCALE_TO_STANDARD(TQM_VALUES.TMF,rTQM_REDTMF)
+    ELSE
+      
+       IF (iSTOP_TYPE == 0) THEN
+
+        
+       ENDIF
+    
+    ENDIF
+
+  ENDIF
+
+  IF bTQM_STOP THEN
+    bTQM_STOP = FALSE
+    TQM_VALUES.T21 = $TORQ_DIFF2[1] * 1.2
+    TQM_VALUES.T22 = $TORQ_DIFF2[2] * 1.2
+    TQM_VALUES.T23 = $TORQ_DIFF2[3] * 1.2
+    TQM_VALUES.T24 = $TORQ_DIFF2[4] * 1.2    
+    TQM_VALUES.T25 = $TORQ_DIFF2[5] * 1.2
+    TQM_VALUES.T26 = $TORQ_DIFF2[6] * 1.2       
+  ENDIF
+
+  STORE_MOT_TEMP(TQM_VALUES)
+
+END ;(UPDATE_DATAS)
+;*********************************
+;* Update of values also at spline
+;*********************************
+DEF UPDATE_TMVALUE(TQM_VALUES:OUT)
+DECL TQM_TQDAT_T TQM_VALUES
+
+    TQM_VALUES.T11=$TORQ_DIFF[1]
+    TQM_VALUES.T12=$TORQ_DIFF[2]
+    TQM_VALUES.T13=$TORQ_DIFF[3]
+    TQM_VALUES.T14=$TORQ_DIFF[4]    
+    TQM_VALUES.T15=$TORQ_DIFF[5]
+    TQM_VALUES.T16=$TORQ_DIFF[6]   
+    
+  
+  IF (($OV_PRO == TQM_VALUES.OVM) AND (TQM_VALUES.ID<>0)AND(TQM_VALUES.OVM<>0))THEN 
+   
+    ;FOLD Force dynamical as average
+    IF (TQM_VALUES.T21 < $TORQ_DIFF2[1]) THEN
+      TQM_VALUES.T21 = $TORQ_DIFF2[1]
+    ELSE
+      TQM_VALUES.T21 = (TQM_VALUES.T21 + $TORQ_DIFF2[1])/2
+    ENDIF
+
+    IF (TQM_VALUES.T22 < $TORQ_DIFF2[2]) THEN
+      TQM_VALUES.T22 = $TORQ_DIFF2[2]
+    ELSE
+      TQM_VALUES.T22 = (TQM_VALUES.T22 + $TORQ_DIFF2[2])/2
+    ENDIF
+
+    IF (TQM_VALUES.T23 < $TORQ_DIFF2[3]) THEN
+      TQM_VALUES.T23 = $TORQ_DIFF2[3]
+    ELSE
+      TQM_VALUES.T23 = (TQM_VALUES.T23 + $TORQ_DIFF2[3])/2
+    ENDIF
+
+    IF (TQM_VALUES.T24 < $TORQ_DIFF2[4]) THEN
+      TQM_VALUES.T24 = $TORQ_DIFF2[4]
+    ELSE
+      TQM_VALUES.T24 = (TQM_VALUES.T24 + $TORQ_DIFF2[4])/2
+    ENDIF
+
+    IF (TQM_VALUES.T25 < $TORQ_DIFF2[5]) THEN
+      TQM_VALUES.T25 = $TORQ_DIFF2[5]
+    ELSE
+      TQM_VALUES.T25 = (TQM_VALUES.T25 + $TORQ_DIFF2[5])/2
+    ENDIF
+
+    IF (TQM_VALUES.T26 < $TORQ_DIFF2[6]) THEN
+      TQM_VALUES.T26 = $TORQ_DIFF2[6]
+    ELSE
+      TQM_VALUES.T26 = (TQM_VALUES.T26 + $TORQ_DIFF2[6])/2
+    ENDIF
+    ;ENDFOLD
+  ELSE
+    ;Override changed
+    TQM_VALUES.T11 = $TORQ_DIFF[1]
+    TQM_VALUES.T12 = $TORQ_DIFF[2]
+    TQM_VALUES.T13 = $TORQ_DIFF[3]
+    TQM_VALUES.T14 = $TORQ_DIFF[4]
+    TQM_VALUES.T15 = $TORQ_DIFF[5]
+    TQM_VALUES.T16 = $TORQ_DIFF[6]
+    
+    TQM_VALUES.T21 = $TORQ_DIFF2[1]
+    TQM_VALUES.T22 = $TORQ_DIFF2[2]
+    TQM_VALUES.T23 = $TORQ_DIFF2[3]
+    TQM_VALUES.T24 = $TORQ_DIFF2[4]
+    TQM_VALUES.T25 = $TORQ_DIFF2[5]
+    TQM_VALUES.T26 = $TORQ_DIFF2[6]
+  ENDIF
+
+END ;(UPDATE_TMVALUE)
+;********************
+;FOLD <Help procedures>
+;************************
+;* Load and start timer *
+;************************
+DEF TQM_IPO_TIMER(INDEX: IN, VALUE: IN)
+DECL INT INDEX, VALUE
+
+  $TIMER_STOP[INDEX] = TRUE
+  $TIMER[INDEX] = (-VALUE * iTQM_MULTIPLIER) ;Multiplier =60 
+  $TIMER_STOP[INDEX] = FALSE
+END ;(TQM_IPO_TIMER)
+;*************************
+GLOBAL DEFFCT INT TQM_DLY()
+  
+  RETURN ($FILTER/2 + 48) ;before 36 
+ENDFCT
+;**************************************
+;* Avoids runtime error at            *
+;* activating of undeclared interrupt * 
+;**************************************
+DEF CALL_INTERRUPT_ON(iNUM:IN)
+
+DECL INT iNUM 
+  
+  ON_ERROR_PROCEED
+  INTERRUPT ON iNUM
+
+  SWITCH($ERR.NUMBER)
+    CASE 0
+      RETURN
+    CASE 1430
+      
+      IF (iNUM == iTQM_INTERRUPT) THEN
+        GLOBAL INTERRUPT DECL iNUM WHEN $CYCFLAG[iTQM_CYCFLAG] == TRUE DO TQM_INTER_STOP ()
+      ELSE
+        GLOBAL INTERRUPT DECL iNUM WHEN $OV_PRO <> iTQM_LAST_OVPRO DO TQM_CHANGE_OFFSETS ()
+      ENDIF
+      INTERRUPT ON iNUM
+      ERR_CLEAR($ERR)
+    DEFAULT
+      ERR_RAISE($ERR)
+  ENDSWITCH
+
+END ;(CALL_INTERRUPT_ON)
+;**************************************
+;* Avoids runtime with VarState Check *
+;**************************************
+DEFFCT VAR_STATE CHECK_IVAR(iPARAM:OUT)
+DECL INT iPARAM, iCheck
+
+  ON_ERROR_PROCEED
+  iCHECK = iPARAM
+
+  SWITCH($ERR.NUMBER)
+    CASE 0
+      RETURN #INITIALIZED
+    CASE 1422
+      
+      ERR_CLEAR($ERR)
+    DEFAULT
+      ERR_RAISE($ERR)
+  ENDSWITCH
+
+  RETURN (#DECLARED)
+ENDFCT ;(VAR_STATE CHECK_IVAR)
+;*************************************
+DEFFCT VAR_STATE CHECK_RVAR(rPARAM:OUT)
+DECL REAL rPARAM, rCheck
+
+  ON_ERROR_PROCEED
+  rCHECK = rPARAM
+
+  SWITCH($ERR.NUMBER)
+    CASE 0
+      RETURN #INITIALIZED
+    CASE 1422
+      
+      ERR_CLEAR($ERR)
+    DEFAULT
+      ERR_RAISE($ERR)
+  ENDSWITCH
+
+  RETURN #DECLARED
+ENDFCT ;(VAR_STATE CHECK_RVAR)
+;*************************************
+DEFFCT VAR_STATE CHECK_SET_IVAR(iPARAM:OUT, iDEFAULT:IN)
+DECL INT iPARAM, iDEFAULT, iCHECK
+
+  ON_ERROR_PROCEED
+  iCHECK = iPARAM
+
+  SWITCH($ERR.NUMBER)
+    CASE 0
+      RETURN #INITIALIZED
+    CASE 1422
+      
+      iParam = iDEFAULT
+      ERR_CLEAR($ERR)
+    DEFAULT
+      ERR_RAISE($ERR)
+  ENDSWITCH
+
+  RETURN (#DECLARED)
+ENDFCT ;(VAR_STATE CHECK_SET_IVAR)
+;*************************************
+DEFFCT VAR_STATE CHECK_SET_RVAR(rPARAM:OUT, rDEFAULT:IN)
+DECL REAL rPARAM, rDEFAULT, rCHECK
+
+  ON_ERROR_PROCEED
+  rCHECK = rPARAM
+  SWITCH($ERR.NUMBER)
+    CASE 0
+      RETURN #INITIALIZED
+    CASE 1422
+      
+      rPARAM = rDEFAULT
+      ERR_CLEAR($ERR)
+    DEFAULT
+      ERR_RAISE($ERR)
+  ENDSWITCH
+
+  RETURN #DECLARED
+ENDFCT ;(VAR_STATE CHECK_SET_RVAR)
+;*************************************
+DEFFCT VAR_STATE CHECK_SET_BVAR(bPARAM:OUT, bDEFAULT:IN)
+DECL BOOL bPARAM, bDEFAULT, bCHECK
+
+  ON_ERROR_PROCEED
+  bCHECK = bPARAM
+  SWITCH($ERR.NUMBER)
+    CASE 0
+      RETURN #INITIALIZED
+    CASE 1422
+      
+      bParam = bDEFAULT
+      ERR_CLEAR($ERR)
+    DEFAULT
+      ERR_RAISE($ERR)
+  ENDSWITCH
+
+  RETURN (#DECLARED)
+ENDFCT ;(VAR_STATE CHECK_SET_BVAR)
+;********************************************
+;* Varstate check of variables              *
+;* bTQM_FIRST_AFTER_BCO,bTQM_RINGMEM_INIT_C *
+;* bTQM_OV_ONL and bTQM_UP_INIT             *
+;********************************************
+DEF CHECK_VARSTATES()
+DECL VAR_STATE eRET
+
+  eRET = CHECK_SET_BVAR(bTQM_FIRST_AFTER_BCO, FALSE)
+  eRET = CHECK_SET_BVAR(bTQM_RINGMEM_INIT_C, FALSE)
+  eRET = CHECK_SET_BVAR(bTQM_OV_ONL, FALSE)
+  eRET = CHECK_SET_BVAR(bTQM_UP_INIT, TRUE) ;Requested TQM_INI()
+
+END ;(CheckVarStates)
+;*************************
+DEFFCT BOOL IS_MSTEP_MOVE()
+
+  IF ($MODE_OP<>#EX) AND (($VW_PSPS_STOP B_AND 4) > 0) THEN
+    
+    RETURN (TRUE)
+  ELSE
+    RETURN (FALSE)
+  ENDIF
+
+ENDFCT ;(IS_MSTEP_MOVE)
+;****************
+;* Warmup Check *
+;****************
+DEFFCT BOOL IS_WARMUP()
+
+  IF ISMESSAGESET(375) THEN
+    RETURN TRUE
+  ELSE
+    RETURN FALSE
+  ENDIF
+
+ENDFCT
+;**********************************
+;* Own TQM Notify message routine *
+;**********************************
+DEF MSG_TQM(MSG:IN, PARAM[]:OUT)
+DECL KRLMSG_T MSG
+DECL KRLMSGPAR_T PAR[1]
+DECL KRLMSGOPT_T OPT  
+DECL BOOL bRESULT
+DECL CHAR PARAM[]
+DECL INT  nHandle 
+
+  
+  PAR[1].PAR_TXT[]=" "
+  bRESULT= STRCOPY(PAR[1].PAR_TXT[],PARAM[])
+  PAR[1].PAR_TYPE=#Value
+  OPT={VL_STOP TRUE, CLEAR_P_RESET TRUE, LOG_TO_DB TRUE}
+  nHandle=SET_KRLMSG(#Notify,MSG,PAR[],OPT)
+
+END ;(MSG_TQM)
+;***************************
+;* Check of running submit *
+;***************************
+DEF CHECK_SUBMIT_RUNS()
+DECL KRLMSG_T MSG
+DECL KRLMSGPAR_T PAR[1]
+DECL KRLMSGOPT_T OPT
+DECL INT nHandle 
+
+  IF NOT bTQM_SubICheck THEN
+    RETURN
+  ENDIF
+
+  MSG={MODUL[] "TQM", NR 12, MSG_TXT[] "SubmitNotActive"}
+  OPT={VL_STOP TRUE, CLEAR_P_RESET TRUE, LOG_TO_DB FALSE}
+
+  WHILE $PRO_STATE0 <> #P_ACTIVE 
+    nHandle=SET_KRLMSG(#State,MSG,PAR[],OPT)
+    IF nHANDLE > 0 THEN
+      WHILE $PRO_STATE0 <> #P_ACTIVE 
+        WAIT SEC 0.06
+      ENDWHILE
+      WAIT FOR CLEAR_KRLMSG(nHandle)
+    ELSE
+      HALT ; R1 => (TQM_INI)
+    ENDIF
+  ENDWHILE
+END ;(CHECK_SUBMIT_RUNS)

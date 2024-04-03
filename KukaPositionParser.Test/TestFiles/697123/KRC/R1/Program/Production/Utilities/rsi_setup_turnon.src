@@ -1,0 +1,249 @@
+&ACCESS RVO1
+&REL 52
+&PARAM EDITMASK = *
+DEFFCT BOOL RSI_SetUp_TurnOn(contID:OUT)
+   ; Declaration of KRL variables
+   DECL INT contID	; ContainerID
+   DECL INT ret	; Return value for RSI commands
+   
+   $LOAD = LOAD_DATA[1]
+   ; Create signal processing
+   ret=RSI_CREATE("RSI_ME_Tracking.rsi", contID)
+   IF (ret <> RSIOK) THEN
+      HALT
+      RETURN FALSE
+   ENDIF
+   
+   ret = rsi_setpublicpar(contID, "SCANNER_OUT_OF_RANGE", "Offset", VIS_HEIGHT_NOT_IN_RANGE)
+   
+   
+   ;FOLD Stop Single Axis Correction SEN_PINT index 
+   ret = rsi_setpublicpar(contID, "SystemDisable", "Index", RSI_Sys_Disable)
+   ret = rsi_setpublicpar(contID, "XDisable", "Index", RSI_x_Sys_Disable)
+   ret = rsi_setpublicpar(contID, "YDisable", "Index", RSI_Y_Sys_Disable)
+   ret = rsi_setpublicpar(contID, "ZDisable", "Index", RSI_Z_Sys_Disable)
+   ret = rsi_setpublicpar(contID, "ADisable", "Index", RSI_A_Sys_Disable)
+   ret = rsi_setpublicpar(contID, "BDisable", "Index", RSI_B_Sys_Disable)
+   ret = rsi_setpublicpar(contID, "CDisable", "Index", RSI_C_Sys_Disable)
+   ret = rsi_setpublicpar(contID, "RSI_MoveCorr_Stop", "Index", RSI_MoveCorr_Stop)
+   ret = rsi_setpublicpar(contID, "RSI_MoveCorr_Stop_COUNTDOWN", "Index", RSI_MoveCorr_COUNTDOWN)
+   ret = rsi_setpublicpar(contID, "RSI_MoveCorr_Stop_Countdown_OUT", "Index", RSI_MoveCorr_COUNTDOWN)
+   
+   ;ENDFOLD
+   
+   
+   ;FOLD Set PLC Stop Signal Indexes
+   ; PLC Stop Sensor Driven Axis Correction Mode. Singal bit indx
+   ret = rsi_setpublicpar(contID, "STOP_MOVE_CORR_PLC_SIGNAL", "Index", 5122)
+   
+   ; PLC Stop Single Axis Correction. Singal bit indx 
+   ret = rsi_setpublicpar(contID, "XDisable_PLC", "Index", 5123)
+   
+   ; PLC Stop Single Axis Correction. Singal bit indx
+   ret = rsi_setpublicpar(contID, "YDisable_PLC", "Index", 5124)
+   
+   ; PLC Stop Single Axis Correction. Singal bit indx
+   ret = rsi_setpublicpar(contID, "ZDisable_PLC", "Index", 5125)
+   
+   ; PLC Stop Single Axis Correction. Singal bit indx
+   ret = rsi_setpublicpar(contID, "ADisable_PLC", "Index", 5126)
+   
+   ; PLC Stop Single Axis Correction. Singal bit indx
+   ret = rsi_setpublicpar(contID, "BDisable_PLC", "Index", 5127)
+   
+   ; PLC Stop Single Axis Correction. Singal bit indx
+   ret = rsi_setpublicpar(contID, "CDisable_PLC", "Index", 5128)
+   
+   ; PLC Height Axis Signal Selection. Singal bit indx
+   ret = rsi_setpublicpar(contID, "VIS_Dist_Height_Signal_Select", "Index", 5120)
+   
+   ret = rsi_setpublicpar(contID, "GO_MANUAL", "Index", 5111)
+   
+   ;ENDFOLD
+   
+   ;FOLD Set Sensor indexes
+   ; Sensor Index by Byte starting at 1, 651 = $DIGIN[5201] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_X", "Index", 651)
+   
+   ; Sensor Index by Byte starting at 1, 655 = $DIGIN[5233] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_Height", "Index", 655)
+   ret = rsi_setpublicpar(contID, "VIS_C_Angle", "Index", 655)
+   ; Sensor Index by Byte starting at 1, 659 = $DIGIN[5265] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_B_Angle", "Index", 659)
+
+   
+   ; Sensor Index by Byte starting at 1, 663 = $DIGIN[5297] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_Dist_Height", "Index", 663)
+   ;ENDFOLD
+   
+   ;FOLD Set Targets indexes
+   ; Target Index by Byte starting at 1, 691 = $DIGIN[5521] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_X_Target", "Index", 691)
+   
+   ; Target Index by Byte starting at 1, 695 = $DIGIN[5553] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_Height_Target", "Index", 695)
+   ret = rsi_setpublicpar(contID, "VIS_C_Angle_Target", "Index", 695)
+  
+   ; Target Index by Byte starting at 1, 687 = $DIGIN[5489] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_Dist_Height_Target", "Index", 687)
+     
+   ; Target Index by Byte starting at 1, 699 = $DIGIN[5585] bit indx
+   ret = rsi_setpublicpar(contID, "VIS_B_Angle_Target", "Index", 699)
+   ;ENDFOLD
+   
+   
+   
+   
+   ;FOLD Set Targets and whether signal is inverted
+   ret = SetTargetAndInversion(contID, "VIS_X", VIS_POS_TARGET, -1.0)
+   ret = SetTargetAndInversion(contID, "VIS_Pos", VIS_X_TARGET, -1.0)
+   ret = SetTargetAndInversion(contID, "VIS_Height", VIS_HEIGHT_TARGET, 1.0)
+   ret = SetTargetAndInversion(contID, "VIS_A_Angle", VIS_A_ANGLE_TARGET, -1.0)
+   ret = SetTargetAndInversion(contID, "VIS_B_Angle", VIS_C_ANGLE_TARGET, 1.0)
+   ret = SetTargetAndInversion(contID, "VIS_C_Angle", VIS_B_ANGLE_TARGET, -1.0)
+   ret = SetTargetAndInversion(contID, "VIS_Dist_Height", VIS_HEIGHT_TARGET, 1.0)
+   ;ENDFOLD
+   
+   ;FOLD Set Limits
+   ret = SetLimits(contID, "VIS_X_Limit", -0.01, 0.01)
+   ret = SetLimits(contID, "VIS_POS_Limit", -0.01, 0.01)
+   ret = SetLimits(contID, "VIS_HEIGHT_Limit", -0.1, 0.1)
+   ret = SetLimits(contID, "VIS_Dist_HEIGHT_Limit", -0.1, 0.1)
+   ret = SetLimits(contID, "VIS_A_ANGLE_Limit", -0.01, 0.01)
+   ret = SetLimits(contID, "VIS_B_ANGLE_Limit", -0.01, 0.01)
+   ret = SetLimits(contID, "VIS_C_ANGLE_Limit", -0.01, 0.01)
+   ret = rsi_setpublicpar(contID, "JOG_POS_AMOUNT", "Offset", 0.0025)
+   ret = rsi_setpublicpar(contID, "JOG_NEG_AMOUNT", "Offset", -0.0025)
+   ;ENDFOLD
+   
+   ;FOLD Turn Sensor signals Defaults
+   $SEN_PINT[RSI_Sys_Disable]=0     
+   $SEN_PINT[RSI_X_Sys_Disable]=0
+   $SEN_PINT[RSI_Y_Sys_Disable]=1
+   $SEN_PINT[RSI_Z_Sys_Disable]=0
+   $SEN_PINT[RSI_A_Sys_Disable]=1
+   $SEN_PINT[RSI_B_Sys_Disable]=0
+   $SEN_PINT[RSI_C_Sys_Disable]=0
+   $SEN_PINT[RSI_MoveCorr_Stop]=0
+   $SEN_PINT[RSI_MoveCorr_COUNTDOWN] = -1
+   ;ENDFOLD
+   
+   ;FOLD Set PIDs
+   ret = RSI_SetPIDs(contID)
+   
+   RSI_ACTIVE=TRUE
+   ;ENDFOLD
+   
+   ;Start signal processing in relative correction mode
+   ret=RSI_ON(#RELATIVE)
+   IF (ret <> RSIOK) THEN
+      HALT
+      RETURN FALSE
+   ENDIF
+   RETURN TRUE
+ENDFCT
+
+GLOBAL DEFFCT INT RSI_SetPIDs(contID:IN)
+   DECL INT contID
+   DECL INT ret
+   ret = SetPID(contID, "VIS_Pos_PID", RSI_XPid_P, RSI_XPid_I, RSI_XPid_D, RSI_XPid_LwrLim, RSI_XPid_UprLim)
+   ret = SetPID(contID, "VIS_X_PID", RSI_YPid_P, RSI_YPid_I, RSI_YPid_D, RSI_YPid_LwrLim, RSI_YPid_UprLim)
+   ret = SetPID(contID, "VIS_Height_PID", RSI_ZPid_P, RSI_ZPid_I, RSI_ZPid_D, RSI_ZPid_LwrLim, RSI_ZPid_UprLim)
+   ret = SetPID(contID, "VIS_Dist_Height_PID", RSI_ZPid_P, RSI_ZPid_I, RSI_ZPid_D, RSI_ZPid_LwrLim, RSI_ZPid_UprLim)
+   ret = SetPID(contID, "VIS_A_Angle_PID", RSI_APid_P, RSI_APid_I, RSI_APid_D, RSI_APid_LwrLim, RSI_APid_UprLim)
+   ret = SetPID(contID, "VIS_B_Angle_PID", RSI_BPid_P, RSI_BPid_I, RSI_BPid_D, RSI_BPid_LwrLim, RSI_BPid_UprLim)
+   ret = SetPID(contID, "VIS_C_Angle_PID", RSI_CPid_P, RSI_CPid_I, RSI_CPid_D, RSI_CPid_LwrLim, RSI_CPid_UprLim)
+   RETURN ret
+ENDFCT
+
+DEFFCT INT SetLimits(objID:IN, LimitObjName:IN, LimLow:IN, LimUpp:IN)
+   DECL INT objID
+   DECL CHAR LimitObjName[]
+   DECL REAL LimLow
+   DECL REAL LimUpp
+   DECL INT ret
+   IF varstate("LimLow")==#initialized THEN
+      ret = rsi_setpublicpar(objID, LimitObjName[], "LowerLimit", LimLow)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   IF varstate("LimUpp")==#initialized THEN
+      ret = rsi_setpublicpar(objID, LimitObjName[], "UpperLimit", LimUpp)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   RETURN ret
+ENDFCT
+
+DEFFCT INT SetPID(objID:IN,PIDName:IN, P:IN, I:IN, D:IN, LimLow:IN, LimUpp:IN)   
+   DECL INT objID
+   DECL CHAR PIDName[]
+   DECL REAL P
+   DECL REAL I
+   DECL REAL D
+   DECL REAL LimLow
+   DECL REAL LimUpp
+   DECL INT ret
+   IF varstate("P")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "KR", P)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("I")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "TN", I)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("D")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "TV", D)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("LimLow")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "LimLow", LimLow)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("LimUpp")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "LimUpp", LimUpp)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   RETURN ret
+ENDFCT
+
+
+
+DEFFCT INT SetTargetAndInversion(objID:IN,ObjectBaseName:IN, Target:IN, Inversion:IN)
+   DECL INT objID
+   DECL CHAR ObjectBaseName[]
+   CHAR Temp[25]
+   REAL Target
+   REAL Inversion
+   DECL INT ret
+   DECL BOOL retb
+
+   retb = STRCOPY(Temp[], ObjectBaseName[])
+   ret = STRADD(Temp[], "_Target_NEG")
+
+   retb = STRCLEAR(Temp[])
+   retb = STRCOPY(Temp[], ObjectBaseName[])
+   ret = STRADD(Temp[], "_Inversion")
+   ret = rsi_setpublicpar(objID, Temp[], "KR", Inversion)
+   IF (ret <> RSIOK) THEN
+      HALT
+   ENDIF
+   return ret
+ENDFCT

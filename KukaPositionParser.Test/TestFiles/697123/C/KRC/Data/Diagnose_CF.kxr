@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name20000">
+      <text xml:lang="de-DEV">CF</text>
+      <text xml:lang="en-DEV">CF</text>
+    </uiText>
+    <uiText key="Diagnose_Description20000">
+      <text xml:lang="de-DEV">Regler-Rahmen</text>
+      <text xml:lang="en-DEV">Controller framework</text>
+    </uiText>
+    <uiText key="Diagnose_Name20003">
+      <text xml:lang="de-DEV">Taktzähler</text>
+      <text xml:lang="en-DEV">Tick count</text>
+    </uiText>
+    <uiText key="Diagnose_Description20003">
+      <text xml:lang="de-DEV">Zähler für CF-Tick</text>
+      <text xml:lang="en-DEV">CF tick counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name20004">
+      <text xml:lang="de-DEV">Frequenz</text>
+      <text xml:lang="en-DEV">Frequency</text>
+    </uiText>
+    <uiText key="Diagnose_Description20004">
+      <text xml:lang="de-DEV">Taktrate CF</text>
+      <text xml:lang="en-DEV">Frequency CF</text>
+    </uiText>
+    <uiText key="Diagnose_Name20005">
+      <text xml:lang="de-DEV">CF2AT</text>
+      <text xml:lang="en-DEV">CF2AT</text>
+    </uiText>
+    <uiText key="Diagnose_Description20005">
+      <text xml:lang="de-DEV">Verhältnis Taktrate AT / CF</text>
+      <text xml:lang="en-DEV">Freqency ratio AT / CF</text>
+    </uiText>
+    <uiText key="Diagnose_Name20006">
+      <text xml:lang="de-DEV">Sync AT-CF</text>
+      <text xml:lang="en-DEV">Sync AT-CF</text>
+    </uiText>
+    <uiText key="Diagnose_Description20006">
+      <text xml:lang="de-DEV">Synchronisationsoffset AT-CF</text>
+      <text xml:lang="en-DEV">Synchronization offset AT-CF</text>
+    </uiText>
+    <uiText key="Diagnose_Name20007">
+      <text xml:lang="de-DEV">Sync CF-AT</text>
+      <text xml:lang="en-DEV">Sync CF-AT</text>
+    </uiText>
+    <uiText key="Diagnose_Description20007">
+      <text xml:lang="de-DEV">Synchronisationsoffset CF-AT</text>
+      <text xml:lang="en-DEV">Synchronization offset CF-AT</text>
+    </uiText>
+    <uiText key="Diagnose_Name20008">
+      <text xml:lang="de-DEV">Kommunikationsstatus AT</text>
+      <text xml:lang="en-DEV">Communication state AT</text>
+    </uiText>
+    <uiText key="Diagnose_Description20008">
+      <text xml:lang="de-DEV">Kommunikationsstatus Antriebstreiber</text>
+      <text xml:lang="en-DEV">Communication state motion driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name20009">
+      <text xml:lang="de-DEV">Zeitsynchronisation aktiv</text>
+      <text xml:lang="en-DEV">Time sync active</text>
+    </uiText>
+    <uiText key="Diagnose_Description20009">
+      <text xml:lang="de-DEV">Zeitsynchronisation aktiv</text>
+      <text xml:lang="en-DEV">Time sync active</text>
+    </uiText>
+    <uiText key="Diagnose_Name20010">
+      <text xml:lang="de-DEV">Zähler Empfangen T1 fehlgeschlagen</text>
+      <text xml:lang="en-DEV">Counter receive T1 fail</text>
+    </uiText>
+    <uiText key="Diagnose_Description20010">
+      <text xml:lang="de-DEV">Zähler für Empfang Telegramm-1 EtherCAT fehlgeschlagen</text>
+      <text xml:lang="en-DEV">Counter receive EtherCAT telegram 1 failed</text>
+    </uiText>
+    <uiText key="Diagnose_Name20011">
+      <text xml:lang="de-DEV">Zähler Takt-Ausfall-Kompensation</text>
+      <text xml:lang="en-DEV">Counter drop tick compensation</text>
+    </uiText>
+    <uiText key="Diagnose_Description20011">
+      <text xml:lang="de-DEV">Zähler Takt-Ausfall-Kompensation</text>
+      <text xml:lang="en-DEV">Counter drop tick compensation</text>
+    </uiText>
+    <uiText key="Diagnose_Name20012">
+      <text xml:lang="de-DEV">Zähler keine Daten AT</text>
+      <text xml:lang="en-DEV">Counter missing data AT</text>
+    </uiText>
+    <uiText key="Diagnose_Description20012">
+      <text xml:lang="de-DEV">Zähler keine Daten vom Antriebstreiber</text>
+      <text xml:lang="en-DEV">Counter missing data from motion driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name20013">
+      <text xml:lang="de-DEV">Zähler T1 senden und empfangen fehlerhaft</text>
+      <text xml:lang="en-DEV">Counter T1 send and receive failed</text>
+    </uiText>
+    <uiText key="Diagnose_Description20013">
+      <text xml:lang="de-DEV">Zähler T1 senden und empfangen fehlerhaft</text>
+      <text xml:lang="en-DEV">Counter T1 send and receive failed</text>
+    </uiText>
+    <uiText key="Diagnose_Name20200">
+      <text xml:lang="de-DEV">Reglerkanal</text>
+      <text xml:lang="en-DEV">Control channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description20200">
+      <text xml:lang="de-DEV">CF-Reglerkanal</text>
+      <text xml:lang="en-DEV">CF control channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name20202">
+      <text xml:lang="de-DEV">Zähler WDI ungültige Position</text>
+      <text xml:lang="en-DEV">Counter WDI invalid position</text>
+    </uiText>
+    <uiText key="Diagnose_Description20202">
+      <text xml:lang="de-DEV">Zähler Eingangs-Waggontreiber ungültige Position</text>
+      <text xml:lang="en-DEV">Counter input waggon driver invalid position</text>
+    </uiText>
+    <uiText key="Diagnose_Name20203">
+      <text xml:lang="de-DEV">Zähler WDI Position extrapoliert</text>
+      <text xml:lang="en-DEV">Counter WDI extrapolated position</text>
+    </uiText>
+    <uiText key="Diagnose_Description20203">
+      <text xml:lang="de-DEV">Zähler Eingangs-Waggontreiber Position extrapoliert</text>
+      <text xml:lang="en-DEV">Counter input waggon driver  extrapolated position</text>
+    </uiText>
+    <uiText key="Diagnose_Name20205">
+      <text xml:lang="de-DEV">Zähler WDO Strom überschritten</text>
+      <text xml:lang="en-DEV">Counter WDO current exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Description20205">
+      <text xml:lang="de-DEV">Zähler Ausgangs-Waggontreiber Maximalstrom überschritten</text>
+      <text xml:lang="en-DEV">Counter output waggon driver maximum current exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name20210">
+      <text xml:lang="de-DEV">Regler freigegeben</text>
+      <text xml:lang="en-DEV">Controller enabled</text>
+    </uiText>
+    <uiText key="Diagnose_Description20210">
+      <text xml:lang="de-DEV">Regler freigebeben</text>
+      <text xml:lang="en-DEV">Controller enabled</text>
+    </uiText>
+    <uiText key="Diagnose_Name20211">
+      <text xml:lang="de-DEV">Standardregler aktiv</text>
+      <text xml:lang="en-DEV">Standard controller active</text>
+    </uiText>
+    <uiText key="Diagnose_Description20211">
+      <text xml:lang="de-DEV">Standardregler aktiv</text>
+      <text xml:lang="en-DEV">Standard controller active</text>
+    </uiText>
+    <uiText key="Diagnose_Name20212">
+      <text xml:lang="de-DEV">Fallbackregler aktiv</text>
+      <text xml:lang="en-DEV">Fallback controller active</text>
+    </uiText>
+    <uiText key="Diagnose_Description20212">
+      <text xml:lang="de-DEV">Fallbackregler aktiv</text>
+      <text xml:lang="en-DEV">Fallback controller active</text>
+    </uiText>
+    <uiText key="Diagnose_Name20213">
+      <text xml:lang="de-DEV">Globale zyklische Reglerparameter gültig</text>
+      <text xml:lang="en-DEV">Global cylclic control parameters valid</text>
+    </uiText>
+    <uiText key="Diagnose_Description20213">
+      <text xml:lang="de-DEV">Globale zyklische Reglerparameter gültig</text>
+      <text xml:lang="en-DEV">Global cylclic control parameters valid</text>
+    </uiText>
+    <uiText key="Diagnose_Name20214">
+      <text xml:lang="de-DEV">Zyklische Reglerparameter gültig</text>
+      <text xml:lang="en-DEV">Cylclic control parameters valid</text>
+    </uiText>
+    <uiText key="Diagnose_Description20214">
+      <text xml:lang="de-DEV">Zyklische Reglerparameter gültig</text>
+      <text xml:lang="en-DEV">Cylclic control parameters valid</text>
+    </uiText>
+    <uiText key="Diagnose_Name20215">
+      <text xml:lang="de-DEV">AT-Kommando Standardregler</text>
+      <text xml:lang="en-DEV">AT command standard controller</text>
+    </uiText>
+    <uiText key="Diagnose_Description20215">
+      <text xml:lang="de-DEV">AT-Kommando Standardregler</text>
+      <text xml:lang="en-DEV">AT command standard controller</text>
+    </uiText>
+    <uiText key="Diagnose_Name20220">
+      <text xml:lang="de-DEV">Controller 0</text>
+      <text xml:lang="en-DEV">Controller 0</text>
+    </uiText>
+    <uiText key="Diagnose_Description20220">
+      <text xml:lang="de-DEV">Controller 0</text>
+      <text xml:lang="en-DEV">Controller 0</text>
+    </uiText>
+    <uiText key="Diagnose_Name20221">
+      <text xml:lang="de-DEV">Controller 1</text>
+      <text xml:lang="en-DEV">Controller 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description20221">
+      <text xml:lang="de-DEV">Controller 1</text>
+      <text xml:lang="en-DEV">Controller 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name20222">
+      <text xml:lang="de-DEV">Controller 2</text>
+      <text xml:lang="en-DEV">Controller 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description20222">
+      <text xml:lang="de-DEV">Controller 2</text>
+      <text xml:lang="en-DEV">Controller 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name20223">
+      <text xml:lang="de-DEV">Controller 3</text>
+      <text xml:lang="en-DEV">Controller 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description20223">
+      <text xml:lang="de-DEV">Controller 3</text>
+      <text xml:lang="en-DEV">Controller 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name20224">
+      <text xml:lang="de-DEV">Controller 4</text>
+      <text xml:lang="en-DEV">Controller 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description20224">
+      <text xml:lang="de-DEV">Controller 4</text>
+      <text xml:lang="en-DEV">Controller 4</text>
+    </uiText>
+    <uiText key="Diagnose_Name20225">
+      <text xml:lang="de-DEV">Controller 5</text>
+      <text xml:lang="en-DEV">Controller 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description20225">
+      <text xml:lang="de-DEV">Controller 5</text>
+      <text xml:lang="en-DEV">Controller 5</text>
+    </uiText>
+    <uiText key="Diagnose_Name20226">
+      <text xml:lang="de-DEV">Controller 6</text>
+      <text xml:lang="en-DEV">Controller 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description20226">
+      <text xml:lang="de-DEV">Controller 6</text>
+      <text xml:lang="en-DEV">Controller 6</text>
+    </uiText>
+    <uiText key="Diagnose_Name20227">
+      <text xml:lang="de-DEV">Controller 7</text>
+      <text xml:lang="en-DEV">Controller 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description20227">
+      <text xml:lang="de-DEV">Controller 7</text>
+      <text xml:lang="en-DEV">Controller 7</text>
+    </uiText>
+    <uiText key="Diagnose_Name20228">
+      <text xml:lang="de-DEV">Controller 8</text>
+      <text xml:lang="en-DEV">Controller 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description20228">
+      <text xml:lang="de-DEV">Controller 8</text>
+      <text xml:lang="en-DEV">Controller 8</text>
+    </uiText>
+    <uiText key="Diagnose_Name20229">
+      <text xml:lang="de-DEV">Controller 9</text>
+      <text xml:lang="en-DEV">Controller 9</text>
+    </uiText>
+    <uiText key="Diagnose_Description20229">
+      <text xml:lang="de-DEV">Controller 9</text>
+      <text xml:lang="en-DEV">Controller 9</text>
+    </uiText>
+    <uiText key="Diagnose_Name20250">
+      <text xml:lang="de-DEV">Fehler-Status-Flags Positionserfassung</text>
+      <text xml:lang="en-DEV">State flags position on error</text>
+    </uiText>
+    <uiText key="Diagnose_Description20250">
+      <text xml:lang="de-DEV">Statusflags Positionserfassungskanal bei letztem Fehler oder Extrapolation</text>
+      <text xml:lang="en-DEV">State and error flags of position channel when error or extrapolation occurred</text>
+    </uiText>
+    <uiText key="Diagnose_Name20400">
+      <text xml:lang="de-DEV">Versorgerkanal</text>
+      <text xml:lang="en-DEV">Supply channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description20400">
+      <text xml:lang="de-DEV">CF-Versorgerkanal</text>
+      <text xml:lang="en-DEV">CF supply channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name20500">
+      <text xml:lang="de-DEV">EtherCAT Agent</text>
+      <text xml:lang="en-DEV">EtherCAT agent</text>
+    </uiText>
+    <uiText key="Diagnose_Description20500">
+      <text xml:lang="de-DEV">EtherCAT Agent</text>
+      <text xml:lang="en-DEV">EtherCAT agent</text>
+    </uiText>
+    <uiText key="Diagnose_Name20510">
+      <text xml:lang="de-DEV">Mux-1 0</text>
+      <text xml:lang="en-DEV">Mux-1 0</text>
+    </uiText>
+    <uiText key="Diagnose_Description20510">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 0</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 0</text>
+    </uiText>
+    <uiText key="Diagnose_Name20511">
+      <text xml:lang="de-DEV">Mux-1 1</text>
+      <text xml:lang="en-DEV">Mux-1 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description20511">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 1</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name20512">
+      <text xml:lang="de-DEV">Mux-1 2</text>
+      <text xml:lang="en-DEV">Mux-1 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description20512">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 2</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name20513">
+      <text xml:lang="de-DEV">Mux-1 3</text>
+      <text xml:lang="en-DEV">Mux-1 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description20513">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 3</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name20514">
+      <text xml:lang="de-DEV">Mux-1 4</text>
+      <text xml:lang="en-DEV">Mux-1 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description20514">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 4</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 4</text>
+    </uiText>
+    <uiText key="Diagnose_Name20515">
+      <text xml:lang="de-DEV">Mux-1 5</text>
+      <text xml:lang="en-DEV">Mux-1 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description20515">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 5</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 5</text>
+    </uiText>
+    <uiText key="Diagnose_Name20516">
+      <text xml:lang="de-DEV">Mux-1 6</text>
+      <text xml:lang="en-DEV">Mux-1 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description20516">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 6</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 6</text>
+    </uiText>
+    <uiText key="Diagnose_Name20517">
+      <text xml:lang="de-DEV">Mux-1 7</text>
+      <text xml:lang="en-DEV">Mux-1 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description20517">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 7</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 7</text>
+    </uiText>
+    <uiText key="Diagnose_Name20518">
+      <text xml:lang="de-DEV">Mux-1 8</text>
+      <text xml:lang="en-DEV">Mux-1 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description20518">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 8</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 8</text>
+    </uiText>
+    <uiText key="Diagnose_Name20519">
+      <text xml:lang="de-DEV">Mux-1 9</text>
+      <text xml:lang="en-DEV">Mux-1 9</text>
+    </uiText>
+    <uiText key="Diagnose_Description20519">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 9</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 9</text>
+    </uiText>
+    <uiText key="Diagnose_Name20520">
+      <text xml:lang="de-DEV">Mux-1 10</text>
+      <text xml:lang="en-DEV">Mux-1 10</text>
+    </uiText>
+    <uiText key="Diagnose_Description20520">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 10</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 10</text>
+    </uiText>
+    <uiText key="Diagnose_Name20521">
+      <text xml:lang="de-DEV">Mux-1 11</text>
+      <text xml:lang="en-DEV">Mux-1 11</text>
+    </uiText>
+    <uiText key="Diagnose_Description20521">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 11</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 11</text>
+    </uiText>
+    <uiText key="Diagnose_Name20522">
+      <text xml:lang="de-DEV">Mux-1 12</text>
+      <text xml:lang="en-DEV">Mux-1 12</text>
+    </uiText>
+    <uiText key="Diagnose_Description20522">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 12</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 12</text>
+    </uiText>
+    <uiText key="Diagnose_Name20523">
+      <text xml:lang="de-DEV">Mux-1 13</text>
+      <text xml:lang="en-DEV">Mux-1 13</text>
+    </uiText>
+    <uiText key="Diagnose_Description20523">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 13</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 13</text>
+    </uiText>
+    <uiText key="Diagnose_Name20524">
+      <text xml:lang="de-DEV">Mux-1 14</text>
+      <text xml:lang="en-DEV">Mux-1 14</text>
+    </uiText>
+    <uiText key="Diagnose_Description20524">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 14</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 14</text>
+    </uiText>
+    <uiText key="Diagnose_Name20525">
+      <text xml:lang="de-DEV">Mux-1 15</text>
+      <text xml:lang="en-DEV">Mux-1 15</text>
+    </uiText>
+    <uiText key="Diagnose_Description20525">
+      <text xml:lang="de-DEV">Multiplexerkanal 1-Bit 15</text>
+      <text xml:lang="en-DEV">Multiplexer channels 1 bit 15</text>
+    </uiText>
+  </module>
+</resources>

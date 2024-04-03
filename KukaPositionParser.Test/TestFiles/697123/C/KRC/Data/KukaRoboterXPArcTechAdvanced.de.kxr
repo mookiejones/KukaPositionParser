@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="de" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="KukaRoboterXPArcTechAdvanced">
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnTheFly">
+      <text>Fliegend ein- oder ausschalten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisablesSlope">
+      <text>Verhalten bei OnlineOptimierung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoWeldingMasterFound">
+      <text>Es wurde kein Schweißmaster gefunden!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeActive">
+      <text>Rampen aktiv</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeDisabled">
+      <text>Rampen deaktiviert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptionIdentifier">
+      <text>ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAoXUSeamNumber">
+      <text>Nahtnummer Output zur SPS</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorStart">
+      <text>Generiere code für ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayRight">
+      <text>Pendelverzögerung rechts</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransferDisabledForArcLinkXXT">
+      <text>Robotergeschwindigkeitstransfer ist für ArcLinkXT Stromquellen deaktiviert.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisabled">
+      <text>OnlineOpt. deaktiviert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessTrans">
+      <text>Ausgabe Prozeßgeschwindigkeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldClearance">
+      <text>Nahtfreigabe über SPS</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessFactor">
+      <text>Faktor für die Prozeßgeschwindigkeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingTest">
+      <text>Test</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityUnit">
+      <text>Geschw. Einheit der Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlope">
+      <text>Rampen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptions">
+      <text>ArcTech Advanced Optionen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSignalAreaForPowerSource">
+      <text>Signalbereich des Roboters</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAiXUSeamNumber">
+      <text>Nahtnummer Input von SPS</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingMaster">
+      <text>Schweißmaster</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMUnitAreaForPowerSource">
+      <text>Wertebereich der Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorFinished">
+      <text>Codegenerierung für ArcTechAdvanced abgeschlossen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMMissingWeldMaster">
+      <text>Kein Schweißmaster gefunden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedSlopeOptions">
+      <text>ArcTechAdvanced Rampeneinstellungen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoErrorUntilSeamEndActive">
+      <text>Fehlerstrategie erst am Ende der Naht ausführen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayLeft">
+      <text>Pendelverzögerung links</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelay">
+      <text>Verzögertes Pendeln</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransfer">
+      <text>Robotergeschwindigkeitstransfer</text>
+    </uiText>
+  </module>
+</resources>

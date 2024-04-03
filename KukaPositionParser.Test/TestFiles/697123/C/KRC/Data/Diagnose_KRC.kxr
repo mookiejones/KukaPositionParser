@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name22001">
+      <text xml:lang="de-DEV">KRC</text>
+      <text xml:lang="en-DEV">KRC</text>
+    </uiText>
+    <uiText key="Diagnose_Description22001">
+      <text xml:lang="de-DEV">KRC</text>
+      <text xml:lang="en-DEV">KRC</text>
+    </uiText>
+    <uiText key="Diagnose_Name22002">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22002">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22003">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22003">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22004">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22004">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22005">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22005">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22006">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22006">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22007">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22007">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22008">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22008">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22009">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22009">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22010">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22010">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22011">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22011">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22012">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22012">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22013">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22013">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22014">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22014">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22015">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22015">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22016">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22016">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22017">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22017">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22018">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22018">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22019">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22019">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22020">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22020">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22021">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22021">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22022">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22022">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22023">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22023">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22024">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22024">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22025">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22025">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22026">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22026">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22027">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22027">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22028">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22028">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22029">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22029">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22030">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22030">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22031">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22031">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22032">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22032">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22033">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22033">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22034">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22034">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22035">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22035">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22036">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22036">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22037">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22037">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22038">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22038">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22039">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22039">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22040">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22040">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22041">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22041">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22042">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22042">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22043">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22043">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22044">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22044">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22045">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22045">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22046">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22046">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22047">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22047">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22048">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22048">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22049">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22049">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22050">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22050">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22051">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22051">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22052">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22052">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22053">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22053">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22054">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22054">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22055">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22055">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22056">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22056">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22057">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22057">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22058">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22058">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22059">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22059">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22060">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22060">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22061">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22061">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22062">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22062">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22063">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22063">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22064">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22064">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22065">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22065">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22066">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22066">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22067">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22067">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22068">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22068">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22069">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22069">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22070">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22070">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22071">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22071">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22072">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22072">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22073">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22073">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22074">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22074">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22075">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22075">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22076">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22076">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22077">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22077">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22078">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22078">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22079">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22079">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22080">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22080">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22081">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22081">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22082">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22082">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22083">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22083">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22084">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22084">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22085">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22085">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22086">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22086">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22087">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22087">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22088">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22088">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22089">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22089">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22090">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22090">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22091">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22091">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22092">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22092">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22093">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22093">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22094">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22094">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22095">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22095">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22096">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22096">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22097">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22097">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22098">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22098">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22099">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22099">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22100">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22100">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22101">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22101">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22102">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22102">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22103">
+      <text xml:lang="de-DEV">Fehler beim Anfordern des Triggers</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22103">
+      <text xml:lang="de-DEV">Fehler beim Anfordern des Triggers</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22104">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22104">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22105">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22105">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22106">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22106">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22107">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22107">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22108">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22108">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22109">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22109">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22110">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description22110">
+      <text xml:lang="de-DEV">IO-Treiber</text>
+      <text xml:lang="en-DEV">IO-Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name22111">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Description22111">
+      <text xml:lang="de-DEV">IO-Businstanz</text>
+      <text xml:lang="en-DEV">IO-Businstanz</text>
+    </uiText>
+    <uiText key="Diagnose_Name22112">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description22112">
+      <text xml:lang="de-DEV">Verbunden</text>
+      <text xml:lang="en-DEV">Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name22113">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22113">
+      <text xml:lang="de-DEV">Lese-/Schreibfehler</text>
+      <text xml:lang="en-DEV">Read/Write error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22114">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Description22114">
+      <text xml:lang="de-DEV">Konfigurationsfehler</text>
+      <text xml:lang="en-DEV">Configuration error</text>
+    </uiText>
+    <uiText key="Diagnose_Name22115">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Description22115">
+      <text xml:lang="de-DEV">Fehler beim Anfordern der Trigger</text>
+      <text xml:lang="en-DEV">Error requesting trigger</text>
+    </uiText>
+    <uiText key="Diagnose_Name22116">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description22116">
+      <text xml:lang="de-DEV">Fehler beim Öffnen des azyklischen Datenkanal</text>
+      <text xml:lang="en-DEV">Error opening acyclic data channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name22117">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Description22117">
+      <text xml:lang="de-DEV">Treiber wurde deinstalliert</text>
+      <text xml:lang="en-DEV">Driver was deinstalled</text>
+    </uiText>
+    <uiText key="Diagnose_Name22118">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22118">
+      <text xml:lang="de-DEV">Externe Trigger angefordet</text>
+      <text xml:lang="en-DEV">External trigger wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22119">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Description22119">
+      <text xml:lang="de-DEV">Azyklische Datenkanal angefordet</text>
+      <text xml:lang="en-DEV">Acyclic data channel wanted</text>
+    </uiText>
+    <uiText key="Diagnose_Name22120">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22120">
+      <text xml:lang="de-DEV">Azyklische Daten Empfangszähler</text>
+      <text xml:lang="en-DEV">Acyclic data receive counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22121">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22121">
+      <text xml:lang="de-DEV">Azyklische Daten Sendezähler</text>
+      <text xml:lang="en-DEV">Acyclic data send counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22130">
+      <text xml:lang="de-DEV">Roboter-Interpreter</text>
+      <text xml:lang="en-DEV">Robot-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22130">
+      <text xml:lang="de-DEV">Roboter-Interpreter</text>
+      <text xml:lang="en-DEV">Robot-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22131">
+      <text xml:lang="de-DEV">System-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">System-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22131">
+      <text xml:lang="de-DEV">System-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">System-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22132">
+      <text xml:lang="de-DEV">1. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">1. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22132">
+      <text xml:lang="de-DEV">1. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">1. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22133">
+      <text xml:lang="de-DEV">2. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">2. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22133">
+      <text xml:lang="de-DEV">2. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">2. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22134">
+      <text xml:lang="de-DEV">3. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">3. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22134">
+      <text xml:lang="de-DEV">3. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">3. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22135">
+      <text xml:lang="de-DEV">4. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">4. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22135">
+      <text xml:lang="de-DEV">4. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">4. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22136">
+      <text xml:lang="de-DEV">5. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">5. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22136">
+      <text xml:lang="de-DEV">5. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">5. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22137">
+      <text xml:lang="de-DEV">6. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">6. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22137">
+      <text xml:lang="de-DEV">6. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">6. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22138">
+      <text xml:lang="de-DEV">7. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">7. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22138">
+      <text xml:lang="de-DEV">7. Ext.-Submit-Interpreter</text>
+      <text xml:lang="en-DEV">7. Ext.-Submit-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22139">
+      <text xml:lang="de-DEV">Expression-Interpreter</text>
+      <text xml:lang="en-DEV">Expression-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22139">
+      <text xml:lang="de-DEV">Expression-Interpreter</text>
+      <text xml:lang="en-DEV">Expression-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22140">
+      <text xml:lang="de-DEV">KRL-Interrupt-Check</text>
+      <text xml:lang="en-DEV">KRL-Interrupt-Check</text>
+    </uiText>
+    <uiText key="Diagnose_Description22140">
+      <text xml:lang="de-DEV">KRL-Interrupt-Check</text>
+      <text xml:lang="en-DEV">KRL-Interrupt-Check</text>
+    </uiText>
+    <uiText key="Diagnose_Name22141">
+      <text xml:lang="de-DEV">Info-Handler-Interpreter</text>
+      <text xml:lang="en-DEV">Info-Handler-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Description22141">
+      <text xml:lang="de-DEV">Info-Handler-Interpreter</text>
+      <text xml:lang="en-DEV">Info-Handler-Interpreter</text>
+    </uiText>
+    <uiText key="Diagnose_Name22142">
+      <text xml:lang="de-DEV">VxWin-Idle</text>
+      <text xml:lang="en-DEV">VxWin-Idle</text>
+    </uiText>
+    <uiText key="Diagnose_Description22142">
+      <text xml:lang="de-DEV">VxWin-Idle</text>
+      <text xml:lang="en-DEV">VxWin-Idle</text>
+    </uiText>
+  </module>
+</resources>

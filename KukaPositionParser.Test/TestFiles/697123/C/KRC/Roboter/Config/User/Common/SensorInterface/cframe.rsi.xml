@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSIObjects xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/RSIContext.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RSIObject ObjType="DIGIN" ObjTypeID="29" ObjID="DIGIN1">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="376" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="4" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MONITOR" ObjTypeID="55" ObjID="MONITOR1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="IIRFILTER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="MULTI1" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SUM1" OutIdx="1" />
+      <Input InIdx="4" OutObjID="PD1" OutIdx="1" />
+      <Input InIdx="5" OutObjID="SOURCE2" OutIdx="1" />
+      <Input InIdx="8" OutObjID="EQUAL1" OutIdx="1" />
+      <Input InIdx="9" OutObjID="TIMER1" OutIdx="1" />
+      <Input InIdx="10" OutObjID="SOURCE3" OutIdx="1" />
+      <Input InIdx="11" OutObjID="IIRFILTER1" OutIdx="1" />
+      <Input InIdx="12" OutObjID="OR1" OutIdx="1" />
+      <Input InIdx="13" OutObjID="AXISCORREXT1" OutIdx="8" />
+      <Input InIdx="14" OutObjID="SOURCE4" OutIdx="1" />
+      <Input InIdx="15" OutObjID="AXISACTEXT1" OutIdx="7" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Refresh" ParamID="1" ParamValue="1" />
+      <Parameter Name="Timeout" ParamID="2" ParamValue="10" />
+      <Parameter Name="ReqTimeZero" ParamID="3" ParamValue="1" />
+      <Parameter Name="IP" ParamID="1" ParamValue="192.168.0.1" IsRuntime="false" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="1" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="AXISCORREXT" ObjTypeID="33" ObjID="AXISCORREXT1">
+    <Inputs>
+      <Input InIdx="7" OutObjID="PD1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="LowerLimE1" ParamID="7" ParamValue="-5" IsPublic="true" />
+      <Parameter Name="LowerLimE2" ParamID="8" ParamValue="-5" />
+      <Parameter Name="LowerLimE3" ParamID="9" ParamValue="-5" />
+      <Parameter Name="LowerLimE4" ParamID="10" ParamValue="-5" />
+      <Parameter Name="LowerLimE5" ParamID="11" ParamValue="-5" />
+      <Parameter Name="LowerLimE6" ParamID="12" ParamValue="-5" />
+      <Parameter Name="UpperLimE1" ParamID="19" ParamValue="1" IsPublic="true" />
+      <Parameter Name="UpperLimE2" ParamID="20" ParamValue="5" />
+      <Parameter Name="UpperLimE3" ParamID="21" ParamValue="5" />
+      <Parameter Name="UpperLimE4" ParamID="22" ParamValue="5" />
+      <Parameter Name="UpperLimE5" ParamID="23" ParamValue="5" />
+      <Parameter Name="UpperLimE6" ParamID="24" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="AXISCORRMON" ObjTypeID="82" ObjID="AXISCORRMON1">
+    <Parameters>
+      <Parameter Name="MaxA1" ParamID="1" ParamValue="0.01" />
+      <Parameter Name="MaxA2" ParamID="2" ParamValue="0.01" />
+      <Parameter Name="MaxA3" ParamID="3" ParamValue="0.01" />
+      <Parameter Name="MaxA4" ParamID="4" ParamValue="0.01" />
+      <Parameter Name="MaxA5" ParamID="5" ParamValue="0.01" />
+      <Parameter Name="MaxA6" ParamID="6" ParamValue="0.01" />
+      <Parameter Name="MaxE1" ParamID="7" ParamValue="10" IsPublic="true" />
+      <Parameter Name="MaxE2" ParamID="8" ParamValue="0.01" />
+      <Parameter Name="MaxE3" ParamID="9" ParamValue="0.01" />
+      <Parameter Name="MaxE4" ParamID="10" ParamValue="0.01" />
+      <Parameter Name="MaxE5" ParamID="11" ParamValue="0.01" />
+      <Parameter Name="MaxE6" ParamID="12" ParamValue="0.01" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="PD" ObjTypeID="35" ObjID="PD1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="KR" ParamID="1" ParamValue="-0.001" IsPublic="true" />
+      <Parameter Name="TV" ParamID="2" ParamValue="-0.001" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SUM" ObjTypeID="31" ObjID="SUM1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="MULTI1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE2" OutIdx="1" />
+      <Input InIdx="3" OutObjID="SOURCE3" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="cVal" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="AXISACTEXT" ObjTypeID="32" ObjID="AXISACTEXT1">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SOURCE1">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="0.0171" IsPublic="true" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="0" IsPublic="true" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="MULTI" ObjTypeID="42" ObjID="MULTI1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="IIRFILTER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="SOURCE1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SOURCE2">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="5.1" IsPublic="true" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="0" IsPublic="true" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="STOP" ObjTypeID="18" ObjID="STOP1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="OR1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Mode" ParamID="1" ParamValue="4" />
+      <Parameter Name="Channel" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="TIMER" ObjTypeID="40" ObjID="TIMER1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="EQUAL1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" />
+      <Parameter Name="Time" ParamID="2" ParamValue="1" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="EQUAL" ObjTypeID="7" ObjID="EQUAL1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="SUM1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="CompVal" ParamID="1" ParamValue="0.0" />
+      <Parameter Name="Tolerance" ParamID="2" ParamValue="5" IsPublic="true" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="OR" ObjTypeID="9" ObjID="OR1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="TIMER1" OutIdx="1" />
+      <Input InIdx="2" OutObjID="DIGOUT1" OutIdx="1" />
+    </Inputs>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SOURCE3">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="0" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="0" IsPublic="true" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="0" IsPublic="true" />
+      <Parameter Name="Period" ParamID="4" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="IIRFILTER" ObjTypeID="60" ObjID="IIRFILTER1">
+    <Inputs>
+      <Input InIdx="1" OutObjID="DIGIN1" OutIdx="1" />
+    </Inputs>
+    <Parameters>
+      <Parameter Name="Reset" ParamID="1" ParamValue="False" />
+      <Parameter Name="Type" ParamID="1" ParamValue="0" IsRuntime="false" />
+      <Parameter Name="Name" ParamID="2" ParamValue="0" IsRuntime="false" />
+      <Parameter Name="Order" ParamID="3" ParamValue="0" IsRuntime="false" />
+      <Parameter Name="Cutoff" ParamID="4" ParamValue="8" IsRuntime="false" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="DIGOUT" ObjTypeID="43" ObjID="DIGOUT1">
+    <Parameters>
+      <Parameter Name="Index" ParamID="1" ParamValue="4001" IsPublic="true" />
+      <Parameter Name="DataSize" ParamID="2" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjType="SOURCE" ObjTypeID="45" ObjID="SOURCE4">
+    <Parameters>
+      <Parameter Name="Type" ParamID="1" ParamValue="3" />
+      <Parameter Name="Offset" ParamID="2" ParamValue="0.5" />
+      <Parameter Name="Amplitude" ParamID="3" ParamValue="0.5" />
+      <Parameter Name="Period" ParamID="4" ParamValue="0.1" />
+    </Parameters>
+  </RSIObject>
+</RSIObjects>

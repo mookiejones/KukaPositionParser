@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name1901">
+      <text xml:lang="de-DEV">Name der Businstanz</text>
+      <text xml:lang="en-DEV">Name of bus instance</text>
+    </uiText>
+    <uiText key="Diagnose_Description1901">
+      <text xml:lang="de-DEV">Name der Businstanz</text>
+      <text xml:lang="en-DEV">name of bus instance</text>
+    </uiText>
+    <uiText key="Diagnose_Name1902">
+      <text xml:lang="de-DEV">Mainboard Treiber</text>
+      <text xml:lang="en-DEV">Mainboard driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description1902">
+      <text xml:lang="de-DEV">Name für die Auswahlbox</text>
+      <text xml:lang="en-DEV">name for select box</text>
+    </uiText>
+    <uiText key="Diagnose_Name1903">
+      <text xml:lang="de-DEV">Status Treiberinstanz</text>
+      <text xml:lang="en-DEV">State of instance</text>
+    </uiText>
+    <uiText key="Diagnose_Description1903">
+      <text xml:lang="de-DEV">Aktueller Zustand der Instanz</text>
+      <text xml:lang="en-DEV">current state of instance</text>
+    </uiText>
+    <uiText key="Diagnose_Name1904">
+      <text xml:lang="de-DEV">Version des Treibers</text>
+      <text xml:lang="en-DEV">Version of driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description1904">
+      <text xml:lang="de-DEV">Version des Treibers</text>
+      <text xml:lang="en-DEV">Version of driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name1905">
+      <text xml:lang="de-DEV">Temperatur CPU Sensor</text>
+      <text xml:lang="en-DEV">Temperature CPU sensor</text>
+    </uiText>
+    <uiText key="Diagnose_Description1905">
+      <text xml:lang="de-DEV">Temperatur des CPU Senors in Grad Celsius</text>
+      <text xml:lang="en-DEV">Temperature of CPU sensor in degree Celsius</text>
+    </uiText>
+    <uiText key="Diagnose_Name1906">
+      <text xml:lang="de-DEV">Temperatur Super I/O Sensor</text>
+      <text xml:lang="en-DEV">Temperature super i/o sensor</text>
+    </uiText>
+    <uiText key="Diagnose_Description1906">
+      <text xml:lang="de-DEV">Temperatur des Super I/O Sensors in Grad Celsius</text>
+      <text xml:lang="en-DEV">Temperture of super i/o sensor in degree celsius</text>
+    </uiText>
+    <uiText key="Diagnose_Name1907">
+      <text xml:lang="de-DEV">Temperatur Mainboard Sensor</text>
+      <text xml:lang="en-DEV">Temperature mainboard sensor</text>
+    </uiText>
+    <uiText key="Diagnose_Description1907">
+      <text xml:lang="de-DEV">Temperatur des Mainboard Sensors in Grad Celsius</text>
+      <text xml:lang="en-DEV">Temperature of mainboard sensor in degree Celsius</text>
+    </uiText>
+    <uiText key="Diagnose_Name1908">
+      <text xml:lang="de-DEV">Zeitstempel Mainboard Sensor</text>
+      <text xml:lang="en-DEV">Time stamp mainboard sensor</text>
+    </uiText>
+    <uiText key="Diagnose_Description1908">
+      <text xml:lang="de-DEV">Zeitstempel wann die Temperatur des Mainboard Sensors gemessen wurde</text>
+      <text xml:lang="en-DEV">Time when temperature of mainboard sensor was measured</text>
+    </uiText>
+    <uiText key="Diagnose_Name1909">
+      <text xml:lang="de-DEV">Zeitstempel Super I/O Sensor</text>
+      <text xml:lang="en-DEV">Time stamp super i/o sensor</text>
+    </uiText>
+    <uiText key="Diagnose_Description1909">
+      <text xml:lang="de-DEV">Zeitstempel wann der Super I/O Sensor gemessen wurde</text>
+      <text xml:lang="en-DEV">Time when temperature of super i/o sensor was measured</text>
+    </uiText>
+    <uiText key="Diagnose_Name1910">
+      <text xml:lang="de-DEV">Zeitstempel CPU Sensor</text>
+      <text xml:lang="en-DEV">Time stamp cpu sensor</text>
+    </uiText>
+    <uiText key="Diagnose_Description1910">
+      <text xml:lang="de-DEV">Zeitstempel wann der CPU Sensor gemessen wurde</text>
+      <text xml:lang="en-DEV">Time when temperature of cpu sensor was measured</text>
+    </uiText>
+    <uiText key="Diagnose_Name1911">
+      <text xml:lang="de-DEV">Aktueller Fehlerstatus</text>
+      <text xml:lang="en-DEV">current error state</text>
+    </uiText>
+    <uiText key="Diagnose_Description1911">
+      <text xml:lang="de-DEV">Zeigt an, ob ein Fehler in der Instanz aufgetreten ist.</text>
+      <text xml:lang="en-DEV">Shows if an error has occured</text>
+    </uiText>
+    <uiText key="Diagnose_Value1911_0">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value1911_1">
+      <text xml:lang="de-DEV">ERR_CREATE_SHARED_DATA</text>
+      <text xml:lang="en-DEV">ERR_CREATE_SHARED_DATA</text>
+    </uiText>
+    <uiText key="Diagnose_Value1911_2">
+      <text xml:lang="de-DEV">ERR_READ_TEMPERATURE</text>
+      <text xml:lang="en-DEV">ERR_READ_TEMPERATURE</text>
+    </uiText>
+    <uiText key="Diagnose_Value1911_3">
+      <text xml:lang="de-DEV">ERR_SENT_MSG_APP</text>
+      <text xml:lang="en-DEV">ERR_SENT_MSG_APP</text>
+    </uiText>
+    <uiText key="Diagnose_Value1911_4">
+      <text xml:lang="de-DEV">ERR_CREATE_CYCLE_TASK</text>
+      <text xml:lang="en-DEV">ERR_CREATE_CYCLE_TASK</text>
+    </uiText>
+    <uiText key="Diagnose_Value1911_5">
+      <text xml:lang="de-DEV">ERR_READ_VENDOR_ID</text>
+      <text xml:lang="en-DEV">ERR_READ_VENDOR_ID</text>
+    </uiText>
+    <uiText key="Diagnose_Value1911_6">
+      <text xml:lang="de-DEV">ERR_READ_HARDWARE_VENDOR_ID</text>
+      <text xml:lang="en-DEV">ERR_READ_HARDWARE_VENDOR_ID</text>
+    </uiText>
+    <uiText key="Diagnose_Name1912">
+      <text xml:lang="de-DEV">Mainboard</text>
+      <text xml:lang="en-DEV">Mainboard</text>
+    </uiText>
+    <uiText key="Diagnose_Description1912">
+      <text xml:lang="de-DEV">Erkannte Mainboard</text>
+      <text xml:lang="en-DEV">Detected mainboard</text>
+    </uiText>
+    <uiText key="Diagnose_Name1913">
+      <text xml:lang="de-DEV">CPU</text>
+      <text xml:lang="en-DEV">CPU</text>
+    </uiText>
+    <uiText key="Diagnose_Description1913">
+      <text xml:lang="de-DEV">Erkannte CPU</text>
+      <text xml:lang="en-DEV">Detected CPU</text>
+    </uiText>
+    <uiText key="Diagnose_Name1914">
+      <text xml:lang="de-DEV">Netzwerk</text>
+      <text xml:lang="en-DEV">Network</text>
+    </uiText>
+    <uiText key="Diagnose_Description1914">
+      <text xml:lang="de-DEV">Erkanntes Netzwerkinterface</text>
+      <text xml:lang="en-DEV">Detected network interface</text>
+    </uiText>
+    <uiText key="Diagnose_Name1915">
+      <text xml:lang="de-DEV">Status aller Temperaturen</text>
+      <text xml:lang="en-DEV">Status of all temperatures</text>
+    </uiText>
+    <uiText key="Diagnose_Description1915">
+      <text xml:lang="de-DEV">Der Status aller Temperaturen</text>
+      <text xml:lang="en-DEV">The status of all temperatures</text>
+    </uiText>
+    <uiText key="Diagnose_Value1915_0">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value1915_1">
+      <text xml:lang="de-DEV">Nicht OK</text>
+      <text xml:lang="en-DEV">Not OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name1916">
+      <text xml:lang="de-DEV">Letzte Temperaturprüfung</text>
+      <text xml:lang="en-DEV">Last temperature check</text>
+    </uiText>
+    <uiText key="Diagnose_Description1916">
+      <text xml:lang="de-DEV">Zeitpuntk der letzten Temperaturprüfung</text>
+      <text xml:lang="en-DEV">Time of the last temperature check</text>
+    </uiText>
+    <uiText key="Diagnose_Name1917">
+      <text xml:lang="de-DEV">Lüfter Status</text>
+      <text xml:lang="en-DEV">Fan state</text>
+    </uiText>
+    <uiText key="Diagnose_Description1917">
+      <text xml:lang="de-DEV">Lüfter Status</text>
+      <text xml:lang="en-DEV">Fan state</text>
+    </uiText>
+    <uiText key="Diagnose_Value1917_0">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value1917_1">
+      <text xml:lang="de-DEV">Lüfterfehler</text>
+      <text xml:lang="en-DEV">Fan error</text>
+    </uiText>
+    <uiText key="Diagnose_Value1917_2">
+      <text xml:lang="de-DEV">Nicht angeschlossen</text>
+      <text xml:lang="en-DEV">Not connected</text>
+    </uiText>
+  </module>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Carola John (KUKA Roboter GmbH) -->
+<ModuleList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/ROBOTER/Config/System/Common/Schemes/Modules.xsd">
+	<Version Label="">
+		<Info Version="KRCV8.0"/>
+		<Schema Version="1"/>
+	</Version>
+	<SystemCycle CycleTime="0"/>
+		<Module isActive="false" Name="VRC.o" Config="" DisplayName="VRC" Prio="186" Stacksize="65536" Affinity="0" />
+</ModuleList>

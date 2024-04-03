@@ -1,0 +1,182 @@
+&ACCESS RVO
+&REL 1
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\submit
+DEF  TeslaCoreUserSPS ( )
+   int Base_Temp
+   
+   ;FOLD {H}
+      LOOP
+   ;ENDFOLD
+   
+   ON_ERROR_PROCEED
+   ;FOLD Enter user functionality between these lines.
+   ;ENDFOLD
+   
+   ;FOLD Send Tool and Frame locations to PLC
+      ROBOT_POS_X = -9898000
+      ROBOT_POS_Y = -9898000
+      ROBOT_POS_Z = -9898000
+      ROBOT_POS_A = -9898000
+      ROBOT_POS_B = -9898000
+      ROBOT_POS_C = -9898000
+      ROBOT_FRAME_X = -9898000
+      ROBOT_FRAME_Y = -9898000
+      ROBOT_FRAME_Z = -9898000
+      ROBOT_FRAME_A = -9898000
+      ROBOT_FRAME_B = -9898000
+      ROBOT_FRAME_C = -9898000
+      if (( $ACT_TOOL_C > 0) AND ( $ACT_BASE_C >= 0))THEN
+         
+         if (($ACT_TOOL_C >= 0) AND ($ACT_TOOL_C < 32)) AND (($ACT_BASE_C >= 0) AND ($ACT_BASE_C < 33)) THEN
+            ROBOT_POS_X = $POS_ACT_MES.X * 1000
+            ROBOT_POS_Y = $POS_ACT_MES.Y * 1000
+            ROBOT_POS_Z = $POS_ACT_MES.Z * 1000
+            ROBOT_POS_A = $POS_ACT_MES.A * 1000
+            ROBOT_POS_B = $POS_ACT_MES.B * 1000
+            ROBOT_POS_C = $POS_ACT_MES.C * 1000
+         ENDIF
+         
+         IF ($ACT_BASE_C > 0) AND ($ACT_BASE_C < 33) THEN
+            Base_Temp = $ACT_BASE_C
+            IF (Base_Temp > 0) AND (Base_Temp < 33) THEN
+               ROBOT_FRAME_X = BASE_DATA[Base_Temp].X * 1000
+               ROBOT_FRAME_Y = BASE_DATA[Base_Temp].Y * 1000
+               ROBOT_FRAME_Z = BASE_DATA[Base_Temp].Z * 1000
+               ROBOT_FRAME_A = BASE_DATA[Base_Temp].A * 1000
+               ROBOT_FRAME_B = BASE_DATA[Base_Temp].B * 1000
+               ROBOT_FRAME_C = BASE_DATA[Base_Temp].C * 1000
+            ENDIF
+         ENDIF
+      ENDIF
+   ;ENDFOLD Send Tool and Frame locations to PLC
+   
+   IF PLC_PID_UPDATE THEN
+      IF ((PLC_PID_Indx >= PID_Indx_X) AND (PLC_PID_Indx <= PID_Indx_C)) THEN
+         GuidancePids[PLC_PID_Indx].P = PLC_PID_P / 1000.0
+         GuidancePids[PLC_PID_Indx].I = PLC_PID_I / 1000.0
+         GuidancePids[PLC_PID_Indx].D = PLC_PID_D / 1000.0
+         IF(RSI_ACTIVE) THEN
+            RSI_ADJUST_PID(PLC_PID_Indx)
+         ENDIF
+      ENDIF
+   ENDIF
+   PLC_PID_ECHO_Indx = PLC_PID_Indx
+   IF ((PLC_PID_Indx >= PID_Indx_X) AND (PLC_PID_Indx <= PID_Indx_C)) THEN
+      PLC_PID_ECHO_P = GuidancePids[PLC_PID_Indx].P * 1000.0 ;Suppress AssignmentLoosesPrecision
+      PLC_PID_ECHO_I = GuidancePids[PLC_PID_Indx].I * 1000.0 ;Suppress AssignmentLoosesPrecision
+      PLC_PID_ECHO_D = GuidancePids[PLC_PID_Indx].D * 1000.0 ;Suppress AssignmentLoosesPrecision
+      PLC_PID_ECHO_LwrLim = GuidancePids[PLC_PID_Indx].LwrLim * 1000.0 ;Suppress AssignmentLoosesPrecision
+      PLC_PID_ECHO_UprLim = GuidancePids[PLC_PID_Indx].UprLim * 1000.0 ;Suppress AssignmentLoosesPrecision
+   ENDIF
+   
+   IF RSI_ACTIVE THEN
+      IF RSI_RESET_ALL_PIDS THEN
+         RSI_RESET_PIDS()
+      ENDIF
+      
+      IF RSI_RESET_X_PID THEN
+         RSI_RESET_X_PID()
+      ENDIF      
+      IF RSI_RESET_Y_PID THEN
+         RSI_RESET_Y_PID()
+      ENDIF
+      IF RSI_RESET_Z_PID THEN
+         RSI_RESET_Z_PID()
+      ENDIF
+      IF RSI_RESET_A_PID THEN
+         RSI_RESET_A_PID()
+      ENDIF
+      IF RSI_RESET_B_PID THEN
+         RSI_RESET_B_PID()
+      ENDIF
+      IF RSI_RESET_C_PID THEN
+         RSI_RESET_C_PID()
+      ENDIF
+   ENDIF
+   
+   ERR_CLEAR($ERR)
+   ;FOLD Enter user functionality between these lines.
+   ;ENDFOLD
+   ;FOLD {H}
+      ENDLOOP
+   ;ENDFOLD
+END ; (TeslaCoreUserSPS)
+
+DEF  RSI_ADJUST_PID (Idx:IN)
+   DECL INT Idx
+   DECL INT Ret
+   IF RSI_ACTIVE THEN
+      IF PLC_PID_UPDATE THEN         
+         Ret = SetPID(RSI_ID, Idx, GuidancePids[Idx].P, GuidancePids[Idx].I, GuidancePids[Idx].D, GuidancePids[Idx].LwrLim, GuidancePids[Idx].UprLim)
+      ENDIF
+   ENDIF 
+END
+
+DEFFCT INT SetPID(objID:IN,Idx:IN, P:IN, I:IN, D:IN, LimLow:IN, LimUpp:IN)   
+   DECL INT objID
+   DECL INT Idx
+   
+   DECL REAL P
+   DECL REAL I
+   DECL REAL D
+   DECL REAL LimLow
+   DECL REAL LimUpp
+   DECL INT ret
+   CHAR PIDName[24]
+   IF Idx == 1 THEN
+      PIDName[] = "VIS_Pos_PID"
+   ENDIF
+   IF Idx == 2 THEN
+      PIDName[] = "VIS_X_PID"
+   ENDIF
+   IF Idx == 3 THEN
+      PIDName[] = "VIS_Dist_Height_PID"
+   ENDIF
+   IF Idx == 4 THEN
+      PIDName[] = "VIS_A_Angle_PID"
+   ENDIF
+   IF Idx == 5 THEN
+      PIDName[] = "VIS_B_Angle_PID"
+   ENDIF
+   IF Idx == 6 THEN
+      PIDName[] = "VIS_C_Angle_PID"
+   ENDIF
+   
+   IF varstate("P")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "KR", P)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("I")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "TN", I)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("D")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "TV", D)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("LimLow")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "LimLow", LimLow)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   IF varstate("LimUpp")==#initialized THEN
+      ret = rsi_setpublicpar(objID, PIDName[], "LimUpp", LimUpp)
+      IF (ret <> RSIOK) THEN
+         HALT
+      ENDIF
+   ENDIF
+   
+   RETURN ret
+ENDFCT

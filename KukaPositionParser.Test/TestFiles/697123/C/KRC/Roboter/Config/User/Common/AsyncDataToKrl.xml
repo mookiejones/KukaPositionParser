@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/AsyncDataToKrl.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Version Label="">
+		<Info Version="KUKA V8.3"/>
+		<Schema Version="100"/>
+	</Version>
+	<IODriver IODrvName="PNIO-DEV"/>   
+	<ReceiveQueue>
+		<Elements NrOfElements="10"/>
+		<QueueBehaviour DeleteOnIoReconfig="True" DeleteOnCClose="True" OverwriteOldData="True"/>
+	</ReceiveQueue>
+	<Debug PrintToTelnet="False"/>
+</Application>

@@ -1,0 +1,136 @@
+&ACCESS RVEO
+&REL 1
+&COMMENT Mastering Reference Main Task
+&PARAM EDITMASK = *
+&PARAM DISKPATH = KRC:\R1\Program\System
+DEF MasRef_Main()
+  ;************************************************
+  ;* Description: MASREF_MAIN                     * 
+  ;*                                              *
+  ;*                                              *
+  ;*                                              *
+  ;************************************************
+  ;*    Software: KSS 8.2, 8.3       V7K R30      *
+  ;************************************************
+  ;*    Modified: D. McMillan                     *
+  ;*        Date: 2016.02.05                      *
+  ;*     Version: 01.00.00                        *
+  ;************************************************
+  
+  ;FOLD Start conditions for mastering reference
+  IF Varstate("$pro_ip.si01.name[]") <> #DECLARED THEN
+    
+    IF PerformMasterReference > 0 THEN
+      IF NOT $MasteringTest_Req_Ext AND NOT $MasteringTest_Req_Int AND NOT $Flag[PerformMasterReference] THEN
+        RETURN
+      ENDIF
+      $Flag[PerformMasterReference] = FALSE
+    ELSE
+      IF NOT $MasteringTest_Req_Ext AND NOT $MasteringTest_Req_Int THEN
+        RETURN
+      ENDIF
+    ENDIF
+  ENDIF
+  $MasteringTest_Group = 0
+  $MasteringTest_Active = FALSE
+  REPEAT
+    IF NOT $MasteringTest_Switch_OK THEN
+      
+      MsgQuit("MasterReferenceSwitchFailure", 100)
+    ENDIF
+    
+    $MasteringTest_Active = TRUE
+    WAIT SEC 0.2
+    
+    IF NOT $MasteringTest_Active THEN
+      
+      MsgQuit("MasterReferenceNotActivated", 101)
+    ENDIF
+  UNTIL $MasteringTest_Active AND $MasteringTest_Switch_OK
+  ;ENDFOLD
+
+  RunTest_Group(1)
+
+  ;RunTest_Group(2)
+
+  ;RunTest_Group(3)
+
+  ;FOLD Finalize mastering reference 
+  
+  $MasteringTest_Active = FALSE
+
+  nLapsedTime = 0
+  REPEAT
+    WAIT SEC 0.096
+    nLapsedTime = nLapsedTime + 1
+  UNTIL (NOT $MasteringTest_Active AND NOT $MasteringTest_Req_Int) or (nLapsedTime > nLapsedTimeout)
+
+  IF $MasteringTest_Active THEN
+    
+    MsgQuit("MasterReferenceFailed", 102)
+  ENDIF
+  ;ENDFOLD
+END
+
+DEF RunTest_Group(nGrpNr:IN)
+  INT nGrpNr
+
+  SWITCH nGrpNr
+    CASE 1
+      
+      ;MasRefStartG1()
+    CASE 2
+      
+      ;MasRefStartG2()
+    CASE 3
+      
+      ;MasRefStartG3()
+    DEFAULT
+  ENDSWITCH
+
+  
+  WAIT SEC 0.5
+  
+  $MasteringTest_Group = nGrpNr
+  
+  WAIT SEC 0.5
+
+  SWITCH nGrpNr
+    CASE 1
+      
+      ;MasRefBackG1()
+    CASE 2
+      
+      ;MasRefBackG2()
+    CASE 3
+      
+      ;MasRefBackG3()
+    DEFAULT
+  ENDSWITCH
+
+  WAIT SEC 0.2
+  
+  $MasteringTest_Group = 0
+  WAIT SEC 0.2
+END
+
+DEF MsgQuit(sKey[]:IN, nMsgNr:IN)
+  DECL KRLMSG_T MSG
+  DECL KRLMSGPAR_T PAR[1]
+  DECL KRLMSGOPT_T OPT
+  BOOL bResult
+  CHAR sKey[]
+  INT nHandle
+  INT nMsgNr 
+
+  bResult = STRCOPY(MSG.MSG_TXT[], sKey[])
+  MSG.Nr = nMsgNr
+  MSG.MODUL[] = "MasRef"
+  OPT = {VL_STOP TRUE, CLEAR_P_RESET TRUE, LOG_TO_DB TRUE}
+  nHandle = SET_KRLMSG(#Quit,MSG,PAR[],OPT)
+  IF nHANDLE > 0 THEN
+    WHILE (Exists_KrlMsg(nHandle)) 
+      WAIT SEC 0.1
+    ENDWHILE
+  ENDIF
+END

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <setting path="BackupManager\Network\KopFileDirectory">D:\ProjectBackup</setting>
+  <setting path="BackupManager\Network\ArchiveHistoryCount">5</setting>
+  <setting path="BackupManager\Network\ArchiveDirectory">D:\ProjectBackup</setting>
+  <setting path="BackupManager\Network\ArchivePath">D:\ProjectBackup\0\WorkingProject.asz</setting>
+  <setting path="BackupManager\BackupAutomatically">False</setting>
+  <setting path="BackupManager\UseSubDirectoryWithRobotName">True</setting>
+  <setting path="BackupManager\OnlySaveActiveProject">False</setting>
+  <setting path="BackupManager\Network\Password">GP1lmvarvz6MJCCNkWZLhA==</setting>
+  <setting path="BackupManager\Network\Username">user</setting>
+  <setting path="BackupManager\SuppressHistory">False</setting>
+  <setting path="BackupManager\SuppressOptions">False</setting>
+  <setting path="BackupManager\SuppressRdcData">False</setting>
+  <setting path="BackupManager\ProjectBackupDirectoryPath">D:\Backups</setting>
+  <setting path="BackupManager\KopBackupDirectoryPath">D:\Backups</setting>
+  <setting path="BackupManager\AutomaticBackup\Date">05/22/2022 06:00:00</setting>
+  <setting path="BackupManager\AutomaticBackup\BackupInterval">Daily</setting>
+  <setting path="BackupManager\AutomaticBackup\Day">Monday</setting>
+  <setting path="BackupManager\AutomaticBackup\Hours">6</setting>
+  <setting path="BackupManager\AutomaticBackup\Minutes">0</setting>
+  <setting path="BackupManager\HistoryCount">20</setting>
+  <setting path="BackupManager\OnlyLocally">False</setting>
+  <setting path="BackupManager\KopFileDirectoryFlag">D:\Backups</setting>
+  <setting path="BackupManager\ProjectDirectoryBackupPathFlag">D:\Backups</setting>
+  <setting path="BackupManager\SignalInterface\Enabled">False</setting>
+  <setting path="BackupManager\SignalInterface\OutputPulseLength">5000</setting>
+  <setting path="BackupManager\SignalInterface\WriteLongText">False</setting>
+</settings>

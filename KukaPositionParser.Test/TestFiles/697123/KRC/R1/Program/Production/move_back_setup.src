@@ -1,0 +1,35 @@
+&ACCESS RVO1
+&PARAM EDITMASK = *
+DEF move_back_setup( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 1) ; select base 1
+   BAS(#VEL_CP, 0.010) ; m/s
+   BAS(#ACC_CP, 50) ; use max acceleration
+   
+   LIN_REL { Z  -15.0 } #TOOL
+   
+   ;FOLD HandShake[26 : Out Pos], WAIT on Response
+      HandShake_Set (26,false)
+      HandShake_Check (26,false)
+   ;ENDFOLD      
+   
+   LIN_REL { Z 15.0} #TOOL
+   
+   Exit_Program()
+   
+END

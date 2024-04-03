@@ -1,0 +1,7 @@
+&ACCESS RVP
+&COMMENT ReadMe File
+DEF  ServiceTmpReadMe ( )
+
+; This file only exists as a directory placeholder file.
+
+END

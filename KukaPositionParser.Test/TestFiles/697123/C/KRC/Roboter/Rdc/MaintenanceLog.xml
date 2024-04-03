@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<XmlLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MaintenanceGroups>
+    <MaintenanceGroup Name="DataBackupWithSpareHdd">
+      <MaintenanceLogs>
+        <MaintenanceLog IntervalInYears="1" Maintenance="DataBackupWithSpareHdd">
+          <CurrentDate>2012-03-18T19:00:00-04:00</CurrentDate>
+          <UserName>ha</UserName>
+          <RunTimeInHours>1131</RunTimeInHours>
+          <OrderNumber>1</OrderNumber>
+          <Comment />
+        </MaintenanceLog>
+      </MaintenanceLogs>
+    </MaintenanceGroup>
+    <MaintenanceGroup Name="BackLashMeasurement">
+      <MaintenanceLogs>
+        <MaintenanceLog IntervalInYears="1" Maintenance="BackLashMeasurement">
+          <CurrentDate>2012-03-18T19:00:00-04:00</CurrentDate>
+          <UserName>ha</UserName>
+          <RunTimeInHours>1131</RunTimeInHours>
+          <OrderNumber>1</OrderNumber>
+          <Comment />
+        </MaintenanceLog>
+      </MaintenanceLogs>
+    </MaintenanceGroup>
+    <MaintenanceGroup Name="BasicInspection">
+      <MaintenanceLogs>
+        <MaintenanceLog IntervalInYears="1" Maintenance="BasicInspection">
+          <CurrentDate>2012-03-18T19:00:00-04:00</CurrentDate>
+          <UserName>ha</UserName>
+          <RunTimeInHours>1131</RunTimeInHours>
+          <OrderNumber>1</OrderNumber>
+          <Comment>ha</Comment>
+        </MaintenanceLog>
+      </MaintenanceLogs>
+    </MaintenanceGroup>
+    <MaintenanceGroup Name="MinorElectricalMaintenance">
+      <MaintenanceLogs>
+        <MaintenanceLog IntervalInYears="2" Maintenance="MinorElectricalMaintenance">
+          <CurrentDate>2021-12-23T00:00:00-05:00</CurrentDate>
+          <UserName>cbrown6</UserName>
+          <RunTimeInHours>2252</RunTimeInHours>
+          <OrderNumber>999999</OrderNumber>
+          <Comment>looked at electrical</Comment>
+        </MaintenanceLog>
+      </MaintenanceLogs>
+    </MaintenanceGroup>
+    <MaintenanceGroup Name="WristMaintenance">
+      <MaintenanceLogs>
+        <MaintenanceLog IntervalInHours="10000" IntervalInYears="2" Maintenance="WristMaintenance">
+          <CurrentDate>2021-12-23T00:00:00-05:00</CurrentDate>
+          <UserName>cbrown6</UserName>
+          <RunTimeInHours>2252</RunTimeInHours>
+          <OrderNumber>9999999</OrderNumber>
+          <Comment>inspected</Comment>
+        </MaintenanceLog>
+      </MaintenanceLogs>
+    </MaintenanceGroup>
+  </MaintenanceGroups>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>BE4rRTu/K7cGy7NwzNQIwFe/SkM=</DigestValue></Reference><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>BE4rRTu/K7cGy7NwzNQIwFe/SkM=</DigestValue></Reference></SignedInfo><SignatureValue>ffYqtaFMI6Q1mptBCOLIol+gPuTxmSq6MoOsGR48FVvATNDA5nExUo+dwZN7Whvghb1f0wHuYoP+x4UukBtpzMg3DFLZ4TbqkDQmnC1PNJFjQzCyHQbmcUCxm6x4RsMvJYGj99EaXF1/X85WctpAxsTQBd1lmGR3OL1ShsqtiIQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sHW3Jlumb3y3pIrjX39JscEcWvndz4ge0Tf75W/Uo/SWS39HtZiWS4o0aLunqT7s6tJi1eS1YjteuuKEOKcHzXk6/L+h01Obn7eJnb7olqqNFkWEtgMEFkex3PdNQp6IrqS+CKewWCNRkTEY+1HjtILWVL3gXp65HusNe0AUm9c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature></XmlLog>

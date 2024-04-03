@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TimeSyncBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/TimeSyncBase.xsd">
+  <Version Label="">
+    <Info Version="KUKA V8.3" />
+    <Schema Version="1" />
+  </Version>
+  <Task Priority="230" CPU="1" />
+  <Module UserConfig="TimeSync.xml" TimeSyncMode="PTP" X46Mode="DefaultVlan" IsLoggingActive="false" />
+  <EcatAccess BusId="ECAT-CTRLBUS" />
+  <!-- Controller-Config fuer "Standard-PTP" -->
+  <Controller Mode="PTP" BusShiftQuota="0.01" DeltaDiv="500" DeltaDivSignChange="50" MinCycles="1" MaxCycles="50" MaxCyclesSignChange="1000" NumDeltas="15" MaxDelta="15000" />
+  <!-- Controller-Config fuer "Fast Measurement" -->
+  <Controller Mode="FastMeasurement" BusShiftQuota="0.01" DeltaDiv="2000" DeltaDivSignChange="1000" MinCycles="1" MaxCycles="500" MaxCyclesSignChange="1000" NumDeltas="15" MaxDelta="250000" />
+  <PtpProtocol InterfaceName="virtual" InterfaceUnit="4" SyncInterval="0" SubDomainName="_DFLT" ClockIdentifier="DFLT" ClockPreferred="0" CurrentUtcOffset="0" EpochNumber="0" />
+  <PulseConfig PulseCycleInIpoCycles="100" ExternalPulseFactor="100" NumValidationCycles="3" ValidationPercentage="10" StaticOffset="375000" TimeoutInSecs="5" Variable=".TxPdo 1.Input[1..8] Value" NumInput="7" WatchThreadPrio="10" WatchThreadCpuAffinity="2" ActAsBoundaryClock="false" />
+</TimeSyncBase>

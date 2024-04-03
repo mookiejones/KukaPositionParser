@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 U (http://www.altova.com) by kuka (KUKA Roboter GMBH) -->
+<EncoderMastering xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/EncoderMastering.xsd">
+   <Version Label="">
+      <Info Version="KUKA V8.3"/>
+      <Schema Version="2"/>
+   </Version>
+   <EncoderMasteringEntries>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+      <EncoderMasteringEntry CommOffs="0" DevID="0" DevPos="0" ID="-1" Mastered="0" Pos="0"/>
+   </EncoderMasteringEntries>
+</EncoderMastering>

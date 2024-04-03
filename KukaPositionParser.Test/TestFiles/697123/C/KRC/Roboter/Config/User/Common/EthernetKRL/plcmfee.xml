@@ -1,0 +1,34 @@
+<!--****************************************-->
+<!-- Description:  EKI Parameters for       -->
+<!--               sending MFEE information -->
+<!--               on tools&modules to PLC  -->
+<!--****************************************-->
+<!--  Software:  KSS 8.2, 8.3               -->
+<!--****************************************-->
+<!--  Modified:  D McMillan                 -->
+<!--      Date:  2016.02.05                 -->
+<!--   Version:  01.00.00                   -->
+<!--****************************************-->
+<ETHERNETKRL>
+	<CONFIGURATION>
+		<EXTERNAL>
+			<IP>172.20.5.1</IP>
+         <PORT>49032</PORT>
+		</EXTERNAL>
+		<INTERNAL>
+			<Environment>Program</Environment>
+			<Buffering Mode="FIFO" Limit="16"/>
+			<BUFFSIZE Limit="16384"/>
+			<TIMEOUT Connect="5000"/>
+			<ALIVE Set_Flag = "130"/>
+			<MESSAGES Logging="error" Display="disabled"/>
+		</INTERNAL>
+	</CONFIGURATION>
+	<RECEIVE>
+		<XML>
+			<ELEMENT Tag="PLC/String" Type="STRING"/>
+			<ELEMENT Tag="PLC" Set_Flag="131"/>
+		</XML>
+	</RECEIVE>
+	<SEND/>
+</ETHERNETKRL>

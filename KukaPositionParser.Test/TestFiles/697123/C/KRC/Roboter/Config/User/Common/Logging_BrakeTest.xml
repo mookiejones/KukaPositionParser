@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogManager xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/LoggingSpecial.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Version Label="">
+		<Info Version="KUKA V8.3"/>
+		<Schema Version="100"/>
+	</Version>
+   <LoggingOptions isActive="true"/>
+   <LogFile Name="BrakeTest" Path="Log/BrakeTest" NbrFiles="3" FileSize="1000000" FileFormat="putty" BufferLogs="false"></LogFile>
+   <LogRegistry>
+      <LoggingStrategy Strategy="PureClass"/>
+      <ContextConfig>
+         <DefaultContextConfig ContextLogging="enabled"/>
+         <Context Name="tSystem" ContextLogging="disabled"/>
+         <Context Name="tSysBoot" ContextLogging="disabled"/>
+      </ContextConfig>
+      <ClassConfig>
+         <DefaultClassConfig LogLevel="disabled"/>
+         <Class Name="BrakeTest" LogLevel="debug"/>
+      </ClassConfig>
+   </LogRegistry>
+</LogManager>

@@ -1,0 +1,73 @@
+&ACCESS RE
+&REL 4
+&COMMENT HandlerOnRobotFault
+&PARAM DISKPATH = System
+DEF ir_stopm( )
+  ;************************************************
+  ;* Description: IR_STOPM                        * 
+  ;*                                              *
+  ;*                                              *
+  ;*                                              *
+  ;************************************************
+  ;*    Software: KSS 8.2, 8.3       V7K R30      *
+  ;************************************************
+  ;*    Modified: C.Ashmore                       *
+  ;*        Date: 2016.07.01                      *
+  ;*     Version: 01.07.00                        * 
+  ;************************************************  
+  ;FOLD DECLARATIONS
+  ;FOLD USER DECL
+  ; Please insert user defined declarations
+  
+  
+  ;ENDFOLD (USER DECL)
+  ;FOLD BASISTECH DECL
+  BOOL ApplicationRunFlag
+  DECL CHAR ID[3]
+  ;ENDFOLD (BASISTECH DECL)
+  ;ENDFOLD (DECLARATIONS)
+  ;FOLD BASISTECH INIT
+  INTERRUPT OFF 3
+  STOPM_FLAG=TRUE ;Reflects state of interrupt 3 to activate/deactivate $Stopmess interrupt
+  ID[]="CTL"
+  IF ($STOPMESS==TRUE) THEN 
+    BRAKE
+    ;ENDFOLD (BASISTECH INIT) 
+    
+    ;FOLD USER STOP
+    ;Make your modifications here
+    
+    ;ENDFOLD (USER STOP)
+    ;FOLD BASISTECH STOP
+    P00 (#EXT_ERR,#PGNO_GET,ID[],128 )
+    ApplicationRunFlag=FALSE
+    IF (Appl_Run>0) THEN
+      IF $OUT[Appl_Run] THEN
+        ApplicationRunFlag=TRUE
+        $OUT[Appl_Run]=FALSE
+      ENDIF
+    ENDIF
+    REPEAT
+      POWER=SYNC()
+      HALT
+    UNTIL (($STOPMESS==FALSE) AND ($POWER_FAIL==FALSE))
+    ;ENDFOLD (BASISTECH STOP)
+    
+    ;FOLD BASISTECH RESTART
+    P00 (#EXT_ERR,#PGNO_GET,ID[],0 )
+    IF (ApplicationRunFlag==TRUE) THEN
+      IF (Appl_Run>0) THEN
+        $OUT[Appl_Run]=TRUE
+      ENDIF
+    ENDIF
+    ;ENDFOLD (BASISTECH RESTART)
+    ;FOLD USER RESTART
+    ;Make your modifications here
+    
+    ;ENDFOLD (USER RESTART)  
+    ;FOLD BASISTECH REACTIVATE
+  Endif 
+  INTERRUPT ON 3
+  STOPM_FLAG=FALSE ;Reflects state of interrupt 3 to activate/deactivate $Stopmess interrupt   
+  ;ENDFOLD (BASISTECH REACTIVATE)
+END

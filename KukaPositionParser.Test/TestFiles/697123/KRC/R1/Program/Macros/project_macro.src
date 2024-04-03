@@ -1,0 +1,17 @@
+&ACCESS RV1
+DEF  project_macro ( )
+   
+END
+
+GLOBAL DEF Exit_Program()
+   ;FOLD HandShake[2 : Task Finish], WAIT on Response
+      HandShake_Set (2,false)
+      HandShake_Check (2,false)
+   ;ENDFOLD
+   
+   ;FOLD HandShake[1 : Program Finish], WAIT on Response
+      HandShake_Set (1,false)
+      HandShake_Check (1,false)
+   ;ENDFOLD
+   
+END

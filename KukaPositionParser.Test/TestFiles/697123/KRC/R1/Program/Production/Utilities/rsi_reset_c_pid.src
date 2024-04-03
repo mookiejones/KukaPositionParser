@@ -1,0 +1,7 @@
+&ACCESS  RV
+DEF  RSI_RESET_C_PID ( )
+   DECL INT Ret
+   IF RSI_ACTIVE THEN
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_C_ANGLE_PID" , "Reset", 1)
+   ENDIF
+END

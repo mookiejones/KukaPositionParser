@@ -1,0 +1,69 @@
+&ACCESS RVO1
+&REL 57
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+&PARAM DISKPATH = KRC:\R1\Program\Production
+DEF Adjust_Changes( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+   
+   ;FOLD HandShake[24 : Adjust changes], WAIT on Response
+      HandShake_Set (24,false)
+      HandShake_Check (24,false)
+   ;ENDFOLD
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+
+   WHILE doneAdjusting == FALSE
+      BARRELPOSAUX = $NULLFRAME
+      jogDone = false
+      WAIT SEC 0.1
+      
+      ; FOLD INI Jog Up Down Override
+         IF jogUPSEAM  THEN
+            BARRELPOSAUX.x = 0.05
+            jogDone = true
+         ENDIF
+         
+         IF jogDOWNSEAM   THEN
+            BARRELPOSAUX.x = -0.05
+            jogDone = true
+         ENDIF
+         
+      ; ENDFOLD INI
+      
+      ; FOLD INI Jog In Out Override
+         IF goIn  THEN
+            BARRELPOSAUX.Z = 0.05
+            jogDone = true
+         ENDIF
+         
+         IF goOut  THEN
+            BARRELPOSAUX.Z = -0.05
+            jogDone = true
+         ENDIF
+         
+         IF jogDone THEN
+          ; Adjust
+         LIN_REL BARRELPOSAUX #TOOL
+         ENDIF
+         
+   ENDWHILE
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+   Exit_Program()
+   
+END

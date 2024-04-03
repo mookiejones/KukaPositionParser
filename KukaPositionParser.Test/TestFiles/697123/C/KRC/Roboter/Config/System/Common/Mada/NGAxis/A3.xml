@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Axis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/NGAxis.xsd">
+   <Version Label="">
+      <Info Version="KUKA V8.3"/>
+      <Schema Version="100"/>
+   </Version>
+   <Machine Name="#KR270R2900K ULTRA C4 FLR"/>
+   <AxisData MessageDisable="0" Mode="StandAlone" Simulation="Off" SingleMotorCoupling="Off" Type="Rotator"/>
+   <ToolMotor AdditionalFunctionFile="Mada/NGAxis/CtrlA3AddFct.xml" ExtTorqueOfInertia="0.000655" MaximalEnergy="4607.91" MotorFile="Motor/M_I2_KSP40_400V_V1.xml" ParameterFile="Mada/NGAxis/CtrlA3.xml" RampStopTime="500" RampUpTimeUnderLoad="1250" ServoFile="Servofile/S_I2_KSP40_400V_V1.xml">
+      <Monitoring PositionLag="504.666666666667" PositionLagSoft="2018.66666666667" Speed="6120" SpeedLag="0"/>
+      <Limit Current="0" Speed="0"/>
+   </ToolMotor>
+   <Inversion Position="false" Torque="false" Velocity="false"/>
+   <Delay ActValue="2" CmdValue="24"/>
+   <Mastering ChannelName="EMD-Data" Type="EMD"/>
+</Axis>

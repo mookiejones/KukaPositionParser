@@ -1,0 +1,43 @@
+&ACCESS RVO1
+&REL 4
+&PARAM DISKPATH = KRC:\R1\Program\Production
+DEF mnt_after_brl_find( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point 
+   homepos()
+   
+   ;FOLD HandShake[5 : At Maintenance Position], WAIT on Response
+;FOLD ;%{h}
+;Params IlfProvider=model3_handshakectrl; Core_CmdTechHandShake=HandShake; Core_CmdHandShake=5; Core_Wait=True
+;ENDFOLD
+HandShake_Set (5,false)
+HandShake_Check (5,false)
+;ENDFOLD
+
+
+
+PTP Xdummy_point 
+   ;FOLD HandShake[24 : Maintenance Done Returned to Barrel], WAIT on Response
+;FOLD ;%{h}
+;Params IlfProvider=model3_handshakectrl; Core_CmdTechHandShake=HandShake; Core_CmdHandShake=24; Core_Wait=True
+;ENDFOLD
+HandShake_Set (24,false)
+HandShake_Check (24,false)
+;ENDFOLD
+
+   Exit_Program()
+   
+   
+END

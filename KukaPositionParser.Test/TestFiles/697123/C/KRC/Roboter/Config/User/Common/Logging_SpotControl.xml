@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogManager xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/LoggingSpecial.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <LoggingOptions isActive="false"/>
+   <LogFile Name="SpotControl" Path="Log/SpotControl" NbrFiles="10" FileSize="100000" FileFormat="putty" BufferLogs="false"></LogFile>
+   <LogRegistry>
+      <LoggingStrategy Strategy="PureClass"/>
+      <ContextConfig>
+         <DefaultContextConfig ContextLogging="enabled"/>
+         <Context Name="tSystem" ContextLogging="disabled"/>
+         <Context Name="tSysBoot" ContextLogging="disabled"/>
+      </ContextConfig>
+      <ClassConfig>
+         <DefaultClassConfig LogLevel="disabled"/>
+         <Class Name="KRC.LRS.IPO" LogLevel="info"/>
+         <Class Name="KRC.LRS.HP" LogLevel="info"/>
+         <Class Name="KRC.MDR" LogLevel="info"/>
+         <Class Name="KRC.MDR.SPOT" LogLevel="info"/>
+      </ClassConfig>
+   </LogRegistry>
+</LogManager>

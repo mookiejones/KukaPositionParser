@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECat_SYS_X44 kukaVersion="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/ECAT_SYS_X44.xsd">
+  <Version Label="">
+    <Info Version="KUKA V8.3"/>
+    <Schema Version="100"/>
+  </Version>	
+  <ECatStackOptions 
+    BusCycleTimeMs="4" 
+    SchedTickOffset="1"
+    RestartMode="manual" 
+    MultiFrameLossLimit="16"
+	 MultiCycCmdWkcErrLimit="3"
+    AddSlavesToDiagMgr="false"
+    TopologyChangeDelay="1000" />
+  <ECatIODriver>
+    <PB_Master_Gateway LogErrToFile="false" />
+  </ECatIODriver>
+</ECat_SYS_X44>

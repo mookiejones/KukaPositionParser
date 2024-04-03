@@ -1,0 +1,208 @@
+&ACCESS RVO1
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+&PARAM DISKPATH = KRC:\R1\Program\Production
+DEF move_to_barrel_NOSEAM( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point 
+   
+   barrelInitalPos = FALSE
+   barrelFound = FALSE
+   seamFound = FALSE
+   
+   seamMaxLimit = FALSE
+   seamMinLimit = FALSE
+   
+   ;IF ($WORKSTATE2 AND NOT $IN_HOME2) THEN
+   ; If the robot is already in the general location around the left work position,
+   ; back away in -z direction and move to the starting point.
+   ;BAS(#TOOL, 1) ; select first tool
+   ;BAS(#BASE, 2) ; select base 1
+   ;BAS(#VEL_CP, 0.05) ; set speed to 0.10mm/s
+   ;BAS(#ACC_CP, 25) ; use max acceleration
+   ;
+   ;LIN_REL {z 200}
+   ;
+   ;ELSE 
+   ;
+   ;
+   ;ENDIF
+   IF (NOT $IN_HOME2) THEN
+      move_to_perch_pos()
+   ELSE
+      
+   ENDIF
+   
+   ;FOLD SPTP home2 Vel=10 % PDAT1;%{PE}%R 8.3.38,%MKUKATPBASIS,%CMOVE,%VPTP,%P 1:PTP, 2:home2, 3:, 5:10, 7:PDAT1
+      $BWDSTART=FALSE
+      PDAT_ACT=PPDAT1
+      FDAT_ACT=Fhome2
+      BAS(#PTP_PARAMS,10)
+      SPTP Xhome2
+   ;ENDFOLD
+   
+   WAIT SEC 1.0
+   
+   barrelInitalPos = TRUE
+   
+   WAIT FOR findBarrel
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 1) ; select base 1
+   BAS(#VEL_CP, 0.005) ; m/s
+   BAS(#ACC_CP, 25) ; use max acceleration
+   
+   ;Initialize adjustments
+   
+   barrelPosAux.X = 0.0
+   barrelPosAux.Z = 0.0
+   
+   ;FOLD FIND BARREL AND SEAM
+      WHILE ((ABS(barrelDistanceX) > 0.2) OR (NOT barrelDistanceOk)) 
+         
+         IF barrelDistanceOk == false  THEN
+            
+            SLIN_REL {x 4}
+            
+            WAIT SEC 3.0;
+            
+         ELSE
+            
+            WAIT SEC 4.0
+            
+            barrelPosAux.X = barrelDistanceX
+            
+            SLIN_REL barrelPosAux
+            
+            WAIT SEC 4.0
+            
+         ENDIF
+         
+      ENDWHILE
+      
+      WAIT SEC 3.0
+      
+      barrelFound = TRUE
+      
+      WAIT FOR findSeam
+      
+      ;WHILE ((NOT seamDataOk) OR (ABS(seamOffsetZ) > 0.1))
+      ;
+      ;IF NOT seamDataOk THEN
+      ;barrelPosAux.X = barreldistancex
+      ;barrelPosAux.Z = 3
+      ;
+      ;SLIN_REL barrelPosAux
+      ;
+      ;ELSE
+      ;
+      ;barrelPosAux.X = barreldistancex
+      ;barrelPosAux.Z = seamOffsetZ
+      ;
+      ;SLIN_REL barrelPosAux
+      ;
+      ;ENDIF
+      ;
+      ;WAIT SEC 4.0;    
+      ;
+      ;ENDWHILE
+      ;
+      ;WAIT SEC 4.0
+      
+   ;ENDFOLD (FIND BARREL AND SEAM)
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 1) ; select base 1
+   BAS(#VEL_CP, 0.004) ; m/s
+   BAS(#ACC_CP, 25)
+   
+   ; We should be at the seam now
+   maxSeamValueZ = $POS_ACT.Z + maxSeamAdjSP
+   minSeamValueZ = $POS_ACT.Z - maxSeamAdjSP
+   
+   seamOffsetZ = seamPositionRaw / 100.0
+   
+   barrelPosAux.X = 0.0
+   barrelPosAux.Z = seamOffsetZ
+   
+   SLIN_REL  barrelPosAux
+   
+   WAIT SEC 1.0
+   
+   WHILE weldActive
+      
+      WAIT SEC 2.0      
+      
+      ; check if seam adjustments is out of bounds
+      ; and adjust seam adustment
+      
+      ;IF (($POS_ACT.Z + seamOffsetZ) > maxSeamValueZ) THEN
+      ; over the limit
+      ;seamOffsetZ = maxSeamValueZ
+      ;seamMaxLimit = TRUE
+      ;
+      ;ELSE
+      ;IF (($POS_ACT.Z - seamOffsetZ) < minSeamValueZ) THEN
+      ;under the limit
+      ;seamOffsetZ = minSeamValueZ
+      ;seamMinLimit = TRUE
+      ;
+      ;ELSE
+      ;inside
+      ;seamMinLimit = FALSE
+      ;seamMinLimit = FALSE
+      ;
+      ;ENDIF
+      ;ENDIF
+      
+      barrelPosAux.X = barreldistanceX
+      barrelPosAux.Z = 0.0
+      
+      if(jogAck == TRUE) THEN
+         jogDone = FALSE         
+      ENDIF
+      
+      ;barrelPosAux.Z = seamOffsetZ
+      
+      IF jogUPSEAM AND (jogDone == FALSE) THEN
+         barrelPosAux.Z = 0.1
+         jogDone = true
+      ENDIF
+      
+      IF jogDOWNSEAM AND (jogDone == FALSE) THEN
+         barrelPosAux.Z = -0.1
+         jogDone = true
+      ENDIF
+      
+      SLIN_REL barrelPosAux
+      
+      ;IF (ABS(barreldistancex) < 0.1) AND (ABS(seamOffsetZ) < 0.1) THEN
+      seamFound = true
+      ;ENDIF
+      
+   ENDWHILE
+   
+   ; maybe have this in an interrupt to be reinitilized if we leave home2
+   barrelInitalPos = FALSE
+   barrelFound = FALSE
+   seamFound = FALSE
+   seamMinLimit = FALSE
+   seamMinLimit = FALSE
+   
+   ; weld done go back
+   
+   move_to_perch_pos()
+   
+END

@@ -1,0 +1,32 @@
+&ACCESS RVP
+&REL 1
+&COMMENT BRAKE TEST
+&PARAM EDITMASK = *
+DEF BrakeTest( )
+;FOLD INI
+  ;FOLD BASISTECH INI
+    GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+    INTERRUPT ON 3 
+    BAS (#INITMOV,0 )
+  ;ENDFOLD (BASISTECH INI)
+  ;FOLD USER INI
+    ;Make your modifications here
+
+  ;ENDFOLD (USER INI)
+;ENDFOLD (INI)
+
+  ;******************************;
+  ;         TESLA MOTORS         ;
+  ;ALL MODELS                    ;
+  ;Program 08                    ;
+  ;Brake Test Program            ;
+  ;Template    KRC4.V7.1         ;
+  ;******************************;
+
+;Brake Test Request Program
+
+braketestreq ( )
+
+
+
+END

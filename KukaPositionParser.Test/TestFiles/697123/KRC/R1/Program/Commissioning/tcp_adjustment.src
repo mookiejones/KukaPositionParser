@@ -1,0 +1,94 @@
+&ACCESS  RV
+DEF  tcp_adjustment ( )
+DECL BOOL MODIFIED
+
+;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+
+WHILE TRUE
+   
+   MODIFIED = FALSE
+
+   IF $IN[5043] THEN ; DOWN
+      MODIFIED = TRUE
+      TOOL_DATA[1].x = TOOL_DATA[1].x + 5.0
+   ENDIF
+   
+   IF $IN[5044] THEN ; UP
+      MODIFIED = TRUE
+      TOOL_DATA[1].x = TOOL_DATA[1].x - 5.0
+   ENDIF
+   
+   
+   IF $IN[5045] THEN ; LEFT
+      MODIFIED = TRUE
+      TOOL_DATA[1].y = TOOL_DATA[1].y + 5.0
+   ENDIF
+   
+   IF $IN[5046] THEN ; RIGHT
+   TOOL_DATA[1].y = TOOL_DATA[1].y - 5.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   
+   IF $IN[5047] THEN ; BACKWARD
+   TOOL_DATA[1].z = TOOL_DATA[1].z + 5.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   IF $IN[5048] THEN ; FORWARD
+   TOOL_DATA[1].z = TOOL_DATA[1].z - 5.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   IF $IN[5049] THEN
+   TOOL_DATA[1].a = TOOL_DATA[1].a + 1.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   IF $IN[5050] THEN
+   TOOL_DATA[1].a = TOOL_DATA[1].a - 1.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   IF $IN[5051] THEN
+   TOOL_DATA[1].b = TOOL_DATA[1].b + 1.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   IF $IN[5052] THEN
+   TOOL_DATA[1].b = TOOL_DATA[1].b - 1.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   IF $IN[5053] THEN
+   TOOL_DATA[1].c = TOOL_DATA[1].c + 1.0
+      MODIFIED = TRUE
+   ENDIF
+   
+   IF $IN[5054] THEN
+   TOOL_DATA[1].c = TOOL_DATA[1].c - 1.0
+      MODIFIED = TRUE
+   ENDIF
+
+   ; Acknowldgment to the PLC. This lets the PLC know that the
+   ; robot has applied the desired TCP adjustment.
+   IF MODIFIED == TRUE THEN 
+      $OUT[5043] = TRUE
+      WAIT SEC 1
+      $OUT[5043] = FALSE
+   ENDIF
+   
+ENDWHILE
+
+END

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><CtrlParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/NGCtrl.xsd"><!--2008.02.19 KSe: generated-->
+   <Version Label="1">
+      <Info Version="KUKA V8.3"/>
+      <Schema Version="1"/>
+   </Version>
+   <Machine Name="#KR270R2900K ULTRA C4 FLR"/>
+   <Controller ID="0"/>
+   <GlobalParameter Access="ro" EvalBoundary="Min" Index="0" MaxValue="0" MinValue="0" Name="CmdPosDelay" Value="3000"/>
+   <GlobalParameter Access="ro" EvalBoundary="MinMax" Index="1" MaxValue="1" MinValue="0" Name="FFCVelocity" Value="1"/>
+   <GlobalParameter Access="ro" EvalBoundary="MinMax" Index="2" MaxValue="1" MinValue="0" Name="FFCTorque" Value="1"/>
+   <GlobalParameter Access="ro" EvalBoundary="Min" Index="3" MaxValue="0" MinValue="1" Name="CtrlCycle" Value="1"/>
+   <GlobalParameter Access="ro" EvalBoundary="Min" Index="5" MaxValue="0" MinValue="0" Name="CtrlOffset" Value="0"/>
+   <Parameter Access="rw" EvalBoundary="Min" Index="0" MaxValue="0" MinValue="0" Name="PosGain">
+      <Set Name="PTP" Value="35.00000000"/>
+      <Set Name="CP" Value="35.00000000"/>
+   </Parameter>
+   <Parameter Access="rw" EvalBoundary="Min" Index="1" MaxValue="0" MinValue="0" Name="PosIntTime">
+      <Set Name="PTP" Value="0"/>
+      <Set Name="CP" Value="0"/>
+   </Parameter>
+   <Parameter Access="rw" EvalBoundary="Min" Index="2" MaxValue="0" MinValue="0" Name="VelGain">
+      <Set Name="PTP" Value="0.03750000"/>
+      <Set Name="CP" Value="0.03750000"/>
+   </Parameter>
+   <Parameter Access="rw" EvalBoundary="Min" Index="3" MaxValue="0" MinValue="0" Name="VelIntTime">
+      <Set Name="PTP" Value="0.20000000"/>
+      <Set Name="CP" Value="0.20000000"/>
+   </Parameter>
+   <DefaultController PosGain="60" PosIntTime="0" VelGain="0.05" VelIntTime="0.5"/>
+</CtrlParam>

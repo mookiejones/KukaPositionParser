@@ -1,0 +1,382 @@
+&ACCESS  R
+&COMMENT TeslaCoreData Global Variables
+&PARAM DISKPATH = TP/TeslaCore
+&REL 1
+DEFDAT  teslacoredata PUBLIC
+; **************************************
+; * Package:     TeslaCore             *
+; * Release      V5.0.0                *
+; * File:        TeslaCoreData.dat     *
+; * Date:        04.2019               *
+; * GUI Version: > = V8.3              *
+; **************************************
+
+;FOLD System Resources
+; Interrupts
+DECL GLOBAL INT nCore_SubmitMonInterrupt=5
+
+; Cycflags
+DECL GLOBAL INT nCore_SubmitMonFlag=5
+
+DECL GLOBAL KRLMSGOPT_T kmMsgOptions={VL_STOP FALSE,CLEAR_P_RESET TRUE,CLEAR_P_SAW TRUE,LOG_TO_DB TRUE}
+
+;ENDFOLD (System Resources)
+;FOLD TeslaCore Configuration
+;FOLD Boolean Variables
+DECL GLOBAL BOOL bTCDebugLogging=FALSE ; Enable / Disable Debug Logging, if present
+;ENDFOLD (Boolean Variables)
+;FOLD Custom Variables
+GLOBAL ENUM BkgHeartBeat_Typ None,Lead,Follow,Timed
+DECL GLOBAL BkgHeartBeat_Typ enmHeartBeat=#Follow
+;ENDFOLD (Custom Variables)
+;FOLD Integer Variables
+; Zone Control
+DECL GLOBAL INT nTC_MinZone=1
+DECL GLOBAL INT nTC_MaxZone=16
+; Fixture Control
+DECL GLOBAL INT nTC_MinFixture=1
+DECL GLOBAL INT nTC_MaxFixture=10
+; Handshake Control
+DECL GLOBAL INT nTC_MinHandShake=1
+DECL GLOBAL INT nTC_MaxHandShake=255
+DECL GLOBAL INT nTC_HandShakeSetAdv=1
+DECL GLOBAL INT nTC_HandShakeChkAdv=1
+; Offset Control
+DECL GLOBAL INT nTC_OffsetMin=0
+DECL GLOBAL INT nTC_OffsetMax=200
+
+; HeartBeat
+DECL GLOBAL INT nHeartBeatRunCount=0
+DECL GLOBAL INT nHeartBeatMAXCount=24
+;ENDFOLD (Integer Variables)
+;FOLD Real Variables
+;ENDFOLD (Real Variables)
+;ENDFOLD (TeslaCore Configuration)
+;FOLD Handshake Definitions
+GLOBAL STRUC HANDSHAKE_T INT ID,CHAR COMMENT[32]
+DECL GLOBAL HANDSHAKE_T PrgHandShake[255]
+PrgHandShake[1]={ID 1,COMMENT[] "Program Finish"}
+PrgHandShake[2]={ID 2,COMMENT[] "Task Finish"}
+PrgHandShake[3]={ID 3,COMMENT[] "At Tip Dress Position"}
+PrgHandShake[4]={ID 4,COMMENT[] "At Tip Change Position"}
+PrgHandShake[5]={ID 5,COMMENT[] "At Maintenance Position"}
+PrgHandShake[6]={ID 6,COMMENT[] "At Purge Position"}
+PrgHandShake[7]={ID 7,COMMENT[] "At Inspection Position"}
+PrgHandShake[8]={ID 8,COMMENT[] "At Inspection 2 Position"}
+PrgHandShake[9]={ID 9,COMMENT[] "Undefined"}
+PrgHandShake[10]={ID 10,COMMENT[] "Undefined"}
+PrgHandShake[11]={ID 11,COMMENT[] "Waiting To Enter 1"}
+PrgHandShake[12]={ID 12,COMMENT[] "Waiting To Enter 2"}
+PrgHandShake[13]={ID 13,COMMENT[] "Waiting To Enter 3"}
+PrgHandShake[14]={ID 14,COMMENT[] "Waiting To Enter 4"}
+PrgHandShake[15]={ID 15,COMMENT[] "Waiting To Enter 5"}
+PrgHandShake[16]={ID 16,COMMENT[] "Waiting To Enter 6"}
+PrgHandShake[17]={ID 17,COMMENT[] "Waiting To Enter 7"}
+PrgHandShake[18]={ID 18,COMMENT[] "Waiting To Enter 8"}
+PrgHandShake[19]={ID 19,COMMENT[] "Waiting To Enter 9"}
+PrgHandShake[20]={ID 20,COMMENT[] "Waiting To Enter 10"}
+PrgHandShake[21]={ID 21,COMMENT[] "At Holding Position 1"}
+PrgHandShake[22]={ID 22,COMMENT[] "At Holding Position 2"}
+PrgHandShake[23]={ID 23,COMMENT[] "At Holding Position 3"}
+PrgHandShake[24]={ID 24,COMMENT[] "At Holding Position 4"}
+PrgHandShake[25]={ID 25,COMMENT[] "At Holding Position 5"}
+PrgHandShake[26]={ID 26,COMMENT[] "At Holding Position 6"}
+PrgHandShake[27]={ID 27,COMMENT[] "At Holding Position 7"}
+PrgHandShake[28]={ID 28,COMMENT[] "At Holding Position 8"}
+PrgHandShake[29]={ID 29,COMMENT[] "At Holding Position 9"}
+PrgHandShake[30]={ID 30,COMMENT[] "At Holding Position 10"}
+PrgHandShake[31]={ID 31,COMMENT[] "Undefined"}
+PrgHandShake[32]={ID 32,COMMENT[] "Undefined"}
+PrgHandShake[33]={ID 33,COMMENT[] "Undefined"}
+PrgHandShake[34]={ID 34,COMMENT[] "Undefined"}
+PrgHandShake[35]={ID 35,COMMENT[] "Undefined"}
+PrgHandShake[36]={ID 36,COMMENT[] "Undefined"}
+PrgHandShake[37]={ID 37,COMMENT[] "Undefined"}
+PrgHandShake[38]={ID 38,COMMENT[] "Undefined"}
+PrgHandShake[39]={ID 39,COMMENT[] "Undefined"}
+PrgHandShake[40]={ID 40,COMMENT[] "Undefined"}
+PrgHandShake[41]={ID 41,COMMENT[] "At Pickup/Dropoff Position 1"}
+PrgHandShake[42]={ID 42,COMMENT[] "At Pickup/Dropoff Position 2"}
+PrgHandShake[43]={ID 43,COMMENT[] "At Pickup/Dropoff Position 3"}
+PrgHandShake[44]={ID 44,COMMENT[] "At Pickup/Dropoff Position 4"}
+PrgHandShake[45]={ID 45,COMMENT[] "At Pickup/Dropoff Position 5"}
+PrgHandShake[46]={ID 46,COMMENT[] "At Pickup/Dropoff Position 6"}
+PrgHandShake[47]={ID 47,COMMENT[] "At Pickup/Dropoff Position 7"}
+PrgHandShake[48]={ID 48,COMMENT[] "At Pickup/Dropoff Position 8"}
+PrgHandShake[49]={ID 49,COMMENT[] "At Pickup/Dropoff Position 9"}
+PrgHandShake[50]={ID 50,COMMENT[] "At Pickup/Dropoff Position 10"}
+PrgHandShake[51]={ID 51,COMMENT[] "Pickup/Dropoff 1 Check"}
+PrgHandShake[52]={ID 52,COMMENT[] "Pickup/Dropoff 2 Check"}
+PrgHandShake[53]={ID 53,COMMENT[] "Pickup/Dropoff 3 Check"}
+PrgHandShake[54]={ID 54,COMMENT[] "Pickup/Dropoff 4 Check"}
+PrgHandShake[55]={ID 55,COMMENT[] "Pickup/Dropoff 5 Check"}
+PrgHandShake[56]={ID 56,COMMENT[] "Pickup/Dropoff 6 Check"}
+PrgHandShake[57]={ID 57,COMMENT[] "Pickup/Dropoff 7 Check"}
+PrgHandShake[58]={ID 58,COMMENT[] "Pickup/Dropoff 8 Check"}
+PrgHandShake[59]={ID 59,COMMENT[] "Pickup/Dropoff 9 Check"}
+PrgHandShake[60]={ID 60,COMMENT[] "Pickup/Dropoff 10 Check"}
+PrgHandShake[61]={ID 61,COMMENT[] "Decision Request 1"}
+PrgHandShake[62]={ID 62,COMMENT[] "Decision Request 2"}
+PrgHandShake[63]={ID 63,COMMENT[] "Decision Request 3"}
+PrgHandShake[64]={ID 64,COMMENT[] "Decision Request 4"}
+PrgHandShake[65]={ID 65,COMMENT[] "Decision Request 5"}
+PrgHandShake[66]={ID 66,COMMENT[] "Decision Request 6"}
+PrgHandShake[67]={ID 67,COMMENT[] "Decision Request 7"}
+PrgHandShake[68]={ID 68,COMMENT[] "Decision Request 8"}
+PrgHandShake[69]={ID 69,COMMENT[] "Decision Request 9"}
+PrgHandShake[70]={ID 70,COMMENT[] "Decision Request 10"}
+PrgHandShake[71]={ID 71,COMMENT[] "Undefined"}
+PrgHandShake[72]={ID 72,COMMENT[] "Undefined"}
+PrgHandShake[73]={ID 73,COMMENT[] "Undefined"}
+PrgHandShake[74]={ID 74,COMMENT[] "Undefined"}
+PrgHandShake[75]={ID 75,COMMENT[] "Undefined"}
+PrgHandShake[76]={ID 76,COMMENT[] "Undefined"}
+PrgHandShake[77]={ID 77,COMMENT[] "Undefined"}
+PrgHandShake[78]={ID 78,COMMENT[] "Undefined"}
+PrgHandShake[79]={ID 79,COMMENT[] "Undefined"}
+PrgHandShake[80]={ID 80,COMMENT[] "Undefined"}
+PrgHandShake[81]={ID 81,COMMENT[] "Undefined"}
+PrgHandShake[82]={ID 82,COMMENT[] "Undefined"}
+PrgHandShake[83]={ID 83,COMMENT[] "Undefined"}
+PrgHandShake[84]={ID 84,COMMENT[] "Undefined"}
+PrgHandShake[85]={ID 85,COMMENT[] "Undefined"}
+PrgHandShake[86]={ID 86,COMMENT[] "Undefined"}
+PrgHandShake[87]={ID 87,COMMENT[] "Undefined"}
+PrgHandShake[88]={ID 88,COMMENT[] "Undefined"}
+PrgHandShake[89]={ID 89,COMMENT[] "Undefined"}
+PrgHandShake[90]={ID 90,COMMENT[] "Undefined"}
+PrgHandShake[91]={ID 91,COMMENT[] "Undefined"}
+PrgHandShake[92]={ID 92,COMMENT[] "Undefined"}
+PrgHandShake[93]={ID 93,COMMENT[] "Undefined"}
+PrgHandShake[94]={ID 94,COMMENT[] "Undefined"}
+PrgHandShake[95]={ID 95,COMMENT[] "Undefined"}
+PrgHandShake[96]={ID 96,COMMENT[] "Undefined"}
+PrgHandShake[97]={ID 97,COMMENT[] "Undefined"}
+PrgHandShake[98]={ID 98,COMMENT[] "Undefined"}
+PrgHandShake[99]={ID 99,COMMENT[] "Undefined"}
+PrgHandShake[100]={ID 100,COMMENT[] "Undefined"}
+PrgHandShake[101]={ID 101,COMMENT[] "Undefined"}
+PrgHandShake[102]={ID 102,COMMENT[] "Undefined"}
+PrgHandShake[103]={ID 103,COMMENT[] "Undefined"}
+PrgHandShake[104]={ID 104,COMMENT[] "Undefined"}
+PrgHandShake[105]={ID 105,COMMENT[] "Undefined"}
+PrgHandShake[106]={ID 106,COMMENT[] "Undefined"}
+PrgHandShake[107]={ID 107,COMMENT[] "Undefined"}
+PrgHandShake[108]={ID 108,COMMENT[] "Undefined"}
+PrgHandShake[109]={ID 109,COMMENT[] "Undefined"}
+PrgHandShake[110]={ID 110,COMMENT[] "Undefined"}
+PrgHandShake[111]={ID 111,COMMENT[] "Undefined"}
+PrgHandShake[112]={ID 112,COMMENT[] "Undefined"}
+PrgHandShake[113]={ID 113,COMMENT[] "Undefined"}
+PrgHandShake[114]={ID 114,COMMENT[] "Undefined"}
+PrgHandShake[115]={ID 115,COMMENT[] "Undefined"}
+PrgHandShake[116]={ID 116,COMMENT[] "Undefined"}
+PrgHandShake[117]={ID 117,COMMENT[] "Undefined"}
+PrgHandShake[118]={ID 118,COMMENT[] "Undefined"}
+PrgHandShake[119]={ID 119,COMMENT[] "Undefined"}
+PrgHandShake[120]={ID 120,COMMENT[] "Undefined"}
+PrgHandShake[121]={ID 121,COMMENT[] "Undefined"}
+PrgHandShake[122]={ID 122,COMMENT[] "Undefined"}
+PrgHandShake[123]={ID 123,COMMENT[] "Undefined"}
+PrgHandShake[124]={ID 124,COMMENT[] "Undefined"}
+PrgHandShake[125]={ID 125,COMMENT[] "Undefined"}
+PrgHandShake[126]={ID 126,COMMENT[] "Undefined"}
+PrgHandShake[127]={ID 127,COMMENT[] "Undefined"}
+PrgHandShake[128]={ID 128,COMMENT[] "Undefined"}
+PrgHandShake[129]={ID 129,COMMENT[] "Undefined"}
+PrgHandShake[130]={ID 130,COMMENT[] "Undefined"}
+PrgHandShake[131]={ID 131,COMMENT[] "Undefined"}
+PrgHandShake[132]={ID 132,COMMENT[] "Undefined"}
+PrgHandShake[133]={ID 133,COMMENT[] "Undefined"}
+PrgHandShake[134]={ID 134,COMMENT[] "Undefined"}
+PrgHandShake[135]={ID 135,COMMENT[] "Undefined"}
+PrgHandShake[136]={ID 136,COMMENT[] "Undefined"}
+PrgHandShake[137]={ID 137,COMMENT[] "Undefined"}
+PrgHandShake[138]={ID 138,COMMENT[] "Undefined"}
+PrgHandShake[139]={ID 139,COMMENT[] "Undefined"}
+PrgHandShake[140]={ID 140,COMMENT[] "Undefined"}
+PrgHandShake[141]={ID 141,COMMENT[] "Undefined"}
+PrgHandShake[142]={ID 142,COMMENT[] "Undefined"}
+PrgHandShake[143]={ID 143,COMMENT[] "Undefined"}
+PrgHandShake[144]={ID 144,COMMENT[] "Undefined"}
+PrgHandShake[145]={ID 145,COMMENT[] "Undefined"}
+PrgHandShake[146]={ID 146,COMMENT[] "Undefined"}
+PrgHandShake[147]={ID 147,COMMENT[] "Undefined"}
+PrgHandShake[148]={ID 148,COMMENT[] "Undefined"}
+PrgHandShake[149]={ID 149,COMMENT[] "Undefined"}
+PrgHandShake[150]={ID 150,COMMENT[] "Undefined"}
+PrgHandShake[151]={ID 151,COMMENT[] "Undefined"}
+PrgHandShake[152]={ID 152,COMMENT[] "Undefined"}
+PrgHandShake[153]={ID 153,COMMENT[] "Undefined"}
+PrgHandShake[154]={ID 154,COMMENT[] "Undefined"}
+PrgHandShake[155]={ID 155,COMMENT[] "Undefined"}
+PrgHandShake[156]={ID 156,COMMENT[] "Undefined"}
+PrgHandShake[157]={ID 157,COMMENT[] "Undefined"}
+PrgHandShake[158]={ID 158,COMMENT[] "Undefined"}
+PrgHandShake[159]={ID 159,COMMENT[] "Undefined"}
+PrgHandShake[160]={ID 160,COMMENT[] "Undefined"}
+PrgHandShake[161]={ID 161,COMMENT[] "Undefined"}
+PrgHandShake[162]={ID 162,COMMENT[] "Undefined"}
+PrgHandShake[163]={ID 163,COMMENT[] "Undefined"}
+PrgHandShake[164]={ID 164,COMMENT[] "Undefined"}
+PrgHandShake[165]={ID 165,COMMENT[] "Undefined"}
+PrgHandShake[166]={ID 166,COMMENT[] "Undefined"}
+PrgHandShake[167]={ID 167,COMMENT[] "Undefined"}
+PrgHandShake[168]={ID 168,COMMENT[] "Undefined"}
+PrgHandShake[169]={ID 169,COMMENT[] "Undefined"}
+PrgHandShake[170]={ID 170,COMMENT[] "Undefined"}
+PrgHandShake[171]={ID 171,COMMENT[] "Undefined"}
+PrgHandShake[172]={ID 172,COMMENT[] "Undefined"}
+PrgHandShake[173]={ID 173,COMMENT[] "Undefined"}
+PrgHandShake[174]={ID 174,COMMENT[] "Undefined"}
+PrgHandShake[175]={ID 175,COMMENT[] "Undefined"}
+PrgHandShake[176]={ID 176,COMMENT[] "Undefined"}
+PrgHandShake[177]={ID 177,COMMENT[] "Undefined"}
+PrgHandShake[178]={ID 178,COMMENT[] "Undefined"}
+PrgHandShake[179]={ID 179,COMMENT[] "Undefined"}
+PrgHandShake[180]={ID 180,COMMENT[] "Undefined"}
+PrgHandShake[181]={ID 181,COMMENT[] "Undefined"}
+PrgHandShake[182]={ID 182,COMMENT[] "Undefined"}
+PrgHandShake[183]={ID 183,COMMENT[] "Undefined"}
+PrgHandShake[184]={ID 184,COMMENT[] "Undefined"}
+PrgHandShake[185]={ID 185,COMMENT[] "Undefined"}
+PrgHandShake[186]={ID 186,COMMENT[] "Undefined"}
+PrgHandShake[187]={ID 187,COMMENT[] "Undefined"}
+PrgHandShake[188]={ID 188,COMMENT[] "Undefined"}
+PrgHandShake[189]={ID 189,COMMENT[] "Undefined"}
+PrgHandShake[190]={ID 190,COMMENT[] "Undefined"}
+PrgHandShake[191]={ID 191,COMMENT[] "Undefined"}
+PrgHandShake[192]={ID 192,COMMENT[] "Undefined"}
+PrgHandShake[193]={ID 193,COMMENT[] "Undefined"}
+PrgHandShake[194]={ID 194,COMMENT[] "Undefined"}
+PrgHandShake[195]={ID 195,COMMENT[] "Undefined"}
+PrgHandShake[196]={ID 196,COMMENT[] "Undefined"}
+PrgHandShake[197]={ID 197,COMMENT[] "Undefined"}
+PrgHandShake[198]={ID 198,COMMENT[] "Undefined"}
+PrgHandShake[199]={ID 199,COMMENT[] "Undefined"}
+PrgHandShake[200]={ID 200,COMMENT[] "Undefined"}
+PrgHandShake[201]={ID 201,COMMENT[] "Undefined"}
+PrgHandShake[202]={ID 202,COMMENT[] "Undefined"}
+PrgHandShake[203]={ID 203,COMMENT[] "Undefined"}
+PrgHandShake[204]={ID 204,COMMENT[] "Undefined"}
+PrgHandShake[205]={ID 205,COMMENT[] "Undefined"}
+PrgHandShake[206]={ID 206,COMMENT[] "Undefined"}
+PrgHandShake[207]={ID 207,COMMENT[] "Undefined"}
+PrgHandShake[208]={ID 208,COMMENT[] "Undefined"}
+PrgHandShake[209]={ID 209,COMMENT[] "Undefined"}
+PrgHandShake[210]={ID 210,COMMENT[] "Undefined"}
+PrgHandShake[211]={ID 211,COMMENT[] "Undefined"}
+PrgHandShake[212]={ID 212,COMMENT[] "Undefined"}
+PrgHandShake[213]={ID 213,COMMENT[] "Undefined"}
+PrgHandShake[214]={ID 214,COMMENT[] "Undefined"}
+PrgHandShake[215]={ID 215,COMMENT[] "Undefined"}
+PrgHandShake[216]={ID 216,COMMENT[] "Undefined"}
+PrgHandShake[217]={ID 217,COMMENT[] "Undefined"}
+PrgHandShake[218]={ID 218,COMMENT[] "Undefined"}
+PrgHandShake[219]={ID 219,COMMENT[] "Undefined"}
+PrgHandShake[220]={ID 220,COMMENT[] "Undefined"}
+PrgHandShake[221]={ID 221,COMMENT[] "Undefined"}
+PrgHandShake[222]={ID 222,COMMENT[] "Undefined"}
+PrgHandShake[223]={ID 223,COMMENT[] "Undefined"}
+PrgHandShake[224]={ID 224,COMMENT[] "Undefined"}
+PrgHandShake[225]={ID 225,COMMENT[] "Undefined"}
+PrgHandShake[226]={ID 226,COMMENT[] "Undefined"}
+PrgHandShake[227]={ID 227,COMMENT[] "Undefined"}
+PrgHandShake[228]={ID 228,COMMENT[] "Undefined"}
+PrgHandShake[229]={ID 229,COMMENT[] "Undefined"}
+PrgHandShake[230]={ID 230,COMMENT[] "Undefined"}
+PrgHandShake[231]={ID 231,COMMENT[] "Undefined"}
+PrgHandShake[232]={ID 232,COMMENT[] "Undefined"}
+PrgHandShake[233]={ID 233,COMMENT[] "Undefined"}
+PrgHandShake[234]={ID 234,COMMENT[] "Undefined"}
+PrgHandShake[235]={ID 235,COMMENT[] "Undefined"}
+PrgHandShake[236]={ID 236,COMMENT[] "Undefined"}
+PrgHandShake[237]={ID 237,COMMENT[] "Undefined"}
+PrgHandShake[238]={ID 238,COMMENT[] "Undefined"}
+PrgHandShake[239]={ID 239,COMMENT[] "Undefined"}
+PrgHandShake[240]={ID 240,COMMENT[] "Undefined"}
+PrgHandShake[241]={ID 241,COMMENT[] "Undefined"}
+PrgHandShake[242]={ID 242,COMMENT[] "Undefined"}
+PrgHandShake[243]={ID 243,COMMENT[] "Undefined"}
+PrgHandShake[244]={ID 244,COMMENT[] "Undefined"}
+PrgHandShake[245]={ID 245,COMMENT[] "Undefined"}
+PrgHandShake[246]={ID 246,COMMENT[] "Undefined"}
+PrgHandShake[247]={ID 247,COMMENT[] "Undefined"}
+PrgHandShake[248]={ID 248,COMMENT[] "Undefined"}
+PrgHandShake[249]={ID 249,COMMENT[] "Undefined"}
+PrgHandShake[250]={ID 250,COMMENT[] "Undefined"}
+PrgHandShake[251]={ID 251,COMMENT[] "Undefined"}
+PrgHandShake[252]={ID 252,COMMENT[] "Undefined"}
+PrgHandShake[253]={ID 253,COMMENT[] "Undefined"}
+PrgHandShake[254]={ID 254,COMMENT[] "Undefined"}
+PrgHandShake[255]={ID 255,COMMENT[] "Undefined"}
+;ENDFOLD (Handshake Definitions)
+;FOLD BINARY IO COMMENTS
+GLOBAL STRUC BINARYCOMMENT_T CHAR In[32],CHAR Out[32]
+DECL GLOBAL BINARYCOMMENT_T Bin_Comment[64]
+Bin_Comment[1]={In[] "Handshake Echo",Out[] "Handshake Number"}
+Bin_Comment[2]={In[] "New Speed",Out[] "Override Speed"}
+Bin_Comment[3]={In[] "Task Number",Out[] "Task Echo"}
+Bin_Comment[4]={In[] "Spare",Out[] "Alarm Facility Code"}
+Bin_Comment[5]={In[] "Spare",Out[] "Error Code Number"}
+Bin_Comment[6]={In[] "Spare",Out[] "User Fault Code"}
+Bin_Comment[7]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[8]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[9]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[10]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[11]={In[] "Decision Code",Out[] "Decision Code Echo"}
+Bin_Comment[12]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[13]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[14]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[15]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[16]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[17]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[18]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[19]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[20]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[21]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[22]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[23]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[24]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[25]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[26]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[27]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[28]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[29]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[30]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[31]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[32]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[33]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[34]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[35]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[36]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[37]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[38]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[39]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[40]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[41]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[42]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[43]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[44]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[45]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[46]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[47]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[48]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[49]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[50]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[51]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[52]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[53]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[54]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[55]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[56]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[57]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[58]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[59]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[60]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[61]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[62]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[63]={In[] "Spare",Out[] "Spare"}
+Bin_Comment[64]={In[] "Spare",Out[] "Spare"}
+;ENDFOLD (BINARY IO COMMENTS)
+ENDDAT

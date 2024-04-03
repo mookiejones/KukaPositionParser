@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DevIODriver xsi:noNamespaceSchemaLocation="/ROBOTER/Config/System/Common/Schemes/DevIODriver.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Version Label="">
+		<Info Version="KUKA V8.3"/>
+		<Schema Version="100"/>
+	</Version>
+	<PortNumber>55055</PortNumber>
+	<BusInstance name="X-BUS" size="64">
+		<Device name="DEMO_DEVICE1">
+			<Inputs offset="0" size="8"/>
+			<Outputs offset="8" size="8"/>
+		</Device>
+		<Device name="DEMO_DEVICE2">
+			<Inputs offset="16" size="16"/>
+			<Outputs offset="32" size="16"/>
+		</Device>
+	</BusInstance>
+	<BusInstance name="Y-BUS">
+		<Device name="DEMO_DEVICE3">
+			<Inputs offset="0" size="16"/>
+			<Outputs offset="16" size="16"/>
+		</Device>
+	</BusInstance>
+</DevIODriver>

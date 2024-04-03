@@ -1,0 +1,95 @@
+&ACCESS RVO1
+&REL 1
+&PARAM DISKPATH = KRC:\R1\Program\Production
+DEF find_seam( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+   
+   actualHeightOffset = 10.0
+   
+   IF (NOT $IN_HOME) THEN
+      HomePos()
+   ENDIF
+
+;FOLD SPTP P8 Vel=30 % PDAT9 Tool[1]:laser Base[0];%{PE}%R 8.3.38,%MKUKATPBASIS,%CSPLINE,%VSPTP_SB,%P 1:SPTP_SB, 2:P8, 3:, 5:30, 7:PDAT9
+SPTP XP8 WITH $VEL_AXIS[1]= SVEL_JOINT( 30), $TOOL= STOOL2( FP8), $BASE= SBASE( FP8.BASE_NO),$IPO_MODE= SIPO_MODE( FP8.IPO_FRAME), $LOAD= SLOAD( FP8.TOOL_NO), $ACC_AXIS[1]= SACC_JOINT( PPDAT9), $GEAR_JERK[1]= SGEAR_JERK( PPDAT9)
+;ENDFOLD
+
+   ;FOLD HandShake[21 : At Hold Pos 1], WAIT on Response
+      HandShake_Set (21,false)
+      HandShake_Check (21,false)
+   ;ENDFOLD
+   
+   nType = Task_Selection(0)
+   
+   SWITCH nType
+      
+      CASE 2 
+
+;FOLD SPTP P9 Vel=30 % PDAT10 Tool[1]:laser Base[0];%{PE}%R 8.3.38,%MKUKATPBASIS,%CSPLINE,%VSPTP_SB,%P 1:SPTP_SB, 2:P9, 3:, 5:30, 7:PDAT10
+SPTP XP9 WITH $VEL_AXIS[1]= SVEL_JOINT( 30), $TOOL= STOOL2( FP9), $BASE= SBASE( FP9.BASE_NO),$IPO_MODE= SIPO_MODE( FP9.IPO_FRAME), $LOAD= SLOAD( FP9.TOOL_NO), $ACC_AXIS[1]= SACC_JOINT( PPDAT10), $GEAR_JERK[1]= SGEAR_JERK( PPDAT10)
+;ENDFOLD
+         fixedUpDownMove = barrel72ich
+      CASE 3
+         
+;FOLD PTP P1 Vel=30 % PDAT2 Tool[1]:laser Base[0];%{PE}%R 8.3.38,%MKUKATPBASIS,%CMOVE,%VPTP,%P 1:PTP, 2:P1, 3:, 5:30, 7:PDAT2
+$BWDSTART=FALSE
+PDAT_ACT=PPDAT2
+FDAT_ACT=FP1
+BAS(#PTP_PARAMS,30)
+PTP XP1 
+;ENDFOLD
+         
+         fixedUpDownMove = barrel60inch
+         
+      CASE 4
+;FOLD PTP P6 Vel=30 % PDAT7 Tool[1]:laser Base[0];%{PE}%R 8.3.38,%MKUKATPBASIS,%CMOVE,%VPTP,%P 1:PTP, 2:P6, 3:, 5:30, 7:PDAT7
+$BWDSTART=FALSE
+PDAT_ACT=PPDAT7
+FDAT_ACT=FP6
+BAS(#PTP_PARAMS,30)
+PTP XP6 
+;ENDFOLD
+        fixedUpDownMove = barrel54inch
+         
+      DEFAULT
+         RETURN
+         
+   ENDSWITCH
+   
+   
+   LASER_APPROACH(FALSE)
+   ;FOLD HandShake[22 : Barrel Found], WAIT on Response
+      HandShake_Set (22,false)
+      HandShake_Check (22,false)
+   ;ENDFOLD
+   
+   ;Get close to the seam
+   
+   IF seamTrackDisabled <> TRUE THEN
+      LASER_APPROACH(TRUE)
+   ENDIF
+   
+   
+   ;FOLD HandShake[23 : AT the Seam adjust changes], WAIT on Response
+      HandShake_Set (23,false)
+      HandShake_Check (23,false)
+   ;ENDFOLD
+   
+   ;SEAM FOUND
+   
+   Exit_Program()
+   
+END

@@ -1,0 +1,65 @@
+&ACCESS RVO1
+&REL 1
+&PARAM DISKPATH = KRC:\R1\Program\Production
+DEF weld( )
+   DECL INT contID	; ContainerID
+   DECL BOOL RSI_ON
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT DECL 5 WHEN VIS_HEIGHT == VIS_HEIGHT_NOT_IN_RANGE DO DisableRSI()
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+   
+   ; find the seam (min of 2 tracks)
+   counter = 0
+   WHILE (counter < minCount) OR (TrackSeam()==FALSE)
+      counter = counter + 1
+   ENDWHILE
+   
+   ;FOLD HandShake[25 : Wait for table position], WAIT on Response
+      HandShake_Set (25,false)   
+      HandShake_Check (25,false)
+   ;ENDFOLD
+   
+   WHILE weldActive 
+      throwawaybool = TrackSeam()
+
+      if RSI_GO_MANUAL== FALSE then
+         RSI_ON = RSI_SetUp_TurnOn(RSI_ID)
+         ; DisableRSI_Pos()  
+         
+         $SEN_PINT[RSI_MoveCorr_Stop]=1
+         RSI_MOVECORR()
+         
+         RSI_RESET_PIDS()
+         TurnOffRSI(RSI_ID)
+         Xdummy_point = $POS_ACT
+         PTP Xdummy_point
+      ENDIF 
+   ENDWHILE
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 1) ; select base 1
+   BAS(#VEL_CP, 0.050) ; m/s
+   BAS(#ACC_CP, 50) ; use max acceleration
+   
+
+   LIN_REL { Z -50 } #TOOL
+   
+   HomePos()
+   
+   Exit_Program()
+   
+END
+
+

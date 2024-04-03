@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="Variables">
+      <uiText key="Value">
+         <text xml:lang="en-DEV">Value</text>
+      </uiText>
+      <uiText key="Refresh">
+         <text xml:lang="en-DEV">Refresh</text>
+      </uiText>
+      <uiText key="MinValue">
+         <text xml:lang="en-DEV">Min Value</text>
+      </uiText>
+      <uiText key="MaxValue">
+         <text xml:lang="en-DEV">Max Value</text>
+      </uiText>
+      <uiText key="Cancel">
+         <text xml:lang="en-DEV">Cancel</text>
+      </uiText>
+      <uiText key="Ok">
+         <text xml:lang="en-DEV">Ok</text>
+      </uiText>
+      <uiText key="SourceOfLocalVars">
+         <text xml:lang="en-DEV">Variables from:</text>
+      </uiText>
+      <uiText key="ValueTooHigh">
+         <text xml:lang="en-DEV">The new value is higher than the highest boundary</text>
+      </uiText>
+      <uiText key="ValueTooLow">
+         <text xml:lang="en-DEV">The New Value is lower than the lowest boundary</text>
+      </uiText>
+      <uiText key="VarNotExistsInSelProg">
+         <text xml:lang="en-DEV">Variable does not exist in current program</text>
+      </uiText>
+      <uiText key="Error">
+         <text xml:lang="en-DEV">Error</text>
+      </uiText>
+      <uiText key="Up">
+         <text xml:lang="en-DEV">Up</text>
+      </uiText>
+      <uiText key="Down">
+         <text xml:lang="en-DEV">Down</text>
+      </uiText>
+      <uiText key="Create">
+         <text xml:lang="en-DEV">Create</text>
+      </uiText>
+      <uiText key="Delete">
+         <text xml:lang="en-DEV">Delete</text>
+      </uiText>
+      <uiText key="Name">
+         <text xml:lang="en-DEV">Name</text>
+      </uiText>
+      <uiText key="UserLevel">
+         <text xml:lang="en-DEV">UserLevel</text>
+      </uiText>
+      <uiText key="VisibleDependingOnStateOfParameters">
+         <text xml:lang="en-DEV">On state of parameters</text>
+      </uiText>
+      <uiText key="HelpTextKey">
+         <text xml:lang="en-DEV">Help text</text>
+      </uiText>
+      <uiText key="Path">
+         <text xml:lang="en-DEV">Path</text>
+      </uiText>
+      <uiText key="Type">
+         <text xml:lang="en-DEV">Type</text>
+      </uiText>
+      <uiText key="ListOfPossibleValues">
+         <text xml:lang="en-DEV">List of possible values</text>
+      </uiText>
+      <uiText key="IsEditable">
+         <text xml:lang="en-DEV">Editable</text>
+      </uiText>
+      <uiText key="Visibility">
+         <text xml:lang="en-DEV">Visibility</text>
+      </uiText>
+      <uiText key="Unit">
+         <text xml:lang="en-DEV">Unit</text>
+      </uiText>
+      <uiText key="DistinctVariableValue">
+         <text xml:lang="en-DEV">Value of the variable</text>
+      </uiText>
+      <uiText key="TextDisplayed">
+         <text xml:lang="en-DEV">Text displayed</text>
+      </uiText>
+      <uiText key="ShowConfigGroup">
+         <text xml:lang="en-DEV">Groups</text>
+      </uiText>
+      <uiText key="EditVarPos">
+         <text xml:lang="en-DEV">Position</text>
+      </uiText>
+      <uiText key="CopyParam">
+         <text xml:lang="en-DEV">Copy</text>
+      </uiText>
+      <uiText key="OnlyLocalVariablesInCollection">
+         <text xml:lang="en-DEV">Please select a program to display the variables.</text>
+      </uiText>
+      <uiText key="OnlyLocalVariablesInGroup">
+         <text xml:lang="en-DEV">No global variable on this page.
+Please select a program or choose another page.</text>
+      </uiText>
+      <uiText key="ProgramNameFormat">
+         <text xml:lang="en-DEV">Format of the program name requested:</text>
+      </uiText>
+      <uiText key="OnlyManualMode">
+         <text xml:lang="en-DEV">Manual</text>
+      </uiText>
+      <uiText key="AllRunningModes">
+         <text xml:lang="en-DEV">All modes</text>
+      </uiText>
+      <uiText key="User">
+         <text xml:lang="en-DEV">User</text>
+      </uiText>
+      <uiText key="Expert">
+         <text xml:lang="en-DEV">Expert</text>
+      </uiText>
+      <uiText key="Administrator">
+         <text xml:lang="en-DEV">Administrator</text>
+      </uiText>
+      <uiText key="Int">
+         <text xml:lang="en-DEV">Int</text>
+      </uiText>
+      <uiText key="String">
+         <text xml:lang="en-DEV">String</text>
+      </uiText>
+      <uiText key="Enum">
+         <text xml:lang="en-DEV">Enum</text>
+      </uiText>
+      <uiText key="Real">
+         <text xml:lang="en-DEV">Real</text>
+      </uiText>
+      <uiText key="Bool">
+         <text xml:lang="en-DEV">Bool</text>
+      </uiText>
+      <uiText key="DuplicatedKeys">
+         <text xml:lang="en-DEV">Each variable value in this list must be unique. Please delete duplicates.</text>
+      </uiText>
+      <uiText key="WrongValue">
+         <text xml:lang="en-DEV">The New Value is not correct</text>
+      </uiText>
+      <uiText key="GroupFull">
+         <text xml:lang="en-DEV">The current group is full. Max number of variables per group: {0}.</text>
+      </uiText>
+      <uiText key="DeleteVariable">
+         <text xml:lang="en-DEV">Remove a variable</text>
+      </uiText>
+      <uiText key="ConfirmDeleteVariable">
+         <text xml:lang="en-DEV">Do you want to remove the variable {0} from this group?</text>
+      </uiText>
+      <uiText key="DeleteGroup">
+         <text xml:lang="en-DEV">Remove a group</text>
+      </uiText>
+      <uiText key="ConfirmDeleteGroup">
+         <text xml:lang="en-DEV">Do you really want to remove the group {0}?</text>
+      </uiText>
+      <uiText key="EmptyPath">
+         <text xml:lang="en-DEV">Empty Path</text>
+      </uiText>
+   </module>
+</resources>

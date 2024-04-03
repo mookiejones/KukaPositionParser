@@ -1,0 +1,55 @@
+&ACCESS RVP
+&REL 8
+&COMMENT MAINTENANCE LOCATION
+DEF Maintenance_FromBarrel( )
+   ;FOLD HISTORY
+      ;================================
+      ;= Robot Process
+      ;= and Application Control
+      ;================================
+   ;ENDFOLD (HISTORY)
+   ;FOLD INI
+      MODE=#SYNC
+      ;IF $PRO_STATE0<>#P_ACTIVE THEN
+         CWRITE($CMD,STAT,MODE,"RUN /R1/SPS ()")
+      ;ENDIF
+      OFFSET=0
+      ;FOLD BAS INI
+         BAS (#INITMOV,0 )
+      ;ENDFOLD
+      bln_REPLOC=TRUE
+   ;ENDFOLD (INI)
+   
+
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 1) ; select base 1
+   BAS(#VEL_CP, 0.010) ; m/s
+   BAS(#ACC_CP, 50) ; use max acceleration
+   
+
+   HomePos()
+   
+   ;FOLD HandShake[5 : At Maintenance Position], WAIT on Response
+      ;FOLD ;%{h}
+         ;Params IlfProvider=model3_handshakectrl; Core_CmdTechHandShake=HandShake; Core_CmdHandShake=5; Core_Wait=True
+      ;ENDFOLD
+      HandShake_Set (5,FALSE)
+      HandShake_Check (5,FALSE)
+   ;ENDFOLD
+   
+   HomePos()
+   PTP Xdummy_point
+   
+   ;FOLD HandShake[24 : Adjust changes], WAIT on Response
+      HandShake_Set (24,false)
+      HandShake_Check (24,false)
+   ;ENDFOLD
+
+
+   Exit_Program()
+   
+   bln_REPLOC=FALSE
+END

@@ -1,0 +1,188 @@
+&ACCESS RVO1
+&REL 1
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\submit
+DEF  GlobalPosn ( )
+; **************************************
+; * Package:     TeslaCore             *
+; * Release      V4.0.0                *
+; * File:        GlobalPosn.sub        *
+; * Date:        07.2016               *
+; * GUI Version: > = V8.3              *
+; **************************************
+;FOLD Details
+;FOLD Declaration
+DECL BOOL bPosEvalResult
+;ENDFOLD (Declaration)
+LOOP
+;FOLD Implementation
+;FOLD Position GP1
+IF (xGP_Ctrl[1].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal1,xGP_Ctrl[1])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[1])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[1])
+ENDIF
+;ENDFOLD (Position GP1)
+;FOLD Position GP2
+IF (xGP_Ctrl[2].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal2,xGP_Ctrl[2])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[2])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[2])
+ENDIF
+;ENDFOLD (Position GP2)
+;FOLD Position GP3
+IF (xGP_Ctrl[3].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal3,xGP_Ctrl[3])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[3])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[3])
+ENDIF
+;ENDFOLD (Position GP3)
+;FOLD Position GP4
+IF (xGP_Ctrl[4].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal4,xGP_Ctrl[4])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[4])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[4])
+ENDIF
+;ENDFOLD (Position GP4)
+;FOLD Position GP5
+IF (xGP_Ctrl[5].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal5,xGP_Ctrl[5])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[5])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[5])
+ENDIF
+;ENDFOLD (Position GP5)
+;FOLD Position GP6
+IF (xGP_Ctrl[6].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal6,xGP_Ctrl[6])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[6])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[6])
+ENDIF
+;ENDFOLD (Position GP6)
+;FOLD Position GP7
+IF (xGP_Ctrl[7].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal7,xGP_Ctrl[7])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[7])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[7])
+ENDIF
+;ENDFOLD (Position GP7)
+;FOLD Position GP8
+IF (xGP_Ctrl[8].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal8,xGP_Ctrl[8])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[8])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[8])
+ENDIF
+;ENDFOLD (Position GP8)
+;FOLD Position GP9
+IF (xGP_Ctrl[9].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal9,xGP_Ctrl[9])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[9])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[9])
+ENDIF
+;ENDFOLD (Position GP9)
+;FOLD Position GP10
+IF (xGP_Ctrl[10].PosnEnabled==TRUE) THEN
+	bPosEvalResult = CheckAxisPos(XGlobal10,xGP_Ctrl[10])
+	SetPosOut(bPosEvalResult,xGP_Ctrl[10])
+ELSE
+   SetPosOut(FALSE,xGP_Ctrl[10])
+ENDIF
+;ENDFOLD (Position GP10)
+;ENDFOLD (Implementation)
+ENDLOOP
+;ENDFOLD (Details)
+END ; (GlobalPosn)
+
+DEFFCT BOOL CheckAxisPos (pPosition: IN, pPosCtrl: IN )
+;FOLD Details
+;FOLD Declaration
+E6Axis pPosition
+DECL PosnCtrl_Typ pPosCtrl
+BOOL bResult
+REAL Angle1, Angle2, Angle3, Angle4, Angle5, Angle6, Angle7, Angle8, Angle9, Angle10, Angle11, Angle12
+;ENDFOLD (Declaration)
+;FOLD Implementation
+IF ((VARSTATE("pPosition") == #INITIALIZED) AND (VARSTATE("pPosCtrl") == #INITIALIZED))THEN
+	Angle1 =  ABS(pPosition.A1 - $AXIS_ACT.A1)
+	IF (Angle1>pPosCtrl.A1_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle2 =  ABS(pPosition.A2 - $AXIS_ACT.A2)
+	IF (Angle2>pPosCtrl.A2_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle3 =  ABS(pPosition.A3 - $AXIS_ACT.A3)
+	IF (Angle3>pPosCtrl.A3_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle4 =  ABS(pPosition.A4 - $AXIS_ACT.A4)
+	IF (Angle4>pPosCtrl.A4_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle5 =  ABS(pPosition.A5 - $AXIS_ACT.A5)
+	IF (Angle5>pPosCtrl.A5_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle6 =  ABS(pPosition.A6 - $AXIS_ACT.A6)
+	IF (Angle6>pPosCtrl.A6_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle7 =  ABS(pPosition.E1 - $AXIS_ACT.E1)
+	IF (Angle7>pPosCtrl.E1_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle8 =  ABS(pPosition.E2 - $AXIS_ACT.E2)
+	IF (Angle8>pPosCtrl.E2_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle9 =  ABS(pPosition.E3 - $AXIS_ACT.E3)
+	IF (Angle9>pPosCtrl.E3_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle10 =  ABS(pPosition.E4 - $AXIS_ACT.E4)
+	IF (Angle10>pPosCtrl.E4_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle11 =  ABS(pPosition.E5 - $AXIS_ACT.E5)
+	IF (Angle11>pPosCtrl.E5_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	Angle12 =  ABS(pPosition.E6 - $AXIS_ACT.E6)
+	IF (Angle12>pPosCtrl.E6_Tol) THEN
+		RETURN(FALSE)
+	ENDIF
+	RETURN (TRUE)
+ELSE
+	RETURN (FALSE)
+ENDIF
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+ENDFCT ; (CheckAxisPos)
+
+DEF SetPosOut(bState :IN, pPosCtrl :IN)
+;FOLD Details
+;FOLD Declaration
+BOOL bState
+DECL PosnCtrl_Typ pPosCtrl
+;ENDFOLD (Declaration)
+;FOLD Implementation
+IF ((VARSTATE("bState") == #INITIALIZED) AND (VARSTATE("pPosCtrl") == #INITIALIZED))THEN
+	IF (pPosCtrl.OutputCtrl > 0) THEN
+		IF (pPosCtrl.AtPosn == TRUE) THEN
+			$OUT[pPosCtrl.OutputCtrl]=bState
+		ELSE
+			$OUT[pPosCtrl.OutputCtrl]=NOT(bState)
+		ENDIF
+	ENDIF
+ENDIF
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (SetPosOut)

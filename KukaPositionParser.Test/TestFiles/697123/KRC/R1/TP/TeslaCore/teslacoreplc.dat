@@ -1,0 +1,26 @@
+&ACCESS  RVP
+&PARAM DISKPATH = TP/TeslaCore
+&REL 1
+DEFDAT  teslacoreplc PUBLIC
+; **************************************
+; * Package:     TeslaCore             *
+; * Release      V5.0.0                *
+; * File:        TeslaCorePLC.dat      *
+; * Date:        04.2019               *
+; * GUI Version: > = V8.3              *
+; **************************************
+
+DECL STATE_T STATE
+DECL MODUS_T MODE_Cell
+DECL BOOL bln_ONESHOT_CELLSTART=FALSE
+DECL BOOL bln_STK_Program_Selected=FALSE
+DECL INT int_TimeCnt=0
+DECL MSGBUF_T mbTCFltBuffer[100]
+DECL INT nTCMsgCnt=2
+DECL INT nTCBufferLocation=3
+DECL INT nTCRobotFaultCode=0
+
+DECL GLOBAL BOOL bInCell=FALSE ; (i) Internal variable indicating cell is selected
+DECL GLOBAL BOOL bInProg=FALSE ;(i) Internal variable indicating robot is in some other program then cell/p00
+
+ENDDAT

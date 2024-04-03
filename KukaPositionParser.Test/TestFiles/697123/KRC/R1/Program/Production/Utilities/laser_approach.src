@@ -1,0 +1,147 @@
+&ACCESS RVO1
+&REL 120
+&PARAM EDITMASK = *
+DEF LASER_APPROACH(VIS_POS_ENABLE:IN )
+   BOOL VIS_POS_ENABLE
+   BOOL rsiStatus
+   INT containerID
+   INT Orig_Advance
+   INT ret
+   BOOL StartInRange
+   
+   INTERRUPT DECL 10 WHEN VIS_HEIGHT <> VIS_HEIGHT_NOT_IN_RANGE DO IRSTOP ( )
+   ;FOLD BASISTECH INI
+      GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+      INTERRUPT ON 3 
+      BAS (#INITMOV,0 )      
+      BAS(#TOOL, 1) ; select first tool
+      BAS(#VEL_CP, 0.005) ; m/s
+      BAS(#ACC_CP, 25) ; use max acceleration
+   ;ENDFOLD (BASISTECH INI) 
+   StartInRange = TRUE
+   IF ME_ScannerConnected == FALSE THEN
+      HALT
+   ENDIF
+   
+   IF SICK_ScannerConnected == FALSE THEN
+      HALT
+   ENDIF
+   IF varstate("VIS_POS_ENABLE")<>#initialized THEN
+      VIS_POS_ENABLE = FALSE
+   ENDIF
+   
+   Orig_Advance = $ADVANCE
+   IF Orig_Advance == 0 THEN
+      Orig_Advance = 3
+   ENDIF
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point
+   
+   IF VIS_HEIGHT == VIS_HEIGHT_NOT_IN_RANGE THEN
+      StartInRange = FALSE
+      Movement()
+   ENDIF
+   $ADVANCE=Orig_Advance
+   
+   IF (StartInRange==FALSE) THEN
+      LIN_REL {z 3} #TOOL
+   ENDIF
+   WAIT SEC 0.4
+   CONTINUE
+   Align(FALSE, 2.0)
+   Align(VIS_POS_ENABLE, 2.0)
+   WAIT SEC 0.5
+   CONTINUE
+   Align(VIS_POS_ENABLE, 1.5)
+   WAIT SEC 0.5
+   CONTINUE
+   Align(VIS_POS_ENABLE, 1.2)
+   WAIT SEC 0.5
+   CONTINUE
+   
+   rsiStatus = RSI_SetUp_TurnOn(containerID)
+   IF VIS_POS_ENABLE == TRUE THEN
+      $SEN_PINT[RSI_X_Sys_Disable]=0
+   ELSE
+      $SEN_PINT[RSI_X_Sys_Disable]=1
+   ENDIF
+   
+   $SEN_PINT[RSI_MoveCorr_Stop]=1
+   $SEN_PINT[RSI_MoveCorr_COUNTDOWN] = 100
+   RSI_MOVECORR()
+   
+   ret = RSI_OFF()
+   ret = RSI_DELETE(containerID)
+   
+END
+
+DEF Movement()
+   $ADVANCE = 0
+   INTERRUPT ON 10 
+   LIN_REL {z 3000} #TOOL
+   INTERRUPT OFF 10
+END
+
+DEF Align(VIS_POS_ENABLE:IN, HeightGain:IN) ;HeightGain 1 == full move, >1 == partial move, 2 == Move halfway
+   BOOL VIS_POS_ENABLE
+   REAL HeightGain
+   frame relPos;
+   relPos = {x 0, y 0, z 0, A 0, b 0, c 0}
+   IF varstate("HeightGain")<>#initialized THEN
+      HeightGain = 1.0
+   ENDIF
+   IF varstate("VIS_POS_ENABLE")==#initialized THEN
+      IF VIS_POS_ENABLE THEN
+         relPos.x = LIMIT((((VIS_POS_TARGET_PLC - VIS_POS) / 1000.0 ) / 1.0), -5.0, 5.0)
+      ENDIF
+   ENDIF
+   relPos.b = LIMIT(-(((VIS_C_ANGLE_TARGET_PLC - VIS_C_ANGLE) / 1000.0) / 1.0), -3.0, 3.0)
+   relPos.z = (-((VIS_HEIGHT_TARGET_PLC - VIS_HEIGHT) / 1000.0) / HeightGain)
+   
+   LIN_REL relPos #TOOL
+END
+
+DEF AlignWithSick(VIS_POS_ENABLE:IN, HeightGain:IN) ;HeightGain 1 == full move, >1 == partial move, 2 == Move halfway
+   BOOL VIS_POS_ENABLE
+   REAL HeightGain
+   frame relPos;
+   relPos = {x 0, y 0, z 0, A 0, b 0, c 0}
+   IF varstate("HeightGain")<>#initialized THEN
+      HeightGain = 1.0
+   ENDIF
+   IF varstate("VIS_POS_ENABLE")==#initialized THEN
+      IF VIS_POS_ENABLE THEN
+         relPos.x = LIMIT((((VIS_POS_TARGET_PLC - VIS_POS) / 1000.0 ) / 1.0), -5.0, 5.0)
+      ENDIF
+   ENDIF
+   relPos.b = LIMIT((((VIS_C_ANGLE_TARGET_PLC - VIS_C_ANGLE) / 1000.0) / 1.0), -3.0, 3.0)
+   relPos.c = LIMIT(((((VIS_HEIGHT_TARGET_PLC - VIS_HEIGHT) / 1000.0) *  VIS_HEIGHT_TO_B_ANGLE) / HeightGain), -3.0, 3.0)
+   relPos.z = (((VIS_HeightNearTorch - VIS_HtNrTrch_TARGET_PLC) / 1000.0) / HeightGain)
+   
+   LIN_REL relPos #TOOL
+END
+
+DEF IRSTOP ( )
+   INTERRUPT OFF 10
+   BRAKE
+   WAIT SEC 0.05
+   RESUME
+END
+
+DEFFCT REAL LIMIT(TestVal:IN, LWRLim:IN, UPRLim:IN)
+   REAL TestVal
+   REAL UPRLim
+   REAL LWRLim
+   REAL Res
+   Res = TestVal
+   if (varstate("TestVal")<>#initialized) OR (varstate("UPRLim")<>#initialized) OR (varstate("LWRLim")<>#initialized) then
+      HALT
+   ENDIF
+   IF (TestVal<LWRLim) THEN
+      Res = LWRLim
+      ENDIF
+   IF (TestVal>UPRLim) THEN
+      Res = UPRLim
+      ENDIF
+   RETURN Res
+ENDFCT

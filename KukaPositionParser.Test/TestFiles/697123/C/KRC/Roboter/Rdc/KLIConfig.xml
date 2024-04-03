@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?><KagaConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/KagaConfig.xsd">
+  <Version Label="">
+    <Info Version="KRC V8.2"/>
+    <Schema Version="200"/>
+  </Version>
+  <BusConfig Id="NETWORK_CONFIG_KUKA_LINE_INTERFACE" isActive="true">
+    <PhysicalNetworkDevice HibernateSupport="true" Priority="12">
+      <IfConfig Ip="none" IpConfigType="noIp" Name="gei" Netmask="none" Unit="1"/>
+      <VirtualNetworkDevice>
+        <IfConfig Ip="192.168.7.20" IpConfigType="IpnetStatic" Name=" virtual 5" Netmask="ffffff00" Unit="5"/>
+        <Queue Priority="60" Resources="100">
+          <Filter String="Filter0"/>
+          <Filter String="Filter1"/>
+          <Filter String="EthernetIP"/>
+        </Queue>
+        <Queue Priority="255" Resources="100">
+          <Filter String="AcceptAll"/>
+        </Queue>
+      </VirtualNetworkDevice>
+    </PhysicalNetworkDevice>
+  </BusConfig>
+  <NAT GlobalInterface="virtual5">
+    <NATRule>map [GlobalNatInterface] [host:WINDOWS] -&gt; 0/32 portmap tcp/udp 18000:18999</NATRule>
+    <NATRule>map [GlobalNatInterface] [host:WINDOWS] -&gt; 0/32 icmpidmap icmp 19000:19999</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 3389 -&gt; [host:WINDOWS] port 3389 tcp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 139 -&gt; [host:WINDOWS] port 139 tcp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 445 -&gt; [host:WINDOWS] port 445 tcp/udp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 49001 -&gt; [host:WINDOWS] port 49001 tcp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 49002 -&gt; [host:WINDOWS] port 49002 tcp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 49003 -&gt; [host:WINDOWS] port 49003 tcp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 49004 -&gt; [host:WINDOWS] port 49004 tcp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 49006 -&gt; [host:WINDOWS] port 49006 tcp</NATRule>
+    <NATRule>rdr [GlobalNatInterface] [addr] port 49010 -&gt; [host:WINDOWS] port 49010 tcp</NATRule>
+    <StandardGateway Ip="192.168.7.20"/>
+  </NAT>
+  <UserFilter Attribute="8100" Id="Filter0" Type="pkt"/>
+  <UserFilter Attribute="8892" Id="Filter1" Type="pkt"/>
+</KagaConfig>

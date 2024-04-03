@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/ProConOS_IO.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Version Label="">
+		<Info Version="KUKA V8.3"/>
+		<Schema Version="100"/>
+	</Version>
+
+  <ProcessData>
+    <!--
+      <Segment segmentID="200" drvName="DevIODriver" busInstanceName="X-BUS" byteOffset="0" byteSize="2" >
+	      <AccessMask byteNr="0" mask="00001111"/>
+	      <AccessMask byteNr="1" mask="11110000"/>
+  	  </Segment>	  
+      <Segment segmentID="201" drvName="DevIODriver" busInstanceName="X-BUS" byteOffset="2" byteSize="2" >
+	    </Segment>	  
+      <Segment segmentID="202" drvName="DevIODriver" busInstanceName="X-BUS" byteOffset="1" byteSize="1" >
+	    </Segment>	  
+    -->
+	</ProcessData>
+</Application>

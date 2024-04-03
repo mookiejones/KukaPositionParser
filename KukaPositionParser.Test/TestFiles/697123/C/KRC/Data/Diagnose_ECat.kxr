@@ -1,0 +1,2165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name4000">
+      <text xml:lang="de-DEV">EtherCat</text>
+      <text xml:lang="en-DEV">EtherCat</text>
+    </uiText>
+    <uiText key="Diagnose_Description4000">
+      <text xml:lang="de-DEV">EtherCat</text>
+      <text xml:lang="en-DEV">EtherCat</text>
+    </uiText>
+    <uiText key="Diagnose_Name4001">
+      <text xml:lang="de-DEV">Master-OK</text>
+      <text xml:lang="en-DEV">Master-OK</text>
+    </uiText>
+    <uiText key="Diagnose_Description4001">
+      <text xml:lang="de-DEV">Master Status OK</text>
+      <text xml:lang="en-DEV">Master State OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4001_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4001_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4002">
+      <text xml:lang="de-DEV">Aktueller Master Status</text>
+      <text xml:lang="en-DEV">Actual Master State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4002">
+      <text xml:lang="de-DEV">Aktueller Master Status</text>
+      <text xml:lang="en-DEV">Actual Master State</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_0">
+      <text xml:lang="de-DEV">0 - ungueltig</text>
+      <text xml:lang="en-DEV">0 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_1">
+      <text xml:lang="de-DEV">Init</text>
+      <text xml:lang="en-DEV">Init</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_2">
+      <text xml:lang="de-DEV">PreOP</text>
+      <text xml:lang="en-DEV">PreOP</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_3">
+      <text xml:lang="de-DEV">BootStrap</text>
+      <text xml:lang="en-DEV">BootStrap</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_4">
+      <text xml:lang="de-DEV">SafeOP</text>
+      <text xml:lang="en-DEV">SafeOP</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_5">
+      <text xml:lang="de-DEV">5 - ungueltig</text>
+      <text xml:lang="en-DEV">5 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_6">
+      <text xml:lang="de-DEV">6 - ungueltig</text>
+      <text xml:lang="en-DEV">6 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_7">
+      <text xml:lang="de-DEV">7 - ungueltig</text>
+      <text xml:lang="en-DEV">7 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_8">
+      <text xml:lang="de-DEV">OPERATIONAL</text>
+      <text xml:lang="en-DEV">OPERATIONAL</text>
+    </uiText>
+    <uiText key="Diagnose_Value4002_65519">
+      <text xml:lang="de-DEV">Unknown</text>
+      <text xml:lang="en-DEV">Unknown</text>
+    </uiText>
+    <uiText key="Diagnose_Name4003">
+      <text xml:lang="de-DEV">Slaves im angeforderten Status</text>
+      <text xml:lang="en-DEV">Slaves in requested State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4003">
+      <text xml:lang="de-DEV">Slaves im angeforderten Status</text>
+      <text xml:lang="en-DEV">Slaves in requested State</text>
+    </uiText>
+    <uiText key="Diagnose_Value4003_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4003_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4004">
+      <text xml:lang="de-DEV">Master im angeforderten Zustand</text>
+      <text xml:lang="en-DEV">Master in requested State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4004">
+      <text xml:lang="de-DEV">Master im angeforderten Zustand</text>
+      <text xml:lang="en-DEV">Master in requested State</text>
+    </uiText>
+    <uiText key="Diagnose_Value4004_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4004_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4007">
+      <text xml:lang="de-DEV">Distributed Clock synchron</text>
+      <text xml:lang="en-DEV">Distributed Clock in Sync.</text>
+    </uiText>
+    <uiText key="Diagnose_Description4007">
+      <text xml:lang="de-DEV">Distributed Clock synchron</text>
+      <text xml:lang="en-DEV">Distributed Clock in Sync.</text>
+    </uiText>
+    <uiText key="Diagnose_Value4007_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4007_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4009">
+      <text xml:lang="de-DEV">Master erkennt Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Master realizes Link Up</text>
+    </uiText>
+    <uiText key="Diagnose_Description4009">
+      <text xml:lang="de-DEV">Master erkennt Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Master realizes Link Up</text>
+    </uiText>
+    <uiText key="Diagnose_Value4009_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4009_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4010">
+      <text xml:lang="de-DEV">Anzahl gefundener Slaves</text>
+      <text xml:lang="en-DEV">Number of found Slaves</text>
+    </uiText>
+    <uiText key="Diagnose_Description4010">
+      <text xml:lang="de-DEV">Anzahl gefundener Slaves</text>
+      <text xml:lang="en-DEV">Number of found Slaves</text>
+    </uiText>
+    <uiText key="Diagnose_Name4012">
+      <text xml:lang="de-DEV">Anzahl konfigurierter ECat-Slaves</text>
+      <text xml:lang="en-DEV">Number of Slaves in Configuration</text>
+    </uiText>
+    <uiText key="Diagnose_Description4012">
+      <text xml:lang="de-DEV">Anzahl konfigurierter ECat-Slaves</text>
+      <text xml:lang="en-DEV">Number of Slaves in Configuration</text>
+    </uiText>
+    <uiText key="Diagnose_Name4014">
+      <text xml:lang="de-DEV">Anzahl Tx-Frames</text>
+      <text xml:lang="en-DEV">Number of Tx-Frames</text>
+    </uiText>
+    <uiText key="Diagnose_Description4014">
+      <text xml:lang="de-DEV">Anzahl Tx-Frames</text>
+      <text xml:lang="en-DEV">Number of Tx-Frames</text>
+    </uiText>
+    <uiText key="Diagnose_Name4015">
+      <text xml:lang="de-DEV">Anzahl Rx-Frames</text>
+      <text xml:lang="en-DEV">Number of Rx-Frames</text>
+    </uiText>
+    <uiText key="Diagnose_Description4015">
+      <text xml:lang="de-DEV">Anzahl Rx-Frames</text>
+      <text xml:lang="en-DEV">Number of Rx-Frames</text>
+    </uiText>
+    <uiText key="Diagnose_Name4016">
+      <text xml:lang="de-DEV">Anzahl verlorener Frames</text>
+      <text xml:lang="en-DEV">Number of lost Frames</text>
+    </uiText>
+    <uiText key="Diagnose_Description4016">
+      <text xml:lang="de-DEV">Anzahl verlorener Frames</text>
+      <text xml:lang="en-DEV">Number of lost Frames</text>
+    </uiText>
+    <uiText key="Diagnose_Name4021">
+      <text xml:lang="de-DEV">Distributed Clock Limit</text>
+      <text xml:lang="en-DEV">Distributed Clock Limit</text>
+    </uiText>
+    <uiText key="Diagnose_Description4021">
+      <text xml:lang="de-DEV">Distributed Clock Limit</text>
+      <text xml:lang="en-DEV">Distributed Clock Limit</text>
+    </uiText>
+    <uiText key="Diagnose_Name4022">
+      <text xml:lang="de-DEV">Aktuelle DC-Abweichung</text>
+      <text xml:lang="en-DEV">Actual DC Deviation</text>
+    </uiText>
+    <uiText key="Diagnose_Description4022">
+      <text xml:lang="de-DEV">Aktuelle DC-Abweichung</text>
+      <text xml:lang="en-DEV">Actual DC Deviation</text>
+    </uiText>
+    <uiText key="Diagnose_Name4030">
+      <text xml:lang="de-DEV">Zähler: Antwort nicht rechtzeitig</text>
+      <text xml:lang="en-DEV">Counter: Frame response out of time</text>
+    </uiText>
+    <uiText key="Diagnose_Description4030">
+      <text xml:lang="de-DEV">Zähler: Antwort nicht rechtzeitig</text>
+      <text xml:lang="en-DEV">Counter: Frame response out of time</text>
+    </uiText>
+    <uiText key="Diagnose_Name4031">
+      <text xml:lang="de-DEV">Zähler: Antwort mehrfach nicht rechtzeitig</text>
+      <text xml:lang="en-DEV">Counter: Frame Loss in Sequence</text>
+    </uiText>
+    <uiText key="Diagnose_Description4031">
+      <text xml:lang="de-DEV">Zähler: Antwort mehrfach nicht rechtzeitig</text>
+      <text xml:lang="en-DEV">Counter: Frame Loss in Sequence</text>
+    </uiText>
+    <uiText key="Diagnose_Name4036">
+      <text xml:lang="de-DEV">Zähler: Nicht alle Slaves im OP-Zustand</text>
+      <text xml:lang="en-DEV">Counter: not all Slaves Operational</text>
+    </uiText>
+    <uiText key="Diagnose_Description4036">
+      <text xml:lang="de-DEV">Zähler: Nicht alle Slaves im OP-Zustand</text>
+      <text xml:lang="en-DEV">Counter: not all Slaves Operational</text>
+    </uiText>
+    <uiText key="Diagnose_Name4037">
+      <text xml:lang="de-DEV">Zähler: Netzwerkverbindung getrennt</text>
+      <text xml:lang="en-DEV">Counter: Network Link down</text>
+    </uiText>
+    <uiText key="Diagnose_Description4037">
+      <text xml:lang="de-DEV">Zähler: Netzvwerkverbindung getrennt</text>
+      <text xml:lang="en-DEV">Counter: Network Link down</text>
+    </uiText>
+    <uiText key="Diagnose_Name4045">
+      <text xml:lang="de-DEV">Zähler: Stack-Fehler</text>
+      <text xml:lang="en-DEV">Counter: Stack-Errors</text>
+    </uiText>
+    <uiText key="Diagnose_Description4045">
+      <text xml:lang="de-DEV">Zähler: Stack Fehler</text>
+      <text xml:lang="en-DEV">Counter: Stack-Errors</text>
+    </uiText>
+    <uiText key="Diagnose_Name4046">
+      <text xml:lang="de-DEV">Zähler: Stack Restarts nach Fehler</text>
+      <text xml:lang="en-DEV">Counter: Stack-Restarts after Error</text>
+    </uiText>
+    <uiText key="Diagnose_Description4046">
+      <text xml:lang="de-DEV">Zähler: Stack Restarts nach Fehler</text>
+      <text xml:lang="en-DEV">Counter: Stack-Restarts after Error</text>
+    </uiText>
+    <uiText key="Diagnose_Name4048">
+      <text xml:lang="de-DEV">Zähler: DC-Restarts nach Fehler</text>
+      <text xml:lang="en-DEV">Counter: DC-Restarts after Error</text>
+    </uiText>
+    <uiText key="Diagnose_Description4048">
+      <text xml:lang="de-DEV">Zähler: DC-Restarts nach Fehler</text>
+      <text xml:lang="en-DEV">Counter: DC-Restarts after Error</text>
+    </uiText>
+    <uiText key="Diagnose_Name4049">
+      <text xml:lang="de-DEV">Zähler: PDO-Send</text>
+      <text xml:lang="en-DEV">Counter: PDO-Send</text>
+    </uiText>
+    <uiText key="Diagnose_Description4049">
+      <text xml:lang="de-DEV">Zähler: PDO-Send</text>
+      <text xml:lang="en-DEV">Counter: PDO-Send</text>
+    </uiText>
+    <uiText key="Diagnose_Name4050">
+      <text xml:lang="de-DEV">Zähler: PDO-Recv.</text>
+      <text xml:lang="en-DEV">Counter: PDO-Recv.</text>
+    </uiText>
+    <uiText key="Diagnose_Description4050">
+      <text xml:lang="de-DEV">Zähler: PDO-Recv.</text>
+      <text xml:lang="en-DEV">Counter: PDO-Recv.</text>
+    </uiText>
+    <uiText key="Diagnose_Name4051">
+      <text xml:lang="de-DEV">Zähler: Mem-Sync-Lock fehlgeschlagen</text>
+      <text xml:lang="en-DEV">Counter: Mem-Sync-Lock failed</text>
+    </uiText>
+    <uiText key="Diagnose_Description4051">
+      <text xml:lang="de-DEV">Zähler: Mem-Sync-Lock fehlgeschlagen</text>
+      <text xml:lang="en-DEV">Counter: Mem-Sync-Lock failed</text>
+    </uiText>
+    <uiText key="Diagnose_Name4052">
+      <text xml:lang="de-DEV">Zähler: Mem-Sync-Lock fehlgeschlagen in Folge</text>
+      <text xml:lang="en-DEV">Counter: Mem-Sync-Lock failed in Sequence</text>
+    </uiText>
+    <uiText key="Diagnose_Description4052">
+      <text xml:lang="de-DEV">Zähler: Mem-Sync-Lock fehlgeschlagen in Folge</text>
+      <text xml:lang="en-DEV">Counter: Mem-Sync-Lock failed in Sequence</text>
+    </uiText>
+    <uiText key="Diagnose_Name4053">
+      <text xml:lang="de-DEV">Aktuelle Send-To-Send Zeit (µs)</text>
+      <text xml:lang="en-DEV">Actual Send-To-Send time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4053">
+      <text xml:lang="de-DEV">Aktuelle Send-To-Send Zeit (µs)</text>
+      <text xml:lang="en-DEV">Actual Send-To-Send time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4054">
+      <text xml:lang="de-DEV">Aktuelle Receive-To-Receive Zeit (µs)</text>
+      <text xml:lang="en-DEV">Actual Receive-To-Receive time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4054">
+      <text xml:lang="de-DEV">Aktuelle Receive-To-Receive Zeit (µs)</text>
+      <text xml:lang="en-DEV">Actual Receive-To-Receive time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4055">
+      <text xml:lang="de-DEV">Maximale Send-To-Send Zeit (µs)</text>
+      <text xml:lang="en-DEV">Maximum Send-To-Send time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4055">
+      <text xml:lang="de-DEV">Maximale Send-To-Send Zeit (µs)</text>
+      <text xml:lang="en-DEV">Maximum Send-To-Send time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4056">
+      <text xml:lang="de-DEV">Maximale Recv-To-Recv Zeit (µs)</text>
+      <text xml:lang="en-DEV">Maximum Recv-To-Recv time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4056">
+      <text xml:lang="de-DEV">Maximale Recv-To-Recv Zeit (µs)</text>
+      <text xml:lang="en-DEV">Maximum Recv-To-Recv time (µs)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4057">
+      <text xml:lang="de-DEV">Link-Layer Typ</text>
+      <text xml:lang="en-DEV">Link-Layer type</text>
+    </uiText>
+    <uiText key="Diagnose_Description4057">
+      <text xml:lang="de-DEV">Link-Layer Typ</text>
+      <text xml:lang="en-DEV">Link-Layer type</text>
+    </uiText>
+    <uiText key="Diagnose_Name4058">
+      <text xml:lang="de-DEV">Link-Layer: Uplink erkannt</text>
+      <text xml:lang="en-DEV">Link-Layer: Uplink realized</text>
+    </uiText>
+    <uiText key="Diagnose_Description4058">
+      <text xml:lang="de-DEV">Link-Layer: Uplink erkannt</text>
+      <text xml:lang="en-DEV">Link-Layer: Uplink realized</text>
+    </uiText>
+    <uiText key="Diagnose_Name4059">
+      <text xml:lang="de-DEV">Link-Layer: Interface-Name</text>
+      <text xml:lang="en-DEV">Link-Layer: Interface-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Description4059">
+      <text xml:lang="de-DEV">Link-Layer: Interface-Name</text>
+      <text xml:lang="en-DEV">Link-Layer: Interface-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Name4061">
+      <text xml:lang="de-DEV">Link-Layer: VLan-ID</text>
+      <text xml:lang="en-DEV">Link-Layer: VLan-ID</text>
+    </uiText>
+    <uiText key="Diagnose_Description4061">
+      <text xml:lang="de-DEV">Link-Layer: VLan-ID</text>
+      <text xml:lang="en-DEV">Link-Layer: VLan-ID</text>
+    </uiText>
+    <uiText key="Diagnose_Name4062">
+      <text xml:lang="de-DEV">Link-Layer: Send-Zähler</text>
+      <text xml:lang="en-DEV">Link-Layer: Send Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4062">
+      <text xml:lang="de-DEV">Link-Layer: Send-Zähler</text>
+      <text xml:lang="en-DEV">Link-Layer: Send Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4063">
+      <text xml:lang="de-DEV">Link-Layer: Recv. Zähler</text>
+      <text xml:lang="en-DEV">Link-Layer: Recv Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4063">
+      <text xml:lang="de-DEV">Link-Layer: Recv. Zähler</text>
+      <text xml:lang="en-DEV">Link-Layer: Recv Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4064">
+      <text xml:lang="de-DEV">Filter-Layer: Recv. Zähler</text>
+      <text xml:lang="en-DEV">Filter-Layer: Recv. Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4064">
+      <text xml:lang="de-DEV">Filter-Layer: Recv. Zähler</text>
+      <text xml:lang="en-DEV">Filter-Layer: Recv. Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4065">
+      <text xml:lang="de-DEV">END-Layer: Send Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Send Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4065">
+      <text xml:lang="de-DEV">END-Layer: Send Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Send Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4066">
+      <text xml:lang="de-DEV">END-Layer: Recv Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Recv Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4066">
+      <text xml:lang="de-DEV">END-Layer: Recv Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Recv Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4067">
+      <text xml:lang="de-DEV">END-Layer: Send-Fehler Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Error Send Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4067">
+      <text xml:lang="de-DEV">END-Layer: Send-Fehler Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Error Send Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4068">
+      <text xml:lang="de-DEV">END-Layer: Recv-Fehler Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Recv Error Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4068">
+      <text xml:lang="de-DEV">END-Layer: Recv-Fehler Zähler</text>
+      <text xml:lang="en-DEV">END-Layer: Recv Error Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4069">
+      <text xml:lang="de-DEV">PDO-Recv: ATEM API Fehler Zähler</text>
+      <text xml:lang="en-DEV">PDO-Recv: ATEM API Error Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4069">
+      <text xml:lang="de-DEV">PDO-Recv: ATEM API Fehler Zähler</text>
+      <text xml:lang="en-DEV">PDO-Recv: ATEM API Error Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4070">
+      <text xml:lang="de-DEV">PDO-Recv: CF API Fehler Zähler</text>
+      <text xml:lang="en-DEV">PDO-Recv: CF API Error Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description4070">
+      <text xml:lang="de-DEV">PDO-Recv: CF API Fehler Zähler</text>
+      <text xml:lang="en-DEV">PDO-Recv: CF API Error Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name4104">
+      <text xml:lang="de-DEV">Slave Name (Konfiguration)</text>
+      <text xml:lang="en-DEV">Slave Name (Config.)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4104">
+      <text xml:lang="de-DEV">Slave Name (Konfiguration)</text>
+      <text xml:lang="en-DEV">Slave Name (Config.)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4109">
+      <text xml:lang="de-DEV">Status Port 0</text>
+      <text xml:lang="en-DEV">State Port 0</text>
+    </uiText>
+    <uiText key="Diagnose_Description4109">
+      <text xml:lang="de-DEV">Status Port 0</text>
+      <text xml:lang="en-DEV">State Port 0</text>
+    </uiText>
+    <uiText key="Diagnose_Name4110">
+      <text xml:lang="de-DEV">Status Port 1</text>
+      <text xml:lang="en-DEV">State Port 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description4110">
+      <text xml:lang="de-DEV">Status Port 1</text>
+      <text xml:lang="en-DEV">State Port 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name4111">
+      <text xml:lang="de-DEV">Status Port 2</text>
+      <text xml:lang="en-DEV">State Port 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description4111">
+      <text xml:lang="de-DEV">Status Port 2</text>
+      <text xml:lang="en-DEV">State Port 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name4112">
+      <text xml:lang="de-DEV">Status Port 3</text>
+      <text xml:lang="en-DEV">State Port 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description4112">
+      <text xml:lang="de-DEV">Status Port 3</text>
+      <text xml:lang="en-DEV">State Port 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name4113">
+      <text xml:lang="de-DEV">Angeforderter Slave Status</text>
+      <text xml:lang="en-DEV">Requested Slave State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4113">
+      <text xml:lang="de-DEV">Angeforderter Slave Status</text>
+      <text xml:lang="en-DEV">Requested Slave State</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_0">
+      <text xml:lang="de-DEV">0 - ungueltig</text>
+      <text xml:lang="en-DEV">0 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_1">
+      <text xml:lang="de-DEV">Init</text>
+      <text xml:lang="en-DEV">Init</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_2">
+      <text xml:lang="de-DEV">PreOP</text>
+      <text xml:lang="en-DEV">PreOP</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_3">
+      <text xml:lang="de-DEV">BootStrap</text>
+      <text xml:lang="en-DEV">BootStrap</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_4">
+      <text xml:lang="de-DEV">SafeOP</text>
+      <text xml:lang="en-DEV">SafeOP</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_5">
+      <text xml:lang="de-DEV">5 - ungueltig</text>
+      <text xml:lang="en-DEV">5 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_6">
+      <text xml:lang="de-DEV">6 - ungueltig</text>
+      <text xml:lang="en-DEV">6 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_7">
+      <text xml:lang="de-DEV">7 - ungueltig</text>
+      <text xml:lang="en-DEV">7 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_8">
+      <text xml:lang="de-DEV">OPERATIONAL</text>
+      <text xml:lang="en-DEV">OPERATIONAL</text>
+    </uiText>
+    <uiText key="Diagnose_Value4113_65519">
+      <text xml:lang="de-DEV">Unknown</text>
+      <text xml:lang="en-DEV">Unknown</text>
+    </uiText>
+    <uiText key="Diagnose_Name4114">
+      <text xml:lang="de-DEV">Aktueller Slave Status</text>
+      <text xml:lang="en-DEV">act. Slave State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4114">
+      <text xml:lang="de-DEV">Aktueller Slave Status</text>
+      <text xml:lang="en-DEV">act. Slave State</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_0">
+      <text xml:lang="de-DEV">0 - ungueltig</text>
+      <text xml:lang="en-DEV">0 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_1">
+      <text xml:lang="de-DEV">Init</text>
+      <text xml:lang="en-DEV">Init</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_2">
+      <text xml:lang="de-DEV">PreOP</text>
+      <text xml:lang="en-DEV">PreOP</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_3">
+      <text xml:lang="de-DEV">BootStrap</text>
+      <text xml:lang="en-DEV">BootStrap</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_4">
+      <text xml:lang="de-DEV">SafeOP</text>
+      <text xml:lang="en-DEV">SafeOP</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_5">
+      <text xml:lang="de-DEV">5 - ungueltig</text>
+      <text xml:lang="en-DEV">5 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_6">
+      <text xml:lang="de-DEV">6 - ungueltig</text>
+      <text xml:lang="en-DEV">6 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_7">
+      <text xml:lang="de-DEV">7 - ungueltig</text>
+      <text xml:lang="en-DEV">7 - invalid</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_8">
+      <text xml:lang="de-DEV">OPERATIONAL</text>
+      <text xml:lang="en-DEV">OPERATIONAL</text>
+    </uiText>
+    <uiText key="Diagnose_Value4114_65519">
+      <text xml:lang="de-DEV">Unknown</text>
+      <text xml:lang="en-DEV">Unknown</text>
+    </uiText>
+    <uiText key="Diagnose_Name4122">
+      <text xml:lang="de-DEV">Rx-Fehler Zähler Port 0</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 0</text>
+    </uiText>
+    <uiText key="Diagnose_Description4122">
+      <text xml:lang="de-DEV">Rx-Fehler Zähler Port 0</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 0</text>
+    </uiText>
+    <uiText key="Diagnose_Name4123">
+      <text xml:lang="de-DEV">Rx-Fehler-Zähler Port 1</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description4123">
+      <text xml:lang="de-DEV">Rx-Fehler-Zähler Port 1</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name4124">
+      <text xml:lang="de-DEV">Rx-Fehler-Zähler Port 2</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description4124">
+      <text xml:lang="de-DEV">Rx-Fehler-Zähler Port 2</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name4125">
+      <text xml:lang="de-DEV">Rx-Fehler-Zähler Port 3</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description4125">
+      <text xml:lang="de-DEV">Rx-Fehler-Zähler Port 3</text>
+      <text xml:lang="en-DEV">Rx-Error Counter Port 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name4126">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler Zähler Port 0</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 0</text>
+    </uiText>
+    <uiText key="Diagnose_Description4126">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler Zähler Port 0</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 0</text>
+    </uiText>
+    <uiText key="Diagnose_Name4127">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler-Zähler Port 1</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description4127">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler-Zähler Port 1</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name4128">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler-Zähler Port 2</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description4128">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler-Zähler Port 2</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name4129">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler-Zähler Port 3</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description4129">
+      <text xml:lang="de-DEV">Weiterleitungs-Fehler-Zähler Port 3</text>
+      <text xml:lang="en-DEV">FWD-Error Counter Port 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name4140">
+      <text xml:lang="de-DEV">Optionaler Slave</text>
+      <text xml:lang="en-DEV">Optional Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description4140">
+      <text xml:lang="de-DEV">Optionaler Slave</text>
+      <text xml:lang="en-DEV">Optional Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name4141">
+      <text xml:lang="de-DEV">Slave angeschlossen</text>
+      <text xml:lang="en-DEV">Slave is present</text>
+    </uiText>
+    <uiText key="Diagnose_Description4141">
+      <text xml:lang="de-DEV">Slave angeschlossen</text>
+      <text xml:lang="en-DEV">Slave is present</text>
+    </uiText>
+    <uiText key="Diagnose_Name4200">
+      <text xml:lang="de-DEV">Regler-Status</text>
+      <text xml:lang="en-DEV">Controller State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4200">
+      <text xml:lang="de-DEV">Regler-Status</text>
+      <text xml:lang="en-DEV">Controller State</text>
+    </uiText>
+    <uiText key="Diagnose_Value4200_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4200_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4201">
+      <text xml:lang="de-DEV">Regler gestartet</text>
+      <text xml:lang="en-DEV">Controller started</text>
+    </uiText>
+    <uiText key="Diagnose_Description4201">
+      <text xml:lang="de-DEV">Regler gestartet</text>
+      <text xml:lang="en-DEV">Controller started</text>
+    </uiText>
+    <uiText key="Diagnose_Value4201_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4201_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4202">
+      <text xml:lang="de-DEV">Aktuelle Drift (nano Sek.)</text>
+      <text xml:lang="en-DEV">Actual drift (nano sec.)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4202">
+      <text xml:lang="de-DEV">Aktuelle Drift (nano Sek.)</text>
+      <text xml:lang="en-DEV">Actual drift (nano sec.)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4203">
+      <text xml:lang="de-DEV">Maximale Drift (nano Sek.)</text>
+      <text xml:lang="en-DEV">Maximum Drift (nano sec.)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4203">
+      <text xml:lang="de-DEV">Maximale Drift (nano Sek.)</text>
+      <text xml:lang="en-DEV">Maximum Drift (nano sec.)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4204">
+      <text xml:lang="de-DEV">DCM-Regler-Status</text>
+      <text xml:lang="en-DEV">DCM-Controller State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4204">
+      <text xml:lang="de-DEV">DCM-Regler-Status</text>
+      <text xml:lang="en-DEV">DCM-Controller State</text>
+    </uiText>
+    <uiText key="Diagnose_Value4204_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4204_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4208">
+      <text xml:lang="de-DEV">Regler-Limit (nano Sek.)</text>
+      <text xml:lang="en-DEV">Controller Limit (nano sec.)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4208">
+      <text xml:lang="de-DEV">Regler-Limit (nano Sek.)</text>
+      <text xml:lang="en-DEV">Controller Limit (nano sec.)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4301">
+      <text xml:lang="de-DEV">ECat-Instanz Status</text>
+      <text xml:lang="en-DEV">ECat-Instance State</text>
+    </uiText>
+    <uiText key="Diagnose_Description4301">
+      <text xml:lang="de-DEV">ECat-Instanz Status</text>
+      <text xml:lang="en-DEV">ECat-Instance State</text>
+    </uiText>
+    <uiText key="Diagnose_Name4302">
+      <text xml:lang="de-DEV">Remote-Access Interface Status</text>
+      <text xml:lang="en-DEV">Remote-Access Interface Status</text>
+    </uiText>
+    <uiText key="Diagnose_Description4302">
+      <text xml:lang="de-DEV">Remote-Access Interface Status</text>
+      <text xml:lang="en-DEV">Remote-Access Interface Status</text>
+    </uiText>
+    <uiText key="Diagnose_Value4302_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4302_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4303">
+      <text xml:lang="de-DEV">Remote-Access Zugriffs-Modus</text>
+      <text xml:lang="en-DEV">Remote-Access Mode</text>
+    </uiText>
+    <uiText key="Diagnose_Description4303">
+      <text xml:lang="de-DEV">Remote-Access Zugriffs-Modus</text>
+      <text xml:lang="en-DEV">Remote-Access Mode</text>
+    </uiText>
+    <uiText key="Diagnose_Name4304">
+      <text xml:lang="de-DEV">EtherCAT Stack Version</text>
+      <text xml:lang="en-DEV">EtherCAT Stack Version</text>
+    </uiText>
+    <uiText key="Diagnose_Description4304">
+      <text xml:lang="de-DEV">EtherCAT Stack Version</text>
+      <text xml:lang="en-DEV">EtherCAT Stack Version</text>
+    </uiText>
+    <uiText key="Diagnose_Name4305">
+      <text xml:lang="de-DEV">DCM Version</text>
+      <text xml:lang="en-DEV">DCM Version</text>
+    </uiText>
+    <uiText key="Diagnose_Description4305">
+      <text xml:lang="de-DEV">DCM Version</text>
+      <text xml:lang="en-DEV">EtherCAT Stack Version</text>
+    </uiText>
+    <uiText key="Diagnose_Name4306">
+      <text xml:lang="de-DEV">EtherCAT RAS Version</text>
+      <text xml:lang="en-DEV">EtherCAT RAS Version</text>
+    </uiText>
+    <uiText key="Diagnose_Description4306">
+      <text xml:lang="de-DEV">EtherCAT RAS Version</text>
+      <text xml:lang="en-DEV">EtherCAT RAS Version</text>
+    </uiText>
+    <uiText key="Diagnose_Name4310">
+      <text xml:lang="de-DEV">KUKA Controller Bus (KCB)</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus (KCB)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4310">
+      <text xml:lang="de-DEV">KUKA Controller Bus (KCB)</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus (KCB)</text>
+    </uiText>
+    <uiText key="Diagnose_Value4310_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4310_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4311">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface (SYS-X42)</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface (SYS-X42)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4311">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface (SYS-X42)</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface (SYS-X42)</text>
+    </uiText>
+    <uiText key="Diagnose_Value4311_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4311_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4312">
+      <text xml:lang="de-DEV">KUKA Extension Bus (SYS-X44)</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus (SYS-X44)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4312">
+      <text xml:lang="de-DEV">KUKA Extension Bus (SYS-X44)</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus (SYS-X44)</text>
+    </uiText>
+    <uiText key="Diagnose_Value4312_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4312_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4313">
+      <text xml:lang="de-DEV">KUKA System Bus (SYS-X48)</text>
+      <text xml:lang="en-DEV">KUKA System Bus (SYS-X48)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4313">
+      <text xml:lang="de-DEV">KUKA System Bus (SYS-X48)</text>
+      <text xml:lang="en-DEV">KUKA System Bus (SYS-X48)</text>
+    </uiText>
+    <uiText key="Diagnose_Value4313_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Value4313_0">
+      <text xml:lang="de-DEV">ERROR</text>
+      <text xml:lang="en-DEV">ERROR</text>
+    </uiText>
+    <uiText key="Diagnose_Name4800">
+      <text xml:lang="de-DEV">KUKA Controller Bus</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus</text>
+    </uiText>
+    <uiText key="Diagnose_Description4800">
+      <text xml:lang="de-DEV">KUKA Controller Bus</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus</text>
+    </uiText>
+    <uiText key="Diagnose_Name4801">
+      <text xml:lang="de-DEV">KUKA Operator Panel</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel</text>
+    </uiText>
+    <uiText key="Diagnose_Description4801">
+      <text xml:lang="de-DEV">KUKA Operator Panel</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel</text>
+    </uiText>
+    <uiText key="Diagnose_Name4802">
+      <text xml:lang="de-DEV">KUKA Extension Bus</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus</text>
+    </uiText>
+    <uiText key="Diagnose_Description4802">
+      <text xml:lang="de-DEV">KUKA Extension Bus</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus</text>
+    </uiText>
+    <uiText key="Diagnose_Name4803">
+      <text xml:lang="de-DEV">KUKA System Bus</text>
+      <text xml:lang="en-DEV">KUKA System Bus</text>
+    </uiText>
+    <uiText key="Diagnose_Description4803">
+      <text xml:lang="de-DEV">KUKA System Bus</text>
+      <text xml:lang="en-DEV">KUKA System Bus</text>
+    </uiText>
+    <uiText key="Diagnose_Name4804">
+      <text xml:lang="de-DEV">Distributed Clock Master</text>
+      <text xml:lang="en-DEV">Distributed Clock Master (DCM)</text>
+    </uiText>
+    <uiText key="Diagnose_Description4804">
+      <text xml:lang="de-DEV">Distributed Clock Master (DCM)</text>
+      <text xml:lang="en-DEV">Distributed Clock Master (DCM)</text>
+    </uiText>
+    <uiText key="Diagnose_Name4810">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KPP-Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KPP-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4810">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KPP-Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KPP-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4811">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KPP-Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KPP-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4811">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KPP-Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KPP-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4812">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KPP-Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KPP-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4812">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KPP-Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KPP-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4813">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4813">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4814">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4814">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4815">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4815">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4816">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4816">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4817">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4817">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4818">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4818">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4819">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4819">
+      <text xml:lang="de-DEV">KUKA Controller Bus - KSP-Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - KSP-Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4820">
+      <text xml:lang="de-DEV">KUKA Controller Bus - CIB-Slave</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - CIB-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description4820">
+      <text xml:lang="de-DEV">KUKA Controller Bus - CIB-Slave</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - CIB-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name4821">
+      <text xml:lang="de-DEV">KUKA Controller Bus - EMD-Slave</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - EMD-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description4821">
+      <text xml:lang="de-DEV">KUKA Controller Bus - EMD-Slave</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - EMD-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name4822">
+      <text xml:lang="de-DEV">KUKA Controller Bus - RDC-Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - RDC-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4822">
+      <text xml:lang="de-DEV">KUKA Controller Bus - RDC-Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - RDC-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4823">
+      <text xml:lang="de-DEV">KUKA Controller Bus - RDC-Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - RDC-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4823">
+      <text xml:lang="de-DEV">KUKA Controller Bus - RDC-Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - RDC-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4824">
+      <text xml:lang="de-DEV">KUKA Controller Bus - RDC-Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - RDC-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4824">
+      <text xml:lang="de-DEV">KUKA Controller Bus - RDC-Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - RDC-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4825">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4825">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4826">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4826">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4827">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4827">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4828">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4828">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4829">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4829">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4830">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4830">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4831">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4831">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4832">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4832">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4833">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4833">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4834">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[10]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[10]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4834">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[10]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[10]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4835">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[11]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[11]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4835">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[11]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[11]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4836">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[12]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[12]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4836">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[12]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[12]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4837">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[13]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[13]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4837">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[13]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[13]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4838">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[14]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[14]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4838">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[14]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[14]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4839">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[15]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[15]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4839">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[15]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[15]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4840">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[16]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[16]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4840">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[16]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[16]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4841">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[17]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[17]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4841">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[17]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[17]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4842">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[18]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[18]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4842">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[18]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[18]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4843">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[19]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[19]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4843">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[19]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[19]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4844">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[20]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[20]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4844">
+      <text xml:lang="de-DEV">KUKA Controller Bus - Slave[20]</text>
+      <text xml:lang="en-DEV">KUKA Controller Bus - Slave[20]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4850">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description4850">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name4851">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4851">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4852">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4852">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4853">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4853">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4854">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4854">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4855">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4855">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4856">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[6]</text>
+      <text xml:lang="en-DEV">ECat-X42Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4856">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4857">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4857">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4858">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4858">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4859">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4859">
+      <text xml:lang="de-DEV">KUKA Operator Panel Interface - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA Operator Panel Interface - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4860">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4860">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4861">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4861">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4862">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4862">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4863">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4863">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4864">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4864">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4865">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4865">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4866">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4866">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4867">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4867">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4868">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4868">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4869">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[10]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[10]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4869">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[10]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[10]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4870">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[11]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[11]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4870">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[11]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[11]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4871">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[12]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[12]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4871">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[12]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[12]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4872">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[13]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[13]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4872">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[13]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[13]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4873">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[14]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[14]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4873">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[14]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[14]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4874">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[15]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[15]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4874">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[15]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[15]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4875">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[16]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[16]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4875">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[16]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[16]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4876">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[17]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[17]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4876">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[17]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[17]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4877">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[18]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[18]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4877">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[18]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[18]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4878">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[19]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[19]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4878">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[19]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[19]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4879">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[20]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[20]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4879">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[20]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[20]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4880">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[21]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[21]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4880">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[21]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[21]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4881">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[22]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[22]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4881">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[22]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[22]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4882">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[23]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[23]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4882">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[23]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[23]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4883">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[24]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[24]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4883">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[24]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[24]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4884">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[25]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[25]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4884">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[25]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[25]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4885">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[26]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[26]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4885">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[26]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[26]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4886">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[27]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[27]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4886">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[27]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[27]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4887">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[28]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[28]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4887">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[28]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[28]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4888">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[29]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[29]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4888">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[29]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[29]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4889">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[30]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[30]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4889">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[30]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[30]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4890">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[31]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[31]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4890">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[31]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[31]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4891">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[32]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[32]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4891">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[32]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[32]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4892">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[33]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[33]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4892">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[33]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[33]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4893">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[34]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[34]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4893">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[34]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[34]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4894">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[35]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[35]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4894">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[35]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[35]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4895">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[36]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[36]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4895">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[36]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[36]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4896">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[37]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[37]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4896">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[37]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[37]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4897">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[38]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[38]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4897">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[38]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[38]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4898">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[39]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[39]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4898">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[39]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[39]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4899">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[40]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[40]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4899">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[40]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[40]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4900">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[41]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[41]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4900">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[41]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[41]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4901">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[42]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[42]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4901">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[42]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[42]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4902">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[43]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[43]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4902">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[43]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[43]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4903">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[44]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[44]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4903">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[44]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[44]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4904">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[45]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[45]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4904">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[45]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[45]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4905">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[46]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[46]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4905">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[46]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[46]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4906">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[47]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[47]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4906">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[47]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[47]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4907">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[48]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[48]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4907">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[48]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[48]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4908">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[49]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[49]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4908">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[49]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[49]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4909">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[50]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[50]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4909">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[50]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[50]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4910">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[51]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[51]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4910">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[51]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[51]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4911">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[52]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[52]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4911">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[52]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[52]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4912">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[53]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[53]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4912">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[53]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[53]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4913">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[54]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[54]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4913">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[54]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[54]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4914">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[55]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[55]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4914">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[55]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[55]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4915">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[56]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[56]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4915">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[56]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[56]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4916">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[57]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[57]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4916">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[57]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[57]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4917">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[58]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[58]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4917">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[58]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[58]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4918">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[59]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[59]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4918">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[59]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[59]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4919">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[60]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[60]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4919">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[60]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[60]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4920">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[61]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[61]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4920">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[61]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[61]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4921">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[62]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[62]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4921">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[62]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[62]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4922">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[63]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[63]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4922">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[63]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[63]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4923">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[64]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[64]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4923">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[64]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[64]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4924">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[65]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[65]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4924">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[65]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[65]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4925">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[66]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[66]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4925">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[66]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[66]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4926">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[67]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[67]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4926">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[67]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[67]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4927">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[68]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[68]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4927">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[68]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[68]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4928">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[69]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[69]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4928">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[69]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[69]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4929">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[70]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[70]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4929">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[70]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[70]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4930">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[71]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[71]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4930">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[71]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[71]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4931">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[72]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[72]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4931">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[72]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[72]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4932">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[73]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[73]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4932">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[73]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[73]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4933">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[74]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[74]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4933">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[74]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[74]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4934">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[75]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[75]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4934">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[75]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[75]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4935">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[76]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[76]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4935">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[76]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[76]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4936">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[77]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[77]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4936">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[77]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[77]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4937">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[78]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[78]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4937">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[78]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[78]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4938">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[79]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[79]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4938">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[79]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[79]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4939">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[80]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[80]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4939">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[80]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[80]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4940">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[81]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[81]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4940">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[81]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[81]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4941">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[82]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[82]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4941">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[82]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[82]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4942">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[83]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[83]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4942">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[83]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[83]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4943">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[84]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[84]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4943">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[84]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[84]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4944">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[85]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[85]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4944">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[85]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[85]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4945">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[86]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[86]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4945">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[86]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[86]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4946">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[87]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[87]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4946">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[87]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[87]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4947">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[88]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[88]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4947">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[88]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[88]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4948">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[89]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[89]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4948">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[89]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[89]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4949">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[90]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[90]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4949">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[90]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[90]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4950">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[91]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[91]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4950">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[91]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[91]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4951">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[92]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[92]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4951">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[92]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[92]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4952">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[93]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[93]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4952">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[93]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[93]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4953">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[94]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[94]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4953">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[94]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[94]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4954">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[95]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[95]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4954">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[95]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[95]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4955">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[96]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[96]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4955">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[96]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[96]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4956">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[97]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[97]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4956">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[97]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[97]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4957">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[98]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[98]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4957">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[98]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[98]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4958">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[99]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[99]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4958">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[99]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[99]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4959">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[100]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[100]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4959">
+      <text xml:lang="de-DEV">KUKA Extension Bus - Slave[100]</text>
+      <text xml:lang="en-DEV">KUKA Extension Bus - Slave[100]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4960">
+      <text xml:lang="de-DEV">KUKA System Bus - CIB-SION-Slave</text>
+      <text xml:lang="en-DEV">KUKA System Bus - CIB-SION-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description4960">
+      <text xml:lang="de-DEV">KUKA System Bus - CIB-SION-Slave</text>
+      <text xml:lang="en-DEV">KUKA System Bus - CIB-SION-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name4961">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4961">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[1]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4962">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4962">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[2]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4963">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4963">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[3]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4964">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4964">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[4]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4965">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4965">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[5]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[5]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4966">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4966">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[6]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[6]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4967">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4967">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[7]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[7]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4968">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4968">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[8]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[8]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4969">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4969">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[9]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[9]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4970">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[10]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[10]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4970">
+      <text xml:lang="de-DEV">KUKA System Bus - Slave[10]</text>
+      <text xml:lang="en-DEV">KUKA System Bus - Slave[10]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4971">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[1]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4971">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[1]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[1]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4972">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[2]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4972">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[2]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[2]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4973">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[3]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4973">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[3]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[3]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4974">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[4]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Description4974">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-PDS-Slave[4]</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-PDS-Slave[4]</text>
+    </uiText>
+    <uiText key="Diagnose_Name4975">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-CIB-SR-Slave</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-CIB-SR-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description4975">
+      <text xml:lang="de-DEV">ECat-Antriebsbus-CIB-SR-Slave</text>
+      <text xml:lang="en-DEV">ECat-Controller-Bus-CIB-SR-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name4976">
+      <text xml:lang="de-DEV">ECat-X48-CIB-SR-SION-Slave</text>
+      <text xml:lang="en-DEV">ECat-X48-CIB-SR-SION-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description4976">
+      <text xml:lang="de-DEV">ECat-X48-CIB-SR-SION-Slave</text>
+      <text xml:lang="en-DEV">ECat-X48-CIB-SR-SION-Slave</text>
+    </uiText>
+  </module>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/ProConOS_PDD.xsd">
+  <Version Label="">
+    <Info Version="KRC V8.2"/>
+    <Schema Version="100"/>
+  </Version>
+  <PDDList>      
+     <!--
+      <PDDElement pcosPddVarName="@GV.TESTVAR1" krcVarName="TestVar1" WriteDirection="Krc_To_ProConOS" />
+      <PDDElement pcosPddVarName="@GV.TESTVAR2" krcVarName="TestVar2" WriteDirection="ProConOS_To_Krc" />
+      <PDDElement pcosPddVarName="@GV.TESTVAR3" krcVarName="TestVar3" WriteDirection="Krc_To_ProConOS" />
+		-->
+  </PDDList>
+</Application>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProConOSConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/ProConOS.xsd">
+	<Version Label="">
+		<Info Version="KUKA V8.3"/>
+		<Schema Version="100"/>
+	</Version>
+
+  <!-- *********************************************** -->
+  <!-- *** Interne Einstellungen nur fuer Experten *** -->
+  <!-- *********************************************** -->
+	<Internal>
+	  <!-- ************************* -->
+	  <!-- *** Task Prioritaeten *** -->
+		<Priorities 
+		   PrioSvisor="141" 
+		   PrioUser="151" 
+		   PrioSystem="219" 
+		   PrioIdle="190"/>
+	  <!-- ************************** -->
+	  <!-- *** Task-Stack Reserve *** -->		 
+		<Stack 
+		   AddStackSize="4096"/>
+	  <!-- ******************************** -->
+	  <!-- *** Scheduling Einstellungen *** -->
+		<Scheduling  
+		   KukaScheduling="true">
+		   <KWSettings 
+		      CpuCapMin="0" 
+		      CpuCapMax="100" 
+		      FreeSliceMin="0"/>
+		   <KukaSettings 
+		      ExempTask="" 
+		      ExempTaskMaxCpuTime="15">
+		      <NrkTick Value="3"/>
+		      <NrkTick Value="4"/>
+		   </KukaSettings>
+    	</Scheduling>
+	</Internal>
+  <!-- ***************************** -->
+  <!-- *** Anwendereinstellunen  *** -->
+  <!-- ***************************** -->
+	<UserSettings>
+	  <!-- ******************************** -->
+	  <!-- *** Allgemeine Einstellungen *** -->
+		<Misc 
+		   ProConOS_Rootpath="ProConOS"
+		   FileAccess_RootPath="" 
+		   WriteTsmOnStop="false" 
+		   ProgramSize="400000"
+         ReloadBootFileAtReconfig="false" 
+         IgnoreDeinstalledIoDrv="false" />
+	  <!-- **************************** -->
+	  <!-- *** Retain Einstellungen *** -->
+		<RetainData 
+		   DelRetain="true" 
+		   AutoArchiveRetain="true" 
+		   RetainSize="4096"
+		   WarmStartCheck="true"/>
+	  <!-- ******************************* -->
+	  <!-- *** KrcSignal Einstellungen *** -->
+		<KrcSignalFiles 
+		   SignalfileRead="START">
+		   <File Name="KRC/R1/$config.dat"/>
+		   <File Name="KRC/STEU/$machine.dat"/>
+		</KrcSignalFiles>
+	</UserSettings>
+</ProConOSConfig>

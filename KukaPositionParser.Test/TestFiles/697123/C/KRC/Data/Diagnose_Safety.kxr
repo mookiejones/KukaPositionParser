@@ -1,0 +1,2889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name17000">
+      <text xml:lang="de-DEV">Sicherheitssteuerung</text>
+      <text xml:lang="en-DEV">Safetycontroller</text>
+    </uiText>
+    <uiText key="Diagnose_Description17000">
+      <text xml:lang="de-DEV">Der Name des Modules in der Steuerung.</text>
+      <text xml:lang="en-DEV">The name of the module in the controller.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17001">
+      <text xml:lang="de-DEV">Busprozessdatenabbild</text>
+      <text xml:lang="en-DEV">Busprocessdataimage</text>
+    </uiText>
+    <uiText key="Diagnose_Description17001">
+      <text xml:lang="de-DEV">Informationen über diesen Bus</text>
+      <text xml:lang="en-DEV">Information about this bus.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17002">
+      <text xml:lang="de-DEV">Sicherheitssteuerung</text>
+      <text xml:lang="en-DEV">Safety controller</text>
+    </uiText>
+    <uiText key="Diagnose_Description17002">
+      <text xml:lang="de-DEV">Status der Sicherheitssteuerung</text>
+      <text xml:lang="en-DEV">State of safety controller</text>
+    </uiText>
+    <uiText key="Diagnose_Value17002_0">
+      <text xml:lang="de-DEV">läuft</text>
+      <text xml:lang="en-DEV">run</text>
+    </uiText>
+    <uiText key="Diagnose_Value17002_1">
+      <text xml:lang="de-DEV">gestoppt</text>
+      <text xml:lang="en-DEV">stopped</text>
+    </uiText>
+    <uiText key="Diagnose_Value17002_2">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17003">
+      <text xml:lang="de-DEV">SPS-Zykluszähler Kanal 1</text>
+      <text xml:lang="en-DEV">PLC cycle counter channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17003">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17004">
+      <text xml:lang="de-DEV">SPS-Zykluszähler Kanal 2</text>
+      <text xml:lang="en-DEV">PLC cycle counter channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17004">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17005">
+      <text xml:lang="de-DEV">SPS-Zykluszeit Kanal 1</text>
+      <text xml:lang="en-DEV">PLC-Cycletime channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17005">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17006">
+      <text xml:lang="de-DEV">SPS-Zykluszeit Kanal 2</text>
+      <text xml:lang="en-DEV">PLC cycle time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17006">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17007">
+      <text xml:lang="de-DEV">SPS-Rechenzeit Kanal 1</text>
+      <text xml:lang="en-DEV">PLC calculating time channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17007">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17008">
+      <text xml:lang="de-DEV">SPS-Rechenzeit Kanal 2</text>
+      <text xml:lang="en-DEV">PLC calculating time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17008">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17009">
+      <text xml:lang="de-DEV">SafeOS-Precycle-Rechenzeit  Kanal 1</text>
+      <text xml:lang="en-DEV">SafeOS-Precycle-calculating time  channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17009">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17010">
+      <text xml:lang="de-DEV">SafeOS-Precycle-Rechenzeit  Kanal 2</text>
+      <text xml:lang="en-DEV">SafeOS-Precycle-calculating time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17010">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17011">
+      <text xml:lang="de-DEV">SafeOS-Cycle-Rechenzeit  Kanal 1</text>
+      <text xml:lang="en-DEV">SafeOS-Cycle-calculating time  channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17011">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17012">
+      <text xml:lang="de-DEV">SafeOS-Cycle-Rechenzeit  Kanal 2</text>
+      <text xml:lang="en-DEV">SafeOS-Cycle-calculating time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17012">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17013">
+      <text xml:lang="de-DEV">SafeOS-PostCycle-Rechenzeit  Kanal 1</text>
+      <text xml:lang="en-DEV">SafeOS-PostCycle-calculating time channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17013">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17014">
+      <text xml:lang="de-DEV">SafeOS-PostCycle-Rechenzeit  Kanal 2</text>
+      <text xml:lang="en-DEV">SafeOS-PostCycle-calculating time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17014">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17015">
+      <text xml:lang="de-DEV">SafeOS-Kommunikationszeit</text>
+      <text xml:lang="en-DEV">SafeOS communication time</text>
+    </uiText>
+    <uiText key="Diagnose_Description17015">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17016">
+      <text xml:lang="de-DEV">EA Lesezeit Kanal 1</text>
+      <text xml:lang="en-DEV">IO read time channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17016">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17017">
+      <text xml:lang="de-DEV">EA Lesezeit Kanal 2</text>
+      <text xml:lang="en-DEV">IO read time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17017">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17018">
+      <text xml:lang="de-DEV">EA Schreibzeit Kanal 1</text>
+      <text xml:lang="en-DEV">IO write time channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17018">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17019">
+      <text xml:lang="de-DEV">EA Schreibzeit Kanal 2</text>
+      <text xml:lang="en-DEV">IO write time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17019">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17020">
+      <text xml:lang="de-DEV">Selbsttest Rechenzeit Kanal 1</text>
+      <text xml:lang="en-DEV">Selftest calculating time channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17020">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17021">
+      <text xml:lang="de-DEV">Selbsttest Rechenzeit Kanal 2</text>
+      <text xml:lang="en-DEV">Selftest calculating time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17021">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17022">
+      <text xml:lang="de-DEV">Sensor Prüfzeit Kanal 1</text>
+      <text xml:lang="en-DEV">Sensor check time channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17022">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17023">
+      <text xml:lang="de-DEV">Sensor Prüfzeit Kanal 2</text>
+      <text xml:lang="en-DEV">Sensor check time channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17023">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17024">
+      <text xml:lang="de-DEV">Temperatursensor Zustand</text>
+      <text xml:lang="en-DEV">Temperatur sensor state</text>
+    </uiText>
+    <uiText key="Diagnose_Description17024">
+      <text xml:lang="de-DEV">Zustand aller Temperatursensoren</text>
+      <text xml:lang="en-DEV">State of all temperature sensors</text>
+    </uiText>
+    <uiText key="Diagnose_Value17024_0">
+      <text xml:lang="de-DEV">Nicht Ok</text>
+      <text xml:lang="en-DEV">Not Ok</text>
+    </uiText>
+    <uiText key="Diagnose_Value17024_1">
+      <text xml:lang="de-DEV">Ok</text>
+      <text xml:lang="en-DEV">Ok</text>
+    </uiText>
+    <uiText key="Diagnose_Name17025">
+      <text xml:lang="de-DEV">Temperatur CPU-Kern 2</text>
+      <text xml:lang="en-DEV">Temperature CPU-Core 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17025">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17026">
+      <text xml:lang="de-DEV">Temperatur CPU-Kern 3</text>
+      <text xml:lang="en-DEV">Temperature CPU-Core 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17026">
+      <text xml:lang="de-DEV">Reserve</text>
+      <text xml:lang="en-DEV">reserve</text>
+    </uiText>
+    <uiText key="Diagnose_Name17027">
+      <text xml:lang="de-DEV">Temperatur CPU-Kern 4</text>
+      <text xml:lang="en-DEV">Temperature CPU-Core 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17027">
+      <text xml:lang="de-DEV">Reserve</text>
+      <text xml:lang="en-DEV">reserve</text>
+    </uiText>
+    <uiText key="Diagnose_Name17028">
+      <text xml:lang="de-DEV">Temperatur Prozessor</text>
+      <text xml:lang="en-DEV">Temperature CPU</text>
+    </uiText>
+    <uiText key="Diagnose_Description17028">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17029">
+      <text xml:lang="de-DEV">Temperatur SuperIO</text>
+      <text xml:lang="en-DEV">Temperature SuperIO</text>
+    </uiText>
+    <uiText key="Diagnose_Description17029">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17030">
+      <text xml:lang="de-DEV">Temperatur KPC-Hauptplatine</text>
+      <text xml:lang="en-DEV">Temperature KPC-mainboard</text>
+    </uiText>
+    <uiText key="Diagnose_Description17030">
+      <text xml:lang="de-DEV">.</text>
+      <text xml:lang="en-DEV">.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17032">
+      <text xml:lang="de-DEV">Gerät</text>
+      <text xml:lang="en-DEV">Device</text>
+    </uiText>
+    <uiText key="Diagnose_Description17032">
+      <text xml:lang="de-DEV">Informationen über dieses Gerät.</text>
+      <text xml:lang="en-DEV">Information about this device.</text>
+    </uiText>
+    <uiText key="Diagnose_Name17033">
+      <text xml:lang="de-DEV">E: Nothalt extern (NHE)</text>
+      <text xml:lang="en-DEV">I: Emergency stop external (NHE)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17033">
+      <text xml:lang="de-DEV">Eingang Nothalt extern (NHE)</text>
+      <text xml:lang="en-DEV">Input Emergency stop external (NHE)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17033_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17033_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17034">
+      <text xml:lang="de-DEV">E: Bedienerschutz (BS)</text>
+      <text xml:lang="en-DEV">I: Operator safety (BS)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17034">
+      <text xml:lang="de-DEV">Eingang Bedienerschutz (BS)</text>
+      <text xml:lang="en-DEV">Input Operator safety (BS)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17034_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value17034_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+    <uiText key="Diagnose_Name17035">
+      <text xml:lang="de-DEV">E: Quittierung Bedienerschutz (QBS)</text>
+      <text xml:lang="en-DEV">I: Acknowledgment operator safety (QBS)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17035">
+      <text xml:lang="de-DEV">Eingang E: Quittierung Bedienerschutz (QBS)</text>
+      <text xml:lang="en-DEV">Input Acknowledgment operator safety (QBS)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17035_0">
+      <text xml:lang="de-DEV">quittiert</text>
+      <text xml:lang="en-DEV">acknowledged</text>
+    </uiText>
+    <uiText key="Diagnose_Value17035_1">
+      <text xml:lang="de-DEV">nicht quittiert</text>
+      <text xml:lang="en-DEV">not acknowledged</text>
+    </uiText>
+    <uiText key="Diagnose_Name17036">
+      <text xml:lang="de-DEV">E: Sicherheitshalt Stopp 1 (SHS1)</text>
+      <text xml:lang="en-DEV">I: Safety stop 1 (SHS1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17036">
+      <text xml:lang="de-DEV">Eingang Sicherheitshalt Stopp 1 (SHS1)</text>
+      <text xml:lang="en-DEV">Input Safety stop 1 (SHS1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17036_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17036_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17037">
+      <text xml:lang="de-DEV">E: Sicherheitshalt Stopp 2 (SHS2)</text>
+      <text xml:lang="en-DEV">I: Safety stop 2 (SHS2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17037">
+      <text xml:lang="de-DEV">Eingang Sicherheitshalt Stopp 2 (SHS2)</text>
+      <text xml:lang="en-DEV">Input Safety stop 2 (SHS2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17037_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17037_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17038">
+      <text xml:lang="de-DEV">E: E2</text>
+      <text xml:lang="en-DEV">I: E2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17038">
+      <text xml:lang="de-DEV">Eingang E2</text>
+      <text xml:lang="en-DEV">Input E2</text>
+    </uiText>
+    <uiText key="Diagnose_Value17038_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value17038_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+    <uiText key="Diagnose_Name17039">
+      <text xml:lang="de-DEV">E: E7</text>
+      <text xml:lang="en-DEV">I: E7</text>
+    </uiText>
+    <uiText key="Diagnose_Description17039">
+      <text xml:lang="de-DEV">Eingang E7</text>
+      <text xml:lang="en-DEV">Input E7</text>
+    </uiText>
+    <uiText key="Diagnose_Value17039_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value17039_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+    <uiText key="Diagnose_Name17040">
+      <text xml:lang="de-DEV">E: Peripherieschütz (US2)</text>
+      <text xml:lang="en-DEV">I: Periphery contactor (US2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17040">
+      <text xml:lang="de-DEV">Eingang Peripherieschütz (US2)</text>
+      <text xml:lang="en-DEV">Input Periphery contactor (US2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17040_0">
+      <text xml:lang="de-DEV">ausgeschaltet</text>
+      <text xml:lang="en-DEV">switch off</text>
+    </uiText>
+    <uiText key="Diagnose_Value17040_1">
+      <text xml:lang="de-DEV">eingeschaltet</text>
+      <text xml:lang="en-DEV">switch on</text>
+    </uiText>
+    <uiText key="Diagnose_Name17041">
+      <text xml:lang="de-DEV">E: Sicherer Betriebshalt (SBH)</text>
+      <text xml:lang="en-DEV">I: Safe operational stop (SBH)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17041">
+      <text xml:lang="de-DEV">Eingang Sicherer Betriebshalt (SBH)</text>
+      <text xml:lang="en-DEV">Input Safe operational stop (SBH)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17041_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17041_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17042">
+      <text xml:lang="de-DEV">E: Shutdown Protokoll Acknowledge (SPA)</text>
+      <text xml:lang="en-DEV">I: Shutdown protocol acknowledge (SPA)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17042">
+      <text xml:lang="de-DEV">Eingang Shutdown Protokoll Acknowledge (SPA)</text>
+      <text xml:lang="en-DEV">Input Shutdown protocol acknowledge (SPA)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17042_0">
+      <text xml:lang="de-DEV">nicht quittiert</text>
+      <text xml:lang="en-DEV">not acknowledged</text>
+    </uiText>
+    <uiText key="Diagnose_Value17042_1">
+      <text xml:lang="de-DEV">quittiert</text>
+      <text xml:lang="en-DEV">acknowledged</text>
+    </uiText>
+    <uiText key="Diagnose_Name17043">
+      <text xml:lang="de-DEV">E: Reserviert</text>
+      <text xml:lang="en-DEV">I: Reserved</text>
+    </uiText>
+    <uiText key="Diagnose_Description17043">
+      <text xml:lang="de-DEV">Eingang reserviert</text>
+      <text xml:lang="en-DEV">Input reserved</text>
+    </uiText>
+    <uiText key="Diagnose_Name17044">
+      <text xml:lang="de-DEV">A: Reserviert</text>
+      <text xml:lang="en-DEV">O: Reserved</text>
+    </uiText>
+    <uiText key="Diagnose_Description17044">
+      <text xml:lang="de-DEV">Ausgang reserviert</text>
+      <text xml:lang="en-DEV">Output reserved</text>
+    </uiText>
+    <uiText key="Diagnose_Name17045">
+      <text xml:lang="de-DEV">A: Nothalt lokal (NHL)</text>
+      <text xml:lang="en-DEV">O: Emergency stop local (NHL)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17045">
+      <text xml:lang="de-DEV">Ausgang Nothalt lokal (NHL)</text>
+      <text xml:lang="en-DEV">Output Emergency stop local (NHL)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17045_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17045_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17046">
+      <text xml:lang="de-DEV">A: Antriebsfreigabe (AF)</text>
+      <text xml:lang="en-DEV">O: Drive enable (AF)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17046">
+      <text xml:lang="de-DEV">Ausgang Antriebsfreigabe (AF)</text>
+      <text xml:lang="en-DEV">Output Drive enable (AF)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17046_0">
+      <text xml:lang="de-DEV">gesperrt</text>
+      <text xml:lang="en-DEV">locked</text>
+    </uiText>
+    <uiText key="Diagnose_Value17046_1">
+      <text xml:lang="de-DEV">freigegeben</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Name17047">
+      <text xml:lang="de-DEV">A: Fahrfreigabe (FF)</text>
+      <text xml:lang="en-DEV">O: Motion enable (FF)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17047">
+      <text xml:lang="de-DEV">Ausgang Fahrfreigabe (FF)</text>
+      <text xml:lang="en-DEV">Output Motion enable (FF)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17047_0">
+      <text xml:lang="de-DEV">gesperrt</text>
+      <text xml:lang="en-DEV">locked</text>
+    </uiText>
+    <uiText key="Diagnose_Value17047_1">
+      <text xml:lang="de-DEV">freigegeben</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Name17048">
+      <text xml:lang="de-DEV">A: Zustimmung (ZS)</text>
+      <text xml:lang="en-DEV">O: Enabling switches (ZS)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17048">
+      <text xml:lang="de-DEV">Ausgang Zustimmung (ZS)</text>
+      <text xml:lang="en-DEV">Outpu Enabling switches (ZS)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17048_0">
+      <text xml:lang="de-DEV">nicht gegeben</text>
+      <text xml:lang="en-DEV">not given</text>
+    </uiText>
+    <uiText key="Diagnose_Value17048_1">
+      <text xml:lang="de-DEV">gegeben</text>
+      <text xml:lang="en-DEV">given</text>
+    </uiText>
+    <uiText key="Diagnose_Name17049">
+      <text xml:lang="de-DEV">A: Peripherie einschalten (PE)</text>
+      <text xml:lang="en-DEV">O: Periphery enable (PE)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17049">
+      <text xml:lang="de-DEV">Ausgang Peripherie einschalten (PE)</text>
+      <text xml:lang="en-DEV">Output Periphery enable (PE)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17049_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17049_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17050">
+      <text xml:lang="de-DEV">A: Betriebsart Automatik o. Extern (AUT)</text>
+      <text xml:lang="en-DEV">O: Operation mode automatic o. external (AUT)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17050">
+      <text xml:lang="de-DEV">Ausgang Betriebsart Automatik o. Extern (AUT)</text>
+      <text xml:lang="en-DEV">Output Operation mode automatic o. external (AUT)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17050_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17050_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17051">
+      <text xml:lang="de-DEV">A: Betriebsart T1 (T1)</text>
+      <text xml:lang="en-DEV">O: Operation mode T1 (T1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17051">
+      <text xml:lang="de-DEV">Ausgang Betriebsart T1 (T1)</text>
+      <text xml:lang="en-DEV">Output Operation mode T1 (T1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17051_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17051_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17052">
+      <text xml:lang="de-DEV">A: Betriebsart T2 (T2)</text>
+      <text xml:lang="en-DEV">O: Operation mode T2 (T2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17052">
+      <text xml:lang="de-DEV">Ausgang Betriebsart T2 (T2)</text>
+      <text xml:lang="en-DEV">Output Operation mode T2 (T2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17052_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17052_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17053">
+      <text xml:lang="de-DEV">A: Nothalt extern (NHE)</text>
+      <text xml:lang="en-DEV">O: Emergency stop external (NHE)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17053">
+      <text xml:lang="de-DEV">Ausgang Nothalt extern (NHE)</text>
+      <text xml:lang="en-DEV">Output Emergency stop external (NHE)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17053_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17053_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17054">
+      <text xml:lang="de-DEV">A: Bedienerschutz quittiert (BSQ)</text>
+      <text xml:lang="en-DEV">O: Operator safety acknowledged (BSQ)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17054">
+      <text xml:lang="de-DEV">Ausgang Bedienerschutz quittiert (BSQ)</text>
+      <text xml:lang="en-DEV">Output Operator safety acknowledged (BSQ)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17054_0">
+      <text xml:lang="de-DEV">nicht quittiert</text>
+      <text xml:lang="en-DEV">not acknowledged</text>
+    </uiText>
+    <uiText key="Diagnose_Value17054_1">
+      <text xml:lang="de-DEV">quittiert</text>
+      <text xml:lang="en-DEV">acknowledged</text>
+    </uiText>
+    <uiText key="Diagnose_Name17055">
+      <text xml:lang="de-DEV">A: Sicherheitshalt Stopp 1 (SHS1)</text>
+      <text xml:lang="en-DEV">O: Safety stop 1 (SHS1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17055">
+      <text xml:lang="de-DEV">Ausgang Sicherheitshalt Stopp 1 (SHS1)</text>
+      <text xml:lang="en-DEV">Output Safety stop 1 (SHS1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17055_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17055_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17056">
+      <text xml:lang="de-DEV">A: Sicherheitshalt Stopp 2 (SHS2)</text>
+      <text xml:lang="en-DEV">O: Safety stop 2 (SHS2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17056">
+      <text xml:lang="de-DEV">Ausgang Sicherheitshalt Stopp 2 (SHS2)</text>
+      <text xml:lang="en-DEV">Output Safety stop 2 (SHS2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17056_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17056_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17057">
+      <text xml:lang="de-DEV">A: Sicherheitsschnittstelle aktiv</text>
+      <text xml:lang="en-DEV">O: Safety interface activ</text>
+    </uiText>
+    <uiText key="Diagnose_Description17057">
+      <text xml:lang="de-DEV">Ausgang Sicherheitsschnittstelle aktiv</text>
+      <text xml:lang="en-DEV">Output Safety interface activ</text>
+    </uiText>
+    <uiText key="Diagnose_Value17057_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17057_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17058">
+      <text xml:lang="de-DEV">A: Shutdown Protokoll (SP)</text>
+      <text xml:lang="en-DEV">O: Shutdown protocol (SP)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17058">
+      <text xml:lang="de-DEV">Ausgang Shutdown Protokoll (SP)</text>
+      <text xml:lang="en-DEV">Output Shutdown protocol (SP)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17058_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17058_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17059">
+      <text xml:lang="de-DEV">E: Referenztaster (JR)</text>
+      <text xml:lang="en-DEV">I: Reference switch (JR)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17059">
+      <text xml:lang="de-DEV">Eingang Referenztaster (JR)</text>
+      <text xml:lang="en-DEV">Input Reference switch (JR)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17059_0">
+      <text xml:lang="de-DEV">bedämpft</text>
+      <text xml:lang="en-DEV">actuated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17059_1">
+      <text xml:lang="de-DEV">nicht bedämpft</text>
+      <text xml:lang="en-DEV">not actuated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17060">
+      <text xml:lang="de-DEV">E: Zustimmung Extern (ZSE1)</text>
+      <text xml:lang="en-DEV">I: Enabling switch external (ZSE1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17060">
+      <text xml:lang="de-DEV">Eingang Zustimmung Extern (ZSE1)</text>
+      <text xml:lang="en-DEV">Input Enabling switch external (ZSE1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17060_0">
+      <text xml:lang="de-DEV">gelöst</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Value17060_1">
+      <text xml:lang="de-DEV">gedrückt</text>
+      <text xml:lang="en-DEV">pushed</text>
+    </uiText>
+    <uiText key="Diagnose_Name17061">
+      <text xml:lang="de-DEV">E: Panik extern (ZSE2)</text>
+      <text xml:lang="en-DEV">I: Panic external (ZSE2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17061">
+      <text xml:lang="de-DEV">Eingang Panik extern (ZSE2)</text>
+      <text xml:lang="en-DEV">Input  Panic external (ZSE2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17061_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17061_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17062">
+      <text xml:lang="de-DEV">E: Bediengerät gesteckt (BGG)</text>
+      <text xml:lang="en-DEV">I: Teach pendant connected (BGG)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17062">
+      <text xml:lang="de-DEV">Eingang Bediengerät gesteckt (BGG)</text>
+      <text xml:lang="en-DEV">Input Teach pendant connected (BGG)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17062_0">
+      <text xml:lang="de-DEV">abgesteckt</text>
+      <text xml:lang="en-DEV">disconnected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17062_1">
+      <text xml:lang="de-DEV">angesteckt</text>
+      <text xml:lang="en-DEV">connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17063">
+      <text xml:lang="de-DEV">E: Reduzierte Geschwindigkeit (VRED)</text>
+      <text xml:lang="en-DEV">I: Reduced velocity (VRED)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17063">
+      <text xml:lang="de-DEV">Eingang Reduzierte Geschwindigkeit (VRED)</text>
+      <text xml:lang="en-DEV">Input Reduced velocity (VRED)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17063_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17063_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17064">
+      <text xml:lang="de-DEV">E: Sicherer Betriebshalt Achsgruppe 1 (SBH1)</text>
+      <text xml:lang="en-DEV">I: Safe operational stop axis group 1 (SBH1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17064">
+      <text xml:lang="de-DEV">Eingang Sicherer Betriebshalt Achsgruppe 1 (SBH1)</text>
+      <text xml:lang="en-DEV">Input Safe operational stop axis group 1 (SBH1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17064_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17064_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17065">
+      <text xml:lang="de-DEV">E: Sicherer Betriebshalt Achsgruppe 2 (SBH2)</text>
+      <text xml:lang="en-DEV">I: Safe operational stop axis group 2 (SBH2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17065">
+      <text xml:lang="de-DEV">Eingang Sicherer Betriebshalt Achsgruppe 2 (SBH2)</text>
+      <text xml:lang="en-DEV">Input Safe operational stop axis group 2 (SBH2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17065_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17065_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17066">
+      <text xml:lang="de-DEV">E: Sicherer Betriebshalt Achsgruppe 3 (SBH3)</text>
+      <text xml:lang="en-DEV">I: Safe operational stop axis group 3 (SBH3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17066">
+      <text xml:lang="de-DEV">Eingang Sicherer Betriebshalt Achsgruppe 3 (SBH3)</text>
+      <text xml:lang="en-DEV">Input Safe operational stop axis group 3 (SBH3)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17066_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17066_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17067">
+      <text xml:lang="de-DEV">E: Sicherer Betriebshalt Achsgruppe 4 (SBH4)</text>
+      <text xml:lang="en-DEV">I: Safe operational stop axis group 4 (SBH4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17067">
+      <text xml:lang="de-DEV">Eingang Sicherer Betriebshalt Achsgruppe 4 (SBH4)</text>
+      <text xml:lang="en-DEV">Input Safe operational stop axis group 4 (SBH4)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17067_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17067_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17068">
+      <text xml:lang="de-DEV">E: Sicherer Betriebshalt Achsgruppe 5 (SBH5)</text>
+      <text xml:lang="en-DEV">I: Safe operational stop axis group 5 (SBH5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17068">
+      <text xml:lang="de-DEV">Eingang Sicherer Betriebshalt Achsgruppe 5 (SBH5)</text>
+      <text xml:lang="en-DEV">Input Safe operational stop axis group 5 (SBH5)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17068_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17068_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17069">
+      <text xml:lang="de-DEV">E: Sicherer Betriebshalt Achsgruppe 6 (SBH6)</text>
+      <text xml:lang="en-DEV">I: Safe operational stop axis group 6 (SBH6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17069">
+      <text xml:lang="de-DEV">Eingang Sicherer Betriebshalt Achsgruppe 6 (SBH6)</text>
+      <text xml:lang="en-DEV">Input Safe operational stop axis group 6 (SBH6)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17069_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17069_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17070">
+      <text xml:lang="de-DEV">E: Überwachungsraum 1 (UER1)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 1 (UER1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17070">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 1 (UER1)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 1 (UER1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17070_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17070_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17071">
+      <text xml:lang="de-DEV">E: Überwachungsraum 2 (UER2)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 2 (UER2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17071">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 2 (UER2)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 2 (UER2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17071_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17071_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17072">
+      <text xml:lang="de-DEV">E: Überwachungsraum 3 (UER3)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 3 (UER3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17072">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 3 (UER3)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 3 (UER3)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17072_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17072_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17073">
+      <text xml:lang="de-DEV">E: Überwachungsraum 4 (UER4)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 4 (UER4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17073">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 4 (UER4)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 4 (UER4)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17073_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17073_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17074">
+      <text xml:lang="de-DEV">E: Überwachungsraum 5 (UER5)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 5 (UER5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17074">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 5 (UER5)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 5 (UER5)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17074_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17074_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17075">
+      <text xml:lang="de-DEV">E: Überwachungsraum 6 (UER6)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 6 (UER6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17075">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 6 (UER6)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 6 (UER6)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17075_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17075_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17076">
+      <text xml:lang="de-DEV">E: Überwachungsraum 7 (UER7)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 7 (UER7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17076">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 7 (UER7)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 7 (UER7)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17076_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17076_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17077">
+      <text xml:lang="de-DEV">E: Überwachungsraum 8 (UER8)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 8 (UER8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17077">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 8 (UER8)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 8 (UER8)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17077_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17077_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17078">
+      <text xml:lang="de-DEV">E: Überwachungsraum 9 (UER9)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 9 (UER9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17078">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 9 (UER9)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 9 (UER9)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17078_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17078_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17079">
+      <text xml:lang="de-DEV">E: Überwachungsraum 10 (UER10)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 10 (UER10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17079">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 10 (UER10)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 10 (UER10)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17079_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17079_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17080">
+      <text xml:lang="de-DEV">E: Überwachungsraum 11 (UER11)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 11 (UER11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17080">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 11 (UER11)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 11 (UER11)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17080_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17080_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17081">
+      <text xml:lang="de-DEV">E: Überwachungsraum 12 (UER12)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 12 (UER12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17081">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 12 (UER12)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 12 (UER12)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17081_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17081_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17082">
+      <text xml:lang="de-DEV">E: Überwachungsraum 13 (UER13)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 13 (UER13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17082">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 13 (UER13)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 13 (UER13)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17082_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17082_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17083">
+      <text xml:lang="de-DEV">E: Überwachungsraum 14 (UER14)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 14 (UER14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17083">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 14 (UER14)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 14 (UER14)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17083_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17083_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17084">
+      <text xml:lang="de-DEV">E: Überwachungsraum 15 (UER15)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 15 (UER15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17084">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 15 (UER15)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 15 (UER15)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17084_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17084_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17085">
+      <text xml:lang="de-DEV">E: Überwachungsraum 16 (UER16)</text>
+      <text xml:lang="en-DEV">I: Space monitoring 16 (UER16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17085">
+      <text xml:lang="de-DEV">Eingang Überwachungsraum 16 (UER16)</text>
+      <text xml:lang="en-DEV">Input Space monitoring 16 (UER16)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17085_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17085_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17086">
+      <text xml:lang="de-DEV">E: Werkzeug 1 (WZ1)</text>
+      <text xml:lang="en-DEV">I: Tool 1 (WZ1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17086">
+      <text xml:lang="de-DEV">Eingang Werkzeug 1 (WZ1)</text>
+      <text xml:lang="en-DEV">Input Tool 1 (WZ1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17086_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17086_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17087">
+      <text xml:lang="de-DEV">E: Werkzeug 2 (WZ2)</text>
+      <text xml:lang="en-DEV">I: Tool 2 (WZ2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17087">
+      <text xml:lang="de-DEV">Eingang Werkzeug 2 (WZ2)</text>
+      <text xml:lang="en-DEV">Input Tool 2 (WZ2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17087_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17087_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17088">
+      <text xml:lang="de-DEV">E: Werkzeug 3 (WZ3)</text>
+      <text xml:lang="en-DEV">I: Tool 3 (WZ3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17088">
+      <text xml:lang="de-DEV">Eingang Werkzeug 3 (WZ3)</text>
+      <text xml:lang="en-DEV">Input Tool 3 (WZ3)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17088_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17088_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17089">
+      <text xml:lang="de-DEV">E: Werkzeug 4 (WZ4)</text>
+      <text xml:lang="en-DEV">I: Tool 4 (WZ4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17089">
+      <text xml:lang="de-DEV">Eingang Werkzeug 4 (WZ4)</text>
+      <text xml:lang="en-DEV">Input Tool 4 (WZ4)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17089_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17089_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17090">
+      <text xml:lang="de-DEV">E: Werkzeug 5 (WZ5)</text>
+      <text xml:lang="en-DEV">I: Tool 5 (WZ5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17090">
+      <text xml:lang="de-DEV">Eingang Werkzeug 5 (WZ5)</text>
+      <text xml:lang="en-DEV">Input Tool 5 (WZ5)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17090_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17090_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17091">
+      <text xml:lang="de-DEV">E: Werkzeug 6 (WZ6)</text>
+      <text xml:lang="en-DEV">I: Tool 6 (WZ6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17091">
+      <text xml:lang="de-DEV">Eingang Werkzeug 6 (WZ6)</text>
+      <text xml:lang="en-DEV">Input Tool 6 (WZ6)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17091_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17091_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17092">
+      <text xml:lang="de-DEV">E: Werkzeug 7 (WZ7)</text>
+      <text xml:lang="en-DEV">I: Tool 7 (WZ7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17092">
+      <text xml:lang="de-DEV">Eingang Werkzeug 7 (WZ7)</text>
+      <text xml:lang="en-DEV">Input Tool 7 (WZ7)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17092_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17092_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17093">
+      <text xml:lang="de-DEV">E: Werkzeug 8 (WZ8)</text>
+      <text xml:lang="en-DEV">I: Tool 8 (WZ8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17093">
+      <text xml:lang="de-DEV">Eingang Werkzeug 8 (WZ8)</text>
+      <text xml:lang="en-DEV">Input Tool 8 (WZ8)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17093_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17093_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17094">
+      <text xml:lang="de-DEV">E: Werkzeug 9 (WZ9)</text>
+      <text xml:lang="en-DEV">I: Tool 9 (WZ9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17094">
+      <text xml:lang="de-DEV">Eingang Werkzeug 9 (WZ9)</text>
+      <text xml:lang="en-DEV">Input Tool 9 (WZ9)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17094_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17094_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17095">
+      <text xml:lang="de-DEV">E: Werkzeug 10 (WZ10)</text>
+      <text xml:lang="en-DEV">I: Tool 10 (WZ10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17095">
+      <text xml:lang="de-DEV">Eingang Werkzeug 10 (WZ10)</text>
+      <text xml:lang="en-DEV">Input Tool 10 (WZ10)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17095_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17095_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17096">
+      <text xml:lang="de-DEV">E: Werkzeug 11 (WZ11)</text>
+      <text xml:lang="en-DEV">I: Tool 11 (WZ11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17096">
+      <text xml:lang="de-DEV">Eingang Werkzeug 11 (WZ11)</text>
+      <text xml:lang="en-DEV">Input Tool 11 (WZ11)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17096_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17096_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17097">
+      <text xml:lang="de-DEV">E: Werkzeug 12 (WZ12)</text>
+      <text xml:lang="en-DEV">I: Tool 12 (WZ12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17097">
+      <text xml:lang="de-DEV">Eingang Werkzeug 12 (WZ12)</text>
+      <text xml:lang="en-DEV">Input Tool 12 (WZ12)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17097_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17097_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17098">
+      <text xml:lang="de-DEV">E: Werkzeug 13 (WZ13)</text>
+      <text xml:lang="en-DEV">I: Tool 13 (WZ13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17098">
+      <text xml:lang="de-DEV">Eingang Werkzeug 13 (WZ13)</text>
+      <text xml:lang="en-DEV">Input Tool 13 (WZ13)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17098_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17098_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17099">
+      <text xml:lang="de-DEV">E: Werkzeug 14 (WZ14)</text>
+      <text xml:lang="en-DEV">I: Tool 14 (WZ14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17099">
+      <text xml:lang="de-DEV">Eingang Werkzeug 14 (WZ14)</text>
+      <text xml:lang="en-DEV">Input Tool 14 (WZ14)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17099_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17099_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17100">
+      <text xml:lang="de-DEV">E: Werkzeug 15 (WZ15)</text>
+      <text xml:lang="en-DEV">I: Tool 15 (WZ15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17100">
+      <text xml:lang="de-DEV">Eingang Werkzeug 15 (WZ15)</text>
+      <text xml:lang="en-DEV">Input Tool 15 (WZ15)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17100_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17100_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17101">
+      <text xml:lang="de-DEV">E: Werkzeug 16 (WZ16)</text>
+      <text xml:lang="en-DEV">I: Tool 16 (WZ16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17101">
+      <text xml:lang="de-DEV">Eingang Werkzeug 16 (WZ16)</text>
+      <text xml:lang="en-DEV">Input Tool 16 (WZ16)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17101_0">
+      <text xml:lang="de-DEV">nicht ausgewählt</text>
+      <text xml:lang="en-DEV">not selected</text>
+    </uiText>
+    <uiText key="Diagnose_Value17101_1">
+      <text xml:lang="de-DEV">ausgewählt</text>
+      <text xml:lang="en-DEV">selected</text>
+    </uiText>
+    <uiText key="Diagnose_Name17102">
+      <text xml:lang="de-DEV">A: Safe Operation aktiv (SO)</text>
+      <text xml:lang="en-DEV">O: Safe operation activated (SO)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17102">
+      <text xml:lang="de-DEV">Ausgang Safe Operation aktiv (SO)</text>
+      <text xml:lang="en-DEV">Output Safe operation activated (SO)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17102_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17102_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17103">
+      <text xml:lang="de-DEV">A: Roboter referenziert (RR)</text>
+      <text xml:lang="en-DEV">O: robot referenced (RR)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17103">
+      <text xml:lang="de-DEV">Ausgang Roboter referenziert (RR)</text>
+      <text xml:lang="en-DEV">Output robot referenced (RR)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17103_0">
+      <text xml:lang="de-DEV">erforderlich</text>
+      <text xml:lang="en-DEV">required</text>
+    </uiText>
+    <uiText key="Diagnose_Value17103_1">
+      <text xml:lang="de-DEV">erfolgreich</text>
+      <text xml:lang="en-DEV">successfully</text>
+    </uiText>
+    <uiText key="Diagnose_Name17104">
+      <text xml:lang="de-DEV">A: Justagefehler (JF)</text>
+      <text xml:lang="en-DEV">O: Mastering error (JF)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17104">
+      <text xml:lang="de-DEV">Ausgang Justagefehler (JF)</text>
+      <text xml:lang="en-DEV">Output Mastering error (JF)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17104_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17104_1">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17105">
+      <text xml:lang="de-DEV">A: Safe Operation Stopp (SOS)</text>
+      <text xml:lang="en-DEV">O: Safe Operation stop (SOS)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17105">
+      <text xml:lang="de-DEV">Ausgang Safe Operation Stopp (SOS)</text>
+      <text xml:lang="en-DEV">Output Safe Operation stop (SOS)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17105_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17105_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17106">
+      <text xml:lang="de-DEV">A: Melderaum 1 (MR1)</text>
+      <text xml:lang="en-DEV">O: Alarm space 1 (MR1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17106">
+      <text xml:lang="de-DEV">Ausgang Melderaum 1 (MR1)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 1 (MR1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17106_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17106_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17107">
+      <text xml:lang="de-DEV">A: Melderaum 2 (MR2)</text>
+      <text xml:lang="en-DEV">O: Alarm space 2 (MR2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17107">
+      <text xml:lang="de-DEV">Ausgang Melderaum 2 (MR2)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 2 (MR2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17107_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17107_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17108">
+      <text xml:lang="de-DEV">A: Melderaum 3 (MR3)</text>
+      <text xml:lang="en-DEV">O: Alarm space 3 (MR3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17108">
+      <text xml:lang="de-DEV">Ausgang Melderaum 3 (MR3)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 3 (MR3)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17108_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17108_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17109">
+      <text xml:lang="de-DEV">A: Melderaum 4 (MR4)</text>
+      <text xml:lang="en-DEV">O: Alarm space 4 (MR4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17109">
+      <text xml:lang="de-DEV">Ausgang Melderaum 4 (MR4)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 4 (MR4)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17109_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17109_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17110">
+      <text xml:lang="de-DEV">A: Melderaum 5 (MR5)</text>
+      <text xml:lang="en-DEV">O: Alarm space 5 (MR5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17110">
+      <text xml:lang="de-DEV">Ausgang Melderaum 5 (MR5)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 5 (MR5)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17110_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17110_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17111">
+      <text xml:lang="de-DEV">A: Melderaum 6 (MR6)</text>
+      <text xml:lang="en-DEV">O: Alarm space 6 (MR6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17111">
+      <text xml:lang="de-DEV">Ausgang Melderaum 6 (MR6)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 6 (MR6)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17111_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17111_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17112">
+      <text xml:lang="de-DEV">A: Melderaum 7 (MR7)</text>
+      <text xml:lang="en-DEV">O: Alarm space 7 (MR7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17112">
+      <text xml:lang="de-DEV">Ausgang Melderaum 7 (MR7)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 7 (MR7)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17112_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17112_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17113">
+      <text xml:lang="de-DEV">A: Melderaum 8 (MR8)</text>
+      <text xml:lang="en-DEV">O: Alarm space 8 (MR8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17113">
+      <text xml:lang="de-DEV">Ausgang Melderaum 8 (MR8)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 8 (MR8)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17113_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17113_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17114">
+      <text xml:lang="de-DEV">A: Melderaum 9 (MR9)</text>
+      <text xml:lang="en-DEV">O: Alarm space 9 (MR9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17114">
+      <text xml:lang="de-DEV">Ausgang Melderaum 9 (MR9)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 9 (MR9)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17114_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17114_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17115">
+      <text xml:lang="de-DEV">A: Melderaum 10 (MR10)</text>
+      <text xml:lang="en-DEV">O: Alarm space 10 (MR10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17115">
+      <text xml:lang="de-DEV">Ausgang Melderaum 10 (MR10)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 10 (MR10)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17115_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17115_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17116">
+      <text xml:lang="de-DEV">A: Melderaum 11 (MR11)</text>
+      <text xml:lang="en-DEV">O: Alarm space 11 (MR11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17116">
+      <text xml:lang="de-DEV">Ausgang Melderaum 11 (MR11)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 11 (MR11)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17116_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17116_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17117">
+      <text xml:lang="de-DEV">A: Melderaum 12 (MR12)</text>
+      <text xml:lang="en-DEV">O: Alarm space 12 (MR12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17117">
+      <text xml:lang="de-DEV">Ausgang Melderaum 12 (MR12)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 12 (MR12)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17117_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17117_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17118">
+      <text xml:lang="de-DEV">A: Melderaum 13 (MR13)</text>
+      <text xml:lang="en-DEV">O: Alarm space 13 (MR13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17118">
+      <text xml:lang="de-DEV">Ausgang Melderaum 13 (MR13)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 13 (MR13)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17118_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17118_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17119">
+      <text xml:lang="de-DEV">A: Melderaum 14 (MR14)</text>
+      <text xml:lang="en-DEV">O: Alarm space 14 (MR14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17119">
+      <text xml:lang="de-DEV">Ausgang Melderaum 14 (MR14)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 14 (MR14)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17119_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17119_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17120">
+      <text xml:lang="de-DEV">A: Melderaum 15 (MR15)</text>
+      <text xml:lang="en-DEV">O: Alarm space 15 (MR15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17120">
+      <text xml:lang="de-DEV">Ausgang Melderaum 15 (MR15)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 15 (MR15)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17120_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17120_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17121">
+      <text xml:lang="de-DEV">A: Melderaum 16 (MR16)</text>
+      <text xml:lang="en-DEV">O: Alarm space 16 (MR16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17121">
+      <text xml:lang="de-DEV">Ausgang Melderaum 16 (MR16)</text>
+      <text xml:lang="en-DEV">Output: Alarm space 16 (MR16)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17121_0">
+      <text xml:lang="de-DEV">verletzt</text>
+      <text xml:lang="en-DEV">violated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17121_1">
+      <text xml:lang="de-DEV">nicht verletzt</text>
+      <text xml:lang="en-DEV">not violated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17122">
+      <text xml:lang="de-DEV">A: Reduzierte Geschwindigkeit (VRED)</text>
+      <text xml:lang="en-DEV">O: Reduced velocity (VRED)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17122">
+      <text xml:lang="de-DEV">Ausgang Reduzierte Geschwindigkeit (VRED)</text>
+      <text xml:lang="en-DEV">Output Reduced velocity (VRED)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17122_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17122_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17123">
+      <text xml:lang="de-DEV">A: Sicherer Betriebshalt Achsgruppe 1 (SBH1)</text>
+      <text xml:lang="en-DEV">O: Safe operational stop axis group 1 (SBH1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17123">
+      <text xml:lang="de-DEV">Ausgang Sicherer Betriebshalt Achsgruppe 1 (SBH1)</text>
+      <text xml:lang="en-DEV">Output Safe operational stop axis group 1 (SBH1)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17123_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17123_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17124">
+      <text xml:lang="de-DEV">A: Sicherer Betriebshalt Achsgruppe 2 (SBH2)</text>
+      <text xml:lang="en-DEV">O: Safe operational stop axis group 2 (SBH2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17124">
+      <text xml:lang="de-DEV">Ausgang Sicherer Betriebshalt Achsgruppe 2 (SBH2)</text>
+      <text xml:lang="en-DEV">Output Safe operational stop axis group 2 (SBH2)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17124_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17124_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17125">
+      <text xml:lang="de-DEV">A: Sicherer Betriebshalt Achsgruppe 3 (SBH3)</text>
+      <text xml:lang="en-DEV">O: Safe operational stop axis group 3 (SBH3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17125">
+      <text xml:lang="de-DEV">Ausgang Sicherer Betriebshalt Achsgruppe 3 (SBH3)</text>
+      <text xml:lang="en-DEV">Output Safe operational stop axis group 3 (SBH3)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17125_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17125_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17126">
+      <text xml:lang="de-DEV">A: Sicherer Betriebshalt Achsgruppe 4 (SBH4)</text>
+      <text xml:lang="en-DEV">O: Safe operational stop axis group 4 (SBH4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17126">
+      <text xml:lang="de-DEV">Ausgang Sicherer Betriebshalt Achsgruppe 4 (SBH4)</text>
+      <text xml:lang="en-DEV">Output Safe operational stop axis group 4 (SBH4)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17126_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17126_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17127">
+      <text xml:lang="de-DEV">A: Sicherer Betriebshalt Achsgruppe 5 (SBH5)</text>
+      <text xml:lang="en-DEV">O: Safe operational stop axis group 5 (SBH5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17127">
+      <text xml:lang="de-DEV">Ausgang Sicherer Betriebshalt Achsgruppe 5 (SBH5)</text>
+      <text xml:lang="en-DEV">Output Safe operational stop axis group 5 (SBH5)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17127_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17127_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17128">
+      <text xml:lang="de-DEV">A: Sicherer Betriebshalt Achsgruppe 6 (SBH6)</text>
+      <text xml:lang="en-DEV">O: Safe operational stop axis group 6 (SBH6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17128">
+      <text xml:lang="de-DEV">Ausgang Sicherer Betriebshalt Achsgruppe 6 (SBH6)</text>
+      <text xml:lang="en-DEV">Output Safe operational stop axis group 6 (SBH6)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17128_0">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17128_1">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17129">
+      <text xml:lang="de-DEV">E: Zeitstempel</text>
+      <text xml:lang="en-DEV">I: Time stamp</text>
+    </uiText>
+    <uiText key="Diagnose_Description17129">
+      <text xml:lang="de-DEV">Eingang Zeitstempel</text>
+      <text xml:lang="en-DEV">Input Time stamp</text>
+    </uiText>
+    <uiText key="Diagnose_Name17130">
+      <text xml:lang="de-DEV">E: Position Kanal 1</text>
+      <text xml:lang="en-DEV">I: Position channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17130">
+      <text xml:lang="de-DEV">Eingang Position Kanal 1</text>
+      <text xml:lang="en-DEV">Input Position channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name17131">
+      <text xml:lang="de-DEV">E: Position Kanal 2</text>
+      <text xml:lang="en-DEV">I: Position channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17131">
+      <text xml:lang="de-DEV">Eingang Position Kanal 2</text>
+      <text xml:lang="en-DEV">Input Position channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name17132">
+      <text xml:lang="de-DEV">E: Position Kanal 3</text>
+      <text xml:lang="en-DEV">I: Position channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17132">
+      <text xml:lang="de-DEV">Eingang Position Kanal 3</text>
+      <text xml:lang="en-DEV">Input Position channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name17133">
+      <text xml:lang="de-DEV">E: Position Kanal 4</text>
+      <text xml:lang="en-DEV">I: Position channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17133">
+      <text xml:lang="de-DEV">Eingang Position Kanal 4</text>
+      <text xml:lang="en-DEV">Input Position channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Name17134">
+      <text xml:lang="de-DEV">E: Position Kanal 5</text>
+      <text xml:lang="en-DEV">I: Position channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description17134">
+      <text xml:lang="de-DEV">Eingang Position Kanal 5</text>
+      <text xml:lang="en-DEV">Input Position channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Name17135">
+      <text xml:lang="de-DEV">E: Position Kanal 6</text>
+      <text xml:lang="en-DEV">I: Position channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description17135">
+      <text xml:lang="de-DEV">Eingang Position Kanal 6</text>
+      <text xml:lang="en-DEV">Input Position channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Name17136">
+      <text xml:lang="de-DEV">E: Position Kanal 7</text>
+      <text xml:lang="en-DEV">I: Position channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description17136">
+      <text xml:lang="de-DEV">Eingang Position Kanal 7</text>
+      <text xml:lang="en-DEV">Input Position channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Name17137">
+      <text xml:lang="de-DEV">E: Position Kanal 8</text>
+      <text xml:lang="en-DEV">I: Position channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description17137">
+      <text xml:lang="de-DEV">Eingang Position Kanal 8</text>
+      <text xml:lang="en-DEV">Input Position channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Name17138">
+      <text xml:lang="de-DEV">E: Justage Kanal 1</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17138">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 1</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Value17138_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17138_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17139">
+      <text xml:lang="de-DEV">E: Justage Kanal 2</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17139">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 2</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Value17139_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17139_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17140">
+      <text xml:lang="de-DEV">E: Justage Kanal 3</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17140">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 3</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Value17140_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17140_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17141">
+      <text xml:lang="de-DEV">E: Justage Kanal 4</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17141">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 4</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Value17141_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17141_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17142">
+      <text xml:lang="de-DEV">E: Justage Kanal 5</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description17142">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 5</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Value17142_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17142_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17143">
+      <text xml:lang="de-DEV">E: Justage Kanal 6</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description17143">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 6</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Value17143_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17143_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17144">
+      <text xml:lang="de-DEV">E: Justage Kanal 7</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description17144">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 7</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Value17144_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17144_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17145">
+      <text xml:lang="de-DEV">E: Justage Kanal 8</text>
+      <text xml:lang="en-DEV">I: Adjustment channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description17145">
+      <text xml:lang="de-DEV">Eingang Justage Kanal 8</text>
+      <text xml:lang="en-DEV">Input Adjustment channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Value17145_0">
+      <text xml:lang="de-DEV">dejustiert</text>
+      <text xml:lang="en-DEV">deadjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Value17145_1">
+      <text xml:lang="de-DEV">justiert</text>
+      <text xml:lang="en-DEV">adjusted</text>
+    </uiText>
+    <uiText key="Diagnose_Name17146">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 1</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17146">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 1</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Value17146_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17146_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17147">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 2</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17147">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 2</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Value17147_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17147_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17148">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 3</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17148">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 3</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Value17148_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17148_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17149">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 4</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17149">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 4</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Value17149_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17149_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17150">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 5</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description17150">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 5</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Value17150_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17150_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17151">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 6</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description17151">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 6</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Value17151_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17151_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17152">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 7</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description17152">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 7</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Value17152_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17152_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17153">
+      <text xml:lang="de-DEV">E: Geberfehler Kanal 8</text>
+      <text xml:lang="en-DEV">I: Resolver error channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description17153">
+      <text xml:lang="de-DEV">Eingang Geberfehler Kanal 8</text>
+      <text xml:lang="en-DEV">Input Resolver error channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Value17153_0">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17153_1">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17154">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 1</text>
+      <text xml:lang="en-DEV">I: Referencing channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17154">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 1</text>
+      <text xml:lang="en-DEV">Input Referencing channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Value17154_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17154_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17155">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 2</text>
+      <text xml:lang="en-DEV">I: Referencing channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17155">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 2</text>
+      <text xml:lang="en-DEV">Input Referencing channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Value17155_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17155_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17156">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 3</text>
+      <text xml:lang="en-DEV">I: Referencing channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17156">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 3</text>
+      <text xml:lang="en-DEV">Input Referencing channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Value17156_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17156_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17157">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 4</text>
+      <text xml:lang="en-DEV">I: Referencing channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17157">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 4</text>
+      <text xml:lang="en-DEV">Input Referencing channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Value17157_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17157_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17158">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 5</text>
+      <text xml:lang="en-DEV">I: Referencing channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description17158">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 5</text>
+      <text xml:lang="en-DEV">Input Referencing channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Value17158_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17158_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17159">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 6</text>
+      <text xml:lang="en-DEV">I: Referencing channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description17159">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 6</text>
+      <text xml:lang="en-DEV">Input Referencing channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Value17159_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17159_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17160">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 7</text>
+      <text xml:lang="en-DEV">I: Referencing channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description17160">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 7</text>
+      <text xml:lang="en-DEV">Input Referencing channel 7</text>
+    </uiText>
+    <uiText key="Diagnose_Value17160_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17160_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17161">
+      <text xml:lang="de-DEV">E: Referenzieren Kanal 8</text>
+      <text xml:lang="en-DEV">I: Referencing channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description17161">
+      <text xml:lang="de-DEV">Eingang Referenzieren Kanal 8</text>
+      <text xml:lang="en-DEV">Input Referencing channel 8</text>
+    </uiText>
+    <uiText key="Diagnose_Value17161_0">
+      <text xml:lang="de-DEV">nicht angefordert</text>
+      <text xml:lang="en-DEV">not requested</text>
+    </uiText>
+    <uiText key="Diagnose_Value17161_1">
+      <text xml:lang="de-DEV">angefordert</text>
+      <text xml:lang="en-DEV">requested</text>
+    </uiText>
+    <uiText key="Diagnose_Name17162">
+      <text xml:lang="de-DEV">E: Status Kanal 1</text>
+      <text xml:lang="en-DEV">I: State channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17162">
+      <text xml:lang="de-DEV">Eingang Status Kanal 1</text>
+      <text xml:lang="en-DEV">Input State channel 1</text>
+    </uiText>
+    <uiText key="Diagnose_Value17162_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17162_1">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17164">
+      <text xml:lang="de-DEV">E: Status Kanal 2</text>
+      <text xml:lang="en-DEV">I: State channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17164">
+      <text xml:lang="de-DEV">Eingang Status Kanal 2</text>
+      <text xml:lang="en-DEV">Input State channel 2</text>
+    </uiText>
+    <uiText key="Diagnose_Value17164_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17164_1">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17165">
+      <text xml:lang="de-DEV">E: Status Kanal 3</text>
+      <text xml:lang="en-DEV">I: State channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17165">
+      <text xml:lang="de-DEV">Eingang Status Kanal 3</text>
+      <text xml:lang="en-DEV">Input State channel 3</text>
+    </uiText>
+    <uiText key="Diagnose_Value17165_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17165_1">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17166">
+      <text xml:lang="de-DEV">E: Status Kanal 4</text>
+      <text xml:lang="en-DEV">I: State channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17166">
+      <text xml:lang="de-DEV">Eingang Status Kanal 4</text>
+      <text xml:lang="en-DEV">Input State channel 4</text>
+    </uiText>
+    <uiText key="Diagnose_Value17166_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17166_1">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17167">
+      <text xml:lang="de-DEV">E: Status Kanal 5</text>
+      <text xml:lang="en-DEV">I: State channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description17167">
+      <text xml:lang="de-DEV">Eingang Status Kanal 5</text>
+      <text xml:lang="en-DEV">Input State channel 5</text>
+    </uiText>
+    <uiText key="Diagnose_Value17167_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17167_1">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17168">
+      <text xml:lang="de-DEV">E: Status Kanal 6</text>
+      <text xml:lang="en-DEV">I: State channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description17168">
+      <text xml:lang="de-DEV">Eingang Status Kanal 6</text>
+      <text xml:lang="en-DEV">Input State channel 6</text>
+    </uiText>
+    <uiText key="Diagnose_Value17168_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">error</text>
+    </uiText>
+    <uiText key="Diagnose_Value17168_1">
+      <text xml:lang="de-DEV">kein Fehler</text>
+      <text xml:lang="en-DEV">no error</text>
+    </uiText>
+    <uiText key="Diagnose_Name17169">
+      <text xml:lang="de-DEV">E: Abkoppeltaste</text>
+      <text xml:lang="en-DEV">I: Button for disconnecting</text>
+    </uiText>
+    <uiText key="Diagnose_Description17169">
+      <text xml:lang="de-DEV">Eingang Abkoppeltaste</text>
+      <text xml:lang="en-DEV">Input Button for disconnecting</text>
+    </uiText>
+    <uiText key="Diagnose_Value17169_0">
+      <text xml:lang="de-DEV">gedrückt</text>
+      <text xml:lang="en-DEV">pushed</text>
+    </uiText>
+    <uiText key="Diagnose_Value17169_1">
+      <text xml:lang="de-DEV">gelöst</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Name17170">
+      <text xml:lang="de-DEV">E: Zustimmtaster Wippe 1 (ZS11)</text>
+      <text xml:lang="en-DEV">I: Enabling switch rocker 1 (ZS11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17170">
+      <text xml:lang="de-DEV">Eingang Zustimmtaster Wippe 1 (ZS11)</text>
+      <text xml:lang="en-DEV">Input Enabling switch rocker 1 (ZS11)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17170_0">
+      <text xml:lang="de-DEV">gelöst</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Value17170_1">
+      <text xml:lang="de-DEV">gedrückt</text>
+      <text xml:lang="en-DEV">pushed</text>
+    </uiText>
+    <uiText key="Diagnose_Name17171">
+      <text xml:lang="de-DEV">E: Paniktaster Wippe 1 (ZS12)</text>
+      <text xml:lang="en-DEV">I: Panic switch rocker 1 (ZS12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17171">
+      <text xml:lang="de-DEV">Eingang Paniktaster Wippe 1 (ZS12)</text>
+      <text xml:lang="en-DEV">Input Panic switch rocker 1 (ZS12)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17171_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17171_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17172">
+      <text xml:lang="de-DEV">E: Zustimmtaster Wippe 2 (ZS21)</text>
+      <text xml:lang="en-DEV">I: Enabling switch rocker 2 (ZS21)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17172">
+      <text xml:lang="de-DEV">Eingang Zustimmtaster Wippe 2 (ZS21)</text>
+      <text xml:lang="en-DEV">Input Enabling switch rocker 2 (ZS21)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17172_0">
+      <text xml:lang="de-DEV">gelöst</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Value17172_1">
+      <text xml:lang="de-DEV">gedrückt</text>
+      <text xml:lang="en-DEV">pushed</text>
+    </uiText>
+    <uiText key="Diagnose_Name17173">
+      <text xml:lang="de-DEV">E: Paniktaster Wippe 2 (ZS22)</text>
+      <text xml:lang="en-DEV">I: Panic switch rocker 2 (ZS22)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17173">
+      <text xml:lang="de-DEV">Eingang Paniktaster Wippe 2 (ZS22)</text>
+      <text xml:lang="en-DEV">Input Panic switch rocker 2 (ZS22)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17173_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17173_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17174">
+      <text xml:lang="de-DEV">E: Zustimmtaster Dom (ZS31)</text>
+      <text xml:lang="en-DEV">I: Enabling switch dome (ZS31)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17174">
+      <text xml:lang="de-DEV">Eingang Zustimmtaster Dom (ZS31)</text>
+      <text xml:lang="en-DEV">Input Enabling switch dome (ZS31)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17174_0">
+      <text xml:lang="de-DEV">gelöst</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Value17174_1">
+      <text xml:lang="de-DEV">gedrückt</text>
+      <text xml:lang="en-DEV">pushed</text>
+    </uiText>
+    <uiText key="Diagnose_Name17175">
+      <text xml:lang="de-DEV">E: Paniktaster Dom (ZS32)</text>
+      <text xml:lang="en-DEV">I: Panic switch dome (ZS32)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17175">
+      <text xml:lang="de-DEV">Eingang Paniktaster Dom (ZS32)</text>
+      <text xml:lang="en-DEV">Input Panic switch dome (ZS32)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17175_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17175_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17176">
+      <text xml:lang="de-DEV">E: Schlüsselschalter Set/Edit</text>
+      <text xml:lang="en-DEV">I: Keyswitch Set/Edit</text>
+    </uiText>
+    <uiText key="Diagnose_Description17176">
+      <text xml:lang="de-DEV">Eingang Schlüsselschalter Set/Edit</text>
+      <text xml:lang="en-DEV">Input Keyswitch Set/Edit</text>
+    </uiText>
+    <uiText key="Diagnose_Value17176_0">
+      <text xml:lang="de-DEV">Set</text>
+      <text xml:lang="en-DEV">set</text>
+    </uiText>
+    <uiText key="Diagnose_Value17176_1">
+      <text xml:lang="de-DEV">Edit</text>
+      <text xml:lang="en-DEV">edit</text>
+    </uiText>
+    <uiText key="Diagnose_Name17177">
+      <text xml:lang="de-DEV">E: Nothalt (NHB)</text>
+      <text xml:lang="en-DEV">I: Emergency stop (NHB)</text>
+    </uiText>
+    <uiText key="Diagnose_Description17177">
+      <text xml:lang="de-DEV">Eingang Nothalt (NHB)</text>
+      <text xml:lang="en-DEV">Input Emergency stop (NHB)</text>
+    </uiText>
+    <uiText key="Diagnose_Value17177_0">
+      <text xml:lang="de-DEV">aktiviert</text>
+      <text xml:lang="en-DEV">activated</text>
+    </uiText>
+    <uiText key="Diagnose_Value17177_1">
+      <text xml:lang="de-DEV">nicht aktiviert</text>
+      <text xml:lang="en-DEV">not activated</text>
+    </uiText>
+    <uiText key="Diagnose_Name17178">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 1</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17178">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 1</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name17179">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 1</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 1</text>
+    </uiText>
+    <uiText key="Diagnose_Description17179">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 1</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 1</text>
+    </uiText>
+    <uiText key="Diagnose_Name17180">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 2</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17180">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 2</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name17181">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 2</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 2</text>
+    </uiText>
+    <uiText key="Diagnose_Description17181">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 2</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 2</text>
+    </uiText>
+    <uiText key="Diagnose_Name17182">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 3</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17182">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 3</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name17183">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 3</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 3</text>
+    </uiText>
+    <uiText key="Diagnose_Description17183">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 3</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 3</text>
+    </uiText>
+    <uiText key="Diagnose_Name17184">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 4</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17184">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 4</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 4</text>
+    </uiText>
+    <uiText key="Diagnose_Name17185">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 4</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 4</text>
+    </uiText>
+    <uiText key="Diagnose_Description17185">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 4</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 4</text>
+    </uiText>
+    <uiText key="Diagnose_Name17186">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 5</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description17186">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 5</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 5</text>
+    </uiText>
+    <uiText key="Diagnose_Name17187">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 5</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 5</text>
+    </uiText>
+    <uiText key="Diagnose_Description17187">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 5</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 5</text>
+    </uiText>
+    <uiText key="Diagnose_Name17188">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 6</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description17188">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 6</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 6</text>
+    </uiText>
+    <uiText key="Diagnose_Name17189">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 6</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 6</text>
+    </uiText>
+    <uiText key="Diagnose_Description17189">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 6</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 6</text>
+    </uiText>
+    <uiText key="Diagnose_Name17190">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 7</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description17190">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 7</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 7</text>
+    </uiText>
+    <uiText key="Diagnose_Name17191">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 7</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 7</text>
+    </uiText>
+    <uiText key="Diagnose_Description17191">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 7</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 7</text>
+    </uiText>
+    <uiText key="Diagnose_Name17192">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 8</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description17192">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 8</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 8</text>
+    </uiText>
+    <uiText key="Diagnose_Name17193">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 8</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 8</text>
+    </uiText>
+    <uiText key="Diagnose_Description17193">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 8</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 8</text>
+    </uiText>
+    <uiText key="Diagnose_Name17194">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 9</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 9</text>
+    </uiText>
+    <uiText key="Diagnose_Description17194">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 9</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 9</text>
+    </uiText>
+    <uiText key="Diagnose_Name17195">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 9</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 9</text>
+    </uiText>
+    <uiText key="Diagnose_Description17195">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 9</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 9</text>
+    </uiText>
+    <uiText key="Diagnose_Name17196">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 10</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 10</text>
+    </uiText>
+    <uiText key="Diagnose_Description17196">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 10</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 10</text>
+    </uiText>
+    <uiText key="Diagnose_Name17197">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 10</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 10</text>
+    </uiText>
+    <uiText key="Diagnose_Description17197">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 10</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 10</text>
+    </uiText>
+    <uiText key="Diagnose_Name17198">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 11</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 11</text>
+    </uiText>
+    <uiText key="Diagnose_Description17198">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 11</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 11</text>
+    </uiText>
+    <uiText key="Diagnose_Name17199">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 11</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 11</text>
+    </uiText>
+    <uiText key="Diagnose_Description17199">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 11</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 11</text>
+    </uiText>
+    <uiText key="Diagnose_Name17200">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 12</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 12</text>
+    </uiText>
+    <uiText key="Diagnose_Description17200">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 12</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 12</text>
+    </uiText>
+    <uiText key="Diagnose_Name17201">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 12</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 12</text>
+    </uiText>
+    <uiText key="Diagnose_Description17201">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 12</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 12</text>
+    </uiText>
+    <uiText key="Diagnose_Name17202">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 13</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 13</text>
+    </uiText>
+    <uiText key="Diagnose_Description17202">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 13</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 13</text>
+    </uiText>
+    <uiText key="Diagnose_Name17203">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 13</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 13</text>
+    </uiText>
+    <uiText key="Diagnose_Description17203">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 13</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 13</text>
+    </uiText>
+    <uiText key="Diagnose_Name17204">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 14</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 14</text>
+    </uiText>
+    <uiText key="Diagnose_Description17204">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 14</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 14</text>
+    </uiText>
+    <uiText key="Diagnose_Name17205">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 14</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 14</text>
+    </uiText>
+    <uiText key="Diagnose_Description17205">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 14</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 14</text>
+    </uiText>
+    <uiText key="Diagnose_Name17206">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 15</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 15</text>
+    </uiText>
+    <uiText key="Diagnose_Description17206">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 15</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 15</text>
+    </uiText>
+    <uiText key="Diagnose_Name17207">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 15</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 15</text>
+    </uiText>
+    <uiText key="Diagnose_Description17207">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 15</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 15</text>
+    </uiText>
+    <uiText key="Diagnose_Name17208">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 16</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 16</text>
+    </uiText>
+    <uiText key="Diagnose_Description17208">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 16</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 16</text>
+    </uiText>
+    <uiText key="Diagnose_Name17209">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 16</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 16</text>
+    </uiText>
+    <uiText key="Diagnose_Description17209">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 16</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 16</text>
+    </uiText>
+    <uiText key="Diagnose_Name17210">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 17</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 17</text>
+    </uiText>
+    <uiText key="Diagnose_Description17210">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 17</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 17</text>
+    </uiText>
+    <uiText key="Diagnose_Name17211">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 17</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 17</text>
+    </uiText>
+    <uiText key="Diagnose_Description17211">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 17</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 17</text>
+    </uiText>
+    <uiText key="Diagnose_Name17212">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 18</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 18</text>
+    </uiText>
+    <uiText key="Diagnose_Description17212">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 18</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 18</text>
+    </uiText>
+    <uiText key="Diagnose_Name17213">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 18</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 18</text>
+    </uiText>
+    <uiText key="Diagnose_Description17213">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 18</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 18</text>
+    </uiText>
+    <uiText key="Diagnose_Name17214">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 19</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 19</text>
+    </uiText>
+    <uiText key="Diagnose_Description17214">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 19</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 19</text>
+    </uiText>
+    <uiText key="Diagnose_Name17215">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 19</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 19</text>
+    </uiText>
+    <uiText key="Diagnose_Description17215">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 19</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 19</text>
+    </uiText>
+    <uiText key="Diagnose_Name17216">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 20</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 20</text>
+    </uiText>
+    <uiText key="Diagnose_Description17216">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 20</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 20</text>
+    </uiText>
+    <uiText key="Diagnose_Name17217">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 20</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 20</text>
+    </uiText>
+    <uiText key="Diagnose_Description17217">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 20</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 20</text>
+    </uiText>
+    <uiText key="Diagnose_Name17218">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 21</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 21</text>
+    </uiText>
+    <uiText key="Diagnose_Description17218">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 21</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 21</text>
+    </uiText>
+    <uiText key="Diagnose_Name17219">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 21</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 21</text>
+    </uiText>
+    <uiText key="Diagnose_Description17219">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 21</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 21</text>
+    </uiText>
+    <uiText key="Diagnose_Name17220">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 22</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 22</text>
+    </uiText>
+    <uiText key="Diagnose_Description17220">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 22</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 22</text>
+    </uiText>
+    <uiText key="Diagnose_Name17221">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 22</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 22</text>
+    </uiText>
+    <uiText key="Diagnose_Description17221">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 22</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 22</text>
+    </uiText>
+    <uiText key="Diagnose_Name17222">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 23</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 23</text>
+    </uiText>
+    <uiText key="Diagnose_Description17222">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 23</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 23</text>
+    </uiText>
+    <uiText key="Diagnose_Name17223">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 23</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 23</text>
+    </uiText>
+    <uiText key="Diagnose_Description17223">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 23</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 23</text>
+    </uiText>
+    <uiText key="Diagnose_Name17224">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 24</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 24</text>
+    </uiText>
+    <uiText key="Diagnose_Description17224">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 24</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 24</text>
+    </uiText>
+    <uiText key="Diagnose_Name17225">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 24</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 24</text>
+    </uiText>
+    <uiText key="Diagnose_Description17225">
+      <text xml:lang="de-DEV">Positionstoleranz Achse 24</text>
+      <text xml:lang="en-DEV">Position tolerance Axis 24</text>
+    </uiText>
+    <uiText key="Diagnose_Name17226">
+      <text xml:lang="de-DEV">Maximale Bremszeit</text>
+      <text xml:lang="en-DEV">Highest braketime</text>
+    </uiText>
+    <uiText key="Diagnose_Description17226">
+      <text xml:lang="de-DEV">Maximale Bremszeit aller Achsen</text>
+      <text xml:lang="en-DEV">Highest braketime of all axis</text>
+    </uiText>
+  </module>
+</resources>

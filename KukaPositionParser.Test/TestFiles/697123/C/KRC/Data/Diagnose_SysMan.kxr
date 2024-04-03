@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name14001">
+      <text xml:lang="de-DEV">System Manager Job</text>
+      <text xml:lang="en-DEV">System Manager Job</text>
+    </uiText>
+    <uiText key="Diagnose_Description14001">
+      <text xml:lang="de-DEV">aktuell durchgeführter Übergang</text>
+      <text xml:lang="en-DEV">currently performed Transition</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_0">
+      <text xml:lang="de-DEV">Idle</text>
+      <text xml:lang="en-DEV">Idle</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_1">
+      <text xml:lang="de-DEV">Coldstart</text>
+      <text xml:lang="en-DEV">Coldstart</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_2">
+      <text xml:lang="de-DEV">Shutdown</text>
+      <text xml:lang="en-DEV">Shutdown</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_3">
+      <text xml:lang="de-DEV">Reboot</text>
+      <text xml:lang="en-DEV">Reboot</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_4">
+      <text xml:lang="de-DEV">Freeze</text>
+      <text xml:lang="en-DEV">Freeze</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_5">
+      <text xml:lang="de-DEV">Buspower Off</text>
+      <text xml:lang="en-DEV">Buspower Off</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_6">
+      <text xml:lang="de-DEV">Buspower Off (SOFT)</text>
+      <text xml:lang="en-DEV">Buspower Off (SOFT)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_7">
+      <text xml:lang="de-DEV">Freeze Active</text>
+      <text xml:lang="en-DEV">Freeze Active</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_8">
+      <text xml:lang="de-DEV">Defrost</text>
+      <text xml:lang="en-DEV">Defrost</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_9">
+      <text xml:lang="de-DEV">Buspower On</text>
+      <text xml:lang="en-DEV">Buspower On</text>
+    </uiText>
+    <uiText key="Diagnose_Value14001_10">
+      <text xml:lang="de-DEV">Reconfigure</text>
+      <text xml:lang="en-DEV">Reconfigure</text>
+    </uiText>
+    <uiText key="Diagnose_Name14002">
+      <text xml:lang="de-DEV">System Manager Bootzustand</text>
+      <text xml:lang="en-DEV">System Manager Bootstate</text>
+    </uiText>
+    <uiText key="Diagnose_Description14002">
+      <text xml:lang="de-DEV">Bootzustand des System Managers</text>
+      <text xml:lang="en-DEV">Bootstate of System Manager</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_0">
+      <text xml:lang="de-DEV">Init</text>
+      <text xml:lang="en-DEV">Init</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_1">
+      <text xml:lang="de-DEV">Loading Modules</text>
+      <text xml:lang="en-DEV">Loading Modules</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_2">
+      <text xml:lang="de-DEV">Modules Loaded</text>
+      <text xml:lang="en-DEV">Modules Loaded</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_3">
+      <text xml:lang="de-DEV">Application Created</text>
+      <text xml:lang="en-DEV">Application Created</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_4">
+      <text xml:lang="de-DEV">Services Started</text>
+      <text xml:lang="en-DEV">Services Started</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_5">
+      <text xml:lang="de-DEV">Data Registered</text>
+      <text xml:lang="en-DEV">Data Registered</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_6">
+      <text xml:lang="de-DEV">Data Attached</text>
+      <text xml:lang="en-DEV">Data Attached</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_7">
+      <text xml:lang="de-DEV">Data Connected</text>
+      <text xml:lang="en-DEV">Data Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_8">
+      <text xml:lang="de-DEV">Wait For Sync</text>
+      <text xml:lang="en-DEV">Wait For Sync</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_9">
+      <text xml:lang="de-DEV">Running</text>
+      <text xml:lang="en-DEV">Running</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_10">
+      <text xml:lang="de-DEV">Running (Bus Power Off initiated)</text>
+      <text xml:lang="en-DEV">Running (Bus Power Off initiated)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_11">
+      <text xml:lang="de-DEV">Motion Disabled</text>
+      <text xml:lang="en-DEV">Motion Disabled</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_12">
+      <text xml:lang="de-DEV">Bus disconnected</text>
+      <text xml:lang="en-DEV">Bus disconnected</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_13">
+      <text xml:lang="de-DEV">Bus Powered Off</text>
+      <text xml:lang="en-DEV">Bus Powered Off</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_14">
+      <text xml:lang="de-DEV">Bus Powered Off (SOFT)</text>
+      <text xml:lang="en-DEV">Bus Powered Off (SOFT)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_15">
+      <text xml:lang="de-DEV">Bus Powered Off (Freeze Active)</text>
+      <text xml:lang="en-DEV">Bus Powered Off (Freeze Active)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_16">
+      <text xml:lang="de-DEV">Sleeping</text>
+      <text xml:lang="en-DEV">Sleeping</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_17">
+      <text xml:lang="de-DEV">Frozen</text>
+      <text xml:lang="en-DEV">Frozen</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_18">
+      <text xml:lang="de-DEV">Frozen (Defrost initiated)</text>
+      <text xml:lang="en-DEV">Frozen (Defrost initiated)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_19">
+      <text xml:lang="de-DEV">Sleeping (Defrost)</text>
+      <text xml:lang="en-DEV">Sleeping (Defrost)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_20">
+      <text xml:lang="de-DEV">Bus Powered Off (Bus Power On init.)</text>
+      <text xml:lang="en-DEV">Bus Powered Off (Bus Power On init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_21">
+      <text xml:lang="de-DEV">Bus Disconnected (Connecting init.)</text>
+      <text xml:lang="en-DEV">Bus Disconnected (Connecting init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_22">
+      <text xml:lang="de-DEV">Motion Disabled (Enabling init.)</text>
+      <text xml:lang="en-DEV">Motion Disabled (Enabling init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_23">
+      <text xml:lang="de-DEV">Running (Desynch. init.)</text>
+      <text xml:lang="en-DEV">Running (Desynch. init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_24">
+      <text xml:lang="de-DEV">Wait For Synch (Stop init.)</text>
+      <text xml:lang="en-DEV">Wait For Synch (Stop init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_25">
+      <text xml:lang="de-DEV">Data Connected (Disconn. init.)</text>
+      <text xml:lang="en-DEV">Data connected (Disconn. init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_26">
+      <text xml:lang="de-DEV">Data Attached (Detaching init.)</text>
+      <text xml:lang="en-DEV">Data attached (Detaching init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_27">
+      <text xml:lang="de-DEV">Data Registered (Unregister init.)</text>
+      <text xml:lang="en-DEV">Data Registered (Unregister init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_28">
+      <text xml:lang="de-DEV">Services Started (Stopping Services init.)</text>
+      <text xml:lang="en-DEV">Services Started (Stopping Services init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_29">
+      <text xml:lang="de-DEV">Application Created (Delete Obj. init.)</text>
+      <text xml:lang="en-DEV">Application Created (Delete Obj. init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_30">
+      <text xml:lang="de-DEV">Objects deleted (Unload init.)</text>
+      <text xml:lang="en-DEV">Objects deleted (Unload init.)</text>
+    </uiText>
+    <uiText key="Diagnose_Value14002_31">
+      <text xml:lang="de-DEV">Starting Reconf/Reconf</text>
+      <text xml:lang="en-DEV">Starting Reconf/Reconf</text>
+    </uiText>
+    <uiText key="Diagnose_Name14003">
+      <text xml:lang="de-DEV">Power Management Bootzustand</text>
+      <text xml:lang="en-DEV">Power Management Bootstate</text>
+    </uiText>
+    <uiText key="Diagnose_Description14003">
+      <text xml:lang="de-DEV">Bootzustand der an Power Management gemeldet wird</text>
+      <text xml:lang="en-DEV">Bootstate signaled to Power Management</text>
+    </uiText>
+    <uiText key="Diagnose_Value14003_1">
+      <text xml:lang="de-DEV">Init</text>
+      <text xml:lang="en-DEV">Init</text>
+    </uiText>
+    <uiText key="Diagnose_Value14003_2">
+      <text xml:lang="de-DEV">Running</text>
+      <text xml:lang="en-DEV">Running</text>
+    </uiText>
+    <uiText key="Diagnose_Value14003_3">
+      <text xml:lang="de-DEV">BusPowered Off</text>
+      <text xml:lang="en-DEV">BusPowered Off</text>
+    </uiText>
+    <uiText key="Diagnose_Value14003_4">
+      <text xml:lang="de-DEV">Freeze Active</text>
+      <text xml:lang="en-DEV">Freeze Active</text>
+    </uiText>
+    <uiText key="Diagnose_Value14003_5">
+      <text xml:lang="de-DEV">Frozen</text>
+      <text xml:lang="en-DEV">Frozen</text>
+    </uiText>
+    <uiText key="Diagnose_Name14004">
+      <text xml:lang="de-DEV">Spannungszustand</text>
+      <text xml:lang="en-DEV">Power State</text>
+    </uiText>
+    <uiText key="Diagnose_Description14004">
+      <text xml:lang="de-DEV">Zustand der Spannungsversorgung die an Power Management gemeldet wird</text>
+      <text xml:lang="en-DEV">Power State signaled to Power Management</text>
+    </uiText>
+    <uiText key="Diagnose_Value14004_8">
+      <text xml:lang="de-DEV">Booterror</text>
+      <text xml:lang="en-DEV">Booterror</text>
+    </uiText>
+    <uiText key="Diagnose_Value14004_9">
+      <text xml:lang="de-DEV">Powerfail</text>
+      <text xml:lang="en-DEV">Powerfail</text>
+    </uiText>
+    <uiText key="Diagnose_Value14004_10">
+      <text xml:lang="de-DEV">Powerdown</text>
+      <text xml:lang="en-DEV">Powerdown</text>
+    </uiText>
+    <uiText key="Diagnose_Name14005">
+      <text xml:lang="de-DEV">CSP Betriebsart</text>
+      <text xml:lang="en-DEV">CSP Operational Mode</text>
+    </uiText>
+    <uiText key="Diagnose_Description14005">
+      <text xml:lang="de-DEV">Betriebsart, die fuer CSP gemeldet wird</text>
+      <text xml:lang="en-DEV">Operational Mode signalled to CSP</text>
+    </uiText>
+    <uiText key="Diagnose_Value14005_16">
+      <text xml:lang="de-DEV">Automatik</text>
+      <text xml:lang="en-DEV">Automatic</text>
+    </uiText>
+    <uiText key="Diagnose_Name14006">
+      <text xml:lang="de-DEV">System Manager</text>
+      <text xml:lang="en-DEV">System manager</text>
+    </uiText>
+    <uiText key="Diagnose_Description14006">
+      <text xml:lang="de-DEV">Verwaltet das System</text>
+      <text xml:lang="en-DEV">Manages the system</text>
+    </uiText>
+  </module>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimuAxis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/SimuAxis.xsd">
+   <Version Label="">
+      <Info Version="KUKA V8.3"/>
+      <Schema Version="2"/>
+   </Version>
+   <Machine Name="#KR270R2900K ULTRA C4 FLR"/>
+   <AxisData AccelerationTime="10.000000" AccelerationTimeUnderLoad="900.000000" BrakeHoldingTorque="11.000000" BrakeOpenTime="180.000000" InertiaOfPowerTrain="0.002367" MaximalCurrent="20.000000" MaximalPositionLag="442.000000" MotorHoldingTorque="11.000000" NominalSpeed="3000.000000" ServoOffTime="30.000000">
+      <SpeedTorqueData>
+         <SpeedTorque Speed="0.000000" Torque="22.000000"/>
+         <SpeedTorque Speed="2150.000000" Torque="22.000000"/>
+         <SpeedTorque Speed="3700.000000" Torque="12.500000"/>
+         <SpeedTorque Speed="4500.000000" Torque="9.000000"/>
+         <SpeedTorque Speed="4501.000000" Torque="0.000000"/>
+      </SpeedTorqueData>
+      <ControlData>
+         <ParameterSet GVel="60.0" IVel="0.0" Lg="0.6" Name="PTP"/>
+         <ParameterSet GVel="75.0" IVel="0.0" Lg="0.48" Name="CP"/>
+      </ControlData>
+   </AxisData>
+</SimuAxis>

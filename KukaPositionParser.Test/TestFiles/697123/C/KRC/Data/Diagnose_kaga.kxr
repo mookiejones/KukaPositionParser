@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name5001">
+      <text xml:lang="de-DEV">RX-Zaehler</text>
+      <text xml:lang="en-DEV">RX-Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description5001">
+      <text xml:lang="de-DEV">Anzahl der empfangenen Pakete</text>
+      <text xml:lang="en-DEV">Number of received packets</text>
+    </uiText>
+    <uiText key="Diagnose_Name5002">
+      <text xml:lang="de-DEV">TX-Zaehler</text>
+      <text xml:lang="en-DEV">TX-Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description5002">
+      <text xml:lang="de-DEV">Anzahl der gesendeten Pakete</text>
+      <text xml:lang="en-DEV">Number of transmitted packets</text>
+    </uiText>
+    <uiText key="Diagnose_Name5003">
+      <text xml:lang="de-DEV">Interface-ID</text>
+      <text xml:lang="en-DEV">Interface-ID</text>
+    </uiText>
+    <uiText key="Diagnose_Description5003">
+      <text xml:lang="de-DEV">Bezeichnung des Interfaces</text>
+      <text xml:lang="en-DEV">Identifier of the interface</text>
+    </uiText>
+    <uiText key="Diagnose_Name5004">
+      <text xml:lang="de-DEV">Netzwerksystem</text>
+      <text xml:lang="en-DEV">Networksystem</text>
+    </uiText>
+    <uiText key="Diagnose_Description5004">
+      <text xml:lang="de-DEV">Sammelt Netzwerk-Informationen</text>
+      <text xml:lang="en-DEV">Collects informations about connectivity</text>
+    </uiText>
+    <uiText key="Diagnose_Name5005">
+      <text xml:lang="de-DEV">IP-Adresse</text>
+      <text xml:lang="en-DEV">IP-Address</text>
+    </uiText>
+    <uiText key="Diagnose_Description5005">
+      <text xml:lang="de-DEV">Die IP-Adresse dieses Interfaces</text>
+      <text xml:lang="en-DEV">IP-address of this interface</text>
+    </uiText>
+    <uiText key="Diagnose_Name5006">
+      <text xml:lang="de-DEV">Subnetzmaske</text>
+      <text xml:lang="en-DEV">Subnetmask</text>
+    </uiText>
+    <uiText key="Diagnose_Description5006">
+      <text xml:lang="de-DEV">Die Netzmaske dieses Interfaces</text>
+      <text xml:lang="en-DEV">Subnetmask of this interface</text>
+    </uiText>
+    <uiText key="Diagnose_Name5007">
+      <text xml:lang="de-DEV">MAC-Adresse</text>
+      <text xml:lang="en-DEV">MAC-address</text>
+    </uiText>
+    <uiText key="Diagnose_Description5007">
+      <text xml:lang="de-DEV">Die MAC-Adresse dieses Interfaces</text>
+      <text xml:lang="en-DEV">MAC-address of this interface</text>
+    </uiText>
+    <uiText key="Diagnose_Name5008">
+      <text xml:lang="de-DEV">Protokolle</text>
+      <text xml:lang="en-DEV">Protocols</text>
+    </uiText>
+    <uiText key="Diagnose_Description5008">
+      <text xml:lang="de-DEV">An dieses Interface gebundene Protokolle</text>
+      <text xml:lang="en-DEV">Protocols which are attached to this interface</text>
+    </uiText>
+    <uiText key="Diagnose_Name5009">
+      <text xml:lang="de-DEV">Netzwerkinterface</text>
+      <text xml:lang="en-DEV">Networkinterface</text>
+    </uiText>
+    <uiText key="Diagnose_Description5009">
+      <text xml:lang="de-DEV">Ein Netzwerkinterface des Application Gateways</text>
+      <text xml:lang="en-DEV">A network-interface of the application gateway</text>
+    </uiText>
+    <uiText key="Diagnose_Name5010">
+      <text xml:lang="de-DEV">Linkstatus</text>
+      <text xml:lang="en-DEV">Link-status</text>
+    </uiText>
+    <uiText key="Diagnose_Description5010">
+      <text xml:lang="de-DEV">Der Linkstatus dieses Interfaces</text>
+      <text xml:lang="en-DEV">The link-status of this interface</text>
+    </uiText>
+    <uiText key="Diagnose_Value5010_1">
+      <text xml:lang="de-DEV">Kein Link</text>
+      <text xml:lang="en-DEV">Link is down</text>
+    </uiText>
+    <uiText key="Diagnose_Value5010_2">
+      <text xml:lang="de-DEV">Link vorhanden</text>
+      <text xml:lang="en-DEV">Link is up</text>
+    </uiText>
+    <uiText key="Diagnose_Value5010_3">
+      <text xml:lang="de-DEV">Halbduplex-Mode</text>
+      <text xml:lang="en-DEV">Halfduplex-mode</text>
+    </uiText>
+    <uiText key="Diagnose_Value5010_4">
+      <text xml:lang="de-DEV">Vollduplex-Mode</text>
+      <text xml:lang="en-DEV">Fullduplex-mode</text>
+    </uiText>
+    <uiText key="Diagnose_Value5010_5">
+      <text xml:lang="de-DEV">10 Mbit/s</text>
+      <text xml:lang="en-DEV">10 Mbit/s</text>
+    </uiText>
+    <uiText key="Diagnose_Value5010_6">
+      <text xml:lang="de-DEV">100 Mbit/s</text>
+      <text xml:lang="en-DEV">100 Mbit/s</text>
+    </uiText>
+    <uiText key="Diagnose_Value5010_7">
+      <text xml:lang="de-DEV">1000 Mbit/s</text>
+      <text xml:lang="en-DEV">1000 Mbit/s</text>
+    </uiText>
+    <uiText key="Diagnose_Name5011">
+      <text xml:lang="de-DEV">TX-Paketfehler</text>
+      <text xml:lang="en-DEV">TX-Packeterrors</text>
+    </uiText>
+    <uiText key="Diagnose_Description5011">
+      <text xml:lang="de-DEV">Anzahl der Sendefehler</text>
+      <text xml:lang="en-DEV">Number of encountered senderrors</text>
+    </uiText>
+    <uiText key="Diagnose_Name5012">
+      <text xml:lang="de-DEV">RX-Paketfehler</text>
+      <text xml:lang="en-DEV">RX-Packeterrors</text>
+    </uiText>
+    <uiText key="Diagnose_Description5012">
+      <text xml:lang="de-DEV">Anzahl der Empfangsfehler</text>
+      <text xml:lang="en-DEV">Number of encountered receiveerrors</text>
+    </uiText>
+  </module>
+</resources>

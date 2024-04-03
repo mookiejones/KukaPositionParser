@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="ru" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="KukaRoboterXPArcTechXPCommon">
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldErrorStrategies">
+      <text>Weld error strategies</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMHarmonizeDataSets">
+      <text>Restore consistency of parameter data sets</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCollectionWeldFault">
+      <text>Group welding error</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRemoveJobMode">
+      <text>Delete weld mode</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcOff">
+      <text>End crater parameters</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaxBreaksOnSeam">
+      <text>Maximum number of weld errors</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWeldEnd">
+      <text>Weld end output group</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSeamControlFault">
+      <text>Seam monitoring error</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMContinueWithoutRetry">
+      <text>ContinueWithoutRetry</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCommunicationReady">
+      <text>Communication ready</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMProcessActive">
+      <text>Weld process active</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEndKrater">
+      <text>End crater time</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCurrentFlow">
+      <text>Current present</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputs">
+      <text>Входы</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNOTIFY">
+      <text>Notify</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIsDecimal">
+      <text>Integer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKeepOnPosition">
+      <text>KeepOnPosition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldMsgType">
+      <text>Message type for weld error</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAcknoledgePowerSupply">
+      <text>Acknowledge power source</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasFlow">
+      <text>Gas flow</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParameter">
+      <text>Parameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireFeedForward">
+      <text>Wire forward</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWaterFlow">
+      <text>Cooling</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAddJobMode">
+      <text>Add weld mode</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIoDefinition">
+      <text>I/O definition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionTime">
+      <text>Wait time after ignition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMoveUpAndStop">
+      <text>MoveUpAndStop</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMProcessSettings">
+      <text>Process settings</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSupportedPoints">
+      <text>Control points</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobMode">
+      <text>Режим сварки</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldPeriphery">
+      <text>Welding periphery ready input group</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInitialValue">
+      <text>Initial value</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionErrorStrategies">
+      <text>Ignition error strategies</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCrSeamError">
+      <text>Critical seam error</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCountOfPoints">
+      <text>No. of ctrl points</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobModes">
+      <text>Modes</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireFree">
+      <text>Wire free signal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParameterSetsEditor">
+      <text>Data sets</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcSwitch">
+      <text>Welding parameters</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionFault">
+      <text>Ignition error</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldSeamEnd">
+      <text>Seam end input group</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTorchCollision">
+      <text>Collision protection device</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBitPattern">
+      <text>Bit pattern</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcOn">
+      <text>Ignition parameters</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMValue">
+      <text>Value</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSpeed">
+      <text>Robot velocity</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParam">
+      <text>Parameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireFeedBackward">
+      <text>Wire backward</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldMoving">
+      <text>Weld motion monitoring input group</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPostFlowTime">
+      <text>Postflow time</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKeySwitchWelding">
+      <text>Weld keyswitch</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincReconfigure">
+      <text>Reconfigure</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDataSetName">
+      <text>Data set name</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldErrorStrategy">
+      <text>Weld error strategy</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireStock">
+      <text>Wire supply</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCrIgnitionError">
+      <text>Critical ignition fault</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBackToSplineStart">
+      <text>BackToSplineStart</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWeldStart">
+      <text>Weld start output group</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIsActive">
+      <text>Active</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMinimum">
+      <text>Minimum</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputs">
+      <text>Outputs</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOnlyBySps">
+      <text>PLC signals</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldStart">
+      <text>Start welding</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaximum">
+      <text>Maximum</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBurnFreeFault">
+      <text>Burnfree fault</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSource">
+      <text>Power source</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel1">
+      <text>Channel 1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel8">
+      <text>Channel 8</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPreFlowTime">
+      <text>Preflow time</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMoveForward">
+      <text>MoveForward</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSourceReady">
+      <text>Power source ready</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMainCurrent">
+      <text>Main current</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAssignment">
+      <text>Assignment</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMoveBackward">
+      <text>MoveBackward</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasPressure">
+      <text>Gas pressure</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGlobalParameter">
+      <text>Global settings</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNONE">
+      <text>None</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMName">
+      <text>Name</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMQUIT">
+      <text>Quit</text>
+    </uiText>
+  </module>
+</resources>

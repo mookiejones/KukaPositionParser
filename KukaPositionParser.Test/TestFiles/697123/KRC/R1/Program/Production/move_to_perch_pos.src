@@ -1,0 +1,37 @@
+&ACCESS RVO1
+&REL 40
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF move_to_perch_pos( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point 
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 0) ; select base 1
+   BAS(#VEL_CP, 0.1) ; set speed to 0.10mm/s
+   BAS(#ACC_CP, 25) ; use max acceleration
+   
+   
+;FOLD PTP home4 Vel=15 % PDAT1;%{PE}%R 8.3.38,%MKUKATPBASIS,%CMOVE,%VPTP,%P 1:PTP, 2:home4, 3:, 5:15, 7:PDAT1
+$BWDSTART=FALSE
+PDAT_ACT=PPDAT1
+FDAT_ACT=Fhome
+BAS(#PTP_PARAMS,15)
+PTP Xhome 
+;ENDFOLD
+
+
+
+END

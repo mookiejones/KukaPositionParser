@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name13001">
+      <text xml:lang="de-DEV">Zeitsynchronisation</text>
+      <text xml:lang="en-DEV">Time synchronization</text>
+    </uiText>
+    <uiText key="Diagnose_Description13001">
+      <text xml:lang="de-DEV">Modul für die Zeitsynchronisation.</text>
+      <text xml:lang="en-DEV">Module for time synchronization.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13002">
+      <text xml:lang="de-DEV">PTP-Status</text>
+      <text xml:lang="en-DEV">PTP-state</text>
+    </uiText>
+    <uiText key="Diagnose_Description13002">
+      <text xml:lang="de-DEV">Aktueller Zustand der PTP-Zustandsmaschine.</text>
+      <text xml:lang="en-DEV">Current state of the ptp state machine.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13003">
+      <text xml:lang="de-DEV">Delta</text>
+      <text xml:lang="en-DEV">Delta</text>
+    </uiText>
+    <uiText key="Diagnose_Description13003">
+      <text xml:lang="de-DEV">Momentane Differenz zwischen Zeitmaster und Slave.</text>
+      <text xml:lang="en-DEV">Current difference between time master and slave.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13004">
+      <text xml:lang="de-DEV">Statischer Offset</text>
+      <text xml:lang="en-DEV">Static offset</text>
+    </uiText>
+    <uiText key="Diagnose_Description13004">
+      <text xml:lang="de-DEV">Fester offset zwischen Zeitmaster und Slave.</text>
+      <text xml:lang="en-DEV">Static offset between time master and slave.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13006">
+      <text xml:lang="de-DEV">Lokale EtherCAT-Zeit</text>
+      <text xml:lang="en-DEV">Local time</text>
+    </uiText>
+    <uiText key="Diagnose_Description13006">
+      <text xml:lang="de-DEV">Momentane EtherCAT-Zeit.</text>
+      <text xml:lang="en-DEV">Actual time on EtherCAT-bus.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13007">
+      <text xml:lang="de-DEV">Zeit des Masters</text>
+      <text xml:lang="en-DEV">Reference time</text>
+    </uiText>
+    <uiText key="Diagnose_Description13007">
+      <text xml:lang="de-DEV">Soll-Zeit des Zeitmasters.</text>
+      <text xml:lang="en-DEV">Reference time from time master.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13009">
+      <text xml:lang="de-DEV">Konfiguration</text>
+      <text xml:lang="en-DEV">Configuration</text>
+    </uiText>
+    <uiText key="Diagnose_Description13009">
+      <text xml:lang="de-DEV">Zeigt an, ob als Master oder Slave konfiguriert.</text>
+      <text xml:lang="en-DEV">Indicates if configured as master or slave.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13010">
+      <text xml:lang="de-DEV">Zeitdifferenz</text>
+      <text xml:lang="en-DEV">Time difference</text>
+    </uiText>
+    <uiText key="Diagnose_Description13010">
+      <text xml:lang="de-DEV">Differenz zwischen IST- und SOLL-Zeit.</text>
+      <text xml:lang="en-DEV">Difference between actual and reference time.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13011">
+      <text xml:lang="de-DEV">Verbindungsabbrüche</text>
+      <text xml:lang="en-DEV">Connection losses</text>
+    </uiText>
+    <uiText key="Diagnose_Description13011">
+      <text xml:lang="de-DEV">Anzahl der Verbindungsabbrüche zum Zeitmaster.</text>
+      <text xml:lang="en-DEV">Number of connection losses between time master and slave.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13012">
+      <text xml:lang="de-DEV">Out-of-Sync Fehler</text>
+      <text xml:lang="en-DEV">Out of sync errors</text>
+    </uiText>
+    <uiText key="Diagnose_Description13012">
+      <text xml:lang="de-DEV">Anzahl der Out-of-Sync Fehler.</text>
+      <text xml:lang="en-DEV">Number of out of sync errors.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13013">
+      <text xml:lang="de-DEV">Sync-Status</text>
+      <text xml:lang="en-DEV">Sync state</text>
+    </uiText>
+    <uiText key="Diagnose_Description13013">
+      <text xml:lang="de-DEV">Sync-Status des Moduls.</text>
+      <text xml:lang="en-DEV">Sync state of the module.</text>
+    </uiText>
+    <uiText key="Diagnose_Name13014">
+      <text xml:lang="de-DEV">CIB-Verbindungsfehler</text>
+      <text xml:lang="en-DEV">CIB-connection error</text>
+    </uiText>
+    <uiText key="Diagnose_Description13014">
+      <text xml:lang="de-DEV">Wenn true, ist momentan keine Regelung möglich, da die Verbindung zum CIB abgebrochen ist.</text>
+      <text xml:lang="en-DEV">If true, synchronization currently not possible due to a CIB connection error.</text>
+    </uiText>
+  </module>
+</resources>

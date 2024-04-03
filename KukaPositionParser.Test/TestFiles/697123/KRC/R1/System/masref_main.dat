@@ -1,0 +1,33 @@
+&ACCESS RVP2
+&REL 1
+&COMMENT Mastering Reference Main Task
+&PARAM EDITMASK = *
+&PARAM DISKPATH = KRC:\R1\Program\System
+DEFDAT  MasRef_Main
+
+
+  ;************************************************
+  ;* Description: MASREF_MAIN                     * 
+  ;*                                              *
+  ;*                                              *
+  ;*                                              *
+  ;************************************************
+  ;*    Software: KSS 8.2, 8.3       V7K R30      *
+  ;************************************************
+  ;*    Modified: D. McMillan                     *
+  ;*        Date: 2016.02.05                      *
+  ;*     Version: 01.00.00                        *
+  ;************************************************
+  
+;FOLD EXTERNAL DECLARATIONS;%{PE}%MKUKATPBASIS,%CEXT,%VCOMMON,%P
+;FOLD BASISTECH EXT;%{PE}%MKUKATPBASIS,%CEXT,%VEXT,%P
+  EXT  BAS (BAS_COMMAND  :IN,REAL  :IN )
+;ENDFOLD (BASISTECH EXT)
+;FOLD USER EXT;%{E}%MKUKATPUSER,%CEXT,%VEXT,%P
+;ENDFOLD (USER EXT)
+;ENDFOLD (EXTERNAL DECLERATIONS)
+INT nLapsedTime
+INT nLapsedTimeout=30
+INT PerformMasterReference=200; index for $flag to trigger mastering reference
+
+ENDDAT

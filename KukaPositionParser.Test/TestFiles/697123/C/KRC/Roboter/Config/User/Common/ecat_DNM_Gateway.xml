@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECat_DNM_Gateway xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/ecat_DNM_Gateway.xsd">
+  <Version Label="">
+		<Info Version="KRC V8.2"/>
+		<Schema Version="100"/>
+  </Version>
+  <SYS-X44_DN-Master1>
+    <OptionalDNSlaveList>
+      <!--
+        <Slave MacId="4"/>
+        <Slave MacId="7"/>
+      -->
+    </OptionalDNSlaveList>
+  </SYS-X44_DN-Master1>
+</ECat_DNM_Gateway>

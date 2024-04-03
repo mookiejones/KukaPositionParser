@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="zh" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="KukaRoboterXPArcTechAdvanced">
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnTheFly">
+      <text>流畅地接通或关断</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisablesSlope">
+      <text>在线优化时的行为</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoWeldingMasterFound">
+      <text>未找到任何主焊机！</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeActive">
+      <text>斜坡已激活</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeDisabled">
+      <text>斜坡已禁用</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptionIdentifier">
+      <text>ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAoXUSeamNumber">
+      <text>至 PLC 的接缝编号输出</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorStart">
+      <text>生成 ArcTechAdvanced 的代码</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayRight">
+      <text>右侧摆动延迟</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransferDisabledForArcLinkXXT">
+      <text>机器人的速度传递已对 ArcLinkXT 电源禁用。</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisabled">
+      <text>在线优化已禁用</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessTrans">
+      <text>过程速度输出</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldClearance">
+      <text>通过 PLC 开通焊缝许可</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessFactor">
+      <text>过程速度系数</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingTest">
+      <text>测试</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityUnit">
+      <text>电源的速度单位</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlope">
+      <text>斜坡</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptions">
+      <text>ArcTech Advanced 选项</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSignalAreaForPowerSource">
+      <text>机器人的信号范围</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAiXUSeamNumber">
+      <text>PLC 的焊缝编号输入</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingMaster">
+      <text>主焊机</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMUnitAreaForPowerSource">
+      <text>电源的数值范围</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorFinished">
+      <text>已结束生成 ArcTechAdvanced 的代码</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMMissingWeldMaster">
+      <text>未找到任何主焊机</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedSlopeOptions">
+      <text>ArcTechAdvanced 斜坡设置</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoErrorUntilSeamEndActive">
+      <text>在焊缝末端时才执行故障策略</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayLeft">
+      <text>左侧摆动延迟</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelay">
+      <text>摆动延迟</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransfer">
+      <text>机器人速度传输</text>
+    </uiText>
+  </module>
+</resources>

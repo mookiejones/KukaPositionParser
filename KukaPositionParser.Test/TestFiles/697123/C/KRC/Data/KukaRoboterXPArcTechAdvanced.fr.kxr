@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="fr" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="KukaRoboterXPArcTechAdvanced">
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnTheFly">
+      <text>Activation ou désactivation "OnTheFly"</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisablesSlope">
+      <text>Comportement avec l'optimisation en ligne</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoWeldingMasterFound">
+      <text>Aucun Maître de soudage n’a été trouvé !</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeActive">
+      <text>Rampes actives</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeDisabled">
+      <text>Rampes désactivées</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptionIdentifier">
+      <text>ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAoXUSeamNumber">
+      <text>Numéro de cordon, sortie vers l'API</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorStart">
+      <text>Génération d'un code pour ArcTechAdvanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayRight">
+      <text>Temporisation de balayage à droite</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransferDisabledForArcLinkXXT">
+      <text>Le transfert de vitesse du robot est désactivé pour les sources de courant ArcLinkXT.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisabled">
+      <text>Optimisation en ligne désactivée</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessTrans">
+      <text>Transmission de la vitesse de processus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldClearance">
+      <text>Autorisation de cordon avec API</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessFactor">
+      <text>Facteur pour la vitesse de processus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingTest">
+      <text>Test</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityUnit">
+      <text>Unité de vitesse de la source de courant</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlope">
+      <text>Rampes</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptions">
+      <text>Options ArcTech Advanced</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSignalAreaForPowerSource">
+      <text>Zone de signal du robot</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAiXUSeamNumber">
+      <text>Numéro de cordon, entrée de l'API</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingMaster">
+      <text>Maître de soudage</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMUnitAreaForPowerSource">
+      <text>Plage de valeurs de la source de courant</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorFinished">
+      <text>Génération de code pour ArcTechAdvanced terminée</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMMissingWeldMaster">
+      <text>Aucun Maître de soudage trouvé</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedSlopeOptions">
+      <text>ArcTechAdvanced, réglages des rampes</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoErrorUntilSeamEndActive">
+      <text>Exécuter la stratégie de défaut à la fin du cordon uniquement</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayLeft">
+      <text>Temporisation de balayage à gauche</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelay">
+      <text>Balayage avec temporisation</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransfer">
+      <text>Transfert de vitesse du robot</text>
+    </uiText>
+  </module>
+</resources>

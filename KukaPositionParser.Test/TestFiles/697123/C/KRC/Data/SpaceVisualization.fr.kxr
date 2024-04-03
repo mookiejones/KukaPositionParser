@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="fr" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="SpaceVisualization">
+    <uiText key="Caption">
+      <text>Visualisation de l'espace</text>
+    </uiText>
+    <uiText key="MenuLabel">
+      <text>Visualisation de l'espace</text>
+    </uiText>
+    <uiText key="StartUpDialog">
+      <text>1. L'utilisation de ce plugin ne remplace par les tests des fonctions de sécurité conformément à la liste de contrôle de la vérification de sécurité.
+2. Il faut toujours observer directement la machine lors de son déplacement dans les modes de test afin d'éviter toute collision.</text>
+    </uiText>
+    <uiText key="AttentionOverlay">
+      <text>N'utiliser les surveillances sûres qu'après les tests de vérification de sécurité !
+Toujours observer directement la machine lors de son déplacement dans les modes de test !</text>
+    </uiText>
+    <uiText key="Configured">
+      <text>Tous les espaces</text>
+    </uiText>
+    <uiText key="AllActive">
+      <text>Espaces actifs</text>
+    </uiText>
+    <uiText key="ActiveStopping">
+      <text>Espaces stoppants</text>
+    </uiText>
+    <uiText key="ActiveStoppingViolated">
+      <text>Espaces stoppants violés</text>
+    </uiText>
+    <uiText key="AllNonStopping">
+      <text>Tous les espaces de messages</text>
+    </uiText>
+    <uiText key="AllActiveNonStopping">
+      <text>Espaces de messages actifs</text>
+    </uiText>
+    <uiText key="ZoomIn">
+      <text>Zoom +</text>
+    </uiText>
+    <uiText key="ZoomOut">
+      <text>Zoom -</text>
+    </uiText>
+    <uiText key="ShowCell">
+      <text>Paroi de cellule</text>
+    </uiText>
+    <uiText key="Reset">
+      <text>Réinitialiser la caméra</text>
+    </uiText>
+    <uiText key="SpaceNumber">
+      <text>Index</text>
+    </uiText>
+    <uiText key="SpaceIndex">
+      <text>Index d'espace</text>
+    </uiText>
+    <uiText key="SpaceFilter">
+      <text>Filtre</text>
+    </uiText>
+    <uiText key="Tab1Control">
+      <text>Vue du contrôleur</text>
+    </uiText>
+    <uiText key="SelectedObject">
+      <text>Objet sélectionné</text>
+    </uiText>
+    <uiText key="AllSpaces">
+      <text>Tous les espaces</text>
+    </uiText>
+    <uiText key="SpaceName">
+      <text>Nom</text>
+    </uiText>
+    <uiText key="SpaceVelocityMonitored">
+      <text>V surveillé</text>
+    </uiText>
+    <uiText key="Cartesian">
+      <text>Espaces cartésiens</text>
+    </uiText>
+    <uiText key="Axis">
+      <text>Axes</text>
+    </uiText>
+    <uiText key="Both">
+      <text>Tous les espaces</text>
+    </uiText>
+    <uiText key="View3D">
+      <text>Vue en 3D</text>
+    </uiText>
+    <uiText key="ViewAxes">
+      <text>Vue des axes</text>
+    </uiText>
+    <uiText key="AxisType">
+      <text>Type d'axe</text>
+    </uiText>
+    <uiText key="Internal">
+      <text>interne</text>
+    </uiText>
+    <uiText key="External">
+      <text>Axes externes.</text>
+    </uiText>
+    <uiText key="AxisSpaceIndex">
+      <text>Index de surveillance d'espace</text>
+    </uiText>
+    <uiText key="DiagVariables">
+      <text>Variables de diagnostic</text>
+    </uiText>
+    <uiText key="SR_AXISSPEED_OK">
+      <text>Vitesse d'axe</text>
+    </uiText>
+    <uiText key="Type">
+      <text>Type</text>
+    </uiText>
+    <uiText key="Activation">
+      <text>Activation</text>
+    </uiText>
+    <uiText key="Stop">
+      <text>Arrêter en cas de violation d'espace</text>
+    </uiText>
+    <uiText key="StopRef">
+      <text>Arrêt sans référencement</text>
+    </uiText>
+    <uiText key="VmaxValid">
+      <text>Vmax valable quand</text>
+    </uiText>
+    <uiText key="Vmax">
+      <text>Vmax</text>
+    </uiText>
+    <uiText key="RefSystem">
+      <text>Système de référence</text>
+    </uiText>
+    <uiText key="WorkingSpace">
+      <text>Enveloppe d'évolution</text>
+    </uiText>
+    <uiText key="ProtectedSpace">
+      <text>Zone de protection</text>
+    </uiText>
+    <uiText key="AlwaysOff">
+      <text>désactivé</text>
+    </uiText>
+    <uiText key="AlwaysOn">
+      <text>toujours actif</text>
+    </uiText>
+    <uiText key="ByInput">
+      <text>via entrée</text>
+    </uiText>
+    <uiText key="true">
+      <text>Oui</text>
+    </uiText>
+    <uiText key="false">
+      <text>Non</text>
+    </uiText>
+    <uiText key="Velocity">
+      <text>Vitesse {0}</text>
+    </uiText>
+    <uiText key="World">
+      <text>$WORLD</text>
+    </uiText>
+    <uiText key="RobRoot">
+      <text>$ROBROOT</text>
+    </uiText>
+    <uiText key="MergedSpace">
+      <text>Tous les espaces</text>
+    </uiText>
+    <uiText key="RobotAxis">
+      <text>Robot axe {0}</text>
+    </uiText>
+    <uiText key="LinearAxis">
+      <text>Axe linéaire {0}</text>
+    </uiText>
+    <uiText key="Sphere">
+      <text>Sphère {0}</text>
+    </uiText>
+    <uiText key="XText">
+      <text>Distance cartésienne en X dans $Flange {0}</text>
+    </uiText>
+    <uiText key="YText">
+      <text>Distance cartésienne en Y dans $Flange {0}</text>
+    </uiText>
+    <uiText key="ZText">
+      <text>Distance cartésienne en Z dans $Flange {0}</text>
+    </uiText>
+    <uiText key="ToolNumber">
+      <text>Numéro d'outil</text>
+    </uiText>
+    <uiText key="SphereNumber">
+      <text>Numéro de la sphère</text>
+    </uiText>
+    <uiText key="X">
+      <text>X</text>
+    </uiText>
+    <uiText key="Y">
+      <text>Y</text>
+    </uiText>
+    <uiText key="Z">
+      <text>Z</text>
+    </uiText>
+    <uiText key="Radius">
+      <text>Rayon</text>
+    </uiText>
+    <uiText key="CurrentPosition">
+      <text>Position réelle</text>
+    </uiText>
+    <uiText key="Softwareendschalter">
+      <text>Butée logicielle</text>
+    </uiText>
+    <uiText key="VRED">
+      <text>Activation VRED</text>
+    </uiText>
+    <uiText key="RedAxisVActive">
+      <text>Vitesse réduite d'axe activée</text>
+    </uiText>
+    <uiText key="RedAxisV">
+      <text>Vitesse réduite d'axe</text>
+    </uiText>
+    <uiText key="PlaceHolder">
+      <text>{0}</text>
+    </uiText>
+    <uiText key="NotUsed">
+      <text>désactivé</text>
+    </uiText>
+    <uiText key="SpaceNotViolated">
+      <text>pas de violation</text>
+    </uiText>
+    <uiText key="SpaceViolated">
+      <text>violation</text>
+    </uiText>
+    <uiText key="NameGrid">
+      <text>Nom</text>
+    </uiText>
+    <uiText key="ValueGrid">
+      <text>Valeur</text>
+    </uiText>
+    <uiText key="StateGrid">
+      <text>Etat</text>
+    </uiText>
+    <uiText key="RobotMoving">
+      <text>Déplacement du robot possible !</text>
+    </uiText>
+    <uiText key="MadaIncompatible">
+      <text>Le robot ne peut pas être représenté - les paramètres machine ne sont pas compatibles.</text>
+    </uiText>
+  </module>
+</resources>

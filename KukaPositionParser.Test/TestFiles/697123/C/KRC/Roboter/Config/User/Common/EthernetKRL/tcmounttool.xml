@@ -1,0 +1,50 @@
+<!--****************************************-->
+<!-- Description:  EKI Parameters for       -->
+<!--               Mount Tool from TC       -->
+<!--               Command channel to V7K   -->
+<!--****************************************-->
+<!--  Software:  KSS 8.2, 8.3               -->
+<!--****************************************-->
+<!--  Modified:  D McMillan                 -->
+<!--      Date:  2016.02.05                 -->
+<!--   Version:  01.00.00                   -->
+<!--****************************************-->
+<ETHERNETKRL>
+	<CONFIGURATION>
+		<EXTERNAL>
+			<IP>172.20.5.71</IP>
+			<PORT>59152</PORT>
+		</EXTERNAL>
+		<INTERNAL>
+			<ENVIRONMENT>Program</ENVIRONMENT>
+			<BUFFERING Mode="FIFO" Limit="16"/>
+			<TIMEOUT Connect="5000"/>
+			<ALIVE Set_Flag="1"/>
+			<PROTOCOL>TCP</PROTOCOL>
+			<MESSAGES Logging="error" Display="disabled"/>
+		</INTERNAL>
+	</CONFIGURATION>
+	<RECEIVE>
+		<XML>
+			<ELEMENT Tag="Server/@Recipient" Type="STRING"/>
+			<ELEMENT Tag="Server/@Sender" Type="STRING"/>
+			<ELEMENT Tag="Server/Command/@Handle" Type="INT"/>
+			<ELEMENT Tag="Server/Command/@Name" Type="STRING"/>
+			<ELEMENT Tag="Server/Command/Status/@Message" Type="STRING"/>
+			<ELEMENT Tag="Server/Command/Status/@Code" Type="INT"/>			
+			<ELEMENT Tag="Server" Set_Flag="19"/>
+	  </XML>
+	</RECEIVE>
+	<SEND>
+		<XML>
+			<ELEMENT Tag="Host/@Recipient"/>
+			<ELEMENT Tag="Host/@Sender"/>
+			<ELEMENT Tag="Host/Command/@Handle"/>
+			<ELEMENT Tag="Host/Command/@Name"/>	
+            <ELEMENT Tag="Host/Command/Parameters/Param1/@Name"/>
+			<ELEMENT Tag="Host/Command/Parameters/Param1/@Value"/>
+			<ELEMENT Tag="Host/Command/Parameters/Param1/@Type"/>
+		</XML>
+	</SEND>
+</ETHERNETKRL>	  
+	  

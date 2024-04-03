@@ -1,0 +1,41 @@
+&ACCESS R
+&REL 1
+&COMMENT TeslaCore Group IO
+DEFDAT  TeslaGroupIO PUBLIC
+; **************************************
+; * Package:     TeslaCore             *
+; * Release      V5.0.0                *
+; * File:        TeslaGroupIO.dat      *
+; * Date:        04.2019               *
+; * GUI Version: > = V8.3              *
+; **************************************
+DECL GLOBAL INT nGroupIOMax=64 ; Machine maximum is 64
+GLOBAL SIGNAL siProgramNr $IN[9] TO $IN[16]
+GLOBAL SIGNAL gi1HandShake $IN[49] to $IN[56]
+DECL GLOBAL INT nHandShakeEcho=1
+GLOBAL SIGNAL gi2Override $IN[57] to $IN[64]
+DECL GLOBAL INT nNewSpeed=2
+GLOBAL SIGNAL gi3TaskNr $IN[65] to $IN[72]
+DECL GLOBAL INT nTaskNr=3
+GLOBAL SIGNAL gi11DecCode $IN[481] to $IN[488]
+DECL GLOBAL INT nDecisionCode=11
+
+
+GLOBAL SIGNAL soProgramMirrorNr $OUT[9] TO $OUT[16]
+GLOBAL SIGNAL go1HandShake $OUT[49] to $OUT[56]
+DECL GLOBAL INT nHandShakeNr=1
+GLOBAL SIGNAL go2Override $OUT[57] to $OUT[64]
+DECL GLOBAL INT nOverrideSpeed=2
+GLOBAL SIGNAL go3TaskEcho $OUT[65] to $OUT[72]
+DECL GLOBAL INT nTaskEcho=3
+GLOBAL SIGNAL go4Facility $OUT[121] to $OUT[128]
+DECL GLOBAL INT nFacilityAlarm=4
+GLOBAL SIGNAL go5Error $OUT[129] to $OUT[144]
+DECL GLOBAL INT nErrorCode=5
+GLOBAL SIGNAL go6UserFault $OUT[145] to $OUT[160]
+DECL GLOBAL INT nUserFault=6
+GLOBAL SIGNAL go11DecCodeEcho $OUT[481] to $OUT[488]
+DECL GLOBAL INT nDecisionCodeEcho=11
+
+
+ENDDAT

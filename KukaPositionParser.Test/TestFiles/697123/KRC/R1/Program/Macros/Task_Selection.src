@@ -1,0 +1,31 @@
+&ACCESS RVO1
+&PARAM EDITMASK = *
+DEFFCT INT Task_Selection(bType:IN )
+   int bType
+   int nType
+   
+   If($MODE_OP==#T1) or ($MODE_OP==#T2) THEN
+      IF(VARSTATE("bType")<>#INITIALIZED) THEN
+         bType = -1
+      ENDIF
+      WHILE ((bType < 0) or (bType > 3))
+         WAIT SEC 0.024
+      ENDWHILE
+      $B_OUT[nTaskNr] = bType
+      RETURN bType
+   ELSE
+      ;FOLD TASK SELECTION
+         $B_OUT[nTaskNr]=0
+         ;WAIT FOR VALID TASK NUMBER FROM PLC
+         WHILE (($B_IN[nTaskNr] < 1) or ($B_IN[nTaskNr] > 4))
+            WAIT SEC 0.024
+         ENDWHILE
+         ;ASSIGN RACK FUNCTIONS
+         nType = $B_IN[nTaskNr]
+         ;ECHO BACK TO PLC
+         $B_OUT[nTaskNr] = nType
+         RETURN nType
+      ;ENDFOLD
+   ENDIF
+   
+ENDFCT

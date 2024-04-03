@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ECat_PBM_Gateway xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/ecat_PBM_Gateway.xsd">
+	<Version Label="">
+		<Info Version="KUKA V8.3"/>
+		<Schema Version="100"/>
+	</Version>
+  <SYS-X44_PB-Master1>
+    <OptionalPBSlaveList>
+      <!--
+        <Slave StationAddr="4"/>
+        <Slave StationAddr="7"/>
+      -->
+    </OptionalPBSlaveList>
+    <Options ActivateADS="false" />
+  </SYS-X44_PB-Master1>
+</ECat_PBM_Gateway>

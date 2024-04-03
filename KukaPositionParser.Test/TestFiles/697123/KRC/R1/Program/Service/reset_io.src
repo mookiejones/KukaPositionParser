@@ -1,0 +1,114 @@
+&ACCESS RVO1
+&REL 3
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF Reset_IO( )
+;FOLD INI;%{PE}
+  ;FOLD USER INI
+    ;Make your modifications here
+
+  ;ENDFOLD (USER INI)
+;ENDFOLD (INI)
+
+RSI_ACTIVE=FALSE
+IF ($IN_HOME == TRUE) THEN
+
+;FOLD TeslaCore ResetIO - Do Not Modify
+WAIT FOR TRUE
+;FOLD Miscellaneous 
+ doRobotInProcess=FALSE
+ doDialogPending=FALSE
+ bInternalWait=FALSE
+ doWaitingOnInput=FALSE
+;ENDFOLD (Miscellaneous )
+;FOLD Handshake
+ $B_OUT[nHandShakeNr]=0
+;ENDFOLD (Handshake)
+;FOLD Reset Task Echo
+ $B_OUT[nTaskEcho]=0
+;ENDFOLD (Reset Task Echo)
+;FOLD CLEAR FIXTURE
+ doClearOfFixture1=TRUE
+ doClearOfFixture2=TRUE
+ doClearOfFixture3=TRUE
+ doClearOfFixture4=TRUE
+ doClearOfFixture5=TRUE
+ doClearOfFixture6=TRUE
+ doClearOfFixture7=TRUE
+ doClearOfFixture8=TRUE
+ doClearOfFixture9=TRUE
+ doClearOfFixture10=TRUE
+;ENDFOLD (CLEAR FIXTURE)
+;FOLD CLEAR TO UNCLAMP EARLY
+ doUnclampEarly1=TRUE
+ doUnclampEarly2=TRUE
+ doUnclampEarly3=TRUE
+ doUnclampEarly4=TRUE
+ doUnclampEarly5=TRUE
+ doUnclampEarly6=TRUE
+;ENDFOLD (CLEAR TO UNCLAMP EARLY)
+;FOLD REQUEST TO ENTER ZONE
+ doRequestToEnterZone1=FALSE
+ doRequestToEnterZone2=FALSE
+ doRequestToEnterZone3=FALSE
+ doRequestToEnterZone4=FALSE
+ doRequestToEnterZone5=FALSE
+ doRequestToEnterZone6=FALSE
+ doRequestToEnterZone7=FALSE
+ doRequestToEnterZone8=FALSE
+ doRequestToEnterZone9=FALSE
+ doRequestToEnterZone10=FALSE
+ doRequestToEnterZone11=FALSE
+ doRequestToEnterZone12=FALSE
+ doRequestToEnterZone13=FALSE
+ doRequestToEnterZone14=FALSE
+ doRequestToEnterZone15=FALSE
+ doRequestToEnterZone16=FALSE
+;ENDFOLD (REQUEST TO ENTER ZONE)
+;FOLD COLLISION ZONE CLEAR
+ doClrOfZone1=TRUE
+ doClrOfZone2=TRUE
+ doClrOfZone3=TRUE
+ doClrOfZone4=TRUE
+ doClrOfZone5=TRUE
+ doClrOfZone6=TRUE
+ doClrOfZone7=TRUE
+ doClrOfZone8=TRUE
+ doClrOfZone9=TRUE
+ doClrOfZone10=TRUE
+ doClrOfZone11=TRUE
+ doClrOfZone12=TRUE
+ doClrOfZone13=TRUE
+ doClrOfZone14=TRUE
+ doClrOfZone15=TRUE
+ doClrOfZone16=TRUE
+;ENDFOLD (COLLISION ZONE CLEAR)
+;FOLD Process Complete
+ doProcessCmplt1=FALSE
+ doProcessCmplt2=FALSE
+ doProcessCmplt3=FALSE
+ doProcessCmplt4=FALSE
+ doProcessCmplt5=FALSE
+ doProcessCmplt6=FALSE
+ doProcessCmplt7=FALSE
+ doProcessCmplt8=FALSE
+;ENDFOLD (Process Complete)
+;FOLD ALARM FACILITY CODE
+ $B_OUT[nFacilityAlarm]=0
+;ENDFOLD (ALARM FACILITY CODE)
+;FOLD ERROR CODE NUMBER
+$B_OUT[nErrorCode]=0
+;ENDFOLD (ERROR CODE NUMBER)
+;FOLD USER FAULT CODE
+$B_OUT[nUserFault]=0
+;ENDFOLD (USER FAULT CODE)
+;FOLD Decision Code Echo
+$B_OUT[nDecisionCodeEcho]=0
+;ENDFOLD (Decision Code Echo)
+;FOLD TESLACORE VARIABLES
+bln_RepLoc=FALSE
+;ENDFOLD (TESLACORE VARIABLES)
+;ENDFOLD (TeslaCore ResetIO)
+ENDIF
+
+END

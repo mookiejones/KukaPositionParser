@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="KukaRoboterXPArcTechAdvanced">
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnTheFly">
+         <text xml:lang="en-DEV">Turn on the fly on or off</text>
+         <text xml:lang="de-DEV">Fliegend ein- oder ausschalten</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisablesSlope">
+         <text xml:lang="en-DEV">Behaviour for OnlineOptimization</text>
+         <text xml:lang="de-DEV">Verhalten bei OnlineOptimierung</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoWeldingMasterFound">
+         <text xml:lang="en-DEV">No welding master found!</text>
+         <text xml:lang="de-DEV">Es wurde kein Schweißmaster gefunden!</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeActive">
+         <text xml:lang="en-DEV">Slope active</text>
+         <text xml:lang="de-DEV">Rampen aktiv</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlopeDisabled">
+         <text xml:lang="en-DEV">Slope disabled</text>
+         <text xml:lang="de-DEV">Rampen deaktiviert</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptionIdentifier">
+         <text xml:lang="en-DEV">ArcTechAdvanced</text>
+         <text xml:lang="de-DEV">ArcTechAdvanced</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAoXUSeamNumber">
+         <text xml:lang="en-DEV">SeamNumber Output to SPS</text>
+         <text xml:lang="de-DEV">Nahtnummer Output zur SPS </text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorStart">
+         <text xml:lang="en-DEV">Generating code for ArcTechAdvanced</text>
+         <text xml:lang="de-DEV">Generiere code für ArcTechAdvanced</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayRight">
+         <text xml:lang="en-DEV">Weave delay right</text>
+         <text xml:lang="de-DEV">Pendelverzögerung rechts</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransferDisabledForArcLinkXXT">
+         <text xml:lang="en-DEV">Velocity Transfer is disabled for ArcLinkXT power sources.</text>
+         <text xml:lang="de-DEV">Robotergeschwindigkeitstransfer ist für ArcLinkXT Stromquellen deaktiviert.</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMOnlineOptimizationDisabled">
+         <text xml:lang="en-DEV">OnlineOpt. disabled</text>
+         <text xml:lang="de-DEV">OnlineOpt. deaktiviert</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessTrans">
+         <text xml:lang="en-DEV">Transfer process velocity</text>
+         <text xml:lang="de-DEV">Ausgabe Prozeßgeschwindigkeit</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldClearance">
+         <text xml:lang="en-DEV">Weld clearance via SPS</text>
+         <text xml:lang="de-DEV">Nahtfreigabe über SPS</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelProcessFactor">
+         <text xml:lang="en-DEV">Factor for the process velocity</text>
+         <text xml:lang="de-DEV">Faktor für die Prozeßgeschwindigkeit</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingTest">
+         <text xml:lang="en-DEV">Test</text>
+         <text xml:lang="de-DEV">Test</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityUnit">
+         <text xml:lang="en-DEV">Velocity unit for power source</text>
+         <text xml:lang="de-DEV">Geschw. Einheit der Stromquelle</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSlope">
+         <text xml:lang="en-DEV">Slope</text>
+         <text xml:lang="de-DEV">Rampen</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedOptions">
+         <text xml:lang="en-DEV">ArcTech Advanced Options</text>
+         <text xml:lang="de-DEV">ArcTech Advanced Optionen</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMSignalAreaForPowerSource">
+         <text xml:lang="en-DEV">Signal range of robot</text>
+         <text xml:lang="de-DEV">Signalbereich des Roboters</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMATAiXUSeamNumber">
+         <text xml:lang="en-DEV">SeamNumber Input from SPS</text>
+         <text xml:lang="de-DEV">Nahtnummer Input von SPS</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeldingMaster">
+         <text xml:lang="en-DEV">Welding Master</text>
+         <text xml:lang="de-DEV">Schweißmaster</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMUnitAreaForPowerSource">
+         <text xml:lang="en-DEV">Velocity range for power source</text>
+         <text xml:lang="de-DEV">Wertebereich der Stromquelle</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMAtaCodeGeneratorFinished">
+         <text xml:lang="en-DEV">Codegeneration for ArcTechAdvanced finished</text>
+         <text xml:lang="de-DEV">Codegenerierung für ArcTechAdvanced abgeschlossen</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMMissingWeldMaster">
+         <text xml:lang="en-DEV">Missing WeldMaster</text>
+         <text xml:lang="de-DEV">Kein Schweißmaster gefunden</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMArcTechAdvancedSlopeOptions">
+         <text xml:lang="en-DEV">ArcTechAdvanced Slope Options</text>
+         <text xml:lang="de-DEV">ArcTechAdvanced Rampeneinstellungen</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMNoErrorUntilSeamEndActive">
+         <text xml:lang="en-DEV">No error reaction until seam end</text>
+         <text xml:lang="de-DEV">Fehlerstrategie erst am Ende der Naht ausführen</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelayLeft">
+         <text xml:lang="en-DEV">Weave delay left</text>
+         <text xml:lang="de-DEV">Pendelverzögerung links</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMWeaveDelay">
+         <text xml:lang="en-DEV">Weave Delay</text>
+         <text xml:lang="de-DEV">Verzögertes Pendeln</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechAdvancedXPPropertiesXPResourcesXMVelocityTransfer">
+         <text xml:lang="en-DEV">Velocity Transfer</text>
+         <text xml:lang="de-DEV">Robotergeschwindigkeitstransfer</text>
+      </uiText>
+   </module>
+</resources>

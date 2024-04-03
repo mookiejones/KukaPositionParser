@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="CrossMeld">
+      <uiText key="No">
+         <text xml:lang="de-DEV">Nein</text>
+         <text xml:lang="en-DEV">No</text>
+      </uiText>
+      <uiText key="P_0">
+         <text xml:lang="de-DEV">A1</text>
+         <text xml:lang="en-DEV">A1</text>
+      </uiText>
+      <uiText key="P_1">
+         <text xml:lang="de-DEV">A2</text>
+         <text xml:lang="en-DEV">A2</text>
+      </uiText>
+      <uiText key="P_2">
+         <text xml:lang="de-DEV">A3</text>
+         <text xml:lang="en-DEV">A3</text>
+      </uiText>
+      <uiText key="P_3">
+         <text xml:lang="de-DEV">A4</text>
+         <text xml:lang="en-DEV">A4</text>
+      </uiText>
+      <uiText key="P_4">
+         <text xml:lang="de-DEV">A5</text>
+         <text xml:lang="en-DEV">A5</text>
+      </uiText>
+      <uiText key="P_5">
+         <text xml:lang="de-DEV">A6</text>
+         <text xml:lang="en-DEV">A6</text>
+      </uiText>
+      <uiText key="P_6">
+         <text xml:lang="de-DEV">E1</text>
+         <text xml:lang="en-DEV">E1</text>
+      </uiText>
+      <uiText key="P_7">
+         <text xml:lang="de-DEV">E2</text>
+         <text xml:lang="en-DEV">E2</text>
+      </uiText>
+      <uiText key="P_8">
+         <text xml:lang="de-DEV">E3</text>
+         <text xml:lang="en-DEV">E3</text>
+      </uiText>
+      <uiText key="P_9">
+         <text xml:lang="de-DEV">E4</text>
+         <text xml:lang="en-DEV">E4</text>
+      </uiText>
+      <uiText key="P_10">
+         <text xml:lang="de-DEV">E5</text>
+         <text xml:lang="en-DEV">E5</text>
+      </uiText>
+      <uiText key="P_11">
+         <text xml:lang="de-DEV">E6</text>
+         <text xml:lang="en-DEV">E6</text>
+      </uiText>
+      <uiText key="P_12">
+         <text xml:lang="de-DEV">+</text>
+         <text xml:lang="en-DEV">+</text>
+      </uiText>
+      <uiText key="P_13">
+         <text xml:lang="de-DEV">-</text>
+         <text xml:lang="en-DEV">-</text>
+      </uiText>
+      <uiText key="P_14">
+         <text xml:lang="de-DEV">KS</text>
+         <text xml:lang="en-DEV">KS</text>
+      </uiText>
+      <uiText key="P_15">
+         <text xml:lang="de-DEV"> </text>
+         <text xml:lang="en-DEV"> </text>
+      </uiText>
+      <uiText key="P_16">
+         <text xml:lang="de-DEV">/R1</text>
+         <text xml:lang="en-DEV">/R1</text>
+      </uiText>
+      <uiText key="P_17">
+         <text xml:lang="de-DEV">/R2</text>
+         <text xml:lang="en-DEV">/R2</text>
+      </uiText>
+      <uiText key="P_18">
+         <text xml:lang="de-DEV">ISG_NC</text>
+         <text xml:lang="en-DEV">ISG_NC</text>
+      </uiText>
+      <uiText key="P_19">
+         <text xml:lang="de-DEV">KBE</text>
+         <text xml:lang="en-DEV">CPR</text>
+      </uiText>
+      <uiText key="P_20">
+         <text xml:lang="de-DEV">ROB</text>
+         <text xml:lang="en-DEV">ROB</text>
+      </uiText>
+      <uiText key="P_21">
+         <text xml:lang="de-DEV">SUB</text>
+         <text xml:lang="en-DEV">SUB</text>
+      </uiText>
+      <uiText key="P_22">
+         <text xml:lang="de-DEV">Smartpad</text>
+         <text xml:lang="en-DEV">Smartpad</text>
+      </uiText>
+      <uiText key="P_23">
+         <text xml:lang="de-DEV">RST</text>
+         <text xml:lang="en-DEV">RCP</text>
+      </uiText>
+      <uiText key="P_24">
+         <text xml:lang="de-DEV">APT</text>
+         <text xml:lang="en-DEV">I.CONTR.</text>
+      </uiText>
+      <uiText key="P_25">
+         <text xml:lang="de-DEV">SER1</text>
+         <text xml:lang="en-DEV">SER1</text>
+      </uiText>
+      <uiText key="P_26">
+         <text xml:lang="de-DEV">SER2</text>
+         <text xml:lang="en-DEV">SER2</text>
+      </uiText>
+      <uiText key="P_27">
+         <text xml:lang="de-DEV">L2_CON_1</text>
+         <text xml:lang="en-DEV">L2_CON_1</text>
+      </uiText>
+      <uiText key="P_28">
+         <text xml:lang="de-DEV">L2_CON_2</text>
+         <text xml:lang="en-DEV">L2_CON_2</text>
+      </uiText>
+      <uiText key="P_29">
+         <text xml:lang="de-DEV">L2_CON_3</text>
+         <text xml:lang="en-DEV">L2_CON_3</text>
+      </uiText>
+      <uiText key="P_30">
+         <text xml:lang="de-DEV">L2_CON_4</text>
+         <text xml:lang="en-DEV">L2_CON_4</text>
+      </uiText>
+      <uiText key="P_31">
+         <text xml:lang="de-DEV">L2_CON_5</text>
+         <text xml:lang="en-DEV">L2_CON_5</text>
+      </uiText>
+      <uiText key="P_32">
+         <text xml:lang="de-DEV">L2_CON_6</text>
+         <text xml:lang="en-DEV">L2_CON_6</text>
+      </uiText>
+      <uiText key="P_33">
+         <text xml:lang="de-DEV">L2_CON_7</text>
+         <text xml:lang="en-DEV">L2_CON_7</text>
+      </uiText>
+      <uiText key="P_34">
+         <text xml:lang="de-DEV">L2_CON_8</text>
+         <text xml:lang="en-DEV">L2_CON_8</text>
+      </uiText>
+      <uiText key="P_35">
+         <text xml:lang="de-DEV">H1_CNFS</text>
+         <text xml:lang="en-DEV">H1_CNFS</text>
+      </uiText>
+      <uiText key="P_36">
+         <text xml:lang="de-DEV">H1_CN01</text>
+         <text xml:lang="en-DEV">H1_CNO1</text>
+      </uiText>
+      <uiText key="P_37">
+         <text xml:lang="de-DEV">H1_CN02</text>
+         <text xml:lang="en-DEV">H1_CNO2</text>
+      </uiText>
+      <uiText key="P_38">
+         <text xml:lang="de-DEV">H1_CN03</text>
+         <text xml:lang="en-DEV">H1_CNO3</text>
+      </uiText>
+      <uiText key="P_39">
+         <text xml:lang="de-DEV">H1_CN04</text>
+         <text xml:lang="en-DEV">H1_CNO4</text>
+      </uiText>
+      <uiText key="P_40">
+         <text xml:lang="de-DEV">H1_CN05</text>
+         <text xml:lang="en-DEV">H1_CNO5</text>
+      </uiText>
+      <uiText key="P_41">
+         <text xml:lang="de-DEV">H1_CN06</text>
+         <text xml:lang="en-DEV">H1_CNO6</text>
+      </uiText>
+      <uiText key="P_42">
+         <text xml:lang="de-DEV">H1_CN07</text>
+         <text xml:lang="en-DEV">H1_CNO7</text>
+      </uiText>
+      <uiText key="P_43">
+         <text xml:lang="de-DEV">T1</text>
+         <text xml:lang="en-DEV">T1</text>
+      </uiText>
+      <uiText key="P_44">
+         <text xml:lang="de-DEV">T2</text>
+         <text xml:lang="en-DEV">T2</text>
+      </uiText>
+      <uiText key="P_45">
+         <text xml:lang="de-DEV">AUT</text>
+         <text xml:lang="en-DEV">AUT</text>
+      </uiText>
+      <uiText key="P_46">
+         <text xml:lang="de-DEV">EXT</text>
+         <text xml:lang="en-DEV">EXT</text>
+      </uiText>
+      <uiText key="P_47">
+         <text xml:lang="de-DEV">T1 oder T2</text>
+         <text xml:lang="en-DEV">T1 or T2</text>
+      </uiText>
+      <uiText key="P_48">
+         <text xml:lang="de-DEV">T1,T2 o. AUT</text>
+         <text xml:lang="en-DEV">T1,T2 or AUT</text>
+      </uiText>
+      <uiText key="P_49">
+         <text xml:lang="de-DEV">LADER</text>
+         <text xml:lang="en-DEV">Loader</text>
+      </uiText>
+      <uiText key="P_50">
+         <text xml:lang="de-DEV">OPT.DAT.</text>
+         <text xml:lang="en-DEV">OPT.DAT.</text>
+      </uiText>
+      <uiText key="P_51">
+         <text xml:lang="de-DEV">ANW.DAT.</text>
+         <text xml:lang="en-DEV">USER.DAT.</text>
+      </uiText>
+      <uiText key="P_52">
+         <text xml:lang="de-DEV">MAS.DAT.</text>
+         <text xml:lang="en-DEV">M.DAT.</text>
+      </uiText>
+      <uiText key="P_53">
+         <text xml:lang="de-DEV">MAS.DAT.R1</text>
+         <text xml:lang="en-DEV">M.DAT.R1</text>
+      </uiText>
+      <uiText key="P_54">
+         <text xml:lang="de-DEV">MAS.DAT.R2</text>
+         <text xml:lang="en-DEV">M.DAT.R2</text>
+      </uiText>
+      <uiText key="P_55">
+         <text xml:lang="de-DEV">COR.DAT.R1</text>
+         <text xml:lang="en-DEV">COR.DAT.R1</text>
+      </uiText>
+      <uiText key="P_56">
+         <text xml:lang="de-DEV">COR.DAT.R2</text>
+         <text xml:lang="en-DEV">COR.DAT.R2</text>
+      </uiText>
+      <uiText key="P_57">
+         <text xml:lang="de-DEV">MPC PHG</text>
+         <text xml:lang="en-DEV">MPC HPU</text>
+      </uiText>
+      <uiText key="P_58">
+         <text xml:lang="de-DEV">MPC RST</text>
+         <text xml:lang="en-DEV">MPC RCP</text>
+      </uiText>
+      <uiText key="P_59">
+         <text xml:lang="de-DEV">Kopieren</text>
+         <text xml:lang="en-DEV">copy</text>
+      </uiText>
+      <uiText key="P_60">
+         <text xml:lang="de-DEV">Analyse</text>
+         <text xml:lang="en-DEV">compile</text>
+      </uiText>
+      <uiText key="P_61">
+         <text xml:lang="de-DEV">Binden</text>
+         <text xml:lang="en-DEV">link</text>
+      </uiText>
+      <uiText key="P_62">
+         <text xml:lang="de-DEV">Trennen</text>
+         <text xml:lang="en-DEV">unlink</text>
+      </uiText>
+      <uiText key="P_63">
+         <text xml:lang="de-DEV">Löschen</text>
+         <text xml:lang="en-DEV">delete</text>
+      </uiText>
+      <uiText key="P_64">
+         <text xml:lang="de-DEV">RC_READY1</text>
+         <text xml:lang="en-DEV">RC_READY1</text>
+      </uiText>
+      <uiText key="P_65">
+         <text xml:lang="de-DEV">1.$OUT</text>
+         <text xml:lang="en-DEV">1.$OUT</text>
+      </uiText>
+      <uiText key="P_66">
+         <text xml:lang="de-DEV">2.$OUT</text>
+         <text xml:lang="en-DEV">2.$OUT</text>
+      </uiText>
+      <uiText key="P_67">
+         <text xml:lang="de-DEV">Durchgeführt</text>
+         <text xml:lang="en-DEV">executed</text>
+      </uiText>
+      <uiText key="P_68">
+         <text xml:lang="de-DEV">Abgebrochen</text>
+         <text xml:lang="en-DEV">aborted</text>
+      </uiText>
+      <uiText key="P_69">
+         <text xml:lang="de-DEV">Unvollständig</text>
+         <text xml:lang="en-DEV">incomplete</text>
+      </uiText>
+      <uiText key="P_70">
+         <text xml:lang="de-DEV">LIN</text>
+         <text xml:lang="en-DEV">LIN</text>
+      </uiText>
+      <uiText key="P_71">
+         <text xml:lang="de-DEV">CART</text>
+         <text xml:lang="en-DEV">CART</text>
+      </uiText>
+      <uiText key="P_72">
+         <text xml:lang="de-DEV">EXT_AXIS</text>
+         <text xml:lang="en-DEV">EXT_AXIS</text>
+      </uiText>
+      <uiText key="P_73">
+         <text xml:lang="de-DEV">Satznummer</text>
+         <text xml:lang="en-DEV">block number</text>
+      </uiText>
+      <uiText key="P_74">
+         <text xml:lang="de-DEV">CSTEP UNTER/</text>
+         <text xml:lang="en-DEV">CSTEP UNDER/</text>
+      </uiText>
+      <uiText key="P_75">
+         <text xml:lang="de-DEV">C_DIS</text>
+         <text xml:lang="en-DEV">C_DIS</text>
+      </uiText>
+      <uiText key="P_76">
+         <text xml:lang="de-DEV">C_VEL</text>
+         <text xml:lang="en-DEV">C_VEL</text>
+      </uiText>
+      <uiText key="P_77">
+         <text xml:lang="de-DEV">C_ORI</text>
+         <text xml:lang="en-DEV">C_ORI</text>
+      </uiText>
+      <uiText key="P_78">
+         <text xml:lang="de-DEV">C_PTP</text>
+         <text xml:lang="en-DEV">C_PTP</text>
+      </uiText>
+      <uiText key="P_79">
+         <text xml:lang="de-DEV">TCP_IPO</text>
+         <text xml:lang="en-DEV">TCP_IPO</text>
+      </uiText>
+      <uiText key="P_80">
+         <text xml:lang="de-DEV">Meldung</text>
+         <text xml:lang="en-DEV">Message</text>
+      </uiText>
+      <uiText key="P_81">
+         <text xml:lang="de-DEV">Quitt</text>
+         <text xml:lang="en-DEV">Ackn.</text>
+      </uiText>
+      <uiText key="P_82">
+         <text xml:lang="de-DEV">Watchdog</text>
+         <text xml:lang="en-DEV">Watchdog</text>
+      </uiText>
+      <uiText key="P_83">
+         <text xml:lang="de-DEV">TRANS</text>
+         <text xml:lang="en-DEV">TRANS</text>
+      </uiText>
+      <uiText key="P_84">
+         <text xml:lang="de-DEV">KORR</text>
+         <text xml:lang="en-DEV">CORR</text>
+      </uiText>
+      <uiText key="P_85">
+         <text xml:lang="de-DEV">1</text>
+         <text xml:lang="en-DEV">1</text>
+      </uiText>
+      <uiText key="P_86">
+         <text xml:lang="de-DEV">2</text>
+         <text xml:lang="en-DEV">2</text>
+      </uiText>
+      <uiText key="P_87">
+         <text xml:lang="de-DEV">3</text>
+         <text xml:lang="en-DEV">3</text>
+      </uiText>
+      <uiText key="P_88">
+         <text xml:lang="de-DEV">4</text>
+         <text xml:lang="en-DEV">4</text>
+      </uiText>
+      <uiText key="P_89">
+         <text xml:lang="de-DEV">5</text>
+         <text xml:lang="en-DEV">5</text>
+      </uiText>
+      <uiText key="P_90">
+         <text xml:lang="de-DEV">6</text>
+         <text xml:lang="en-DEV">6</text>
+      </uiText>
+      <uiText key="P_91">
+         <text xml:lang="de-DEV">7</text>
+         <text xml:lang="en-DEV">7</text>
+      </uiText>
+      <uiText key="P_92">
+         <text xml:lang="de-DEV">8</text>
+         <text xml:lang="en-DEV">8</text>
+      </uiText>
+      <uiText key="P_93">
+         <text xml:lang="de-DEV">9</text>
+         <text xml:lang="en-DEV">9</text>
+      </uiText>
+      <uiText key="P_94">
+         <text xml:lang="de-DEV">10</text>
+         <text xml:lang="en-DEV">10</text>
+      </uiText>
+      <uiText key="P_95">
+         <text xml:lang="de-DEV">11</text>
+         <text xml:lang="en-DEV">11</text>
+      </uiText>
+      <uiText key="P_96">
+         <text xml:lang="de-DEV">12</text>
+         <text xml:lang="en-DEV">12</text>
+      </uiText>
+      <uiText key="P_97">
+         <text xml:lang="de-DEV">SRC</text>
+         <text xml:lang="en-DEV">SRC</text>
+      </uiText>
+      <uiText key="P_98">
+         <text xml:lang="de-DEV">PM1</text>
+         <text xml:lang="en-DEV">PM1</text>
+      </uiText>
+      <uiText key="P_99">
+         <text xml:lang="de-DEV">PM2</text>
+         <text xml:lang="en-DEV">PM2</text>
+      </uiText>
+      <uiText key="P_100">
+         <text xml:lang="de-DEV">PM3</text>
+         <text xml:lang="en-DEV">PM3</text>
+      </uiText>
+      <uiText key="P_101">
+         <text xml:lang="de-DEV">PM4</text>
+         <text xml:lang="en-DEV">PM4</text>
+      </uiText>
+      <uiText key="P_102">
+         <text xml:lang="de-DEV">A1 M</text>
+         <text xml:lang="en-DEV">A1 M</text>
+      </uiText>
+      <uiText key="P_103">
+         <text xml:lang="de-DEV">A1 S1</text>
+         <text xml:lang="en-DEV">A1 S1</text>
+      </uiText>
+      <uiText key="P_104">
+         <text xml:lang="de-DEV">A1 S2</text>
+         <text xml:lang="en-DEV">A1 S2</text>
+      </uiText>
+      <uiText key="P_105">
+         <text xml:lang="de-DEV">A1 S3</text>
+         <text xml:lang="en-DEV">A1 S3</text>
+      </uiText>
+      <uiText key="P_106">
+         <text xml:lang="de-DEV">A1 S4</text>
+         <text xml:lang="en-DEV">A1 S4</text>
+      </uiText>
+      <uiText key="P_107">
+         <text xml:lang="de-DEV">A1 S5</text>
+         <text xml:lang="en-DEV">A1 S5</text>
+      </uiText>
+      <uiText key="P_108">
+         <text xml:lang="de-DEV">A2 M</text>
+         <text xml:lang="en-DEV">A2 M</text>
+      </uiText>
+      <uiText key="P_109">
+         <text xml:lang="de-DEV">A2 S1</text>
+         <text xml:lang="en-DEV">A2 S1</text>
+      </uiText>
+      <uiText key="P_110">
+         <text xml:lang="de-DEV">A2 S2</text>
+         <text xml:lang="en-DEV">A2 S2</text>
+      </uiText>
+      <uiText key="P_111">
+         <text xml:lang="de-DEV">A2 S3</text>
+         <text xml:lang="en-DEV">A2 S3</text>
+      </uiText>
+      <uiText key="P_112">
+         <text xml:lang="de-DEV">A2 S4</text>
+         <text xml:lang="en-DEV">A2 S4</text>
+      </uiText>
+      <uiText key="P_113">
+         <text xml:lang="de-DEV">A2 S5</text>
+         <text xml:lang="en-DEV">A2 S5</text>
+      </uiText>
+      <uiText key="P_114">
+         <text xml:lang="de-DEV">A3 M</text>
+         <text xml:lang="en-DEV">A3 M</text>
+      </uiText>
+      <uiText key="P_115">
+         <text xml:lang="de-DEV">A3 S1</text>
+         <text xml:lang="en-DEV">A3 S1</text>
+      </uiText>
+      <uiText key="P_116">
+         <text xml:lang="de-DEV">A3 S2</text>
+         <text xml:lang="en-DEV">A3 S2</text>
+      </uiText>
+      <uiText key="P_117">
+         <text xml:lang="de-DEV">A3 S3</text>
+         <text xml:lang="en-DEV">A3 S3</text>
+      </uiText>
+      <uiText key="P_118">
+         <text xml:lang="de-DEV">A3 S4</text>
+         <text xml:lang="en-DEV">A3 S4</text>
+      </uiText>
+      <uiText key="P_119">
+         <text xml:lang="de-DEV">A3 S5</text>
+         <text xml:lang="en-DEV">A3 S5</text>
+      </uiText>
+      <uiText key="P_120">
+         <text xml:lang="de-DEV">A4 M</text>
+         <text xml:lang="en-DEV">A4 M</text>
+      </uiText>
+      <uiText key="P_121">
+         <text xml:lang="de-DEV">A4 S1</text>
+         <text xml:lang="en-DEV">A4 S1</text>
+      </uiText>
+      <uiText key="P_122">
+         <text xml:lang="de-DEV">A4 S2</text>
+         <text xml:lang="en-DEV">A4 S2</text>
+      </uiText>
+      <uiText key="P_123">
+         <text xml:lang="de-DEV">A4 S3</text>
+         <text xml:lang="en-DEV">A4 S3</text>
+      </uiText>
+      <uiText key="P_124">
+         <text xml:lang="de-DEV">A4 S4</text>
+         <text xml:lang="en-DEV">A4 S4</text>
+      </uiText>
+      <uiText key="P_125">
+         <text xml:lang="de-DEV">A4 S5</text>
+         <text xml:lang="en-DEV">A4 S5</text>
+      </uiText>
+      <uiText key="P_126">
+         <text xml:lang="de-DEV">A5 M</text>
+         <text xml:lang="en-DEV">A5 M</text>
+      </uiText>
+      <uiText key="P_127">
+         <text xml:lang="de-DEV">A5 S1</text>
+         <text xml:lang="en-DEV">A5 S1</text>
+      </uiText>
+      <uiText key="P_128">
+         <text xml:lang="de-DEV">A5 S2</text>
+         <text xml:lang="en-DEV">A5 S2</text>
+      </uiText>
+      <uiText key="P_129">
+         <text xml:lang="de-DEV">A5 S3</text>
+         <text xml:lang="en-DEV">A5 S3</text>
+      </uiText>
+      <uiText key="P_130">
+         <text xml:lang="de-DEV">A5 S4</text>
+         <text xml:lang="en-DEV">A5 S4</text>
+      </uiText>
+      <uiText key="P_131">
+         <text xml:lang="de-DEV">A5 S5</text>
+         <text xml:lang="en-DEV">A5 S5</text>
+      </uiText>
+      <uiText key="P_132">
+         <text xml:lang="de-DEV">A6 M</text>
+         <text xml:lang="en-DEV">A6 M</text>
+      </uiText>
+      <uiText key="P_133">
+         <text xml:lang="de-DEV">A6 S1</text>
+         <text xml:lang="en-DEV">A6 S1</text>
+      </uiText>
+      <uiText key="P_134">
+         <text xml:lang="de-DEV">A6 S2</text>
+         <text xml:lang="en-DEV">A6 S2</text>
+      </uiText>
+      <uiText key="P_135">
+         <text xml:lang="de-DEV">A6 S3</text>
+         <text xml:lang="en-DEV">A6 S3</text>
+      </uiText>
+      <uiText key="P_136">
+         <text xml:lang="de-DEV">A6 S4</text>
+         <text xml:lang="en-DEV">A6 S4</text>
+      </uiText>
+      <uiText key="P_137">
+         <text xml:lang="de-DEV">A6 S5</text>
+         <text xml:lang="en-DEV">A6 S5</text>
+      </uiText>
+      <uiText key="P_138">
+         <text xml:lang="de-DEV">E1 M</text>
+         <text xml:lang="en-DEV">E1 M</text>
+      </uiText>
+      <uiText key="P_139">
+         <text xml:lang="de-DEV">E1 S1</text>
+         <text xml:lang="en-DEV">E1 S1</text>
+      </uiText>
+      <uiText key="P_140">
+         <text xml:lang="de-DEV">E1 S2</text>
+         <text xml:lang="en-DEV">E1 S2</text>
+      </uiText>
+      <uiText key="P_141">
+         <text xml:lang="de-DEV">E1 S3</text>
+         <text xml:lang="en-DEV">E1 S3</text>
+      </uiText>
+      <uiText key="P_142">
+         <text xml:lang="de-DEV">E1 S4</text>
+         <text xml:lang="en-DEV">E1 S4</text>
+      </uiText>
+      <uiText key="P_143">
+         <text xml:lang="de-DEV">E1 S5</text>
+         <text xml:lang="en-DEV">E1 S5</text>
+      </uiText>
+      <uiText key="P_144">
+         <text xml:lang="de-DEV">E2 M</text>
+         <text xml:lang="en-DEV">E2 M</text>
+      </uiText>
+      <uiText key="P_145">
+         <text xml:lang="de-DEV">E2 S1</text>
+         <text xml:lang="en-DEV">E2 S1</text>
+      </uiText>
+      <uiText key="P_146">
+         <text xml:lang="de-DEV">E2 S2</text>
+         <text xml:lang="en-DEV">E2 S2</text>
+      </uiText>
+      <uiText key="P_147">
+         <text xml:lang="de-DEV">E2 S3</text>
+         <text xml:lang="en-DEV">E2 S3</text>
+      </uiText>
+      <uiText key="P_148">
+         <text xml:lang="de-DEV">E2 S4</text>
+         <text xml:lang="en-DEV">E2 S4</text>
+      </uiText>
+      <uiText key="P_149">
+         <text xml:lang="de-DEV">E2 S5</text>
+         <text xml:lang="en-DEV">E2 S5</text>
+      </uiText>
+      <uiText key="P_150">
+         <text xml:lang="de-DEV">E3 M</text>
+         <text xml:lang="en-DEV">E3 M</text>
+      </uiText>
+      <uiText key="P_151">
+         <text xml:lang="de-DEV">E3 S1</text>
+         <text xml:lang="en-DEV">E3 S1</text>
+      </uiText>
+      <uiText key="P_152">
+         <text xml:lang="de-DEV">E3 S2</text>
+         <text xml:lang="en-DEV">E3 S2</text>
+      </uiText>
+      <uiText key="P_153">
+         <text xml:lang="de-DEV">E3 S3</text>
+         <text xml:lang="en-DEV">E3 S3</text>
+      </uiText>
+      <uiText key="P_154">
+         <text xml:lang="de-DEV">E3 S4</text>
+         <text xml:lang="en-DEV">E3 S4</text>
+      </uiText>
+      <uiText key="P_155">
+         <text xml:lang="de-DEV">E3 S5</text>
+         <text xml:lang="en-DEV">E3 S5</text>
+      </uiText>
+      <uiText key="P_156">
+         <text xml:lang="de-DEV">E4 M</text>
+         <text xml:lang="en-DEV">E4 M</text>
+      </uiText>
+      <uiText key="P_157">
+         <text xml:lang="de-DEV">E4 S1</text>
+         <text xml:lang="en-DEV">E4 S1</text>
+      </uiText>
+      <uiText key="P_158">
+         <text xml:lang="de-DEV">E4 S2</text>
+         <text xml:lang="en-DEV">E4 S2</text>
+      </uiText>
+      <uiText key="P_159">
+         <text xml:lang="de-DEV">E4 S3</text>
+         <text xml:lang="en-DEV">E4 S3</text>
+      </uiText>
+      <uiText key="P_160">
+         <text xml:lang="de-DEV">E4 S4</text>
+         <text xml:lang="en-DEV">E4 S4</text>
+      </uiText>
+      <uiText key="P_161">
+         <text xml:lang="de-DEV">E4 S5</text>
+         <text xml:lang="en-DEV">E4 S5</text>
+      </uiText>
+      <uiText key="P_162">
+         <text xml:lang="de-DEV">E5 M</text>
+         <text xml:lang="en-DEV">E5 M</text>
+      </uiText>
+      <uiText key="P_163">
+         <text xml:lang="de-DEV">E5 S1</text>
+         <text xml:lang="en-DEV">E5 S1</text>
+      </uiText>
+      <uiText key="P_164">
+         <text xml:lang="de-DEV">E5 S2</text>
+         <text xml:lang="en-DEV">E5 S2</text>
+      </uiText>
+      <uiText key="P_165">
+         <text xml:lang="de-DEV">E5 S3</text>
+         <text xml:lang="en-DEV">E5 S3</text>
+      </uiText>
+      <uiText key="P_166">
+         <text xml:lang="de-DEV">E5 S4</text>
+         <text xml:lang="en-DEV">E5 S4</text>
+      </uiText>
+      <uiText key="P_167">
+         <text xml:lang="de-DEV">E5 S5</text>
+         <text xml:lang="en-DEV">E5 S5</text>
+      </uiText>
+      <uiText key="P_168">
+         <text xml:lang="de-DEV">E6 M</text>
+         <text xml:lang="en-DEV">E6 M</text>
+      </uiText>
+      <uiText key="P_169">
+         <text xml:lang="de-DEV">E6 S1</text>
+         <text xml:lang="en-DEV">E6 S1</text>
+      </uiText>
+      <uiText key="P_170">
+         <text xml:lang="de-DEV">E6 S2</text>
+         <text xml:lang="en-DEV">E6 S2</text>
+      </uiText>
+      <uiText key="P_171">
+         <text xml:lang="de-DEV">E6 S3</text>
+         <text xml:lang="en-DEV">E6 S3</text>
+      </uiText>
+      <uiText key="P_172">
+         <text xml:lang="de-DEV">E6 S4</text>
+         <text xml:lang="en-DEV">E6 S4</text>
+      </uiText>
+      <uiText key="P_173">
+         <text xml:lang="de-DEV">E6 S5</text>
+         <text xml:lang="en-DEV">E6 S5</text>
+      </uiText>
+      <uiText key="P_174">
+         <text xml:lang="de-DEV">EXT_SENSOR</text>
+         <text xml:lang="en-DEV">EXT_SENSOR</text>
+      </uiText>
+      <uiText key="P_175">
+         <text xml:lang="de-DEV">keine SAK</text>
+         <text xml:lang="en-DEV">Not on path</text>
+      </uiText>
+      <uiText key="P_176">
+         <text xml:lang="de-DEV">Richtungswechsel fehlgeschlagen</text>
+         <text xml:lang="en-DEV">Change of direction failed</text>
+      </uiText>
+      <uiText key="P_177">
+         <text xml:lang="de-DEV">Start blockiert</text>
+         <text xml:lang="en-DEV">Start blocked</text>
+      </uiText>
+      <uiText key="P_178">
+         <text xml:lang="de-DEV">Stopmeldung</text>
+         <text xml:lang="en-DEV">Stop Message</text>
+      </uiText>
+      <uiText key="P_179">
+         <text xml:lang="de-DEV">Handverfahren aktiv</text>
+         <text xml:lang="en-DEV">Jogging active</text>
+      </uiText>
+      <uiText key="P_180">
+         <text xml:lang="de-DEV">kein Programmodus</text>
+         <text xml:lang="en-DEV">Not in program mode</text>
+      </uiText>
+      <uiText key="P_181">
+         <text xml:lang="de-DEV">nicht justiert</text>
+         <text xml:lang="en-DEV">No mastering</text>
+      </uiText>
+      <uiText key="P_182">
+         <text xml:lang="de-DEV">Antriebe AUS</text>
+         <text xml:lang="en-DEV">Drives off</text>
+      </uiText>
+      <uiText key="P_183">
+         <text xml:lang="de-DEV">falsche Betriebsart</text>
+         <text xml:lang="en-DEV">wrong ModeOP</text>
+      </uiText>
+      <uiText key="P_184">
+         <text xml:lang="de-DEV">falscher Programmodus</text>
+         <text xml:lang="en-DEV">wrong ProMode</text>
+      </uiText>
+      <uiText key="P_185">
+         <text xml:lang="de-DEV">falscher Programmzustand</text>
+         <text xml:lang="en-DEV">wrong ProState</text>
+      </uiText>
+      <uiText key="P_186">
+         <text xml:lang="de-DEV">Netzwerkfehler</text>
+         <text xml:lang="en-DEV">network communication error</text>
+      </uiText>
+      <uiText key="P_187">
+         <text xml:lang="de-DEV">Antrieb</text>
+         <text xml:lang="en-DEV">Drive</text>
+      </uiText>
+      <uiText key="P_199">
+         <text xml:lang="de-DEV">LBR</text>
+         <text xml:lang="en-DEV">LR</text>
+      </uiText>
+      <uiText key="Yes">
+         <text xml:lang="de-DEV">Ja</text>
+         <text xml:lang="en-DEV">Yes</text>
+      </uiText>
+   </module>
+</resources>

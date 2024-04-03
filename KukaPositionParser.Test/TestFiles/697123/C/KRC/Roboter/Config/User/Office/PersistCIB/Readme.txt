@@ -1,0 +1,1 @@
+This folder stores all CIB file content in Office- or OfficeLite-Mode that is stored on the EDS of the CIB in Cabinet-mode.

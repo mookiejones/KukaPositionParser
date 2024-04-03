@@ -1,0 +1,5 @@
+&ACCESS RV
+&REL 1
+DEF DisableRSI_Pos ( )
+   $SEN_PINT[RSI_X_Sys_Disable]=1
+END

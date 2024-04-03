@@ -1,0 +1,8 @@
+&ACCESS  RV
+DEF WaitForPULSE(theSignal:OUT, value:IN, time:IN)
+   BOOL theSignal, value
+   REAL time
+   theSignal=value
+   WAIT SEC time
+   theSignal=NOT(value)
+END

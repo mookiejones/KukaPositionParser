@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="SafetyDiagnostics">
+      <uiText key="ChannelA">
+         <text xml:lang="de-DEV">A</text>
+         <text xml:lang="en-DEV">A</text>
+      </uiText>
+      <uiText key="ChannelB">
+         <text xml:lang="de-DEV">B</text>
+         <text xml:lang="en-DEV">B</text>
+      </uiText>
+      <uiText key="CIB">
+         <text xml:lang="de-DEV">CIB</text>
+         <text xml:lang="en-DEV">CIB</text>
+      </uiText>
+      <uiText key="CIP-Safety">
+         <text xml:lang="de-DEV">CIP-Safety</text>
+         <text xml:lang="en-DEV">CIP-Safety</text>
+      </uiText>
+      <uiText key="Common">
+         <text xml:lang="de-DEV">Allgemein</text>
+         <text xml:lang="en-DEV">Common</text>
+      </uiText>
+      <uiText key="CrossComparisonFailed">
+         <text xml:lang="de-DEV">Kreuzvergleichsfehler</text>
+         <text xml:lang="en-DEV">Cross comparison failed</text>
+      </uiText>
+      <uiText key="DebounceError">
+         <text xml:lang="de-DEV">Entprell Fehler</text>
+         <text xml:lang="en-DEV">Debounce error</text>
+      </uiText>
+      <uiText key="DeviceInfo">
+         <text xml:lang="de-DEV">Geräteinformationen</text>
+         <text xml:lang="en-DEV">Device Information</text>
+      </uiText>
+      <uiText key="DualChannelError">
+         <text xml:lang="de-DEV">Zweikanaligkeit Fehler</text>
+         <text xml:lang="en-DEV">Dual-channel error</text>
+      </uiText>
+      <uiText key="Error">
+         <text xml:lang="de-DEV">Fehler</text>
+         <text xml:lang="en-DEV">Error</text>
+      </uiText>
+      <uiText key="InputInitError">
+         <text xml:lang="de-DEV">Fehler beim initialisieren der Eingänge.</text>
+         <text xml:lang="en-DEV">Failed to initialize the inputs.</text>
+      </uiText>
+      <uiText key="Inputs">
+         <text xml:lang="de-DEV">Eingänge</text>
+         <text xml:lang="en-DEV">Inputs</text>
+      </uiText>
+      <uiText key="InterfaceA">
+         <text xml:lang="de-DEV">An. A</text>
+         <text xml:lang="en-DEV">In. A</text>
+      </uiText>
+      <uiText key="InterfaceB">
+         <text xml:lang="de-DEV">An. B</text>
+         <text xml:lang="en-DEV">In. B</text>
+      </uiText>
+      <uiText key="InternalError">
+         <text xml:lang="de-DEV">Interner Fehler</text>
+         <text xml:lang="en-DEV">Internal error</text>
+      </uiText>
+      <uiText key="InternalInitializeError">
+         <text xml:lang="de-DEV">Fehler bei der Initialisierung.</text>
+         <text xml:lang="en-DEV">Initialization error.</text>
+      </uiText>
+      <uiText key="LblAddress">
+         <text xml:lang="de-DEV">Sicherheitsadresse:</text>
+         <text xml:lang="en-DEV">Safety address:</text>
+      </uiText>
+      <uiText key="LblDevice">
+         <text xml:lang="de-DEV">Gerät:</text>
+         <text xml:lang="en-DEV">Device:</text>
+      </uiText>
+      <uiText key="LblError">
+         <text xml:lang="de-DEV">Fehler:</text>
+         <text xml:lang="en-DEV">Error:</text>
+      </uiText>
+      <uiText key="LblHardware">
+         <text xml:lang="de-DEV">Hardware-Version:</text>
+         <text xml:lang="en-DEV">Hardware version:</text>
+      </uiText>
+      <uiText key="LblSerialNumber">
+         <text xml:lang="de-DEV">Seriennummer:</text>
+         <text xml:lang="en-DEV">Serial number:</text>
+      </uiText>
+      <uiText key="LblSoftware">
+         <text xml:lang="de-DEV">Software-Version:</text>
+         <text xml:lang="en-DEV">Software version:</text>
+      </uiText>
+      <uiText key="LblTemperature">
+         <text xml:lang="de-DEV">Temperatur:</text>
+         <text xml:lang="en-DEV">Temperature:</text>
+      </uiText>
+      <uiText key="Name">
+         <text xml:lang="de-DEV">Name</text>
+         <text xml:lang="en-DEV">Name</text>
+      </uiText>
+      <uiText key="NoConfiguration">
+         <text xml:lang="de-DEV">Konfiguration nicht vorhanden oder unvollständig.</text>
+         <text xml:lang="en-DEV">Configuration missing or incomplete.</text>
+      </uiText>
+      <uiText key="NoDeviceAccessible">
+         <text xml:lang="de-DEV">Lesen der Daten von den Geräten fehlgeschlagen.</text>
+         <text xml:lang="en-DEV">Reading the data from the devices failed.</text>
+      </uiText>
+      <uiText key="NoDeviceAvailable">
+         <text xml:lang="de-DEV">Es konnte kein Gerät ermittelt werden.</text>
+         <text xml:lang="en-DEV">There was no device can be determined.</text>
+      </uiText>
+      <uiText key="NoInputsDefined">
+         <text xml:lang="de-DEV">Es sind keine Eingänge in der Konfiguration definiert.</text>
+         <text xml:lang="en-DEV">There are no inputs defined in the configuration.</text>
+      </uiText>
+      <uiText key="NoKcpPleaseClose">
+         <text xml:lang="de-DEV">Damit sich ein KCP mit dieser Steuerung verbinden kann, muss die Anzeige geschlossen werden.</text>
+         <text xml:lang="en-DEV">Thus, a KCP can connect to this controller, this view needs to be closed.</text>
+      </uiText>
+      <uiText key="NoName">
+         <text xml:lang="de-DEV">Fehler: kein Name</text>
+         <text xml:lang="en-DEV">Error: no name</text>
+      </uiText>
+      <uiText key="NoOutputsDefined">
+         <text xml:lang="de-DEV">Es sind keine Ausgänge in der Konfiguration definiert.</text>
+         <text xml:lang="en-DEV">There are no outputs defined in the configuration.</text>
+      </uiText>
+      <uiText key="NoSignalsDefined">
+         <text xml:lang="de-DEV">Es sind keine Signale in der Konfiguration definiert.</text>
+         <text xml:lang="en-DEV">No signals are defined in the configuration.</text>
+      </uiText>
+      <uiText key="Number">
+         <text xml:lang="de-DEV">Nr.</text>
+         <text xml:lang="en-DEV">Nr.</text>
+      </uiText>
+      <uiText key="OutputInitError">
+         <text xml:lang="de-DEV">Fehler beim initialisieren der Ausgänge.</text>
+         <text xml:lang="en-DEV">Failed to initialize the outputs.</text>
+      </uiText>
+      <uiText key="Outputs">
+         <text xml:lang="de-DEV">Ausgänge</text>
+         <text xml:lang="en-DEV">Outputs</text>
+      </uiText>
+      <uiText key="ParameterReadError">
+         <text xml:lang="de-DEV">Fehler beim lesen der Geräte-Parameter.</text>
+         <text xml:lang="en-DEV">Failed to read the device's parameters.</text>
+      </uiText>
+      <uiText key="Profisafe">
+         <text xml:lang="de-DEV">PROFIsafe</text>
+         <text xml:lang="en-DEV">PROFIsafe</text>
+      </uiText>
+      <uiText key="ReadError">
+         <text xml:lang="de-DEV">Lesefehler.</text>
+         <text xml:lang="en-DEV">Read error.</text>
+      </uiText>
+      <uiText key="RefreshStopped">
+         <text xml:lang="de-DEV">Aktualisierung der Geräte-IOs wurde beendet</text>
+         <text xml:lang="en-DEV">Update the device IOs has ended</text>
+      </uiText>
+      <uiText key="RefreshStopPleaseClose">
+         <text xml:lang="de-DEV">Die Aktualisierung der Daten wurde gestoppt. Bitte schließen Sie die Anzeige.</text>
+         <text xml:lang="en-DEV">The data update is stopped. Please close this view.</text>
+      </uiText>
+      <uiText key="RestartRefresh">
+         <text xml:lang="de-DEV">Aktualisierung neustarten</text>
+         <text xml:lang="en-DEV">Restart refresh</text>
+      </uiText>
+      <uiText key="SafetyDiagnosticsMenu">
+         <text xml:lang="de-DEV">Sicherheitsschnittstellen</text>
+         <text xml:lang="en-DEV">Safety interfaces</text>
+      </uiText>
+      <uiText key="SafetyDiagnosticsViewTitle">
+         <text xml:lang="de-DEV">Diagnose Safety: Sicherheitsschnittstellen</text>
+         <text xml:lang="en-DEV">Diagnostics Safety: Safety interfaces</text>
+      </uiText>
+      <uiText key="ShutdownError">
+         <text xml:lang="de-DEV">Abschalt Fehler</text>
+         <text xml:lang="en-DEV">Shutdown error</text>
+      </uiText>
+      <uiText key="SIB">
+         <text xml:lang="de-DEV">SIB</text>
+         <text xml:lang="en-DEV">SIB</text>
+      </uiText>
+      <uiText key="SignalAUTO">
+         <text xml:lang="de-DEV">Betriebsart Automatik o. Extern (AUT)</text>
+         <text xml:lang="en-DEV">Operation mode automatic o. external (AUT)</text>
+      </uiText>
+      <uiText key="SignalNHS">
+         <text xml:lang="de-DEV">Reserviert</text>
+         <text xml:lang="en-DEV">Reserved</text>
+      </uiText>
+      <uiText key="SignalTEST">
+         <text xml:lang="de-DEV">Betriebsart T1 (T1)</text>
+         <text xml:lang="en-DEV">Operation mode T1 (T1)</text>
+      </uiText>
+      <uiText key="SionError_000">
+         <text xml:lang="de-DEV">Lokaler Reset oder Bestätigung eines RESET-Befehls</text>
+         <text xml:lang="en-DEV">Local reset or acknowledgement of a RESET command</text>
+      </uiText>
+      <uiText key="SionError_001">
+         <text xml:lang="de-DEV">Unerwartetes Kommando</text>
+         <text xml:lang="en-DEV">Unexpected command</text>
+      </uiText>
+      <uiText key="SionError_002">
+         <text xml:lang="de-DEV">Unbekanntes Kommando</text>
+         <text xml:lang="en-DEV">Unknown command</text>
+      </uiText>
+      <uiText key="SionError_003">
+         <text xml:lang="de-DEV">Ungültige Verbindungs-ID</text>
+         <text xml:lang="en-DEV">Invalid connection ID</text>
+      </uiText>
+      <uiText key="SionError_004">
+         <text xml:lang="de-DEV">CRC-Fehler</text>
+         <text xml:lang="en-DEV">CRC error</text>
+      </uiText>
+      <uiText key="SionError_005">
+         <text xml:lang="de-DEV">Watchdog ist abgelaufen</text>
+         <text xml:lang="en-DEV">Watchdog has expired</text>
+      </uiText>
+      <uiText key="SionError_006">
+         <text xml:lang="de-DEV">Ungültige FSoE-Slave-Adresse</text>
+         <text xml:lang="en-DEV">Invalid FSoE Slave Address</text>
+      </uiText>
+      <uiText key="SionError_007">
+         <text xml:lang="de-DEV">Ungültige Safety-Daten</text>
+         <text xml:lang="en-DEV">Invalid safety data</text>
+      </uiText>
+      <uiText key="SionError_008">
+         <text xml:lang="de-DEV">Ungültige Kommunikationsparameterlänge</text>
+         <text xml:lang="en-DEV">Invalid communication parameter length</text>
+      </uiText>
+      <uiText key="SionError_009">
+         <text xml:lang="de-DEV">Ungültige Kommunikationsparameterdaten</text>
+         <text xml:lang="en-DEV">Invalid communication parameter data</text>
+      </uiText>
+      <uiText key="SionError_010">
+         <text xml:lang="de-DEV">Ungültige Anwendungsparameterlänge</text>
+         <text xml:lang="en-DEV">Invalid application parameter length</text>
+      </uiText>
+      <uiText key="SionError_011">
+         <text xml:lang="de-DEV">Ungültige Anwendungsparameterdaten</text>
+         <text xml:lang="en-DEV">Invalid application parameter data</text>
+      </uiText>
+      <uiText key="StateColName">
+         <text xml:lang="de-DEV">Status</text>
+         <text xml:lang="en-DEV">State</text>
+      </uiText>
+      <uiText key="StaticError">
+         <text xml:lang="de-DEV">Statischer Fehler</text>
+         <text xml:lang="en-DEV">Static error</text>
+      </uiText>
+      <uiText key="TruncationError">
+         <text xml:lang="de-DEV">Abschneide Fehler</text>
+         <text xml:lang="en-DEV">Truncation error</text>
+      </uiText>
+      <uiText key="Unknown">
+         <text xml:lang="de-DEV">Unbekannt</text>
+         <text xml:lang="en-DEV">Unknown</text>
+      </uiText>
+      <uiText key="Value">
+         <text xml:lang="de-DEV">Wert</text>
+         <text xml:lang="en-DEV">Value</text>
+      </uiText>
+   </module>
+</resources>

@@ -1,0 +1,487 @@
+&ACCESS RVP3
+&REL 1
+&PARAM DISKPATH = KRC:\R1\TP\TeslaCore
+DEF  TeslaCorePLC ( )
+; **************************************
+; * Package:     TeslaCore             *
+; * Release      V5.0.0                *
+; * File:        TeslaCorePLC.sub      *
+; * Date:        04.2019               *
+; * GUI Version: > = V8.3              *
+; **************************************
+;FOLD Details
+;FOLD Declaration
+DECL BOOL bResult
+DECL INT nScanCnt
+DECL INT nAbortScanCnt
+DECL INT nAppStepCnt
+;ENDFOLD (Declaration)
+;FOLD Initialization
+TCSPSStart()
+;FOLD TeslaCore 1st Install Modifications
+IF (bTCFirstInstall==TRUE) THEN
+   bTCFirstInstall=FALSE
+ENDIF
+;ENDFOLD (TeslaCore 1st Install Modifications)
+;FOLD TeslaCore Reinstall Modifications
+IF (bTCReinstall==TRUE) THEN
+   bTCReinstall=FALSE
+ENDIF
+;ENDFOLD (TeslaCore Reinstall Modifications)
+;ENDFOLD (Initialization)
+LOOP
+;FOLD Implementation
+	;FOLD Cell Selection if the robot is in the proper mode and state
+		IF ($MODE_OP==#EX) AND  NOT bln_ONESHOT_CELLSTART AND ($PRO_STATE1==#P_FREE) THEN
+					;FOLD The Robot is at Home and is in External. Selecting Cell.
+					nTC_Submit1 = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[23], TC_MsgPar[], TC_MsgOpt_Stop)
+					;ENDFOLD (The Robot is at Home and is in External. Selecting Cell.)
+			Select_CellStart ( )
+			bln_ONESHOT_CELLSTART=TRUE
+		ELSE
+			IF ($MODE_OP==#T1) OR ($MODE_OP==#T2) THEN
+				bln_ONESHOT_CELLSTART=FALSE
+			ENDIF
+		ENDIF
+	;ENDFOLD Cell Selection if the robot is in the proper mode and state
+	;FOLD Application SPS Calls
+	TeslaCoreApps ( )
+	;ENDFOLD (Application SPS Calls)
+   ;FOLD Robot Hold Logic
+   IF (diRobotHold>0) THEN ; Check if Hold Feature is Enabled
+      IF (($MODE_OP==#EX) AND ($IN[diRobotHold]==FALSE)) THEN
+         CWRITE($CMD,STATE,MODE_CELL,"STOP 1") ; Pause program execution, drives remain active
+         IF (Exists_KrlMsg(nTC_HoldHandle)==FALSE) THEN
+            nTC_HoldHandle = SET_KRLMSG(#STATE, TeslaCore_Msg[4], TC_MsgPar[], TC_MsgOpt_Stop)
+         ENDIF
+      ELSE
+         IF (Exists_KrlMsg(nTC_HoldHandle)==TRUE) THEN
+            bResult = Clear_KrlMsg (nTC_HoldHandle)
+         ENDIF
+      ENDIF
+   ENDIF
+   IF ((doRobotHeld>0) AND (diRobotHold>0)) THEN ; Check if Held Feature is Enabled
+      $OUT[doRobotHeld] = (($MODE_OP==#EX) AND ($PRO_STATE1==#P_STOP) AND ($ROB_STOPPED==TRUE) AND ($IN[diRobotHold]==FALSE))
+   ENDIF
+   ;ENDFOLD (Robot Hold Logic)
+   ;FOLD Cyclical IO Monitoring
+   IF (doWaitingOnInput <> (($WAIT_FOR_ON1==TRUE) OR (bInternalWait==TRUE))) THEN
+      doWaitingOnInput = (($WAIT_FOR_ON1==TRUE) OR (bInternalWait==TRUE)) ; Output TRUE when robot is at Wait For command
+   ENDIF
+   IF (soMasterRefTestReq <> (($MasteringTest_Req_Int==TRUE) OR ($MasteringTest_Req_Ext==TRUE))) THEN
+      soMasterRefTestReq = (($MasteringTest_Req_Int==TRUE) OR ($MasteringTest_Req_Ext==TRUE))
+   ENDIF
+   IF (soBrakeTestReq <> (($BrakeTest_MonTime==TRUE) OR ($BrakeTest_Req_Ex==TRUE) OR ($BrakeTest_Req_Int==TRUE))) THEN
+      soBrakeTestReq = (($BrakeTest_MonTime==TRUE) OR ($BrakeTest_Req_Ex==TRUE) OR ($BrakeTest_Req_Int==TRUE))
+   ENDIF
+   IF (soApplRun <> (($PRO_ACT == TRUE) AND (bInProg == TRUE))) THEN
+      soApplRun = (($PRO_ACT == TRUE) AND (bInProg == TRUE))
+   ENDIF
+   IF (doDryCycleAbnormal <> diDryCycleMode) THEN
+      doDryCycleAbnormal = diDryCycleMode
+   ENDIF
+   IF (($B_IN[nDecisionCode]==0) AND ($B_OUT[nDecisionCodeEcho]<>0)) THEN
+      $B_OUT[nDecisionCodeEcho] = 0
+   ENDIF
+   ;ENDFOLD (Cyclical IO Monitoring)
+   ;FOLD Cyclical OV_Pro Monitoring
+   IF ((diNewSpeedRequest==TRUE) AND ($B_IN[nNewSpeed]<>$B_OUT[nOverrideSpeed])) THEN
+      IF ($B_IN[nNewSpeed]>100) THEN
+         $OV_PRO = 100
+      ELSE
+         IF ($B_IN[nNewSpeed]<0) THEN
+            $OV_PRO = 0
+         ELSE
+            $OV_PRO = $B_IN[nNewSpeed]
+         ENDIF
+      ENDIF
+   ENDIF
+   $B_OUT[nOverrideSpeed]=$OV_PRO ; Push current override to PLC
+   doOverrideIs100=($OV_PRO==100)
+   ;ENDFOLD (Cyclical OV_Pro Monitoring)
+   ;FOLD Cyclical WaitMessage Monitoring
+   IF ((Exists_KrlMsg(nTC_WaitHandle)==TRUE) AND ($Pro_State1 <> #P_Active)) THEN
+      bWaitSuppressed=TRUE
+      bTC_Clear = Clear_KrlMsg (nTC_WaitHandle)
+   ENDIF
+   IF (VARSTATE("moWaitModeOp")<>#INITIALIZED) THEN
+      moWaitModeOp = $MODE_OP
+   ENDIF
+   IF ((Exists_KrlMsg(nTC_WaitHandle)==TRUE) AND ($MODE_OP <> moWaitModeOp)) THEN
+      bWaitSuppressed=TRUE
+      bTC_Clear = Clear_KrlMsg (nTC_WaitHandle)
+      moWaitModeOp=$MODE_OP
+   ENDIF
+   ;ENDFOLD (Cyclical WaitMessage Monitoring)
+   ;FOLD Home Position Transfer
+	$Axis_Home[1]=xHome1
+	$Axis_Home[2]=xHome2
+	$Axis_Home[3]=xHome3
+	$Axis_Home[4]=xHome4
+	$Axis_Home[5]=xHome5
+	;ENDFOLD (Home Position Transfer)
+	;FOLD Heartbeat to PLC	
+	SWITCH enmHeartBeat
+	   CASE #LEAD
+	      IF ((doHeartBeat>0) AND (doHeartBeat<$NUM_OUT)) THEN
+   	      IF ($OUT[doHeartBeat] == $IN[diHeartBeat]) THEN
+   	         $OUT[doHeartBeat] = NOT($IN[diHeartBeat])
+   	      ENDIF
+	      ENDIF
+	   CASE #FOLLOW
+	      IF ((doHeartBeat>0) AND (doHeartBeat<$NUM_OUT)) THEN
+   	      IF ($OUT[doHeartBeat] <> $IN[diHeartBeat]) THEN
+   	         $OUT[doHeartBeat] = $IN[diHeartBeat]
+   	      ENDIF
+	      ENDIF
+	   CASE #TIMED
+   	   nHeartBeatRunCount=nHeartBeatRunCount+1
+   	   IF ((nHeartBeatRunCount>nHeartBeatMaxCount) AND (doHeartBeat>0) AND (doHeartBeat<$NUM_OUT)) THEN
+   	      $OUT[doHeartBeat]=not $OUT[doHeartBeat]
+   	      nHeartBeatRunCount=0
+   	   ENDIF
+	   DEFAULT
+	      ;Do Nothing
+	ENDSWITCH
+	;ENDFOLD
+  ;FOLD Check selection
+  ; check what is selected
+  IF (VARSTATE("nScanCnt")<>#INITIALIZED) THEN
+  	nScanCnt=0
+  ENDIF
+  IF (VARSTATE("$PROG_INFO[1]")==#INITIALIZED) THEN
+    IF (StrComp($PROG_INFO[1].PRO_IP_NAME[]," ",#NOT_CASE_SENS)==FALSE) THEN ; Something is selected
+	    nScanCnt=0
+	    IF ((StrComp($PROG_INFO[1].PRO_IP_NAME[],"/R1/CELL.SRC",#NOT_CASE_SENS)==TRUE) OR (StrComp($PROG_INFO[1].PRO_IP_NAME[],"/R1/P00.SRC",#NOT_CASE_SENS)==TRUE)) THEN
+	      bInCell=TRUE
+	      bInProg=FALSE
+	    ELSE
+	      bInCell=FALSE
+	      bInProg=TRUE
+	    ENDIF
+	  ELSE ; Nothing is selected
+	  	IF (nScanCnt > 3) then ; Make sure nothing is selected for 3 scans, overlap coverage
+	   	 bInCell=FALSE
+	   	 bInProg=FALSE
+	   	ELSE
+	   	 nScanCnt=nScanCnt + 1
+	  	ENDIF
+	  ENDIF
+  ELSE
+  	 bInCell=FALSE
+  	 bInProg=FALSE
+  ENDIF
+  
+  IF (doTCinProg>0) THEN
+     $OUT[doTCinProg]=bInProg
+  ENDIF
+  IF (doTCinCell>0) THEN
+     $OUT[doTCinCell]=bInCell
+  ENDIF
+  ;ENDFOLD (Check for selection)
+  ;FOLD Line Select Reaction
+  IF ($LINE_SEL_OK==TRUE) AND (bLineSelectProcessed==FALSE) THEN
+     ; Process Line Selection Reset Information Here
+     bLineSelectProcessed=TRUE
+  ELSE
+     IF (bLineSelectProcessed==TRUE) THEN
+        bLineSelectProcessed=FALSE
+        $LINE_SEL_OK=FALSE
+     ENDIF
+  ENDIF
+  ;ENDFOLD (Line Select Reaction)
+	;FOLD PROGRAM RESET/CANCEL LOGIC*
+	IF ((($PRO_STATE1==#P_FREE) OR ($PRO_STATE1==#P_RESET)) AND (bTCProcessReset==FALSE)) THEN
+		bTCProcessReset=TRUE
+		;FOLD Reset System IO
+      doRobotInProcess=FALSE
+      doDialogPending=FALSE
+      bInternalWait=FALSE
+      doWaitingOnInput=FALSE
+		$B_OUT[nHandShakeNr]=0
+		$B_OUT[nTaskEcho]=0
+      $B_OUT[nFacilityAlarm]=0
+      $B_OUT[nErrorCode]=0
+      $B_OUT[nUserFault]=0
+		;ENDFOLD (Reset System IO)
+	ELSE
+		IF (($PRO_STATE1<>#P_FREE) AND ($PRO_STATE1<>#P_RESET)) THEN
+			bTCProcessReset=FALSE
+		ENDIF
+	ENDIF
+	;ENDFOLD (PROGRAM RESET/CANCEL LOGIC*)
+	;FOLD StatKey Program Selection
+		IF (($MODE_OP==#T1) OR ($MODE_OP==#T2)) THEN
+			IF bln_MAN_HOME_REQST THEN
+				bln_MAN_SERV_REQST=FALSE ; reset manual request for service
+				IF  NOT bln_STK_PROGRAM_SELECTED THEN
+					CWRITE($CMD,STATE,MODE_Cell,"RUN /R1/HomePos()")
+					int_TimeCnt=0
+					WHILE ($PRO_STATE1<>#P_RESET) AND (int_TimeCnt<1000)
+						int_TimeCnt=(int_TimeCnt+1)
+					ENDWHILE
+					IF ($PRO_STATE1<>#P_RESET) THEN
+								;FOLD HomePos.src is not selectable-check for errors.
+								nTC_Submit1 = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[19], TC_MsgPar[], TC_MsgOpt_Stop)
+								;ENDFOLD (HomePos.src is not selectable-check for errors.)
+						bln_STK_PROGRAM_SELECTED=FALSE
+						bln_MAN_HOME_REQST=FALSE
+					ELSE
+						IF  NOT $IN_HOME THEN
+									;FOLD HomePos.src program is selected for Robot Return to HOME.
+									nTC_Submit1 = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[20], TC_MsgPar[], TC_MsgOpt_Stop)
+									;ENDFOLD (HomePos.src program is selected for Robot Return to HOME.)
+						ENDIF
+						bln_STK_PROGRAM_SELECTED=TRUE
+					ENDIF
+				ELSE
+					IF ($PRO_STATE1==#P_FREE) THEN
+						bln_STK_PROGRAM_SELECTED=FALSE
+						bln_MAN_HOME_REQST=FALSE
+					ELSE
+						IF $IN_HOME AND $ROB_STOPPED AND  NOT $PRO_ACT THEN
+							CWRITE($CMD,STATE,MODE_Cell,"CANCEL 1")
+							WAIT SEC 0.01
+									;FOLD Robot at Home Position, Selecting Cell.src
+									nTC_Submit1 = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[21], TC_MsgPar[], TC_MsgOpt_Stop)
+									;ENDFOLD (Robot at Home Position, Selecting Cell.src)
+							Select_CellStart ( )
+							bln_STK_PROGRAM_SELECTED=FALSE
+							bln_MAN_HOME_REQST=FALSE
+						ENDIF
+					ENDIF
+				ENDIF
+			ELSE
+				IF bln_MAN_SERV_REQST THEN
+					IF  NOT bln_STK_PROGRAM_SELECTED THEN
+						CWRITE($CMD,STATE,MODE_Cell,"RUN /R1/MAINTENANCE()")
+						int_TimeCnt=0
+						WHILE ($PRO_STATE1<>#P_RESET) AND (int_TimeCnt<1000)
+							int_TimeCnt=(int_TimeCnt+1)
+						ENDWHILE
+						IF ($PRO_STATE1<>#P_RESET) THEN
+									;FOLD Maintenace.src is not selectable-check for errors.
+									nTC_Submit1 = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[22], TC_MsgPar[], TC_MsgOpt_Stop)
+									;ENDFOLD (Maintenace.src is not selectable-check for errors.)
+							bln_STK_PROGRAM_SELECTED=FALSE
+							bln_MAN_SERV_REQST=FALSE
+						ELSE
+							bln_STK_PROGRAM_SELECTED=TRUE
+						ENDIF
+					ENDIF
+				ELSE
+					IF bln_STK_PROGRAM_SELECTED AND ($PRO_STATE1==#P_END) AND $IN_HOME THEN
+						CWRITE($CMD,STATE,MODE_Cell,"RUN /R1/CELL( )")
+						bln_STK_PROGRAM_SELECTED=FALSE
+					ENDIF
+				ENDIF
+			ENDIF
+		ELSE
+			bln_STK_PROGRAM_SELECTED=FALSE
+			bln_MAN_HOME_REQST=FALSE
+			bln_MAN_HOME_COMP=FALSE
+			bln_MAN_SERV_REQST=FALSE
+		ENDIF
+	;ENDFOLD (StatKey Program Selection)
+  ;FOLD PLC Program Abort
+  IF ((bAbortComplete==TRUE) AND (siAbortProgram==FALSE)) THEN
+     bAbortComplete=FALSE ; Reset Abort Complete Oneshot
+  ENDIF
+  IF (bAbortInProcess==TRUE) THEN
+     SWITCH nAbortState
+        ;FOLD Stop executing program
+        CASE 0
+           IF (($PRO_STATE1==#P_ACTIVE) OR ($PRO_STATE1==#P_RESET)) THEN
+              nTC_SpsProgramStop = Set_Krlmsg (#STATE, TeslaCore_Msg[13], TC_MsgPar[], TC_MsgOpt_NoStop)
+              CWRITE($CMD,STATE,MODE_CELL,"STOP 1") ; Stop program execution, drives remain active
+              nAbortScanCnt=0
+              WHILE ($PRO_STATE1==#P_ACTIVE) AND (nAbortScanCnt<1000)
+              	  nAbortScanCnt=(nAbortScanCnt+1)
+              ENDWHILE
+              IF (($PRO_STATE1==#P_ACTIVE) OR ($PRO_STATE1==#P_RESET)) THEN
+              	  ;FOLD Program failed to stop, abort process cancelled
+              	  bResult = Clear_KrlMsg (nTC_SpsProgramStop)
+              	  bResult = Clear_KrlMsg (nTC_SpsAbortInProcess)
+              	  nTC_SpsProgramStop = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[11], TC_MsgPar[], TC_MsgOpt_Stop)
+              	  ;ENDFOLD (Program failed to stop, abort process cancelled)
+              ELSE
+              	  bResult = Clear_KrlMsg (nTC_SpsProgramStop)
+              	  nAbortState = 10                 
+              ENDIF
+           ELSE
+              nAbortState = 10   
+           ENDIF
+        ;ENDFOLD (Stop executing program)
+        ;FOLD Cancel executing program
+        CASE 10
+           IF ($PRO_STATE1==#P_STOP) THEN
+              nTC_SpsProgramCancel = Set_Krlmsg (#STATE, TeslaCore_Msg[14], TC_MsgPar[], TC_MsgOpt_NoStop)
+              CWRITE($CMD,STATE,MODE_CELL,"CANCEL 1") ; Cancel selected program execution
+              nAbortScanCnt=0
+              WHILE ($PRO_STATE1==#P_STOP) AND (nAbortScanCnt<1000)
+              	  nAbortScanCnt=(nAbortScanCnt+1)
+              ENDWHILE
+              IF ($PRO_STATE1==#P_STOP) THEN
+              	  ;FOLD Program failed to cancel, abort process cancelled
+              	  bResult = Clear_KrlMsg (nTC_SpsProgramCancel)
+              	  bResult = Clear_KrlMsg (nTC_SpsAbortInProcess)
+              	  nTC_SpsProgramCancel = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[11], TC_MsgPar[], TC_MsgOpt_Stop)
+              	  ;ENDFOLD (Program failed to cancel, abort process cancelled)
+              ELSE
+              	  bResult = Clear_KrlMsg (nTC_SpsProgramCancel)
+              	  nAbortState = 20                 
+              ENDIF
+           ELSE
+              nAbortState = 20   
+           ENDIF
+        ;ENDFOLD (Cancel executing program)
+        ;FOLD Reset Cell Program
+        CASE 20
+           IF ($PRO_STATE1==#P_FREE) THEN
+              nTC_SpsCellRestart = Set_Krlmsg (#STATE, TeslaCore_Msg[15], TC_MsgPar[], TC_MsgOpt_NoStop)
+              Select_CellStart( ) ; Restart Cell Program
+              bResult = Clear_KrlMsg (nTC_SpsCellRestart)
+           ENDIF
+           nAbortState = 30
+           bResult = Clear_KrlMsg (nTC_SpsAbortInProcess)
+        ;ENDFOLD (Reset Cell program)
+        ;FOLD Reset abort process
+        CASE 30
+           nAbortState = 0
+           bAbortInProcess = FALSE
+           bAbortComplete = TRUE
+        ;ENDFOLD (Stop executing program)
+        DEFAULT
+           nAbortState = 0
+     ENDSWITCH
+     
+  ENDIF
+  IF ((bAbortEnabled==TRUE) AND (siAbortProgram==TRUE) AND (bAbortInProcess==FALSE) AND (bAbortComplete==FALSE)) THEN
+     nAbortState = 0 ; Start Abort Process
+     bAbortInProcess = TRUE ; Signify Abort is in Process
+     nAbortScanCnt = 0
+     nTC_SpsAbortInProcess = Set_Krlmsg (#STATE, TeslaCore_Msg[12], TC_MsgPar[], TC_MsgOpt_NoStop)
+  ENDIF
+  ;ENDFOLD (PLC Program Abort)
+	;FOLD Robot Fault Message Transfer
+	nTCRobotFaultCode = 0
+	nTCMsgCnt = Get_MsgBuffer(mbTCFltBuffer[])
+	IF (nTCMsgCnt > 0) THEN
+		FOR nTCBufferLocation = 1 TO nTCMsgCnt
+			IF (mbTCFltBuffer[nTCBufferLocation].Type==#SYS_QUIT) THEN
+				nTCRobotFaultCode = mbTCFltBuffer[nTCBufferLocation].Nr
+				EXIT
+			ENDIF
+		ENDFOR
+	ENDIF
+	$B_OUT[nErrorCode] = nTCRobotFaultCode
+	;ENDFOLD (Robot Fault Message Transfer)
+;FOLD Application Feedback Control
+nEvaluationAppSet=0
+FOR nAppStepCnt = 1 TO 30
+   IF (bApplicationInstalled[nAppStepCnt] == TRUE) THEN 
+      nEvaluationAppSet = nEvaluationAppSet + POW(2, nAppStepCnt)
+   ENDIF
+ENDFOR
+IF ((nCurrentAppSet==0) OR (nCurrentAppSet <> nEvaluationAppSet)) THEN
+   nCurrentAppSet = nEvaluationAppSet
+ENDIF
+;ENDFOLD (Application Feedback Control)
+;ENDFOLD (Implementation)
+ENDLOOP
+;ENDFOLD (Details)
+END ; (TeslaCorePLC)
+
+;FOLD TeslaCore Subroutines
+GLOBAL DEF Select_CellStart( )
+;FOLD Details
+;FOLD Declaration
+INT int_TimeCnt
+;ENDFOLD (Declaration)
+;FOLD Implementation
+CWRITE($CMD,STATE,MODE_Cell,"RUN /R1/CELL ()")
+int_TimeCnt=0
+WHILE ($PRO_STATE1==#P_FREE) AND (int_TimeCnt<1000)
+	int_TimeCnt=(int_TimeCnt+1)
+ENDWHILE
+IF ($PRO_STATE1==#P_FREE) THEN
+	;FOLD Cell.src is not selectable - check for errors.
+	nTC_Submit1 = Set_Krlmsg (#NOTIFY, TeslaCore_Msg[24], TC_MsgPar[], TC_MsgOpt_Stop)
+	;ENDFOLD (Cell.src is not selectable - check for errors.)
+ENDIF
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ;(Select_CellStart)
+
+GLOBAL DEFFCT REAL POW(rBase:IN, iExponent:IN)
+;FOLD Details
+;FOLD Declaration
+DECL REAL rBase, rResult
+DECL INT iExponent, i
+;ENDFOLD (Declaration)
+;FOLD Implementation
+IF iExponent == 0 THEN
+  rResult = 1.0
+ELSE
+  IF iExponent < 0 THEN
+    IF rBase == 0 THEN
+	  ; Ungueltige Eingabe, da Division durch 0
+	  WAIT FOR FALSE
+	  ; error, division by 0
+	ENDIF
+    iExponent = iExponent * (-1)
+    rResult = rBase
+    FOR i = 1 TO (iExponent - 1)
+      rResult = rResult * rBase
+    ENDFOR
+    rResult = 1 / rResult
+  ELSE
+    rResult = rBase
+    FOR i = 1 TO (iExponent - 1)
+      rResult = rResult * rBase
+    ENDFOR
+  ENDIF
+ENDIF
+
+RETURN rResult
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+ENDFCT
+;ENDFOLD (TeslaCore Subroutines)
+
+DEF TCSPSStart( )
+;FOLD ; *  Documentation  ********************************
+; *  This program is executed at startup of the    *
+; *  TeslaCoreSPS.sub program.  Pauses for 0.25s,  *
+; *  for the standard submit to start, then checks *
+; *  to make sure the sps is set as interpreter 2  *
+; *                                                *
+; *  If interpreter 2 is not assigned as sps.sub   *
+; *  then interpreter 2 will be reset and sps.sub  *
+; *  will be started in interpreter 2              *
+; **************************************************
+;ENDFOLD  (*  Description                                    *)
+;FOLD Details
+;FOLD Declaration
+DECL STATE_T TCStat
+DECL MODUS_T TCMode
+;ENDFOLD (Declaration)
+;FOLD Implementation
+WAIT SEC 0.25 ; Delay to give sps submit time to start
+;FOLD Check SPS.sub assigned to Interpreter 2
+IF (StrComp($PROG_INFO[2].Sel_Name[],"/R1/SPS",#NOT_CASE_SENS)==FALSE) THEN
+   CWRITE($CMD, TCStat, TCMode, "STOP 2")
+   WAIT SEC 0.024
+   CWRITE($CMD, TCStat, TCMode, "CANCEL 2")
+   WAIT SEC 0.024
+ENDIF
+;ENDFOLD (Check SPS.sub assigned to Interpreter 2)
+;FOLD Start Interpreter 2, Submit SYS
+IF ($PROG_INFO[2].P_STATE<>#P_ACTIVE) THEN
+	CWRITE($CMD, TCStat, TCMode, "RUN/R1/SPS() > 2")
+	WAIT SEC 0.024
+ENDIF
+;ENDFOLD (Start Interpreter 3, Submit EX1)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TCSPSStart)

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name27001">
+      <text xml:lang="de-DEV">Transferapplikation</text>
+      <text xml:lang="en-DEV">Transfer Application</text>
+    </uiText>
+    <uiText key="Diagnose_Description27001">
+      <text xml:lang="de-DEV">Transferapplikation</text>
+      <text xml:lang="en-DEV">Transfer Application</text>
+    </uiText>
+    <uiText key="Diagnose_Name27002">
+      <text xml:lang="de-DEV">Initialisiert</text>
+      <text xml:lang="en-DEV">Initialized</text>
+    </uiText>
+    <uiText key="Diagnose_Description27002">
+      <text xml:lang="de-DEV">Initialisiert</text>
+      <text xml:lang="en-DEV">Initialized</text>
+    </uiText>
+    <uiText key="Diagnose_Value27002_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27002_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27003">
+      <text xml:lang="de-DEV">Zykluszeit der Transferdaten [ms]</text>
+      <text xml:lang="en-DEV">Cycle time of transfer data [ms]</text>
+    </uiText>
+    <uiText key="Diagnose_Description27003">
+      <text xml:lang="de-DEV">Zykluszeit der Transferdaten [ms]</text>
+      <text xml:lang="en-DEV">Cycle time of transfer data [ms]</text>
+    </uiText>
+    <uiText key="Diagnose_Name27004">
+      <text xml:lang="de-DEV">Prozessorlast [%]</text>
+      <text xml:lang="en-DEV">Processor load [%]</text>
+    </uiText>
+    <uiText key="Diagnose_Description27004">
+      <text xml:lang="de-DEV">Prozessorlast [%]</text>
+      <text xml:lang="en-DEV">Processor load [%]</text>
+    </uiText>
+    <uiText key="Diagnose_Name27005">
+      <text xml:lang="de-DEV">Anzahl der transferierten Bits</text>
+      <text xml:lang="en-DEV">Number of transfered bits</text>
+    </uiText>
+    <uiText key="Diagnose_Description27005">
+      <text xml:lang="de-DEV">Anzahl der transferierten Bits</text>
+      <text xml:lang="en-DEV">Number of transfered bits</text>
+    </uiText>
+    <uiText key="Diagnose_Name27006">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27006">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27007">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27007">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27008">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27008">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27009">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27009">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27010">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27010">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27011">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27011">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27012">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27012">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27013">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27013">
+      <text xml:lang="de-DEV">Busname</text>
+      <text xml:lang="en-DEV">Bus name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27014">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27014">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27015">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27015">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27016">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27016">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27017">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27017">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27018">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27018">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27019">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27019">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27020">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27020">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27021">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Description27021">
+      <text xml:lang="de-DEV">Treibername</text>
+      <text xml:lang="en-DEV">Driver name</text>
+    </uiText>
+    <uiText key="Diagnose_Name27022">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27022">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27022_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27022_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27023">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27023">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27023_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27023_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27024">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27024">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27024_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27024_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27025">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27025">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27025_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27025_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27026">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27026">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27026_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27026_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27027">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27027">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27027_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27027_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27028">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27028">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27028_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27028_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27029">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Description27029">
+      <text xml:lang="de-DEV">Bus verbunden</text>
+      <text xml:lang="en-DEV">Bus connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value27029_0">
+      <text xml:lang="de-DEV">Nein</text>
+      <text xml:lang="en-DEV">No</text>
+    </uiText>
+    <uiText key="Diagnose_Value27029_1">
+      <text xml:lang="de-DEV">Ja</text>
+      <text xml:lang="en-DEV">Yes</text>
+    </uiText>
+    <uiText key="Diagnose_Name27030">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27030">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27030_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27030_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name27031">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27031">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27031_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27031_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name27032">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27032">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27032_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27032_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name27033">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27033">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27033_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27033_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name27034">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27034">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27034_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27034_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name27035">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27035">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27035_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27035_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name27036">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27036">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27036_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27036_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+    <uiText key="Diagnose_Name27037">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Description27037">
+      <text xml:lang="de-DEV">Busstatus</text>
+      <text xml:lang="en-DEV">Bus state</text>
+    </uiText>
+    <uiText key="Diagnose_Value27037_0">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Value27037_1">
+      <text xml:lang="de-DEV">OK</text>
+      <text xml:lang="en-DEV">OK</text>
+    </uiText>
+  </module>
+</resources>

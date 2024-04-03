@@ -1,0 +1,84 @@
+&ACCESS RVP
+&REL 17
+&PARAM DISKPATH = KRC:\R1
+DEF CELL( )
+   
+   ;FOLD INIT
+      DECL CHAR DMY[3]
+      DMY[]="---"
+      
+      ;INTERRUPT DECL 10 WHEN $FLAG[NCONNECTED]==FALSE DO CONNECTIONLOST ( )
+      INTERRUPT OFF 10
+      
+   ;ENDFOLD (INIT)
+   ;FOLD BASISTECH INI
+      GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+      INTERRUPT ON 3 
+      BAS (#INITMOV,0 )
+   ;ENDFOLD (BASISTECH INI) 
+   
+   Reset_IO()
+   PTP $POS_ACT
+   ;FOLD AUTOEXT INI
+      P00 (#INIT_EXT,#PGNO_GET,DMY[],0 ) ; INITIALIZE EXTERN MODE
+   ;ENDFOLD (AUTOEXT INI)
+   
+   LOOP
+      RSI_ACTIVE=FALSE
+      progs_running_check(2, 6)
+      ; GET PROGRAM NUMBER FROM PLC.
+      P00 (#EXT_PGNO,#PGNO_GET,DMY[],0 )
+      
+      ; SWITCH PROGRAM NUMBER 
+      SWITCH  PGNO
+         
+         CASE 1
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; Reset Progr.No.-Request
+            progs_running_check(2, 6)
+            move_to_perch_pos()
+            
+         CASE 2
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; Reset Progr.No.-Request
+            progs_running_check(2, 6)
+            move_to_maintenance_pos()
+            
+         CASE 16
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; RESET PROGR.NO.-REQUEST
+            progs_running_check(2, 6)
+            find_seam()
+
+         CASE 17
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; RESET PROGR.NO.-REQUEST
+            progs_running_check(2, 6)
+            Adjust_Changes()
+            
+         CASE 18
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; RESET PROGR.NO.-REQUEST
+            progs_running_check(2, 6)
+            weld()
+            
+         CASE 19
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; RESET PROGR.NO.-REQUEST
+            progs_running_check(2, 6)
+            move_back_setup()
+            
+         CASE 20
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; RESET PROGR.NO.-REQUEST
+            progs_running_check(2, 6)
+            move_to_pmm()
+         CASE 21
+            P00 (#EXT_PGNO,#PGNO_ACKN,DMY[],0 ) ; RESET PROGR.NO.-REQUEST
+            progs_running_check(2, 6)
+           mnt_after_brl_find()
+
+
+
+
+
+            
+         DEFAULT
+            P00 (#EXT_PGNO,#PGNO_FAULT,DMY[],0 )
+      ENDSWITCH         
+      
+   ENDLOOP
+END

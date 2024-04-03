@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KrcDryRun xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/KrcDryRun.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version Label="">
+    <Info Version="KUKA V8.3"/>
+    <Schema Version="1"/>
+  </Version>
+  
+  <!-- ********************* -->
+  <!-- Customer Version "VW" -->
+  <!-- ********************* -->
+  <Customer_VW>
+    <!-- *********************************************** -->
+    <!-- DRY_RUN:  Bit0 => Assignment to $CycFlag in KBE -->
+    <!-- DRY_RUN:  Bit1 => Anout ON/OFF in KBE           -->
+    <!-- DRY_RUN:  Bit2 => IO-Zero and -Restore, ...     -->    
+    <!-- *********************************************** -->
+    <DRY_RUN OPTION="7"/>
+    <EXCEPTIONS_RESET_RESTORE>
+      <DIG_OUT>
+        <!-- ************************* EXAMPLE ****************************** -->
+        <!-- <NO_RESET_RESTORE StartIdx="1" />              => $OUT[1]        -->
+        <!-- <NO_RESET_RESTORE StartIdx="55" EndIdx="66" /> => $OUT[55...66]  -->
+        <!-- **************************************************************** -->
+      </DIG_OUT>
+      <FLAG>
+        <!-- ************************* EXAMPLE ******************************* -->
+        <!-- <NO_RESET_RESTORE StartIdx="1" />              => $FLAG[1]        -->
+        <!-- <NO_RESET_RESTORE StartIdx="55" EndIdx="66" /> => $FLAG[55...66]  -->
+        <!-- ***************************************************************** -->
+      </FLAG>
+      <ANA_OUT>
+        <!-- ************************* EXAMPLE ****************************** -->
+        <!-- <NO_RESET_RESTORE StartIdx="1" />              => $ANOUT[1]      -->
+        <!-- <NO_RESET_RESTORE StartIdx="4" EndIdx="6" /> => $ANOUT[4...6]    -->
+        <!-- **************************************************************** -->
+      </ANA_OUT>
+    </EXCEPTIONS_RESET_RESTORE>
+  </Customer_VW>
+  
+  <!-- *********************** -->
+  <!-- Customer Version "KUKA" -->
+  <!-- *********************** -->
+  <Customer_KUKA>
+    <!-- *********************************************** -->
+    <!-- DRY_RUN:  Bit0 => Assignment to $CycFlag in KBE -->
+    <!-- DRY_RUN:  Bit1 => Anout ON/OFF in KBE           -->
+    <!-- DRY_RUN:  Bit2 => IO-Zero and -Restore, ...     -->    
+    <!-- *********************************************** -->
+    <DRY_RUN OPTION="0"/>
+  </Customer_KUKA>
+
+</KrcDryRun>

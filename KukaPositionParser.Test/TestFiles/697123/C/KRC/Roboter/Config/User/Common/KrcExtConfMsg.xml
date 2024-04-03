@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KrcExtConfMsg xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/KrcExtConfMsg.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version Label="">
+    <Info Version="KUKA V8.3"/>
+    <Schema Version="1"/>
+  </Version>
+  <!-- ============================================================= -->
+  <!-- This file allows to change the configured default             -->
+  <!-- behaviour for external confirmation for specified             -->
+  <!-- messages                                                      -->
+  <!-- ============================================================= -->
+  <!-- Example:                                                      -->
+  <!--            <Message Number="xyz" AllowConfInExt="true" />     -->
+  <!--                 ==> allow confirmation in EXT                 -->
+  <!--            <Message Number="xyz" AllowConfInExt="false" />    -->
+  <!--                 ==> disable confirmation in EXT               -->
+  <!-- ============================================================= -->
+  <!--  !!! only confirmation messages are allowed to configure !!!  -->
+  <!-- ============================================================= -->
+  <Message Number="02858" AllowConfInExt="true" />
+</KrcExtConfMsg>

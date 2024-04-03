@@ -1,0 +1,19 @@
+&ACCESS R
+&REL 1
+DEF  TeslaCoreApps ( )
+; **************************************
+; * Package:     TeslaCore             *
+; * Release      V5.0.0                *
+; * File:        TeslaCoreApps.sub     *
+; * Date:        04.2019               *
+; * GUI Version: > = V8.3              *
+; **************************************
+;FOLD Details
+;FOLD Declaration
+;ENDFOLD (Declaration)
+;FOLD Implementation
+;FOLD Application SPS Calls
+;ENDFOLD (Application SPS Calls)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TeslaCoreApps)

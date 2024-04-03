@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name2000">
+      <text xml:lang="de-DEV">Verbindungsstatus</text>
+      <text xml:lang="en-DEV">Connectionstatus</text>
+    </uiText>
+    <uiText key="Diagnose_Description2000">
+      <text xml:lang="de-DEV">Der Verbindungstatus des Smartpads.</text>
+      <text xml:lang="en-DEV">The connectionstatus from the Smartpad.</text>
+    </uiText>
+    <uiText key="Diagnose_Value2000_0">
+      <text xml:lang="de-DEV">Nicht Verbunden</text>
+      <text xml:lang="en-DEV">Not connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value2000_1">
+      <text xml:lang="de-DEV">Smartpad Verbunden</text>
+      <text xml:lang="en-DEV">Smartpad Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value2000_2">
+      <text xml:lang="de-DEV">Remote Smartpad Verbunden</text>
+      <text xml:lang="en-DEV">Remote Smartpad Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Value2000_3">
+      <text xml:lang="de-DEV">Virtual Remote Pendant Verbunden</text>
+      <text xml:lang="en-DEV">Virtual Remote Pendant Connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name2001">
+      <text xml:lang="de-DEV">Smartpad Treiber</text>
+      <text xml:lang="en-DEV">Smartpad Driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description2001">
+      <text xml:lang="de-DEV">Der Smartpad Bediengeräte Treiber</text>
+      <text xml:lang="en-DEV">The Smartpad Controlpanel driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name2002">
+      <text xml:lang="de-DEV">IP lokales Smartpad</text>
+      <text xml:lang="en-DEV">IP of local Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2002">
+      <text xml:lang="de-DEV">IP des lokalen Smartpads</text>
+      <text xml:lang="en-DEV">IP of the local Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2003">
+      <text xml:lang="de-DEV">Nachrichtenzähler lokales Smartpad</text>
+      <text xml:lang="en-DEV">Messagecounter local Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2003">
+      <text xml:lang="de-DEV">Der Nachrichtenzähler für das lokale Smartpad</text>
+      <text xml:lang="en-DEV">The messagecounter of the locally connected Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2004">
+      <text xml:lang="de-DEV">Wiederholungen lokales Smartpad</text>
+      <text xml:lang="en-DEV">Resends local Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2004">
+      <text xml:lang="de-DEV">Anzahl der wiederholten Pakete des lokalen Smartpad</text>
+      <text xml:lang="en-DEV">The number od resends of the local Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2005">
+      <text xml:lang="de-DEV">Falsche Paketzähler lokales Smartpad</text>
+      <text xml:lang="en-DEV">Wrong Paketcounter local Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2005">
+      <text xml:lang="de-DEV">Die Anzahl an falschen Paketzählern des lokalen Smartpad</text>
+      <text xml:lang="en-DEV">The number of wrong paketcounters of the local Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2006">
+      <text xml:lang="de-DEV">IP des remote Smartpad</text>
+      <text xml:lang="en-DEV">IP remote Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2006">
+      <text xml:lang="de-DEV">Die aktuelle IP des entfernt angeschlossenen Smartpad</text>
+      <text xml:lang="en-DEV">The IP of the remote connected Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2007">
+      <text xml:lang="de-DEV">Nachrichtenzähler remote Smartpad</text>
+      <text xml:lang="en-DEV">Messagecounter remote Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2007">
+      <text xml:lang="de-DEV">Der aktuelle Nachrichtenzähler des entfernt angeschlossenen Smartpad</text>
+      <text xml:lang="en-DEV">The messagecounter of the remote connected Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2008">
+      <text xml:lang="de-DEV">Paketwiederholungen remote Smartpad</text>
+      <text xml:lang="en-DEV">Paketresends remote Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2008">
+      <text xml:lang="de-DEV">Die Anzahl an Paketwiederholungen des entfernt angeschlossenen Smartpad</text>
+      <text xml:lang="en-DEV">The number of Resends of the remote Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2009">
+      <text xml:lang="de-DEV">Falsche Paketzähler remote Smartpad</text>
+      <text xml:lang="en-DEV">Wrong Paketcounters remote Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2009">
+      <text xml:lang="de-DEV">Anzahl an falschen Paketzählern des entfernt angeschlossenen Smartpad</text>
+      <text xml:lang="en-DEV">The number of wrong Paketcounter of the remote Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2010">
+      <text xml:lang="de-DEV">Aktuelle Betriebsart</text>
+      <text xml:lang="en-DEV">Current Operationmode</text>
+    </uiText>
+    <uiText key="Diagnose_Description2010">
+      <text xml:lang="de-DEV">Die aktuelle Betriebsart</text>
+      <text xml:lang="en-DEV">The current operationmode</text>
+    </uiText>
+    <uiText key="Diagnose_Name2011">
+      <text xml:lang="de-DEV">Aktueller Robotername</text>
+      <text xml:lang="en-DEV">Current Robotname</text>
+    </uiText>
+    <uiText key="Diagnose_Description2011">
+      <text xml:lang="de-DEV">Der aktuelle Robotername</text>
+      <text xml:lang="en-DEV">The current robotname</text>
+    </uiText>
+    <uiText key="Diagnose_Name2012">
+      <text xml:lang="de-DEV">Aktuelles Roboterprogramm</text>
+      <text xml:lang="en-DEV">Currrent Robotprogram</text>
+    </uiText>
+    <uiText key="Diagnose_Description2012">
+      <text xml:lang="de-DEV">Das aktuelle Roboterprogramm</text>
+      <text xml:lang="en-DEV">The current robotprogram</text>
+    </uiText>
+    <uiText key="Diagnose_Name2013">
+      <text xml:lang="de-DEV">Aktuelle Benutzer</text>
+      <text xml:lang="en-DEV">Current User</text>
+    </uiText>
+    <uiText key="Diagnose_Description2013">
+      <text xml:lang="de-DEV">Der aktuelle Benutzer am Roboter</text>
+      <text xml:lang="en-DEV">The current user at the robot</text>
+    </uiText>
+    <uiText key="Diagnose_Name2014">
+      <text xml:lang="de-DEV">RDP Session</text>
+      <text xml:lang="en-DEV">RDP Session</text>
+    </uiText>
+    <uiText key="Diagnose_Description2014">
+      <text xml:lang="de-DEV">Die aktuelle RDP Session</text>
+      <text xml:lang="en-DEV">The current RDP Session</text>
+    </uiText>
+    <uiText key="Diagnose_Name2015">
+      <text xml:lang="de-DEV">Submit Status</text>
+      <text xml:lang="en-DEV">Submit Status</text>
+    </uiText>
+    <uiText key="Diagnose_Description2015">
+      <text xml:lang="de-DEV">Der aktuelle Submit Status</text>
+      <text xml:lang="en-DEV">The current Submit Status</text>
+    </uiText>
+    <uiText key="Diagnose_Name2016">
+      <text xml:lang="de-DEV">Antriebsstatus</text>
+      <text xml:lang="en-DEV">Drivestatus</text>
+    </uiText>
+    <uiText key="Diagnose_Description2016">
+      <text xml:lang="de-DEV">Der aktuelle Status der Antriebe</text>
+      <text xml:lang="en-DEV">The current state of the Drives</text>
+    </uiText>
+    <uiText key="Diagnose_Name2017">
+      <text xml:lang="de-DEV">Interpreter Status</text>
+      <text xml:lang="en-DEV">Interpreterstatus</text>
+    </uiText>
+    <uiText key="Diagnose_Description2017">
+      <text xml:lang="de-DEV">Der aktuelle Interpreterstatus</text>
+      <text xml:lang="en-DEV">The current interpreterstatus</text>
+    </uiText>
+    <uiText key="Diagnose_Name2018">
+      <text xml:lang="de-DEV">Smartpad Status</text>
+      <text xml:lang="en-DEV">Smartpad Status</text>
+    </uiText>
+    <uiText key="Diagnose_Description2018">
+      <text xml:lang="de-DEV">Der aktuelle Smartpad Status</text>
+      <text xml:lang="en-DEV">The current Smartpad Status</text>
+    </uiText>
+    <uiText key="Diagnose_Value2018_0">
+      <text xml:lang="de-DEV">Passiv</text>
+      <text xml:lang="en-DEV">passive</text>
+    </uiText>
+    <uiText key="Diagnose_Value2018_1">
+      <text xml:lang="de-DEV">Smartpad Aktiv</text>
+      <text xml:lang="en-DEV">Smartpad active</text>
+    </uiText>
+    <uiText key="Diagnose_Value2018_2">
+      <text xml:lang="de-DEV">Remote Smartpad Aktiv</text>
+      <text xml:lang="en-DEV">Remote Smartpad active</text>
+    </uiText>
+    <uiText key="Diagnose_Value2018_3">
+      <text xml:lang="de-DEV">Virtual Remote Pendant Aktiv</text>
+      <text xml:lang="en-DEV">Virtual Remote Pendant active</text>
+    </uiText>
+    <uiText key="Diagnose_Name2019">
+      <text xml:lang="de-DEV">Verfügbare Betriebsarten</text>
+      <text xml:lang="en-DEV">Available Operationmodes</text>
+    </uiText>
+    <uiText key="Diagnose_Description2019">
+      <text xml:lang="de-DEV">Aktuell verfügbare Betriebsarten als Bitmaske</text>
+      <text xml:lang="en-DEV">Current available operatingmodes as bitmask</text>
+    </uiText>
+    <uiText key="Diagnose_Name2020">
+      <text xml:lang="de-DEV">IP des Virtual Remote Pendant</text>
+      <text xml:lang="en-DEV">IP of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Description2020">
+      <text xml:lang="de-DEV">IP des Virtual Remote Pendant</text>
+      <text xml:lang="en-DEV">IP of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Name2021">
+      <text xml:lang="de-DEV">Nachrichtenzähler des Virtual Remote Pendant</text>
+      <text xml:lang="en-DEV">Messagecounter of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Description2021">
+      <text xml:lang="de-DEV">Nachrichtenzähler für das Virtual Remote Pendant</text>
+      <text xml:lang="en-DEV">Messagecounter of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Name2022">
+      <text xml:lang="de-DEV">Wiederholungen Virtual Remote Pendant</text>
+      <text xml:lang="en-DEV">Resends of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Description2022">
+      <text xml:lang="de-DEV">Anzahl wiederholter Virtual Remote Pendant Pakete</text>
+      <text xml:lang="en-DEV">Number of resends of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Name2023">
+      <text xml:lang="de-DEV">Falsche Paketzähler Virtual Remote Pendant</text>
+      <text xml:lang="en-DEV">Wrong messagecounters of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Description2023">
+      <text xml:lang="de-DEV">Anzahl falscher Paketzähler des Virtual Remote Pendant</text>
+      <text xml:lang="en-DEV">Number of wrong messagecounters of the virtual remote pendant</text>
+    </uiText>
+    <uiText key="Diagnose_Name2024">
+      <text xml:lang="de-DEV">IP des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">IP of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Description2024">
+      <text xml:lang="de-DEV">IP des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">IP of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2025">
+      <text xml:lang="de-DEV">Nachrichtenzähler des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">Messagecounter of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Description2025">
+      <text xml:lang="de-DEV">Nachrichtenzähler des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">Messagecounter of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2026">
+      <text xml:lang="de-DEV">Paketwiederholungen des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">Resends of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Description2026">
+      <text xml:lang="de-DEV">Anzahl Paketwiederholdungen des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">Number of resends of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2027">
+      <text xml:lang="de-DEV">Falsche Paketzähler des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">Wrong Messagecounters of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Description2027">
+      <text xml:lang="de-DEV">Anzahl falsche Paketzähler des Virtual Remote Pendant Steuerkanals</text>
+      <text xml:lang="en-DEV">Number of wrong messagecounters of the virtual remote pendant control connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2028">
+      <text xml:lang="de-DEV">Shared Smartpad IP</text>
+      <text xml:lang="en-DEV">Shared Smartpad IP</text>
+    </uiText>
+    <uiText key="Diagnose_Description2028">
+      <text xml:lang="de-DEV">IP der Steuerung an der das shared Smartpad angeschlossen ist</text>
+      <text xml:lang="en-DEV">IP of the controller where the shared Smartpad is connected</text>
+    </uiText>
+    <uiText key="Diagnose_Name2029">
+      <text xml:lang="de-DEV">Nachrichtenzähler des shared Smartpad</text>
+      <text xml:lang="en-DEV">Messagecounter of the shared Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2029">
+      <text xml:lang="de-DEV">Der Nachrichtenzähler für die shared Smartpad Verbindung</text>
+      <text xml:lang="en-DEV">The messagecounter of the shared Smartpad connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2030">
+      <text xml:lang="de-DEV">Paketwiederholungen des shared Smartpad</text>
+      <text xml:lang="en-DEV">Messageresends of the shared Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2030">
+      <text xml:lang="de-DEV">Anzahl an Paketwiederholungen der shared Smartpad verbindung</text>
+      <text xml:lang="en-DEV">Number of resends in the shared Smartpad connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2031">
+      <text xml:lang="de-DEV">Anzahl falscher Paketzähler des shared Smartpad</text>
+      <text xml:lang="en-DEV">Wrong messagecounters of the shared Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Description2031">
+      <text xml:lang="de-DEV">Anzahl der falschen Paketzähler der shared Smartpad Verbindung</text>
+      <text xml:lang="en-DEV">Number of wrong messagecounters of the shared Smartpad</text>
+    </uiText>
+    <uiText key="Diagnose_Name2032">
+      <text xml:lang="de-DEV">Shared Smartpad Client IP</text>
+      <text xml:lang="en-DEV">Shared Smartpad Client IP</text>
+    </uiText>
+    <uiText key="Diagnose_Description2032">
+      <text xml:lang="de-DEV">Die Ip des shared Smartpad clients</text>
+      <text xml:lang="en-DEV">The ip of the shared Smartpad client</text>
+    </uiText>
+    <uiText key="Diagnose_Name2033">
+      <text xml:lang="de-DEV">Nachrichtenzähler des shared Smartpad Clients</text>
+      <text xml:lang="en-DEV">Messagecounter of the shared Smartpad client connection</text>
+    </uiText>
+    <uiText key="Diagnose_Description2033">
+      <text xml:lang="de-DEV">Nachrichtenzähler für die shared Smartpad Client Verbindung</text>
+      <text xml:lang="en-DEV">The messagecounter of the shared Smartpad client connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2034">
+      <text xml:lang="de-DEV">Paketwiederholungen des shared Smartpad Clients</text>
+      <text xml:lang="en-DEV">Messageresends of the shared Smartpad client</text>
+    </uiText>
+    <uiText key="Diagnose_Description2034">
+      <text xml:lang="de-DEV">Die Anzahl Paketwiederholungen des shared Smartpad Clients</text>
+      <text xml:lang="en-DEV">Number of resends in the shared Smartpad client connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name2035">
+      <text xml:lang="de-DEV">Anzahl falscher Paketzähler des shared Smartpad Clients</text>
+      <text xml:lang="en-DEV">Wrong messagecounters of the shared Smartpad client connection</text>
+    </uiText>
+    <uiText key="Diagnose_Description2035">
+      <text xml:lang="de-DEV">Die Anzahl falscher Paketzähler in der shared Smartpad Client Verbindung</text>
+      <text xml:lang="en-DEV">The number of wrong messagecounters in the shared Smartpad client connection</text>
+    </uiText>
+  </module>
+</resources>

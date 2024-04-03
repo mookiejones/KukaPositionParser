@@ -1,0 +1,13 @@
+&ACCESS RV3
+DEF  RSI_RESET_PIDS ( )
+   DECL INT Ret
+   IF RSI_ACTIVE THEN
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_X_PID" , "Reset", 1)
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_Pos_PID" , "Reset", 1)
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_Height_PID" , "Reset", 1)
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_Dist_Height_PID" , "Reset", 1)
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_A_Angle_PID" , "Reset", 1)
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_B_Angle_PID" , "Reset", 1)
+      Ret = rsi_setpublicpar(RSI_ID, "VIS_C_Angle_PID" , "Reset", 1)
+   ENDIF
+END

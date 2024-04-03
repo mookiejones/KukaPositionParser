@@ -1,0 +1,138 @@
+<RSIObjects>
+  <Template Name="FTCtrl" Type="T0" Version="V1.0.1" OptParam="Singleton" />
+  <RSIObject ObjID="FTCTRL_CTL">
+    <Parameters>
+      <Parameter Name="DoF_Ctrl" ParamValue="31" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="FTCTRL_CTL">
+    <Parameters>
+      <Parameter Name="AP_VelF" ParamValue="5" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="FTCTRL_CTL">
+    <Parameters>
+      <Parameter Name="AP_LimitF" ParamValue="100" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="FTCTRL_CTL">
+    <Parameters>
+      <Parameter Name="AP_LimitT" ParamValue="10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="SOURCESETFZ_CTL">
+    <Parameters>
+      <Parameter Name="Offset" ParamValue="-500" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORR_CTL">
+    <Parameters>
+      <Parameter Name="LowerLimX" ParamValue="-10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORR_CTL">
+    <Parameters>
+      <Parameter Name="LowerLimY" ParamValue="-10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORR_CTL">
+    <Parameters>
+      <Parameter Name="LowerLimZ" ParamValue="-10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORR_CTL">
+    <Parameters>
+      <Parameter Name="UpperLimX" ParamValue="10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORR_CTL">
+    <Parameters>
+      <Parameter Name="UpperLimY" ParamValue="10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORR_CTL">
+    <Parameters>
+      <Parameter Name="UpperLimZ" ParamValue="20" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORRMON_CTL">
+    <Parameters>
+      <Parameter Name="MaxTrans" ParamValue="110" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="POSCORRMON_CTL">
+    <Parameters>
+      <Parameter Name="MaxRotAngle" ParamValue="10" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALFX_ROL">
+    <Parameters>
+      <Parameter Name="Tolerance" ParamValue="2000" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALFY_ROL">
+    <Parameters>
+      <Parameter Name="Tolerance" ParamValue="2000" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALFZ_ROL">
+    <Parameters>
+      <Parameter Name="Tolerance" ParamValue="5000" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALTX_ROL">
+    <Parameters>
+      <Parameter Name="Tolerance" ParamValue="1000" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALTY_ROL">
+    <Parameters>
+      <Parameter Name="Tolerance" ParamValue="1000" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALTZ_ROL">
+    <Parameters>
+      <Parameter Name="Tolerance" ParamValue="500" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="BAND_RCS">
+    <Parameters>
+      <Parameter Name="DefVal" ParamValue="4" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALFZ_RCS">
+    <Parameters>
+      <Parameter Name="Tolerance" ParamValue="50" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="DELAY_RCS">
+    <Parameters>
+      <Parameter Name="DelayTime" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="SOURCE_RCS">
+    <Parameters>
+      <Parameter Name="Offset" ParamValue="3" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="DIGIN_RCS">
+    <Parameters>
+      <Parameter Name="Index" ParamValue="418" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUAL_RCS">
+    <Parameters>
+      <Parameter Name="CompVal" ParamValue="4" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="EQUALFZ_RCS">
+    <Parameters>
+      <Parameter Name="CompVal" ParamValue="-500" />
+    </Parameters>
+  </RSIObject>
+  <RSIObject ObjID="TIMER_RCS">
+    <Parameters>
+      <Parameter Name="Time" ParamValue="0" />
+    </Parameters>
+  </RSIObject>
+</RSIObjects>

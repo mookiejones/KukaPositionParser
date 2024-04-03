@@ -1,0 +1,37 @@
+&ACCESS RVP7
+&REL 1
+&COMMENT BrkTst-main task
+&PARAM EDITMASK = *
+&PARAM DISKPATH = KRC:\R1\TP\BrakeTest
+DEFDAT BrakeTestReq PUBLIC
+;************************************************   
+;* Description: BrakeTestReq                    * 
+;*                                              *
+;*              BrakeTestReq modified to allow  *
+;*              monitoring remaining time before*
+;*              Brake Test Required             *
+;************************************************
+;*    Software: KSS 8.3             V7K R30     *
+;************************************************
+;*    Modified: C.Ashmore                       *
+  ;*        Date: 2016.07.01                      *
+  ;*     Version: 01.07.00                        * 
+;************************************************  
+;FOLD EXTERNAL DECLARATIONS;%{PE}%MKUKATPBASIS,%CEXT,%VCOMMON,%P
+;FOLD BASISTECH EXT;%{PE}%MKUKATPBASIS,%CEXT,%VEXT,%P
+DECL INT SUCCESS
+;ENDFOLD (BASISTECH EXT)
+;FOLD USER EXT;%{E}%MKUKATPUSER,%CEXT,%VEXT,%P
+;ENDFOLD (USER EXT)
+;ENDFOLD (EXTERNAL DECLERATIONS)
+
+; The name of the brake test device as in in motiondrv.ini
+GLOBAL CHAR brakeTestDevName[30]
+brakeTestDevName[]="BRAKE_TEST"
+
+GLOBAL CHAR brakeTestMdbName[30]
+brakeTestMdbName[]="BrkTst"
+
+INT AxNr,BtIrNr
+
+ENDDAT

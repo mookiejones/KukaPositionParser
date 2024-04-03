@@ -1,0 +1,1823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="de" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="KukaRoboterXPArcTechXPCommon">
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWeldStartAlone">
+      <text>Schweißen starten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnsupportedUpdate">
+      <text>Das Updaten der ArcTechBasic Option von Version {0} in der Version {1} ist nicht gestattet.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNotSupportedVersion">
+      <text>Die Stromquelle {0} wurde mit einer nicht unterstützten Version von ArcTechBasic generiert. Bitte installieren Sie ArcTechBasic Version {1}.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaximalNumberOfJobModesExceeded">
+      <text>Die maximale Anzahl der Schweissmodi wurde übertroffen. Bitte löschen Sie die überschreitende Anzahl von Schweissmodi.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDuplicatedValue">
+      <text>Doppelt verwendeter Ausgang. Ausgangsnummer bereits bei {0} zugewiesen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeaving">
+      <text>Pendeln</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUCorrectionEnergy">
+      <text>Korrektur Energie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTechEditorCaption">
+      <text>ArcTech Editor</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUBurnBack">
+      <text>Drahtrückbrand</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincSelection">
+      <text>ArcLinkXT</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPatternsXUSpiral">
+      <text>Spirale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldErrorStrategies">
+      <text>Schweißfehlerstrategien</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTechBasic">
+      <text>ArcTechBasic</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobNumberMode">
+      <text>Programmnummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDeactivateExpertConfiguration">
+      <text>Expertenkonfiguration deaktivieren</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUIgnitionFault">
+      <text>Zündfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUWeldingCurrent">
+      <text>Schweißstrom</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMHarmonizeDataSets">
+      <text>Parameterdatensätze-Konsistenz herstellen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUJobID">
+      <text>Job Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoInteger">
+      <text>Der Wert muss eine natürliche Zahl sein.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUBurnback">
+      <text>Rückbrand</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCurrentEndFault">
+      <text>Stromendefehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBitRangeToLow">
+      <text>Der Wert muss groeßer oder gleich {0} sein.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUPulse">
+      <text>Puls</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldModeId">
+      <text>Modus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaxNrOfSmallReactions">
+      <text>Anzahl der Fehlerreaktion Wiederholungen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoCommaInDouble">
+      <text>Das Komma darf bei der Zahleneingabe nicht benutzt werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalOverlap">
+      <text>Überschneidungen mit Signal {0}.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCollisionMonitoring">
+      <text>Kollisionsüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCraterControlFault">
+      <text>Endkraterfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSprayer">
+      <text>Sprüher</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMHarmonizeCraterParams">
+      <text>Endkraterparameter-Konsistenz für {0} herstellen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUpdatePowerSource">
+      <text>Stromquelle aktualisieren.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGasType">
+      <text>Gastyp</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUJobMode">
+      <text>Job-Betrieb</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDecisionRequest">
+      <text>Prozess-Fortsetzung angefordert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUKeySwitchProcess">
+      <text>Schlüsselschalter schweißen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCodeGenPlausiCheckFailed">
+      <text>Das Ergebnis der Plausibilitätsüberprüfung von ArcTechBasic war negativ.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEditorViewModelObsolatePowerSource">
+      <text>Diese Stromquelle wurde mit einer älteren Version von ArcTech konfiguriert. {0}{0}Ein ArcTech Update ist erforderlich um den Editor öffnen zu können. {0}Nach einem Update kann die Stromquelle nur mit der neuen Version geöffnet werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincCheckForUpdatesAndDownload">
+      <text>Prüfen auf Update für Stromquelle.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUInductivity">
+      <text>Drossel</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUArcDetected">
+      <text>Strom fließt</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCollectionWeldFault">
+      <text>Sammelfehler schweißen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldingInTestMode">
+      <text>Schweißen in T1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAddSet">
+      <text>Satz hinzufügen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRemoveJobMode">
+      <text>Schweißmodus löschen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcOff">
+      <text>Endkraterparameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaxBreaksOnSeam">
+      <text>Maximale Anzahl an Schweißfehlern</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGetTrim">
+      <text>Trim Daten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWireFeedBackward">
+      <text>Draht rückwärts</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStrategyMaxError">
+      <text>Strategie nach max. Fehlern</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFromTo">
+      <text>Von - Bis</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWeldEnd">
+      <text>Ausgangsgruppe Schweißende</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnitSystemDisplay">
+      <text>Einheitensystem:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSeamControlFault">
+      <text>Nahtüberwachungsfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStillstandOption">
+      <text>Stillstandsüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMActivateExpertConfiguration">
+      <text>Expertenkonfiguration aktivieren</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUProgramNumber">
+      <text>Programm Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATBVersion">
+      <text>ArcTech Basic Version</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeaveAmplitude">
+      <text>Pendeln Amplitude</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCollisionDetect">
+      <text>Kollision Erkennung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNewValue">
+      <text>Neuer Wert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUProgramPlusJob">
+      <text>Programm + Job</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMContinueWithoutRetry">
+      <text>ContinueWithoutRetry</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCommunicationReady">
+      <text>Kommunikation bereit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUPMFault">
+      <text>PM Fault</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUWireFeedBackward">
+      <text>Draht ausfädeln</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputChangesMustBeConfirmed">
+      <text>Nicht alle Änderungen der Eingänge der Stromquelle &lt;{0}&gt; wurden bestätigt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMProcessActive">
+      <text>Schweißprozess aktiv</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidGlobalSignals">
+      <text>Die Konfiguration der Globale Signale ist ungültig.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXURdyWeldSource">
+      <text>Eingangsgruppe Stromquelle bereit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUProgramm">
+      <text>Programm</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEndKrater">
+      <text>Endkraterzeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputConfiguration">
+      <text>Konfiguration Eingänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGetProcedure">
+      <text>Prozessdaten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMProcessSignals">
+      <text>Prozess Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMultisourceNotAllowed">
+      <text>Zu einer Steuerung kann nur eine Stromquelle zugeordnet werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCurrentTimeout">
+      <text>Strom EIN Zeitüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputSignals">
+      <text>Input Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAPODistanceArcTech">
+      <text>Überschleifdistanz bei ARC SWITCH</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUWireFeed">
+      <text>Drahtvorschub</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUWireFree">
+      <text>Festbrand</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUStrategyDecision">
+      <text>Fortsetzung nach Maximum Fehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnitSystemRoundingValueSIError">
+      <text>Rundungsfehler. Die gespeicherte Wert im metrischen Einheitssystem (SI) ist {0}.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKeyValueMode">
+      <text>Leitwert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionErrorStrategyName">
+      <text>Name der Zündfehlerstrategie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCurrentFlow">
+      <text>Strom vorhanden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldModeChangedWarning">
+      <text>{0} wurde von Schweißmodus {1} auf {2} geändert!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUStandard">
+      <text>Standard</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputs">
+      <text>Eingänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIoType">
+      <text>E/A Richtung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNOTIFY">
+      <text>Notify</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTechOpenEditorCommandToolTip">
+      <text>ArcTech Editor öffnen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIsDecimal">
+      <text>Ganzzahl</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSourceMultiple">
+      <text>Es sind mehrere Stromquellen an der Steuerung &lt;{0}&gt; definiert . Nur die Stromquelle: &lt;{1}&gt; ist gültig, alle anderen müssen gelöscht werden. Für ArcTech Elemente wird kein Code generiert!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUGroup">
+      <text>Gruppe</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMExtraOptions">
+      <text>Sonderfunktionen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKRLView">
+      <text>KRL Ansicht</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIsUsed">
+      <text>Aktiv</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAntiCollisionDeviceFault">
+      <text>Abschaltsicherung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKeepOnPosition">
+      <text>KeepOnPosition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSmartHMI">
+      <text>Dialog am SmartPad</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnitSystemSI">
+      <text>Metrisch</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldMsgType">
+      <text>Meldungstyp bei Schweißfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAcknoledgePowerSupply">
+      <text>Quittierung Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasFlow">
+      <text>Gasfluss</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStrategyAfterTStop">
+      <text>Fehlerstrategie ausführen nach TechStop</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFwdDistance">
+      <text>Fehlerbewegungsdistanz</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMValueGreater">
+      <text>{0} ist größer als {1}, muss aber kleiner oder gleich sein.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLength">
+      <text>Länge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUAlarmSignal">
+      <text>AlarmSignal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUTorchCollision">
+      <text>Brennerkollision</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUColdMode">
+      <text>COLD</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMHarmonizeStrikeParams">
+      <text>Zündparameter-Konsistenz für {0} herstellen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParameter">
+      <text>Parameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParamName">
+      <text>Parametername</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionCrFault">
+      <text>Zündfehler KIR Applikation</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincUpdatesAndDownload">
+      <text>Download Update von Stromquelle.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMToolDirection">
+      <text>Werkzeugstoßrichtung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTimeouts">
+      <text>Timeouts</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUPowerSourceReady">
+      <text>Stromquelle bereit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNameNormalizedTooLong">
+      <text>Der Name ohne diakritische Zeichen: {0} darf nicht mehr als {1} Zeichen enthalten.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUSynergicPulseMIG">
+      <text>Synergic/Pulse MIG</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLocalSignals">
+      <text>Locale Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTechStopFault">
+      <text>Technologiestop</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUseSetForBurnFree">
+      <text>Parametersatz aktiviert für &lt;Burn Free&gt;.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUEnergy">
+      <text>Energie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBurnFreePreFlowTime">
+      <text>Freibrennvorströmzeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincCompatibilityOkToolTip">
+      <text>Kompatibilität ist gewährleistet.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincArcLinkXXTIoRangeConfigurationMissing">
+      <text>Es ist keine IO-Startadresse im EA-Verschaltungseditor konfiguriert!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUDecisionRequest">
+      <text>Prozess-Fortsetzung angefordert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXULeitsignalXULiftArc">
+      <text>Leitsignal: Lift Arc</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNameContainsInvalidCharacter">
+      <text>Der Name enthält ein ungültiges Zeichen. Erlaubt sind nur folgende Sonderzeichen: - _ + # ( )</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLockRequestNotFoundExceptionMessage">
+      <text>Der Absender {0} hat versucht, das Feature {1} zu entsperren, es wurde jedoch keine entsprechende Sperranforderung gefunden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUArcControl">
+      <text>Arc Control</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNotUsed">
+      <text>&lt;INAKTIV&gt;</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireFeedForward">
+      <text>Draht vorwärts</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUCriticalSeamError">
+      <text>Kritischer Nahtfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUInductance">
+      <text>Induktivität</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSourceAlreadyDefined">
+      <text>Es ist bereits eine Stromquelle vorhanden. Aktuelle Stromquelle ist: &lt;{0}&gt;</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWaterFlow">
+      <text>Kühlung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUJobWithParameters">
+      <text>Job mit Parameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputConfiguration">
+      <text>Konfiguration Ausgänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcSenseOptionPackageNotInstalled">
+      <text>ArcSense Option ist auf Steuerung &lt;{0}&gt; benutzt, aber es ist nicht in Work Visual installiert.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMConvertToPowerSource">
+      <text>Werkzeug in Stromquelle konvertieren.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBurnFreeMaxIgn">
+      <text>Freibrennen max. Anzahl der Zündversuche</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOneActiveJobModeIsNeeded">
+      <text>Es muss mindestens ein Schweißmodus aktiv sein</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUFilePart">
+      <text>Datei/ Werkstück</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPatternsXUTriangle">
+      <text>Dreieck</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBitPatternExists">
+      <text>Das Bitmuster darf nicht {0} sein, weil es schon in {1} genutzt wird.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRemoveUsedParamSet">
+      <text>Dieser Parametersatz wird verwendet in folgenden Modulen:{0}Durch das Löschen werden diese Module funktionsunfähig!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNotUsed1">
+      <text>Nicht benutzt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUProcessActive">
+      <text>Prozess aktiv</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFromIsMore">
+      <text>Von ist grösser als Bis...</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUCriticalIgnitError">
+      <text>Kritischer Zündungsfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUWeldStart">
+      <text>Schweißen Start</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBitRangeToHigh">
+      <text>Der Wert muss kleiner oder gleich {0} sein.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignals">
+      <text>Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParamSetIsUsedInModule">
+      <text>Dieser Parametersatz wird verwendet in folgenden Modulen:{0}Durch das Löschen werden diese Module funktionsunfähig!!!{1}{1}Wollen Sie es trotzdem löschen?</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWatchDogTime">
+      <text>Pulsdauer Lebensbit-Signal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAddJobMode">
+      <text>Schweißmodus hinzufügen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInconsistentDataSets">
+      <text>Die Stromquelle &lt;{0}&gt; enthält inkonsistent Parameter Sets.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincIpAddress">
+      <text>IP Adresse Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXULiftArc">
+      <text>LiftArc</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMHarmonizeWeldParams">
+      <text>Schweißparameter-Konsistenz für {0} herstellen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUMigMag">
+      <text>MIGMAG</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGetWorkpoint">
+      <text>Arbeitspunkt Daten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidPowSrcErrStrategy">
+      <text>Die Stromquelle enthält ungültige Fehler-Strategien. Bitte neue Stromquelle konfigurieren.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPoint1">
+      <text>Stützpunkt 1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPoint3">
+      <text>Stützpunkt 3</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPoint2">
+      <text>Stützpunkt 2</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPoint5">
+      <text>Stützpunkt 5</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPoint4">
+      <text>Stützpunkt 4</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincProcessType">
+      <text>Prozesstyp</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIoDefinition">
+      <text>I/O Definition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUCollectionFault">
+      <text>Sammelfehler schweißen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincDownloadFromSource">
+      <text>Lade Kennliniendaten von Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidControllerSettings">
+      <text>Für die Steuerung &lt;{0}&gt; konnte kein Code generiert werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUCorrectionArcLength">
+      <text>Korrektur Lichtbogenlänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUPulsOn">
+      <text>Puls Ein</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUWireFeedMonitoring">
+      <text>Überwachung Drahtvorschub</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUClearErrorArcOff">
+      <text>Ausgangsgruppe vor Wegfahren von Schweißnaht</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidStrategy">
+      <text>Ungültige Strategie!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldModesNotFoundInWoV">
+      <text>Lincoln Kennliniendatei nicht in WorkVisual Projekt vorhanden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTPSiXUCurrentFlow">
+      <text>Current flow</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincArcLinkXXTNotConfigurated">
+      <text>Stromquelle {0} ist nicht konfiguriert.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMProcess">
+      <text>Prozess</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnitSystemImperial">
+      <text>Angloamerikanisch</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoPowerSource">
+      <text>Keine Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCanNotDeleteJobMode">
+      <text>Der letzte aktive Schweißmodus kann nicht gelöscht werden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUGasActive">
+      <text>Gasfluss</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldModeWillBeDeletedWarning">
+      <text>{0} wird nicht länger verwendet und wird zurückgesetzt!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionTime">
+      <text>Wartezeit nach Zündung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKrlCodeView">
+      <text>KRL Code Ansicht</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMModifyView">
+      <text>Konfigurations Ansicht</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMToBeRemoved">
+      <text>Soll entfernt werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaximalPowerSourceJobModesExceeded">
+      <text>Der höchstzulässige Anzahl von Job Modi bei der Stromquelle {0} ist: {1}. Bitte löschen Sie die überschreitende Anzahl von Schweissmodi.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUPLCXUSignal1">
+      <text>ATOg_PLC_Signal 1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUJobMode">
+      <text>Jobbetrieb</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXURelease">
+      <text>Release</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUWDFault">
+      <text>WD Fault</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAddExtraOption">
+      <text>Sonderfunktion hinzufügen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMErrorFromCell">
+      <text>Zellenfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWatchDogLifeBit">
+      <text>Lebensbit-Ausgang</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMoveUpAndStop">
+      <text>MoveUpAndStop</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWireFreeDetection">
+      <text>Drahtfreisignal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUCellErrorInput">
+      <text>Zellenfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInjectionFailed">
+      <text>Injection-Mechanismus für Stromquelle &lt;{0}&gt; ist fehlgeschlagen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPurgeTime">
+      <text>Fliegende Gasvorströmzeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincErrorDownload">
+      <text>Fehler beim Laden von Lincoln Stromquelle: {0}</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAcceptParamSetAdjustRemove">
+      <text>Dieses Parameter wird von allen Parametersätze entfernt werden. {0}{0}Möchten Sie fortfahren?</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionErrorStrategy">
+      <text>Zündfehlerstrategie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMProcessSettings">
+      <text>Prozess Einstellungen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUMig">
+      <text>Mig</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXURMD">
+      <text>RMD</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUWFS">
+      <text>Drahtvorschubgeschwindigkeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSupportedPoints">
+      <text>Stützpunkte</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobMode">
+      <text>Schweißmodus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUWireStuck">
+      <text>Festbrand</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUAccuPulse">
+      <text>AccuPulse</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWatchDogFault">
+      <text>Lebensbit-Fehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcSenseVersion">
+      <text>Arc Sense Version</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUVoltageXUTrim">
+      <text>Spannungskorrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincInvalidIpAddressController">
+      <text>Ungültige IP Adresse der KRC Steuerung Lincoln. Kennliniendatei kann nicht geladen werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldModesNotFoundOnController">
+      <text>Lincoln Kennliniendatei nicht auf KRC Steuerung vorhanden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoControllerMessage">
+      <text>Bitte eine Steuerung zuweisen!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUWCFault">
+      <text>WC Fault</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidChannelValue">
+      <text>Wert 0 ist ungültig!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldPeriphery">
+      <text>Eingangsgruppe Schweißperipherie bereit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInitialValue">
+      <text>Initialwert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignal32BitPolicy">
+      <text>Signal breite überschreitet 32 Bit.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidConversationPoints">
+      <text>Die Stromquelle &lt;{0}&gt; enthält ungültige Stützpunkte &lt;{1}&gt;, &lt;{2}&gt;</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRobotspeed">
+      <text>Robotergeschwindigkeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincArcLinkXXTIpAddressConfigurationMissing">
+      <text>Es ist keine IP-Adresse in ArcLinkXT-DTM konfiguriert!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMExtraOption">
+      <text>Sonderfunktion</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWrongChracters">
+      <text>Falsche Eingabe</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnsupportedControllerProfile">
+      <text>Der Typ &lt;{0}&gt; des Controllers &lt;{1}&gt; ist von ArcTechBasic nicht unterstützt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParaDefNotFound">
+      <text>Parameterdefinition für Parameter nicht gefunden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMToBeAdded">
+      <text>Soll hinzugefügt werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoDouble">
+      <text>Der Wert muss eine Kommazahl sein.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUPLCXUCleanPosition">
+      <text>SPS Reinigungsposition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldProcessActive">
+      <text>Strom vorhanden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireDetectRequest">
+      <text>Drahtfestbrandprüfung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUTorchCollission">
+      <text>Abschaltsicherung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUManuallyJobNumber">
+      <text>Manual MIG Job Nr</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEditorViewModelObsolateController">
+      <text>Nur Steuerungen ab KSS Version 8.3 werden unterstützt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSourceMode">
+      <text>Betriebsart Stromquelle:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputChannelsMapping">
+      <text>Zuweisung Ausgänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputIsAlreadyDefined">
+      <text>Ausgang {0} ist bereits durch das Signal {1} besetzt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMConfirmChannelNameChanging">
+      <text>Geänderten Namen akzeptieren</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPattern">
+      <text>Muster</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRemoveUsedJobMode">
+      <text>Dieser Schweissmodus wird verwendet in folgenden Modulen:{0}Durch das Löschen werden diese Module funktionsunfähig!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUSPPAndLiftArc">
+      <text>Programm: SPP + LiftArc</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincPositionSelectedMoreThanOnce">
+      <text>Die Position {0} ist für mehr als eine Kennline ausgewählt, was nicht erlaubt ist!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFixedSignalChannel">
+      <text>Dieser Signal ist für ArcLinkXT vordefiniert. Änderungen für den I/O-Bereich sind nur über die I/O-Verschaltung ermöglicht.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXULeitsignalXUSuperPuls">
+      <text>Leitsignal: SuperPuls</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUJobMode">
+      <text>Job Mode</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSelectJobMode">
+      <text>Wählen Sie einen Schweissmodus.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUJobNumber">
+      <text>Job Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMExtraOptionUsedFromOtherJm">
+      <text>Diese Sonderfunktion wird in Schweißmodi: {0} verwendet.{1}{1}Sonderfunktion von allen Schweißmodi entfernen?</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionMsgType">
+      <text>Meldungstyp bei Zündfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoMovementFault">
+      <text>Stillstandsüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUVolt">
+      <text>Schweißspannung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionErrorStrategies">
+      <text>Zündfehlerstrategien</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSourceMustBeConverted">
+      <text>Für ArcTech Elemente wird kein Code generiert, weil das aktuelle Projekt eine Stromquelle entählt, die zuvor auf ArcTech 1.1 konvertiert werden muss. Deshalb ist es erforderlich die Stromquelle &lt;{0}&gt; mit dem ArcTech Editor erneut zu öffnen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCrSeamError">
+      <text>Kritischer Nahtfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputBypassDelay">
+      <text>Überwachungsverzögerung Schweißstart</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEditorViewModelMissingOptionPackage">
+      <text>ArcTech Basic Optionspaket fehlt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUJobNumber">
+      <text>Job Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUAnybusFault">
+      <text>Fehler: Anybus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldMode">
+      <text>Modus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputCantChange">
+      <text>Der Ausgang kann nicht geändert werden, weil:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUBurnFreeFault">
+      <text>Freibrennfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalCantChange">
+      <text>Das Signal kann nicht geändert werden, weil:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincConnectionTimeout">
+      <text>Keine Verbindung zur Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel">
+      <text>Kanal {0}</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUPower">
+      <text>Leistung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUpdatePowerSourceCanceled">
+      <text>Update der Stromquelle {1} von dem Controller {0} ist nicht erlaubt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaximalNumberOfJobModeReached">
+      <text>Maximale Anzahl Schweißmodi erreicht</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUGeneralPulse">
+      <text>General Pulse</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCreateDefaultDataSetsMessageBoxHeader">
+      <text>Standard Parametersätze erstellen?</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUGasFlowAvailable">
+      <text>Gasfluss</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalAlreadyDefined">
+      <text>Ausgabekanal {0} ist bereits durch Ausgabe {1} definiert.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldSetName">
+      <text>WeldSet Dateiname: {0}</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCountOfPoints">
+      <text>Anzahl Stützpkt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTechOpenEditorCommand">
+      <text>ArcTech Editor</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAdvancedErrorDecision">
+      <text>Erweiterte Fehler Entscheidung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalIntersection">
+      <text>IO Bereich überschneidet sich mit anderem Signal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincNoUpdateFound">
+      <text>Kein Update auf Stromquelle gefunden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobModes">
+      <text>Modi</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUSpeedPulse">
+      <text>SpeedPulse Betrieb</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireFree">
+      <text>Drahtfreisignal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidDataSets">
+      <text>Die Stromquelle &lt;{0}&gt; enthält keine gültige Parameter Sets.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParameterSetsEditor">
+      <text>Datensätze</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcSwitch">
+      <text>Schweißparameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaxIgnitions">
+      <text>Max. Anzahl der Zündversuche</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInactiveInput">
+      <text>Dieser Eingangswert ist nicht konfigurierbar, da der Eingang nicht aktiv ist.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCleanerMotor">
+      <text>Reinigungsmotor</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionFault">
+      <text>Zündfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUCurrentMonitoring">
+      <text>Überwachung Strom</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRemoveGroup">
+      <text>Gruppe löschen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUProgramPlusJobLiftArc">
+      <text>Programm + Job: LiftArc</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUWireFeedForward">
+      <text>Draht einfädeln</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUDynamicCorrection">
+      <text>Dynamikkorrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTechAdvancedOptionPackageNotInstalled">
+      <text>ArcTechAdvanced Option ist auf Steuerung &lt;{0}&gt; benutzt, aber es ist nicht in Work Visual installiert.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnitSystemRoundingValueImperialError">
+      <text>Rundungsfehler. Die beibehaltenen Wert im angloamerikanisches Einheitssystem (britisch) ist {0}.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFirstPoint">
+      <text>Der erste Punkt darf nicht geändert werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMXX">
+      <text>X</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMZ">
+      <text>Z</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUDynamicCorrection">
+      <text>Dynamikkorrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAmbiguousName">
+      <text>Nicht eindeutiger Name!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNo">
+      <text>Nein</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTo">
+      <text>Bis</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUWiseProcessJobNr">
+      <text>Wise Process Job Nr</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUGasFlowOn">
+      <text>Schutzgas Ein</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincDescription">
+      <text>Beschreibung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDefaultSetName">
+      <text>Set</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldErrorStrategyName">
+      <text>Name der Schweißfehlerstrategie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMExtraOptionAddressCantChange">
+      <text>Die Adresse kann nicht geändert werden, weil:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUNumber2">
+      <text>Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUNumber3">
+      <text>Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUNumber1">
+      <text>Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldSeamEnd">
+      <text>Eingangsgruppe Schweißnahtende</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEnterValidNumber">
+      <text>Bitte geben Sie einen gültigen Wert ein</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincControllerMustBeSetActive">
+      <text>Die zur Stromquelle gehörende Steuerung ist nicht aktiv! Steuerung &lt;{0}&gt; muss aktiv gesetzt werden, um die ArcLinkXT DTM Konfiguration lesen zu können. Dies kann etwas dauern ...</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUWireFeedSpeed">
+      <text>Drahtvorschubgeschwindigkeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUSuperPuls">
+      <text>SuperPuls</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidInputs">
+      <text>Die Stromquelle &lt;{0}&gt; enthält ungültige Eingänge.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasTimeoutOver">
+      <text>Gasstrom AUS Zeitüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMActualValue">
+      <text>Aktueller Wert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPatternsXUTrapecoid">
+      <text>Trapez</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMinimumNumberOfActiveJobModesReached">
+      <text>Die minimale Anzahl von aktiven Schweißmodi wurde erreicht . Der letzte aktive Schweissmodus darf nicht gelöscht werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTorchCollision">
+      <text>Abschaltsicherung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGetWaveControl">
+      <text>Wave Daten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGetWeldModeDatas">
+      <text>Modus Daten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincUpdateFound">
+      <text>Update auf Stromquelle gefunden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATAVersion">
+      <text>ArcTech Advanced Version</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidLocalSignals">
+      <text>Die Konfiguration der Lokale Signale ist ungültig.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPLC">
+      <text>SPS Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMYes">
+      <text>Ja</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTimeFrame">
+      <text>Zeitfenster</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBitPattern">
+      <text>Bitmuster</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAngle">
+      <text>Winkel</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcOn">
+      <text>Zündparameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFalse">
+      <text>False</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasflowTimeout">
+      <text>Gasstrom EIN Zeitüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIndex">
+      <text>Index</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMultiplePowerSourcesOutputAndSignalsOverlap">
+      <text>Zwischen Stromquellen an Steuerung &lt;{0}&gt; existiert eine Überlappung zwischen den Ausgängen und Signalen. Für ArcTech Elemente wird kein Code generiert!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMValue">
+      <text>Wert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMState">
+      <text>Status</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSpeed">
+      <text>Roboter Geschwindigkeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParam">
+      <text>Parameter</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAcceptChanges">
+      <text>Änderungen übernehmen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidExtraOptions">
+      <text>Die Stromquelle &lt;{0}&gt; enthält ungültige Sonderfunktionen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXULeitsignal">
+      <text>Leitsignal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMultipleSignalUsageProvidersExceptionMessage">
+      <text>Mehrere Signalverwendungsanbieter für die Quelle {0} konfiguriert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTechAdvancedOptions">
+      <text>ArcTech Advanced Optionen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincJobMode">
+      <text>Zugewiesen an:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUWireFeedSpeed">
+      <text>Drahtvorschubgeschwindigkeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUInductorEffect">
+      <text>Einfluß der Drossel</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputChannelsMapping">
+      <text>Zuweisung Eingänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBurnBack">
+      <text>Drahtrückbrand</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCurrentOverTimeout">
+      <text>Strom AUS Zeitüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUGasPreFlowStart">
+      <text>Ausgangsgruppe Gasvorströmen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSwitchButtonEditParameterSets">
+      <text>Definition übernehmen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAcceptParamSetAdjustAdd">
+      <text>Alle Parameterdatensätze werden mit diesem Parameter aktualisiert werden. {0}{0}Möchten Sie fortfahren?</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRecoveryTime">
+      <text>Wartezeit zwischen den Zündversuchen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUCollisionDetect">
+      <text>Kollision Erkennung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBitRange">
+      <text>Bitbreite</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMESABXUWeldDataNumber">
+      <text>Schweiß Datennummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNameToShort">
+      <text>Der Name muss mehr als {0} Zeichen enthalten.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUVoltageMonitoring">
+      <text>Überwachung Spannung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidAddressValue">
+      <text>Ungültige Adresse</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUAcknowledgePS">
+      <text>Quittierung Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPointToLow">
+      <text>Der Wert muss grösser sein als der Wert des vorhergehenden Punktes ({0}).</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalName">
+      <text>Signalname</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUDecisionValid">
+      <text>Übernahme Fortsetzungs-Auswahl</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFixedInputChannel">
+      <text>Dieser Eingang ist für ArcLinkXT vordefiniert. Änderungen für den I/O-Bereich sind nur über die I/O-Verschaltung ermöglicht.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOnlyBySmartPad">
+      <text>Dialog am SmartPad</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWireFeedForward">
+      <text>Draht vorwärts</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUJobMode">
+      <text>Job Betrieb</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUMainCurrent">
+      <text>Hauptstromsignal</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUJointID">
+      <text>Naht Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUArcLengthCorrection">
+      <text>Libo-Korrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincControllerNotFound">
+      <text>Steuerung nicht erreichbar! Fehler: {0}</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUProgramNumber">
+      <text>Program Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDefaultNameResourceKey">
+      <text>Kanal {0}</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXULeitsignalXUSPPXULiftArc">
+      <text>Leitsignal: SPP+LiftArc</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasTimoutOver">
+      <text>Gasfluss OFF über</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincPosition">
+      <text>Position {0}</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincConfigure">
+      <text>Lincoln Stromquelle konfigurieren</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireFeedBackward">
+      <text>Draht rückwärts</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKrlFullNameMetaDataProviderInvalidKey">
+      <text>Der Provider unterstützt nur KRLFullVarName als Schlüssel</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMZeroVelocity">
+      <text>Geschwindigkeit für Stillstandserkennung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldMoving">
+      <text>Eingangsgruppe Überwachung Schweißbewegung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNameInvalid">
+      <text>Der Name muss mit einem Buchstaben beginnen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNameToLong">
+      <text>Der Name darf nicht mehr als {0} Zeichen enthalten.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUMotorCurrentMonitoring">
+      <text>Überwachung Motorstrom</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidPowerSource">
+      <text>Die Stromquelle &lt;{0}&gt; wurde nicht konfiguriert.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPostFlowTime">
+      <text>Nachströmzeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStillstandTimeout">
+      <text>Überwachungszeit für Stillstandserkennung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKeySwitchWelding">
+      <text>Schlüsselschalter schweißen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAmplitude">
+      <text>Auslenkung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobModeNameInvalid">
+      <text>Der Name darf nicht Zeichen ' und " enthalten.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUJobNumber">
+      <text>Job Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasOffFault">
+      <text>Gasabschaltfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUManuallyMIG">
+      <text>Manuell MIG</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRemoveSet">
+      <text>Satz entfernen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUArcDetect">
+      <text>Stromfluß vorhanden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputChannelMapping">
+      <text>Zuweisung der Ausgänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincReconfigure">
+      <text>Rekonfigurieren</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUSchweissmodus">
+      <text>Welding mode</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUWiseProcesses">
+      <text>Wise Processes</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUJobModeQMACS">
+      <text>Job Betrieb QMACS</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUVoltageCorrection">
+      <text>Spannungskorrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputSignals">
+      <text>Output Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUGasFault">
+      <text>Gas Fault</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUArcLength">
+      <text>Lichtbogenlänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWeldProblem">
+      <text>Ausgangsgruppe Schweißfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincFilterAll">
+      <text>&lt;Alle&gt;</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAutomatic">
+      <text>Automatik</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDataSetName">
+      <text>Datensatzname</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBurnFreeIgnitionTime">
+      <text>Freibrennwartezeit nach Zündung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldErrorStrategy">
+      <text>Schweißfehlerstrategie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMRemoveExtraOption">
+      <text>Sonderfunktion löschen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputAndSignalsOverlap">
+      <text>An der Stromquelle &lt;{0}&gt; existiert eine Überlappung zwischen den Ausgängen und Signalen. Für ArcTech Elemente wird kein Code generiert!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMonitoring">
+      <text>Überwachungen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLockRequestDeniedExceptionMessage">
+      <text>Sperren der Anfrage von {0} für Feature {1}, die vom Ziel abgelehnt wurde</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGetAttribute">
+      <text>Attribute</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUWeldStartMove">
+      <text>Eingangsgruppe Bewegungsstart</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXULeitsignalXUJobNumber">
+      <text>Job Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoJobMode">
+      <text>Schweißmodussignal nicht gefunden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUJobNumber">
+      <text>Job Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireStock">
+      <text>Drahtvorrat</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCrIgnitionError">
+      <text>Kritischer Zündungsfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobModeBitPatternInvalid">
+      <text>Der Schweißmodus &amp;lt;{0}&amp;gt; hat ein Bitmuster, die die Signalgrenzen überschreitet. {3} Bitmusterwert: {1}. {3} Maximalwert {2}.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBackToSplineStart">
+      <text>BackToSplineStart</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSKSXUProgram">
+      <text>Programm</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUBurnBackTime">
+      <text>Drahtrückbrennzeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUWeldingReady">
+      <text>Schweißbereit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWeldStart">
+      <text>Ausgangsgruppe Schweißstart</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidOutputs">
+      <text>Die Stromquelle &lt;{0}&gt; enthält ungültige Ausgänge.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUReceiptError">
+      <text>Ausgangsgruppe Quittierung Fehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUUserDefined1">
+      <text>Benutzerdefinierter Eingang 1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUUserDefined2">
+      <text>Benutzerdefinierter Eingang 2</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUIgnitProblem">
+      <text>Ausgangsgruppe Zündfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalInIsAlreadyDefined">
+      <text>Eingangskanal {0} ist bereits durch den Eingang {1} besetzt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPointToHigh">
+      <text>Der Wert muss kleiner sein als der Wert des nächsten Punktes ({0}).</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIsActive">
+      <text>Aktiv</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMinimum">
+      <text>Minimum</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDuplicatedAddress">
+      <text>Doppelte Adresse. Nummer bereits auf {0} zugewiesen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTech">
+      <text>ArcTech Paket</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcMode">
+      <text>Schweißmodus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMValueLessParamSet">
+      <text>{0} ist kleiner als {1}. Maximalwerte in Datensätze müssen angepasst werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUMigMagPulse">
+      <text>MIG/MAG Impuls</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUJob">
+      <text>Job</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMExternalDeviceFault">
+      <text>Fehlermeldung an externes Geraet</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUserInput2">
+      <text>Benutzerdefinierter Eingang 2</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUserInput3">
+      <text>Benutzerdefinierter Eingang 3</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUserInput1">
+      <text>Benutzerdefinierter Eingang 1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUChannelMode">
+      <text>Kanal Mode</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPatternsXUNone">
+      <text>Nicht Pendeln</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputs">
+      <text>Ausgänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXURobotReady">
+      <text>Roboter bereit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBurnBackTime">
+      <text>Drahtrückbrennzeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUWorkpoint">
+      <text>Arbeitspunkt</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOutputChangesMustBeConfirmed">
+      <text>Die Stromquelle &lt;{0}&gt; enthält unbestätigte Änderungen der Ausgänge.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalCreationError">
+      <text>Signal {0} konnte nicht erstellt werden. Fehlermeldung: {1}</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUCurrentFlow">
+      <text>Strom fließt</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobModeNameToLong">
+      <text>Die Schweißmodusbezeichnung darf nicht mehr wie 24 Zeichen beinhalten. Die Codegenerierung wird abgebrochen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUReceiptWeldMachine">
+      <text>Quittierung Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInactiveOutput">
+      <text>Dieser Ausgangswert ist nicht konfigurierbar, da der Eingang nicht aktiv ist.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOnlyBySps">
+      <text>SPS Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnitOfController">
+      <text>Einheit für</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionFailureMsgType">
+      <text>Meldungstyp wenn Zündversuche überschritten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInputChannelMapping">
+      <text>Zuweisung der Eingänge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionReaction">
+      <text>Art der Fehlerreaktion</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWireFreeTimeout">
+      <text>Draht frei Zeitüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMValueLess">
+      <text>{0} ist kleiner als {1}, muss aber größer oder gleich sein.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldStart">
+      <text>Schweißen starten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEnterValueBetween">
+      <text>Bitte Wert Eingeben im Bereich:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUChannelNumber">
+      <text>Kanal Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeaveLength">
+      <text>Pendeln Länge</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWireType">
+      <text>Drahttyp</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWireSize">
+      <text>Drahtdurchmesser</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaximum">
+      <text>Maximum</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeaveAngle">
+      <text>Pendeln Winkel</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldModeMessageBoxWarningPart2">
+      <text>Diese Schweißmodi werden zurückgesetzt falls die Änderungen übernommen werden! Programme auf der KRC -Steuerung welche diese Schweißmodi verwenden, werden nicht mehr funktionieren!
+
+Sind sie sicher, dass sie die Änderungen übernehmen wollen?</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWeldModeMessageBoxWarningPart1">
+      <text>Es wurden einige potentiell gefährliche Änderungen vorgenommen.
+Dadurch werden folgende Schweißmodi zurückgesetzt:</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoValidFormat">
+      <text>Kein gültiges Format: x-y</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFieldGreater3">
+      <text>Das Feld muss mehr wie 2 Zeichen enthalten.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMOptionStillInstalledOnSmartHMI">
+      <text>Option &lt;{0}&gt; wurde von der Steuerung &lt;{1}&gt; in WoV entfernt, allerdings scheint diese Option auf der KRC Steuerung noch installiert zu sein. Deinstallieren Sie zuerst die Option auf der KRC Steuerung und laden Sie das Projekt erneut herunter.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInOutputAreaNotConfigured">
+      <text>Der I/O-Bereich wurde nicht konfiguriert.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobModeIsUsedInModule">
+      <text>Dieser Schweissmodus wird verwendet in folgenden Modulen:{1}{0}Durch das Löschen werden diese Module funktionsunfähig!!!{1} {1} Wollen Sie es trotzdem löschen?</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFixedOutputChannel">
+      <text>Dieser Ausgang ist für ArcLinkXT vordefiniert. Änderungen für den I/O-Bereich sind nur über die I/O-Verschaltung ermöglicht.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincCompatibilityNokToolTip">
+      <text>Nicht kompatibel. Es gibt Änderungen, die die aktuellen Daten beeinflussen werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUGasPostFlowEnd">
+      <text>Ausgangsgruppe Gasnachströmen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUERXUPLCXUSignal1">
+      <text>SPS Entscheidung für Error Recovery Strategie (Bitweise)</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMArcTechBasicOptionPackageMissing">
+      <text>Es fehlt die ArcTechBasic Optionspaket auf Steuerung {0}.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUWeldComplete">
+      <text>Schweißung komplett</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPulseTime">
+      <text>Pulse Zeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMVelocityTransfer">
+      <text>Schweißgeschwindigkeit an die Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalUsageProviderTypeNotFoundExceptionMessage">
+      <text>Konfigurierter Signal Usage Provider-Typ {0} wurde nicht gefunden</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoNegativeValue">
+      <text>Negative Werte sind nicht zulässig.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMotionOnSeam">
+      <text>Fehlerbewegungsdistanz</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUHotProcess">
+      <text>Prozess heiss</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMConfigurationFault">
+      <text>Konfigurationsfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMBurnFreeFault">
+      <text>Freibrennfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSource">
+      <text>Stromquelle</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMActivatedBy">
+      <text>aktiviert durch</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUSynergicPulseJobNr">
+      <text>Synergic/Pulse Job Nr</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCollisionMonitoringNotProperlyConfigured">
+      <text>Kollisionüberwachung ist falsch konfiguriert. Deaktiviere die Kollisionüberwachung unter dem Reiter: Prozess Einstellungen bei der Auswahl: Globale Einstellungen oder konfiguriere entsprechenden Eingang in der I/O Definition.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMValueGreaterParamSet">
+      <text>{0} ist größer als {1}. Minimalwerte in Datensätze müssen angepasst werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMHasDirtyMappingChannelsWarning">
+      <text>Akzeptanz des geänderten Namens ist notwendig. Dies ist nur in der Expertenkonfiguration - Konfigurationsansicht möglich!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUWireStick">
+      <text>Festbrand</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincDownloadFinished">
+      <text>Laden der Daten von Stromquelle war erfolgreich</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUArcLengthCorrection">
+      <text>LiBo-Längenkorrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel6">
+      <text>Kanal 6</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel7">
+      <text>Kanal 7</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel4">
+      <text>Kanal 4</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel5">
+      <text>Kanal 5</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel2">
+      <text>Kanal 2</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel3">
+      <text>Kanal 3</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel1">
+      <text>Kanal 1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMChannel8">
+      <text>Kanal 8</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTPSiXUMotionRelease">
+      <text>Robot Motion Release</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalOutIsAlreadyDefined">
+      <text>Ausgangskanal {0} ist bereits durch den Ausgang {1} besetzt.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGeneralSettings">
+      <text>Allgemeine Einstellungen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUBurnback">
+      <text>Rückbrand</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIgnitionTimeoutFault">
+      <text>Zündfehler time out</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInvalidSignals">
+      <text>Die Konfiguration der Signale der Stromquelle &lt;{0}&gt; ist ungültig.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUDeepMode">
+      <text>DEEP</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaximalNumberOfExtraOptionReached">
+      <text>Maximale Anzahl von Sonderfunktionen ist erreicht.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUControllerLine">
+      <text>Kennlinie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUCurrentCorrection">
+      <text>Stromkorrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPreFlowTime">
+      <text>Vorströmzeit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUTrigger">
+      <text>Trigger</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATIgXUCollisionMonitoring">
+      <text>Kollisionsüberwachung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTPSiXUHeartBeat">
+      <text>Heartbeat Powersource</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStrategyInput">
+      <text>Prozessfortsetzung nach max. Fehlern</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUMigMag">
+      <text>MIG/MAG Standard</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMCreateDefaultDataSetsMessageBox">
+      <text>Es existieren bereits Parametersätze. Drücken Sie 'Ja' um diese zu löschen und die Standardparametersätze neu zu erstellen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLastPoint">
+      <text>Der letzte Punkt darf nicht geändert werden.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMoveForward">
+      <text>MoveForward</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeavePattern">
+      <text>Pendeln Muster</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPowerSourceReady">
+      <text>Stromquelle bereit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMIrStopMessFault">
+      <text>Stopmessfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincolnXUWaterFault">
+      <text>Water Fault</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMHotProcess">
+      <text>Prozess heiss</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMConvertToPowerSourceCanceled">
+      <text>Konvertierung wurde abgebrochen weil bereits eine andere Stromquelle an der Steuerung &lt;{0}&gt; vorhanden ist. Aktuelle Stromquelle ist: &lt;{1}&gt;!</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInactiveJobMode">
+      <text>Inaktiv</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUManualMigJobNr">
+      <text>Manual MIG Job Nr</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUSlope">
+      <text>Slope</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUAcknowledgeError">
+      <text>Fehler quittieren</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincCompatibilityInfoToolTip">
+      <text>Es gibt Änderungen, die aber mit den aktuellen Daten kompatibel sind.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFroniusXUPulseCorrection">
+      <text>Pulskorrektur</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPLCXUCleanPosition">
+      <text>SPS Reinigungsposition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWorkVisualView">
+      <text>Work Visual Ansicht</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStrategyDecisionTyp">
+      <text>Fortsetzung: Heiss/Kalt</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMainCurrent">
+      <text>Hauptstrom</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNextInconsistence">
+      <text>Nächste Inkonsistenz</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAddGroup">
+      <text>Gruppe hinzufügen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEditorViewModelNoContent">
+      <text>Bitte wählen sie eine gültige Stromquelle unter einer Steuerung aus.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNoGlobalSettings">
+      <text>Fehler Globale Einstellungen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPatternsXUUnsymetricTrapecoid">
+      <text>nichtsymetrisches Trapez</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUJobNumber">
+      <text>Job Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMAssignment">
+      <text>Zuordnung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUProgrammNumber">
+      <text>Programm Nummer</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGlobalSignals">
+      <text>Globale Signale</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincWorkOffline">
+      <text>Offline arbeiten mit bereits heruntergeladener Datei.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMaximalNumberOfStrategyExceeded">
+      <text>Die maximale Anzahl der Strategien übertroffen. Bitte löschen Sie die überschreitende Anzahl von Strategien.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSwitchButtonEditDefinition">
+      <text>Definition bearbeiten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldingInT1Operation">
+      <text>Schweißen in Betriebsart T1</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMParameterDefinition">
+      <text>Parameterdefinition</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStrategyDecisionValid">
+      <text>Übernahme der Strategie</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincOpenReconfiguration">
+      <text>{0} Rekonfiguration Editor öffnen.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMESABXUWeldDataMode">
+      <text>Schweiß Datenmode</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWireDetectRequest">
+      <text>Drahtfestbrandprüfung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMEWMXUError">
+      <text>Störung</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMSignalExceedLimits">
+      <text>Signal überschreitet zulässigen Grenzwert von {0}.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUSeamControlFault">
+      <text>Nahtüberwachungsfehler</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMoveBackward">
+      <text>MoveBackward</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLorchXUSpeedArc">
+      <text>SpeedArc</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDefaultValue">
+      <text>Standardwert</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincArcLinkXXTBusConfigurationMissing">
+      <text>ArcLinkXT-DTM fehlt im Projekt oder ist nicht als Bus konfiguriert! Bitte prüfen Sie die Feldbuskonfiguration.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMerkleXUPulseform">
+      <text>Pulsform</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGasPressure">
+      <text>Gasdruck</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMGlobalParameter">
+      <text>Globale Einstellungen</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMDependingModeOp">
+      <text>Betriebsartabhängig</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMode">
+      <text>Modus</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMInNr">
+      <text>InNr</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMNONE">
+      <text>Keine</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMName">
+      <text>Name</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMUnit">
+      <text>Einheit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMQUIT">
+      <text>Quit</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMTrue">
+      <text>True</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMStep">
+      <text>Schrittweite</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMATOgXUWatchDogAlive">
+      <text>Lebensbit-Ausgang</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMJobModeNameWithInvalidCharacters">
+      <text>Der Name darf nur Buchstaben, Zahlen, '_', '$', '-' und Leerzeilen enthalten.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMPatternsXUAll">
+      <text>&lt;Alle&gt;</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMLincGetWeldModes">
+      <text>Schweißmodus Daten</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMMillerXUArcAdjust">
+      <text>Arc Adjust</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMWeldErrReaction">
+      <text>Art der Fehlerreaktion</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMFieldEmpty">
+      <text>Das Feld darf nicht leer sein.</text>
+    </uiText>
+    <uiText key="KukaRoboterXPArcTechXPCommonXPPropertiesXPResourcesXMKemppiXUVoltage">
+      <text>Spannung</text>
+    </uiText>
+  </module>
+</resources>

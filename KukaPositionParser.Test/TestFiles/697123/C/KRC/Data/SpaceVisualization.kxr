@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="SpaceVisualization">
+      <uiText key="Activation">
+         <text xml:lang="de-DEV">Aktivierung</text>
+         <text xml:lang="en-DEV">Activation</text>
+      </uiText>
+      <uiText key="ActiveStopping">
+         <text xml:lang="de-DEV">Stoppende Räume</text>
+         <text xml:lang="en-DEV">Stopping spaces</text>
+      </uiText>
+      <uiText key="ActiveStoppingViolated">
+         <text xml:lang="de-DEV">Verletzte stoppende Räume</text>
+         <text xml:lang="en-DEV">Violated stopping space</text>
+      </uiText>
+      <uiText key="AllActive">
+         <text xml:lang="de-DEV">Aktive Räume</text>
+         <text xml:lang="en-DEV">Active spaces</text>
+      </uiText>
+      <uiText key="AllActiveNonStopping">
+         <text xml:lang="de-DEV">Aktive Melderäume</text>
+         <text xml:lang="en-DEV">active non-stopping spaces</text>
+      </uiText>
+      <uiText key="AllNonStopping">
+         <text xml:lang="de-DEV">Alle Melderäume</text>
+         <text xml:lang="en-DEV">All non-stopping spaces</text>
+      </uiText>
+      <uiText key="AllSpaces">
+         <text xml:lang="de-DEV">Alle Räume</text>
+         <text xml:lang="en-DEV">All spaces</text>
+      </uiText>
+      <uiText key="AlwaysOff">
+         <text xml:lang="de-DEV">deaktiviert</text>
+         <text xml:lang="en-DEV">always off</text>
+      </uiText>
+      <uiText key="AlwaysOn">
+         <text xml:lang="de-DEV">immer aktiv</text>
+         <text xml:lang="en-DEV">always active</text>
+      </uiText>
+      <uiText key="AttentionOverlay">
+         <text xml:lang="de-DEV">Sichere Überwachungen nur nach Sicherheitsabnahme-Tests verwenden!
+Maschine beim Verfahren in den Testbetriebsarten stets direkt beobachten!</text>
+         <text xml:lang="en-DEV">User safe monitoring only after safety approval tests!
+Always observe the machine in the testing operation modes directly!</text>
+      </uiText>
+      <uiText key="Axis">
+         <text xml:lang="de-DEV">Achsen</text>
+         <text xml:lang="en-DEV">Axes</text>
+      </uiText>
+      <uiText key="AxisSpaceIndex">
+         <text xml:lang="de-DEV">Raumüberwachungs-Index</text>
+         <text xml:lang="en-DEV">Monitoring space index</text>
+      </uiText>
+      <uiText key="AxisType">
+         <text xml:lang="de-DEV">Achsentyp</text>
+         <text xml:lang="en-DEV">Axis type</text>
+      </uiText>
+      <uiText key="Both">
+         <text xml:lang="de-DEV">Alle Räume</text>
+         <text xml:lang="en-DEV">All spaces</text>
+      </uiText>
+      <uiText key="ByInput">
+         <text xml:lang="de-DEV">per Eingang</text>
+         <text xml:lang="en-DEV">by input</text>
+      </uiText>
+      <uiText key="Caption">
+         <text xml:lang="de-DEV">Raumvisualisierung</text>
+         <text xml:lang="en-DEV">Space visualization</text>
+      </uiText>
+      <uiText key="Cartesian">
+         <text xml:lang="de-DEV">Kartesische Räume</text>
+         <text xml:lang="en-DEV">Cartesian Spaces</text>
+      </uiText>
+      <uiText key="Configured">
+         <text xml:lang="de-DEV">Alle Räume</text>
+         <text xml:lang="en-DEV">All spaces</text>
+      </uiText>
+      <uiText key="CurrentPosition">
+         <text xml:lang="de-DEV">IstPosition</text>
+         <text xml:lang="en-DEV">Current position</text>
+      </uiText>
+      <uiText key="DiagVariables">
+         <text xml:lang="de-DEV">Diagnose Variablen</text>
+         <text xml:lang="en-DEV">Diagnostic variables</text>
+      </uiText>
+      <uiText key="External">
+         <text xml:lang="de-DEV">Externe Achsen</text>
+         <text xml:lang="en-DEV">External axes</text>
+      </uiText>
+      <uiText key="false">
+         <text xml:lang="de-DEV">Nein</text>
+         <text xml:lang="en-DEV">No</text>
+      </uiText>
+      <uiText key="Internal">
+         <text xml:lang="de-DEV">intern</text>
+         <text xml:lang="en-DEV">internal</text>
+      </uiText>
+      <uiText key="LinearAxis">
+         <text xml:lang="de-DEV">Linearachse {0}</text>
+         <text xml:lang="en-DEV">Linear axis {0}</text>
+      </uiText>
+      <uiText key="MadaIncompatible">
+         <text xml:lang="de-DEV">Roboter nicht darstellbar - Maschinendaten werden nicht unterstützt.</text>
+         <text xml:lang="en-DEV">Robot not renderable - machine data are not supported.</text>
+      </uiText>
+      <uiText key="MenuLabel">
+         <text xml:lang="de-DEV">Raumvisualisierung</text>
+         <text xml:lang="en-DEV">Space visualization</text>
+      </uiText>
+      <uiText key="MergedSpace">
+         <text xml:lang="de-DEV">Alle Räume</text>
+         <text xml:lang="en-DEV">Merge</text>
+      </uiText>
+      <uiText key="NameGrid">
+         <text xml:lang="de-DEV">Name</text>
+         <text xml:lang="en-DEV">Name</text>
+      </uiText>
+      <uiText key="NotUsed">
+         <text xml:lang="de-DEV">deaktiviert</text>
+         <text xml:lang="en-DEV">not used</text>
+      </uiText>
+      <uiText key="PlaceHolder">
+         <text xml:lang="de-DEV">{0}</text>
+         <text xml:lang="en-DEV">{0}</text>
+      </uiText>
+      <uiText key="ProtectedSpace">
+         <text xml:lang="de-DEV">Schutzraum</text>
+         <text xml:lang="en-DEV">protected space</text>
+      </uiText>
+      <uiText key="Radius">
+         <text xml:lang="de-DEV">Radius</text>
+         <text xml:lang="en-DEV">Radius</text>
+      </uiText>
+      <uiText key="RedAxisV">
+         <text xml:lang="de-DEV">Red. Achsgeschw.</text>
+         <text xml:lang="en-DEV">red. axis V</text>
+      </uiText>
+      <uiText key="RedAxisVActive">
+         <text xml:lang="de-DEV">Red. Achsgeschw. aktiviert</text>
+         <text xml:lang="en-DEV">red. axis V activated</text>
+      </uiText>
+      <uiText key="RefSystem">
+         <text xml:lang="de-DEV">Bezugssystem</text>
+         <text xml:lang="en-DEV">Reference system</text>
+      </uiText>
+      <uiText key="Reset">
+         <text xml:lang="de-DEV">Kamera zurücksetzen</text>
+         <text xml:lang="en-DEV">Reset camera</text>
+      </uiText>
+      <uiText key="RobotAxis">
+         <text xml:lang="de-DEV">Roboter Achse {0}</text>
+         <text xml:lang="en-DEV">Robot axis {0}</text>
+      </uiText>
+      <uiText key="RobotMoving">
+         <text xml:lang="de-DEV">Roboterbewegung möglich!</text>
+         <text xml:lang="en-DEV">Robot movement possible!</text>
+      </uiText>
+      <uiText key="RobRoot">
+         <text xml:lang="de-DEV">$ROBROOT</text>
+         <text xml:lang="en-DEV">$ROBROOT</text>
+      </uiText>
+      <uiText key="SelectedObject">
+         <text xml:lang="de-DEV">Selektiertes Objekt</text>
+         <text xml:lang="en-DEV">Selected object</text>
+      </uiText>
+      <uiText key="ShowCell">
+         <text xml:lang="de-DEV">Zellwand</text>
+         <text xml:lang="en-DEV">Cell wall</text>
+      </uiText>
+      <uiText key="Softwareendschalter">
+         <text xml:lang="de-DEV">Softwareendschalter</text>
+         <text xml:lang="en-DEV">Limit switch</text>
+      </uiText>
+      <uiText key="SpaceFilter">
+         <text xml:lang="de-DEV">Raumfilter</text>
+         <text xml:lang="en-DEV">Space filter</text>
+      </uiText>
+      <uiText key="SpaceIndex">
+         <text xml:lang="de-DEV">Raum-Index</text>
+         <text xml:lang="en-DEV">Space index</text>
+      </uiText>
+      <uiText key="SpaceName">
+         <text xml:lang="de-DEV">Name</text>
+         <text xml:lang="en-DEV">Name</text>
+      </uiText>
+      <uiText key="SpaceNotViolated">
+         <text xml:lang="de-DEV">nicht verletzt</text>
+         <text xml:lang="en-DEV">not violated</text>
+      </uiText>
+      <uiText key="SpaceNumber">
+         <text xml:lang="de-DEV">Index</text>
+         <text xml:lang="en-DEV">Index</text>
+      </uiText>
+      <uiText key="SpaceVelocityMonitored">
+         <text xml:lang="de-DEV">V überwacht</text>
+         <text xml:lang="en-DEV">V monitored</text>
+      </uiText>
+      <uiText key="SpaceViolated">
+         <text xml:lang="de-DEV">verletzt</text>
+         <text xml:lang="en-DEV">violated</text>
+      </uiText>
+      <uiText key="Sphere">
+         <text xml:lang="de-DEV">Kugel {0}</text>
+         <text xml:lang="en-DEV">Sphere {0}</text>
+      </uiText>
+      <uiText key="SphereNumber">
+         <text xml:lang="de-DEV">Nummer der Kugel</text>
+         <text xml:lang="en-DEV">Sphere index</text>
+      </uiText>
+      <uiText key="SR_AXISSPEED_OK">
+         <text xml:lang="de-DEV">Achsengeschwindigkeit</text>
+         <text xml:lang="en-DEV">axis speed</text>
+      </uiText>
+      <uiText key="StartUpDialog">
+         <text xml:lang="de-DEV">1. Die Nutzung dieses Plugins ersetzt nicht die Test der Sicherheitsfunktionen gemäß Sicherheitsabnahme-Checkliste.
+2. Die Maschine ist beim Verfahren in den Testbetriebsarten stets direkt zu beobachten, um Kollisionen zu vermeiden.</text>
+         <text xml:lang="en-DEV">1. The usage of the plugin does not replace a test of the safety funtions according to the safety acceptance cecklist.
+2. While moving the machine in the test operation modes you have to watch it always to avoid collisions.</text>
+      </uiText>
+      <uiText key="StateGrid">
+         <text xml:lang="de-DEV">Zustand</text>
+         <text xml:lang="en-DEV">State</text>
+      </uiText>
+      <uiText key="Stop">
+         <text xml:lang="de-DEV">Bei Raumverletzung stoppen</text>
+         <text xml:lang="en-DEV">Stop at violation</text>
+      </uiText>
+      <uiText key="StopRef">
+         <text xml:lang="de-DEV">Stopp ohne Referenzierung</text>
+         <text xml:lang="en-DEV">Stop without referenciation</text>
+      </uiText>
+      <uiText key="Tab1Control">
+         <text xml:lang="de-DEV">Steuerungsansicht</text>
+         <text xml:lang="en-DEV">Controls</text>
+      </uiText>
+      <uiText key="ToolNumber">
+         <text xml:lang="de-DEV">Nummer Werkzeug</text>
+         <text xml:lang="en-DEV">Tool index</text>
+      </uiText>
+      <uiText key="true">
+         <text xml:lang="de-DEV">Ja</text>
+         <text xml:lang="en-DEV">Yes</text>
+      </uiText>
+      <uiText key="Type">
+         <text xml:lang="de-DEV">Typ</text>
+         <text xml:lang="en-DEV">Type</text>
+      </uiText>
+      <uiText key="ValueGrid">
+         <text xml:lang="de-DEV">Wert</text>
+         <text xml:lang="en-DEV">Value</text>
+      </uiText>
+      <uiText key="Velocity">
+         <text xml:lang="de-DEV">Geschwindigkeit {0}</text>
+         <text xml:lang="en-DEV">Velocity {0}</text>
+      </uiText>
+      <uiText key="View3D">
+         <text xml:lang="de-DEV">3D-Ansicht</text>
+         <text xml:lang="en-DEV">3D view</text>
+      </uiText>
+      <uiText key="ViewAxes">
+         <text xml:lang="de-DEV">Achsenansicht</text>
+         <text xml:lang="en-DEV">Axes view</text>
+      </uiText>
+      <uiText key="Vmax">
+         <text xml:lang="de-DEV">Vmax</text>
+         <text xml:lang="en-DEV">Vmax</text>
+      </uiText>
+      <uiText key="VmaxValid">
+         <text xml:lang="de-DEV">Vmax gültig wenn</text>
+         <text xml:lang="en-DEV">Vmax valid if</text>
+      </uiText>
+      <uiText key="VRED">
+         <text xml:lang="de-DEV">Aktivierung VRED</text>
+         <text xml:lang="en-DEV">Activation VRED</text>
+      </uiText>
+      <uiText key="WorkingSpace">
+         <text xml:lang="de-DEV">Arbeitsraum</text>
+         <text xml:lang="en-DEV">working space</text>
+      </uiText>
+      <uiText key="World">
+         <text xml:lang="de-DEV">$WORLD</text>
+         <text xml:lang="en-DEV">$WORLD</text>
+      </uiText>
+      <uiText key="X">
+         <text xml:lang="de-DEV">X</text>
+         <text xml:lang="en-DEV">X</text>
+      </uiText>
+      <uiText key="XText">
+         <text xml:lang="de-DEV">Kartesischer Abstand in X in $Flange {0}</text>
+         <text xml:lang="en-DEV">Kartesischer Abstand in X in $Flange {0}</text>
+      </uiText>
+      <uiText key="Y">
+         <text xml:lang="de-DEV">Y</text>
+         <text xml:lang="en-DEV">Y</text>
+      </uiText>
+      <uiText key="YText">
+         <text xml:lang="de-DEV">Kartesischer Abstand in Y in $Flange {0}</text>
+         <text xml:lang="en-DEV">Kartesischer Abstand in Y in $Flange {0}</text>
+      </uiText>
+      <uiText key="Z">
+         <text xml:lang="de-DEV">Z</text>
+         <text xml:lang="en-DEV">Z</text>
+      </uiText>
+      <uiText key="ZoomIn">
+         <text xml:lang="de-DEV">Zoom +</text>
+         <text xml:lang="en-DEV">Zoom +</text>
+      </uiText>
+      <uiText key="ZoomOut">
+         <text xml:lang="de-DEV">Zoom -</text>
+         <text xml:lang="en-DEV">Zoom -</text>
+      </uiText>
+      <uiText key="ZText">
+         <text xml:lang="de-DEV">Kartesischer Abstand in Z in $Flange {0}</text>
+         <text xml:lang="en-DEV">Kartesischer Abstand in Z in $Flange {0}</text>
+      </uiText>
+   </module>
+</resources>

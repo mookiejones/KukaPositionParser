@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name6000">
+      <text xml:lang="de-DEV">Cabinet Steuerung</text>
+      <text xml:lang="en-DEV">Cabinet Control</text>
+    </uiText>
+    <uiText key="Diagnose_Description6000">
+      <text xml:lang="de-DEV">Der Name des Modules in der Steuerung.</text>
+      <text xml:lang="en-DEV">The name of the module in the controller.</text>
+    </uiText>
+    <uiText key="Diagnose_Name6019">
+      <text xml:lang="de-DEV">Zustimmtaster KCP links</text>
+      <text xml:lang="en-DEV">Dead-man KCP left</text>
+    </uiText>
+    <uiText key="Diagnose_Description6019">
+      <text xml:lang="de-DEV">Signalzustand des linken Zustimmtasters am KCP</text>
+      <text xml:lang="en-DEV">Signal state of left dead-man switch on KCP</text>
+    </uiText>
+    <uiText key="Diagnose_Value6019_0">
+      <text xml:lang="de-DEV">00: Fehler</text>
+      <text xml:lang="en-DEV">00: error</text>
+    </uiText>
+    <uiText key="Diagnose_Value6019_1">
+      <text xml:lang="de-DEV">01: gelöst</text>
+      <text xml:lang="en-DEV">01: released</text>
+    </uiText>
+    <uiText key="Diagnose_Value6019_2">
+      <text xml:lang="de-DEV">10: Panik</text>
+      <text xml:lang="en-DEV">10: panic</text>
+    </uiText>
+    <uiText key="Diagnose_Value6019_3">
+      <text xml:lang="de-DEV">11: gedrückt</text>
+      <text xml:lang="en-DEV">11: pressed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6021">
+      <text xml:lang="de-DEV">Zustimmtaster KCP rechts</text>
+      <text xml:lang="en-DEV">Dead-man KCP right</text>
+    </uiText>
+    <uiText key="Diagnose_Description6021">
+      <text xml:lang="de-DEV">Signalzustand des rechten Zustimmtasters am KCP</text>
+      <text xml:lang="en-DEV">Signal state of right dead-man switch on KCP</text>
+    </uiText>
+    <uiText key="Diagnose_Value6021_0">
+      <text xml:lang="de-DEV">00: Fehler</text>
+      <text xml:lang="en-DEV">00: error</text>
+    </uiText>
+    <uiText key="Diagnose_Value6021_1">
+      <text xml:lang="de-DEV">01: gelöst</text>
+      <text xml:lang="en-DEV">01: released</text>
+    </uiText>
+    <uiText key="Diagnose_Value6021_2">
+      <text xml:lang="de-DEV">10: Panik</text>
+      <text xml:lang="en-DEV">10: panic</text>
+    </uiText>
+    <uiText key="Diagnose_Value6021_3">
+      <text xml:lang="de-DEV">11: gedrückt</text>
+      <text xml:lang="en-DEV">11: pressed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6023">
+      <text xml:lang="de-DEV">Zustimmtaster KCP Dom</text>
+      <text xml:lang="en-DEV">Dead-man KCP dome</text>
+    </uiText>
+    <uiText key="Diagnose_Description6023">
+      <text xml:lang="de-DEV">Signalzustand des Zustimmtasters im Dom des KCP</text>
+      <text xml:lang="en-DEV">Signal state of dead-man switch in the dome of the KCP</text>
+    </uiText>
+    <uiText key="Diagnose_Value6023_0">
+      <text xml:lang="de-DEV">00: Fehler</text>
+      <text xml:lang="en-DEV">00: error</text>
+    </uiText>
+    <uiText key="Diagnose_Value6023_1">
+      <text xml:lang="de-DEV">01: gelöst</text>
+      <text xml:lang="en-DEV">01: released</text>
+    </uiText>
+    <uiText key="Diagnose_Value6023_2">
+      <text xml:lang="de-DEV">10: Panik</text>
+      <text xml:lang="en-DEV">10: panic</text>
+    </uiText>
+    <uiText key="Diagnose_Value6023_3">
+      <text xml:lang="de-DEV">11: gedrückt</text>
+      <text xml:lang="en-DEV">11: pressed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6025">
+      <text xml:lang="de-DEV">Zustimmtaster extern</text>
+      <text xml:lang="en-DEV">Dead-man external</text>
+    </uiText>
+    <uiText key="Diagnose_Description6025">
+      <text xml:lang="de-DEV">Signalzustand des externen Zustimmtasters</text>
+      <text xml:lang="en-DEV">Signal state of external dead-man switch</text>
+    </uiText>
+    <uiText key="Diagnose_Value6025_0">
+      <text xml:lang="de-DEV">00: Fehler</text>
+      <text xml:lang="en-DEV">00: error</text>
+    </uiText>
+    <uiText key="Diagnose_Value6025_1">
+      <text xml:lang="de-DEV">01: gelöst</text>
+      <text xml:lang="en-DEV">01: released</text>
+    </uiText>
+    <uiText key="Diagnose_Value6025_2">
+      <text xml:lang="de-DEV">10: Panik</text>
+      <text xml:lang="en-DEV">10: panic</text>
+    </uiText>
+    <uiText key="Diagnose_Value6025_3">
+      <text xml:lang="de-DEV">11: gedrückt</text>
+      <text xml:lang="en-DEV">11: pressed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6027">
+      <text xml:lang="de-DEV">Nothalt KCP</text>
+      <text xml:lang="en-DEV">Emergency stop KCP</text>
+    </uiText>
+    <uiText key="Diagnose_Description6027">
+      <text xml:lang="de-DEV">Zustand des Not-Halt Schalters am KCP</text>
+      <text xml:lang="en-DEV">State of emergency stop switch at KCP</text>
+    </uiText>
+    <uiText key="Diagnose_Value6027_0">
+      <text xml:lang="de-DEV">gedrückt</text>
+      <text xml:lang="en-DEV">pressed</text>
+    </uiText>
+    <uiText key="Diagnose_Value6027_1">
+      <text xml:lang="de-DEV">gelöst</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Name6028">
+      <text xml:lang="de-DEV">Nothalt Schrank (optional)</text>
+      <text xml:lang="en-DEV">Emergency stop cabinet (optionally)</text>
+    </uiText>
+    <uiText key="Diagnose_Description6028">
+      <text xml:lang="de-DEV">Zustand des Not-Halt Schalters am Schrank</text>
+      <text xml:lang="en-DEV">State of emergency stop switch at cabinet</text>
+    </uiText>
+    <uiText key="Diagnose_Value6028_0">
+      <text xml:lang="de-DEV">gedrückt</text>
+      <text xml:lang="en-DEV">pressed</text>
+    </uiText>
+    <uiText key="Diagnose_Value6028_1">
+      <text xml:lang="de-DEV">gelöst</text>
+      <text xml:lang="en-DEV">released</text>
+    </uiText>
+    <uiText key="Diagnose_Name6029">
+      <text xml:lang="de-DEV">Schutztür</text>
+      <text xml:lang="en-DEV">Safety gate</text>
+    </uiText>
+    <uiText key="Diagnose_Description6029">
+      <text xml:lang="de-DEV">Rohsignal des Schutztür-Kontaktes</text>
+      <text xml:lang="en-DEV">Raw signal of contact of safety gate</text>
+    </uiText>
+    <uiText key="Diagnose_Value6029_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value6029_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6034">
+      <text xml:lang="de-DEV">US2 (Zustand der Peripherie-Spannung)</text>
+      <text xml:lang="en-DEV">US2 (state of peripheral voltage)</text>
+    </uiText>
+    <uiText key="Diagnose_Description6034">
+      <text xml:lang="de-DEV">Zustand Lastspannung</text>
+      <text xml:lang="en-DEV">State load voltage</text>
+    </uiText>
+    <uiText key="Diagnose_Value6034_0">
+      <text xml:lang="de-DEV">ausgeschaltet</text>
+      <text xml:lang="en-DEV">switched off</text>
+    </uiText>
+    <uiText key="Diagnose_Value6034_1">
+      <text xml:lang="de-DEV">eingeschaltet</text>
+      <text xml:lang="en-DEV">switched on</text>
+    </uiText>
+    <uiText key="Diagnose_Name6036">
+      <text xml:lang="de-DEV">E2 diskret</text>
+      <text xml:lang="en-DEV">E2 discrete</text>
+    </uiText>
+    <uiText key="Diagnose_Description6036">
+      <text xml:lang="de-DEV">E2 für Retrofit</text>
+      <text xml:lang="en-DEV">E2 for retrofit</text>
+    </uiText>
+    <uiText key="Diagnose_Value6036_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value6036_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6037">
+      <text xml:lang="de-DEV">E7 diskret</text>
+      <text xml:lang="en-DEV">E7 discrete</text>
+    </uiText>
+    <uiText key="Diagnose_Description6037">
+      <text xml:lang="de-DEV">E7 für Retrofit</text>
+      <text xml:lang="en-DEV">E7 for retrofit</text>
+    </uiText>
+    <uiText key="Diagnose_Value6037_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value6037_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6038">
+      <text xml:lang="de-DEV">E2 USB</text>
+      <text xml:lang="en-DEV">E2 USB</text>
+    </uiText>
+    <uiText key="Diagnose_Description6038">
+      <text xml:lang="de-DEV">E2 vom USB-Stick</text>
+      <text xml:lang="en-DEV">E2 from USB stick</text>
+    </uiText>
+    <uiText key="Diagnose_Value6038_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value6038_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+    <uiText key="Diagnose_Name6039">
+      <text xml:lang="de-DEV">E7 USB</text>
+      <text xml:lang="en-DEV">E7 USB</text>
+    </uiText>
+    <uiText key="Diagnose_Description6039">
+      <text xml:lang="de-DEV">E7 vom USB-Stick</text>
+      <text xml:lang="en-DEV">E7 from USB stick</text>
+    </uiText>
+    <uiText key="Diagnose_Value6039_0">
+      <text xml:lang="de-DEV">offen</text>
+      <text xml:lang="en-DEV">open</text>
+    </uiText>
+    <uiText key="Diagnose_Value6039_1">
+      <text xml:lang="de-DEV">geschlossen</text>
+      <text xml:lang="en-DEV">closed</text>
+    </uiText>
+  </module>
+</resources>

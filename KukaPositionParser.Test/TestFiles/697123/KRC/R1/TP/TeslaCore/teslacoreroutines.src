@@ -1,0 +1,856 @@
+&ACCESS R
+DEF  TeslaCoreRoutines ( )
+; **************************************
+; * Package:     TeslaCore             *
+; * Release      V5.0.0                *
+; * File:        TeslaCoreRoutines.src *
+; * Date:        04.2019               *
+; * GUI Version: > = V8.3              *
+; **************************************
+
+END
+
+GLOBAL DEF HandShake_Set(nRequest :IN, bContinue :IN )
+;FOLD Details
+;FOLD Declaration
+INT nRequest
+BOOL bContinue
+INT nOldAdvance
+;ENDFOLD (Declaration)
+;FOLD Implementation
+nOldAdvance = $ADVANCE
+IF (((nRequest>=41) AND (nRequest<=60)) OR (bContinue==FALSE)) THEN
+   WAIT FOR TRUE ; Trigger Advance Run Stop
+ELSE
+   $ADVANCE = nTC_HandShakeSetAdv
+ENDIF
+;FOLD HandShake Undefined
+IF (VARSTATE("bContinue")<>#INITIALIZED) THEN
+   bContinue = FALSE
+ENDIF
+
+WHILE (VARSTATE("nRequest")<>#INITIALIZED)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[42], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+	  WHILE (Exists_KrlMsg(nTC_Handle))
+	     $B_OUT[nUserFault] = 1 ; Invalid Entry Number
+	     WAIT SEC 0.024
+	     IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+	        BRAKE F
+	     ENDIF
+	  ENDWHILE
+	  $B_OUT[nUserFault] = 0
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+   ENDIF
+ENDWHILE
+;ENDFOLD (Handshake Undefined)
+;FOLD Handshake Outside of Limits
+WHILE ((nRequest<nTC_MinHandShake) or (nRequest>nTC_MaxHandShake))
+	;FOLD Parameterize message values
+	TC_MsgPar[1]={par_type #value, par_int 0}
+	TC_MsgPar[2]={par_type #value, par_int 0}
+	TC_MsgPar[3]={par_type #value, par_int 0}
+	TC_MsgPar[1].par_int=nRequest
+	TC_MsgPar[2].par_int=nTC_MinHandShake
+	TC_MsgPar[3].par_int=nTC_MaxHandShake
+	;ENDFOLD (Parameterize message values)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[43], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			$B_OUT[nUserFault] = 1 ; Invalid Entry Number
+         WAIT SEC 0.024
+         IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+            BRAKE F
+         ENDIF
+		ENDWHILE
+	   $B_OUT[nUserFault] = 0
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Handshake Outside of Limits)
+;FOLD Set Handshake
+CONTINUE
+$B_OUT[nHandShakeNr] = nRequest ; Send Interlock Nr o PLC
+$ADVANCE = nOldAdvance
+;ENDFOLD (Set Handshake)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (Handshake_Set)
+
+GLOBAL DEF HandShake_Check(nRequest :IN, bContinue :IN )
+;FOLD Details
+;FOLD Declaration
+INT nRequest
+BOOL bContinue
+INT nOldAdvance
+;ENDFOLD (Declaration)
+;FOLD Implementation
+nOldAdvance = $ADVANCE
+nTmpHandShake = nRequest
+IF (((nRequest>=41) AND (nRequest<=60)) OR (bContinue==FALSE)) THEN
+   WAIT FOR TRUE ; Trigger Advance Run Stop
+ELSE
+   $ADVANCE = nTC_HandShakeChkAdv
+ENDIF
+;FOLD HandShake Undefined
+IF (VARSTATE("bContinue")<>#INITIALIZED) THEN
+   bContinue = FALSE
+ENDIF
+
+WHILE (VARSTATE("nRequest")<>#INITIALIZED)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[42], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+	  WHILE (Exists_KrlMsg(nTC_Handle))
+	     $B_OUT[nUserFault] = 1 ; Invalid Entry Number
+	     WAIT SEC 0.024
+	     IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+	        BRAKE F
+	     ENDIF
+	  ENDWHILE
+	  $B_OUT[nUserFault] = 0
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Handshake Undefined)
+;FOLD Handshake Outside of Limits
+WHILE ((nRequest<nTC_MinHandShake) or (nRequest>nTC_MaxHandShake))
+	;FOLD Parameterize message values
+	TC_MsgPar[1]={par_type #value, par_int 0}
+	TC_MsgPar[2]={par_type #value, par_int 0}
+	TC_MsgPar[3]={par_type #value, par_int 0}
+	TC_MsgPar[1].par_int=nRequest
+	TC_MsgPar[2].par_int=nTC_MinHandShake
+	TC_MsgPar[3].par_int=nTC_MaxHandShake
+	;ENDFOLD (Parameterize message values)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[43], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			$B_OUT[nUserFault] = 1 ; Invalid Entry Number
+         WAIT SEC 0.024
+         IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+            BRAKE F
+         ENDIF
+		ENDWHILE
+	   $B_OUT[nUserFault] = 0
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Handshake Outside of Limits)
+;FOLD Handshake Control
+InAutoRetry:
+CONTINUE
+IF ($B_OUT[nHandShakeNr] <> nRequest) THEN
+   CONTINUE
+   $B_OUT[nHandShakeNr] = nRequest
+ENDIF
+CONTINUE
+IF ($B_IN[nHandShakeEcho] <> nRequest) THEN
+   IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+      BRAKE F
+   ENDIF
+   CONTINUE
+   $CYCFLAG[nWaitMessageCycFlag] = ($B_IN[nHandShakeEcho] == nTmpHandShake)
+   nWaitMessageOffset = 0
+   CONTINUE
+   WAIT FOR ((StrClear(chr_DYNAMIC_MSG[])) OR (TRUE))
+   CONTINUE
+   SWRITE(chr_DYNAMIC_MSG[],stWaitMessageState,nWaitMessageOffset,"Wait for HandShake Echo = %d (%s)",nRequest, PrgHandShake[nRequest].COMMENT[])
+   WaitMessage(chr_DYNAMIC_MSG[], $CYCFLAG[nWaitMessageCycFlag], TRUE, TRUE )
+ENDIF
+CONTINUE
+IF (($MODE_OP==#EX) AND ($B_IN[nHandShakeEcho] <> nRequest)) THEN
+   bWaitSuppressed = FALSE
+   GOTO InAutoRetry
+ENDIF
+CONTINUE
+$B_OUT[nHandShakeNr] = 0
+$ADVANCE = nOldAdvance
+nTmpHandShake = 0
+bWaitSuppressed = FALSE
+;ENDFOLD (Handshake Control)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (Handshake_Check)
+
+GLOBAL DEF Enter_Zone(nRequest :IN, bContinue :IN )
+;FOLD Details
+;FOLD Declaration
+INT nRequest
+BOOL bContinue
+INT nDelayStopCounter
+BOOL bStartLogicLocation
+BOOL bClearToContinue
+BOOL bDelayStopCheck
+;ENDFOLD (Declaration)
+;FOLD Implementation
+IF (VARSTATE("bContinue")<>#INITIALIZED) THEN
+	bContinue = FALSE
+ENDIF
+;FOLD Zone Undefined
+WHILE (VARSTATE("nRequest")<>#INITIALIZED)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[40], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			WAIT SEC 0.024
+		ENDWHILE
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Zone Undefined)
+;FOLD Zone Outside of Limits
+WHILE ((nRequest<nTC_MinZone) or (nRequest>nTC_MaxZone))
+	;FOLD Parameterize message values
+	TC_MsgPar[1]={par_type #value, par_int 0}
+	TC_MsgPar[2]={par_type #value, par_int 0}
+	TC_MsgPar[3]={par_type #value, par_int 0}
+	TC_MsgPar[1].par_int=nRequest
+	TC_MsgPar[2].par_int=nTC_MinZone
+	TC_MsgPar[3].par_int=nTC_MaxZone
+	;ENDFOLD (Parameterize message values)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[41], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			WAIT SEC 0.024
+		ENDWHILE
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Zone Outside of Limits)
+;FOLD Request Zone
+IF (bContinue==TRUE) THEN ; No Stop to continue
+	nAdvanceOld = $ADVANCE
+	$ADVANCE = 1
+	nDelayStopCounter=0
+	bDelayStopCheck=False
+	bClearToContinue=False
+	REPEAT
+		bStartLogicLocation=TRUE
+	UNTIL (bStartLogicLocation==TRUE)
+	SWITCH $MOVE_STATE
+		CASE #PTP_SINGLE, #LIN_SINGLE, #CIRC_SINGLE
+			bDelayStopCheck=TRUE
+	ENDSWITCH
+	REPEAT
+		CONTINUE
+		$OUT[ZoneCtrl[nRequest].ReqToEnter]=TRUE
+		CONTINUE
+		bClearToContinue = $IN[ZoneCtrl[nRequest].ClrToEnter] ; Check PLC permissive for zone
+		IF (bDelayStopCheck==TRUE) THEN
+			CONTINUE
+			IF((nDelayStopCounter>=1000) OR ($ROB_STOPPED==TRUE)) THEN
+				bDelayStopCheck=FALSE
+			ELSE
+				nDelayStopCounter = nDelayStopCounter + 1
+			ENDIF
+		ENDIF
+		CONTINUE
+	UNTIL ((bClearToContinue==TRUE) OR (($ROB_STOPPED==TRUE) AND (bDelayStopCheck==FALSE)))
+	IF (bClearToContinue==FALSE) THEN
+		WAIT FOR $IN[ZoneCtrl[nRequest].ClrToEnter] ; Wait for PLC permission to enter zone.
+	ENDIF
+	CONTINUE
+	$OUT[ZoneCtrl[nRequest].ClrOfZone]=FALSE ; Set that robot is in zone
+	CONTINUE
+	$ADVANCE = nAdvanceOld
+ELSE ; Stop prior to continue
+	$OUT[ZoneCtrl[nRequest].ReqToEnter]=TRUE ; Set the Zone request
+	WAIT FOR ($IN[ZoneCtrl[nRequest].ClrToEnter]==TRUE) ; Wait for PLC permission to enter zone.
+	$OUT[ZoneCtrl[nRequest].ClrOfZone]=FALSE ; Set that robot is in zone
+ENDIF
+;ENDFOLD (Request Zone)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (Enter_Zone)
+
+GLOBAL DEF Exit_Zone(nRequest :IN )
+;FOLD Details
+;FOLD Declaration
+INT nRequest
+;ENDFOLD (Declaration)
+;FOLD Implementation
+;FOLD Zone Undefined
+WHILE (VARSTATE("nRequest")<>#INITIALIZED)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[40], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			IF ($ERR.Int_Prio>0) THEN
+				BRAKE
+			ENDIF
+			WAIT SEC 0.024
+		ENDWHILE
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Zone Undefined)
+;FOLD Zone Outside of Limits
+WHILE ((nRequest<nTC_MinZone) or (nRequest>nTC_MaxZone))
+	;FOLD Parameterize message values
+	TC_MsgPar[1]={par_type #value, par_int 0}
+	TC_MsgPar[2]={par_type #value, par_int 0}
+	TC_MsgPar[3]={par_type #value, par_int 0}
+	TC_MsgPar[1].par_int=nRequest
+	TC_MsgPar[2].par_int=nTC_MinZone
+	TC_MsgPar[3].par_int=nTC_MaxZone
+	;ENDFOLD (Parameterize message values)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[41], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			IF ($ERR.Int_Prio>0) THEN
+				BRAKE
+			ENDIF
+			WAIT SEC 0.024
+		ENDWHILE
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Zone Outside of Limits)
+;FOLD Release Zone
+$OUT[ZoneCtrl[nRequest].ReqToEnter]=FALSE ; Reset the Zone request
+$OUT[ZoneCtrl[nRequest].ClrOfZone]=TRUE ; Set that robot is clear of zone
+;ENDFOLD (Release Zone)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (Exit_Zone)
+
+GLOBAL DEF Clear_Fixture(nRequest :IN, bState :IN )
+;FOLD Details
+;FOLD Declaration
+INT nRequest
+BOOL bState
+WAIT FOR TRUE ; Trigger Advance Run Stop
+;ENDFOLD (Declaration)
+;FOLD Implementation
+;FOLD Fixture Undefined
+WHILE (VARSTATE("nRequest")<>#INITIALIZED)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[30], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			IF ($ERR.Int_Prio>0) THEN
+				BRAKE
+			ENDIF
+			WAIT SEC 0.024
+		ENDWHILE
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Fixture Undefined)
+;FOLD Fixture Outside of Limits
+WHILE ((nRequest<nTC_MinFixture) or (nRequest>nTC_MaxFixture))
+	;FOLD Parameterize message values
+	TC_MsgPar[1]={par_type #value, par_int 0}
+	TC_MsgPar[2]={par_type #value, par_int 0}
+	TC_MsgPar[3]={par_type #value, par_int 0}
+	TC_MsgPar[1].par_int=nRequest
+	TC_MsgPar[2].par_int=nTC_MinFixture
+	TC_MsgPar[3].par_int=nTC_MaxFixture
+	;ENDFOLD (Parameterize message values)
+	nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[31], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_Handle > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_Handle))
+			IF ($ERR.Int_Prio>0) THEN
+				BRAKE
+			ENDIF
+			WAIT SEC 0.024
+		ENDWHILE
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Fixture Outside of Limits)
+;FOLD Release Fixture
+$OUT[Fixture[nRequest].ClrOfFixture]=bState ; Set that the robot is (not) clear of fixture
+;ENDFOLD (Release Fixture)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (Clear_Fixture)
+
+GLOBAL DEF TCSubmitStart( )
+;FOLD ; *  Documentation  ********************************
+; *  This program Is called on startup of the      *
+; *  standard sps.sub program.  Pauses for 0.5s,   *
+; *  for the extra submits to start, then checks   *
+; *  to make sure they are in the correct order    *
+; *                                                *
+; *  If out of order, extra submits will be stopped*
+; *  and restarted them in the proper order.       *
+; **************************************************
+;ENDFOLD  (*  Description                                    *)
+;FOLD Details
+;FOLD Declaration
+DECL STATE_T TCStat
+DECL MODUS_T TCMode
+;ENDFOLD (Declaration)
+;FOLD Implementation
+WAIT SEC 0.5 ; Delay to give extra submits time to start
+;FOLD Check Submit Sequence Order, Deselect if incorrect
+IF (StrComp($PROG_INFO[3].Sel_Name[],"/R1/TeslaCorePLC",#NOT_CASE_SENS)==FALSE) THEN
+   CWRITE($CMD, TCStat, TCMode, "STOP 3")
+   WAIT SEC 0.024
+   CWRITE($CMD, TCStat, TCMode, "CANCEL 3")
+   WAIT SEC 0.036
+ENDIF
+IF (StrComp($PROG_INFO[4].Sel_Name[],"/R1/GlobalPosn",#NOT_CASE_SENS)==FALSE) THEN
+   CWRITE($CMD, TCStat, TCMode, "STOP 4")
+   WAIT SEC 0.024
+   CWRITE($CMD, TCStat, TCMode, "CANCEL 4")
+   WAIT SEC 0.036
+ENDIF
+IF (StrComp($PROG_INFO[5].Sel_Name[],"/R1/AppFeedbackSPS",#NOT_CASE_SENS)==FALSE) THEN
+   CWRITE($CMD, TCStat, TCMode, "STOP 5")
+   WAIT SEC 0.024
+   CWRITE($CMD, TCStat, TCMode, "CANCEL 5")
+   WAIT SEC 0.036
+ENDIF
+IF (StrComp($PROG_INFO[6].Sel_Name[],"/R1/TeslaCoreUserSPS",#NOT_CASE_SENS)==FALSE) THEN
+   CWRITE($CMD, TCStat, TCMode, "STOP 6")
+   WAIT SEC 0.024
+   CWRITE($CMD, TCStat, TCMode, "CANCEL 6")
+   WAIT SEC 0.036
+ENDIF
+;ENDFOLD (Check Submit Sequence Order, Deselect if incorrect)
+;FOLD Start Interpreter 3, Submit EX1
+IF ($PROG_INFO[3].P_STATE<>#P_ACTIVE) THEN
+	CWRITE($CMD, TCStat, TCMode, "RUN/R1/TESLACOREPLC() > 3")
+	WAIT SEC 0.036
+ENDIF
+;ENDFOLD (Start Interpreter 3, Submit EX1)
+;FOLD Start Interpreter 4, Submit EX2
+IF ($PROG_INFO[4].P_STATE<>#P_ACTIVE) THEN
+	CWRITE($CMD, TCStat, TCMode, "RUN/R1/GlobalPosn() > 4")
+	WAIT SEC 0.036
+ENDIF
+;ENDFOLD (Start Interpreter 4, Submit EX2)
+;FOLD Start Interpreter 5, Submit EX3
+IF ($PROG_INFO[5].P_STATE<>#P_ACTIVE) THEN
+	CWRITE($CMD, TCStat, TCMode, "RUN/R1/AppFeedbackSPS() > 5")
+	WAIT SEC 0.036
+ENDIF
+;ENDFOLD (Start Interpreter 5, Submit EX3)
+;FOLD Start Interpreter 6, Submit EX4
+IF ($PROG_INFO[6].P_STATE<>#P_ACTIVE) THEN
+	CWRITE($CMD, TCStat, TCMode, "RUN/R1/TeslaCoreUserSPS() > 6")
+	WAIT SEC 0.036
+ENDIF
+;ENDFOLD (Start Interpreter 6, Submit EX4)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TCSubmitStart)
+
+GLOBAL DEF TCSubmitCheck( )
+;FOLD Details
+;FOLD Declaration
+;ENDFOLD (Declaration)
+;FOLD Implementation
+IF (Interrupt_Check(nCore_SubmitMonInterrupt)<>7) THEN
+	$CYCFLAG[nCore_SubmitMonFlag]=FALSE
+	WAIT SEC 0.012
+	GLOBAL INTERRUPT DECL nCore_SubmitMonInterrupt WHEN $CYCFLAG[5]==TRUE DO TCSubmitStop()
+	INTERRUPT ON nCore_SubmitMonInterrupt
+	WAIT SEC 0.012
+	$CYCFLAG[nCore_SubmitMonFlag]=(($PROG_INFO[2].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[3].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[4].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[5].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[6].P_STATE<>#P_ACTIVE))
+ENDIF
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TCSubmitCheck)
+
+GLOBAL DEF TCSubmitStop( )
+;FOLD Details
+;FOLD Declaration
+;ENDFOLD (Declaration)
+;FOLD Implementation
+WHILE (($PROG_INFO[2].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[3].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[4].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[5].P_STATE<>#P_ACTIVE) OR ($PROG_INFO[6].P_STATE<>#P_ACTIVE))
+	nTC_SubmitStopped = Set_Krlmsg (#QUIT, TeslaCore_Msg[63], TC_MsgPar[], TC_MsgOpt_Stop)
+	IF (nTC_SubmitStopped > 0) THEN
+		WHILE (Exists_KrlMsg(nTC_SubmitStopped))
+			IF ($ERR.Int_Prio>0) THEN
+				BRAKE
+			ENDIF
+			WAIT SEC 0.012
+		ENDWHILE
+   ELSE
+      LOOP
+         MSGNOTIFY("Message failed to post",,,,,kmMsgOptions)
+         HALT
+      ENDLOOP
+	ENDIF
+ENDWHILE
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TCSubmitStop)
+
+GLOBAL DEFFCT INT Interrupt_Check(nInterrupt :IN )
+;FOLD Details
+;FOLD Description
+; Function tests checks if interrupt is declared and returns
+;  the current state of the interrupt.
+;
+;  -1 = Interrupt not declared
+;   0 = Local Interrupt Declared and Off
+;   1 = Local Interrupt Declared and On, but Disabled
+;   3 = Local Interrupt Declared, On and Enabled
+;   4 = Global Interrupt Declared and Off
+;   5 = Global Interrupt Declared and On, but Disabled
+;   7 = Global Interrupt Declared, On and Enabled
+;ENDFOLD (Description)
+;FOLD Declaration
+DECL INT nInterrupt
+DECL INT_INFO Current_Interrupts[32]
+DECL INT nInterruptC
+;ENDFOLD (Declaration)
+;FOLD Implementation
+FOR nInterruptC = 1 TO 32
+  Current_Interrupts[nInterruptC]=$Rint_List[nInterruptC]
+  IF (Current_Interrupts[nInterruptC].Int_Prio==nInterrupt) THEN ;Check if interrupt declared
+    RETURN Current_Interrupts[nInterruptC].INT_STATE ;Return the current state if declared
+  ENDIF
+  IF Current_Interrupts[nInterruptC].INT_PRIO==0 THEN ;Stop searching if INT_PRIO is set to 0
+    RETURN(-1) ;Interrupt was not found, return -1
+  ENDIF
+ENDFOR
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+ENDFCT ; (Interrupt_Check)
+
+GLOBAL DEFFCT  BOOL TC_TimeOut2(CONDITION :OUT,STATE :IN,MAXTIME :IN,sMessage[] :IN)
+;FOLD Details
+;FOLD Declaration
+BOOL CONDITION
+BOOL STATE
+REAL MAXTIME
+INT nTimeOutTrigger
+DECL CHAR sMessage[]
+DECL KRLMSG_T kmMsgLog
+DECL KRLMSGPAR_T kmMsgPar[3]
+DECL KrlMsgOpt_T kmMsgOptions
+DECL BOOL bCopyStr
+DECL BOOL bMsgClear
+DECL BOOL bMsgSimulated
+;ENDFOLD (Declaration)
+;FOLD Implementation
+;FOLD Message Initialization
+IF (Varstate("sMessage[]")==#INITIALIZED) THEN
+   bMsgSimulated = FALSE
+   kmMsgLog.NR = 3
+   bCopyStr=StrClear(kmMsgLog.MODUL[])
+   bCopyStr=StrCopy(kmMsgLog.MODUL[],"Simulate")
+   bCopyStr=StrClear(kmMsgLog.MSG_TXT[])
+   bCopyStr=StrCopy(kmMsgLog.MSG_TXT[],sMessage[])
+   kmMsgOptions={vl_stop FALSE, clear_p_reset TRUE, clear_p_SAW TRUE, log_to_DB TRUE}
+ENDIF
+;ENDFOLD (Message Initialization)
+nTimeOutTrigger = ($ROB_TIMER + (MAXTIME * 1000))
+IF (Varstate("sMessage[]")==#INITIALIZED) THEN
+   moWaitModeOp = $MODE_OP
+   IF ((moWaitModeOp == #EX) OR (moWaitModeOp == #AUT)) THEN
+      nTC_WaitHandle = Set_Krlmsg (#State, kmMsgLog, kmMsgPar[], kmMsgOptions)
+   ELSE
+      nTC_WaitHandle = Set_Krlmsg (#waiting, kmMsgLog, kmMsgPar[], kmMsgOptions)
+   ENDIF
+   bInternalWait=TRUE
+   IF (nTC_WaitHandle>0) THEN
+      ;FOLD Execute without CONTINUE 
+      REPEAT
+         IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+            BRAKE F ; Stop the robot while waiting for condition
+         ENDIF
+         IF ((Exists_KrlMsg(nTC_WaitHandle)==FALSE) AND (bWaitSuppressed==FALSE) AND (($MODE_OP==#T1) OR ($MODE_OP==#T2))) THEN
+   		   bMsgSimulated = TRUE
+   		   RETURN FALSE
+         ENDIF
+         IF ((Exists_KrlMsg(nTC_WaitHandle)==FALSE) AND (bWaitSuppressed==TRUE)) THEN
+            bWaitSuppressed = FALSE
+            IF ((moWaitModeOp == #EX) OR (moWaitModeOp == #AUT)) THEN
+               nTC_WaitHandle = Set_Krlmsg (#State, kmMsgLog, kmMsgPar[], kmMsgOptions)
+            ELSE
+               nTC_WaitHandle = Set_Krlmsg (#waiting, kmMsgLog, kmMsgPar[], kmMsgOptions)
+            ENDIF
+         ENDIF
+         WAIT FOR TRUE ; Trigger Advance Run Stop
+      UNTIL ((CONDITION==STATE) OR ($ROB_TIMER>nTimeOutTrigger) OR (bMsgSimulated==TRUE))
+      ;ENDFOLD (Execute without CONTINUE) 
+   	IF (Exists_KrlMsg(nTC_WaitHandle)==TRUE) THEN
+   		bMsgClear = Clear_KrlMsg (nTC_WaitHandle)
+   	ENDIF
+   ENDIF
+   bInternalWait=FALSE
+ELSE
+   ;FOLD WAIT FOR ((CONDITION==STATE) OR ($ROB_TIMER>nTimeOutTrigger))
+   IF (STATE==TRUE) THEN
+      WAIT FOR ((CONDITION==TRUE) OR ($ROB_TIMER>nTimeOutTrigger))
+   ELSE
+      WAIT FOR ((CONDITION==FALSE) OR ($ROB_TIMER>nTimeOutTrigger))
+   ENDIF
+   ;ENDFOLD (WAIT FOR ((CONDITION==STATE) OR ($ROB_TIMER>nTimeOutTrigger)))
+ENDIF
+
+RETURN  ($ROB_TIMER>nTimeOutTrigger)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+ENDFCT ; (TCTIMEOUT2)
+
+DEF TC_Diagnostic( )
+;FOLD Details
+;FOLD Declaration
+;ENDFOLD (Declaration)
+;FOLD Implementation
+nTC_Handle = Set_Krlmsg (#QUIT, TeslaCore_Msg[2], TC_MsgPar[], TC_MsgOpt_Stop)
+WHILE (Exists_KrlMsg(nTC_Handle))
+	WAIT SEC 0.024
+ENDWHILE
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TC_Diagnostic)
+
+GLOBAL DEFFCT  BOOL TC_TimeOut(CONDITION :OUT,STATE :IN,MAXTIME :IN)
+;FOLD Details
+;FOLD Declaration
+BOOL CONDITION
+BOOL STATE
+REAL MAXTIME
+INT nTimeOutTrigger
+;ENDFOLD (Declaration)
+;FOLD Implementation
+nTimeOutTrigger = ($ROB_TIMER + (MAXTIME * 1000))
+;FOLD WAIT FOR ((CONDITION==STATE) OR ($ROB_TIMER>nTimeOutTrigger))
+IF (STATE==TRUE) THEN
+   WAIT FOR ((CONDITION==TRUE) OR ($ROB_TIMER>nTimeOutTrigger))
+ELSE
+   WAIT FOR ((CONDITION==FALSE) OR ($ROB_TIMER>nTimeOutTrigger))
+ENDIF
+;ENDFOLD (WAIT FOR ((CONDITION==STATE) OR ($ROB_TIMER>nTimeOutTrigger)))
+RETURN  ($ROB_TIMER>nTimeOutTrigger)
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+ENDFCT ; (TCTIMEOUT)
+
+GLOBAL DEF TC_WaitTimeOut(INPUT_NR :IN,STATE :IN,MAXTIME :IN,FAULTCODE :IN)
+;FOLD Details
+;FOLD Declaration
+BOOL STATE
+REAL MAXTIME
+INT FAULTCODE,INPUT_NR
+INT nTimeOutTrigger
+INT nTimeStopped
+;ENDFOLD (Declaration)
+;FOLD Implementation
+nTimeOutTrigger = ($ROB_TIMER + (MAXTIME * 1000))
+;FOLD WAIT FOR (($IN[INPUT_NR]==STATE) OR ($ROB_TIMER>nTimeOutTrigger))
+IF (STATE==TRUE) THEN
+   WAIT FOR (($IN[INPUT_NR]==TRUE) OR ($ROB_TIMER>nTimeOutTrigger))
+ELSE
+   WAIT FOR (($IN[INPUT_NR]==FALSE) OR ($ROB_TIMER>nTimeOutTrigger))
+ENDIF
+;ENDFOLD (WAIT FOR (($IN[INPUT_NR]==STATE) OR ($ROB_TIMER>nTimeOutTrigger)))
+nTimeStopped = $ROB_TIMER
+IF ($ROB_TIMER>nTimeOutTrigger) THEN
+   $B_OUT[nUserFault]=FAULTCODE
+   ;FOLD WAIT FOR $IN[INPUT_NR]==STATE
+   IF (STATE==TRUE) THEN
+      WAIT FOR $IN[INPUT_NR]==TRUE
+   ELSE
+      WAIT FOR $IN[INPUT_NR]==FALSE
+   ENDIF
+   ;ENDFOLD (WAIT FOR $IN[INPUT_NR]==STATE)
+ENDIF
+$B_OUT[nUserFault]=0
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TCWAIT_TIMEOUT)
+
+GLOBAL DEF TC_MsgLog(sMsg[] :IN )
+;FOLD Details
+;FOLD Declaration
+DECL CHAR sMsg[]
+DECL KRLMSG_T kmMsgLog
+DECL KRLMSGPAR_T kmMsgPar[3]
+DECL BOOL bCopyStr
+DECL BOOL bMsgClear
+DECL INT nMsgHandle
+;ENDFOLD (Declaration)
+;FOLD Implementation
+kmMsgLog={MODUL[] "MsgLog",NR 1,MSG_TXT[] " "}
+bCopyStr=StrClear(kmMsgLog.MSG_TXT[])
+bCopyStr=StrCopy(kmMsgLog.MSG_TXT[],sMsg[])
+nMsgHandle = Set_Krlmsg (#STATE, kmMsgLog, kmMsgPar[], TC_MsgOpt_NoStop)
+IF (nMsgHandle>0) THEN
+	bMsgClear = Clear_KrlMsg (nMsgHandle)
+ENDIF
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TC_MsgLog)
+
+GLOBAL DEF WaitMessage(sMessage[] :IN, bCondition :OUT, bState :IN, bContinue :IN )
+;FOLD Details
+;FOLD Declaration
+DECL CHAR sMessage[]
+DECL BOOL bCondition
+DECL BOOL bState
+DECL BOOL bContinue
+DECL KRLMSG_T kmMsgLog
+DECL KRLMSGPAR_T kmMsgPar[3]
+DECL BOOL bCopyStr
+DECL BOOL bMsgClear
+DECL BOOL bMsgSimulated
+
+;ENDFOLD (Declaration)
+;FOLD Implementation
+bMsgSimulated = FALSE
+kmMsgLog.NR = 3
+bCopyStr=StrClear(kmMsgLog.MODUL[])
+bCopyStr=StrCopy(kmMsgLog.MODUL[],"Simulate")
+bCopyStr=StrClear(kmMsgLog.MSG_TXT[])
+bCopyStr=StrCopy(kmMsgLog.MSG_TXT[],sMessage[])
+moWaitModeOp = $MODE_OP
+nTC_WaitHandle = 0
+IF ((moWaitModeOp == #EX) OR (moWaitModeOp == #AUT)) THEN
+   nTC_WaitHandle = Set_Krlmsg (#State, kmMsgLog, kmMsgPar[], kmMsgOptions)
+ELSE
+   nTC_WaitHandle = Set_Krlmsg (#waiting, kmMsgLog, kmMsgPar[], kmMsgOptions)
+ENDIF
+bInternalWait=TRUE
+IF (nTC_WaitHandle>0) THEN
+	IF (bContinue==TRUE) THEN
+   	;FOLD Execute with CONTINUE 
+   	REPEAT
+         IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+            BRAKE F ; Stop the robot while waiting for condition
+         ENDIF
+         IF ((Exists_KrlMsg(nTC_WaitHandle)==FALSE) AND (bWaitSuppressed==FALSE) AND (($MODE_OP==#T1) OR ($MODE_OP==#T2))) THEN
+			   bMsgSimulated = TRUE
+         ENDIF
+         IF ((Exists_KrlMsg(nTC_WaitHandle)==FALSE) AND ((bWaitSuppressed==TRUE) OR ((bWaitSuppressed==FALSE) AND ($MODE_OP==#EX)))) THEN
+            bMsgSimulated = FALSE
+            bWaitSuppressed = FALSE
+            IF ((moWaitModeOp == #EX) OR (moWaitModeOp == #AUT)) THEN
+               nTC_WaitHandle = 0
+               nTC_WaitHandle = Set_Krlmsg (#State, kmMsgLog, kmMsgPar[], kmMsgOptions)
+               IF (nTC_WaitHandle<=0) THEN
+                  MSGNOTIFY("WaitMessage failed to post",,,,,kmMsgOptions)
+                  WAIT FOR (bCondition == bState)
+               ENDIF
+            ELSE
+               nTC_WaitHandle = 0
+               nTC_WaitHandle = Set_Krlmsg (#waiting, kmMsgLog, kmMsgPar[], kmMsgOptions)
+               IF (nTC_WaitHandle<=0) THEN
+                  MSGNOTIFY("WaitMessage failed to post",,,,,kmMsgOptions)
+                  WAIT FOR (bCondition == bState)
+               ENDIF
+            ENDIF
+         ENDIF
+         CONTINUE
+      UNTIL ((bCondition==bState) OR ((bMsgSimulated==TRUE) AND (($MODE_OP==#T1) OR ($MODE_OP==#T2))))
+   	;ENDFOLD (Execute with CONTINUE) 
+   ELSE
+   	;FOLD Execute without CONTINUE 
+   	REPEAT
+         IF ($ERR.TRIGGER_TYPE <> #TRG_NONE) THEN
+            BRAKE F ; Stop the robot while waiting for condition
+         ENDIF
+         IF ((Exists_KrlMsg(nTC_WaitHandle)==FALSE) AND (bWaitSuppressed==FALSE) AND (($MODE_OP==#T1) OR ($MODE_OP==#T2))) THEN
+			   bMsgSimulated = TRUE
+         ENDIF
+         IF ((Exists_KrlMsg(nTC_WaitHandle)==FALSE) AND ((bWaitSuppressed==TRUE) OR ((bWaitSuppressed==FALSE) AND ($MODE_OP==#EX)))) THEN
+            bMsgSimulated = FALSE
+            bWaitSuppressed = FALSE
+            IF ((moWaitModeOp == #EX) OR (moWaitModeOp == #AUT)) THEN
+               nTC_WaitHandle = 0
+               nTC_WaitHandle = Set_Krlmsg (#State, kmMsgLog, kmMsgPar[], kmMsgOptions)
+               IF (nTC_WaitHandle<=0) THEN
+                  MSGNOTIFY("WaitMessage failed to post",,,,,kmMsgOptions)
+                  WAIT FOR (bCondition == bState)
+               ENDIF
+            ELSE
+               nTC_WaitHandle = 0
+               nTC_WaitHandle = Set_Krlmsg (#waiting, kmMsgLog, kmMsgPar[], kmMsgOptions)
+               IF (nTC_WaitHandle<=0) THEN
+                  MSGNOTIFY("WaitMessage failed to post",,,,,kmMsgOptions)
+                  WAIT FOR (bCondition == bState)
+               ENDIF
+            ENDIF
+         ENDIF
+         WAIT FOR TRUE ; Trigger Advance Run Stop
+      UNTIL ((bCondition==bState) OR (bMsgSimulated==TRUE))
+   	bMsgSimulated = FALSE
+   	;ENDFOLD (Execute without CONTINUE) 
+   ENDIF
+	IF (Exists_KrlMsg(nTC_WaitHandle)==TRUE) THEN
+		bMsgClear = Clear_KrlMsg (nTC_WaitHandle)
+	ENDIF
+ELSE
+   MSGNOTIFY("WaitMessage failed to post",,,,,kmMsgOptions)
+   WAIT FOR (bCondition == bState)
+ENDIF
+bInternalWait=FALSE
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (NewWait)
+
+GLOBAL DEF TC_DebugLog(sMsg[] :IN, nValue :IN )
+;FOLD Details
+;FOLD Declaration
+DECL CHAR sMsg[]
+DECL INT nValue
+DECL KRLMSG_T kmMsgLog
+DECL KRLMSGPAR_T kmMsgPar[3]
+DECL BOOL bCopyStr
+DECL INT nMsgHandle
+DECL State_t State
+DECL INT Offset
+;ENDFOLD (Declaration)
+;FOLD Implementation
+IF (bTCDebugLogging==TRUE) THEN
+   Offset=0
+   kmMsgLog={MODUL[] "MsgLog",NR 1,MSG_TXT[] " "}
+   bCopyStr=StrClear(kmMsgLog.MSG_TXT[])
+   IF ((VARSTATE("nValue")==#INITIALIZED) AND (StrFind(1, sMsg[], "%d", #NOT_CASE_SENS)>0)) THEN
+      swrite(kmMsgLog.MSG_TXT[],State,Offset,sMsg[],nValue)
+   ELSE
+      bCopyStr=StrCopy(kmMsgLog.MSG_TXT[],sMsg[])
+   ENDIF
+   nMsgHandle = Set_Krlmsg (#STATE, kmMsgLog, kmMsgPar[], TC_MsgOpt_NoStop)
+   IF (nMsgHandle>0) THEN
+   	WAIT FOR ((Clear_KrlMsg (nMsgHandle)) OR (TRUE))
+   ENDIF
+ENDIF
+;ENDFOLD (Implementation)
+;ENDFOLD (Details)
+END ; (TC_DebugLog)

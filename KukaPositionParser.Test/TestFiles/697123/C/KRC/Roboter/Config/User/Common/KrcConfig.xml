@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KrcConfig xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/KrcConfig.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version Label="">
+    <Info Version="KUKA V8.3"/>
+    <Schema Version="300"/>
+  </Version>
+
+  <!-- ************************************************* -->
+  <!-- Memory Configuration for KRC-Compiler File System -->
+  <!-- (Only expert users may modify this file!!!)       -->
+  <!-- ************************************************* -->
+  <MemConfig>
+    <!-- the size of the descriptor table (Min 32 pages, max 4096 pages, default 256 pages) -->
+    <MODULE MAX_MODULE_NUM="1000"/>
+    <SIZE>
+      <!-- reserved Pages for one SRC-file (Min 16 pages) -->
+      <!-- Min 16 pages, max 1024 pages, default 64 pages -->
+      <A_PAGE_MAX_SIZE Value="64"/>
+
+      <!-- reserved Pages for one DAT-file (Min 16 pages) -->
+      <!-- Min 16 pages, max 1024 pages, default 64 pages -->
+      <O_PAGE_MAX_SIZE Value="64"/>
+
+      <!-- to guarantee a minimum of memory reserve for the system during -->
+      <!-- SRC- or DAT-file loading, use 10 MIN_PHY_PAGES.                -->
+      <!-- MIN_PHY_PAGES is declared in per mil of all physical pages.    -->
+      <!-- set MIN_PHY_PAGES=0 to restore the old system behaviour.       -->
+      <MIN_PHY_PAGES Value="10"/>
+
+      <!-- to really guarantee a minimum basis amount of physical pages  -->
+      <!-- we keep at least MIN_PHY_PAGES_BASIS pages for system reserve -->
+      <MIN_PHY_PAGES_BASIS Value="40"/>
+
+      <!-- expansion size when area move is necessary       -->
+      <!-- (number of pages to expand in area move process) -->
+      <!-- Min 4 pages, max 128 pages, default 32 pages     -->
+      <EXPANSION_SIZE Value="32"/>
+
+      <!-- reserved page for a link list of a module   -->
+      <!-- Min 4 pages, max 128 pages, default 8 pages -->
+      <BINDING_PAGE_SIZE Value="8"/>
+
+      <!-- reserved page for a error list of a module  -->
+      <!-- Min 4 pages, max 128 pages, default 8 pages -->
+      <ERROR_FILE_SIZE Value="8"/>
+
+    </SIZE>
+  </MemConfig>
+
+  <!-- *********************************************************************** -->
+  <!-- ADSAUSGABE:  true =&gt; ADS output                                         -->
+  <!-- ADS_LOGGING: true =&gt; ADS logging to ring buffer =&gt; on error to log file -->
+  <!-- *********************************************************************** -->
+  <TEST>
+    <ADSAUSGABE Value="false"/>
+    <ADS_LOGGING Value="false"/>
+    <!-- Bitmask for debugging output, LSB first -->
+    <!-- Bit 0: KFI commands-->
+    <!-- Bit 1: Editor commands -->
+    <!-- Bit 2: DFS common debug -->
+    <!-- Bit 3: DFS compiler debug -->
+    <!-- Bit 4: DFS editor debug -->
+    <!-- Bit 5: Compiler state debug -->
+    <!-- Bit 6: R_INT Interrupt debug -->
+    <!-- Bit 7: System-S_INT Interrupt debug -->
+    <!-- Bit 8: Interpreter stop debug -->
+    <!-- Bit 9: Varman debug -->
+    <!-- Bit 10: active commands debug -->    
+    <!-- Bit 11: Extended1-S_INT Interrupt debug -->
+    <!-- Bit 12: Extended2-S_INT Interrupt debug -->
+    <!-- Bit 13: Extended3-S_INT Interrupt debug -->
+    <!-- Bit 14: Extended4-S_INT Interrupt debug -->
+    <!-- Bit 15: Extended5-S_INT Interrupt debug -->
+    <!-- Bit 16: Extended6-S_INT Interrupt debug -->
+    <!-- Bit 17: Extended7-S_INT Interrupt debug -->
+    <DEBUGMASK Value="0"/>
+  </TEST>
+
+  <!-- ****************** -->
+  <!-- MotionSync Options -->
+  <!-- ****************** -->
+  <MOTIONSYNC>
+    <!-- Ethernet send mode for MotionSync. (singlecast, broadcast, multicast) -->
+    <SEND_MODE Value="singlecast"/>
+    <REPORT_FREQUENCY Value="50"/>
+  </MOTIONSYNC>
+
+  <FEATURES>
+    <!-- ****************************** -->
+    <!--   FEATURES:  All Customers     -->
+    <!-- ****************************** -->
+    <CONST_KEY Value="true"/>
+    <GLOBAL_KEY Value="true"/>
+    <MAX_DOWNLOADS Value="3"/>
+    <SUSPEND_SETINFOS Value="true"/>
+    <MOVE_KEYS_NEW Value="true"/>
+    <MSTEP_IN_EXT Value="false"/>
+    <SLOW_BCO_EXT Value="false"/>
+    <NO_STOP_ON_BCO Value="false"/>
+    <IO_SYS_DOWN_ON_24V Value="false"/>
+    <ANALIMITMSG Value="false"/>
+    
+    <!-- Upper bound for positive delay values of path triggers. Unit: [msec]. -->
+    <MAX_POS_TRIGGER_DELAY Value="1000"/>
+    
+    <!-- Boundary values to activate messages of trigger diagnostics. Unit: [mm] or [msec]. --> 
+    <PATHTRIGG_MSG_TOLERANCE_SHIFTLIMIT_PATH_MM Value="1"/>
+    <PATHTRIGG_MSG_TOLERANCE_SHIFTLIMIT_DELAY_MSEC Value="2"/>
+    <DISTTRIGG_MSG_TOLERANCE_SHIFTLIMIT_DELAY_MSEC Value="100"/>
+
+    <M309 Value="true"/>
+    <MAX_IOLINKS Value="32"/>
+    <INT_STACK_MONITORING Value="3"/>
+    <MSG_DONT_BLOCK_IN_TEST Value="1"/>
+    <MAX_KFA_MEM_SIZE Value="1048576"/>
+
+    <!-- Line selection to a local subroutine that is not on the caller stack. -->
+    <LINE_SEL_LOCAL_SUB Value="false"/>
+
+    <!-- The delay cycle/time for DOWNLOAD/UPLOAD process.            -->
+    <OBJH_DELAY_CYCLE Value="10"/>     <!-- in each 10 ms delay process       -->
+    <OBJH_DELAY_TIME Value="1"/>      <!-- in each delay action, delay 1 ms -->
+
+    <!-- Workspace IPO Diagnostic check rate (msec) -->
+    <WS_DIAG_CHECK_RATE Value="1000"/>
+
+    <!-- Show timeout message of trigger subroutines in automatik modes -->
+    <TIMEOUT_MSG_IN_AUT Value="true"/>
+
+    <!-- maximum programmable Timeout value for Triggers -->
+    <MAX_UP_TRIGGER_TIMEOUT Value="5000"/>
+
+    <!-- ******************************* -->
+    <!-- FEATURES: Customer Version &quot;VW&quot; -->
+    <!-- ******************************* -->
+    <Customer_VW>
+      <STOP_AT_PTP_SINGULARITY Value="true"/>
+      <!-- Resolve array index in wait_for command (e.g. Wait for $IN[1+3+Gripper[g_no]]  ==&gt; Wait for $IN[73] -->
+      <WAIT_FOR_INDEX_RES Value="false"/>
+      <!-- Index des $Cycflags, das die Fahrbedingung online darstellt -->
+      <CYCFL_IDX_MOV_COND Value="254"/>
+    </Customer_VW>
+
+    <!-- ********************************* -->
+    <!-- FEATURES: Customer Version &quot;KUKA&quot; -->
+    <!-- ********************************* -->
+    <Customer_KUKA>
+      <STOP_AT_PTP_SINGULARITY Value="false"/>
+      <!-- Resolve array index in wait_for command (e.g. Wait for $IN[1+3+Gripper[g_no]]  ==&gt; Wait for $IN[73] -->
+      <WAIT_FOR_INDEX_RES Value="true"/>
+    </Customer_KUKA>
+
+  </FEATURES>
+
+  <!-- ******************************* -->
+  <!-- KRL System Diagnose Optionen  -->
+  <!-- ******************************* -->
+  <KRLDIAG>
+    <!-- Maximale Anzahl von Diagnose Dateien (Wert von x im Dateinamen -->
+    <!-- &quot;krldiag[x]_*.bin&quot;. Ist die max. Anzahl erreicht, wird         -->
+    <!-- automatisch wieder bei der kleinsten Ziffer (x=1) angefangen.  -->
+    <!-- Minimum ist 1, Maximum ist 10, Default ist 1.                            -->
+    <MAX_LOGS Value="10"/>
+    <!-- Größe des Diagnose Puffers für die R_INT und S_INT Tasks -->
+    <BUF_SIZE_INT Value="1000"/>
+    <!-- Größe des Diagnose Puffers für die USER-S_INT Tasks -->
+    <BUF_SIZE_EXT_SINT Value="0"/>    
+    <!-- Größe des Diagnose Puffers für die ZYK_HP und ZYK Tasks -->
+    <BUF_SIZE_ZYK Value="250"/>
+    <!-- Größe des Diagnose Puffers für die PBA Task -->
+    <BUF_SIZE_PBA Value="250"/>
+    <!-- Größe des Diagnose Puffers für die KFI Task -->
+    <BUF_SIZE_KFI Value="30"/>
+    <!-- Größe des Diagnose Abbildungstabellen für die R_INT und S_INT Tasks -->
+    <TABLE_SIZE Value="30"/>
+  </KRLDIAG>
+
+</KrcConfig>

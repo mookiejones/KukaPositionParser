@@ -1,0 +1,2220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name3000">
+      <text xml:lang="de-DEV">Run-Status</text>
+      <text xml:lang="en-DEV">Run-State</text>
+    </uiText>
+    <uiText key="Diagnose_Description3000">
+      <text xml:lang="de-DEV">Run-Status der ProConOS Soft-SPS</text>
+      <text xml:lang="en-DEV">Run-State of ProConOS Soft-SPS</text>
+    </uiText>
+    <uiText key="Diagnose_Name3001">
+      <text xml:lang="de-DEV">Ticks pro Sekunde</text>
+      <text xml:lang="en-DEV">Ticks per Second</text>
+    </uiText>
+    <uiText key="Diagnose_Description3001">
+      <text xml:lang="de-DEV">ProConOS Systemticks pro Sekunde</text>
+      <text xml:lang="en-DEV">ProConOS Systemticks per Second</text>
+    </uiText>
+    <uiText key="Diagnose_Name3002">
+      <text xml:lang="de-DEV">ProConOS Systemtick-Status</text>
+      <text xml:lang="en-DEV">ProConOS Systemtick state</text>
+    </uiText>
+    <uiText key="Diagnose_Description3002">
+      <text xml:lang="de-DEV">ProConOS Systemtick aktiviert / deaktiviert</text>
+      <text xml:lang="en-DEV">ProConOS Systemtick activated / deactivated</text>
+    </uiText>
+    <uiText key="Diagnose_Name3003">
+      <text xml:lang="de-DEV">ProConOS Systemtick</text>
+      <text xml:lang="en-DEV">ProConOS Systemtick</text>
+    </uiText>
+    <uiText key="Diagnose_Description3003">
+      <text xml:lang="de-DEV">Aktueller ProConOS Systemtick</text>
+      <text xml:lang="en-DEV">Actual ProConOS Systemtick</text>
+    </uiText>
+    <uiText key="Diagnose_Name3004">
+      <text xml:lang="de-DEV">ProConOS RT-Tick</text>
+      <text xml:lang="en-DEV">ProConOS RT-Tick</text>
+    </uiText>
+    <uiText key="Diagnose_Description3004">
+      <text xml:lang="de-DEV">Aktueller ProConOS Programm-Tick</text>
+      <text xml:lang="en-DEV">Actual ProConOS program-tick</text>
+    </uiText>
+    <uiText key="Diagnose_Name3005">
+      <text xml:lang="de-DEV">Projekt-Status</text>
+      <text xml:lang="en-DEV">Project-State</text>
+    </uiText>
+    <uiText key="Diagnose_Description3005">
+      <text xml:lang="de-DEV">Aktueller Projekt-Status</text>
+      <text xml:lang="en-DEV">Actual Project-State</text>
+    </uiText>
+    <uiText key="Diagnose_Name3006">
+      <text xml:lang="de-DEV">Default-Task Zykluszeit</text>
+      <text xml:lang="en-DEV">Default-Task Cycletime</text>
+    </uiText>
+    <uiText key="Diagnose_Description3006">
+      <text xml:lang="de-DEV">Default-Task Zykluszeit in ms</text>
+      <text xml:lang="en-DEV">Default-Task Cycletime</text>
+    </uiText>
+    <uiText key="Diagnose_Name3007">
+      <text xml:lang="de-DEV">ProConOS Projekt-Quellcode: ZIP-Name</text>
+      <text xml:lang="en-DEV">ProConOS Project-Source: ZIP-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Description3007">
+      <text xml:lang="de-DEV">Projekt-Quellcode auf dem Target gespeichert: ZIP-Name</text>
+      <text xml:lang="en-DEV">The Project-Source is available on Target: ZIP-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Name3008">
+      <text xml:lang="de-DEV">Namen des Boot-Projektes</text>
+      <text xml:lang="en-DEV">Name of the Boot-Project</text>
+    </uiText>
+    <uiText key="Diagnose_Description3008">
+      <text xml:lang="de-DEV">Namen des Boot-Projektes</text>
+      <text xml:lang="en-DEV">Name of the Boot-Project</text>
+    </uiText>
+    <uiText key="Diagnose_Name3009">
+      <text xml:lang="de-DEV">Projekt-Name</text>
+      <text xml:lang="en-DEV">Project-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Description3009">
+      <text xml:lang="de-DEV">Name des Projektes auf dem Target</text>
+      <text xml:lang="en-DEV">Name of the loaded Project on Target</text>
+    </uiText>
+    <uiText key="Diagnose_Name3010">
+      <text xml:lang="de-DEV">Projekt Konfiguration</text>
+      <text xml:lang="en-DEV">Projekt-Configuration</text>
+    </uiText>
+    <uiText key="Diagnose_Description3010">
+      <text xml:lang="de-DEV">Name der Projekt-Konfiguration auf dem Target</text>
+      <text xml:lang="en-DEV">Name of the Project-Konfiguration on Target</text>
+    </uiText>
+    <uiText key="Diagnose_Name3011">
+      <text xml:lang="de-DEV">Resource-Name</text>
+      <text xml:lang="en-DEV">Resource-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Description3011">
+      <text xml:lang="de-DEV">Name der verwendeten Resource im geladenen Projekt</text>
+      <text xml:lang="en-DEV">Name of the loaded Resource on Target Project</text>
+    </uiText>
+    <uiText key="Diagnose_Name3012">
+      <text xml:lang="de-DEV">Fehleranzahl</text>
+      <text xml:lang="en-DEV">Error amount</text>
+    </uiText>
+    <uiText key="Diagnose_Description3012">
+      <text xml:lang="de-DEV">Anzahl der Einträge im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">Number of Errors in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3013">
+      <text xml:lang="de-DEV">Pcos_Error(1)</text>
+      <text xml:lang="en-DEV">Pcos_Error(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3013">
+      <text xml:lang="de-DEV">1. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">1. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3014">
+      <text xml:lang="de-DEV">Pcos_Error(2)</text>
+      <text xml:lang="en-DEV">Pcos_Error(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3014">
+      <text xml:lang="de-DEV">2. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">2. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3015">
+      <text xml:lang="de-DEV">Pcos_Error(3)</text>
+      <text xml:lang="en-DEV">Pcos_Error(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3015">
+      <text xml:lang="de-DEV">3. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">3. Fehler im Fehlerspeicher</text>
+    </uiText>
+    <uiText key="Diagnose_Name3016">
+      <text xml:lang="de-DEV">Pcos_Error(4)</text>
+      <text xml:lang="en-DEV">Pcos_Error(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3016">
+      <text xml:lang="de-DEV">4. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">4. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3017">
+      <text xml:lang="de-DEV">Pcos_Error(5)</text>
+      <text xml:lang="en-DEV">Pcos_Error(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3017">
+      <text xml:lang="de-DEV">5. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">5. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3018">
+      <text xml:lang="de-DEV">Pcos_Error(6)</text>
+      <text xml:lang="en-DEV">Pcos_Error(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3018">
+      <text xml:lang="de-DEV">6. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">6. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3019">
+      <text xml:lang="de-DEV">Pcos_Error(7)</text>
+      <text xml:lang="en-DEV">Pcos_Error(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3019">
+      <text xml:lang="de-DEV">7. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">7. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3020">
+      <text xml:lang="de-DEV">Pcos_Error(8)</text>
+      <text xml:lang="en-DEV">Pcos_Error(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3020">
+      <text xml:lang="de-DEV">8. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">8. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3021">
+      <text xml:lang="de-DEV">Pcos_Error(9)</text>
+      <text xml:lang="en-DEV">Pcos_Error(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3021">
+      <text xml:lang="de-DEV">9. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">9. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3022">
+      <text xml:lang="de-DEV">Pcos_Error(10)</text>
+      <text xml:lang="en-DEV">Pcos_Error(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3022">
+      <text xml:lang="de-DEV">10. Fehler im Fehlerspeicher</text>
+      <text xml:lang="en-DEV">10. Error in Error-List</text>
+    </uiText>
+    <uiText key="Diagnose_Name3023">
+      <text xml:lang="de-DEV">Anzahl User-Tasks</text>
+      <text xml:lang="en-DEV">Amount User-Tasks</text>
+    </uiText>
+    <uiText key="Diagnose_Description3023">
+      <text xml:lang="de-DEV">Anzahl der laufenden User-Tasks</text>
+      <text xml:lang="en-DEV">Amoutnt of running User-Tasks</text>
+    </uiText>
+    <uiText key="Diagnose_Name3024">
+      <text xml:lang="de-DEV">User_Task_Info(1)</text>
+      <text xml:lang="en-DEV">User_Task_Info(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3024">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 1. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 1. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3025">
+      <text xml:lang="de-DEV">User_Task_Info(2)</text>
+      <text xml:lang="en-DEV">User_Task_Info(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3025">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 2. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 2. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3026">
+      <text xml:lang="de-DEV">User_Task_Info(3)</text>
+      <text xml:lang="en-DEV">User_Task_Info(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3026">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 3. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 3. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3027">
+      <text xml:lang="de-DEV">User_Task_Info(4)</text>
+      <text xml:lang="en-DEV">User_Task_Info(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3027">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 4. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 4. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3028">
+      <text xml:lang="de-DEV">User_Task_Info(5)</text>
+      <text xml:lang="en-DEV">User_Task_Info(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3028">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 5. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 5. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3029">
+      <text xml:lang="de-DEV">User_Task_Info(6)</text>
+      <text xml:lang="en-DEV">User_Task_Info(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3029">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 6. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 6. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3030">
+      <text xml:lang="de-DEV">User_Task_Info(7)</text>
+      <text xml:lang="en-DEV">User_Task_Info(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3030">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 7. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 7. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3031">
+      <text xml:lang="de-DEV">User_Task_Info(8)</text>
+      <text xml:lang="en-DEV">User_Task_Info(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3031">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 8. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 8. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3032">
+      <text xml:lang="de-DEV">User_Task_Info(9)</text>
+      <text xml:lang="en-DEV">User_Task_Info(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3032">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 9. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 9. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3033">
+      <text xml:lang="de-DEV">User_Task_Info(10)</text>
+      <text xml:lang="en-DEV">User_Task_Info(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3033">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 10. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 10. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3034">
+      <text xml:lang="de-DEV">User_Task_Info(11)</text>
+      <text xml:lang="en-DEV">User_Task_Info(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3034">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 11. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 11. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3035">
+      <text xml:lang="de-DEV">User_Task_Info(12)</text>
+      <text xml:lang="en-DEV">User_Task_Info(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3035">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 12. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 12. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3036">
+      <text xml:lang="de-DEV">User_Task_Info(13)</text>
+      <text xml:lang="en-DEV">User_Task_Info(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3036">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 13. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 13. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3037">
+      <text xml:lang="de-DEV">User_Task_Info(14)</text>
+      <text xml:lang="en-DEV">User_Task_Info(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3037">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 14. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 14. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3038">
+      <text xml:lang="de-DEV">User_Task_Info(15)</text>
+      <text xml:lang="en-DEV">User_Task_Info(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3038">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 15. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 15. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3039">
+      <text xml:lang="de-DEV">User_Task_Info(16)</text>
+      <text xml:lang="en-DEV">User_Task_Info(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3039">
+      <text xml:lang="de-DEV">Allgemeine Informationen zur 16. User-Task</text>
+      <text xml:lang="en-DEV">Common Informations to 16. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3040">
+      <text xml:lang="de-DEV">User_Task_Statistik(1)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3040">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 1. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 1. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3041">
+      <text xml:lang="de-DEV">User_Task_Statistik(2)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3041">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 2. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 2. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3042">
+      <text xml:lang="de-DEV">User_Task_Statistik(3)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3042">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 3. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 3. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3043">
+      <text xml:lang="de-DEV">User_Task_Statistik(4)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3043">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 4. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 4. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3044">
+      <text xml:lang="de-DEV">User_Task_Statistik(5)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3044">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 5. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 5. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3045">
+      <text xml:lang="de-DEV">User_Task_Statistik(6)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3045">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 6. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 6. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3046">
+      <text xml:lang="de-DEV">User_Task_Statistik(7)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3046">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 7. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 7. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3047">
+      <text xml:lang="de-DEV">User_Task_Statistik(8)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3047">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 8. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 8. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3048">
+      <text xml:lang="de-DEV">User_Task_Statistik(9)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3048">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 9. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 9. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3049">
+      <text xml:lang="de-DEV">User_Task_Statistik(10)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3049">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 10. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 10. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3050">
+      <text xml:lang="de-DEV">User_Task_Statistik(11)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3050">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 11. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 11. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3051">
+      <text xml:lang="de-DEV">User_Task_Statistik(12)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3051">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 12. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 12. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3052">
+      <text xml:lang="de-DEV">User_Task_Statistik(13)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3052">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 13. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 13. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3053">
+      <text xml:lang="de-DEV">User_Task_Statistik(14)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3053">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 14. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 14. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3054">
+      <text xml:lang="de-DEV">User_Task_Statistik(15)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3054">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 15. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 15. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3055">
+      <text xml:lang="de-DEV">User_Task_Statistik(16)</text>
+      <text xml:lang="en-DEV">User_Task_Statistic(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3055">
+      <text xml:lang="de-DEV">Task-Statistik fuer die 16. User-Task</text>
+      <text xml:lang="en-DEV">Task-Statistic for 16. User-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3056">
+      <text xml:lang="de-DEV">System-Task Anzahl</text>
+      <text xml:lang="en-DEV">Amount System-Tasks</text>
+    </uiText>
+    <uiText key="Diagnose_Description3056">
+      <text xml:lang="de-DEV">Anzahl der laufenden Systemtasks</text>
+      <text xml:lang="en-DEV">Number of running System-Tasks</text>
+    </uiText>
+    <uiText key="Diagnose_Name3057">
+      <text xml:lang="de-DEV">Sys_Task_Info(1)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3057">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 1. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 1. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3058">
+      <text xml:lang="de-DEV">Sys_Task_Info(2)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3058">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 2. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 2. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3059">
+      <text xml:lang="de-DEV">Sys_Task_Info(3)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3059">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 3. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 3. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3060">
+      <text xml:lang="de-DEV">Sys_Task_Info(4)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3060">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 4. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 4. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3061">
+      <text xml:lang="de-DEV">Sys_Task_Info(5)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3061">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 5. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 5. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3062">
+      <text xml:lang="de-DEV">Sys_Task_Info(6)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3062">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 6. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 6. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3063">
+      <text xml:lang="de-DEV">Sys_Task_Info(7)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3063">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 7. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 7. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3064">
+      <text xml:lang="de-DEV">Sys_Task_Info(8)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3064">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 8. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 8. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3065">
+      <text xml:lang="de-DEV">Sys_Task_Info(9)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3065">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 9. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 9. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3066">
+      <text xml:lang="de-DEV">Sys_Task_Info(10)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3066">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 10. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 10. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3067">
+      <text xml:lang="de-DEV">Sys_Task_Info(11)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3067">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 11. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 11. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3068">
+      <text xml:lang="de-DEV">Sys_Task_Info(12)</text>
+      <text xml:lang="en-DEV">Sys_Task_Info(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3068">
+      <text xml:lang="de-DEV">Allgemeine Task-Informationen fuer die 12. System-Task</text>
+      <text xml:lang="en-DEV">Common Informations about the 12. System-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Name3069">
+      <text xml:lang="de-DEV">Kernel-Version</text>
+      <text xml:lang="en-DEV">Kernel-Version</text>
+    </uiText>
+    <uiText key="Diagnose_Description3069">
+      <text xml:lang="de-DEV">ProConOS Version (KW)</text>
+      <text xml:lang="en-DEV">ProConOS Version (KW)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3070">
+      <text xml:lang="de-DEV">Firmware-Version</text>
+      <text xml:lang="en-DEV">Firmware-Version</text>
+    </uiText>
+    <uiText key="Diagnose_Description3070">
+      <text xml:lang="de-DEV">ProConOS Version (Kuka)</text>
+      <text xml:lang="en-DEV">ProConOS Version (Kuka)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3071">
+      <text xml:lang="de-DEV">ProConOS Root-Dir</text>
+      <text xml:lang="en-DEV">ProConOS Root-Dir</text>
+    </uiText>
+    <uiText key="Diagnose_Description3071">
+      <text xml:lang="de-DEV">Basisverzeichnis fuer ProConOS</text>
+      <text xml:lang="en-DEV">Rootdirectory for ProConOS</text>
+    </uiText>
+    <uiText key="Diagnose_Name3072">
+      <text xml:lang="de-DEV">ProConOS File-Access-Dir</text>
+      <text xml:lang="en-DEV">ProConOS File-Access-Dir</text>
+    </uiText>
+    <uiText key="Diagnose_Description3072">
+      <text xml:lang="de-DEV">Basisverzeichnis fuer Dateioperationen mit FW-Bausteinen</text>
+      <text xml:lang="en-DEV">Base Directory for Fileoperations with FW-Blocks</text>
+    </uiText>
+    <uiText key="Diagnose_Name3073">
+      <text xml:lang="de-DEV">Konfig. Programm-Groesse</text>
+      <text xml:lang="en-DEV">Config. Program-Size</text>
+    </uiText>
+    <uiText key="Diagnose_Description3073">
+      <text xml:lang="de-DEV">Konfigurierte max. Programm-Groesse</text>
+      <text xml:lang="en-DEV">Configured max. Program-Size</text>
+    </uiText>
+    <uiText key="Diagnose_Name3074">
+      <text xml:lang="de-DEV">Kofig. Retain-Groesse</text>
+      <text xml:lang="en-DEV">Config. Retain-Size</text>
+    </uiText>
+    <uiText key="Diagnose_Description3074">
+      <text xml:lang="de-DEV">Konfigurierte max. Retain-Daten Groesse</text>
+      <text xml:lang="en-DEV">Configured max. Retain-Data Size</text>
+    </uiText>
+    <uiText key="Diagnose_Name3075">
+      <text xml:lang="de-DEV">Max. freier Speicherblock</text>
+      <text xml:lang="en-DEV">Max. free Memblock</text>
+    </uiText>
+    <uiText key="Diagnose_Description3075">
+      <text xml:lang="de-DEV">Groesster  freier Speicherblock im Heap</text>
+      <text xml:lang="en-DEV">Biggest free Memory-Block in Heap</text>
+    </uiText>
+    <uiText key="Diagnose_Name3076">
+      <text xml:lang="de-DEV">Programmspeicher</text>
+      <text xml:lang="en-DEV">Program-Memory</text>
+    </uiText>
+    <uiText key="Diagnose_Description3076">
+      <text xml:lang="de-DEV">Programmspeicher</text>
+      <text xml:lang="en-DEV">Program-Memory</text>
+    </uiText>
+    <uiText key="Diagnose_Name3077">
+      <text xml:lang="de-DEV">Systemdaten-Speicher</text>
+    </uiText>
+    <uiText key="Diagnose_Description3077">
+      <text xml:lang="de-DEV">Systemdaten-Speicher]&gt;&lt;/Text&gt;        &lt;Text type="Name" language="en"&gt;            &lt;![CDATA[Systemdata Memory</text>
+      <text xml:lang="en-DEV">Systemdata Memory</text>
+    </uiText>
+    <uiText key="Diagnose_Name3078">
+      <text xml:lang="de-DEV">SPOC: UserSaveActive</text>
+      <text xml:lang="en-DEV">SPOC: UserSaveActive</text>
+    </uiText>
+    <uiText key="Diagnose_Description3078">
+      <text xml:lang="de-DEV">ProConOS-Systemflag: UserSafeActive</text>
+      <text xml:lang="en-DEV">ProConOS-Systemflag: UserSafeActive</text>
+    </uiText>
+    <uiText key="Diagnose_Name3079">
+      <text xml:lang="de-DEV">SPOC: MotionEnabled</text>
+      <text xml:lang="en-DEV">SPOC: MotionEnabled</text>
+    </uiText>
+    <uiText key="Diagnose_Description3079">
+      <text xml:lang="de-DEV">ProConOS-Systemflag: MotionEnabled</text>
+      <text xml:lang="en-DEV">ProConOS-Systemflag: MotionEnabled</text>
+    </uiText>
+    <uiText key="Diagnose_Name3080">
+      <text xml:lang="de-DEV">Retain-Daten gueltig</text>
+      <text xml:lang="en-DEV">Retain-Data valid</text>
+    </uiText>
+    <uiText key="Diagnose_Description3080">
+      <text xml:lang="de-DEV">Zeigt an, dass die Retain-Daten gueltig sind.</text>
+      <text xml:lang="en-DEV">Flag shows that Retain-Data are valid</text>
+    </uiText>
+    <uiText key="Diagnose_Name3082">
+      <text xml:lang="de-DEV">Exemp-Task</text>
+      <text xml:lang="en-DEV">Exemp-Task</text>
+    </uiText>
+    <uiText key="Diagnose_Description3082">
+      <text xml:lang="de-DEV">Namen der Ausnahme-Task, welche nicht am Scheduling beteiligt wird.</text>
+      <text xml:lang="en-DEV">Name of the Task, which is not part of Schduling.</text>
+    </uiText>
+    <uiText key="Diagnose_Name3083">
+      <text xml:lang="de-DEV">Scheduling-Ticks</text>
+      <text xml:lang="en-DEV">Scheduling-Ticks</text>
+    </uiText>
+    <uiText key="Diagnose_Description3083">
+      <text xml:lang="de-DEV">NRK-Ticks, in welchen das ProConOS aktiv Rechenzeit erhaelt.</text>
+      <text xml:lang="en-DEV">NRK-Ticks, in which ProConOS will be able to Run.</text>
+    </uiText>
+    <uiText key="Diagnose_Name3084">
+      <text xml:lang="de-DEV">KRC-Signal Read-Modus</text>
+      <text xml:lang="en-DEV">KRC-Signal Read-Mode</text>
+    </uiText>
+    <uiText key="Diagnose_Description3084">
+      <text xml:lang="de-DEV">Konfig. Modus, zu welchem Zeitpunkt die Signal-Dateien gelesen werden.</text>
+      <text xml:lang="en-DEV">Configured Systemstate, which reads the Signal-Files</text>
+    </uiText>
+    <uiText key="Diagnose_Name3085">
+      <text xml:lang="de-DEV">ProConOS</text>
+      <text xml:lang="en-DEV">ProConOS</text>
+    </uiText>
+    <uiText key="Diagnose_Description3085">
+      <text xml:lang="de-DEV">ProConOS</text>
+      <text xml:lang="en-DEV">ProConOS</text>
+    </uiText>
+    <uiText key="Diagnose_Name3086">
+      <text xml:lang="de-DEV">CPU-Idle</text>
+      <text xml:lang="en-DEV">CPU-Idle</text>
+    </uiText>
+    <uiText key="Diagnose_Description3086">
+      <text xml:lang="de-DEV">CPU-Idle</text>
+      <text xml:lang="en-DEV">CPU-Idle</text>
+    </uiText>
+    <uiText key="Diagnose_Name3100">
+      <text xml:lang="de-DEV">ProConOS-PDD</text>
+      <text xml:lang="en-DEV">ProConOS-PDD</text>
+    </uiText>
+    <uiText key="Diagnose_Description3100">
+      <text xml:lang="de-DEV">ProConOS-PDD</text>
+      <text xml:lang="en-DEV">ProConOS-PDD</text>
+    </uiText>
+    <uiText key="Diagnose_Name3101">
+      <text xml:lang="de-DEV">Anzahl PDD-Variablen</text>
+      <text xml:lang="en-DEV">Amount of PDD-Variables</text>
+    </uiText>
+    <uiText key="Diagnose_Description3101">
+      <text xml:lang="de-DEV">Anzahl PDD-Variablen</text>
+      <text xml:lang="en-DEV">Amount of PDD-Variables</text>
+    </uiText>
+    <uiText key="Diagnose_Name3102">
+      <text xml:lang="de-DEV">Status</text>
+      <text xml:lang="en-DEV">State</text>
+    </uiText>
+    <uiText key="Diagnose_Description3102">
+      <text xml:lang="de-DEV">Status</text>
+      <text xml:lang="en-DEV">State</text>
+    </uiText>
+    <uiText key="Diagnose_Name3103">
+      <text xml:lang="de-DEV">Update-Zeit (alle Variablen)</text>
+      <text xml:lang="en-DEV">Update-Time (all Variables)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3103">
+      <text xml:lang="de-DEV">Update-Zeit (alle Variablen)</text>
+      <text xml:lang="en-DEV">Update-Time (all Variables)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3104">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Description3104">
+      <text xml:lang="de-DEV">Fehler</text>
+      <text xml:lang="en-DEV">Error</text>
+    </uiText>
+    <uiText key="Diagnose_Name3105">
+      <text xml:lang="de-DEV">CPU Auslastung (ProConOS-PDD)</text>
+      <text xml:lang="en-DEV">PU load (ProConOS-PDD)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3105">
+      <text xml:lang="de-DEV">CPU Auslastung (ProConOS-PDD)</text>
+      <text xml:lang="en-DEV">CPU load (ProConOS-PDD)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3106">
+      <text xml:lang="de-DEV">CPU Auslastung (KRC-FastVar)</text>
+      <text xml:lang="en-DEV">PU load (KRC-FastVar)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3106">
+      <text xml:lang="de-DEV">CPU Auslastung (KRC-FastVar)</text>
+      <text xml:lang="en-DEV">CPU load (KRC-FastVar)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3107">
+      <text xml:lang="de-DEV">Speicherverwaltung</text>
+      <text xml:lang="en-DEV">Speicherverwaltung</text>
+    </uiText>
+    <uiText key="Diagnose_Description3107">
+      <text xml:lang="de-DEV">Memory Management</text>
+      <text xml:lang="en-DEV">Memory Management</text>
+    </uiText>
+    <uiText key="Diagnose_Name3108">
+      <text xml:lang="de-DEV">- Speicher-Elemente</text>
+      <text xml:lang="en-DEV">- Speicher-Elemente</text>
+    </uiText>
+    <uiText key="Diagnose_Description3108">
+      <text xml:lang="de-DEV">- Memory Blocks</text>
+      <text xml:lang="en-DEV">- Memory Blocks</text>
+    </uiText>
+    <uiText key="Diagnose_Name3109">
+      <text xml:lang="de-DEV">- Fehlerzaehler</text>
+      <text xml:lang="en-DEV">- Fehlerzaehler</text>
+    </uiText>
+    <uiText key="Diagnose_Description3109">
+      <text xml:lang="de-DEV">- Error Counter</text>
+      <text xml:lang="en-DEV">- Error Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name3110">
+      <text xml:lang="de-DEV">PDD-Variable(1)</text>
+      <text xml:lang="en-DEV">PDD-Variable(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3110">
+      <text xml:lang="de-DEV">PDD-Variable(1)</text>
+      <text xml:lang="en-DEV">PDD-Variable(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3111">
+      <text xml:lang="de-DEV">PDD-Variable(2)</text>
+      <text xml:lang="en-DEV">PDD-Variable(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3111">
+      <text xml:lang="de-DEV">PDD-Variable(2)</text>
+      <text xml:lang="en-DEV">PDD-Variable(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3112">
+      <text xml:lang="de-DEV">PDD-Variable(3)</text>
+      <text xml:lang="en-DEV">PDD-Variable(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3112">
+      <text xml:lang="de-DEV">PDD-Variable(3)</text>
+      <text xml:lang="en-DEV">PDD-Variable(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3113">
+      <text xml:lang="de-DEV">PDD-Variable(4)</text>
+      <text xml:lang="en-DEV">PDD-Variable(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3113">
+      <text xml:lang="de-DEV">PDD-Variable(4)</text>
+      <text xml:lang="en-DEV">PDD-Variable(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3114">
+      <text xml:lang="de-DEV">PDD-Variable(5)</text>
+      <text xml:lang="en-DEV">PDD-Variable(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3114">
+      <text xml:lang="de-DEV">PDD-Variable(5)</text>
+      <text xml:lang="en-DEV">PDD-Variable(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3115">
+      <text xml:lang="de-DEV">PDD-Variable(6)</text>
+      <text xml:lang="en-DEV">PDD-Variable(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3115">
+      <text xml:lang="de-DEV">PDD-Variable(6)</text>
+      <text xml:lang="en-DEV">PDD-Variable(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3116">
+      <text xml:lang="de-DEV">PDD-Variable(7)</text>
+      <text xml:lang="en-DEV">PDD-Variable(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3116">
+      <text xml:lang="de-DEV">PDD-Variable(7)</text>
+      <text xml:lang="en-DEV">PDD-Variable(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3117">
+      <text xml:lang="de-DEV">PDD-Variable(8)</text>
+      <text xml:lang="en-DEV">PDD-Variable(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3117">
+      <text xml:lang="de-DEV">PDD-Variable(8)</text>
+      <text xml:lang="en-DEV">PDD-Variable(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3118">
+      <text xml:lang="de-DEV">PDD-Variable(9)</text>
+      <text xml:lang="en-DEV">PDD-Variable(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3118">
+      <text xml:lang="de-DEV">PDD-Variable(9)</text>
+      <text xml:lang="en-DEV">PDD-Variable(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3119">
+      <text xml:lang="de-DEV">PDD-Variable(10)</text>
+      <text xml:lang="en-DEV">PDD-Variable(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3119">
+      <text xml:lang="de-DEV">PDD-Variable(10)</text>
+      <text xml:lang="en-DEV">PDD-Variable(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3120">
+      <text xml:lang="de-DEV">PDD-Variable(11)</text>
+      <text xml:lang="en-DEV">PDD-Variable(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3120">
+      <text xml:lang="de-DEV">PDD-Variable(11)</text>
+      <text xml:lang="en-DEV">PDD-Variable(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3121">
+      <text xml:lang="de-DEV">PDD-Variable(12)</text>
+      <text xml:lang="en-DEV">PDD-Variable(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3121">
+      <text xml:lang="de-DEV">PDD-Variable(12)</text>
+      <text xml:lang="en-DEV">PDD-Variable(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3122">
+      <text xml:lang="de-DEV">PDD-Variable(13)</text>
+      <text xml:lang="en-DEV">PDD-Variable(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3122">
+      <text xml:lang="de-DEV">PDD-Variable(13)</text>
+      <text xml:lang="en-DEV">PDD-Variable(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3123">
+      <text xml:lang="de-DEV">PDD-Variable(14)</text>
+      <text xml:lang="en-DEV">PDD-Variable(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3123">
+      <text xml:lang="de-DEV">PDD-Variable(14)</text>
+      <text xml:lang="en-DEV">PDD-Variable(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3124">
+      <text xml:lang="de-DEV">PDD-Variable(15)</text>
+      <text xml:lang="en-DEV">PDD-Variable(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3124">
+      <text xml:lang="de-DEV">PDD-Variable(15)</text>
+      <text xml:lang="en-DEV">PDD-Variable(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3125">
+      <text xml:lang="de-DEV">PDD-Variable(16)</text>
+      <text xml:lang="en-DEV">PDD-Variable(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3125">
+      <text xml:lang="de-DEV">PDD-Variable(16)</text>
+      <text xml:lang="en-DEV">PDD-Variable(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3126">
+      <text xml:lang="de-DEV">PDD-Variable(17)</text>
+      <text xml:lang="en-DEV">PDD-Variable(17)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3126">
+      <text xml:lang="de-DEV">PDD-Variable(17)</text>
+      <text xml:lang="en-DEV">PDD-Variable(17)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3127">
+      <text xml:lang="de-DEV">PDD-Variable(18)</text>
+      <text xml:lang="en-DEV">PDD-Variable(18)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3127">
+      <text xml:lang="de-DEV">PDD-Variable(18)</text>
+      <text xml:lang="en-DEV">PDD-Variable(18)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3128">
+      <text xml:lang="de-DEV">PDD-Variable(19)</text>
+      <text xml:lang="en-DEV">PDD-Variable(19)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3128">
+      <text xml:lang="de-DEV">PDD-Variable(19)</text>
+      <text xml:lang="en-DEV">PDD-Variable(19)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3129">
+      <text xml:lang="de-DEV">PDD-Variable(20)</text>
+      <text xml:lang="en-DEV">PDD-Variable(20)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3129">
+      <text xml:lang="de-DEV">PDD-Variable(20)</text>
+      <text xml:lang="en-DEV">PDD-Variable(20)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3130">
+      <text xml:lang="de-DEV">PDD-Variable(21)</text>
+      <text xml:lang="en-DEV">PDD-Variable(21)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3130">
+      <text xml:lang="de-DEV">PDD-Variable(21)</text>
+      <text xml:lang="en-DEV">PDD-Variable(21)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3131">
+      <text xml:lang="de-DEV">PDD-Variable(22)</text>
+      <text xml:lang="en-DEV">PDD-Variable(22)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3131">
+      <text xml:lang="de-DEV">PDD-Variable(22)</text>
+      <text xml:lang="en-DEV">PDD-Variable(22)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3132">
+      <text xml:lang="de-DEV">PDD-Variable(23)</text>
+      <text xml:lang="en-DEV">PDD-Variable(23)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3132">
+      <text xml:lang="de-DEV">PDD-Variable(23)</text>
+      <text xml:lang="en-DEV">PDD-Variable(23)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3133">
+      <text xml:lang="de-DEV">PDD-Variable(24)</text>
+      <text xml:lang="en-DEV">PDD-Variable(24)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3133">
+      <text xml:lang="de-DEV">PDD-Variable(24)</text>
+      <text xml:lang="en-DEV">PDD-Variable(24)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3134">
+      <text xml:lang="de-DEV">PDD-Variable(25)</text>
+      <text xml:lang="en-DEV">PDD-Variable(25)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3134">
+      <text xml:lang="de-DEV">PDD-Variable(25)</text>
+      <text xml:lang="en-DEV">PDD-Variable(25)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3135">
+      <text xml:lang="de-DEV">PDD-Variable(26)</text>
+      <text xml:lang="en-DEV">PDD-Variable(26)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3135">
+      <text xml:lang="de-DEV">PDD-Variable(26)</text>
+      <text xml:lang="en-DEV">PDD-Variable(26)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3136">
+      <text xml:lang="de-DEV">PDD-Variable(27)</text>
+      <text xml:lang="en-DEV">PDD-Variable(27)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3136">
+      <text xml:lang="de-DEV">PDD-Variable(27)</text>
+      <text xml:lang="en-DEV">PDD-Variable(27)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3137">
+      <text xml:lang="de-DEV">PDD-Variable(28)</text>
+      <text xml:lang="en-DEV">PDD-Variable(28)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3137">
+      <text xml:lang="de-DEV">PDD-Variable(28)</text>
+      <text xml:lang="en-DEV">PDD-Variable(28)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3138">
+      <text xml:lang="de-DEV">PDD-Variable(29)</text>
+      <text xml:lang="en-DEV">PDD-Variable(29)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3138">
+      <text xml:lang="de-DEV">PDD-Variable(29)</text>
+      <text xml:lang="en-DEV">PDD-Variable(29)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3139">
+      <text xml:lang="de-DEV">PDD-Variable(30)</text>
+      <text xml:lang="en-DEV">PDD-Variable(30)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3139">
+      <text xml:lang="de-DEV">PDD-Variable(30)</text>
+      <text xml:lang="en-DEV">PDD-Variable(30)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3140">
+      <text xml:lang="de-DEV">PDD-Variable(31)</text>
+      <text xml:lang="en-DEV">PDD-Variable(31)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3140">
+      <text xml:lang="de-DEV">PDD-Variable(31)</text>
+      <text xml:lang="en-DEV">PDD-Variable(31)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3141">
+      <text xml:lang="de-DEV">PDD-Variable(32)</text>
+      <text xml:lang="en-DEV">PDD-Variable(32)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3141">
+      <text xml:lang="de-DEV">PDD-Variable(32)</text>
+      <text xml:lang="en-DEV">PDD-Variable(32)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3142">
+      <text xml:lang="de-DEV">PDD-Variable(33)</text>
+      <text xml:lang="en-DEV">PDD-Variable(33)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3142">
+      <text xml:lang="de-DEV">PDD-Variable(33)</text>
+      <text xml:lang="en-DEV">PDD-Variable(33)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3143">
+      <text xml:lang="de-DEV">PDD-Variable(34)</text>
+      <text xml:lang="en-DEV">PDD-Variable(34)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3143">
+      <text xml:lang="de-DEV">PDD-Variable(34)</text>
+      <text xml:lang="en-DEV">PDD-Variable(34)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3144">
+      <text xml:lang="de-DEV">PDD-Variable(35)</text>
+      <text xml:lang="en-DEV">PDD-Variable(35)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3144">
+      <text xml:lang="de-DEV">PDD-Variable(35)</text>
+      <text xml:lang="en-DEV">PDD-Variable(35)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3145">
+      <text xml:lang="de-DEV">PDD-Variable(36)</text>
+      <text xml:lang="en-DEV">PDD-Variable(36)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3145">
+      <text xml:lang="de-DEV">PDD-Variable(36)</text>
+      <text xml:lang="en-DEV">PDD-Variable(36)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3146">
+      <text xml:lang="de-DEV">PDD-Variable(37)</text>
+      <text xml:lang="en-DEV">PDD-Variable(37)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3146">
+      <text xml:lang="de-DEV">PDD-Variable(37)</text>
+      <text xml:lang="en-DEV">PDD-Variable(37)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3147">
+      <text xml:lang="de-DEV">PDD-Variable(38)</text>
+      <text xml:lang="en-DEV">PDD-Variable(38)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3147">
+      <text xml:lang="de-DEV">PDD-Variable(38)</text>
+      <text xml:lang="en-DEV">PDD-Variable(38)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3148">
+      <text xml:lang="de-DEV">PDD-Variable(39)</text>
+      <text xml:lang="en-DEV">PDD-Variable(39)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3148">
+      <text xml:lang="de-DEV">PDD-Variable(39)</text>
+      <text xml:lang="en-DEV">PDD-Variable(39)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3149">
+      <text xml:lang="de-DEV">PDD-Variable(40)</text>
+      <text xml:lang="en-DEV">PDD-Variable(40)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3149">
+      <text xml:lang="de-DEV">PDD-Variable(40)</text>
+      <text xml:lang="en-DEV">PDD-Variable(40)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3150">
+      <text xml:lang="de-DEV">PDD-Variable(41)</text>
+      <text xml:lang="en-DEV">PDD-Variable(41)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3150">
+      <text xml:lang="de-DEV">PDD-Variable(41)</text>
+      <text xml:lang="en-DEV">PDD-Variable(41)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3151">
+      <text xml:lang="de-DEV">PDD-Variable(42)</text>
+      <text xml:lang="en-DEV">PDD-Variable(42)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3151">
+      <text xml:lang="de-DEV">PDD-Variable(42)</text>
+      <text xml:lang="en-DEV">PDD-Variable(42)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3152">
+      <text xml:lang="de-DEV">PDD-Variable(43)</text>
+      <text xml:lang="en-DEV">PDD-Variable(43)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3152">
+      <text xml:lang="de-DEV">PDD-Variable(43)</text>
+      <text xml:lang="en-DEV">PDD-Variable(43)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3153">
+      <text xml:lang="de-DEV">PDD-Variable(44)</text>
+      <text xml:lang="en-DEV">PDD-Variable(44)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3153">
+      <text xml:lang="de-DEV">PDD-Variable(44)</text>
+      <text xml:lang="en-DEV">PDD-Variable(44)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3154">
+      <text xml:lang="de-DEV">PDD-Variable(45)</text>
+      <text xml:lang="en-DEV">PDD-Variable(45)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3154">
+      <text xml:lang="de-DEV">PDD-Variable(45)</text>
+      <text xml:lang="en-DEV">PDD-Variable(45)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3155">
+      <text xml:lang="de-DEV">PDD-Variable(46)</text>
+      <text xml:lang="en-DEV">PDD-Variable(46)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3155">
+      <text xml:lang="de-DEV">PDD-Variable(46)</text>
+      <text xml:lang="en-DEV">PDD-Variable(46)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3156">
+      <text xml:lang="de-DEV">PDD-Variable(47)</text>
+      <text xml:lang="en-DEV">PDD-Variable(47)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3156">
+      <text xml:lang="de-DEV">PDD-Variable(47)</text>
+      <text xml:lang="en-DEV">PDD-Variable(47)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3157">
+      <text xml:lang="de-DEV">PDD-Variable(48)</text>
+      <text xml:lang="en-DEV">PDD-Variable(48)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3157">
+      <text xml:lang="de-DEV">PDD-Variable(48)</text>
+      <text xml:lang="en-DEV">PDD-Variable(48)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3158">
+      <text xml:lang="de-DEV">PDD-Variable(49)</text>
+      <text xml:lang="en-DEV">PDD-Variable(49)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3158">
+      <text xml:lang="de-DEV">PDD-Variable(49)</text>
+      <text xml:lang="en-DEV">PDD-Variable(49)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3159">
+      <text xml:lang="de-DEV">PDD-Variable(50)</text>
+      <text xml:lang="en-DEV">PDD-Variable(50)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3159">
+      <text xml:lang="de-DEV">PDD-Variable(50)</text>
+      <text xml:lang="en-DEV">PDD-Variable(50)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3160">
+      <text xml:lang="de-DEV">PDD-Variable(51)</text>
+      <text xml:lang="en-DEV">PDD-Variable(51)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3160">
+      <text xml:lang="de-DEV">PDD-Variable(51)</text>
+      <text xml:lang="en-DEV">PDD-Variable(51)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3161">
+      <text xml:lang="de-DEV">PDD-Variable(52)</text>
+      <text xml:lang="en-DEV">PDD-Variable(52)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3161">
+      <text xml:lang="de-DEV">PDD-Variable(52)</text>
+      <text xml:lang="en-DEV">PDD-Variable(52)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3162">
+      <text xml:lang="de-DEV">PDD-Variable(53)</text>
+      <text xml:lang="en-DEV">PDD-Variable(53)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3162">
+      <text xml:lang="de-DEV">PDD-Variable(53)</text>
+      <text xml:lang="en-DEV">PDD-Variable(53)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3163">
+      <text xml:lang="de-DEV">PDD-Variable(54)</text>
+      <text xml:lang="en-DEV">PDD-Variable(54)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3163">
+      <text xml:lang="de-DEV">PDD-Variable(54)</text>
+      <text xml:lang="en-DEV">PDD-Variable(54)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3164">
+      <text xml:lang="de-DEV">PDD-Variable(55)</text>
+      <text xml:lang="en-DEV">PDD-Variable(55)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3164">
+      <text xml:lang="de-DEV">PDD-Variable(55)</text>
+      <text xml:lang="en-DEV">PDD-Variable(55)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3165">
+      <text xml:lang="de-DEV">PDD-Variable(56)</text>
+      <text xml:lang="en-DEV">PDD-Variable(56)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3165">
+      <text xml:lang="de-DEV">PDD-Variable(56)</text>
+      <text xml:lang="en-DEV">PDD-Variable(56)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3166">
+      <text xml:lang="de-DEV">PDD-Variable(57)</text>
+      <text xml:lang="en-DEV">PDD-Variable(57)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3166">
+      <text xml:lang="de-DEV">PDD-Variable(57)</text>
+      <text xml:lang="en-DEV">PDD-Variable(57)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3167">
+      <text xml:lang="de-DEV">PDD-Variable(58)</text>
+      <text xml:lang="en-DEV">PDD-Variable(58)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3167">
+      <text xml:lang="de-DEV">PDD-Variable(58)</text>
+      <text xml:lang="en-DEV">PDD-Variable(58)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3168">
+      <text xml:lang="de-DEV">PDD-Variable(59)</text>
+      <text xml:lang="en-DEV">PDD-Variable(59)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3168">
+      <text xml:lang="de-DEV">PDD-Variable(59)</text>
+      <text xml:lang="en-DEV">PDD-Variable(59)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3169">
+      <text xml:lang="de-DEV">PDD-Variable(60)</text>
+      <text xml:lang="en-DEV">PDD-Variable(60)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3169">
+      <text xml:lang="de-DEV">PDD-Variable(60)</text>
+      <text xml:lang="en-DEV">PDD-Variable(60)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3170">
+      <text xml:lang="de-DEV">PDD-Variable(61)</text>
+      <text xml:lang="en-DEV">PDD-Variable(61)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3170">
+      <text xml:lang="de-DEV">PDD-Variable(61)</text>
+      <text xml:lang="en-DEV">PDD-Variable(61)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3171">
+      <text xml:lang="de-DEV">PDD-Variable(62)</text>
+      <text xml:lang="en-DEV">PDD-Variable(62)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3171">
+      <text xml:lang="de-DEV">PDD-Variable(62)</text>
+      <text xml:lang="en-DEV">PDD-Variable(62)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3172">
+      <text xml:lang="de-DEV">PDD-Variable(63)</text>
+      <text xml:lang="en-DEV">PDD-Variable(63)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3172">
+      <text xml:lang="de-DEV">PDD-Variable(63)</text>
+      <text xml:lang="en-DEV">PDD-Variable(63)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3173">
+      <text xml:lang="de-DEV">PDD-Variable(64)</text>
+      <text xml:lang="en-DEV">PDD-Variable(64)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3173">
+      <text xml:lang="de-DEV">PDD-Variable(64)</text>
+      <text xml:lang="en-DEV">PDD-Variable(64)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3174">
+      <text xml:lang="de-DEV">PDD-Variable(65)</text>
+      <text xml:lang="en-DEV">PDD-Variable(65)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3174">
+      <text xml:lang="de-DEV">PDD-Variable(65)</text>
+      <text xml:lang="en-DEV">PDD-Variable(65)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3175">
+      <text xml:lang="de-DEV">PDD-Variable(66)</text>
+      <text xml:lang="en-DEV">PDD-Variable(66)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3175">
+      <text xml:lang="de-DEV">PDD-Variable(66)</text>
+      <text xml:lang="en-DEV">PDD-Variable(66)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3176">
+      <text xml:lang="de-DEV">PDD-Variable(67)</text>
+      <text xml:lang="en-DEV">PDD-Variable(67)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3176">
+      <text xml:lang="de-DEV">PDD-Variable(67)</text>
+      <text xml:lang="en-DEV">PDD-Variable(67)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3177">
+      <text xml:lang="de-DEV">PDD-Variable(68)</text>
+      <text xml:lang="en-DEV">PDD-Variable(68)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3177">
+      <text xml:lang="de-DEV">PDD-Variable(68)</text>
+      <text xml:lang="en-DEV">PDD-Variable(68)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3178">
+      <text xml:lang="de-DEV">PDD-Variable(69)</text>
+      <text xml:lang="en-DEV">PDD-Variable(69)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3178">
+      <text xml:lang="de-DEV">PDD-Variable(69)</text>
+      <text xml:lang="en-DEV">PDD-Variable(69)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3179">
+      <text xml:lang="de-DEV">PDD-Variable(70)</text>
+      <text xml:lang="en-DEV">PDD-Variable(70)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3179">
+      <text xml:lang="de-DEV">PDD-Variable(70)</text>
+      <text xml:lang="en-DEV">PDD-Variable(70)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3180">
+      <text xml:lang="de-DEV">PDD-Variable(71)</text>
+      <text xml:lang="en-DEV">PDD-Variable(71)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3180">
+      <text xml:lang="de-DEV">PDD-Variable(71)</text>
+      <text xml:lang="en-DEV">PDD-Variable(71)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3181">
+      <text xml:lang="de-DEV">PDD-Variable(72)</text>
+      <text xml:lang="en-DEV">PDD-Variable(72)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3181">
+      <text xml:lang="de-DEV">PDD-Variable(72)</text>
+      <text xml:lang="en-DEV">PDD-Variable(72)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3182">
+      <text xml:lang="de-DEV">PDD-Variable(73)</text>
+      <text xml:lang="en-DEV">PDD-Variable(73)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3182">
+      <text xml:lang="de-DEV">PDD-Variable(73)</text>
+      <text xml:lang="en-DEV">PDD-Variable(73)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3183">
+      <text xml:lang="de-DEV">PDD-Variable(74)</text>
+      <text xml:lang="en-DEV">PDD-Variable(74)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3183">
+      <text xml:lang="de-DEV">PDD-Variable(74)</text>
+      <text xml:lang="en-DEV">PDD-Variable(74)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3184">
+      <text xml:lang="de-DEV">PDD-Variable(75)</text>
+      <text xml:lang="en-DEV">PDD-Variable(75)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3184">
+      <text xml:lang="de-DEV">PDD-Variable(75)</text>
+      <text xml:lang="en-DEV">PDD-Variable(75)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3185">
+      <text xml:lang="de-DEV">PDD-Variable(76)</text>
+      <text xml:lang="en-DEV">PDD-Variable(76)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3185">
+      <text xml:lang="de-DEV">PDD-Variable(76)</text>
+      <text xml:lang="en-DEV">PDD-Variable(76)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3186">
+      <text xml:lang="de-DEV">PDD-Variable(77)</text>
+      <text xml:lang="en-DEV">PDD-Variable(77)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3186">
+      <text xml:lang="de-DEV">PDD-Variable(77)</text>
+      <text xml:lang="en-DEV">PDD-Variable(77)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3187">
+      <text xml:lang="de-DEV">PDD-Variable(78)</text>
+      <text xml:lang="en-DEV">PDD-Variable(78)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3187">
+      <text xml:lang="de-DEV">PDD-Variable(78)</text>
+      <text xml:lang="en-DEV">PDD-Variable(78)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3188">
+      <text xml:lang="de-DEV">PDD-Variable(79)</text>
+      <text xml:lang="en-DEV">PDD-Variable(79)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3188">
+      <text xml:lang="de-DEV">PDD-Variable(79)</text>
+      <text xml:lang="en-DEV">PDD-Variable(79)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3189">
+      <text xml:lang="de-DEV">PDD-Variable(80)</text>
+      <text xml:lang="en-DEV">PDD-Variable(80)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3189">
+      <text xml:lang="de-DEV">PDD-Variable(80)</text>
+      <text xml:lang="en-DEV">PDD-Variable(80)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3190">
+      <text xml:lang="de-DEV">PDD-Variable(81)</text>
+      <text xml:lang="en-DEV">PDD-Variable(81)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3190">
+      <text xml:lang="de-DEV">PDD-Variable(81)</text>
+      <text xml:lang="en-DEV">PDD-Variable(81)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3191">
+      <text xml:lang="de-DEV">PDD-Variable(82)</text>
+      <text xml:lang="en-DEV">PDD-Variable(82)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3191">
+      <text xml:lang="de-DEV">PDD-Variable(82)</text>
+      <text xml:lang="en-DEV">PDD-Variable(82)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3192">
+      <text xml:lang="de-DEV">PDD-Variable(83)</text>
+      <text xml:lang="en-DEV">PDD-Variable(83)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3192">
+      <text xml:lang="de-DEV">PDD-Variable(83)</text>
+      <text xml:lang="en-DEV">PDD-Variable(83)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3193">
+      <text xml:lang="de-DEV">PDD-Variable(84)</text>
+      <text xml:lang="en-DEV">PDD-Variable(84)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3193">
+      <text xml:lang="de-DEV">PDD-Variable(84)</text>
+      <text xml:lang="en-DEV">PDD-Variable(84)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3194">
+      <text xml:lang="de-DEV">PDD-Variable(85)</text>
+      <text xml:lang="en-DEV">PDD-Variable(85)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3194">
+      <text xml:lang="de-DEV">PDD-Variable(85)</text>
+      <text xml:lang="en-DEV">PDD-Variable(85)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3195">
+      <text xml:lang="de-DEV">PDD-Variable(86)</text>
+      <text xml:lang="en-DEV">PDD-Variable(86)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3195">
+      <text xml:lang="de-DEV">PDD-Variable(86)</text>
+      <text xml:lang="en-DEV">PDD-Variable(86)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3196">
+      <text xml:lang="de-DEV">PDD-Variable(87)</text>
+      <text xml:lang="en-DEV">PDD-Variable(87)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3196">
+      <text xml:lang="de-DEV">PDD-Variable(87)</text>
+      <text xml:lang="en-DEV">PDD-Variable(87)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3197">
+      <text xml:lang="de-DEV">PDD-Variable(88)</text>
+      <text xml:lang="en-DEV">PDD-Variable(88)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3197">
+      <text xml:lang="de-DEV">PDD-Variable(88)</text>
+      <text xml:lang="en-DEV">PDD-Variable(88)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3198">
+      <text xml:lang="de-DEV">PDD-Variable(89)</text>
+      <text xml:lang="en-DEV">PDD-Variable(89)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3198">
+      <text xml:lang="de-DEV">PDD-Variable(89)</text>
+      <text xml:lang="en-DEV">PDD-Variable(89)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3199">
+      <text xml:lang="de-DEV">PDD-Variable(90)</text>
+      <text xml:lang="en-DEV">PDD-Variable(90)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3199">
+      <text xml:lang="de-DEV">PDD-Variable(90)</text>
+      <text xml:lang="en-DEV">PDD-Variable(90)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3200">
+      <text xml:lang="de-DEV">PDD-Variable(91)</text>
+      <text xml:lang="en-DEV">PDD-Variable(91)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3200">
+      <text xml:lang="de-DEV">PDD-Variable(91)</text>
+      <text xml:lang="en-DEV">PDD-Variable(91)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3201">
+      <text xml:lang="de-DEV">PDD-Variable(92)</text>
+      <text xml:lang="en-DEV">PDD-Variable(92)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3201">
+      <text xml:lang="de-DEV">PDD-Variable(92)</text>
+      <text xml:lang="en-DEV">PDD-Variable(92)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3202">
+      <text xml:lang="de-DEV">PDD-Variable(93)</text>
+      <text xml:lang="en-DEV">PDD-Variable(93)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3202">
+      <text xml:lang="de-DEV">PDD-Variable(93)</text>
+      <text xml:lang="en-DEV">PDD-Variable(93)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3203">
+      <text xml:lang="de-DEV">PDD-Variable(94)</text>
+      <text xml:lang="en-DEV">PDD-Variable(94)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3203">
+      <text xml:lang="de-DEV">PDD-Variable(94)</text>
+      <text xml:lang="en-DEV">PDD-Variable(94)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3204">
+      <text xml:lang="de-DEV">PDD-Variable(95)</text>
+      <text xml:lang="en-DEV">PDD-Variable(95)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3204">
+      <text xml:lang="de-DEV">PDD-Variable(95)</text>
+      <text xml:lang="en-DEV">PDD-Variable(95)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3205">
+      <text xml:lang="de-DEV">PDD-Variable(96)</text>
+      <text xml:lang="en-DEV">PDD-Variable(96)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3205">
+      <text xml:lang="de-DEV">PDD-Variable(96)</text>
+      <text xml:lang="en-DEV">PDD-Variable(96)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3206">
+      <text xml:lang="de-DEV">PDD-Variable(97)</text>
+      <text xml:lang="en-DEV">PDD-Variable(97)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3206">
+      <text xml:lang="de-DEV">PDD-Variable(97)</text>
+      <text xml:lang="en-DEV">PDD-Variable(97)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3207">
+      <text xml:lang="de-DEV">PDD-Variable(98)</text>
+      <text xml:lang="en-DEV">PDD-Variable(98)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3207">
+      <text xml:lang="de-DEV">PDD-Variable(98)</text>
+      <text xml:lang="en-DEV">PDD-Variable(98)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3208">
+      <text xml:lang="de-DEV">PDD-Variable(99)</text>
+      <text xml:lang="en-DEV">PDD-Variable(99)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3208">
+      <text xml:lang="de-DEV">PDD-Variable(99)</text>
+      <text xml:lang="en-DEV">PDD-Variable(99)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3209">
+      <text xml:lang="de-DEV">PDD-Variable(100)</text>
+      <text xml:lang="en-DEV">PDD-Variable(100)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3209">
+      <text xml:lang="de-DEV">PDD-Variable(100)</text>
+      <text xml:lang="en-DEV">PDD-Variable(100)</text>
+    </uiText>
+    <uiText key="Diagnose_Name3300">
+      <text xml:lang="de-DEV">Netzwerkverb. 1 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 1 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3300">
+      <text xml:lang="de-DEV">Handle der 1. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 1. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3301">
+      <text xml:lang="de-DEV">- Status (1)</text>
+      <text xml:lang="en-DEV">- State (1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3301">
+      <text xml:lang="de-DEV">Status der 1. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 1. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3302">
+      <text xml:lang="de-DEV">- Verb.-Parameter (1)</text>
+      <text xml:lang="en-DEV">- Connect parameter (1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3302">
+      <text xml:lang="de-DEV">Verbindungsparameter der 1. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 1. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3303">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (1)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3303">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 1. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 1. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3304">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(1)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3304">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 1. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 1. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3308">
+      <text xml:lang="de-DEV">Netzwerkverb. 2 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 2 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3308">
+      <text xml:lang="de-DEV">Handle der 2. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 2. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3309">
+      <text xml:lang="de-DEV">- Status (2)</text>
+      <text xml:lang="en-DEV">- State (2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3309">
+      <text xml:lang="de-DEV">Status der 2. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 2. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3310">
+      <text xml:lang="de-DEV">- Verb.-Parameter (2)</text>
+      <text xml:lang="en-DEV">- Connect parameter (2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3310">
+      <text xml:lang="de-DEV">Verbindungsparameter der 2. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 2. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3311">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (2)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3311">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 2. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 2. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3312">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(2)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3312">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 2. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 2. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3316">
+      <text xml:lang="de-DEV">Netzwerkverb. 3 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 3 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3316">
+      <text xml:lang="de-DEV">Handle der 3. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 3. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3317">
+      <text xml:lang="de-DEV">- Status (3)</text>
+      <text xml:lang="en-DEV">- State (3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3317">
+      <text xml:lang="de-DEV">Status der 3. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 3. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3318">
+      <text xml:lang="de-DEV">- Verb.-Parameter (3)</text>
+      <text xml:lang="en-DEV">- Connect parameter (3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3318">
+      <text xml:lang="de-DEV">Verbindungsparameter der 3. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 3. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3319">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (3)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3319">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 3. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 3. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3320">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(3)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3320">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 3. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 3. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3324">
+      <text xml:lang="de-DEV">Netzwerkverb. 4 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 4 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3324">
+      <text xml:lang="de-DEV">Handle der 4. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 4. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3325">
+      <text xml:lang="de-DEV">- Status (4)</text>
+      <text xml:lang="en-DEV">- State (4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3325">
+      <text xml:lang="de-DEV">Status der 4. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 4. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3326">
+      <text xml:lang="de-DEV">- Verb.-Parameter (4)</text>
+      <text xml:lang="en-DEV">- Connect parameter (4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3326">
+      <text xml:lang="de-DEV">Verbindungsparameter der 4. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 4. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3327">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (4)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3327">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 4. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 4. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3328">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(4)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3328">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 4. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 4. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3332">
+      <text xml:lang="de-DEV">Netzwerkverb. 5 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 5 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3332">
+      <text xml:lang="de-DEV">Handle der 5. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 5. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3333">
+      <text xml:lang="de-DEV">- Status (5)</text>
+      <text xml:lang="en-DEV">- State (5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3333">
+      <text xml:lang="de-DEV">Status der 5. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 5. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3334">
+      <text xml:lang="de-DEV">- Verb.-Parameter (5)</text>
+      <text xml:lang="en-DEV">- Connect parameter (5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3334">
+      <text xml:lang="de-DEV">Verbindungsparameter der 5. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 5. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3335">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (5)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3335">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 5. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 5. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3336">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(5)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3336">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 5. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 5. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3340">
+      <text xml:lang="de-DEV">Netzwerkverb. 6 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 6 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3340">
+      <text xml:lang="de-DEV">Handle der 6. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 6. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3341">
+      <text xml:lang="de-DEV">- Status (6)</text>
+      <text xml:lang="en-DEV">- State (6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3341">
+      <text xml:lang="de-DEV">Status der 6. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 6. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3342">
+      <text xml:lang="de-DEV">- Verb.-Parameter (6)</text>
+      <text xml:lang="en-DEV">- Connect parameter (6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3342">
+      <text xml:lang="de-DEV">Verbindungsparameter der 6. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 6. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3343">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (6)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3343">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 6. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 6. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3344">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(6)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3344">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 6. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 6. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3348">
+      <text xml:lang="de-DEV">Netzwerkverb. 7 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 7 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3348">
+      <text xml:lang="de-DEV">Handle der 7. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 7. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3349">
+      <text xml:lang="de-DEV">- Status (7)</text>
+      <text xml:lang="en-DEV">- State (7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3349">
+      <text xml:lang="de-DEV">Status der 7. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 7. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3350">
+      <text xml:lang="de-DEV">- Verb.-Parameter (7)</text>
+      <text xml:lang="en-DEV">- Connect parameter (7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3350">
+      <text xml:lang="de-DEV">Verbindungsparameter der 7. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 7. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3351">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (7)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3351">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 7. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 7. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3352">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(7)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3352">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 7. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 7. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3356">
+      <text xml:lang="de-DEV">Netzwerkverb. 8 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 8 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3356">
+      <text xml:lang="de-DEV">Handle der 8. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 8. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3357">
+      <text xml:lang="de-DEV">- Status (8)</text>
+      <text xml:lang="en-DEV">- State (8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3357">
+      <text xml:lang="de-DEV">Status der 8. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 8. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3358">
+      <text xml:lang="de-DEV">- Verb.-Parameter (8)</text>
+      <text xml:lang="en-DEV">- Connect parameter (8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3358">
+      <text xml:lang="de-DEV">Verbindungsparameter der 8. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 8. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3359">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (8)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3359">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 8. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 8. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3360">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(8)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3360">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 8. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 8. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3364">
+      <text xml:lang="de-DEV">Netzwerkverb. 9 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 9 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3364">
+      <text xml:lang="de-DEV">Handle der 9. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 9. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3365">
+      <text xml:lang="de-DEV">- Status (9)</text>
+      <text xml:lang="en-DEV">- State (9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3365">
+      <text xml:lang="de-DEV">Status der 9. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 9. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3366">
+      <text xml:lang="de-DEV">- Verb.-Parameter (9)</text>
+      <text xml:lang="en-DEV">- Connect parameter (9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3366">
+      <text xml:lang="de-DEV">Verbindungsparameter der 9. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 9. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3367">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (9)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3367">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 9. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 9. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3368">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(9)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3368">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 9. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 9. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3372">
+      <text xml:lang="de-DEV">Netzwerkverb. 10 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 10 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3372">
+      <text xml:lang="de-DEV">Handle der 10. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 10. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3373">
+      <text xml:lang="de-DEV">- Status (10)</text>
+      <text xml:lang="en-DEV">- State (10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3373">
+      <text xml:lang="de-DEV">Status der 10. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 10. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3374">
+      <text xml:lang="de-DEV">- Verb.-Parameter (10)</text>
+      <text xml:lang="en-DEV">- Connect parameter (10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3374">
+      <text xml:lang="de-DEV">Verbindungsparameter der 10. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 10. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3375">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (10)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3375">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 10. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 10. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3376">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(10)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3376">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 10. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 10. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3380">
+      <text xml:lang="de-DEV">Netzwerkverb. 11 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 11 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3380">
+      <text xml:lang="de-DEV">Handle der 11. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 11. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3381">
+      <text xml:lang="de-DEV">- Status (11)</text>
+      <text xml:lang="en-DEV">- State (11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3381">
+      <text xml:lang="de-DEV">Status der 11. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 11. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3382">
+      <text xml:lang="de-DEV">- Verb.-Parameter (11)</text>
+      <text xml:lang="en-DEV">- Connect parameter (11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3382">
+      <text xml:lang="de-DEV">Verbindungsparameter der 11. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 11. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3383">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (11)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3383">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 11. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 11. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3384">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(11)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3384">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 11. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 11. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3388">
+      <text xml:lang="de-DEV">Netzwerkverb. 12 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 12 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3388">
+      <text xml:lang="de-DEV">Handle der 12. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 12. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3389">
+      <text xml:lang="de-DEV">- Status (12)</text>
+      <text xml:lang="en-DEV">- State (12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3389">
+      <text xml:lang="de-DEV">Status der 12. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 12. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3390">
+      <text xml:lang="de-DEV">- Verb.-Parameter (12)</text>
+      <text xml:lang="en-DEV">- Connect parameter (12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3390">
+      <text xml:lang="de-DEV">Verbindungsparameter der 12. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 12. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3391">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (12)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3391">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 12. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 12. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3392">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(12)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3392">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 12. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 12. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3396">
+      <text xml:lang="de-DEV">Netzwerkverb. 13 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 13 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3396">
+      <text xml:lang="de-DEV">Handle der 13. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 13. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3397">
+      <text xml:lang="de-DEV">- Status (13)</text>
+      <text xml:lang="en-DEV">- State (13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3397">
+      <text xml:lang="de-DEV">Status der 13. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 13. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3398">
+      <text xml:lang="de-DEV">- Verb.-Parameter (13)</text>
+      <text xml:lang="en-DEV">- Connect parameter (13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3398">
+      <text xml:lang="de-DEV">Verbindungsparameter der 13. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 13. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3399">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (13)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3399">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 13. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 13. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3400">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(13)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3400">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 13. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 13. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3404">
+      <text xml:lang="de-DEV">Netzwerkverb. 14 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 14 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3404">
+      <text xml:lang="de-DEV">Handle der 14. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 14. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3405">
+      <text xml:lang="de-DEV">- Status (14)</text>
+      <text xml:lang="en-DEV">- State (14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3405">
+      <text xml:lang="de-DEV">Status der 14. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 14. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3406">
+      <text xml:lang="de-DEV">- Verb.-Parameter (14)</text>
+      <text xml:lang="en-DEV">- Connect parameter (14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3406">
+      <text xml:lang="de-DEV">Verbindungsparameter der 14. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 14. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3407">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (14)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3407">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 14. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 14. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3408">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(14)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3408">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 14. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 14. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3412">
+      <text xml:lang="de-DEV">Netzwerkverb. 15 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 15 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3412">
+      <text xml:lang="de-DEV">Handle der 15. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 15. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3413">
+      <text xml:lang="de-DEV">- Status (15)</text>
+      <text xml:lang="en-DEV">- State (15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3413">
+      <text xml:lang="de-DEV">Status der 15. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 15. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3414">
+      <text xml:lang="de-DEV">- Verb.-Parameter (15)</text>
+      <text xml:lang="en-DEV">- Connect parameter (15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3414">
+      <text xml:lang="de-DEV">Verbindungsparameter der 15. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 15. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3415">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (15)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3415">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 15. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 15. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3416">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(15)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3416">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 15. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 15. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3420">
+      <text xml:lang="de-DEV">Netzwerkverb. 16 (Handle)</text>
+      <text xml:lang="en-DEV">Network connection 16 (Handle)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3420">
+      <text xml:lang="de-DEV">Handle der 16. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Handle of the 16. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3421">
+      <text xml:lang="de-DEV">- Status (16)</text>
+      <text xml:lang="en-DEV">- State (16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3421">
+      <text xml:lang="de-DEV">Status der 16. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">State of the 16. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3422">
+      <text xml:lang="de-DEV">- Verb.-Parameter (16)</text>
+      <text xml:lang="en-DEV">- Connect parameter (16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3422">
+      <text xml:lang="de-DEV">Verbindungsparameter der 16. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Connection Parameter of the 16. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3423">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler (16)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. counter (16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3423">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler der 16. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. counter of the 16. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3424">
+      <text xml:lang="de-DEV">- Sende-/Empfangszaehler Fehler(16)</text>
+      <text xml:lang="en-DEV">- Send-/Recv. error counter (16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description3424">
+      <text xml:lang="de-DEV">Sende-/Empfangszaehler fuer Fehler der 16. Netzwerkverbindung</text>
+      <text xml:lang="en-DEV">Send-/Recv. error counter of the 16. Network connection</text>
+    </uiText>
+    <uiText key="Diagnose_Name3430">
+      <text xml:lang="de-DEV">ProConOS Netzwerk Kommunikation</text>
+      <text xml:lang="en-DEV">ProConOS Netzwork communication</text>
+    </uiText>
+    <uiText key="Diagnose_Description3430">
+      <text xml:lang="de-DEV">ProConOS Netzwerk Kommunikation</text>
+      <text xml:lang="en-DEV">ProConOS Netzwork communication</text>
+    </uiText>
+  </module>
+</resources>

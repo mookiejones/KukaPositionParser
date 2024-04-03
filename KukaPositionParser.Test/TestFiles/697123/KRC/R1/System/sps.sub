@@ -1,0 +1,195 @@
+&ACCESS RVP
+&REL 59
+&COMMENT PLC on control
+&PARAM DISKPATH = System
+DEF sps( )
+   
+   ;ENDFOLD History
+   ;FOLD DECLARATIONS
+      ;FOLD BASISTECH DECL
+         ;Automatik extern
+         DECL STATE_T STAT
+         DECL MODUS_T MODE
+      ;ENDFOLD (BASISTECH DECL)
+      ;FOLD USER DECL
+         ; Please insert user defined declarations
+         
+         ; Init variable for barrel pos adjustment (in/out)
+         barrelPosAux.X = 0.0
+         barrelPosAux.Y = 0.0
+         barrelPosAux.Z = 0.0
+         barrelPosAux.A = 0.0
+         barrelPosAux.B = 0.0
+         barrelPosAux.C = 0.0
+         
+      ;ENDFOLD (USER DECL)
+   ;ENDFOLD (DECLARATIONS)
+   ;FOLD INI
+      ;FOLD AUTOEXT INIT
+         INTERRUPT DECL 91 WHEN $PRO_STATE1==#P_FREE DO RESET_OUT ()
+         INTERRUPT ON 91
+         INTERRUPT DECL 92 WHEN $PRO_MOVE==TRUE DO RESET_LINESEL()
+         INTERRUPT ON 92
+         $LOOP_MSG[]="                                                            "
+         MODE=#SYNC
+         $H_POS=$H_POS
+      ;ENDFOLD (AUTOEXT INIT)
+      ;Automatik extern
+      IF $MODE_OP==#EX THEN
+         CWRITE($CMD,STAT,MODE,"RUN /R1/CELL()")
+      ENDIF
+   ;ENDFOLD (AUTOEXT INIT)
+   ;FOLD BACKUPMANAGER PLC INIT
+      BM_ENABLED = FALSE
+      BM_OUTPUTVALUE = 0
+   ;ENDFOLD (BACKUPMANAGER PLC INIT)
+   ;FOLD TQM_INIT
+      
+   ;ENDFOLD (TQM_INIT)
+   ;FOLD TeslaCore Init
+      TCSubmitStart( )
+   ;ENDFOLD (TeslaCore Init)
+   ;FOLD USER INIT
+      ; Please insert user defined initialization commands
+      
+      TCSubmitStart();
+      
+   ;ENDFOLD (USER INIT)
+   ;ENDFOLD (INI)
+   
+   LOOP
+      
+      WAIT FOR NOT($POWER_FAIL)
+      
+      ;FOLD BACKUPMANAGER PLC
+         IF BM_ENABLED THEN
+            BM_OUTPUTSIGNAL = BM_OUTPUTVALUE
+         ENDIF
+      ;ENDFOLD (BACKUPMANAGER PLC)
+      
+      ;FOLD TeslaCore PLC
+         IF ($PROG_INFO[3].P_STATE<>#P_ACTIVE) THEN
+            IF (Exists_KrlMsg(nTC_Submit3)==FALSE) THEN
+               nTC_Submit3 = Set_Krlmsg (#STATE, TeslaCore_Msg[54], TC_MsgPar[], TC_MsgOpt_NoStop)
+            ENDIF
+         ELSE
+            IF (Exists_KrlMsg(nTC_Submit3)==TRUE) THEN
+               bTC_Clear = Clear_KRLMsg(nTC_Submit3)
+            ENDIF
+         ENDIF
+         IF ($PROG_INFO[4].P_STATE<>#P_ACTIVE) THEN
+            IF (Exists_KrlMsg(nTC_Submit4)==FALSE) THEN
+               nTC_Submit4 = Set_Krlmsg (#STATE, TeslaCore_Msg[55], TC_MsgPar[], TC_MsgOpt_NoStop)
+            ENDIF
+         ELSE
+            IF (Exists_KrlMsg(nTC_Submit4)==TRUE) THEN
+               bTC_Clear = Clear_KRLMsg(nTC_Submit4)
+            ENDIF
+         ENDIF
+         IF ($PROG_INFO[5].P_STATE<>#P_ACTIVE) THEN
+            IF (Exists_KrlMsg(nTC_Submit5)==FALSE) THEN
+               nTC_Submit5 = Set_Krlmsg (#STATE, TeslaCore_Msg[56], TC_MsgPar[], TC_MsgOpt_NoStop)
+            ENDIF
+         ELSE
+            IF (Exists_KrlMsg(nTC_Submit5)==TRUE) THEN
+               bTC_Clear = Clear_KRLMsg(nTC_Submit5)
+            ENDIF
+         ENDIF
+         IF ($PROG_INFO[6].P_STATE<>#P_ACTIVE) THEN
+            IF (Exists_KrlMsg(nTC_Submit6)==FALSE) THEN
+               nTC_Submit6 = Set_Krlmsg (#STATE, TeslaCore_Msg[57], TC_MsgPar[], TC_MsgOpt_NoStop)
+            ENDIF
+         ELSE
+            IF (Exists_KrlMsg(nTC_Submit6)==TRUE) THEN
+               bTC_Clear = Clear_KRLMsg(nTC_Submit6)
+            ENDIF
+         ENDIF
+      ;ENDFOLD (TeslaCore PLC)
+      ;FOLD USER PLC
+         ;Make your modifications here
+         
+         ;
+         sc_distance_offset = actualHeightOffsetRaw / 100.0
+         
+         IF barrelDistanceOk == TRUE THEN
+            barrelDistanceX = barrelDistanceRaw / 100.0  
+            actualHeightOffset = actualHeightOffsetRaw / 100.0         
+         ELSE
+            barrelDistanceX = 0.0
+         ENDIF
+         
+         IF seamDataOk == TRUE THEN
+            seamOffsetZ = seamPositionRaw / 100.0
+            actualSeamOffset = actualSeamOffsetRaw / 100.0         
+         ELSE
+            seamOffsetZ = 0.0
+         ENDIF
+         
+         TeslaCoreUserSPS()
+         
+         ;V7KSPS ()
+         
+         ;CFrameSPS ()
+         
+         ;KRDirLoadSPS ()
+         
+         ; ****** Axis 5 dynamic software limit ******
+         ;IF (MFEE.Type == #CFrame) THEN
+         ;IF (($AXIS_ACT.A6 > -90) AND ($AXIS_ACT.A6 < -50)) THEN 
+         ;custom negative software limit for axis 5
+         ;$SOFTN_END[5] = -107
+         ;ELSE 
+         ;default kuka negative software limit for axis 5
+         ;$SOFTN_END[5] = -122.5
+         ; ENDIF
+         ; ENDIF
+         ; *******************************************
+         
+         ; The code below will run the "Cell" program whenever you are in external mode
+         ; and a the alarm acknowledge ($CONF_MESS) signal from the PLC goes high.
+         ; This will effectively reset the robot.
+         IF ($MODE_OP==#EX) AND ($CONF_MESS == TRUE) THEN
+            CWRITE($CMD,STAT,MODE,"RUN /R1/CELL()")
+         ENDIF
+         
+         ;FOLD TeslaCore PLC
+            IF ($PROG_INFO[3].P_STATE<>#P_ACTIVE) THEN
+               IF (Exists_KrlMsg(nTC_Submit3)==FALSE) THEN
+                  nTC_Submit3 = Set_Krlmsg (#STATE, TeslaCore_Msg[54], TC_MsgPar[], TC_MsgOpt_NoStop)
+               ENDIF
+            ENDIF
+         ;ENDFOLD
+         
+      ;ENDFOLD (USER PLC)
+   ENDLOOP
+   ;FOLD ;%{H}
+   ;ENDFOLD
+END
+
+;ENDFOLD
+
+DEF  RESET_OUT ( )
+   INT N
+   MsgLoop(" ")
+   IF REFLECT_PROG_NR == 1 THEN
+      FOR N = 0 TO PGNO_LENGTH - 1
+         $OUT[PGNO_FBIT_REFL + N] = FALSE
+      ENDFOR
+   ENDIF
+   IF (PGNO_REQ>0) THEN
+      $OUT[PGNO_REQ]=FALSE
+   ELSE
+      IF (PGNO_REQ<0) THEN
+         $OUT[-PGNO_REQ]=TRUE
+      ENDIF
+   ENDIF
+END
+
+DEF RESET_LINESEL()
+   $LINE_SEL_OK=FALSE
+END
+
+;FOLD USER SUBROUTINE
+   ; Integrate your user defined subroutines
+;ENDFOLD (USER SUBROUTINE)
+;ENDFOLD

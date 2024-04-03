@@ -1,0 +1,96 @@
+&ACCESS RVP
+&REL 26
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF find_barrel_test( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point 
+   
+   IF (NOT $IN_HOME2) THEN
+      move_to_perch_pos()
+   ELSE
+      
+   ENDIF
+   
+   WAIT SEC 1.0
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 1) ; select base 1
+   BAS(#VEL_CP, 0.005) ; m/s
+   BAS(#ACC_CP, 25) ; use max acceleration
+   
+   ;FOLD SPTP home2 Vel=10 % PDAT1;%{PE}%R 8.3.38,%MKUKATPBASIS,%CMOVE,%VPTP,%P 1:PTP, 2:home2, 3:, 5:10, 7:PDAT1
+      $BWDSTART=FALSE
+      PDAT_ACT=PPDAT1
+      FDAT_ACT=Fhome2
+      BAS(#PTP_PARAMS,10)
+      SPTP Xhome2
+   ;ENDFOLD
+   ;
+   ;FOLD FIND SEAM
+      ;WHILE ((ABS(barrelDistanceX) > 0.2) OR (NOT barrelDistanceOk)) 
+      ;
+      ;IF barrelDistanceOk == false  THEN
+      ;
+      ;SLIN_REL {x 5}
+      ;
+      ;WAIT SEC 3.0;
+      ;
+      ;ELSE
+      ;
+      ;wait sec 4.0
+      ;
+      ;barrelPosAux.X = barrelDistanceX
+      ;
+      ;SLIN_REL barrelPosAux
+      ;
+      ;WAIT SEC 4.0
+      ;
+      ;ENDIF
+      ;
+      ;ENDWHILE
+      ;
+      ;WAIT SEC 3.0
+      ;
+      ;barrelFound = TRUE
+      ;
+      ;WHILE NOT seamDataOk
+      ;
+      ;SLIN_REL {z 3}
+      ;
+      ;WAIT SEC 4.0;    
+      ;
+      ;ENDWHILE
+      ;
+      ;WAIT SEC 4.0
+      ;
+   ;ENDFOLD (FIND SEAM)
+   ;
+   ;BAS(#TOOL, 1) ; select first tool
+   ;BAS(#BASE, 1) ; select base 1
+   ;BAS(#VEL_CP, 0.002) ; m/s
+   ;BAS(#ACC_CP, 25)
+   ;
+   ;WHILE TRUE
+   ;wait sec 3.0
+   ;barrelPosAux.X = barreldistancex
+   ;barrelPosAux.Z = seamOffsetY
+   ;
+   ;SLIN_REL barrelPosAux
+   ;
+   ;ENDWHILE
+   
+;ENDFOLD
+END

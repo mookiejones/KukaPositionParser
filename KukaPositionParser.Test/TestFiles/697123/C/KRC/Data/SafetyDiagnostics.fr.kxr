@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xml:lang="fr" xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="SafetyDiagnostics">
+    <uiText key="ChannelA">
+      <text>A</text>
+    </uiText>
+    <uiText key="ChannelB">
+      <text>B</text>
+    </uiText>
+    <uiText key="CIB">
+      <text>CIB</text>
+    </uiText>
+    <uiText key="Common">
+      <text>Généralités</text>
+    </uiText>
+    <uiText key="CrossComparisonFailed">
+      <text>Défaut de comparaison croisée</text>
+    </uiText>
+    <uiText key="DebounceError">
+      <text>Défaut anti-rebond</text>
+    </uiText>
+    <uiText key="DeviceInfo">
+      <text>Informations concernant l'appareil</text>
+    </uiText>
+    <uiText key="DualChannelError">
+      <text>Défaut du mode à deux canaux</text>
+    </uiText>
+    <uiText key="Error">
+      <text>Défaut</text>
+    </uiText>
+    <uiText key="InputInitError">
+      <text>Défaut lors de l'initialisation des entrées.</text>
+    </uiText>
+    <uiText key="Inputs">
+      <text>Entrées</text>
+    </uiText>
+    <uiText key="InterfaceA">
+      <text>Conn. A</text>
+    </uiText>
+    <uiText key="InterfaceB">
+      <text>Conn. B</text>
+    </uiText>
+    <uiText key="InternalError">
+      <text>Défaut interne</text>
+    </uiText>
+    <uiText key="InternalInitializeError">
+      <text>Défaut lors de l'initialisation.</text>
+    </uiText>
+    <uiText key="LblAddress">
+      <text>Adresse de sécurité:</text>
+    </uiText>
+    <uiText key="LblDevice">
+      <text>Appareil:</text>
+    </uiText>
+    <uiText key="LblError">
+      <text>Défaut:</text>
+    </uiText>
+    <uiText key="LblHardware">
+      <text>Version de matériel:</text>
+    </uiText>
+    <uiText key="LblSerialNumber">
+      <text>Numéro de série:</text>
+    </uiText>
+    <uiText key="LblSoftware">
+      <text>Version de logiciel:</text>
+    </uiText>
+    <uiText key="LblTemperature">
+      <text>Température:</text>
+    </uiText>
+    <uiText key="Name">
+      <text>Nom</text>
+    </uiText>
+    <uiText key="NoConfiguration">
+      <text>Configuration inexistante ou incomplète.</text>
+    </uiText>
+    <uiText key="NoDeviceAccessible">
+      <text>Echec de la lecture des données des appareils.</text>
+    </uiText>
+    <uiText key="NoDeviceAvailable">
+      <text>Aucun appareil n'a pu être déterminé.</text>
+    </uiText>
+    <uiText key="NoInputsDefined">
+      <text>Aucune entrée n'est définie dans la configuration.</text>
+    </uiText>
+    <uiText key="NoName">
+      <text>Défaut: pas de nom</text>
+    </uiText>
+    <uiText key="NoOutputsDefined">
+      <text>Aucune sortie n'est définie dans la configuration.</text>
+    </uiText>
+    <uiText key="NoSignalsDefined">
+      <text>Aucun signal n'est défini dans la configuration.</text>
+    </uiText>
+    <uiText key="Number">
+      <text>N°</text>
+    </uiText>
+    <uiText key="OutputInitError">
+      <text>Défaut lors de l'initialisation des sorties.</text>
+    </uiText>
+    <uiText key="Outputs">
+      <text>Sorties</text>
+    </uiText>
+    <uiText key="ParameterReadError">
+      <text>Défaut lors de la lecture des paramètres d'appareil.</text>
+    </uiText>
+    <uiText key="Profisafe">
+      <text>PROFIsafe</text>
+    </uiText>
+    <uiText key="ReadError">
+      <text>Défaut de lecture.</text>
+    </uiText>
+    <uiText key="RestartRefresh">
+      <text>Relancer l'actualisation</text>
+    </uiText>
+    <uiText key="RefreshStopped">
+      <text>L'actualisation des E/S d'appareils est terminée</text>
+    </uiText>
+    <uiText key="SafetyDiagnosticsMenu">
+      <text>Interfaces de sécurité</text>
+    </uiText>
+    <uiText key="SafetyDiagnosticsViewTitle">
+      <text>Diagnostic de sécurité: interfaces de sécurité</text>
+    </uiText>
+    <uiText key="ShutdownError">
+      <text>Défaut de désactivation</text>
+    </uiText>
+    <uiText key="SIB">
+      <text>SIB</text>
+    </uiText>
+    <uiText key="SignalAUTO">
+      <text>Mode Automatique ou Externe (AUT)</text>
+    </uiText>
+    <uiText key="SignalNHS">
+      <text>Reservé</text>
+    </uiText>
+    <uiText key="SignalTEST">
+      <text>Mode T1 (T1)</text>
+    </uiText>
+    <uiText key="SionError_000">
+      <text>Reset local ou confirmation d'une instruction RESET</text>
+    </uiText>
+    <uiText key="SionError_001">
+      <text>Instruction inattendue</text>
+    </uiText>
+    <uiText key="SionError_002">
+      <text>Instruction inconnue</text>
+    </uiText>
+    <uiText key="SionError_003">
+      <text>ID de liaison incorrecte</text>
+    </uiText>
+    <uiText key="SionError_004">
+      <text>Défaut CRC</text>
+    </uiText>
+    <uiText key="SionError_005">
+      <text>Le temps de chien de garde s'est écoulé</text>
+    </uiText>
+    <uiText key="SionError_006">
+      <text>Adresse Esclave FSoE incorrecte</text>
+    </uiText>
+    <uiText key="SionError_007">
+      <text>Données de sécurité incorrectes</text>
+    </uiText>
+    <uiText key="SionError_008">
+      <text>Longueur incorrecte des paramètres de communication</text>
+    </uiText>
+    <uiText key="SionError_009">
+      <text>Données de paramètres de communication incorrectes</text>
+    </uiText>
+    <uiText key="SionError_010">
+      <text>Longueur incorrecte de paramètres d'application</text>
+    </uiText>
+    <uiText key="SionError_011">
+      <text>Données de paramètres d'utilisation incorrectes</text>
+    </uiText>
+    <uiText key="StateColName">
+      <text>Etat</text>
+    </uiText>
+    <uiText key="StaticError">
+      <text>Défaut statique</text>
+    </uiText>
+    <uiText key="TruncationError">
+      <text>Défaut de coupure</text>
+    </uiText>
+    <uiText key="Unknown">
+      <text>Inconnu</text>
+    </uiText>
+    <uiText key="Value">
+      <text>Valeur</text>
+    </uiText>
+    <uiText key="RefreshStopPleaseClose">
+      <text>L'actualisation des données a été arrêtée. Veuillez fermer l'affichage.</text>
+    </uiText>
+    <uiText key="NoKcpPleaseClose">
+      <text>L'affichage doit être fermé pour qu'un KCP puisse se relier avec ce contrôleur.</text>
+    </uiText>
+  </module>
+</resources>

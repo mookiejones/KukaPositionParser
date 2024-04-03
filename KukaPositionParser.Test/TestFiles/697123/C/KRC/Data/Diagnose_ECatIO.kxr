@@ -1,0 +1,2221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name8000">
+      <text xml:lang="de-DEV">EtherCAT I/O-Treiber</text>
+      <text xml:lang="en-DEV">EtherCAT I/O driver</text>
+    </uiText>
+    <uiText key="Diagnose_Description8000">
+      <text xml:lang="de-DEV">EtherCAT I/O-Treiber</text>
+      <text xml:lang="en-DEV">EtherCAT I/O driver</text>
+    </uiText>
+    <uiText key="Diagnose_Name8001">
+      <text xml:lang="de-DEV">Treiber-Version</text>
+      <text xml:lang="en-DEV">Driver Version</text>
+    </uiText>
+    <uiText key="Diagnose_Description8001">
+      <text xml:lang="de-DEV">Treiber-Version</text>
+      <text xml:lang="en-DEV">Driver Version</text>
+    </uiText>
+    <uiText key="Diagnose_Name8002">
+      <text xml:lang="de-DEV">Bus-Instanz</text>
+      <text xml:lang="en-DEV">Bus Instance</text>
+    </uiText>
+    <uiText key="Diagnose_Description8002">
+      <text xml:lang="de-DEV">Bus-Instanz</text>
+      <text xml:lang="en-DEV">Bus Instance</text>
+    </uiText>
+    <uiText key="Diagnose_Name8003">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-PROFIBUS-Master</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-PROFIBUS-Master</text>
+    </uiText>
+    <uiText key="Diagnose_Description8003">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-PROFIBUS-Master</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-PROFIBUS-Master</text>
+    </uiText>
+    <uiText key="Diagnose_Name8004">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-PROFIBUS-Slave</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-PROFIBUS-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description8004">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-PROFIBUS-Slave</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-PROFIBUS-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name8005">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-DEVICENET-Master</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-DEVICENET-Master</text>
+    </uiText>
+    <uiText key="Diagnose_Description8005">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-DEVICENET-Master</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-DEVICENET-Master</text>
+    </uiText>
+    <uiText key="Diagnose_Name8006">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-DEVICENET-Slave</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-DEVICENET-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Description8006">
+      <text xml:lang="de-DEV">Extension Bus (SYS-X44)-DEVICENET-Slave</text>
+      <text xml:lang="en-DEV">Extension Bus (SYS-X44)-DEVICENET-Slave</text>
+    </uiText>
+    <uiText key="Diagnose_Name8020">
+      <text xml:lang="de-DEV">Device-Name</text>
+      <text xml:lang="en-DEV">Device-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Description8020">
+      <text xml:lang="de-DEV">Device-Name</text>
+      <text xml:lang="en-DEV">Device-Name</text>
+    </uiText>
+    <uiText key="Diagnose_Name8021">
+      <text xml:lang="de-DEV">Device-Version</text>
+      <text xml:lang="en-DEV">Device-Version</text>
+    </uiText>
+    <uiText key="Diagnose_Description8021">
+      <text xml:lang="de-DEV">Device-Version</text>
+      <text xml:lang="en-DEV">Device-Version</text>
+    </uiText>
+    <uiText key="Diagnose_Name8022">
+      <text xml:lang="de-DEV">Anzahl der Slaves</text>
+      <text xml:lang="en-DEV">Number of Slaves</text>
+    </uiText>
+    <uiText key="Diagnose_Description8022">
+      <text xml:lang="de-DEV">Anzahl der Slaves</text>
+      <text xml:lang="en-DEV">Number of Slaves</text>
+    </uiText>
+    <uiText key="Diagnose_Name8023">
+      <text xml:lang="de-DEV">Anzahl der Slaves mit Fehler</text>
+      <text xml:lang="en-DEV">Number of Slaves with Error</text>
+    </uiText>
+    <uiText key="Diagnose_Description8023">
+      <text xml:lang="de-DEV">Anzahl der Slaves mit Fehler</text>
+      <text xml:lang="en-DEV">Number of Slaves with Error</text>
+    </uiText>
+    <uiText key="Diagnose_Name8024">
+      <text xml:lang="de-DEV">Zyklus-Fehler Zähler</text>
+      <text xml:lang="en-DEV">Cycle-Fail-Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Description8024">
+      <text xml:lang="de-DEV">Zyklus-Fehler Zähler</text>
+      <text xml:lang="en-DEV">Cycle-Fail-Counter</text>
+    </uiText>
+    <uiText key="Diagnose_Name8025">
+      <text xml:lang="de-DEV">Zyklus-Zeit</text>
+      <text xml:lang="en-DEV">Cycle-Time</text>
+    </uiText>
+    <uiText key="Diagnose_Description8025">
+      <text xml:lang="de-DEV">Zyklus-Zeit</text>
+      <text xml:lang="en-DEV">Cycle-Time</text>
+    </uiText>
+    <uiText key="Diagnose_Name8028">
+      <text xml:lang="de-DEV">Stationsadresse</text>
+      <text xml:lang="en-DEV">Station-Address</text>
+    </uiText>
+    <uiText key="Diagnose_Description8028">
+      <text xml:lang="de-DEV">Stationsadresse</text>
+      <text xml:lang="en-DEV">Station-Address</text>
+    </uiText>
+    <uiText key="Diagnose_Name8029">
+      <text xml:lang="de-DEV">Baud-Rate</text>
+      <text xml:lang="en-DEV">Baud-Rate</text>
+    </uiText>
+    <uiText key="Diagnose_Description8029">
+      <text xml:lang="de-DEV">Baud-Rate</text>
+      <text xml:lang="en-DEV">Baud-Rate</text>
+    </uiText>
+    <uiText key="Diagnose_Name8030">
+      <text xml:lang="de-DEV">Slave-Status</text>
+      <text xml:lang="en-DEV">Slave-State</text>
+    </uiText>
+    <uiText key="Diagnose_Description8030">
+      <text xml:lang="de-DEV">Slave-Status</text>
+      <text xml:lang="en-DEV">Slave-State</text>
+    </uiText>
+    <uiText key="Diagnose_Name8031">
+      <text xml:lang="de-DEV">Mac-ID</text>
+      <text xml:lang="en-DEV">Mac-ID</text>
+    </uiText>
+    <uiText key="Diagnose_Description8031">
+      <text xml:lang="de-DEV">Mac-ID</text>
+      <text xml:lang="en-DEV">Mac-ID</text>
+    </uiText>
+    <uiText key="Diagnose_Name8036">
+      <text xml:lang="de-DEV">Betriebsart</text>
+      <text xml:lang="en-DEV">Operation mode</text>
+    </uiText>
+    <uiText key="Diagnose_Description8036">
+      <text xml:lang="de-DEV">Betriebsart</text>
+      <text xml:lang="en-DEV">Operation mode</text>
+    </uiText>
+    <uiText key="Diagnose_Name8037">
+      <text xml:lang="de-DEV">Produzierte Eingangsbreite</text>
+      <text xml:lang="en-DEV">Produced Data Size</text>
+    </uiText>
+    <uiText key="Diagnose_Description8037">
+      <text xml:lang="de-DEV">Produzierte Eingangsbreite</text>
+      <text xml:lang="en-DEV">Produced Data Size</text>
+    </uiText>
+    <uiText key="Diagnose_Name8038">
+      <text xml:lang="de-DEV">Konsumierte Ausgangsbreite</text>
+      <text xml:lang="en-DEV">Consumed Data Size</text>
+    </uiText>
+    <uiText key="Diagnose_Description8038">
+      <text xml:lang="de-DEV">Konsumierte Ausgangsbreite</text>
+      <text xml:lang="en-DEV">Consumed Data Size</text>
+    </uiText>
+    <uiText key="Diagnose_Name8039">
+      <text xml:lang="de-DEV">Erwartete Paket-Rate</text>
+      <text xml:lang="en-DEV">Expected Packet Rate</text>
+    </uiText>
+    <uiText key="Diagnose_Description8039">
+      <text xml:lang="de-DEV">Erwartete Paket-Rate</text>
+      <text xml:lang="en-DEV">Expected Packet Rate</text>
+    </uiText>
+    <uiText key="Diagnose_Name8100">
+      <text xml:lang="de-DEV">Slave-Info(0)</text>
+      <text xml:lang="en-DEV">Slave-Info(0)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8100">
+      <text xml:lang="de-DEV">Slave-Info(0)</text>
+      <text xml:lang="en-DEV">Slave-Info(0)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8101">
+      <text xml:lang="de-DEV">Slave-Info(1)</text>
+      <text xml:lang="en-DEV">Slave-Info(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8101">
+      <text xml:lang="de-DEV">Slave-Info(1)</text>
+      <text xml:lang="en-DEV">Slave-Info(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8102">
+      <text xml:lang="de-DEV">Slave-Info(2)</text>
+      <text xml:lang="en-DEV">Slave-Info(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8102">
+      <text xml:lang="de-DEV">Slave-Info(2)</text>
+      <text xml:lang="en-DEV">Slave-Info(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8103">
+      <text xml:lang="de-DEV">Slave-Info(3)</text>
+      <text xml:lang="en-DEV">Slave-Info(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8103">
+      <text xml:lang="de-DEV">Slave-Info(3)</text>
+      <text xml:lang="en-DEV">Slave-Info(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8104">
+      <text xml:lang="de-DEV">Slave-Info(4)</text>
+      <text xml:lang="en-DEV">Slave-Info(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8104">
+      <text xml:lang="de-DEV">Slave-Info(4)</text>
+      <text xml:lang="en-DEV">Slave-Info(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8105">
+      <text xml:lang="de-DEV">Slave-Info(5)</text>
+      <text xml:lang="en-DEV">Slave-Info(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8105">
+      <text xml:lang="de-DEV">Slave-Info(5)</text>
+      <text xml:lang="en-DEV">Slave-Info(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8106">
+      <text xml:lang="de-DEV">Slave-Info(6)</text>
+      <text xml:lang="en-DEV">Slave-Info(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8106">
+      <text xml:lang="de-DEV">Slave-Info(6)</text>
+      <text xml:lang="en-DEV">Slave-Info(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8107">
+      <text xml:lang="de-DEV">Slave-Info(7)</text>
+      <text xml:lang="en-DEV">Slave-Info(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8107">
+      <text xml:lang="de-DEV">Slave-Info(7)</text>
+      <text xml:lang="en-DEV">Slave-Info(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8108">
+      <text xml:lang="de-DEV">Slave-Info(8)</text>
+      <text xml:lang="en-DEV">Slave-Info(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8108">
+      <text xml:lang="de-DEV">Slave-Info(8)</text>
+      <text xml:lang="en-DEV">Slave-Info(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8109">
+      <text xml:lang="de-DEV">Slave-Info(9)</text>
+      <text xml:lang="en-DEV">Slave-Info(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8109">
+      <text xml:lang="de-DEV">Slave-Info(9)</text>
+      <text xml:lang="en-DEV">Slave-Info(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8110">
+      <text xml:lang="de-DEV">Slave-Info(10)</text>
+      <text xml:lang="en-DEV">Slave-Info(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8110">
+      <text xml:lang="de-DEV">Slave-Info(10)</text>
+      <text xml:lang="en-DEV">Slave-Info(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8111">
+      <text xml:lang="de-DEV">Slave-Info(11)</text>
+      <text xml:lang="en-DEV">Slave-Info(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8111">
+      <text xml:lang="de-DEV">Slave-Info(11)</text>
+      <text xml:lang="en-DEV">Slave-Info(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8112">
+      <text xml:lang="de-DEV">Slave-Info(12)</text>
+      <text xml:lang="en-DEV">Slave-Info(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8112">
+      <text xml:lang="de-DEV">Slave-Info(12)</text>
+      <text xml:lang="en-DEV">Slave-Info(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8113">
+      <text xml:lang="de-DEV">Slave-Info(13)</text>
+      <text xml:lang="en-DEV">Slave-Info(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8113">
+      <text xml:lang="de-DEV">Slave-Info(13)</text>
+      <text xml:lang="en-DEV">Slave-Info(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8114">
+      <text xml:lang="de-DEV">Slave-Info(14)</text>
+      <text xml:lang="en-DEV">Slave-Info(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8114">
+      <text xml:lang="de-DEV">Slave-Info(14)</text>
+      <text xml:lang="en-DEV">Slave-Info(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8115">
+      <text xml:lang="de-DEV">Slave-Info(15)</text>
+      <text xml:lang="en-DEV">Slave-Info(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8115">
+      <text xml:lang="de-DEV">Slave-Info(15)</text>
+      <text xml:lang="en-DEV">Slave-Info(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8116">
+      <text xml:lang="de-DEV">Slave-Info(16)</text>
+      <text xml:lang="en-DEV">Slave-Info(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8116">
+      <text xml:lang="de-DEV">Slave-Info(16)</text>
+      <text xml:lang="en-DEV">Slave-Info(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8117">
+      <text xml:lang="de-DEV">Slave-Info(17)</text>
+      <text xml:lang="en-DEV">Slave-Info(17)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8117">
+      <text xml:lang="de-DEV">Slave-Info(17)</text>
+      <text xml:lang="en-DEV">Slave-Info(17)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8118">
+      <text xml:lang="de-DEV">Slave-Info(18)</text>
+      <text xml:lang="en-DEV">Slave-Info(18)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8118">
+      <text xml:lang="de-DEV">Slave-Info(18)</text>
+      <text xml:lang="en-DEV">Slave-Info(18)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8119">
+      <text xml:lang="de-DEV">Slave-Info(19)</text>
+      <text xml:lang="en-DEV">Slave-Info(19)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8119">
+      <text xml:lang="de-DEV">Slave-Info(19)</text>
+      <text xml:lang="en-DEV">Slave-Info(19)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8120">
+      <text xml:lang="de-DEV">Slave-Info(20)</text>
+      <text xml:lang="en-DEV">Slave-Info(20)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8120">
+      <text xml:lang="de-DEV">Slave-Info(20)</text>
+      <text xml:lang="en-DEV">Slave-Info(20)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8121">
+      <text xml:lang="de-DEV">Slave-Info(21)</text>
+      <text xml:lang="en-DEV">Slave-Info(21)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8121">
+      <text xml:lang="de-DEV">Slave-Info(21)</text>
+      <text xml:lang="en-DEV">Slave-Info(21)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8122">
+      <text xml:lang="de-DEV">Slave-Info(22)</text>
+      <text xml:lang="en-DEV">Slave-Info(22)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8122">
+      <text xml:lang="de-DEV">Slave-Info(22)</text>
+      <text xml:lang="en-DEV">Slave-Info(22)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8123">
+      <text xml:lang="de-DEV">Slave-Info(23)</text>
+      <text xml:lang="en-DEV">Slave-Info(23)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8123">
+      <text xml:lang="de-DEV">Slave-Info(23)</text>
+      <text xml:lang="en-DEV">Slave-Info(23)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8124">
+      <text xml:lang="de-DEV">Slave-Info(24)</text>
+      <text xml:lang="en-DEV">Slave-Info(24)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8124">
+      <text xml:lang="de-DEV">Slave-Info(24)</text>
+      <text xml:lang="en-DEV">Slave-Info(24)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8125">
+      <text xml:lang="de-DEV">Slave-Info(25)</text>
+      <text xml:lang="en-DEV">Slave-Info(25)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8125">
+      <text xml:lang="de-DEV">Slave-Info(25)</text>
+      <text xml:lang="en-DEV">Slave-Info(25)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8126">
+      <text xml:lang="de-DEV">Slave-Info(26)</text>
+      <text xml:lang="en-DEV">Slave-Info(26)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8126">
+      <text xml:lang="de-DEV">Slave-Info(26)</text>
+      <text xml:lang="en-DEV">Slave-Info(26)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8127">
+      <text xml:lang="de-DEV">Slave-Info(27)</text>
+      <text xml:lang="en-DEV">Slave-Info(27)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8127">
+      <text xml:lang="de-DEV">Slave-Info(27)</text>
+      <text xml:lang="en-DEV">Slave-Info(27)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8128">
+      <text xml:lang="de-DEV">Slave-Info(28)</text>
+      <text xml:lang="en-DEV">Slave-Info(28)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8128">
+      <text xml:lang="de-DEV">Slave-Info(28)</text>
+      <text xml:lang="en-DEV">Slave-Info(28)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8129">
+      <text xml:lang="de-DEV">Slave-Info(29)</text>
+      <text xml:lang="en-DEV">Slave-Info(29)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8129">
+      <text xml:lang="de-DEV">Slave-Info(29)</text>
+      <text xml:lang="en-DEV">Slave-Info(29)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8130">
+      <text xml:lang="de-DEV">Slave-Info(30)</text>
+      <text xml:lang="en-DEV">Slave-Info(30)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8130">
+      <text xml:lang="de-DEV">Slave-Info(30)</text>
+      <text xml:lang="en-DEV">Slave-Info(30)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8131">
+      <text xml:lang="de-DEV">Slave-Info(31)</text>
+      <text xml:lang="en-DEV">Slave-Info(31)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8131">
+      <text xml:lang="de-DEV">Slave-Info(31)</text>
+      <text xml:lang="en-DEV">Slave-Info(31)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8132">
+      <text xml:lang="de-DEV">Slave-Info(32)</text>
+      <text xml:lang="en-DEV">Slave-Info(32)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8132">
+      <text xml:lang="de-DEV">Slave-Info(32)</text>
+      <text xml:lang="en-DEV">Slave-Info(32)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8133">
+      <text xml:lang="de-DEV">Slave-Info(33)</text>
+      <text xml:lang="en-DEV">Slave-Info(33)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8133">
+      <text xml:lang="de-DEV">Slave-Info(33)</text>
+      <text xml:lang="en-DEV">Slave-Info(33)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8134">
+      <text xml:lang="de-DEV">Slave-Info(34)</text>
+      <text xml:lang="en-DEV">Slave-Info(34)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8134">
+      <text xml:lang="de-DEV">Slave-Info(34)</text>
+      <text xml:lang="en-DEV">Slave-Info(34)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8135">
+      <text xml:lang="de-DEV">Slave-Info(35)</text>
+      <text xml:lang="en-DEV">Slave-Info(35)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8135">
+      <text xml:lang="de-DEV">Slave-Info(35)</text>
+      <text xml:lang="en-DEV">Slave-Info(35)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8136">
+      <text xml:lang="de-DEV">Slave-Info(36)</text>
+      <text xml:lang="en-DEV">Slave-Info(36)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8136">
+      <text xml:lang="de-DEV">Slave-Info(36)</text>
+      <text xml:lang="en-DEV">Slave-Info(36)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8137">
+      <text xml:lang="de-DEV">Slave-Info(37)</text>
+      <text xml:lang="en-DEV">Slave-Info(37)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8137">
+      <text xml:lang="de-DEV">Slave-Info(37)</text>
+      <text xml:lang="en-DEV">Slave-Info(37)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8138">
+      <text xml:lang="de-DEV">Slave-Info(38)</text>
+      <text xml:lang="en-DEV">Slave-Info(38)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8138">
+      <text xml:lang="de-DEV">Slave-Info(38)</text>
+      <text xml:lang="en-DEV">Slave-Info(38)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8139">
+      <text xml:lang="de-DEV">Slave-Info(39)</text>
+      <text xml:lang="en-DEV">Slave-Info(39)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8139">
+      <text xml:lang="de-DEV">Slave-Info(39)</text>
+      <text xml:lang="en-DEV">Slave-Info(39)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8140">
+      <text xml:lang="de-DEV">Slave-Info(40)</text>
+      <text xml:lang="en-DEV">Slave-Info(40)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8140">
+      <text xml:lang="de-DEV">Slave-Info(40)</text>
+      <text xml:lang="en-DEV">Slave-Info(40)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8141">
+      <text xml:lang="de-DEV">Slave-Info(41)</text>
+      <text xml:lang="en-DEV">Slave-Info(41)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8141">
+      <text xml:lang="de-DEV">Slave-Info(41)</text>
+      <text xml:lang="en-DEV">Slave-Info(41)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8142">
+      <text xml:lang="de-DEV">Slave-Info(42)</text>
+      <text xml:lang="en-DEV">Slave-Info(42)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8142">
+      <text xml:lang="de-DEV">Slave-Info(42)</text>
+      <text xml:lang="en-DEV">Slave-Info(42)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8143">
+      <text xml:lang="de-DEV">Slave-Info(43)</text>
+      <text xml:lang="en-DEV">Slave-Info(43)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8143">
+      <text xml:lang="de-DEV">Slave-Info(43)</text>
+      <text xml:lang="en-DEV">Slave-Info(43)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8144">
+      <text xml:lang="de-DEV">Slave-Info(44)</text>
+      <text xml:lang="en-DEV">Slave-Info(44)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8144">
+      <text xml:lang="de-DEV">Slave-Info(44)</text>
+      <text xml:lang="en-DEV">Slave-Info(44)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8145">
+      <text xml:lang="de-DEV">Slave-Info(45)</text>
+      <text xml:lang="en-DEV">Slave-Info(45)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8145">
+      <text xml:lang="de-DEV">Slave-Info(45)</text>
+      <text xml:lang="en-DEV">Slave-Info(45)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8146">
+      <text xml:lang="de-DEV">Slave-Info(46)</text>
+      <text xml:lang="en-DEV">Slave-Info(46)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8146">
+      <text xml:lang="de-DEV">Slave-Info(46)</text>
+      <text xml:lang="en-DEV">Slave-Info(46)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8147">
+      <text xml:lang="de-DEV">Slave-Info(47)</text>
+      <text xml:lang="en-DEV">Slave-Info(47)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8147">
+      <text xml:lang="de-DEV">Slave-Info(47)</text>
+      <text xml:lang="en-DEV">Slave-Info(47)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8148">
+      <text xml:lang="de-DEV">Slave-Info(48)</text>
+      <text xml:lang="en-DEV">Slave-Info(48)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8148">
+      <text xml:lang="de-DEV">Slave-Info(48)</text>
+      <text xml:lang="en-DEV">Slave-Info(48)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8149">
+      <text xml:lang="de-DEV">Slave-Info(49)</text>
+      <text xml:lang="en-DEV">Slave-Info(49)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8149">
+      <text xml:lang="de-DEV">Slave-Info(49)</text>
+      <text xml:lang="en-DEV">Slave-Info(49)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8150">
+      <text xml:lang="de-DEV">Slave-Info(50)</text>
+      <text xml:lang="en-DEV">Slave-Info(50)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8150">
+      <text xml:lang="de-DEV">Slave-Info(50)</text>
+      <text xml:lang="en-DEV">Slave-Info(50)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8151">
+      <text xml:lang="de-DEV">Slave-Info(51)</text>
+      <text xml:lang="en-DEV">Slave-Info(51)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8151">
+      <text xml:lang="de-DEV">Slave-Info(51)</text>
+      <text xml:lang="en-DEV">Slave-Info(51)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8152">
+      <text xml:lang="de-DEV">Slave-Info(52)</text>
+      <text xml:lang="en-DEV">Slave-Info(52)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8152">
+      <text xml:lang="de-DEV">Slave-Info(52)</text>
+      <text xml:lang="en-DEV">Slave-Info(52)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8153">
+      <text xml:lang="de-DEV">Slave-Info(53)</text>
+      <text xml:lang="en-DEV">Slave-Info(53)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8153">
+      <text xml:lang="de-DEV">Slave-Info(53)</text>
+      <text xml:lang="en-DEV">Slave-Info(53)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8154">
+      <text xml:lang="de-DEV">Slave-Info(54)</text>
+      <text xml:lang="en-DEV">Slave-Info(54)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8154">
+      <text xml:lang="de-DEV">Slave-Info(54)</text>
+      <text xml:lang="en-DEV">Slave-Info(54)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8155">
+      <text xml:lang="de-DEV">Slave-Info(55)</text>
+      <text xml:lang="en-DEV">Slave-Info(55)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8155">
+      <text xml:lang="de-DEV">Slave-Info(55)</text>
+      <text xml:lang="en-DEV">Slave-Info(55)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8156">
+      <text xml:lang="de-DEV">Slave-Info(56)</text>
+      <text xml:lang="en-DEV">Slave-Info(56)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8156">
+      <text xml:lang="de-DEV">Slave-Info(56)</text>
+      <text xml:lang="en-DEV">Slave-Info(56)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8157">
+      <text xml:lang="de-DEV">Slave-Info(57)</text>
+      <text xml:lang="en-DEV">Slave-Info(57)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8157">
+      <text xml:lang="de-DEV">Slave-Info(57)</text>
+      <text xml:lang="en-DEV">Slave-Info(57)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8158">
+      <text xml:lang="de-DEV">Slave-Info(58)</text>
+      <text xml:lang="en-DEV">Slave-Info(58)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8158">
+      <text xml:lang="de-DEV">Slave-Info(58)</text>
+      <text xml:lang="en-DEV">Slave-Info(58)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8159">
+      <text xml:lang="de-DEV">Slave-Info(59)</text>
+      <text xml:lang="en-DEV">Slave-Info(59)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8159">
+      <text xml:lang="de-DEV">Slave-Info(59)</text>
+      <text xml:lang="en-DEV">Slave-Info(59)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8160">
+      <text xml:lang="de-DEV">Slave-Info(60)</text>
+      <text xml:lang="en-DEV">Slave-Info(60)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8160">
+      <text xml:lang="de-DEV">Slave-Info(60)</text>
+      <text xml:lang="en-DEV">Slave-Info(60)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8161">
+      <text xml:lang="de-DEV">Slave-Info(61)</text>
+      <text xml:lang="en-DEV">Slave-Info(61)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8161">
+      <text xml:lang="de-DEV">Slave-Info(61)</text>
+      <text xml:lang="en-DEV">Slave-Info(61)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8162">
+      <text xml:lang="de-DEV">Slave-Info(62)</text>
+      <text xml:lang="en-DEV">Slave-Info(62)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8162">
+      <text xml:lang="de-DEV">Slave-Info(62)</text>
+      <text xml:lang="en-DEV">Slave-Info(62)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8163">
+      <text xml:lang="de-DEV">Slave-Info(63)</text>
+      <text xml:lang="en-DEV">Slave-Info(63)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8163">
+      <text xml:lang="de-DEV">Slave-Info(63)</text>
+      <text xml:lang="en-DEV">Slave-Info(63)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8164">
+      <text xml:lang="de-DEV">Slave-Info(64)</text>
+      <text xml:lang="en-DEV">Slave-Info(64)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8164">
+      <text xml:lang="de-DEV">Slave-Info(64)</text>
+      <text xml:lang="en-DEV">Slave-Info(64)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8165">
+      <text xml:lang="de-DEV">Slave-Info(65)</text>
+      <text xml:lang="en-DEV">Slave-Info(65)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8165">
+      <text xml:lang="de-DEV">Slave-Info(65)</text>
+      <text xml:lang="en-DEV">Slave-Info(65)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8166">
+      <text xml:lang="de-DEV">Slave-Info(66)</text>
+      <text xml:lang="en-DEV">Slave-Info(66)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8166">
+      <text xml:lang="de-DEV">Slave-Info(66)</text>
+      <text xml:lang="en-DEV">Slave-Info(66)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8167">
+      <text xml:lang="de-DEV">Slave-Info(67)</text>
+      <text xml:lang="en-DEV">Slave-Info(67)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8167">
+      <text xml:lang="de-DEV">Slave-Info(67)</text>
+      <text xml:lang="en-DEV">Slave-Info(67)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8168">
+      <text xml:lang="de-DEV">Slave-Info(68)</text>
+      <text xml:lang="en-DEV">Slave-Info(68)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8168">
+      <text xml:lang="de-DEV">Slave-Info(68)</text>
+      <text xml:lang="en-DEV">Slave-Info(68)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8169">
+      <text xml:lang="de-DEV">Slave-Info(69)</text>
+      <text xml:lang="en-DEV">Slave-Info(69)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8169">
+      <text xml:lang="de-DEV">Slave-Info(69)</text>
+      <text xml:lang="en-DEV">Slave-Info(69)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8170">
+      <text xml:lang="de-DEV">Slave-Info(70)</text>
+      <text xml:lang="en-DEV">Slave-Info(70)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8170">
+      <text xml:lang="de-DEV">Slave-Info(70)</text>
+      <text xml:lang="en-DEV">Slave-Info(70)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8171">
+      <text xml:lang="de-DEV">Slave-Info(71)</text>
+      <text xml:lang="en-DEV">Slave-Info(71)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8171">
+      <text xml:lang="de-DEV">Slave-Info(71)</text>
+      <text xml:lang="en-DEV">Slave-Info(71)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8172">
+      <text xml:lang="de-DEV">Slave-Info(72)</text>
+      <text xml:lang="en-DEV">Slave-Info(72)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8172">
+      <text xml:lang="de-DEV">Slave-Info(72)</text>
+      <text xml:lang="en-DEV">Slave-Info(72)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8173">
+      <text xml:lang="de-DEV">Slave-Info(73)</text>
+      <text xml:lang="en-DEV">Slave-Info(73)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8173">
+      <text xml:lang="de-DEV">Slave-Info(73)</text>
+      <text xml:lang="en-DEV">Slave-Info(73)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8174">
+      <text xml:lang="de-DEV">Slave-Info(74)</text>
+      <text xml:lang="en-DEV">Slave-Info(74)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8174">
+      <text xml:lang="de-DEV">Slave-Info(74)</text>
+      <text xml:lang="en-DEV">Slave-Info(74)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8175">
+      <text xml:lang="de-DEV">Slave-Info(75)</text>
+      <text xml:lang="en-DEV">Slave-Info(75)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8175">
+      <text xml:lang="de-DEV">Slave-Info(75)</text>
+      <text xml:lang="en-DEV">Slave-Info(75)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8176">
+      <text xml:lang="de-DEV">Slave-Info(76)</text>
+      <text xml:lang="en-DEV">Slave-Info(76)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8176">
+      <text xml:lang="de-DEV">Slave-Info(76)</text>
+      <text xml:lang="en-DEV">Slave-Info(76)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8177">
+      <text xml:lang="de-DEV">Slave-Info(77)</text>
+      <text xml:lang="en-DEV">Slave-Info(77)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8177">
+      <text xml:lang="de-DEV">Slave-Info(77)</text>
+      <text xml:lang="en-DEV">Slave-Info(77)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8178">
+      <text xml:lang="de-DEV">Slave-Info(78)</text>
+      <text xml:lang="en-DEV">Slave-Info(78)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8178">
+      <text xml:lang="de-DEV">Slave-Info(78)</text>
+      <text xml:lang="en-DEV">Slave-Info(78)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8179">
+      <text xml:lang="de-DEV">Slave-Info(79)</text>
+      <text xml:lang="en-DEV">Slave-Info(79)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8179">
+      <text xml:lang="de-DEV">Slave-Info(79)</text>
+      <text xml:lang="en-DEV">Slave-Info(79)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8180">
+      <text xml:lang="de-DEV">Slave-Info(80)</text>
+      <text xml:lang="en-DEV">Slave-Info(80)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8180">
+      <text xml:lang="de-DEV">Slave-Info(80)</text>
+      <text xml:lang="en-DEV">Slave-Info(80)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8181">
+      <text xml:lang="de-DEV">Slave-Info(81)</text>
+      <text xml:lang="en-DEV">Slave-Info(81)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8181">
+      <text xml:lang="de-DEV">Slave-Info(81)</text>
+      <text xml:lang="en-DEV">Slave-Info(81)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8182">
+      <text xml:lang="de-DEV">Slave-Info(82)</text>
+      <text xml:lang="en-DEV">Slave-Info(82)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8182">
+      <text xml:lang="de-DEV">Slave-Info(82)</text>
+      <text xml:lang="en-DEV">Slave-Info(82)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8183">
+      <text xml:lang="de-DEV">Slave-Info(83)</text>
+      <text xml:lang="en-DEV">Slave-Info(83)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8183">
+      <text xml:lang="de-DEV">Slave-Info(83)</text>
+      <text xml:lang="en-DEV">Slave-Info(83)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8184">
+      <text xml:lang="de-DEV">Slave-Info(84)</text>
+      <text xml:lang="en-DEV">Slave-Info(84)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8184">
+      <text xml:lang="de-DEV">Slave-Info(84)</text>
+      <text xml:lang="en-DEV">Slave-Info(84)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8185">
+      <text xml:lang="de-DEV">Slave-Info(85)</text>
+      <text xml:lang="en-DEV">Slave-Info(85)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8185">
+      <text xml:lang="de-DEV">Slave-Info(85)</text>
+      <text xml:lang="en-DEV">Slave-Info(85)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8186">
+      <text xml:lang="de-DEV">Slave-Info(86)</text>
+      <text xml:lang="en-DEV">Slave-Info(86)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8186">
+      <text xml:lang="de-DEV">Slave-Info(86)</text>
+      <text xml:lang="en-DEV">Slave-Info(86)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8187">
+      <text xml:lang="de-DEV">Slave-Info(87)</text>
+      <text xml:lang="en-DEV">Slave-Info(87)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8187">
+      <text xml:lang="de-DEV">Slave-Info(87)</text>
+      <text xml:lang="en-DEV">Slave-Info(87)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8188">
+      <text xml:lang="de-DEV">Slave-Info(88)</text>
+      <text xml:lang="en-DEV">Slave-Info(88)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8188">
+      <text xml:lang="de-DEV">Slave-Info(88)</text>
+      <text xml:lang="en-DEV">Slave-Info(88)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8189">
+      <text xml:lang="de-DEV">Slave-Info(89)</text>
+      <text xml:lang="en-DEV">Slave-Info(89)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8189">
+      <text xml:lang="de-DEV">Slave-Info(89)</text>
+      <text xml:lang="en-DEV">Slave-Info(89)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8190">
+      <text xml:lang="de-DEV">Slave-Info(90)</text>
+      <text xml:lang="en-DEV">Slave-Info(90)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8190">
+      <text xml:lang="de-DEV">Slave-Info(90)</text>
+      <text xml:lang="en-DEV">Slave-Info(90)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8191">
+      <text xml:lang="de-DEV">Slave-Info(91)</text>
+      <text xml:lang="en-DEV">Slave-Info(91)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8191">
+      <text xml:lang="de-DEV">Slave-Info(91)</text>
+      <text xml:lang="en-DEV">Slave-Info(91)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8192">
+      <text xml:lang="de-DEV">Slave-Info(92)</text>
+      <text xml:lang="en-DEV">Slave-Info(92)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8192">
+      <text xml:lang="de-DEV">Slave-Info(92)</text>
+      <text xml:lang="en-DEV">Slave-Info(92)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8193">
+      <text xml:lang="de-DEV">Slave-Info(93)</text>
+      <text xml:lang="en-DEV">Slave-Info(93)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8193">
+      <text xml:lang="de-DEV">Slave-Info(93)</text>
+      <text xml:lang="en-DEV">Slave-Info(93)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8194">
+      <text xml:lang="de-DEV">Slave-Info(94)</text>
+      <text xml:lang="en-DEV">Slave-Info(94)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8194">
+      <text xml:lang="de-DEV">Slave-Info(94)</text>
+      <text xml:lang="en-DEV">Slave-Info(94)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8195">
+      <text xml:lang="de-DEV">Slave-Info(95)</text>
+      <text xml:lang="en-DEV">Slave-Info(95)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8195">
+      <text xml:lang="de-DEV">Slave-Info(95)</text>
+      <text xml:lang="en-DEV">Slave-Info(95)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8196">
+      <text xml:lang="de-DEV">Slave-Info(96)</text>
+      <text xml:lang="en-DEV">Slave-Info(96)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8196">
+      <text xml:lang="de-DEV">Slave-Info(96)</text>
+      <text xml:lang="en-DEV">Slave-Info(96)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8197">
+      <text xml:lang="de-DEV">Slave-Info(97)</text>
+      <text xml:lang="en-DEV">Slave-Info(97)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8197">
+      <text xml:lang="de-DEV">Slave-Info(97)</text>
+      <text xml:lang="en-DEV">Slave-Info(97)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8198">
+      <text xml:lang="de-DEV">Slave-Info(98)</text>
+      <text xml:lang="en-DEV">Slave-Info(98)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8198">
+      <text xml:lang="de-DEV">Slave-Info(98)</text>
+      <text xml:lang="en-DEV">Slave-Info(98)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8199">
+      <text xml:lang="de-DEV">Slave-Info(99)</text>
+      <text xml:lang="en-DEV">Slave-Info(99)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8199">
+      <text xml:lang="de-DEV">Slave-Info(99)</text>
+      <text xml:lang="en-DEV">Slave-Info(99)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8200">
+      <text xml:lang="de-DEV">Slave-Info(100)</text>
+      <text xml:lang="en-DEV">Slave-Info(100)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8200">
+      <text xml:lang="de-DEV">Slave-Info(100)</text>
+      <text xml:lang="en-DEV">Slave-Info(100)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8201">
+      <text xml:lang="de-DEV">Slave-Info(101)</text>
+      <text xml:lang="en-DEV">Slave-Info(101)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8201">
+      <text xml:lang="de-DEV">Slave-Info(101)</text>
+      <text xml:lang="en-DEV">Slave-Info(101)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8202">
+      <text xml:lang="de-DEV">Slave-Info(102)</text>
+      <text xml:lang="en-DEV">Slave-Info(102)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8202">
+      <text xml:lang="de-DEV">Slave-Info(102)</text>
+      <text xml:lang="en-DEV">Slave-Info(102)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8203">
+      <text xml:lang="de-DEV">Slave-Info(103)</text>
+      <text xml:lang="en-DEV">Slave-Info(103)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8203">
+      <text xml:lang="de-DEV">Slave-Info(103)</text>
+      <text xml:lang="en-DEV">Slave-Info(103)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8204">
+      <text xml:lang="de-DEV">Slave-Info(104)</text>
+      <text xml:lang="en-DEV">Slave-Info(104)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8204">
+      <text xml:lang="de-DEV">Slave-Info(104)</text>
+      <text xml:lang="en-DEV">Slave-Info(104)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8205">
+      <text xml:lang="de-DEV">Slave-Info(105)</text>
+      <text xml:lang="en-DEV">Slave-Info(105)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8205">
+      <text xml:lang="de-DEV">Slave-Info(105)</text>
+      <text xml:lang="en-DEV">Slave-Info(105)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8206">
+      <text xml:lang="de-DEV">Slave-Info(106)</text>
+      <text xml:lang="en-DEV">Slave-Info(106)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8206">
+      <text xml:lang="de-DEV">Slave-Info(106)</text>
+      <text xml:lang="en-DEV">Slave-Info(106)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8207">
+      <text xml:lang="de-DEV">Slave-Info(107)</text>
+      <text xml:lang="en-DEV">Slave-Info(107)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8207">
+      <text xml:lang="de-DEV">Slave-Info(107)</text>
+      <text xml:lang="en-DEV">Slave-Info(107)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8208">
+      <text xml:lang="de-DEV">Slave-Info(108)</text>
+      <text xml:lang="en-DEV">Slave-Info(108)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8208">
+      <text xml:lang="de-DEV">Slave-Info(108)</text>
+      <text xml:lang="en-DEV">Slave-Info(108)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8209">
+      <text xml:lang="de-DEV">Slave-Info(109)</text>
+      <text xml:lang="en-DEV">Slave-Info(109)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8209">
+      <text xml:lang="de-DEV">Slave-Info(109)</text>
+      <text xml:lang="en-DEV">Slave-Info(109)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8210">
+      <text xml:lang="de-DEV">Slave-Info(110)</text>
+      <text xml:lang="en-DEV">Slave-Info(110)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8210">
+      <text xml:lang="de-DEV">Slave-Info(110)</text>
+      <text xml:lang="en-DEV">Slave-Info(110)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8211">
+      <text xml:lang="de-DEV">Slave-Info(111)</text>
+      <text xml:lang="en-DEV">Slave-Info(111)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8211">
+      <text xml:lang="de-DEV">Slave-Info(111)</text>
+      <text xml:lang="en-DEV">Slave-Info(111)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8212">
+      <text xml:lang="de-DEV">Slave-Info(112)</text>
+      <text xml:lang="en-DEV">Slave-Info(112)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8212">
+      <text xml:lang="de-DEV">Slave-Info(112)</text>
+      <text xml:lang="en-DEV">Slave-Info(112)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8213">
+      <text xml:lang="de-DEV">Slave-Info(113)</text>
+      <text xml:lang="en-DEV">Slave-Info(113)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8213">
+      <text xml:lang="de-DEV">Slave-Info(113)</text>
+      <text xml:lang="en-DEV">Slave-Info(113)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8214">
+      <text xml:lang="de-DEV">Slave-Info(114)</text>
+      <text xml:lang="en-DEV">Slave-Info(114)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8214">
+      <text xml:lang="de-DEV">Slave-Info(114)</text>
+      <text xml:lang="en-DEV">Slave-Info(114)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8215">
+      <text xml:lang="de-DEV">Slave-Info(115)</text>
+      <text xml:lang="en-DEV">Slave-Info(115)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8215">
+      <text xml:lang="de-DEV">Slave-Info(115)</text>
+      <text xml:lang="en-DEV">Slave-Info(115)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8216">
+      <text xml:lang="de-DEV">Slave-Info(116)</text>
+      <text xml:lang="en-DEV">Slave-Info(116)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8216">
+      <text xml:lang="de-DEV">Slave-Info(116)</text>
+      <text xml:lang="en-DEV">Slave-Info(116)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8217">
+      <text xml:lang="de-DEV">Slave-Info(117)</text>
+      <text xml:lang="en-DEV">Slave-Info(117)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8217">
+      <text xml:lang="de-DEV">Slave-Info(117)</text>
+      <text xml:lang="en-DEV">Slave-Info(117)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8218">
+      <text xml:lang="de-DEV">Slave-Info(118)</text>
+      <text xml:lang="en-DEV">Slave-Info(118)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8218">
+      <text xml:lang="de-DEV">Slave-Info(118)</text>
+      <text xml:lang="en-DEV">Slave-Info(118)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8219">
+      <text xml:lang="de-DEV">Slave-Info(119)</text>
+      <text xml:lang="en-DEV">Slave-Info(119)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8219">
+      <text xml:lang="de-DEV">Slave-Info(119)</text>
+      <text xml:lang="en-DEV">Slave-Info(119)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8220">
+      <text xml:lang="de-DEV">Slave-Info(120)</text>
+      <text xml:lang="en-DEV">Slave-Info(120)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8220">
+      <text xml:lang="de-DEV">Slave-Info(120)</text>
+      <text xml:lang="en-DEV">Slave-Info(120)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8221">
+      <text xml:lang="de-DEV">Slave-Info(121)</text>
+      <text xml:lang="en-DEV">Slave-Info(121)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8221">
+      <text xml:lang="de-DEV">Slave-Info(121)</text>
+      <text xml:lang="en-DEV">Slave-Info(121)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8222">
+      <text xml:lang="de-DEV">Slave-Info(122)</text>
+      <text xml:lang="en-DEV">Slave-Info(122)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8222">
+      <text xml:lang="de-DEV">Slave-Info(122)</text>
+      <text xml:lang="en-DEV">Slave-Info(122)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8223">
+      <text xml:lang="de-DEV">Slave-Info(123)</text>
+      <text xml:lang="en-DEV">Slave-Info(123)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8223">
+      <text xml:lang="de-DEV">Slave-Info(123)</text>
+      <text xml:lang="en-DEV">Slave-Info(123)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8224">
+      <text xml:lang="de-DEV">Slave-Info(124)</text>
+      <text xml:lang="en-DEV">Slave-Info(124)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8224">
+      <text xml:lang="de-DEV">Slave-Info(124)</text>
+      <text xml:lang="en-DEV">Slave-Info(124)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8225">
+      <text xml:lang="de-DEV">Slave-Info(125)</text>
+      <text xml:lang="en-DEV">Slave-Info(125)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8225">
+      <text xml:lang="de-DEV">Slave-Info(125)</text>
+      <text xml:lang="en-DEV">Slave-Info(125)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8226">
+      <text xml:lang="de-DEV">Slave-Info(126)</text>
+      <text xml:lang="en-DEV">Slave-Info(126)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8226">
+      <text xml:lang="de-DEV">Slave-Info(126)</text>
+      <text xml:lang="en-DEV">Slave-Info(126)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8227">
+      <text xml:lang="de-DEV">Slave-Info(127)</text>
+      <text xml:lang="en-DEV">Slave-Info(127)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8227">
+      <text xml:lang="de-DEV">Slave-Info(127)</text>
+      <text xml:lang="en-DEV">Slave-Info(127)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8230">
+      <text xml:lang="de-DEV">Slave-Status(0)</text>
+      <text xml:lang="en-DEV">Slave-State(0)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8230">
+      <text xml:lang="de-DEV">Slave-Status(0)</text>
+      <text xml:lang="en-DEV">Slave-State(0)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8231">
+      <text xml:lang="de-DEV">Slave-Status(1)</text>
+      <text xml:lang="en-DEV">Slave-State(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8231">
+      <text xml:lang="de-DEV">Slave-Status(1)</text>
+      <text xml:lang="en-DEV">Slave-State(1)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8232">
+      <text xml:lang="de-DEV">Slave-Status(2)</text>
+      <text xml:lang="en-DEV">Slave-State(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8232">
+      <text xml:lang="de-DEV">Slave-Status(2)</text>
+      <text xml:lang="en-DEV">Slave-State(2)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8233">
+      <text xml:lang="de-DEV">Slave-Status(3)</text>
+      <text xml:lang="en-DEV">Slave-State(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8233">
+      <text xml:lang="de-DEV">Slave-Status(3)</text>
+      <text xml:lang="en-DEV">Slave-State(3)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8234">
+      <text xml:lang="de-DEV">Slave-Status(4)</text>
+      <text xml:lang="en-DEV">Slave-State(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8234">
+      <text xml:lang="de-DEV">Slave-Status(4)</text>
+      <text xml:lang="en-DEV">Slave-State(4)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8235">
+      <text xml:lang="de-DEV">Slave-Status(5)</text>
+      <text xml:lang="en-DEV">Slave-State(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8235">
+      <text xml:lang="de-DEV">Slave-Status(5)</text>
+      <text xml:lang="en-DEV">Slave-State(5)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8236">
+      <text xml:lang="de-DEV">Slave-Status(6)</text>
+      <text xml:lang="en-DEV">Slave-State(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8236">
+      <text xml:lang="de-DEV">Slave-Status(6)</text>
+      <text xml:lang="en-DEV">Slave-State(6)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8237">
+      <text xml:lang="de-DEV">Slave-Status(7)</text>
+      <text xml:lang="en-DEV">Slave-State(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8237">
+      <text xml:lang="de-DEV">Slave-Status(7)</text>
+      <text xml:lang="en-DEV">Slave-State(7)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8238">
+      <text xml:lang="de-DEV">Slave-Status(8)</text>
+      <text xml:lang="en-DEV">Slave-State(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8238">
+      <text xml:lang="de-DEV">Slave-Status(8)</text>
+      <text xml:lang="en-DEV">Slave-State(8)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8239">
+      <text xml:lang="de-DEV">Slave-Status(9)</text>
+      <text xml:lang="en-DEV">Slave-State(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8239">
+      <text xml:lang="de-DEV">Slave-Status(9)</text>
+      <text xml:lang="en-DEV">Slave-State(9)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8240">
+      <text xml:lang="de-DEV">Slave-Status(10)</text>
+      <text xml:lang="en-DEV">Slave-State(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8240">
+      <text xml:lang="de-DEV">Slave-Status(10)</text>
+      <text xml:lang="en-DEV">Slave-State(10)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8241">
+      <text xml:lang="de-DEV">Slave-Status(11)</text>
+      <text xml:lang="en-DEV">Slave-State(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8241">
+      <text xml:lang="de-DEV">Slave-Status(11)</text>
+      <text xml:lang="en-DEV">Slave-State(11)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8242">
+      <text xml:lang="de-DEV">Slave-Status(12)</text>
+      <text xml:lang="en-DEV">Slave-State(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8242">
+      <text xml:lang="de-DEV">Slave-Status(12)</text>
+      <text xml:lang="en-DEV">Slave-State(12)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8243">
+      <text xml:lang="de-DEV">Slave-Status(13)</text>
+      <text xml:lang="en-DEV">Slave-State(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8243">
+      <text xml:lang="de-DEV">Slave-Status(13)</text>
+      <text xml:lang="en-DEV">Slave-State(13)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8244">
+      <text xml:lang="de-DEV">Slave-Status(14)</text>
+      <text xml:lang="en-DEV">Slave-State(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8244">
+      <text xml:lang="de-DEV">Slave-Status(14)</text>
+      <text xml:lang="en-DEV">Slave-State(14)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8245">
+      <text xml:lang="de-DEV">Slave-Status(15)</text>
+      <text xml:lang="en-DEV">Slave-State(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8245">
+      <text xml:lang="de-DEV">Slave-Status(15)</text>
+      <text xml:lang="en-DEV">Slave-State(15)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8246">
+      <text xml:lang="de-DEV">Slave-Status(16)</text>
+      <text xml:lang="en-DEV">Slave-State(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8246">
+      <text xml:lang="de-DEV">Slave-Status(16)</text>
+      <text xml:lang="en-DEV">Slave-State(16)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8247">
+      <text xml:lang="de-DEV">Slave-Status(17)</text>
+      <text xml:lang="en-DEV">Slave-State(17)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8247">
+      <text xml:lang="de-DEV">Slave-Status(17)</text>
+      <text xml:lang="en-DEV">Slave-State(17)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8248">
+      <text xml:lang="de-DEV">Slave-Status(18)</text>
+      <text xml:lang="en-DEV">Slave-State(18)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8248">
+      <text xml:lang="de-DEV">Slave-Status(18)</text>
+      <text xml:lang="en-DEV">Slave-State(18)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8249">
+      <text xml:lang="de-DEV">Slave-Status(19)</text>
+      <text xml:lang="en-DEV">Slave-State(19)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8249">
+      <text xml:lang="de-DEV">Slave-Status(19)</text>
+      <text xml:lang="en-DEV">Slave-State(19)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8250">
+      <text xml:lang="de-DEV">Slave-Status(20)</text>
+      <text xml:lang="en-DEV">Slave-State(20)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8250">
+      <text xml:lang="de-DEV">Slave-Status(20)</text>
+      <text xml:lang="en-DEV">Slave-State(20)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8251">
+      <text xml:lang="de-DEV">Slave-Status(21)</text>
+      <text xml:lang="en-DEV">Slave-State(21)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8251">
+      <text xml:lang="de-DEV">Slave-Status(21)</text>
+      <text xml:lang="en-DEV">Slave-State(21)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8252">
+      <text xml:lang="de-DEV">Slave-Status(22)</text>
+      <text xml:lang="en-DEV">Slave-State(22)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8252">
+      <text xml:lang="de-DEV">Slave-Status(22)</text>
+      <text xml:lang="en-DEV">Slave-State(22)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8253">
+      <text xml:lang="de-DEV">Slave-Status(23)</text>
+      <text xml:lang="en-DEV">Slave-State(23)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8253">
+      <text xml:lang="de-DEV">Slave-Status(23)</text>
+      <text xml:lang="en-DEV">Slave-State(23)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8254">
+      <text xml:lang="de-DEV">Slave-Status(24)</text>
+      <text xml:lang="en-DEV">Slave-State(24)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8254">
+      <text xml:lang="de-DEV">Slave-Status(24)</text>
+      <text xml:lang="en-DEV">Slave-State(24)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8255">
+      <text xml:lang="de-DEV">Slave-Status(25)</text>
+      <text xml:lang="en-DEV">Slave-State(25)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8255">
+      <text xml:lang="de-DEV">Slave-Status(25)</text>
+      <text xml:lang="en-DEV">Slave-State(25)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8256">
+      <text xml:lang="de-DEV">Slave-Status(26)</text>
+      <text xml:lang="en-DEV">Slave-State(26)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8256">
+      <text xml:lang="de-DEV">Slave-Status(26)</text>
+      <text xml:lang="en-DEV">Slave-State(26)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8257">
+      <text xml:lang="de-DEV">Slave-Status(27)</text>
+      <text xml:lang="en-DEV">Slave-State(27)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8257">
+      <text xml:lang="de-DEV">Slave-Status(27)</text>
+      <text xml:lang="en-DEV">Slave-State(27)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8258">
+      <text xml:lang="de-DEV">Slave-Status(28)</text>
+      <text xml:lang="en-DEV">Slave-State(28)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8258">
+      <text xml:lang="de-DEV">Slave-Status(28)</text>
+      <text xml:lang="en-DEV">Slave-State(28)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8259">
+      <text xml:lang="de-DEV">Slave-Status(29)</text>
+      <text xml:lang="en-DEV">Slave-State(29)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8259">
+      <text xml:lang="de-DEV">Slave-Status(29)</text>
+      <text xml:lang="en-DEV">Slave-State(29)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8260">
+      <text xml:lang="de-DEV">Slave-Status(30)</text>
+      <text xml:lang="en-DEV">Slave-State(30)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8260">
+      <text xml:lang="de-DEV">Slave-Status(30)</text>
+      <text xml:lang="en-DEV">Slave-State(30)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8261">
+      <text xml:lang="de-DEV">Slave-Status(31)</text>
+      <text xml:lang="en-DEV">Slave-State(31)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8261">
+      <text xml:lang="de-DEV">Slave-Status(31)</text>
+      <text xml:lang="en-DEV">Slave-State(31)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8262">
+      <text xml:lang="de-DEV">Slave-Status(32)</text>
+      <text xml:lang="en-DEV">Slave-State(32)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8262">
+      <text xml:lang="de-DEV">Slave-Status(32)</text>
+      <text xml:lang="en-DEV">Slave-State(32)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8263">
+      <text xml:lang="de-DEV">Slave-Status(33)</text>
+      <text xml:lang="en-DEV">Slave-State(33)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8263">
+      <text xml:lang="de-DEV">Slave-Status(33)</text>
+      <text xml:lang="en-DEV">Slave-State(33)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8264">
+      <text xml:lang="de-DEV">Slave-Status(34)</text>
+      <text xml:lang="en-DEV">Slave-State(34)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8264">
+      <text xml:lang="de-DEV">Slave-Status(34)</text>
+      <text xml:lang="en-DEV">Slave-State(34)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8265">
+      <text xml:lang="de-DEV">Slave-Status(35)</text>
+      <text xml:lang="en-DEV">Slave-State(35)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8265">
+      <text xml:lang="de-DEV">Slave-Status(35)</text>
+      <text xml:lang="en-DEV">Slave-State(35)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8266">
+      <text xml:lang="de-DEV">Slave-Status(36)</text>
+      <text xml:lang="en-DEV">Slave-State(36)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8266">
+      <text xml:lang="de-DEV">Slave-Status(36)</text>
+      <text xml:lang="en-DEV">Slave-State(36)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8267">
+      <text xml:lang="de-DEV">Slave-Status(37)</text>
+      <text xml:lang="en-DEV">Slave-State(37)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8267">
+      <text xml:lang="de-DEV">Slave-Status(37)</text>
+      <text xml:lang="en-DEV">Slave-State(37)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8268">
+      <text xml:lang="de-DEV">Slave-Status(38)</text>
+      <text xml:lang="en-DEV">Slave-State(38)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8268">
+      <text xml:lang="de-DEV">Slave-Status(38)</text>
+      <text xml:lang="en-DEV">Slave-State(38)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8269">
+      <text xml:lang="de-DEV">Slave-Status(39)</text>
+      <text xml:lang="en-DEV">Slave-State(39)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8269">
+      <text xml:lang="de-DEV">Slave-Status(39)</text>
+      <text xml:lang="en-DEV">Slave-State(39)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8270">
+      <text xml:lang="de-DEV">Slave-Status(40)</text>
+      <text xml:lang="en-DEV">Slave-State(40)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8270">
+      <text xml:lang="de-DEV">Slave-Status(40)</text>
+      <text xml:lang="en-DEV">Slave-State(40)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8271">
+      <text xml:lang="de-DEV">Slave-Status(41)</text>
+      <text xml:lang="en-DEV">Slave-State(41)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8271">
+      <text xml:lang="de-DEV">Slave-Status(41)</text>
+      <text xml:lang="en-DEV">Slave-State(41)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8272">
+      <text xml:lang="de-DEV">Slave-Status(42)</text>
+      <text xml:lang="en-DEV">Slave-State(42)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8272">
+      <text xml:lang="de-DEV">Slave-Status(42)</text>
+      <text xml:lang="en-DEV">Slave-State(42)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8273">
+      <text xml:lang="de-DEV">Slave-Status(43)</text>
+      <text xml:lang="en-DEV">Slave-State(43)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8273">
+      <text xml:lang="de-DEV">Slave-Status(43)</text>
+      <text xml:lang="en-DEV">Slave-State(43)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8274">
+      <text xml:lang="de-DEV">Slave-Status(44)</text>
+      <text xml:lang="en-DEV">Slave-State(44)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8274">
+      <text xml:lang="de-DEV">Slave-Status(44)</text>
+      <text xml:lang="en-DEV">Slave-State(44)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8275">
+      <text xml:lang="de-DEV">Slave-Status(45)</text>
+      <text xml:lang="en-DEV">Slave-State(45)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8275">
+      <text xml:lang="de-DEV">Slave-Status(45)</text>
+      <text xml:lang="en-DEV">Slave-State(45)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8276">
+      <text xml:lang="de-DEV">Slave-Status(46)</text>
+      <text xml:lang="en-DEV">Slave-State(46)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8276">
+      <text xml:lang="de-DEV">Slave-Status(46)</text>
+      <text xml:lang="en-DEV">Slave-State(46)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8277">
+      <text xml:lang="de-DEV">Slave-Status(47)</text>
+      <text xml:lang="en-DEV">Slave-State(47)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8277">
+      <text xml:lang="de-DEV">Slave-Status(47)</text>
+      <text xml:lang="en-DEV">Slave-State(47)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8278">
+      <text xml:lang="de-DEV">Slave-Status(48)</text>
+      <text xml:lang="en-DEV">Slave-State(48)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8278">
+      <text xml:lang="de-DEV">Slave-Status(48)</text>
+      <text xml:lang="en-DEV">Slave-State(48)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8279">
+      <text xml:lang="de-DEV">Slave-Status(49)</text>
+      <text xml:lang="en-DEV">Slave-State(49)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8279">
+      <text xml:lang="de-DEV">Slave-Status(49)</text>
+      <text xml:lang="en-DEV">Slave-State(49)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8280">
+      <text xml:lang="de-DEV">Slave-Status(50)</text>
+      <text xml:lang="en-DEV">Slave-State(50)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8280">
+      <text xml:lang="de-DEV">Slave-Status(50)</text>
+      <text xml:lang="en-DEV">Slave-State(50)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8281">
+      <text xml:lang="de-DEV">Slave-Status(51)</text>
+      <text xml:lang="en-DEV">Slave-State(51)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8281">
+      <text xml:lang="de-DEV">Slave-Status(51)</text>
+      <text xml:lang="en-DEV">Slave-State(51)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8282">
+      <text xml:lang="de-DEV">Slave-Status(52)</text>
+      <text xml:lang="en-DEV">Slave-State(52)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8282">
+      <text xml:lang="de-DEV">Slave-Status(52)</text>
+      <text xml:lang="en-DEV">Slave-State(52)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8283">
+      <text xml:lang="de-DEV">Slave-Status(53)</text>
+      <text xml:lang="en-DEV">Slave-State(53)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8283">
+      <text xml:lang="de-DEV">Slave-Status(53)</text>
+      <text xml:lang="en-DEV">Slave-State(53)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8284">
+      <text xml:lang="de-DEV">Slave-Status(54)</text>
+      <text xml:lang="en-DEV">Slave-State(54)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8284">
+      <text xml:lang="de-DEV">Slave-Status(54)</text>
+      <text xml:lang="en-DEV">Slave-State(54)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8285">
+      <text xml:lang="de-DEV">Slave-Status(55)</text>
+      <text xml:lang="en-DEV">Slave-State(55)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8285">
+      <text xml:lang="de-DEV">Slave-Status(55)</text>
+      <text xml:lang="en-DEV">Slave-State(55)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8286">
+      <text xml:lang="de-DEV">Slave-Status(56)</text>
+      <text xml:lang="en-DEV">Slave-State(56)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8286">
+      <text xml:lang="de-DEV">Slave-Status(56)</text>
+      <text xml:lang="en-DEV">Slave-State(56)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8287">
+      <text xml:lang="de-DEV">Slave-Status(57)</text>
+      <text xml:lang="en-DEV">Slave-State(57)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8287">
+      <text xml:lang="de-DEV">Slave-Status(57)</text>
+      <text xml:lang="en-DEV">Slave-State(57)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8288">
+      <text xml:lang="de-DEV">Slave-Status(58)</text>
+      <text xml:lang="en-DEV">Slave-State(58)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8288">
+      <text xml:lang="de-DEV">Slave-Status(58)</text>
+      <text xml:lang="en-DEV">Slave-State(58)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8289">
+      <text xml:lang="de-DEV">Slave-Status(59)</text>
+      <text xml:lang="en-DEV">Slave-State(59)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8289">
+      <text xml:lang="de-DEV">Slave-Status(59)</text>
+      <text xml:lang="en-DEV">Slave-State(59)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8290">
+      <text xml:lang="de-DEV">Slave-Status(60)</text>
+      <text xml:lang="en-DEV">Slave-State(60)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8290">
+      <text xml:lang="de-DEV">Slave-Status(60)</text>
+      <text xml:lang="en-DEV">Slave-State(60)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8291">
+      <text xml:lang="de-DEV">Slave-Status(61)</text>
+      <text xml:lang="en-DEV">Slave-State(61)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8291">
+      <text xml:lang="de-DEV">Slave-Status(61)</text>
+      <text xml:lang="en-DEV">Slave-State(61)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8292">
+      <text xml:lang="de-DEV">Slave-Status(62)</text>
+      <text xml:lang="en-DEV">Slave-State(62)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8292">
+      <text xml:lang="de-DEV">Slave-Status(62)</text>
+      <text xml:lang="en-DEV">Slave-State(62)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8293">
+      <text xml:lang="de-DEV">Slave-Status(63)</text>
+      <text xml:lang="en-DEV">Slave-State(63)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8293">
+      <text xml:lang="de-DEV">Slave-Status(63)</text>
+      <text xml:lang="en-DEV">Slave-State(63)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8294">
+      <text xml:lang="de-DEV">Slave-Status(64)</text>
+      <text xml:lang="en-DEV">Slave-State(64)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8294">
+      <text xml:lang="de-DEV">Slave-Status(64)</text>
+      <text xml:lang="en-DEV">Slave-State(64)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8295">
+      <text xml:lang="de-DEV">Slave-Status(65)</text>
+      <text xml:lang="en-DEV">Slave-State(65)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8295">
+      <text xml:lang="de-DEV">Slave-Status(65)</text>
+      <text xml:lang="en-DEV">Slave-State(65)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8296">
+      <text xml:lang="de-DEV">Slave-Status(66)</text>
+      <text xml:lang="en-DEV">Slave-State(66)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8296">
+      <text xml:lang="de-DEV">Slave-Status(66)</text>
+      <text xml:lang="en-DEV">Slave-State(66)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8297">
+      <text xml:lang="de-DEV">Slave-Status(67)</text>
+      <text xml:lang="en-DEV">Slave-State(67)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8297">
+      <text xml:lang="de-DEV">Slave-Status(67)</text>
+      <text xml:lang="en-DEV">Slave-State(67)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8298">
+      <text xml:lang="de-DEV">Slave-Status(68)</text>
+      <text xml:lang="en-DEV">Slave-State(68)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8298">
+      <text xml:lang="de-DEV">Slave-Status(68)</text>
+      <text xml:lang="en-DEV">Slave-State(68)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8299">
+      <text xml:lang="de-DEV">Slave-Status(69)</text>
+      <text xml:lang="en-DEV">Slave-State(69)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8299">
+      <text xml:lang="de-DEV">Slave-Status(69)</text>
+      <text xml:lang="en-DEV">Slave-State(69)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8300">
+      <text xml:lang="de-DEV">Slave-Status(70)</text>
+      <text xml:lang="en-DEV">Slave-State(70)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8300">
+      <text xml:lang="de-DEV">Slave-Status(70)</text>
+      <text xml:lang="en-DEV">Slave-State(70)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8301">
+      <text xml:lang="de-DEV">Slave-Status(71)</text>
+      <text xml:lang="en-DEV">Slave-State(71)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8301">
+      <text xml:lang="de-DEV">Slave-Status(71)</text>
+      <text xml:lang="en-DEV">Slave-State(71)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8302">
+      <text xml:lang="de-DEV">Slave-Status(72)</text>
+      <text xml:lang="en-DEV">Slave-State(72)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8302">
+      <text xml:lang="de-DEV">Slave-Status(72)</text>
+      <text xml:lang="en-DEV">Slave-State(72)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8303">
+      <text xml:lang="de-DEV">Slave-Status(73)</text>
+      <text xml:lang="en-DEV">Slave-State(73)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8303">
+      <text xml:lang="de-DEV">Slave-Status(73)</text>
+      <text xml:lang="en-DEV">Slave-State(73)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8304">
+      <text xml:lang="de-DEV">Slave-Status(74)</text>
+      <text xml:lang="en-DEV">Slave-State(74)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8304">
+      <text xml:lang="de-DEV">Slave-Status(74)</text>
+      <text xml:lang="en-DEV">Slave-State(74)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8305">
+      <text xml:lang="de-DEV">Slave-Status(75)</text>
+      <text xml:lang="en-DEV">Slave-State(75)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8305">
+      <text xml:lang="de-DEV">Slave-Status(75)</text>
+      <text xml:lang="en-DEV">Slave-State(75)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8306">
+      <text xml:lang="de-DEV">Slave-Status(76)</text>
+      <text xml:lang="en-DEV">Slave-State(76)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8306">
+      <text xml:lang="de-DEV">Slave-Status(76)</text>
+      <text xml:lang="en-DEV">Slave-State(76)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8307">
+      <text xml:lang="de-DEV">Slave-Status(77)</text>
+      <text xml:lang="en-DEV">Slave-State(77)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8307">
+      <text xml:lang="de-DEV">Slave-Status(77)</text>
+      <text xml:lang="en-DEV">Slave-State(77)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8308">
+      <text xml:lang="de-DEV">Slave-Status(78)</text>
+      <text xml:lang="en-DEV">Slave-State(78)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8308">
+      <text xml:lang="de-DEV">Slave-Status(78)</text>
+      <text xml:lang="en-DEV">Slave-State(78)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8309">
+      <text xml:lang="de-DEV">Slave-Status(79)</text>
+      <text xml:lang="en-DEV">Slave-State(79)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8309">
+      <text xml:lang="de-DEV">Slave-Status(79)</text>
+      <text xml:lang="en-DEV">Slave-State(79)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8310">
+      <text xml:lang="de-DEV">Slave-Status(80)</text>
+      <text xml:lang="en-DEV">Slave-State(80)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8310">
+      <text xml:lang="de-DEV">Slave-Status(80)</text>
+      <text xml:lang="en-DEV">Slave-State(80)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8311">
+      <text xml:lang="de-DEV">Slave-Status(81)</text>
+      <text xml:lang="en-DEV">Slave-State(81)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8311">
+      <text xml:lang="de-DEV">Slave-Status(81)</text>
+      <text xml:lang="en-DEV">Slave-State(81)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8312">
+      <text xml:lang="de-DEV">Slave-Status(82)</text>
+      <text xml:lang="en-DEV">Slave-State(82)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8312">
+      <text xml:lang="de-DEV">Slave-Status(82)</text>
+      <text xml:lang="en-DEV">Slave-State(82)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8313">
+      <text xml:lang="de-DEV">Slave-Status(83)</text>
+      <text xml:lang="en-DEV">Slave-State(83)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8313">
+      <text xml:lang="de-DEV">Slave-Status(83)</text>
+      <text xml:lang="en-DEV">Slave-State(83)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8314">
+      <text xml:lang="de-DEV">Slave-Status(84)</text>
+      <text xml:lang="en-DEV">Slave-State(84)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8314">
+      <text xml:lang="de-DEV">Slave-Status(84)</text>
+      <text xml:lang="en-DEV">Slave-State(84)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8315">
+      <text xml:lang="de-DEV">Slave-Status(85)</text>
+      <text xml:lang="en-DEV">Slave-State(85)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8315">
+      <text xml:lang="de-DEV">Slave-Status(85)</text>
+      <text xml:lang="en-DEV">Slave-State(85)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8316">
+      <text xml:lang="de-DEV">Slave-Status(86)</text>
+      <text xml:lang="en-DEV">Slave-State(86)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8316">
+      <text xml:lang="de-DEV">Slave-Status(86)</text>
+      <text xml:lang="en-DEV">Slave-State(86)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8317">
+      <text xml:lang="de-DEV">Slave-Status(87)</text>
+      <text xml:lang="en-DEV">Slave-State(87)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8317">
+      <text xml:lang="de-DEV">Slave-Status(87)</text>
+      <text xml:lang="en-DEV">Slave-State(87)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8318">
+      <text xml:lang="de-DEV">Slave-Status(88)</text>
+      <text xml:lang="en-DEV">Slave-State(88)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8318">
+      <text xml:lang="de-DEV">Slave-Status(88)</text>
+      <text xml:lang="en-DEV">Slave-State(88)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8319">
+      <text xml:lang="de-DEV">Slave-Status(89)</text>
+      <text xml:lang="en-DEV">Slave-State(89)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8319">
+      <text xml:lang="de-DEV">Slave-Status(89)</text>
+      <text xml:lang="en-DEV">Slave-State(89)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8320">
+      <text xml:lang="de-DEV">Slave-Status(90)</text>
+      <text xml:lang="en-DEV">Slave-State(90)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8320">
+      <text xml:lang="de-DEV">Slave-Status(90)</text>
+      <text xml:lang="en-DEV">Slave-State(90)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8321">
+      <text xml:lang="de-DEV">Slave-Status(91)</text>
+      <text xml:lang="en-DEV">Slave-State(91)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8321">
+      <text xml:lang="de-DEV">Slave-Status(91)</text>
+      <text xml:lang="en-DEV">Slave-State(91)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8322">
+      <text xml:lang="de-DEV">Slave-Status(92)</text>
+      <text xml:lang="en-DEV">Slave-State(92)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8322">
+      <text xml:lang="de-DEV">Slave-Status(92)</text>
+      <text xml:lang="en-DEV">Slave-State(92)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8323">
+      <text xml:lang="de-DEV">Slave-Status(93)</text>
+      <text xml:lang="en-DEV">Slave-State(93)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8323">
+      <text xml:lang="de-DEV">Slave-Status(93)</text>
+      <text xml:lang="en-DEV">Slave-State(93)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8324">
+      <text xml:lang="de-DEV">Slave-Status(94)</text>
+      <text xml:lang="en-DEV">Slave-State(94)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8324">
+      <text xml:lang="de-DEV">Slave-Status(94)</text>
+      <text xml:lang="en-DEV">Slave-State(94)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8325">
+      <text xml:lang="de-DEV">Slave-Status(95)</text>
+      <text xml:lang="en-DEV">Slave-State(95)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8325">
+      <text xml:lang="de-DEV">Slave-Status(95)</text>
+      <text xml:lang="en-DEV">Slave-State(95)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8326">
+      <text xml:lang="de-DEV">Slave-Status(96)</text>
+      <text xml:lang="en-DEV">Slave-State(96)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8326">
+      <text xml:lang="de-DEV">Slave-Status(96)</text>
+      <text xml:lang="en-DEV">Slave-State(96)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8327">
+      <text xml:lang="de-DEV">Slave-Status(97)</text>
+      <text xml:lang="en-DEV">Slave-State(97)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8327">
+      <text xml:lang="de-DEV">Slave-Status(97)</text>
+      <text xml:lang="en-DEV">Slave-State(97)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8328">
+      <text xml:lang="de-DEV">Slave-Status(98)</text>
+      <text xml:lang="en-DEV">Slave-State(98)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8328">
+      <text xml:lang="de-DEV">Slave-Status(98)</text>
+      <text xml:lang="en-DEV">Slave-State(98)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8329">
+      <text xml:lang="de-DEV">Slave-Status(99)</text>
+      <text xml:lang="en-DEV">Slave-State(99)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8329">
+      <text xml:lang="de-DEV">Slave-Status(99)</text>
+      <text xml:lang="en-DEV">Slave-State(99)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8330">
+      <text xml:lang="de-DEV">Slave-Status(100)</text>
+      <text xml:lang="en-DEV">Slave-State(100)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8330">
+      <text xml:lang="de-DEV">Slave-Status(100)</text>
+      <text xml:lang="en-DEV">Slave-State(100)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8331">
+      <text xml:lang="de-DEV">Slave-Status(101)</text>
+      <text xml:lang="en-DEV">Slave-State(101)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8331">
+      <text xml:lang="de-DEV">Slave-Status(101)</text>
+      <text xml:lang="en-DEV">Slave-State(101)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8332">
+      <text xml:lang="de-DEV">Slave-Status(102)</text>
+      <text xml:lang="en-DEV">Slave-State(102)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8332">
+      <text xml:lang="de-DEV">Slave-Status(102)</text>
+      <text xml:lang="en-DEV">Slave-State(102)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8333">
+      <text xml:lang="de-DEV">Slave-Status(103)</text>
+      <text xml:lang="en-DEV">Slave-State(103)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8333">
+      <text xml:lang="de-DEV">Slave-Status(103)</text>
+      <text xml:lang="en-DEV">Slave-State(103)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8334">
+      <text xml:lang="de-DEV">Slave-Status(104)</text>
+      <text xml:lang="en-DEV">Slave-State(104)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8334">
+      <text xml:lang="de-DEV">Slave-Status(104)</text>
+      <text xml:lang="en-DEV">Slave-State(104)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8335">
+      <text xml:lang="de-DEV">Slave-Status(105)</text>
+      <text xml:lang="en-DEV">Slave-State(105)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8335">
+      <text xml:lang="de-DEV">Slave-Status(105)</text>
+      <text xml:lang="en-DEV">Slave-State(105)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8336">
+      <text xml:lang="de-DEV">Slave-Status(106)</text>
+      <text xml:lang="en-DEV">Slave-State(106)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8336">
+      <text xml:lang="de-DEV">Slave-Status(106)</text>
+      <text xml:lang="en-DEV">Slave-State(106)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8337">
+      <text xml:lang="de-DEV">Slave-Status(107)</text>
+      <text xml:lang="en-DEV">Slave-State(107)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8337">
+      <text xml:lang="de-DEV">Slave-Status(107)</text>
+      <text xml:lang="en-DEV">Slave-State(107)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8338">
+      <text xml:lang="de-DEV">Slave-Status(108)</text>
+      <text xml:lang="en-DEV">Slave-State(108)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8338">
+      <text xml:lang="de-DEV">Slave-Status(108)</text>
+      <text xml:lang="en-DEV">Slave-State(108)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8339">
+      <text xml:lang="de-DEV">Slave-Status(109)</text>
+      <text xml:lang="en-DEV">Slave-State(109)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8339">
+      <text xml:lang="de-DEV">Slave-Status(109)</text>
+      <text xml:lang="en-DEV">Slave-State(109)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8340">
+      <text xml:lang="de-DEV">Slave-Status(110)</text>
+      <text xml:lang="en-DEV">Slave-State(110)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8340">
+      <text xml:lang="de-DEV">Slave-Status(110)</text>
+      <text xml:lang="en-DEV">Slave-State(110)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8341">
+      <text xml:lang="de-DEV">Slave-Status(111)</text>
+      <text xml:lang="en-DEV">Slave-State(111)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8341">
+      <text xml:lang="de-DEV">Slave-Status(111)</text>
+      <text xml:lang="en-DEV">Slave-State(111)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8342">
+      <text xml:lang="de-DEV">Slave-Status(112)</text>
+      <text xml:lang="en-DEV">Slave-State(112)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8342">
+      <text xml:lang="de-DEV">Slave-Status(112)</text>
+      <text xml:lang="en-DEV">Slave-State(112)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8343">
+      <text xml:lang="de-DEV">Slave-Status(113)</text>
+      <text xml:lang="en-DEV">Slave-State(113)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8343">
+      <text xml:lang="de-DEV">Slave-Status(113)</text>
+      <text xml:lang="en-DEV">Slave-State(113)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8344">
+      <text xml:lang="de-DEV">Slave-Status(114)</text>
+      <text xml:lang="en-DEV">Slave-State(114)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8344">
+      <text xml:lang="de-DEV">Slave-Status(114)</text>
+      <text xml:lang="en-DEV">Slave-State(114)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8345">
+      <text xml:lang="de-DEV">Slave-Status(115)</text>
+      <text xml:lang="en-DEV">Slave-State(115)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8345">
+      <text xml:lang="de-DEV">Slave-Status(115)</text>
+      <text xml:lang="en-DEV">Slave-State(115)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8346">
+      <text xml:lang="de-DEV">Slave-Status(116)</text>
+      <text xml:lang="en-DEV">Slave-State(116)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8346">
+      <text xml:lang="de-DEV">Slave-Status(116)</text>
+      <text xml:lang="en-DEV">Slave-State(116)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8347">
+      <text xml:lang="de-DEV">Slave-Status(117)</text>
+      <text xml:lang="en-DEV">Slave-State(117)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8347">
+      <text xml:lang="de-DEV">Slave-Status(117)</text>
+      <text xml:lang="en-DEV">Slave-State(117)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8348">
+      <text xml:lang="de-DEV">Slave-Status(118)</text>
+      <text xml:lang="en-DEV">Slave-State(118)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8348">
+      <text xml:lang="de-DEV">Slave-Status(118)</text>
+      <text xml:lang="en-DEV">Slave-State(118)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8349">
+      <text xml:lang="de-DEV">Slave-Status(119)</text>
+      <text xml:lang="en-DEV">Slave-State(119)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8349">
+      <text xml:lang="de-DEV">Slave-Status(119)</text>
+      <text xml:lang="en-DEV">Slave-State(119)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8350">
+      <text xml:lang="de-DEV">Slave-Status(120)</text>
+      <text xml:lang="en-DEV">Slave-State(120)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8350">
+      <text xml:lang="de-DEV">Slave-Status(120)</text>
+      <text xml:lang="en-DEV">Slave-State(120)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8351">
+      <text xml:lang="de-DEV">Slave-Status(121)</text>
+      <text xml:lang="en-DEV">Slave-State(121)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8351">
+      <text xml:lang="de-DEV">Slave-Status(121)</text>
+      <text xml:lang="en-DEV">Slave-State(121)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8352">
+      <text xml:lang="de-DEV">Slave-Status(122)</text>
+      <text xml:lang="en-DEV">Slave-State(122)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8352">
+      <text xml:lang="de-DEV">Slave-Status(122)</text>
+      <text xml:lang="en-DEV">Slave-State(122)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8353">
+      <text xml:lang="de-DEV">Slave-Status(123)</text>
+      <text xml:lang="en-DEV">Slave-State(123)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8353">
+      <text xml:lang="de-DEV">Slave-Status(123)</text>
+      <text xml:lang="en-DEV">Slave-State(123)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8354">
+      <text xml:lang="de-DEV">Slave-Status(124)</text>
+      <text xml:lang="en-DEV">Slave-State(124)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8354">
+      <text xml:lang="de-DEV">Slave-Status(124)</text>
+      <text xml:lang="en-DEV">Slave-State(124)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8355">
+      <text xml:lang="de-DEV">Slave-Status(125)</text>
+      <text xml:lang="en-DEV">Slave-State(125)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8355">
+      <text xml:lang="de-DEV">Slave-Status(125)</text>
+      <text xml:lang="en-DEV">Slave-State(125)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8356">
+      <text xml:lang="de-DEV">Slave-Status(126)</text>
+      <text xml:lang="en-DEV">Slave-State(126)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8356">
+      <text xml:lang="de-DEV">Slave-Status(126)</text>
+      <text xml:lang="en-DEV">Slave-State(126)</text>
+    </uiText>
+    <uiText key="Diagnose_Name8357">
+      <text xml:lang="de-DEV">Slave-Status(127)</text>
+      <text xml:lang="en-DEV">Slave-State(127)</text>
+    </uiText>
+    <uiText key="Diagnose_Description8357">
+      <text xml:lang="de-DEV">Slave-Status(127)</text>
+      <text xml:lang="en-DEV">Slave-State(127)</text>
+    </uiText>
+  </module>
+</resources>

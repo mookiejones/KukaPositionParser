@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <Version Label="">
+      <Info Version="KUKA V8.1"/>
+      <Schema Version="1"/>
+   </Version>
+   <WaitForUserList Monitor="False" OperandLevels="12">
+      <!--ListParam Item="VariableA" ListMode="Active"/-->
+      <!--ListParam Item="VariableB" ListMode="Active"/-->
+      <!--ListParam Item="VariableC" ListMode="Hidden"/-->
+      <!--ListParam Item="VariableD" ListMode="Hidden"/-->
+   </WaitForUserList>
+</Config>

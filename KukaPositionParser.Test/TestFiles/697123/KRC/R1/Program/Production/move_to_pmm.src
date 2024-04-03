@@ -1,0 +1,43 @@
+&ACCESS RVO1
+&REL 1
+&PARAM DISKPATH = KRC:\R1\Program\Production
+DEF move_to_pmm( )
+   ;FOLD INI;%{PE}
+      ;FOLD BASISTECH INI
+         GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+         INTERRUPT ON 3 
+         BAS (#INITMOV,0 )
+      ;ENDFOLD (BASISTECH INI)
+      ;FOLD USER INI
+         ;Make your modifications here
+         
+      ;ENDFOLD (USER INI)
+   ;ENDFOLD (INI)
+   
+   Xdummy_point = $POS_ACT
+   PTP Xdummy_point 
+   
+   IF ($IN_HOME5==FALSE) THEN
+      move_to_perch_pos()
+   ELSE
+      
+   ENDIF
+
+
+;FOLD PTP P2 Vel=20 % PDAT3 Tool[1]:laser Base[0];%{PE}%R 8.3.38,%MKUKATPBASIS,%CMOVE,%VPTP,%P 1:PTP, 2:P2, 3:, 5:20, 7:PDAT3
+$BWDSTART=FALSE
+PDAT_ACT=PPDAT3
+FDAT_ACT=FP2
+BAS(#PTP_PARAMS,20)
+PTP XP2 
+;ENDFOLD
+
+;FOLD HandShake[27 : At PMM Position], WAIT on Response
+;FOLD ;%{h}
+;Params IlfProvider=model3_handshakectrl; Core_CmdTechHandShake=HandShake; Core_CmdHandShake=27; Core_Wait=True
+;ENDFOLD
+HandShake_Set (27,false)
+HandShake_Check (27,false)
+;ENDFOLD
+EXIT_PROGRAM()
+END

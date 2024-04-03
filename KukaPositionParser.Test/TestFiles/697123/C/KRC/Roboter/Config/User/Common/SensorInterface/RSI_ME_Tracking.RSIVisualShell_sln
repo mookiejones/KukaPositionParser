@@ -1,0 +1,8 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# RSIVisualShell Solution File, Format Version 10.00
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

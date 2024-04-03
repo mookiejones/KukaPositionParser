@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="Diagnose">
+    <uiText key="Diagnose_Name21000">
+      <text xml:lang="de-DEV">NG-Shared</text>
+      <text xml:lang="en-DEV">NG shared</text>
+    </uiText>
+    <uiText key="Diagnose_Description21000">
+      <text xml:lang="de-DEV">NG-Shared</text>
+      <text xml:lang="en-DEV">NG shared</text>
+    </uiText>
+    <uiText key="Diagnose_Name21001">
+      <text xml:lang="de-DEV">NG-Shared-Kanal</text>
+      <text xml:lang="en-DEV">NG shared channel</text>
+    </uiText>
+    <uiText key="Diagnose_Description21001">
+      <text xml:lang="de-DEV">NG-Shared-Kanal</text>
+      <text xml:lang="en-DEV">NG shared channel</text>
+    </uiText>
+    <uiText key="Diagnose_Name21002">
+      <text xml:lang="de-DEV">Zähler Taktverlust</text>
+      <text xml:lang="en-DEV">Counter tick loss</text>
+    </uiText>
+    <uiText key="Diagnose_Description21002">
+      <text xml:lang="de-DEV">Zähler Taktverlust</text>
+      <text xml:lang="en-DEV">Counter tick loss</text>
+    </uiText>
+    <uiText key="Diagnose_Name21003">
+      <text xml:lang="de-DEV">Zähler überzähliger Takt</text>
+      <text xml:lang="en-DEV">Counter tick too frequent</text>
+    </uiText>
+    <uiText key="Diagnose_Description21003">
+      <text xml:lang="de-DEV">Zähler überzähliger Takt</text>
+      <text xml:lang="en-DEV">Counter tick too frequent</text>
+    </uiText>
+    <uiText key="Diagnose_Name21004">
+      <text xml:lang="de-DEV">Zähler ISR-Start überschritten</text>
+      <text xml:lang="en-DEV">Counter ISR start exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Description21004">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für ISR-Start überschritten</text>
+      <text xml:lang="en-DEV">Counter ISR start exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name21005">
+      <text xml:lang="de-DEV">Zähler Zyklusstart überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle start exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Description21005">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für Zyklusstart überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle start exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name21006">
+      <text xml:lang="de-DEV">Zähler T1 Senden überschritten</text>
+      <text xml:lang="en-DEV">Counter T1 send exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Description21006">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für T1 Senden überschritten</text>
+      <text xml:lang="en-DEV">Counter T1 send exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name21007">
+      <text xml:lang="de-DEV">Zähler Zyklusende überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle end exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Description21007">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für Zyklusende überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle end exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name21008">
+      <text xml:lang="de-DEV">Zähler Abbruch Zyklus</text>
+      <text xml:lang="en-DEV">Counter abort cycle</text>
+    </uiText>
+    <uiText key="Diagnose_Description21008">
+      <text xml:lang="de-DEV">Zähler Abbruch Zyklus</text>
+      <text xml:lang="en-DEV">Counter abort cycle</text>
+    </uiText>
+    <uiText key="Diagnose_Name21009">
+      <text xml:lang="de-DEV">Zähler Taktverlust Zeitsynchronisation</text>
+      <text xml:lang="en-DEV">Counter tick loss time sync</text>
+    </uiText>
+    <uiText key="Diagnose_Description21009">
+      <text xml:lang="de-DEV">Zähler Taktverlust während Zeitsynchronisation</text>
+      <text xml:lang="en-DEV">Counter tick loss while time synchronization is active</text>
+    </uiText>
+    <uiText key="Diagnose_Name21010">
+      <text xml:lang="de-DEV">Zähler überzähliger Takt Zeitsynchronisation</text>
+      <text xml:lang="en-DEV">Counter tick too frequent sync</text>
+    </uiText>
+    <uiText key="Diagnose_Description21010">
+      <text xml:lang="de-DEV">Zähler überzähliger Takt während Zeitsynchronisation</text>
+      <text xml:lang="en-DEV">Counter tick too frequent while time synchronization is active</text>
+    </uiText>
+    <uiText key="Diagnose_Name21011">
+      <text xml:lang="de-DEV">Zeitsynchronisation aktiv</text>
+      <text xml:lang="en-DEV">Time sync active</text>
+    </uiText>
+    <uiText key="Diagnose_Description21011">
+      <text xml:lang="de-DEV">Zeitsynchronisation aktiv</text>
+      <text xml:lang="en-DEV">Time synchronization active</text>
+    </uiText>
+    <uiText key="Diagnose_Name21012">
+      <text xml:lang="de-DEV">Zähler T1 Senden 2fach überschritten</text>
+      <text xml:lang="en-DEV">Counter T1 send exceeded twice</text>
+    </uiText>
+    <uiText key="Diagnose_Description21012">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für T1 Senden überschritten</text>
+      <text xml:lang="en-DEV">Counter T1 send exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name21013">
+      <text xml:lang="de-DEV">Zähler T1 Senden 3fach überschritten</text>
+      <text xml:lang="en-DEV">Counter T1 send exceeded three times</text>
+    </uiText>
+    <uiText key="Diagnose_Description21013">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für T1 Senden überschritten</text>
+      <text xml:lang="en-DEV">Counter T1 send exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name21014">
+      <text xml:lang="de-DEV">Zähler Zyklusende 2fach überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle end exceeded twice</text>
+    </uiText>
+    <uiText key="Diagnose_Description21014">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für Zyklusende überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle end exceeded</text>
+    </uiText>
+    <uiText key="Diagnose_Name21015">
+      <text xml:lang="de-DEV">Zähler Zyklusende 3fach überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle end exceeded three times</text>
+    </uiText>
+    <uiText key="Diagnose_Description21015">
+      <text xml:lang="de-DEV">Zähler Überwachungsgrenze für Zyklusende überschritten</text>
+      <text xml:lang="en-DEV">Counter cycle end exceeded</text>
+    </uiText>
+  </module>
+</resources>

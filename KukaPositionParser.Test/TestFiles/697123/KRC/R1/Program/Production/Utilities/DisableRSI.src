@@ -1,0 +1,5 @@
+&ACCESS  RV
+DEF DisableRSI ( )
+   $SEN_PINT[RSI_Sys_Disable]=1
+   INTERRUPT OFF 5
+END

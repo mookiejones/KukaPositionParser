@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FpExceptions xsi:noNamespaceSchemaLocation="/Roboter/Config/System/Common/Schemes/FpExceptions.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version Label="">
+    <Info Version="KRC V8.3" />
+    <Schema Version="100" />
+  </Version>
+  <!-- x86 FPU/SSE-Exceptions
+       Exceptions are active if the corresponding XML-attribute is set to 'true'.
+       Exceptions not mentioned are implicitly deactivated. Possible attributes:
+          Precision="true"
+          Underflow="true"
+          Overflow="true"
+          ZeroDivide="true"
+          DenormalizedOperand="true"
+          InvalidOperation="true" -->
+  <UnmaskedExceptions ZeroDivide="true" InvalidOperation="true" />
+  <!-- x86 SSE-Modes
+       Activate special modes for SSE calculations. Modes not mentioned
+       are implicitly deactivated. Possible attributes:
+          FlushToZero="true"
+          DenormalsAreZero="true" -->
+  <SseModes FlushToZero="true" DenormalsAreZero="true" />
+  <!-- Deactivate FP-Unit for Tasks that are spawned without Fp support
+        (if disabled, issue a warning for those tasks) -->
+  <DeactivateFpuForNonFpTasks>true</DeactivateFpuForNonFpTasks>
+  <!-- Overwriting global definitions
+       List of tasks for which global FPU/SSE-Settings should not apply.
+       Tasks listed here can be configured with individual FPU/SSE-Exceptions and
+       SSE-Modes and do not inherit any global FPU/SSE-Settings configured elsewhere.
+       The task name configured here must match exactly with the task's real name.
+       Example:
+          <SpecialSettings>
+             <Task Name="tNextGen" InvalidOperation="true" FlushToZero="true" DenormalsAreZero="true"/>
+             <Task Name="R_INT" ZeroDivide="false" InvalidOperation="false" />
+          </SpecialSettings>
+       FPU/SSE-Exceptions and SSE-Modes not mentioned are implicitly deactivated -->
+          <SpecialSettings>
+
+          </SpecialSettings>
+</FpExceptions>

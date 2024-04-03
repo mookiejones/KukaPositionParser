@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Carola John (KUKA Roboter GmbH) -->
+<ModuleList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/ROBOTER/Config/System/Common/Schemes/Modules.xsd">
+	<Version Label="">
+		<Info Version="KUKA V8.3"/>
+		<Schema Version="100"/>
+	</Version>
+	<Module isActive="false" Name="ProConOS.o" Config="ProConOS.xml" DisplayName="ProConOS" Prio="186" Stacksize="65536" Affinity="0" />
+</ModuleList>

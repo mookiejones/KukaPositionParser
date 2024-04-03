@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+   <module name="KukaRoboterXPArcTechXPDiagnostics">
+      <uiText key="KukaRoboterXPArcTechXPWovDiagnosticsXPPropertiesXPResourcesXMOpenFile">
+         <text xml:lang="en-DEV">Open file</text>
+         <text xml:lang="de-DEV">Datei öffnen</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechXPWovDiagnosticsXPPropertiesXPResourcesXMArcTechDiagnosticsEditorCaption">
+         <text xml:lang="en-DEV">ArcTech diagnostics</text>
+         <text xml:lang="de-DEV">ArcTech Diagnose</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechXPWovDiagnosticsXPPropertiesXPResourcesXMArcTechOpenDiagnosticsEditorCommandToolTip">
+         <text xml:lang="en-DEV">Open ArcTech diagnosis editor</text>
+         <text xml:lang="de-DEV">ArcTech Diagnose Editor öffnen</text>
+      </uiText>
+      <uiText key="KukaRoboterXPArcTechXPWovDiagnosticsXPPropertiesXPResourcesXMCouldNotSaveConfiguration">
+         <text xml:lang="en-DEV">Could not save configuration. Next time will be load the default configuration. Error: {0} </text>
+         <text xml:lang="de-DEV">Konfiguration konnte nicht gespeichert werden. Beim nächsten Mal wird die Standardkonfiguration geladen. Fehler: {0}</text>
+      </uiText>
+   </module>
+</resources>

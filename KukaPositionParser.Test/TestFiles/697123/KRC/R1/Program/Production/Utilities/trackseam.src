@@ -1,0 +1,57 @@
+&ACCESS RVO1
+&REL 14
+&PARAM EDITMASK = *
+DEFFCT BOOL TrackSeam( )
+   
+   BAS(#TOOL, 1) ; select first tool
+   BAS(#BASE, 1) ; select base 1
+   BAS(#VEL_CP, 0.002) ; m/s
+   BAS(#ACC_CP, 50) ; use max acceleration
+   
+   BARRELPOSAUX.X = 0.0
+   BARRELPOSAUX.Z = 0.0
+   ;WAIT SEC 3.0
+   
+   ; FOLD SEAM Adjustments
+      IF NOT seamtrackDisabled THEN
+         
+         ; Update seam position
+         BARRELPOSAUX.X = seamOffsetZ
+         
+      ENDIF
+   ; ENDFOLD SEAM Adjustments
+   
+   BARRELPOSAUX.Z = barreldistanceX
+   jogDone = FALSE         
+   
+   ; FOLD INI Jog Up Down Override
+      IF jogUPSEAM AND (jogDone == FALSE) THEN
+         BARRELPOSAUX.X = -0.3
+         jogDone = true
+      ENDIF
+      
+      IF jogDOWNSEAM AND (jogDone == FALSE) THEN
+         BARRELPOSAUX.X = 0.3
+         jogDone = true
+      ENDIF
+      
+   ; ENDFOLD INI
+   
+   ; FOLD INI Jog In Out Override
+      IF goIn AND (jogDone == FALSE) THEN
+         BARRELPOSAUX.X = 0.3
+         jogDone = true
+      ENDIF
+      
+      IF goOut AND (jogDone == FALSE) THEN
+         BARRELPOSAUX.Z = -0.3
+         jogDone = true
+      ENDIF
+      
+   ; ENDFOLD INI
+   
+   IF ((BARRELPOSAUX.X <> 0.0) AND (BARRELPOSAUX.Y <> 0.0))THEN
+      LIN_REL BARRELPOSAUX #TOOL
+   ENDIF
+   RETURN TRUE   
+ENDFCT

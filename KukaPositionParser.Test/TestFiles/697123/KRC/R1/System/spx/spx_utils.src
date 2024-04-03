@@ -1,0 +1,75 @@
+&ACCESS RV2
+DEF spx_utils ( )
+
+END
+
+GLOBAL DEFFCT BOOL check_reachable(target_pos:IN)
+E6POS target_pos
+E6AXIS axis_pos
+INT unreachable_flag
+
+unreachable_flag = 0
+axis_pos = INVERSE(target_pos, $AXIS_ACT, unreachable_flag)
+IF unreachable_flag == 0 THEN   ; if the int variable is still 0, no error
+   RETURN TRUE
+ELSE
+   RETURN FALSE
+ENDIF
+ENDFCT
+GLOBAL DEFFCT REAL direct_distance (position:IN)
+E6POS position
+REAL distance
+
+distance = SQRT((position.X - $POS_ACT.X)*(position.X - $POS_ACT.X) + (position.Y - $POS_ACT.Y)*(position.Y - $POS_ACT.Y) + (position.Z - $POS_ACT.Z)*(position.Z - $POS_ACT.Z))
+RETURN distance
+ENDFCT
+GLOBAL DEFFCT E6POS pos_difference (position:IN)
+E6POS position
+E6POS difference
+
+difference.X = position.X - $POS_ACT.X
+difference.Y = position.Y - $POS_ACT.Y
+difference.Z = position.Z - $POS_ACT.Z
+difference.A = position.A - $POS_ACT.A
+difference.B = position.B - $POS_ACT.B
+difference.C = position.C - $POS_ACT.C
+;difference.E1 = position.E1 - $POS_ACT.E1
+
+RETURN difference
+ENDFCT
+GLOBAL DEFFCT REAL bound (val: OUT, min: IN, max: IN)
+REAL val
+REAL min
+REAL max
+
+; enforce min
+IF val < min THEN
+   val = min
+ENDIF
+
+; enforce max
+IF val > max THEN
+   val = max
+ENDIF
+
+RETURN val
+
+ENDFCT
+GLOBAL DEF progs_running_check(first: IN, last: IN)
+INT first
+INT last
+INT i
+BOOL all_ok
+check:
+all_ok = TRUE
+FOR i = first TO last STEP 1
+   IF $prog_info[i].p_state == #P_ACTIVE THEN
+      CONTINUE
+   ELSE
+      all_ok = FALSE
+      MsgQuit ("Not all submits are running!", "CELL")
+      GOTO check
+   ENDIF
+ENDFOR
+;RETURN all_ok
+END

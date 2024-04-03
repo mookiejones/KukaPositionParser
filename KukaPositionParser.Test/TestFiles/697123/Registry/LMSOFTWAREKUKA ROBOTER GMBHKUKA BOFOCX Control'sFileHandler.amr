@@ -1,0 +1,1362 @@
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler]
+"SpecialDrives"=
+"StartUpPath"="KRC:\"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\FastDeleteFilterList]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Filter]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\FilterList]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Filter\All]
+"ShowAttrib"=dword:     3
+"Mask"="*"
+"Comment"="FilterCommentAll"
+"Type"=dword:   13f
+"ShowModuleExplod"=dword:     1
+"LanguageKey"="FilterKeyAll"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Filter\Detail]
+"ShowAttrib"=dword:     3
+"Mask"="*"
+"Comment"="FilterCommentDetail"
+"Type"=dword:   13f
+"ShowModuleExplod"=dword:     1
+"LanguageKey"="FilterKeyDetail"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Filter\Mada]
+"ShowAttrib"=dword:     2
+"Mask"="$*.dat"
+"Comment"="FilterCommentMada"
+"Type"=dword:    20
+"ShowModuleExplod"=dword:     1
+"LanguageKey"="FilterKeyMada"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Filter\Module]
+"ShowAttrib"=dword:     3
+"Mask"="*"
+"Comment"="FilterCommentModule"
+"Type"=dword:   13f
+"ShowModuleExplod"=dword:     0
+"LanguageKey"="FilterKeyModule"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Filter\User]
+"ShowAttrib"=dword:     0
+"Mask"="*"
+"Comment"="FilterCommentUser"
+"Type"=dword:    25
+"ShowModuleExplod"=dword:     0
+"LanguageKey"="FilterKeyUser"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\FilterList\Admin]
+@="Module"
+"Module"=dword:     1
+"Detail"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\FilterList\DEFAULT]
+"All"=dword:     1
+"Module"=dword:     1
+"Detail"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\FilterList\Expert]
+@="Module"
+"Module"=dword:     1
+"Detail"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\FilterList\User]
+@="User"
+"User"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\0]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\1]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\10]
+@="NewFileFolder"
+"SystemConditions"=dword:311600
+"ItemConditions"=dword:10000800
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\11]
+@="DeleteFileFolder"
+"SystemConditions"=dword:1311400
+"ItemConditions"=dword:  7c1b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\12]
+@="RenameFileFolder"
+"SystemConditions"=dword:1301600
+"ItemConditions"=dword:10007e1b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\20]
+@="OpenFileFolder"
+"SystemConditions"=dword:300000
+"ItemConditions"=dword:8001600
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\21]
+@="OpenDat"
+"SystemConditions"=dword:1300200
+"ItemConditions"=dword:7ccc0600
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\22]
+@="OpenErr"
+"SystemConditions"=dword:1300e00
+"ItemConditions"=dword:7e550600
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\30]
+@="ArchiveFileFolder"
+"SystemConditions"=dword:1300e00
+"ItemConditions"=dword:18001c00
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\31]
+@="RestoreFileFolder"
+"SystemConditions"=dword:1301d30
+"ItemConditions"=dword:8007c1b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\32]
+@="ArchiveAll"
+"SystemConditions"=dword:     0
+"ItemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\33]
+@="RestoreAll"
+"SystemConditions"=dword:  3030
+"ItemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\39]
+@="ModulProc39"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\40]
+@="Select"
+"SystemConditions"=dword:301e20
+"ItemConditions"=dword:7faa1610
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\41]
+@="SelectWithParam"
+"SystemConditions"=dword:301e20
+"ItemConditions"=dword:7faa1610
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\42]
+@="Run"
+"SystemConditions"=dword:1301e20
+"ItemConditions"=dword:7faa1610
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\50]
+@="Cut"
+"SystemConditions"=dword:1301600
+"ItemConditions"=dword:60003c1b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\51]
+@="Copy"
+"SystemConditions"=dword:1301200
+"ItemConditions"=dword:60000c00
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\52]
+@="Paste"
+"SystemConditions"=dword:301600
+"ItemConditions"=dword:   800
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\53]
+@="Duplicate"
+"SystemConditions"=dword:1311600
+"ItemConditions"=dword:78001e00
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\60]
+@="SelectAll"
+"SystemConditions"=dword:300000
+"ItemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\61]
+@="Diff"
+"SystemConditions"=dword:1300000
+"ItemConditions"=dword:   600
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\62]
+@="Format"
+"SystemConditions"=dword:   400
+"ItemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\70]
+@="FileFilter"
+"SystemConditions"=dword:100000
+"ItemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\80]
+@="Attrib"
+"SystemConditions"=dword:301000
+"ItemConditions"=dword:   600
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\81]
+@="RefreshConfig"
+"SystemConditions"=dword:     0
+"ItemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\82]
+@="ModulProc82"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\83]
+@="ModulProc83"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\90]
+@="PrintActSelection"
+"SystemConditions"=dword:300000
+"ItemConditions"=dword:78000400
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\91]
+@="ModulProc91"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\92]
+@="ModulProc92"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\93]
+@="ModulProc93"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\94]
+@="ModulProc94"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\95]
+@="ModulProc95"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\96]
+@="ModulProc96"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\97]
+@="ModulProc97"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\98]
+@="ModulProc98"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\99]
+@="ModulProc99"
+"ItemConditions"=dword:     0
+"SystemConditions"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:]
+"ChangeAllowed"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Cell]
+"EditMask"="Cell"
+"Comment"="TemplateCommentCell"
+@="%InstallationDir%\Roboter\Template\cellVorgabe"
+"FastCreate"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Expert]
+"EditMask"="*"
+"Comment"="TemplateCommentExpert"
+@="%InstallationDir%\Roboter\Template\ExpertVorgabe"
+"FastCreate"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Expert Submit]
+"EditMask"="*"
+"Comment"="TemplateCommentExpertSubmit"
+@="%InstallationDir%\Roboter\Template\ExpertSubmit"
+"FastCreate"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Function]
+"EditMask"="*"
+"Comment"="TemplateCommentFunction"
+@="%InstallationDir%\Roboter\Template\FunctionVorgabe"
+"FastCreate"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Modul]
+"EditMask"="*"
+"Comment"="TemplateCommentModul"
+@="%InstallationDir%\Roboter\Template\vorgabe"
+"FastCreate"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Submit]
+"EditMask"="*"
+"Comment"="TemplateCommentSubmit"
+@="%InstallationDir%\Roboter\Template\submit"
+"FastCreate"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\DEFAULT]
+@="Expert"
+"Modul"=dword:     1
+"Cell"=dword:     1
+"Submit"=dword:     1
+"Function"=dword:     1
+"Expert"=dword:     1
+"Expert Submit"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/r1/]
+"Cell"=dword:     1
+@="Modul"
+"Modul"=dword:     1
+"Submit"=dword:     1
+"Expert"=dword:     1
+"Expert Submit"=dword:     1
+"Function"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/r1/mada/]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/r1/Program/]
+"Modul"=dword:     1
+@="Modul"
+"Cell"=dword:     1
+"Submit"=dword:     1
+"Expert"=dword:     1
+"Expert Submit"=dword:     1
+"Function"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/r1/System/]
+"Submit"=dword:     1
+@="Submit"
+"Modul"=dword:     1
+"Function"=dword:     1
+"Expert"=dword:     1
+"Expert Submit"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/r1/Tp/]
+"Modul"=dword:     1
+@="Modul"
+"Submit"=dword:     1
+"Expert Submit"=dword:     1
+"Expert"=dword:     1
+"Function"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/steu/]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\TemplateList\krc:/steu/mada/]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\Tree]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\Tree]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\Tree]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\List]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\Tree]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\0\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\1\DEFAULT]
+"AskBefore"=dword:     1
+"Active"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\10\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\10\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\10\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\10\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\10\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\11\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\11\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\11\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\11\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\11\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\12\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\12\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\12\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\12\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\12\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\20\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\20\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\20\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\20\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\20\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\21\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\21\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\21\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\21\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\21\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\22\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\22\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\22\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\22\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\22\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\30\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\30\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\30\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\30\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\30\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\31\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\31\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\31\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\31\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\31\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\32\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\32\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\32\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\32\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\32\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\33\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\33\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\33\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\33\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\33\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\40\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\40\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\40\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\40\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\40\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\41\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\41\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\41\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\41\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\41\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\42\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\42\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\42\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\42\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\42\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\50\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\50\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\50\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\50\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\50\User]
+"AskBefore"=dword:     1
+"Active"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\51\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\51\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\51\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\51\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\51\User]
+"AskBefore"=dword:     0
+"Active"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\52\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\52\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\52\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\52\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\52\User]
+"AskBefore"=dword:     1
+"Active"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\53\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\53\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\53\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\53\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\53\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\60\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\60\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\60\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\60\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\60\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\61\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\61\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\61\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\61\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\61\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\62\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\62\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\62\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\62\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\62\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\70\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\70\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\70\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\70\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\70\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\80\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\80\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\80\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\80\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\80\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\81\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\81\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\81\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\81\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\81\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\90\Admin]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\90\DEFAULT]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\90\Demo]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\90\Expert]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\90\User]
+"AskBefore"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\91\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\91\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\91\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\91\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\91\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\92\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\92\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\92\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\92\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\92\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\93\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\93\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\93\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\93\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\93\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\95\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\95\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\95\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\95\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\95\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\96\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\96\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\96\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\96\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\96\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\97\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\97\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\97\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\97\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\97\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\98\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\98\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\98\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\98\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\98\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\99\Admin]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\99\DEFAULT]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\99\Demo]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\99\Expert]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\ModulProc\99\User]
+"AskBefore"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:\R1]
+"ChangeAllowed"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:\Steu]
+"ChangeAllowed"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Cell\DisabledUserLevel]
+"Demo"=""
+"User"=""
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Expert\DisabledUserLevel]
+"Demo"=""
+"User"=""
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Expert Submit\DisabledUserLevel]
+"Demo"=""
+"User"=""
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Function\DisabledUserLevel]
+"Demo"=""
+"User"=""
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Modul\DisabledUserLevel]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Template\Submit\DisabledUserLevel]
+"Demo"=""
+"User"=""
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Sort]
+"Descending"=dword:     0
+@="0"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\Tree\Volumes]
+"ARCHIV"=dword:     1
+"CD"=dword:     1
+"FD"=dword:     1
+"HD"=dword:     1
+"KRC"=dword:     1
+"NET"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List\Columns]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List\Sort]
+"Descending"=dword:     0
+@=" 0"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\Tree\Volumes]
+"ARCHIV"=dword:     1
+"CD"=dword:     1
+"FD"=dword:     1
+"HD"=dword:     1
+"KRC"=dword:     1
+"NET"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Sort]
+"Descending"=dword:     0
+@="0"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\Tree\Volumes]
+"ARCHIV"=dword:     1
+"CD"=dword:     1
+"FD"=dword:     1
+"HD"=dword:     1
+"KRC"=dword:     1
+"NET"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\List\Columns]
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\List\Sort]
+"Descending"=dword:     0
+@="1"
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\Tree\Volumes]
+"ARCHIV"=dword:     1
+"CD"=dword:     0
+"FD"=dword:     0
+"HD"=dword:     0
+"KRC"=dword:     1
+"NET"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:\R1\Mada]
+"ChangeAllowed"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:\R1\Program]
+"ChangeAllowed"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:\R1\System]
+"ChangeAllowed"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:\R1\Tp]
+"ChangeAllowed"=dword:     1
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\PreDefinedTree\KRC:\Steu\Mada]
+"ChangeAllowed"=dword:     0
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\0]
+@="Label"
+"Width"=dword:   113
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\1]
+@="Extension"
+"Width"=dword:    28
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\2]
+@="Comment"
+"Width"=dword:    96
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\3]
+@="Attributes"
+"Width"=dword:    58
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\4]
+@="Size"
+"Width"=dword:    2c
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\5]
+@="Release"
+"Width"=dword:    1e
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\6]
+@="timeModified"
+"Width"=dword:    8b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Admin\List\Columns\7]
+@="timeCreated"
+"Width"=dword:    8b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List\Columns\0]
+@="Label"
+"Width"=dword:    8b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List\Columns\1]
+@="Attributes"
+"Width"=dword:    64
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List\Columns\2]
+@="Comment"
+"Width"=dword:    64
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List\Columns\3]
+@="Release"
+"Width"=dword:    64
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\DEFAULT\List\Columns\4]
+@="Size"
+"Width"=dword:    64
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\0]
+@="Label"
+"Width"=dword:    d7
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\1]
+@="Extension"
+"Width"=dword:    28
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\2]
+@="Comment"
+"Width"=dword:    96
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\3]
+@="Attributes"
+"Width"=dword:    58
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\4]
+@="Size"
+"Width"=dword:    2c
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\5]
+@="Release"
+"Width"=dword:    1e
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\6]
+@="timeModified"
+"Width"=dword:    8b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\Expert\List\Columns\7]
+@="timeCreated"
+"Width"=dword:    8b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\List\Columns\0]
+@="Label"
+"Width"=dword:    ad
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\List\Columns\1]
+@="Comment"
+"Width"=dword:    bc
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\List\Columns\2]
+@="timeModified"
+"Width"=dword:    8b
+
+
+[\LocalMachine\SOFTWARE\KUKA ROBOTER GMBH\KUKA BOF\OCX Control's\FileHandler\Display\User\List\Columns\3]
+@="Release"
+"Width"=dword:    20
+
+

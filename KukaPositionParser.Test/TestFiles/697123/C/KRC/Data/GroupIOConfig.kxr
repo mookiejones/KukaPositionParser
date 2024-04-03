@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns="http://www.kuka.com/schemas/kxr/2009">
+  <module name="GroupIOConfig">
+    <uiText key="Caption">
+      <text xml:lang="en-US">Group IO Configuration</text>
+    </uiText>
+    <uiText key="MenuLabel">
+      <text xml:lang="en-US">Group IO</text>
+    </uiText>
+  </module>
+</resources>
