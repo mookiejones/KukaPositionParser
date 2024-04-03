@@ -24,4 +24,10 @@ public partial class MainWindow
 
         DataContext = Ioc.Default.GetRequiredService<MainViewModel>();
     }
+
+    private void SaveSettings(object sender, System.ComponentModel.CancelEventArgs e)
+    {
+        var dataContext = DataContext as MainViewModel;
+        OptionsViewModel.Save(dataContext?.Options);
+    }
 }

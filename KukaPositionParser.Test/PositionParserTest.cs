@@ -34,6 +34,8 @@ public class PositionParserTest:TestsBase
     {
 
         var results = PositionParser.ParsePositions(TestDirectory);
+        var count = results.Count();
+        Assert.NotEqual(0, count);
         Assert.True(results.Any());
     }
 }

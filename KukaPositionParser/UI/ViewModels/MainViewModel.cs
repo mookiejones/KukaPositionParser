@@ -14,7 +14,7 @@ namespace KukaPositionParser.UI.ViewModels
     internal partial  class MainViewModel:ObservableObject,IFileDragDropTarget
     {
         [ObservableProperty]
-        private OptionsViewModel _options = new OptionsViewModel();
+        private OptionsViewModel _options = OptionsViewModel.Load();
 
 
         public ObservableCollection<E6POS> Points { get; set; } = new ObservableCollection<E6POS>();

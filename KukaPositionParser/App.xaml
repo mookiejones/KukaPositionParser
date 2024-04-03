@@ -21,7 +21,8 @@
                 <!-- Material Design: MahApps Compatibility -->
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.MahApps;component/Themes/MaterialDesignTheme.MahApps.Defaults.xaml" />
 
-                <ResourceDictionary Source="./theme/generic.xaml"/>
+                <ResourceDictionary Source="/KukaPositionParser;component/theme/generic.xaml"/>
+                <ResourceDictionary Source="/KukaPositionParser;component/resources/strings.xaml"/>
             </ResourceDictionary.MergedDictionaries>
           
         </ResourceDictionary>

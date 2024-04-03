@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptionsViewModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Opacity>100</Opacity>
+  <InfinateSpin>true</InfinateSpin>
+  <ShowFrameRate>true</ShowFrameRate>
+  <AlternationCount>0</AlternationCount>
+  <CameraInertiaFactor>0.93</CameraInertiaFactor>
+  <CalculateCursorPosition>false</CalculateCursorPosition>
+  <CameraMode>Inspect</CameraMode>
+  <CameraRotationMode>Turntable</CameraRotationMode>
+  <FixedRotationPointEnabled>false</FixedRotationPointEnabled>
+  <IsChangeFieldOfViewEnabled>true</IsChangeFieldOfViewEnabled>
+  <IsInertiaEnabled>false</IsInertiaEnabled>
+  <IsManipulationEnabled>false</IsManipulationEnabled>
+  <IsMoveEnabled>false</IsMoveEnabled>
+  <IsPanEnabled>false</IsPanEnabled>
+  <IsRotationEnabled>false</IsRotationEnabled>
+  <IsZoomEnabled>false</IsZoomEnabled>
+</OptionsViewModel>

@@ -8,12 +8,15 @@
         xmlns:views="clr-namespace:KukaPositionParser.UI.Views"
         xmlns:behaviors="clr-namespace:KukaPositionParser.UI.Behaviors"
         mc:Ignorable="d"
-        Title="MainWindow" d:DesignHeight="450" d:DesignWidth="800"
+         d:DesignHeight="450" d:DesignWidth="800"
      
         behaviors:FileDragDropBehavior.FileDragDropTarget="{Binding}"
         xmlns:vm="clr-namespace:KukaPositionParser.UI.ViewModels"
            xmlns:h="http://helix-toolkit.org/wpf" xmlns:wpf="http://materialdesigninxaml.net/winfx/xaml/themes"
+                  Closing="SaveSettings"
                   d:DataContext="{d:DesignInstance Type={x:Type vm:MainViewModel}, IsDesignTimeCreatable=True}"
+                  
+                  Title="{StaticResource TitleString}"
                   Style="{StaticResource WindowStyle}"
         >
     <mah:MetroWindow.RightWindowCommands>
@@ -23,7 +26,12 @@
     </mah:MetroWindow.RightWindowCommands>
     <mah:MetroWindow.Flyouts>
         <mah:FlyoutsControl>
-            <mah:Flyout Header="Options" IsOpen="{Binding IsChecked,ElementName=Settings}" Position="Right" ContentTemplate="{StaticResource OptionsTemplate}"/>
+            <mah:Flyout Header="Options" 
+                        IsOpen="{Binding IsChecked,ElementName=Settings}"
+                        Position="Right" 
+                        >
+                <views:OptionsView/>
+            </mah:Flyout>
 
 
         </mah:FlyoutsControl>
@@ -36,9 +44,27 @@
         </Grid.ColumnDefinitions>
         <views:DataView Grid.Column="0"/>
         <GridSplitter Width="10" Grid.Column="1" HorizontalAlignment="Stretch"/>
-        <h:HelixViewport3D InfiniteSpin="{Binding Options.InfinateSpin}" ShowFrameRate="{Binding Options.InfinateSpin}" Grid.Column="2"
+        <h:HelixViewport3D InfiniteSpin="{Binding Options.InfinateSpin}" 
+                           ShowFrameRate="{Binding Options.ShowFrameRate}" Grid.Column="2"
                            Background="{h:LinearGradientBrush Gray,White}"
+                           Opacity="{Binding Options.Opacity}"
+                           AlternationCount="{Binding Options.AlternationCount}"
                            ItemsSource="{Binding Locations}"
+                           CalculateCursorPosition="{Binding Options.CalculateCursorPosition}"
+                           CameraInertiaFactor="{Binding Options.CameraInertiaFactor}"
+                           CameraMode="{Binding Options.CameraMode}"
+                           CameraRotationMode="{Binding Options.CameraRotationMode}"
+                            
+                           FixedRotationPointEnabled="{Binding Options.FixedRotationPointEnabled}"
+                           
+                           IsChangeFieldOfViewEnabled="{Binding Options.IsChangeFieldOfViewEnabled}"
+                           
+                           IsInertiaEnabled="{Binding Options.IsInertiaEnabled}"
+                           IsManipulationEnabled="{Binding Options.IsManipulationEnabled}"
+                           IsMoveEnabled="{Binding Options.IsMoveEnabled}"
+                           IsPanEnabled="{Binding Options.IsPanEnabled}"
+                           IsRotationEnabled="{Binding Options.IsRotationEnabled}"
+                           IsZoomEnabled="{Binding Options.IsZoomEnabled}"
                            />
        
 

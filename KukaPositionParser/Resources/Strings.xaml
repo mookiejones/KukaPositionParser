@@ -2,4 +2,21 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <system:String x:Key="RobotTypeString">Type of Robot</system:String>
+    <system:String x:Key="TitleString">Position Parser</system:String>
+    
+    
+    
+    <!-- Options -->
+    <system:String x:Key="InfinateSpinTitle" >Infinate Spin</system:String>
+    <system:String x:Key="ShowFramerateTitle" >Show Frame Rate</system:String>
+    <system:String x:Key="CalculateCursorPositionTitle" >Calculate Cursor Position</system:String>
+
+
+    <system:String x:Key="IsRotateEnabledTitle" >Is Rotation Enabled</system:String>
+    <system:String x:Key="IsMoveEnabledTitle" >Is Move Enabled</system:String>
+
+    <system:String x:Key="IsPanEnabledTitle" >Is Pan Enabled</system:String>
+
+    <system:String x:Key="IsZoomEnabledTitle" >Is Zoom Enabled</system:String>
+    <system:String x:Key="IsInertiaEnabledTitle" >Is Inertia Enabled</system:String>
 </ResourceDictionary>
